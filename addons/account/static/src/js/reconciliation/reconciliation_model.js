@@ -300,7 +300,7 @@ var StatementModel = BasicModel.extend({
      */
     getStatementLines: function () {
         var self = this;
-        var linesToDisplay = _.pick(this.lines, function(value, key, object) { 
+        var linesToDisplay = _.pick(this.lines, function(value, key, object) {
             if (value.visible === true && self.alreadyDisplayed.indexOf(key) === -1) {
                 self.alreadyDisplayed.push(key);
                 return object;
@@ -492,7 +492,7 @@ var StatementModel = BasicModel.extend({
     },
     /**
      * RPC method to load informations on lines
-     * 
+     *
      * @param {Array} ids ids of bank statement line passed to rpc call
      * @param {Array} excluded_ids list of move_line ids that needs to be excluded from search
      * @returns {Deferred}
@@ -513,7 +513,7 @@ var StatementModel = BasicModel.extend({
      * Add lines into the propositions from the reconcile model
      * Can add 2 lines, and each with its taxes. The second line become editable
      * in the create mode.
-     * 
+     *
      * @see 'updateProposition' method for more informations about the
      * 'amount_type'
      *
@@ -641,7 +641,7 @@ var StatementModel = BasicModel.extend({
      * Change the value of the editable proposition line or create a new one.
      *
      * If the editable line comes from a reconcile model with 2 lines
-     * and their 'amount_type' is "percent" 
+     * and their 'amount_type' is "percent"
      * and their total equals 100% (this doesn't take into account the taxes
      * who can be included or not)
      * Then the total is recomputed to have 100%.
@@ -840,12 +840,28 @@ var StatementModel = BasicModel.extend({
      */
     _changePartner: function (handle, partner_id) {
         var self = this;
+        var head = this.lines[handle];
         return this._rpc({
                 model: 'res.partner',
                 method: 'read',
-                args: [partner_id, ["property_account_receivable_id", "property_account_payable_id"]],
+                args: [partner_id, ["property_account_receivable_id", "property_account_payable_id", "partner_currency_id"]],
             }).then(function (result) {
                 if (result.length > 0) {
+                var new_currency_id = result[0].partner_currency_id[0];
+                self._rpc({
+                model: 'res.currency',
+                method: 'convert_currency_rate',
+                args:[head.st_line.currency_id, head.balance.amount, new_currency_id, head.st_line.company_id, head.st_line.date]}).then(function (result){
+                    head.balance.amount = result[1];
+                    head.balance.amount_currency = result[1];
+                    head.balance.amount_str = result[0] + '&nbsp;' + String(result[1]).replace('.', ',');
+                    head.st_line.amount = result[1];
+                    head.st_line.amount_currency_str = head.st_line.amount_str;
+                    head.st_line.currency_id = new_currency_id;
+                    head.st_line.amount_str = result[0] + ' ' + String(result[1]).replace('.', ',');
+
+
+                });
                     var line = self.getLine(handle);
                     self.lines[handle].st_line.open_balance_account_id = line.balance.amount < 0 ? result[0]['property_account_payable_id'][0] : result[0]['property_account_receivable_id'][0];
                 }
@@ -945,13 +961,9 @@ var StatementModel = BasicModel.extend({
                     }
                 }
             });
-            var company_currency = session.get_currency(line.st_line.currency_id);
-            var company_precision = company_currency && company_currency.digits[1] || 2;
-            total = utils.round_decimals(total, company_precision) || 0;
+            total = utils.round_decimals(total, 4) || 0;
             if(isOtherCurrencyId){
-                var other_currency = session.get_currency(isOtherCurrencyId);
-                var other_precision = other_currency && other_currency.digits[1] || 2;
-                amount_currency = utils.round_decimals(amount_currency, other_precision);
+                amount_currency = utils.round_decimals(amount_currency, 4);
             }
             line.balance = {
                 amount: total,
@@ -967,7 +979,7 @@ var StatementModel = BasicModel.extend({
         });
     },
     /**
-     * 
+     *
      *
      * @private
      * @param {string} handle
@@ -1537,7 +1549,7 @@ var ManualModel = StatementModel.extend({
 
     /**
      * override change the balance type to display or not the reconcile button
-     * 
+     *
      * @override
      * @private
      * @param {Object} line
@@ -1586,7 +1598,7 @@ var ManualModel = StatementModel.extend({
     },
     /**
      * override to add journal_id
-     * 
+     *
      * @override
      * @private
      * @param {Object} line
@@ -1670,7 +1682,7 @@ var ManualModel = StatementModel.extend({
             })
             .then(this._formatMoveLine.bind(this, handle));
     },
-    
+
     _formatToProcessReconciliation: function (line, prop) {
         var result = this._super(line, prop);
         result['date'] = prop.date;

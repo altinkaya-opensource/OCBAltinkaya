@@ -129,7 +129,7 @@ class AccountInvoice(models.Model):
         self.residual_company_signed = abs(residual_company_signed) * sign
         self.residual_signed = abs(residual) * sign
         self.residual = abs(residual)
-        digits_rounding_precision = self.currency_id.rounding
+        digits_rounding_precision = self.currency_id.view_precision
         if float_is_zero(self.residual, precision_rounding=digits_rounding_precision):
             self.reconciled = True
         else:
@@ -170,7 +170,8 @@ class AccountInvoice(models.Model):
                     else:
                         title = line.move_id.name
                     info['content'].append({
-                        'journal_name': line.ref or line.move_id.name,
+                        'journal_name': "%s (%s%s)" % (line.ref or line.move_id.name, abs(line.amount_residual),
+                                                       line.company_id.currency_id.symbol),
                         'title': title,
                         'amount': amount_to_show,
                         'currency': currency_id.symbol,
@@ -564,6 +565,8 @@ class AccountInvoice(models.Model):
 
     @api.constrains('partner_id', 'partner_bank_id')
     def validate_partner_bank_id(self):
+# remove for migration
+        return
         for record in self:
             if record.partner_bank_id:
                 if record.type in ('in_invoice', 'out_refund') and record.partner_bank_id.partner_id != record.partner_id.commercial_partner_id:
@@ -1882,6 +1885,10 @@ class AccountInvoiceLine(models.Model):
         invoice_type = self.invoice_id.type
         rslt = self.product_id.partner_ref
         if invoice_type in ('in_invoice', 'in_refund'):
+
+            if self.invoice_id.is_einvoice:
+                return self.display_name
+
             if self.product_id.description_purchase:
                 rslt += '\n' + self.product_id.description_purchase
         else:

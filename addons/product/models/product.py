@@ -24,9 +24,13 @@ class ProductCategory(models.Model):
     _rec_name = 'complete_name'
     _order = 'complete_name'
 
-    name = fields.Char('Name', index=True, required=True, translate=True)
+    name = fields.Char('Name', index=True, required=True)
+    name_en = fields.Char('Name English', index=True, required=True)
     complete_name = fields.Char(
         'Complete Name', compute='_compute_complete_name',
+        store=True)
+    complete_name_en = fields.Char(
+        'Complete Name', compute='_compute_complete_name_en',
         store=True)
     parent_id = fields.Many2one('product.category', 'Parent Category', index=True, ondelete='cascade')
     parent_path = fields.Char(index=True)
@@ -42,6 +46,14 @@ class ProductCategory(models.Model):
                 category.complete_name = '%s / %s' % (category.parent_id.complete_name, category.name)
             else:
                 category.complete_name = category.name
+
+    @api.depends('name_en', 'parent_id.complete_name_en')
+    def _compute_complete_name_en(self):
+        for category in self:
+            if category.parent_id:
+                category.complete_name_en = '%s / %s' % (category.parent_id.complete_name_en, category.name_en)
+            else:
+                category.complete_name_en = category.name_en
 
     def _compute_product_count(self):
         read_group_res = self.env['product.template'].read_group([('categ_id', 'child_of', self.ids)], ['categ_id'], ['categ_id'])
@@ -463,7 +475,7 @@ class ProductProduct(models.Model):
                 supplier_info_by_template.setdefault(r.product_tmpl_id, []).append(r)
         for product in self.sudo():
             # display only the attributes with multiple possible values on the template
-            variable_attributes = product.attribute_line_ids.filtered(lambda l: len(l.value_ids) > 1).mapped('attribute_id')
+            variable_attributes = product.attribute_line_ids.filtered(lambda l: len(l.value_ids) > 0).mapped('attribute_id')
             variant = product.attribute_value_ids._variant_name(variable_attributes)
 
             name = variant and "%s (%s)" % (product.name, variant) or product.name
@@ -473,14 +485,14 @@ class ProductProduct(models.Model):
                 sellers = [x for x in product_supplier_info if x.product_id and x.product_id == product]
                 if not sellers:
                     sellers = [x for x in product_supplier_info if not x.product_id]
-            if sellers:
+            if sellers and self._context.get('display_supplier_name', False):
                 for s in sellers:
                     seller_variant = s.product_name and (
                         variant and "%s (%s)" % (s.product_name, variant) or s.product_name
                         ) or False
                     mydict = {
                               'id': product.id,
-                              'name': seller_variant or name,
+                                'name': seller_variant or name,
                               'default_code': s.product_code or product.default_code,
                               }
                     temp = _name_get(mydict)

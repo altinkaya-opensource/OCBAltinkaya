@@ -423,6 +423,7 @@ class MrpProduction(models.Model):
             'product_id': self.product_id.id,
             'product_uom': self.product_uom_id.id,
             'product_uom_qty': self.product_qty,
+            'rule_id': self.active_rule_id.id,
             'location_id': self.product_id.property_stock_production.id,
             'location_dest_id': self.location_dest_id.id,
             'company_id': self.company_id.id,
@@ -553,7 +554,7 @@ class MrpProduction(models.Model):
     @api.multi
     def button_plan(self):
         """ Create work orders. And probably do stuff, like things. """
-        orders_to_plan = self.filtered(lambda order: order.routing_id and order.state == 'confirmed')
+        orders_to_plan = self.filtered(lambda order: order.routing_id and order.state in ['confirmed', 'planned'])
         for order in orders_to_plan:
             quantity = order.product_uom_id._compute_quantity(order.product_qty, order.bom_id.product_uom_id) / order.bom_id.product_qty
             boms, lines = order.bom_id.explode(order.product_id, quantity, picking_type=order.bom_id.picking_type_id)
@@ -659,9 +660,13 @@ class MrpProduction(models.Model):
             production.workorder_ids.filtered(lambda x: x.state != 'cancel').action_cancel()
             finish_moves = production.move_finished_ids.filtered(lambda x: x.state not in ('done', 'cancel'))
             raw_moves = production.move_raw_ids.filtered(lambda x: x.state not in ('done', 'cancel'))
-            (finish_moves | raw_moves)._action_cancel()
-            picking_ids = production.picking_ids.filtered(lambda x: x.state not in ('done', 'cancel'))
-            picking_ids.action_cancel()
+            for raw_move in raw_moves:
+                if raw_move.move_orig_ids:
+                    raw_move.cancel_move_origs(raw_move.move_orig_ids)
+            raw_moves.mapped('production_id').action_cancel()
+            dest_moves = production.move_dest_ids.filtered(lambda x: x.state not in ('done', 'cancel'))
+            (finish_moves | raw_moves | dest_moves)._action_cancel()
+
         self.write({'state': 'cancel', 'is_locked': True})
         if documents:
             filtered_documents = {}
@@ -697,7 +702,7 @@ class MrpProduction(models.Model):
             consume_move_lines = moves_to_do.mapped('active_move_line_ids')
             for moveline in moves_to_finish.mapped('active_move_line_ids'):
                 if moveline.product_id == order.product_id and moveline.move_id.has_tracking != 'none':
-                    if any([not ml.lot_produced_id for ml in consume_move_lines]):
+                    if any([not ml.lot_produced_id and ml.product_id.type not in ('consu', 'service') for ml in consume_move_lines]):
                         raise UserError(_('You can not consume without telling for which lot you consumed it'))
                     # Link all movelines in the consumed with same lot_produced_id false or the correct lot_produced_id
                     filtered_lines = consume_move_lines.filtered(lambda x: x.lot_produced_id == moveline.lot_id)
@@ -729,6 +734,7 @@ class MrpProduction(models.Model):
     def do_unreserve(self):
         for production in self:
             production.move_raw_ids.filtered(lambda x: x.state not in ('done', 'cancel'))._do_unreserve()
+            production.move_raw_ids.filtered(lambda x: x.state == 'assigned').write({'state': 'confirmed'})
         return True
 
     @api.multi

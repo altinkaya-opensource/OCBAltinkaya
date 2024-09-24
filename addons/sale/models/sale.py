@@ -68,7 +68,7 @@ class SaleOrder(models.Model):
         """
         # Ignore the status of the deposit product
         deposit_product_id = self.env['sale.advance.payment.inv']._default_product_id()
-        line_invoice_status_all = [(d['order_id'][0], d['invoice_status']) for d in self.env['sale.order.line'].read_group([('order_id', 'in', self.ids), ('product_id', '!=', deposit_product_id.id)], ['order_id', 'invoice_status'], ['order_id', 'invoice_status'], lazy=False)]
+        line_invoice_status_all = [(d['order_id'][0], d['invoice_status']) for d in self.env['sale.order.line'].read_group([('order_id', 'in', self.ids), ('product_id', '!=', deposit_product_id.id), ('price_total', '>', 0.00001)], ['order_id', 'invoice_status'], ['order_id', 'invoice_status'], lazy=False)]
         for order in self:
             invoice_ids = order.order_line.mapped('invoice_lines').mapped('invoice_id').filtered(lambda r: r.type in ['out_invoice', 'out_refund'])
             # Search for invoices which have been 'cancelled' (filter_refund = 'modify' in
@@ -233,7 +233,7 @@ class SaleOrder(models.Model):
 
     commitment_date = fields.Datetime('Commitment Date',
         states={'draft': [('readonly', False)], 'sent': [('readonly', False)]},
-        copy=False, oldname='requested_date', readonly=True,
+        copy=False, oldname='requested_date', readonly=False,
         help="This is the delivery date promised to the customer. If set, the delivery order "
              "will be scheduled based on this date rather than product lead times.")
     expected_date = fields.Datetime("Expected Date", compute='_compute_expected_date', store=False, oldname='commitment_date',  # Note: can not be stored since depends on today()
@@ -358,7 +358,7 @@ class SaleOrder(models.Model):
         values = {
             'pricelist_id': self.partner_id.property_product_pricelist and self.partner_id.property_product_pricelist.id or False,
             'payment_term_id': self.partner_id.property_payment_term_id and self.partner_id.property_payment_term_id.id or False,
-            'partner_invoice_id': addr['invoice'],
+            'partner_invoice_id': self.partner_id.commercial_partner_id,
             'partner_shipping_id': addr['delivery'],
             'user_id': self.partner_id.user_id.id or self.partner_id.commercial_partner_id.user_id.id or self.env.uid
         }
@@ -829,8 +829,12 @@ class SaleOrder(models.Model):
         return (self.state == 'sent' or (self.state == 'draft' and also_in_draft)) and not self.is_expired and self.require_signature and not self.signature and self.team_id.team_type != 'website'
 
     def has_to_be_paid(self, also_in_draft=False):
-        transaction = self.get_portal_last_transaction()
-        return (self.state == 'sent' or (self.state == 'draft' and also_in_draft)) and not self.is_expired and self.require_payment and transaction.state != 'done' and self.amount_total
+        # yibudak 14.08.2023: we implemented our own logic for payment
+        sale_order = self
+        return not sale_order.is_expired and not (
+            sale_order.invoice_ids.filtered(lambda r: r.state == "paid")
+            or sale_order.payment_status == "done"
+        )
 
     @api.multi
     def _notify_get_groups(self, message, groups):
@@ -1624,7 +1628,7 @@ class SaleOrderLine(models.Model):
             :param obj uom: unit of measure of current order line
             :param integer pricelist_id: pricelist id of sales order"""
         PricelistItem = self.env['product.pricelist.item']
-        field_name = 'lst_price'
+        field_name = 'attr_price'
         currency_id = None
         product_currency = product.currency_id
         if rule_id:
@@ -1633,6 +1637,13 @@ class SaleOrderLine(models.Model):
                 while pricelist_item.base == 'pricelist' and pricelist_item.base_pricelist_id and pricelist_item.base_pricelist_id.discount_policy == 'without_discount':
                     price, rule_id = pricelist_item.base_pricelist_id.with_context(uom=uom.id).get_product_price_rule(product, qty, self.order_id.partner_id)
                     pricelist_item = PricelistItem.browse(rule_id)
+
+            if pricelist_item.base == "21":  # v_nakliye_fiyat
+                if self._context.get("sale_id"):
+                    sale = self.env["sale.order"].browse(self._context.get("sale_id"))
+                    if sale:
+                        product_currency = sale.currency_id
+                field_name = 'v_fiyat_nakliye'
 
             if pricelist_item.base == 'standard_price':
                 field_name = 'standard_price'

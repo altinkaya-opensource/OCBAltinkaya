@@ -132,7 +132,12 @@ class SaleOrder(models.Model):
             if sale_order.state == 'sale' and sale_order.order_line:
                 sale_order_lines_quantities = {order_line: (order_line.product_uom_qty, 0) for order_line in sale_order.order_line}
                 documents = self.env['stock.picking']._log_activity_get_documents(sale_order_lines_quantities, 'move_ids', 'UP')
-        self.mapped('picking_ids').action_cancel()
+        pickings = self.mapped('picking_ids')
+        # yigit: Check for returns. If there are any returns, there is no need to cancel the pickings
+        if pickings.filtered(lambda p: p.picking_type_code == "incoming" and p.location_id.usage == "customer" and p.state == "done"):
+            pass
+        else:
+            self.mapped('picking_ids').action_cancel()
         if documents:
             filtered_documents = {}
             for (parent, responsible), rendering_context in documents.items():
@@ -217,6 +222,8 @@ class SaleOrderLine(models.Model):
     @api.model_create_multi
     def create(self, vals_list):
         lines = super(SaleOrderLine, self).create(vals_list)
+        if lines and lines.order_id.date_order <= datetime.strptime('2021-12-31', '%Y-%m-%d'):
+            return lines
         lines.filtered(lambda line: line.state == 'sale')._action_launch_stock_rule()
         return lines
 
