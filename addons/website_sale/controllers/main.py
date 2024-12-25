@@ -1023,15 +1023,19 @@ class WebsiteSale(http.Controller):
 
         # vat validation
         Partner = request.env['res.partner']
-        if data.get("vat") and hasattr(Partner, "check_vat"):
-            if country_id:
-                data["vat"] = Partner.fix_eu_vat_number(country_id, data.get("vat"))
-            partner_dummy = Partner.new(self._get_vat_validation_fields(data))
-            try:
-                partner_dummy.check_vat()
-            except ValidationError as exception:
-                error["vat"] = 'error'
-                error_message.append(exception.args[0])
+        if mode[1] != 'shipping' and data.get("country_id") == 224: # yigit: Add VAT check for Turkish customers
+            if data.get("vat") and hasattr(Partner, "check_vat"):
+                if country_id:
+                    data["vat"] = Partner.fix_eu_vat_number(country_id, data.get("vat"))
+                partner_dummy = Partner.new(self._get_vat_validation_fields(data))
+                try:
+                    partner_dummy.check_vat()
+                except ValidationError as exception:
+                    error["vat"] = 'error'
+                    error_message.append(exception.args[0])
+            else:
+                error["vat"] = 'missing'
+                error_message.append(_('TIN / VAT number is missing.'))
 
         if [err for err in error.values() if err == 'missing']:
             error_message.append(_('Some required fields are empty.'))
@@ -1046,6 +1050,8 @@ class WebsiteSale(http.Controller):
 
     def _checkout_form_save(self, mode, checkout, all_values):
         Partner = request.env['res.partner']
+        if mode[1] == 'shipping':
+            Partner = Partner.with_context(no_vat_validation=True)
         if mode[0] == 'new':
             partner_id = Partner.sudo().with_context(tracking_disable=True).create(checkout).id
         elif mode[0] == 'edit':
@@ -1128,15 +1134,15 @@ class WebsiteSale(http.Controller):
         # IF ORDER LINKED TO A PARTNER
         else:
             if partner_id > 0:
-                if partner_id == order.partner_id.id:
+                if order.partner_id.commercial_partner_id.id == partner_id:
+                    mode = ('edit', 'billing')
+                    can_edit_vat = order.partner_id.can_edit_vat()
+                elif partner_id == order.partner_id.id:
                     mode = ('edit', 'billing')
                     can_edit_vat = order.partner_id.can_edit_vat()
                 else:
                     shippings = Partner.search([('id', 'child_of', order.partner_id.commercial_partner_id.ids)])
-                    if order.partner_id.commercial_partner_id.id == partner_id:
-                        mode = ('new', 'shipping')
-                        partner_id = -1
-                    elif partner_id in shippings.mapped('id'):
+                    if partner_id in shippings.mapped('id'):
                         mode = ('edit', 'shipping')
                     else:
                         return Forbidden()
