@@ -434,7 +434,7 @@ class MailMail(models.Model):
                 if not "@altinkaya.com" in smtp_from:
                     current_website = self.env['website'].get_current_website()
                     if current_website and current_website.default_lang_id.code not in ['tr_TR', 'tr']:
-                        smtp_from = '\"ALTINKAYA\" <sales@altinkaya.eu>'
+                        smtp_from = '\"ALTINKAYA\" <sales@altinkaya.com>'
                     else:
                         smtp_from = '\"ALTINKAYA\" <websatis@altinkaya.com>'
                 smtp_session = self.env['ir.mail_server'].connect(mail_server_id=mail_server_id, smtp_from=smtp_from)

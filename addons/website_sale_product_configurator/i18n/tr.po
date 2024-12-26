@@ -52,7 +52,7 @@ msgstr "Kullanıcının karar vermesine izin verin (iletişim kutusu)"
 #: code:addons/website_sale_product_configurator/static/src/js/website_sale_options.js:0
 #, python-format
 msgid "Proceed to Checkout"
-msgstr "Kasa ödemesini Takip et"
+msgstr "Sepete Git"
 
 #. module: website_sale_product_configurator
 #: model:ir.model,name:website_sale_product_configurator.model_sale_order
