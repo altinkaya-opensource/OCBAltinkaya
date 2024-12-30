@@ -2118,6 +2118,9 @@ class BaseModel(metaclass=MetaModel):
                     value = value[0]
                 elif ftype in ('date', 'datetime'):
                     locale = get_lang(self.env).code
+                    # yigit: arabic locale is not supported by babel workaround
+                    if locale == 'ar_AA':
+                        locale = 'ar_001'
                     fmt = DEFAULT_SERVER_DATETIME_FORMAT if ftype == 'datetime' else DEFAULT_SERVER_DATE_FORMAT
                     tzinfo = None
                     range_start = value
@@ -3077,7 +3080,8 @@ class BaseModel(metaclass=MetaModel):
             related_path, field_name = field.related.rsplit(".", 1)
             return self.mapped(related_path)._update_field_translations(field_name, translations, digest)
 
-        if field.translate is True:
+        # yigit: do not parse HTML fields on website translation dialog, show them in one piece
+        if field.translate is True or self._context.get('web_translation_dialog'):
             # falsy values (except emtpy str) are used to void the corresponding translation
             if any(translation and not isinstance(translation, str) for translation in translations.values()):
                 raise UserError(_("Translations for model translated fields only accept falsy values and str"))
@@ -3152,9 +3156,8 @@ class BaseModel(metaclass=MetaModel):
         # We don't forbid reading inactive/non-existing languages,
         langs = set(langs or [l[0] for l in self.env['res.lang'].get_installed()])
         val_en = self.with_context(lang='en_US')[field_name]
-        if not field.translate:
-            translations = []
-        elif field.translate is True:
+        # yigit: added context check to not split HTML fields into terms on translation dialog
+        if not callable(field.translate) or self._context.get('web_translation_dialog'):
             translations = [{
                 'lang': lang,
                 'source': val_en,

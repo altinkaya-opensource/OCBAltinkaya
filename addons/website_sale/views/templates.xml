@@ -1718,7 +1718,7 @@
                                                         <t t-set='selected' t-value="order.partner_shipping_id==ship"/>
                                                         <t t-set='readonly' t-value="bool(len(shippings)==1)"/>
                                                         <t t-set='edit_billing' t-value="bool(ship==order.partner_id)"/>
-                                                        <t t-set="allow_edit" t-value="not order.partner_id or (ship.id in order.partner_id.child_ids.ids)" />
+                                                        <t t-set="allow_edit" t-value="1" />
                                                     </t>
                                                 </div>
                                             </t>
