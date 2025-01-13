@@ -430,6 +430,13 @@ class MailMail(models.Model):
         for mail_server_id, smtp_from, batch_ids in self._split_by_mail_configuration():
             smtp_session = None
             try:
+                # yigit: simple hack to change the sender email address
+                if not "@altinkaya.com" in smtp_from:
+                    current_website = self.env['website'].get_current_website()
+                    if current_website and current_website.default_lang_id.code not in ['tr_TR', 'tr']:
+                        smtp_from = '\"ALTINKAYA\" <sales@altinkaya.com>'
+                    else:
+                        smtp_from = '\"ALTINKAYA\" <websatis@altinkaya.com>'
                 smtp_session = self.env['ir.mail_server'].connect(mail_server_id=mail_server_id, smtp_from=smtp_from)
             except Exception as exc:
                 if raise_exception:
