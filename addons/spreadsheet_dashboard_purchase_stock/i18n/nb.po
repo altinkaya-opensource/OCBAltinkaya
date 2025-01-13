@@ -6,7 +6,7 @@
 # Jorunn D. Newth, 2022
 # Martin Trigaux, 2022
 # Marius Stedjan <marius@stedjan.com>, 2022
-# Rune Restad, 2025
+# Rune Restad, 2024
 # 
 msgid ""
 msgstr ""
@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-25 10:43+0000\n"
 "PO-Revision-Date: 2022-09-29 09:44+0000\n"
-"Last-Translator: Rune Restad, 2025\n"
+"Last-Translator: Rune Restad, 2024\n"
 "Language-Team: Norwegian Bokmål (https://app.transifex.com/odoo/teams/41243/nb/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -47,7 +47,7 @@ msgstr "Beløp"
 #: code:addons/spreadsheet_dashboard_purchase_stock/data/files/purchase_dashboard.json:0
 #, python-format
 msgid "Amount Purchased"
-msgstr "Antall innkjøpt"
+msgstr ""
 
 #. module: spreadsheet_dashboard_purchase_stock
 #. odoo-javascript
@@ -61,7 +61,7 @@ msgstr "Gjennomsnittsordre"
 #: code:addons/spreadsheet_dashboard_purchase_stock/data/files/purchase_dashboard.json:0
 #, python-format
 msgid "Average order"
-msgstr "Gjennomsnittlig ordre"
+msgstr ""
 
 #. module: spreadsheet_dashboard_purchase_stock
 #. odoo-javascript
@@ -101,35 +101,35 @@ msgstr "Nåværende"
 #: code:addons/spreadsheet_dashboard_purchase_stock/data/files/purchase_dashboard.json:0
 #, python-format
 msgid "Days to confirm"
-msgstr "Dager til bekreftelse"
+msgstr ""
 
 #. module: spreadsheet_dashboard_purchase_stock
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_purchase_stock/data/files/purchase_dashboard.json:0
 #, python-format
 msgid "Days to receive"
-msgstr "Dager til mottak"
+msgstr ""
 
 #. module: spreadsheet_dashboard_purchase_stock
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_purchase_stock/data/files/purchase_dashboard.json:0
 #, python-format
 msgid "KPI"
-msgstr "KPI"
+msgstr ""
 
 #. module: spreadsheet_dashboard_purchase_stock
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_purchase_stock/data/files/purchase_dashboard.json:0
 #, python-format
 msgid "Late Receipts"
-msgstr "Sene mottak"
+msgstr ""
 
 #. module: spreadsheet_dashboard_purchase_stock
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_purchase_stock/data/files/purchase_dashboard.json:0
 #, python-format
 msgid "Lead Time to Receive"
-msgstr "Ledetid til mottak"
+msgstr ""
 
 #. module: spreadsheet_dashboard_purchase_stock
 #. odoo-javascript
@@ -199,42 +199,42 @@ msgstr "Produktkategori"
 #: code:addons/spreadsheet_dashboard_purchase_stock/data/files/purchase_dashboard.json:0
 #, python-format
 msgid "Purchase Analysis by Partner Country"
-msgstr "Innkjøpsanalyse etter partnerland"
+msgstr ""
 
 #. module: spreadsheet_dashboard_purchase_stock
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_purchase_stock/data/files/purchase_dashboard.json:0
 #, python-format
 msgid "Purchase Analysis by Product"
-msgstr "Innkjøpsanalyse pr produkt"
+msgstr ""
 
 #. module: spreadsheet_dashboard_purchase_stock
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_purchase_stock/data/files/purchase_dashboard.json:0
 #, python-format
 msgid "Purchase Analysis by Product Category"
-msgstr "Innkjøpsanalyse etter produktkategori"
+msgstr ""
 
 #. module: spreadsheet_dashboard_purchase_stock
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_purchase_stock/data/files/purchase_dashboard.json:0
 #, python-format
 msgid "Purchase Analysis by Purchase Representative"
-msgstr "Innkjøpsanalyse etter innkjøpsrepresentant"
+msgstr ""
 
 #. module: spreadsheet_dashboard_purchase_stock
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_purchase_stock/data/files/purchase_dashboard.json:0
 #, python-format
 msgid "Purchase Analysis by Vendor"
-msgstr "Innkjøpsanalyse etter leverandør"
+msgstr ""
 
 #. module: spreadsheet_dashboard_purchase_stock
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_purchase_stock/data/files/purchase_dashboard.json:0
 #, python-format
 msgid "Purchase Orders by Untaxed Amount"
-msgstr "Innkjøpsordre etter skattebeløp"
+msgstr ""
 
 #. module: spreadsheet_dashboard_purchase_stock
 #. odoo-javascript
@@ -257,7 +257,7 @@ msgstr "Antall bestilt"
 #: code:addons/spreadsheet_dashboard_purchase_stock/data/files/purchase_dashboard.json:0
 #, python-format
 msgid "Quantity ordered"
-msgstr "Bestilt antall"
+msgstr ""
 
 #. module: spreadsheet_dashboard_purchase_stock
 #. odoo-javascript
@@ -271,7 +271,7 @@ msgstr "Tilbudsforespørsel"
 #: code:addons/spreadsheet_dashboard_purchase_stock/data/files/purchase_dashboard.json:0
 #, python-format
 msgid "Requests for Quotation by Untaxed Amount"
-msgstr "Forespørsler om tilbud etter skattebeløp"
+msgstr ""
 
 #. module: spreadsheet_dashboard_purchase_stock
 #. odoo-javascript
@@ -285,56 +285,56 @@ msgstr "Ansvarlig"
 #: code:addons/spreadsheet_dashboard_purchase_stock/data/files/purchase_dashboard.json:0
 #, python-format
 msgid "Scheduled on"
-msgstr "Planlagt den"
+msgstr ""
 
 #. module: spreadsheet_dashboard_purchase_stock
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_purchase_stock/data/files/purchase_dashboard.json:0
 #, python-format
 msgid "Top Buyers"
-msgstr "Topp kjøpere"
+msgstr ""
 
 #. module: spreadsheet_dashboard_purchase_stock
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_purchase_stock/data/files/purchase_dashboard.json:0
 #, python-format
 msgid "Top Countries"
-msgstr "Topp land"
+msgstr ""
 
 #. module: spreadsheet_dashboard_purchase_stock
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_purchase_stock/data/files/purchase_dashboard.json:0
 #, python-format
 msgid "Top Orders"
-msgstr "Top ordre"
+msgstr ""
 
 #. module: spreadsheet_dashboard_purchase_stock
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_purchase_stock/data/files/purchase_dashboard.json:0
 #, python-format
 msgid "Top Product Categories"
-msgstr "Topp produktkategori"
+msgstr ""
 
 #. module: spreadsheet_dashboard_purchase_stock
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_purchase_stock/data/files/purchase_dashboard.json:0
 #, python-format
 msgid "Top Products"
-msgstr "Topp produktuer"
+msgstr ""
 
 #. module: spreadsheet_dashboard_purchase_stock
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_purchase_stock/data/files/purchase_dashboard.json:0
 #, python-format
 msgid "Top RFQs"
-msgstr "Topp tilbud"
+msgstr ""
 
 #. module: spreadsheet_dashboard_purchase_stock
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_purchase_stock/data/files/purchase_dashboard.json:0
 #, python-format
 msgid "Top Vendors"
-msgstr "Topp leverandører"
+msgstr ""
 
 #. module: spreadsheet_dashboard_purchase_stock
 #. odoo-javascript
@@ -342,7 +342,7 @@ msgstr "Topp leverandører"
 #: code:addons/spreadsheet_dashboard_purchase_stock/data/files/purchase_dashboard.json:0
 #, python-format
 msgid "Total Untaxed"
-msgstr "Total u/mva"
+msgstr ""
 
 #. module: spreadsheet_dashboard_purchase_stock
 #. odoo-javascript
@@ -356,7 +356,7 @@ msgstr "Overføring"
 #: code:addons/spreadsheet_dashboard_purchase_stock/data/files/purchase_dashboard.json:0
 #, python-format
 msgid "Transfers by Creation Date"
-msgstr "Overføring pr opprettelsesdato"
+msgstr ""
 
 #. module: spreadsheet_dashboard_purchase_stock
 #. odoo-javascript
@@ -374,21 +374,21 @@ msgstr "Leverandør"
 #: code:addons/spreadsheet_dashboard_purchase_stock/data/files/purchase_dashboard.json:0
 #, python-format
 msgid "last period"
-msgstr "siste periode"
+msgstr ""
 
 #. module: spreadsheet_dashboard_purchase_stock
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_purchase_stock/data/files/purchase_dashboard.json:0
 #, python-format
 msgid "purchase stats - current"
-msgstr "innkjøps stats - nåværende"
+msgstr ""
 
 #. module: spreadsheet_dashboard_purchase_stock
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_purchase_stock/data/files/purchase_dashboard.json:0
 #, python-format
 msgid "purchase stats - previous"
-msgstr "innkjøpsstats - forrige"
+msgstr ""
 
 #. module: spreadsheet_dashboard_purchase_stock
 #. odoo-javascript
@@ -397,4 +397,4 @@ msgstr "innkjøpsstats - forrige"
 #: code:addons/spreadsheet_dashboard_purchase_stock/data/files/purchase_dashboard.json:0
 #, python-format
 msgid "since last period"
-msgstr "siden forrige periode"
+msgstr ""
