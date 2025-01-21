@@ -1184,6 +1184,7 @@ class AccountMoveLine(models.Model):
         # account move and account move line in the same operation, the check would be done
         # before all write are complete, causing a false positive
         # yigit: [WIP] We doesn't track any account info in web. So, we don't need to check this constraint.
+        return True
         # self.flush_recordset()
         # for line in self.filtered(lambda x: x.display_type not in ('line_section', 'line_note')):
         #     account = line.account_id
