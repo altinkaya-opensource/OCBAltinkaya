@@ -10063,6 +10063,7 @@ msgstr "Deze view arch is aangepast"
 #. module: website
 #. odoo-javascript
 #: code:addons/website/static/src/systray_items/website_switcher.xml:0
+#: code:addons/website/static/src/systray_items/website_switcher.js:0
 #, python-format
 msgid "This website does not have a domain configured."
 msgstr "Deze website heeft geen domein geconfigureerd."

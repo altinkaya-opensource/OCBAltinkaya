@@ -57,20 +57,20 @@ class TestEsEdiTbaiCommon(AccountEdiTestCommon):
             cert_name = 'araba_1234.p12'
             cert_password = '1234'
         elif agency == 'bizkaia':
-            cert_name = 'bizkaia_111111.p12'
-            cert_password = '111111'
+            cert_name = 'Bizkaia-IZDesa2021.p12'
+            cert_password = 'IZDesa2021'
         elif agency == 'gipuzkoa':
             cert_name = 'gipuzkoa_IZDesa2021.p12'
             cert_password = 'IZDesa2021'
         else:
             raise ValueError("Unknown tax agency: " + agency)
 
-        cls.certificate = cls.env['l10n_es_edi.certificate'].create({
+        cls.certificate = cls.env['l10n_es_edi.certificate'].sudo().create({
             'content': base64.encodebytes(
                 misc.file_open("l10n_es_edi_tbai/demo/certificates/" + cert_name, 'rb').read()),
             'password': cert_password,
         })
-        cls.company_data['company'].write({
+        cls.company_data['company'].sudo().write({
             'l10n_es_tbai_tax_agency': agency,
             'l10n_es_edi_certificate_id': cls.certificate.id,
         })
@@ -236,13 +236,14 @@ class TestEsEdiTbaiCommon(AccountEdiTestCommon):
                     <ApellidosNombreRazonSocial>&amp;@àÁ$£€èêÈÊöÔÇç¡⅛™³</ApellidosNombreRazonSocial>
                 </EmisorFacturaRecibida>
                 <CabeceraFactura>
-                    <SerieFactura>INVTEST</SerieFactura>
-                    <NumFactura>01</NumFactura>
+                    <SerieFactura>TEST</SerieFactura>
+                    <NumFactura>INV/5234</NumFactura>
                     <FechaExpedicionFactura>01-01-2022</FechaExpedicionFactura>
                     <FechaRecepcion>01-01-2022</FechaRecepcion>
                     <TipoFactura>F1</TipoFactura>
                 </CabeceraFactura>
                 <DatosFactura>
+                    <DescripcionOperacion>INV/5234</DescripcionOperacion>
                     <Claves>
                         <IDClave>
                             <ClaveRegimenIvaOpTrascendencia>01</ClaveRegimenIvaOpTrascendencia>
@@ -285,13 +286,14 @@ class TestEsEdiTbaiCommon(AccountEdiTestCommon):
                     <ApellidosNombreRazonSocial>partner_b</ApellidosNombreRazonSocial>
                 </EmisorFacturaRecibida>
                 <CabeceraFactura>
-                    <SerieFactura>INVTEST</SerieFactura>
-                    <NumFactura>01</NumFactura>
+                    <SerieFactura>TEST</SerieFactura>
+                    <NumFactura>INV/5234</NumFactura>
                     <FechaExpedicionFactura>01-01-2022</FechaExpedicionFactura>
                     <FechaRecepcion>01-01-2022</FechaRecepcion>
                     <TipoFactura>F1</TipoFactura>
                 </CabeceraFactura>
                 <DatosFactura>
+                    <DescripcionOperacion>INV/5234</DescripcionOperacion>
                     <Claves>
                         <IDClave>
                             <ClaveRegimenIvaOpTrascendencia>09</ClaveRegimenIvaOpTrascendencia>
