@@ -321,9 +321,11 @@ class WebsiteSale(http.Controller):
         keep = QueryURL('/shop', **self._shop_get_query_url_kwargs(category and int(category), search, min_price, max_price, **post))
 
         now = datetime.timestamp(datetime.now())
-        pricelist = request.env['product.pricelist'].browse(request.session.get('website_sale_current_pl'))
-        if not pricelist or request.session.get('website_sale_pricelist_time', 0) < now - 60*60: # test: 1 hour in session
-            pricelist = website.get_current_pricelist()
+        pricelist = website.get_current_pricelist()
+        if (
+            pricelist.id != request.session["website_sale_current_pl"]
+            or request.session.get("website_sale_pricelist_time", 0) < now - 60 * 60
+        ): # test: 1 hour in session
             request.session['website_sale_pricelist_time'] = now
             request.session['website_sale_current_pl'] = pricelist.id
 
