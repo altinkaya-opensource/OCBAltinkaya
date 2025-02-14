@@ -323,7 +323,7 @@ class WebsiteSale(http.Controller):
         now = datetime.timestamp(datetime.now())
         pricelist = website.get_current_pricelist()
         if (
-            pricelist.id != request.session["website_sale_current_pl"]
+            pricelist.id != request.session.get('website_sale_current_pl')
             or request.session.get("website_sale_pricelist_time", 0) < now - 60 * 60
         ): # test: 1 hour in session
             request.session['website_sale_pricelist_time'] = now
