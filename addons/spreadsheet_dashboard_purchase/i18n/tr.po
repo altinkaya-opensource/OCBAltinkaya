@@ -1,28 +1,19 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* spreadsheet_dashboard_purchase
-# 
-# Translators:
-# Ertuğrul Güreş <ertugrulg@projetgrup.com>, 2022
-# Levent Karakaş <levent@mektup.at>, 2022
-# Murat Kaplan <muratk@projetgrup.com>, 2022
-# Martin Trigaux, 2022
-# Ediz Duman <neps1192@gmail.com>, 2023
-# sinem cil, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-25 10:43+0000\n"
-"PO-Revision-Date: 2022-09-29 09:44+0000\n"
-"Last-Translator: sinem cil, 2024\n"
-"Language-Team: Turkish (https://app.transifex.com/odoo/teams/41243/tr/)\n"
+"POT-Creation-Date: 2025-02-14 19:27+0000\n"
+"PO-Revision-Date: 2025-02-14 19:27+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: tr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: \n"
 
 #. module: spreadsheet_dashboard_purchase
 #. odoo-javascript
@@ -72,14 +63,14 @@ msgstr "Güncel Değer"
 #: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
 #, python-format
 msgid "Days to receive"
-msgstr ""
+msgstr "Teslim almak için günler"
 
 #. module: spreadsheet_dashboard_purchase
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
 #, python-format
 msgid "KPI"
-msgstr ""
+msgstr "KPI"
 
 #. module: spreadsheet_dashboard_purchase
 #. odoo-javascript
@@ -134,28 +125,28 @@ msgstr "Önceki"
 #: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
 #, python-format
 msgid "Purchase Analysis by Partner Country"
-msgstr ""
+msgstr "Ortak Ülkeye Göre Satın Alma Analizi"
 
 #. module: spreadsheet_dashboard_purchase
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
 #, python-format
 msgid "Purchase Analysis by Purchase Representative"
-msgstr ""
+msgstr "Satın Alma Temsilcisine Göre Satın Alma Analizi"
 
 #. module: spreadsheet_dashboard_purchase
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
 #, python-format
 msgid "Purchase Analysis by Vendor"
-msgstr ""
+msgstr "Satıcıya Göre Satın Alma Analizi"
 
 #. module: spreadsheet_dashboard_purchase
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
 #, python-format
 msgid "Purchase Orders by Untaxed Amount"
-msgstr ""
+msgstr "Vergilendirilmemiş Tutara Göre Satın Alma Siparişleri"
 
 #. module: spreadsheet_dashboard_purchase
 #. odoo-javascript
@@ -176,7 +167,7 @@ msgstr "Sipariş miktarı"
 #: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
 #, python-format
 msgid "Quantity ordered"
-msgstr ""
+msgstr "Sipariş edilen miktar"
 
 #. module: spreadsheet_dashboard_purchase
 #. odoo-javascript
@@ -190,42 +181,42 @@ msgstr "Kaynak"
 #: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
 #, python-format
 msgid "Sourcing by Country"
-msgstr ""
+msgstr "Ülkelere Göre Kaynak Kullanımı"
 
 #. module: spreadsheet_dashboard_purchase
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
 #, python-format
 msgid "Top Buyers"
-msgstr ""
+msgstr "En İyi Alıcılar"
 
 #. module: spreadsheet_dashboard_purchase
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
 #, python-format
 msgid "Top Orders"
-msgstr ""
+msgstr "En Çok Sipariş"
 
 #. module: spreadsheet_dashboard_purchase
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
 #, python-format
 msgid "Top Vendors"
-msgstr ""
+msgstr "En İyi Satıcılar"
 
 #. module: spreadsheet_dashboard_purchase
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
 #, python-format
 msgid "Top Vendors by Amount"
-msgstr ""
+msgstr "Tutara Göre En İyi Satıcılar"
 
 #. module: spreadsheet_dashboard_purchase
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
 #, python-format
 msgid "Untaxed total"
-msgstr ""
+msgstr "Vergilendirilmemiş toplam"
 
 #. module: spreadsheet_dashboard_purchase
 #. odoo-javascript
@@ -241,7 +232,7 @@ msgstr "Tedarikçi"
 #: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
 #, python-format
 msgid "last period"
-msgstr ""
+msgstr "SON DÖNEM"
 
 #. module: spreadsheet_dashboard_purchase
 #. odoo-javascript
@@ -251,18 +242,18 @@ msgstr ""
 #: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
 #, python-format
 msgid "since last period"
-msgstr ""
+msgstr "son dönemden bu yana"
 
 #. module: spreadsheet_dashboard_purchase
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
 #, python-format
 msgid "stats - current"
-msgstr ""
+msgstr "i̇stati̇sti̇kler - güncel"
 
 #. module: spreadsheet_dashboard_purchase
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
 #, python-format
 msgid "stats - previous"
-msgstr ""
+msgstr "i̇stati̇sti̇kler - önceki̇"

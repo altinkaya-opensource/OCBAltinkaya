@@ -1,0 +1,1474 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_timesheet
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-14 19:49+0000\n"
+"PO-Revision-Date: 2025-02-14 19:49+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/models/account_move.py:0
+#: code:addons/sale_timesheet/models/project.py:0
+#, python-format
+msgid ""
+"\n"
+"                <p class=\"o_view_nocontent_smiling_face\">\n"
+"                    Record timesheets\n"
+"                </p><p>\n"
+"                    You can register and track your workings hours by project every\n"
+"                    day. Every time spent on a project will become a cost and can be re-invoiced to\n"
+"                    customers if required.\n"
+"                </p>\n"
+"            "
+msgstr ""
+"\n"
+"                <p class=\"o_view_nocontent_smiling_face\">\n"
+"                    记录工时单\n"
+"                </p><p>\n"
+"                    您可以按项目登记和跟踪每天的工作时间。\n"
+"                    每天的工作时间。在项目上花费的每一个时间都将成为成本，并可根据需要向客户重新开具发票。\n"
+"                    客户。\n"
+"                </p>\n"
+"            "
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_invoice___candidate_orders
+msgid " Candidate Orders"
+msgstr "候选人订单"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,help:sale_timesheet.field_project_project__billable_percentage
+msgid ""
+"% of timesheets that are billable compared to the total number of timesheets"
+" linked to the AA of the project, rounded to the unit."
+msgstr "与项目 AA 相关联的工时单总数相比的计费工时单百分比，四舍五入到单位。"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/wizard/project_create_sale_order.py:0
+#, python-format
+msgid "%(amount)s %(label)s will be added to the new Sales Order."
+msgstr "%(金额)%(标签)将被添加到新的销售订单中。"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.project_update_default_description
+msgid ", for a revenue of"
+msgstr "目前，我们的收入为"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.project_update_default_description
+msgid ", leading to a"
+msgstr "该翻译工作导致了"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.sale_advance_payment_inv_timesheet_view_form
+msgid ""
+"<i class=\"fa fa-long-arrow-right mx-2\" aria-label=\"Arrow icon\" "
+"title=\"Arrow\"/>"
+msgstr ""
+"<i class=\"fa fa-long-arrow-right mx-2\" aria-label=\"Arrow icon\" "
+"title=\"Arrow\"/>"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.res_config_settings_view_form
+msgid "<span class=\"o_form_label\">Time Billing</span>"
+msgstr "<span class=\"o_form_label\">时间计费</span>"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.account_invoice_view_form_inherit_sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.view_order_form_inherit_sale_timesheet
+msgid "<span class=\"o_stat_text\">Recorded</span>"
+msgstr "<span class=\"o_stat_text\">录音</span>"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.portal_my_task_inherit
+msgid "<strong>Invoiced:</strong>"
+msgstr "<strong>已开票：</strong>"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.portal_my_task_inherit
+msgid "<strong>Invoices:</strong>"
+msgstr "<strong>发票：</strong>"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.portal_my_task_inherit
+msgid "<strong>Sales Order:</strong>"
+msgstr "<strong>销售订单：</strong>"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.portal_my_task_inherit
+msgid "<strong>To invoice:</strong>"
+msgstr "<strong>开具发票：</strong>"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.project_update_default_description
+msgid "<u>Profitability</u>"
+msgstr "<u>盈利能力</u>"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.project_update_default_description
+msgid "<u>Sold</u>"
+msgstr "<u>销售</u>"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,help:sale_timesheet.field_sale_order_line__qty_delivered_method
+msgid ""
+"According to product configuration, the delivered quantity can be automatically computed by mechanism :\n"
+"  - Manual: the quantity is set manually on the line\n"
+"  - Analytic From expenses: the quantity is the quantity sum from posted expenses\n"
+"  - Timesheet: the quantity is the sum of hours recorded on tasks linked to this sale line\n"
+"  - Stock Moves: the quantity comes from confirmed pickings\n"
+msgstr ""
+"根据产品配置，交货数量可通过以下机制自动计算： ：\n"
+"  - 手动：在生产线上手动设置数量\n"
+"  - 从费用分析：数量是已发布费用的数量总和\n"
+"  - 工时表：数量是与该销售项目相关联的任务所记录的工时总和\n"
+"  - 库存移动：数量来自确认的采摘量\n"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_project__allocated_hours
+msgid "Allocated Hours"
+msgstr "分配工时"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_invoice__amount_to_invoice
+msgid "Amount to invoice"
+msgstr "发票金额"
+
+#. module: sale_timesheet
+#: model:ir.model.constraint,message:sale_timesheet.constraint_project_create_sale_order_line_unique_employee_per_wizard
+#: model:ir.model.constraint,message:sale_timesheet.constraint_project_sale_line_employee_map_uniqueness_employee
+msgid ""
+"An employee cannot be selected more than once in the mapping. Please remove "
+"duplicate(s) and try again."
+msgstr "在映射中，一名员工不能被选择多次。请删除重复内容并重试。"
+
+#. module: sale_timesheet
+#: model:ir.model,name:sale_timesheet.model_account_analytic_line
+msgid "Analytic Line"
+msgstr "分析线"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_sale_order_line__analytic_line_ids
+msgid "Analytic lines"
+msgstr "分析线"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/wizard/project_create_sale_order.py:0
+#, python-format
+msgid "At least one line should be filled."
+msgstr "至少应填写一行。"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/models/product.py:0
+#, python-format
+msgid "Based on Timesheets"
+msgstr "基于时间表"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_task__allow_billable
+msgid "Billable"
+msgstr "计费"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_timesheets_analysis_report__billable_time
+msgid "Billable Hours"
+msgstr "计费工时"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_project__billable_percentage
+msgid "Billable Percentage"
+msgstr "计费百分比"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_account_analytic_line__timesheet_invoice_type
+#: model:ir.model.fields,field_description:sale_timesheet.field_timesheets_analysis_report__timesheet_invoice_type
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.hr_timesheet_report_search_sale_timesheet
+msgid "Billable Type"
+msgstr "计费类型"
+
+#. module: sale_timesheet
+#: model:ir.model.fields.selection,name:sale_timesheet.selection__account_analytic_line__timesheet_invoice_type__billable_manual
+#: model:ir.model.fields.selection,name:sale_timesheet.selection__timesheets_analysis_report__timesheet_invoice_type__billable_manual
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.hr_timesheet_report_search_sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.timesheet_view_search
+msgid "Billed Manually"
+msgstr "手动计费"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.hr_timesheet_report_search_sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.timesheet_view_search
+msgid "Billed at a Fixed Price"
+msgstr "按固定价格计费"
+
+#. module: sale_timesheet
+#: model:ir.model.fields.selection,name:sale_timesheet.selection__account_analytic_line__timesheet_invoice_type__billable_fixed
+#: model:ir.model.fields.selection,name:sale_timesheet.selection__timesheets_analysis_report__timesheet_invoice_type__billable_fixed
+msgid "Billed at a Fixed price"
+msgstr "按固定价格计费"
+
+#. module: sale_timesheet
+#: model:ir.model.fields.selection,name:sale_timesheet.selection__account_analytic_line__timesheet_invoice_type__billable_milestones
+#: model:ir.model.fields.selection,name:sale_timesheet.selection__timesheets_analysis_report__timesheet_invoice_type__billable_milestones
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.hr_timesheet_report_search_sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.timesheet_view_search
+msgid "Billed on Milestones"
+msgstr "按里程碑计费"
+
+#. module: sale_timesheet
+#: model:ir.model.fields.selection,name:sale_timesheet.selection__account_analytic_line__timesheet_invoice_type__billable_time
+#: model:ir.model.fields.selection,name:sale_timesheet.selection__timesheets_analysis_report__timesheet_invoice_type__billable_time
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.hr_timesheet_report_search_sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.timesheet_view_search
+msgid "Billed on Timesheets"
+msgstr "按时间表计费"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.res_config_settings_view_form
+msgid "Billing"
+msgstr "计费"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.timesheet_view_search
+msgid "Billing Type"
+msgstr "账单类型"
+
+#. module: sale_timesheet
+#: model:ir.ui.menu,name:sale_timesheet.menu_timesheet_billing_analysis
+msgid "By Billing Type"
+msgstr "按账单类型"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.project_create_invoice_view_form
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.project_create_sale_order_view_form
+msgid "Cancel"
+msgstr "取消"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_invoice__sale_order_id
+msgid "Choose the Sales Order to invoice"
+msgstr "选择销售订单开具发票"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_sale_order__commercial_partner_id
+msgid "Commercial Entity"
+msgstr "商业实体"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_account_analytic_line__commercial_partner_id
+msgid "Commercial Partner"
+msgstr "商业合作伙伴"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_sale_order__company_id
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_sale_line_employee_map__company_id
+msgid "Company"
+msgstr "公司简介"
+
+#. module: sale_timesheet
+#: model:ir.model,name:sale_timesheet.model_res_config_settings
+msgid "Config Settings"
+msgstr "配置设置"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.res_config_settings_view_form
+msgid "Configure your services"
+msgstr "配置您的服务"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_sale_line_employee_map__cost
+msgid "Cost"
+msgstr "成本"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_sale_line_employee_map__cost_currency_id
+msgid "Cost Currency"
+msgstr "成本货币"
+
+#. module: sale_timesheet
+#: model:ir.actions.act_window,name:sale_timesheet.project_project_action_multi_create_invoice
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.project_create_invoice_view_form
+msgid "Create Invoice"
+msgstr "创建发票"
+
+#. module: sale_timesheet
+#: model:ir.model,name:sale_timesheet.model_project_create_invoice
+msgid "Create Invoice from project"
+msgstr "从项目创建发票"
+
+#. module: sale_timesheet
+#: model:ir.model,name:sale_timesheet.model_project_create_sale_order_line
+msgid "Create SO Line from project"
+msgstr "从项目创建 SO 线路"
+
+#. module: sale_timesheet
+#: model:ir.model,name:sale_timesheet.model_project_create_sale_order
+msgid "Create SO from project"
+msgstr "从项目中创建 SO"
+
+#. module: sale_timesheet
+#. odoo-javascript
+#. odoo-python
+#: code:addons/sale_timesheet/models/project.py:0
+#: code:addons/sale_timesheet/static/src/xml/sale_project_templates.xml:0
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.project_create_sale_order_view_form
+#, python-format
+msgid "Create Sales Order"
+msgstr "创建销售订单"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.project_create_invoice_view_form
+msgid "Create Sales Order from Project"
+msgstr "从项目创建销售订单"
+
+#. module: sale_timesheet
+#: model:ir.actions.act_window,name:sale_timesheet.project_project_action_multi_create_sale_order
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.project_create_sale_order_view_form
+msgid "Create a Sales Order"
+msgstr "创建销售订单"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_invoice__create_uid
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_sale_order__create_uid
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_sale_order_line__create_uid
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_sale_line_employee_map__create_uid
+msgid "Created by"
+msgstr "创建者"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_invoice__create_date
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_sale_order__create_date
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_sale_order_line__create_date
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_sale_line_employee_map__create_date
+msgid "Created on"
+msgstr "创建于"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_invoice__currency_id
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_sale_order_line__currency_id
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_sale_line_employee_map__currency_id
+msgid "Currency"
+msgstr "货币"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_sale_order__partner_id
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_project__partner_id
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_sale_line_employee_map__partner_id
+msgid "Customer"
+msgstr "客户"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.project_project_view_kanban_inherit_sale_timesheet
+msgid "Customer Ratings"
+msgstr "客户评价"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,help:sale_timesheet.field_project_create_sale_order__partner_id
+msgid "Customer of the sales order"
+msgstr "销售订单的客户"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.portal_my_timesheets_inherit
+msgid "Days Ordered,"
+msgstr "订购天数、"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.portal_my_timesheets_inherit
+msgid "Days Remaining)"
+msgstr "剩余天数)"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.project_project_view_form
+msgid "Default Service"
+msgstr "默认服务"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_project__display_create_order
+msgid "Display Create Order"
+msgstr "显示 创建订单"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_invoice__display_name
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_sale_order__display_name
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_sale_order_line__display_name
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_sale_line_employee_map__display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.portal_my_task_inherit
+msgid "Draft Invoice"
+msgstr "发票草稿"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.project_update_default_description
+msgid "Effective"
+msgstr "有效"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_sale_order_line__employee_id
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_sale_line_employee_map__employee_id
+msgid "Employee"
+msgstr "员工"
+
+#. module: sale_timesheet
+#: model:ir.model.fields.selection,name:sale_timesheet.selection__project_project__pricing_type__employee_rate
+msgid "Employee rate"
+msgstr "员工比例"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,help:sale_timesheet.field_project_create_sale_order_line__employee_id
+msgid "Employee that has timesheets on the project."
+msgstr "有项目工时表的员工。"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_sale_advance_payment_inv__date_end_invoice_timesheet
+msgid "End Date"
+msgstr "结束日期"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.product_template_view_search_sale_timesheet
+msgid "Fixed price services"
+msgstr "固定价格服务"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_sale_order_line__has_displayed_warning_upsell
+msgid "Has Displayed Warning Upsell"
+msgstr "已显示警告倒卖"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_task__has_multi_sol
+msgid "Has Multi Sol"
+msgstr "拥有多种解决方案"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_sale_line_employee_map__display_cost
+msgid "Hourly Cost"
+msgstr "每小时成本"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.portal_my_timesheets_inherit
+msgid "Hours Ordered,"
+msgstr "订购小时数、"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.portal_my_timesheets_inherit
+msgid "Hours Remaining)"
+msgstr "剩余时间)"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_invoice__id
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_sale_order__id
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_sale_order_line__id
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_sale_line_employee_map__id
+msgid "ID"
+msgstr "ID"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_sale_order__info_invoice
+msgid "Info Invoice"
+msgstr "信息发票"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/controllers/portal.py:0
+#: code:addons/sale_timesheet/controllers/portal.py:0
+#: model:ir.model.fields,field_description:sale_timesheet.field_account_analytic_line__timesheet_invoice_id
+#: model:ir.model.fields,field_description:sale_timesheet.field_timesheets_analysis_report__timesheet_invoice_id
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.hr_timesheet_report_search_sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.report_timesheet_account_move
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.timesheet_view_search
+#, python-format
+msgid "Invoice"
+msgstr "发票"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_res_config_settings__invoice_policy
+msgid "Invoice Policy"
+msgstr "发票政策"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/models/product.py:0
+#, python-format
+msgid ""
+"Invoice based on timesheets (delivered quantity) on projects or tasks you'll"
+" create later on."
+msgstr "根据稍后创建的项目或任务的时间表（交付数量）开具发票。"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/models/product.py:0
+#, python-format
+msgid ""
+"Invoice based on timesheets (delivered quantity), and create a project for "
+"the order with a task for each sales order line to track the time spent."
+msgstr "根据工时单（交付数量）开具发票，并为订单创建一个项目，为每个销售订单行创建一个任务，以跟踪所花费的时间。"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/models/product.py:0
+#, python-format
+msgid ""
+"Invoice based on timesheets (delivered quantity), and create a task in an "
+"existing project to track the time spent."
+msgstr "根据工时单（交付数量）开具发票，并在现有项目中创建任务以跟踪所花费的时间。"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/models/product.py:0
+#, python-format
+msgid ""
+"Invoice based on timesheets (delivered quantity), and create an empty "
+"project for the order to track the time spent."
+msgstr "根据工时单（交付数量）开具发票，并为订单创建一个空项目以跟踪所花费的时间。"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,help:sale_timesheet.field_account_analytic_line__timesheet_invoice_id
+#: model:ir.model.fields,help:sale_timesheet.field_timesheets_analysis_report__timesheet_invoice_id
+msgid "Invoice created from the timesheet"
+msgstr "根据时间表创建发票"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.project_project_view_form_simplified_inherit
+msgid "Invoice your time and material to customers"
+msgstr "向客户开具时间和材料发票"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/controllers/portal.py:0
+#, python-format
+msgid "Invoices"
+msgstr "发票"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.project_project_view_form
+msgid "Invoicing"
+msgstr "开具发票"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_sale_advance_payment_inv__invoicing_timesheet_enabled
+msgid "Invoicing Timesheet Enabled"
+msgstr "启用发票时间表"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_sale_line_employee_map__is_cost_changed
+msgid "Is Cost Manually Changed"
+msgstr "是否手动更改成本"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_task__is_project_map_empty
+msgid "Is Project map empty"
+msgstr "项目地图是否为空"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_account_analytic_line__is_so_line_edited
+msgid "Is Sales Order Item Manually Edited"
+msgstr "销售订单项目是否可手动编辑"
+
+#. module: sale_timesheet
+#: model:ir.model,name:sale_timesheet.model_account_move
+msgid "Journal Entry"
+msgstr "日志输入"
+
+#. module: sale_timesheet
+#: model:ir.model,name:sale_timesheet.model_account_move_line
+msgid "Journal Item"
+msgstr "期刊项目"
+
+#. module: sale_timesheet
+#: model_terms:ir.actions.act_window,help:sale_timesheet.timesheet_action_from_sales_order_item
+msgid ""
+"Keep track of your working hours by project every day and bill your "
+"customers for that time."
+msgstr "按项目记录每天的工作时间，并向客户收取相应的费用。"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_invoice____last_update
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_sale_order____last_update
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_sale_order_line____last_update
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_sale_line_employee_map____last_update
+msgid "Last Modified on"
+msgstr "最后修改日期"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_invoice__write_uid
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_sale_order__write_uid
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_sale_order_line__write_uid
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_sale_line_employee_map__write_uid
+msgid "Last Updated by"
+msgstr "最后更新"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_invoice__write_date
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_sale_order__write_date
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_sale_order_line__write_date
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_sale_line_employee_map__write_date
+msgid "Last Updated on"
+msgstr "最后更新日期"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_sale_order__line_ids
+msgid "Lines"
+msgstr "线路"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,help:sale_timesheet.field_product_product__service_type
+#: model:ir.model.fields,help:sale_timesheet.field_product_template__service_type
+msgid ""
+"Manually set quantities on order: Invoice based on the manually entered quantity, without creating an analytic account.\n"
+"Timesheets on contract: Invoice based on the tracked hours on the related timesheet.\n"
+"Create a task and track hours: Create a task on the sales order validation and track the work hours."
+msgstr ""
+"手动设置订单数量：根据手动输入的数量开具发票，无需创建分析账户。\n"
+"合同上的工时表：根据相关工时表上的跟踪工时开具发票。\n"
+"创建任务并跟踪工时：在销售订单验证中创建任务并跟踪工时。"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_timesheets_analysis_report__margin
+msgid "Margin"
+msgstr "保证金"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/models/project.py:0
+#, python-format
+msgid "Materials"
+msgstr "材料"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_sale_order_line__qty_delivered_method
+msgid "Method to update delivered qty"
+msgstr "更新交付数量的方法"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.product_template_view_search_sale_timesheet
+msgid "Milestone services"
+msgstr "里程碑服务"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.portal_my_timesheets_inherit
+msgid "No Invoice"
+msgstr "无发票"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.portal_my_timesheets_inherit
+msgid "No Sales Order"
+msgstr "无销售订单"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.portal_my_timesheets_inherit
+msgid "No Sales Order Item"
+msgstr "无销售订单项目"
+
+#. module: sale_timesheet
+#: model_terms:ir.actions.act_window,help:sale_timesheet.action_timesheet_from_invoice
+msgid "No activities found"
+msgstr "未找到活动"
+
+#. module: sale_timesheet
+#: model_terms:ir.actions.act_window,help:sale_timesheet.timesheet_action_billing_report
+msgid "No data yet!"
+msgstr "尚无数据！"
+
+#. module: sale_timesheet
+#: model_terms:ir.actions.act_window,help:sale_timesheet.timesheet_action_from_sales_order_item
+msgid "No timesheets found. Let's create one!"
+msgstr "未找到时间表。让我们创建一个！"
+
+#. module: sale_timesheet
+#: model:ir.model.fields.selection,name:sale_timesheet.selection__account_analytic_line__timesheet_invoice_type__non_billable
+#: model:ir.model.fields.selection,name:sale_timesheet.selection__timesheets_analysis_report__timesheet_invoice_type__non_billable
+msgid "Non Billable Tasks"
+msgstr "非计费任务"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.hr_timesheet_report_search_sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.timesheet_view_search
+msgid "Non-Billable"
+msgstr "不计费"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_timesheets_analysis_report__non_billable_time
+msgid "Non-billable Hours"
+msgstr "非计费工时"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,help:sale_timesheet.field_timesheets_analysis_report__timesheet_revenues
+msgid "Number of hours spent multiplied by the unit price per hour/day."
+msgstr "小时数乘以每小时/天的单价。"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,help:sale_timesheet.field_timesheets_analysis_report__billable_time
+msgid "Number of hours/days linked to a SOL."
+msgstr "与 SOL 相关联的小时/天数。"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,help:sale_timesheet.field_timesheets_analysis_report__non_billable_time
+msgid "Number of hours/days not linked to a SOL."
+msgstr "与 SOL 无关的小时/天数。"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_account_bank_statement_line__timesheet_count
+#: model:ir.model.fields,field_description:sale_timesheet.field_account_move__timesheet_count
+#: model:ir.model.fields,field_description:sale_timesheet.field_account_payment__timesheet_count
+msgid "Number of timesheets"
+msgstr "工时单数量"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,help:sale_timesheet.field_sale_advance_payment_inv__date_end_invoice_timesheet
+#: model:ir.model.fields,help:sale_timesheet.field_sale_advance_payment_inv__date_start_invoice_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.sale_advance_payment_inv_timesheet_view_form
+msgid ""
+"Only timesheets not yet invoiced (and validated, if applicable) from this "
+"period will be invoiced. If the period is not indicated, all timesheets not "
+"yet invoiced (and validated, if applicable) will be invoiced without "
+"distinction."
+msgstr ""
+"只有该期间尚未开具发票（如适用，已验证）的工时单才会开具发票。如果未指明时间段，则所有尚未开具发票（和已验证（如适用））的工时单都将开具发票，不作区分。"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/models/project.py:0
+#, python-format
+msgid "Operation not supported"
+msgstr "不支持的操作"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_account_analytic_line__order_id
+msgid "Order Reference"
+msgstr "订单参考"
+
+#. module: sale_timesheet
+#: model:ir.model.fields.selection,name:sale_timesheet.selection__account_analytic_line__timesheet_invoice_type__other_costs
+#: model:ir.model.fields.selection,name:sale_timesheet.selection__timesheets_analysis_report__timesheet_invoice_type__other_costs
+msgid "Other costs"
+msgstr "其他费用"
+
+#. module: sale_timesheet
+#: model:ir.model.fields.selection,name:sale_timesheet.selection__account_analytic_line__timesheet_invoice_type__other_revenues
+#: model:ir.model.fields.selection,name:sale_timesheet.selection__timesheets_analysis_report__timesheet_invoice_type__other_revenues
+msgid "Other revenues"
+msgstr "其他收入"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,help:sale_timesheet.field_product_product__service_upsell_threshold
+#: model:ir.model.fields,help:sale_timesheet.field_product_template__service_upsell_threshold
+msgid ""
+"Percentage of time delivered compared to the prepaid amount that must be "
+"reached for the upselling opportunity activity to be triggered."
+msgstr "交付时间与预付金额的百分比，必须达到预付金额才能触发追加销售机会活动。"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_project__pricing_type
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_task__pricing_type
+msgid "Pricing"
+msgstr "定价"
+
+#. module: sale_timesheet
+#: model:ir.model,name:sale_timesheet.model_product_template
+msgid "Product"
+msgstr "产品"
+
+#. module: sale_timesheet
+#: model:ir.model,name:sale_timesheet.model_product_product
+msgid "Product Variant"
+msgstr "产品种类"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,help:sale_timesheet.field_project_create_sale_order_line__product_id
+msgid ""
+"Product of the sales order item. Must be a service invoiced based on "
+"timesheets on tasks."
+msgstr "销售订单项目的产品。必须是根据任务时间表开具发票的服务。"
+
+#. module: sale_timesheet
+#: model:ir.model,name:sale_timesheet.model_project_project
+#: model:ir.model.fields,field_description:sale_timesheet.field_product_product__project_id
+#: model:ir.model.fields,field_description:sale_timesheet.field_product_template__project_id
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_invoice__project_id
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_sale_order__project_id
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_sale_line_employee_map__project_id
+#: model:ir.model.fields,field_description:sale_timesheet.field_sale_order__project_id
+msgid "Project"
+msgstr "项目"
+
+#. module: sale_timesheet
+#: model:ir.model,name:sale_timesheet.model_project_sale_line_employee_map
+msgid "Project Sales line, employee mapping"
+msgstr "项目 销售线、员工映射"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_product_product__project_template_id
+#: model:ir.model.fields,field_description:sale_timesheet.field_product_template__project_template_id
+msgid "Project Template"
+msgstr "项目模板"
+
+#. module: sale_timesheet
+#: model:ir.model,name:sale_timesheet.model_project_update
+msgid "Project Update"
+msgstr "项目更新"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,help:sale_timesheet.field_project_create_sale_order__project_id
+msgid "Project for which we are creating a sales order"
+msgstr "我们正在创建销售订单的项目"
+
+#. module: sale_timesheet
+#: model:ir.model.fields.selection,name:sale_timesheet.selection__project_project__pricing_type__fixed_rate
+msgid "Project rate"
+msgstr "项目费率"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,help:sale_timesheet.field_project_create_invoice__project_id
+msgid "Project to make billable"
+msgstr "可计费项目"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/controllers/portal.py:0
+#, python-format
+msgid "Quotation"
+msgstr "报价"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.project_update_default_description
+msgid "Remaining"
+msgstr "其余"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.project_sharing_inherit_project_task_view_form
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.project_task_view_form_inherit_sale_timesheet
+msgid "Remaining Days on SO"
+msgstr "SO 剩余天数"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.portal_timesheet_table_inherit
+msgid "Remaining Days on SO:"
+msgstr "SO 的剩余天数："
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_task__remaining_hours_available
+#: model:ir.model.fields,field_description:sale_timesheet.field_sale_order_line__remaining_hours_available
+msgid "Remaining Hours Available"
+msgstr "剩余可用时间"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_task__remaining_hours_so
+#: model:ir.model.fields,field_description:sale_timesheet.field_sale_order_line__remaining_hours
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.project_sharing_inherit_project_task_view_form
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.project_task_view_form_inherit_sale_timesheet
+msgid "Remaining Hours on SO"
+msgstr "SO 剩余时间"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.portal_timesheet_table_inherit
+msgid "Remaining Hours on SO:"
+msgstr "SO 剩余时间："
+
+#. module: sale_timesheet
+#: model_terms:ir.actions.act_window,help:sale_timesheet.timesheet_action_billing_report
+msgid ""
+"Review your timesheets by billing type and make sure your time is billable."
+msgstr "按计费类型查看您的工时单，确保您的时间可计费。"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_task__so_analytic_account_id
+msgid "Sale Order Analytic Account"
+msgstr "销售订单分析账户"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_project__sale_line_employee_ids
+msgid "Sale line/Employee map"
+msgstr "销售线/员工地图"
+
+#. module: sale_timesheet
+#: model:ir.model,name:sale_timesheet.model_sale_advance_payment_inv
+msgid "Sales Advance Payment Invoice"
+msgstr "销售预付款发票"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/controllers/portal.py:0
+#: code:addons/sale_timesheet/controllers/portal.py:0
+#: model:ir.model,name:sale_timesheet.model_sale_order
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_sale_order__sale_order_id
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_task__sale_order_id
+#: model:ir.model.fields,field_description:sale_timesheet.field_timesheets_analysis_report__order_id
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.hr_timesheet_report_search_sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.timesheet_view_search
+#, python-format
+msgid "Sales Order"
+msgstr "销售订单"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/controllers/portal.py:0
+#: code:addons/sale_timesheet/controllers/portal.py:0
+#: model:ir.model.fields,field_description:sale_timesheet.field_account_analytic_line__so_line
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_sale_line_employee_map__sale_line_id
+#: model:ir.model.fields,field_description:sale_timesheet.field_timesheets_analysis_report__so_line
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.hr_timesheet_report_search_sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.portal_my_timesheets_inherit
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.report_timesheet_sale_order
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.timesheet_view_search
+#, python-format
+msgid "Sales Order Item"
+msgstr "销售订单项目"
+
+#. module: sale_timesheet
+#: model:ir.model,name:sale_timesheet.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "销售订单线"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.project_project_view_kanban_inherit_sale_timesheet_so_button
+msgid "Sales Orders"
+msgstr "销售订单"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,help:sale_timesheet.field_project_project__sale_line_employee_ids
+msgid ""
+"Sales order item that will be selected by default on the timesheets of the corresponding employee. It bypasses the sales order item defined on the project and the task, and can be modified on each timesheet entry if necessary. In other words, it defines the rate at which an employee's time is billed based on their expertise, skills or experience, for instance.\n"
+"If you would like to bill the same service at a different rate, you need to create two separate sales order items as each sales order item can only have a single unit price at a time.\n"
+"You can also define the hourly company cost of your employees for their timesheets on this project specifically. It will bypass the timesheet cost set on the employee."
+msgstr ""
+"在相应员工的考勤表上默认选择的销售订单项目。它绕过了在项目和任务中定义的销售订单项目，如有必要，可在每次输入考勤表时进行修改。换句话说，它定义了根据员工的专业知识、技能或经验等计算其工时的费率。\n"
+"如果想以不同的费率对同一服务计费，则需要创建两个单独的销售订单项目，因为每个销售订单项目一次只能有一个单价。\n"
+"您还可以在此项目中为员工的考勤表专门定义每小时的公司成本。它将绕过为员工设置的考勤表成本。"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,help:sale_timesheet.field_account_analytic_line__so_line
+msgid ""
+"Sales order item to which the time spent will be added in order to be "
+"invoiced to your customer. Remove the sales order item for the timesheet "
+"entry to be non-billable."
+msgstr "将花费的时间添加到销售订单项目中，以便向客户开具发票。移除销售订单项目，考勤表条目将无法开具发票。"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,help:sale_timesheet.field_project_task__sale_order_id
+msgid "Sales order to which the task is linked."
+msgstr "任务所关联的销售订单。"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/controllers/portal.py:0
+#, python-format
+msgid "Search in Invoice"
+msgstr "在发票中搜索"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/controllers/portal.py:0
+#, python-format
+msgid "Search in Sales Order"
+msgstr "在销售订单中搜索"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/controllers/portal.py:0
+#, python-format
+msgid "Search in Sales Order Item"
+msgstr "在销售订单项目中搜索"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,help:sale_timesheet.field_sale_order__project_id
+msgid "Select a non billable project on which tasks can be created."
+msgstr "选择可创建任务的非计费项目。"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.res_config_settings_view_form
+msgid "Sell services and invoice time spent"
+msgstr "销售服务并开具发票"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_sale_order_line__product_id
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.project_update_default_description
+msgid "Service"
+msgstr "服务"
+
+#. module: sale_timesheet
+#: model:ir.model.fields.selection,name:sale_timesheet.selection__account_analytic_line__timesheet_invoice_type__service_revenues
+#: model:ir.model.fields.selection,name:sale_timesheet.selection__timesheets_analysis_report__timesheet_invoice_type__service_revenues
+msgid "Service Revenues"
+msgstr "服务收入"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_product_product__service_upsell_threshold_ratio
+#: model:ir.model.fields,field_description:sale_timesheet.field_product_template__service_upsell_threshold_ratio
+msgid "Service Upsell Threshold Ratio"
+msgstr "服务倒卖阈值比率"
+
+#. module: sale_timesheet
+#: model:product.template,name:sale_timesheet.time_product_product_template
+msgid "Service on Timesheet"
+msgstr "时间表上的服务"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,help:sale_timesheet.field_project_project__timesheet_product_id
+#: model:ir.model.fields,help:sale_timesheet.field_project_task__timesheet_product_id
+msgid ""
+"Service that will be used by default when invoicing the time spent on a "
+"task. It can be modified on each task individually by selecting a specific "
+"sales order item."
+msgstr "在对任务所花费的时间开具发票时，将默认使用该服务。可通过选择特定的销售订单项目，对每项任务进行单独修改。"
+
+#. module: sale_timesheet
+#: model:ir.actions.act_window,name:sale_timesheet.product_template_action_default_services
+msgid "Services"
+msgstr "服务"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.project_update_default_description
+msgid "Sold"
+msgstr "销售"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_sale_advance_payment_inv__date_start_invoice_timesheet
+msgid "Start Date"
+msgstr "开始日期"
+
+#. module: sale_timesheet
+#: model:ir.model,name:sale_timesheet.model_project_task
+msgid "Task"
+msgstr "任务"
+
+#. module: sale_timesheet
+#: model:ir.model,name:sale_timesheet.model_project_task_recurrence
+msgid "Task Recurrence"
+msgstr "任务重复"
+
+#. module: sale_timesheet
+#: model:ir.model.fields.selection,name:sale_timesheet.selection__project_project__pricing_type__task_rate
+msgid "Task rate"
+msgstr "任务率"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/models/product.py:0
+#: code:addons/sale_timesheet/models/product.py:0
+#: code:addons/sale_timesheet/models/product.py:0
+#: code:addons/sale_timesheet/models/product.py:0
+#, python-format
+msgid ""
+"The %s product is required by the Timesheets app and cannot be archived nor "
+"deleted."
+msgstr "Timesheets 应用程序需要 %s 产品，该产品既不能存档，也不能删除。"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/models/product.py:0
+#, python-format
+msgid ""
+"The %s product is required by the Timesheets app and cannot be linked to a "
+"company."
+msgstr "Timesheets 应用程序需要使用 %s 产品，该产品不能与公司关联。"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/wizard/project_create_sale_order.py:0
+#, python-format
+msgid ""
+"The Sales Order cannot be created because you did not enter some employees that entered timesheets on this project. Please list all the relevant employees before creating the Sales Order.\n"
+"Missing employee(s): %s"
+msgstr ""
+"无法创建销售订单的原因是，您没有输入为该项目输入考勤表的某些员工。请在创建销售订单前列出所有相关员工。\n"
+"缺少的员工：%s"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.project_update_default_description
+msgid "The cost of the project is now at"
+msgstr "该项目的费用目前为"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/wizard/project_create_sale_order.py:0
+#, python-format
+msgid "The project has already a sale order."
+msgstr "该项目已获得销售订单。"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/wizard/project_create_sale_order.py:0
+#, python-format
+msgid "The project is already linked to a sales order item."
+msgstr "该项目已与销售订单项目关联。"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/wizard/project_create_sale_order.py:0
+#, python-format
+msgid ""
+"The sales order cannot be created because some timesheets of this project "
+"are already linked to another sales order."
+msgstr "无法创建销售订单，因为此项目的一些考勤表已与另一个销售订单关联。"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/wizard/project_create_invoice.py:0
+#, python-format
+msgid "The selected Sales Order should contain something to invoice."
+msgstr "所选销售订单应包含发票内容。"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,help:sale_timesheet.field_project_project__pricing_type
+#: model:ir.model.fields,help:sale_timesheet.field_project_task__pricing_type
+msgid ""
+"The task rate is perfect if you would like to bill different services to "
+"different customers at different rates. The fixed rate is perfect if you "
+"bill a service at a fixed rate per hour or day worked regardless of the "
+"employee who performed it. The employee rate is preferable if your employees"
+" deliver the same service at a different rate. For instance, junior and "
+"senior consultants would deliver the same service (= consultancy), but at a "
+"different rate because of their level of seniority."
+msgstr ""
+"如果您想以不同的费率向不同的客户提供不同的服务，那么任务费率就是您的理想选择。如果您想以每小时或每天的固定费率为某项服务计费，而不考虑执行这项服务的员工，那么固定费率就是您的理想选择。如果您的员工以不同的费率提供相同的服务，则最好使用员工费率。例如，初级和高级顾问提供相同的服务（="
+" 咨询），但由于资历不同，收费标准也不同。"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,help:sale_timesheet.field_project_sale_line_employee_map__cost
+msgid ""
+"This cost overrides the employee's default employee hourly wage in "
+"employee's HR Settings"
+msgstr "这笔费用将覆盖员工人力资源设置中默认的员工小时工资。"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_product_product__service_upsell_threshold
+#: model:ir.model.fields,field_description:sale_timesheet.field_product_template__service_upsell_threshold
+msgid "Threshold"
+msgstr "阈值"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.product_template_view_search_sale_timesheet
+msgid "Time-based services"
+msgstr "基于时间的服务"
+
+#. module: sale_timesheet
+#: model:ir.actions.act_window,name:sale_timesheet.timesheet_action_from_plan
+#: model:ir.actions.act_window,name:sale_timesheet.timesheet_action_plan_pivot
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.view_hr_timesheet_line_graph_employee_per_date
+msgid "Timesheet"
+msgstr "时间表"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.timesheets_analysis_report_graph_invoice_type
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.timesheets_analysis_report_pivot_invoice_type
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.view_hr_timesheet_line_graph_employee_per_date
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.view_hr_timesheet_line_pivot_billing_rate
+msgid "Timesheet Costs"
+msgstr "时间表成本"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_account_bank_statement_line__timesheet_encode_uom_id
+#: model:ir.model.fields,field_description:sale_timesheet.field_account_move__timesheet_encode_uom_id
+#: model:ir.model.fields,field_description:sale_timesheet.field_account_payment__timesheet_encode_uom_id
+#: model:ir.model.fields,field_description:sale_timesheet.field_sale_order__timesheet_encode_uom_id
+msgid "Timesheet Encoding Unit"
+msgstr "时间表编码部门"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_project__timesheet_product_id
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_task__timesheet_product_id
+msgid "Timesheet Product"
+msgstr "时间表产品"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_timesheets_analysis_report__timesheet_revenues
+#: model:ir.model.fields.selection,name:sale_timesheet.selection__account_analytic_line__timesheet_invoice_type__timesheet_revenues
+#: model:ir.model.fields.selection,name:sale_timesheet.selection__timesheets_analysis_report__timesheet_invoice_type__timesheet_revenues
+msgid "Timesheet Revenues"
+msgstr "时间表收入"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_account_bank_statement_line__timesheet_total_duration
+#: model:ir.model.fields,field_description:sale_timesheet.field_account_move__timesheet_total_duration
+#: model:ir.model.fields,field_description:sale_timesheet.field_account_payment__timesheet_total_duration
+#: model:ir.model.fields,field_description:sale_timesheet.field_sale_order__timesheet_total_duration
+msgid "Timesheet Total Duration"
+msgstr "时间表总时长"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_sale_order__timesheet_count
+msgid "Timesheet activities"
+msgstr "时间表活动"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_sale_order__timesheet_ids
+msgid "Timesheet activities associated to this sale"
+msgstr "与此次销售相关的时间表活动"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/models/account_move.py:0
+#: model:ir.actions.act_window,name:sale_timesheet.action_timesheet_from_invoice
+#: model:ir.actions.act_window,name:sale_timesheet.timesheet_action_from_sales_order
+#: model:ir.actions.act_window,name:sale_timesheet.timesheet_action_from_sales_order_item
+#: model:ir.actions.report,name:sale_timesheet.timesheet_report_account_move
+#: model:ir.actions.report,name:sale_timesheet.timesheet_report_sale_order
+#: model:ir.model.fields,field_description:sale_timesheet.field_account_bank_statement_line__timesheet_ids
+#: model:ir.model.fields,field_description:sale_timesheet.field_account_move__timesheet_ids
+#: model:ir.model.fields,field_description:sale_timesheet.field_account_payment__timesheet_ids
+#: model:ir.model.fields,field_description:sale_timesheet.field_sale_order_line__timesheet_ids
+#: model:ir.model.fields.selection,name:sale_timesheet.selection__sale_order_line__qty_delivered_method__timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.timesheets_analysis_report_graph_invoice_type
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.view_hr_timesheet_line_pivot_billing_rate
+#, python-format
+msgid "Timesheets"
+msgstr "时间表"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/models/project.py:0
+#, python-format
+msgid "Timesheets (Billed Manually)"
+msgstr "时间表（手动计费）"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/models/project.py:0
+#, python-format
+msgid "Timesheets (Billed on Milestones)"
+msgstr "时间表（按里程碑计费）"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/models/project.py:0
+#, python-format
+msgid "Timesheets (Billed on Timesheets)"
+msgstr "时间表（按时间表计费）"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/models/project.py:0
+#, python-format
+msgid "Timesheets (Fixed Price)"
+msgstr "时间表（固定价格）"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/models/project.py:0
+#, python-format
+msgid "Timesheets (Non Billable)"
+msgstr "时间表（不计费）"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.timesheets_analysis_report_pivot_invoice_type
+msgid "Timesheets Analysis"
+msgstr "时间表分析"
+
+#. module: sale_timesheet
+#: model:ir.model,name:sale_timesheet.model_timesheets_analysis_report
+msgid "Timesheets Analysis Report"
+msgstr "时间表分析报告"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.sale_advance_payment_inv_timesheet_view_form
+msgid "Timesheets Period"
+msgstr "时间表"
+
+#. module: sale_timesheet
+#: model:ir.actions.act_window,name:sale_timesheet.timesheet_action_billing_report
+msgid "Timesheets by Billing Type"
+msgstr "按计费类型分类的时间表"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.timesheet_sale_page
+msgid "Timesheets for the"
+msgstr "公司的时间表"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/models/project.py:0
+#, python-format
+msgid "Timesheets of %s"
+msgstr "%s 的时间表"
+
+#. module: sale_timesheet
+#: model:ir.model.fields.selection,name:sale_timesheet.selection__product_template__service_type__timesheet
+msgid "Timesheets on project (one fare per SO/Project)"
+msgstr "项目时间表（每个 SO/项目一份票价）"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/models/project.py:0
+#, python-format
+msgid "Timesheets revenues"
+msgstr "时间表收入"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,help:sale_timesheet.field_timesheets_analysis_report__margin
+msgid "Timesheets revenues minus the costs"
+msgstr "时间表收入减去成本"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.res_config_settings_view_form
+msgid "Timesheets taken into account when invoicing your time"
+msgstr "开具发票时考虑到您的工时表"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,help:sale_timesheet.field_res_config_settings__invoice_policy
+msgid "Timesheets taken when invoicing time spent"
+msgstr "开具发票时使用的时间表"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.project_update_default_description
+msgid "Total"
+msgstr "总计"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,help:sale_timesheet.field_project_create_invoice__amount_to_invoice
+msgid ""
+"Total amount to invoice on the sales order, including all items (services, "
+"storables, expenses, ...)"
+msgstr "在销售订单上开具发票的总金额，包括所有项目（服务、存储、费用......）。"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,help:sale_timesheet.field_account_bank_statement_line__timesheet_total_duration
+#: model:ir.model.fields,help:sale_timesheet.field_account_move__timesheet_total_duration
+#: model:ir.model.fields,help:sale_timesheet.field_account_payment__timesheet_total_duration
+#: model:ir.model.fields,help:sale_timesheet.field_sale_order__timesheet_total_duration
+msgid ""
+"Total recorded duration, expressed in the encoding UoM, and rounded to the "
+"unit"
+msgstr "记录的总时长，以编码 UoM 表示，并四舍五入到单位"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.portal_my_timesheets_inherit
+msgid "Total:"
+msgstr "共计"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_product_product__service_type
+#: model:ir.model.fields,field_description:sale_timesheet.field_product_template__service_type
+msgid "Track Service"
+msgstr "跟踪服务"
+
+#. module: sale_timesheet
+#: model_terms:ir.actions.act_window,help:sale_timesheet.action_timesheet_from_invoice
+msgid ""
+"Track your working hours by projects every day and invoice this time to your"
+" customers."
+msgstr "按项目跟踪您每天的工作时间，并向客户开具发票。"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_sale_order_line__price_unit
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_sale_line_employee_map__price_unit
+msgid "Unit Price"
+msgstr "单价"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,help:sale_timesheet.field_project_create_sale_order_line__price_unit
+msgid "Unit price of the sales order item."
+msgstr "销售订单项目的单价。"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/models/project.py:0
+#, python-format
+msgid "Value does not exist in the pricing type"
+msgstr "定价类型不存在价值"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.portal_invoice_page_inherit
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.sale_order_portal_content_inherit
+msgid "View Timesheets"
+msgstr "查看时间表"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.view_product_timesheet_form
+msgid "Warn the salesperson for an upsell when work done exceeds"
+msgstr "当完成的工作超出预算时，提醒销售人员追加销售。"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_project__warning_employee_rate
+msgid "Warning Employee Rate"
+msgstr "警告员工率"
+
+#. module: sale_timesheet
+#: model:ir.model.fields,field_description:sale_timesheet.field_project_create_sale_order_line__wizard_id
+msgid "Wizard"
+msgstr "向导"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/wizard/project_create_invoice.py:0
+#: code:addons/sale_timesheet/wizard/project_create_sale_order.py:0
+#, python-format
+msgid "You can only apply this action from a project."
+msgstr "您只能从项目中应用此操作。"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/models/project.py:0
+#, python-format
+msgid ""
+"You cannot link a billable project to a sales order item that comes from an "
+"expense or a vendor bill."
+msgstr "您不能将计费项目与来自费用或供应商账单的销售订单项目联系起来。"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/models/project.py:0
+#, python-format
+msgid ""
+"You cannot link a billable project to a sales order item that is not a "
+"service."
+msgstr "您不能将计费项目与不属于服务的销售订单项目挂钩。"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/models/account.py:0
+#, python-format
+msgid "You cannot modify timesheets that are already invoiced."
+msgstr "您不能修改已开具发票的工时单。"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/models/account.py:0
+#, python-format
+msgid "You cannot remove a timesheet that has already been invoiced."
+msgstr "您不能删除已开具发票的时间表。"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/models/sale_order.py:0
+#, python-format
+msgid "day"
+msgstr "日"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/models/sale_order.py:0
+#: code:addons/sale_timesheet/wizard/project_create_sale_order.py:0
+#, python-format
+msgid "days"
+msgstr "天数"
+
+#. module: sale_timesheet
+#. odoo-python
+#: code:addons/sale_timesheet/wizard/project_create_sale_order.py:0
+#, python-format
+msgid "hours"
+msgstr "工作时间"
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.project_update_default_description
+msgid "margin ("
+msgstr "保证金 ("
+
+#. module: sale_timesheet
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.view_product_timesheet_form
+msgid "of hours sold."
+msgstr "销售小时数。"

@@ -1,7 +1,7 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* purchase_stock
-# 
+#
 # Translators:
 # IT WEDOO, 2022
 # Grzegorz Krukar <grzegorzgk1@gmail.com>, 2022
@@ -22,7 +22,7 @@
 # Tadeusz Karpiński <tadeusz.karpinski@braintec.com>, 2023
 # Tadeusz Karpiński <tadeuszkarpinski@gmail.com>, 2023
 # Damian Ratus, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
@@ -31,10 +31,10 @@ msgstr ""
 "PO-Revision-Date: 2022-09-22 05:54+0000\n"
 "Last-Translator: Damian Ratus, 2024\n"
 "Language-Team: Polish (https://app.transifex.com/odoo/teams/41243/pl/)\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: pl\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
 #. module: purchase_stock
@@ -290,7 +290,7 @@ msgstr "Data realizacji"
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.vendor_delay_report_filter
 msgid "Effective Date Last Year"
-msgstr ""
+msgstr "Data wejścia w życie Ostatni rok"
 
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.exception_on_po
@@ -513,6 +513,9 @@ msgid ""
 " number of ordered products.x is either the System Parameter "
 "purchase_stock.on_time_delivery_days or the default 365"
 msgstr ""
+"W ciągu ostatnich x dni; liczba produktów otrzymanych na czas podzielona "
+"przez liczbę zamówionych produktów. x jest parametrem systemowym "
+"purchase_stock.on_time_delivery_days lub domyślną wartością 365."
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_product_product__purchase_order_line_ids
@@ -598,7 +601,7 @@ msgstr "Raport zakupowy"
 #: code:addons/purchase_stock/models/stock_rule.py:0
 #, python-format
 msgid "Purchase Security Lead Time"
-msgstr ""
+msgstr "Czas realizacji zamówienia"
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_warehouse_orderpoint__purchase_visibility_days

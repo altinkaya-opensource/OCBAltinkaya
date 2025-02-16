@@ -1,30 +1,24 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* sale_crm
-# 
-# Translators:
-# Erwin van der Ploeg <erwin@odooexperts.nl>, 2022
-# Martin Trigaux, 2022
-# Jolien De Paepe, 2022
-# 
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.5alpha1\n"
+"Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-20 09:02+0000\n"
-"PO-Revision-Date: 2022-09-22 05:54+0000\n"
-"Last-Translator: Jolien De Paepe, 2022\n"
-"Language-Team: Dutch (https://app.transifex.com/odoo/teams/41243/nl/)\n"
+"POT-Creation-Date: 2025-02-14 19:45+0000\n"
+"PO-Revision-Date: 2025-02-14 19:45+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: nl\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: \n"
 
 #. module: sale_crm
 #: model_terms:ir.ui.view,arch_db:sale_crm.crm_case_form_view_oppor
 msgid "<span class=\"o_stat_text\"> Orders</span>"
-msgstr "<span class=\"o_stat_text\"> Orders</span>"
+msgstr "<span class=\"o_stat_text\"> Bestellingen</span>"
 
 #. module: sale_crm
 #: model:ir.model.fields,field_description:sale_crm.field_crm_quotation_partner__lead_id
@@ -152,7 +146,7 @@ msgstr "Verkoopkans"
 #. module: sale_crm
 #: model:ir.model.fields,field_description:sale_crm.field_crm_lead__order_ids
 msgid "Orders"
-msgstr "Orders"
+msgstr "Bestellingen"
 
 #. module: sale_crm
 #: model:ir.actions.act_window,name:sale_crm.sale_action_quotations_new
@@ -175,6 +169,7 @@ msgid "Sale Orders"
 msgstr "Verkooporders"
 
 #. module: sale_crm
+#. odoo-python
 #: code:addons/sale_crm/models/crm_team.py:0
 #, python-format
 msgid "Sales Analysis"
@@ -191,6 +186,7 @@ msgid "Sales Team"
 msgstr "Verkoopteam"
 
 #. module: sale_crm
+#. odoo-python
 #: code:addons/sale_crm/models/crm_team.py:0
 #, python-format
 msgid "Sales: Untaxed Total"
@@ -212,6 +208,7 @@ msgid "User"
 msgstr "Gebruiker"
 
 #. module: sale_crm
+#. odoo-python
 #: code:addons/sale_crm/wizard/crm_opportunity_to_quotation.py:0
 #, python-format
 msgid "You can only apply this action from a lead."

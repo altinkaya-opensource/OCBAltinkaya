@@ -1,31 +1,19 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* spreadsheet_dashboard_purchase
-# 
-# Translators:
-# KeyVillage, 2023
-# Ивайло Малинов <iv.malinov@gmail.com>, 2023
-# Albena Mincheva <albena_vicheva@abv.bg>, 2023
-# Ivan Ivanov, 2023
-# aleksandar ivanov, 2023
-# kalatchev, 2023
-# Maria Boyadjieva <marabo2000@gmail.com>, 2023
-# Elena Varbanova, 2024
-# Petko Karamotchev, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-25 10:43+0000\n"
-"PO-Revision-Date: 2022-09-29 09:44+0000\n"
-"Last-Translator: Petko Karamotchev, 2024\n"
-"Language-Team: Bulgarian (https://app.transifex.com/odoo/teams/41243/bg/)\n"
+"POT-Creation-Date: 2025-02-14 19:27+0000\n"
+"PO-Revision-Date: 2025-02-14 19:27+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: bg\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: \n"
 
 #. module: spreadsheet_dashboard_purchase
 #. odoo-javascript
@@ -137,14 +125,14 @@ msgstr "Предишен"
 #: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
 #, python-format
 msgid "Purchase Analysis by Partner Country"
-msgstr ""
+msgstr "Анализ на покупките по държави партньори"
 
 #. module: spreadsheet_dashboard_purchase
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
 #, python-format
 msgid "Purchase Analysis by Purchase Representative"
-msgstr ""
+msgstr "Анализ на покупките от представител по покупките"
 
 #. module: spreadsheet_dashboard_purchase
 #. odoo-javascript
@@ -172,7 +160,7 @@ msgstr "Закупен"
 #: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
 #, python-format
 msgid "Qty ordered"
-msgstr ""
+msgstr "Поръчано количество"
 
 #. module: spreadsheet_dashboard_purchase
 #. odoo-javascript
@@ -193,7 +181,7 @@ msgstr "Източник"
 #: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
 #, python-format
 msgid "Sourcing by Country"
-msgstr ""
+msgstr "Доставка по държави"
 
 #. module: spreadsheet_dashboard_purchase
 #. odoo-javascript
@@ -221,14 +209,14 @@ msgstr "Топ доставчици"
 #: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
 #, python-format
 msgid "Top Vendors by Amount"
-msgstr ""
+msgstr "Топ доставчици по сума"
 
 #. module: spreadsheet_dashboard_purchase
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
 #, python-format
 msgid "Untaxed total"
-msgstr ""
+msgstr "Необлагаема сума"
 
 #. module: spreadsheet_dashboard_purchase
 #. odoo-javascript
@@ -261,11 +249,11 @@ msgstr "от последния период"
 #: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
 #, python-format
 msgid "stats - current"
-msgstr ""
+msgstr "статистики - текущи"
 
 #. module: spreadsheet_dashboard_purchase
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
 #, python-format
 msgid "stats - previous"
-msgstr ""
+msgstr "статистики - предишни"

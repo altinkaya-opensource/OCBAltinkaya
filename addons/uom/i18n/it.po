@@ -1,25 +1,19 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* uom
-# 
-# Translators:
-# Martin Trigaux, 2022
-# Marianna Ciofani, 2023
-# Sergio Zanchetta <primes2h@gmail.com>, 2024
-# 
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0beta\n"
+"Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-23 08:03+0000\n"
-"PO-Revision-Date: 2022-09-22 05:55+0000\n"
-"Last-Translator: Sergio Zanchetta <primes2h@gmail.com>, 2024\n"
-"Language-Team: Italian (https://app.transifex.com/odoo/teams/41243/it/)\n"
+"POT-Creation-Date: 2025-02-14 19:28+0000\n"
+"PO-Revision-Date: 2025-02-14 19:28+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: it\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Plural-Forms: \n"
 
 #. module: uom
 #: model_terms:ir.ui.view,arch_db:uom.product_uom_form_view
@@ -87,7 +81,7 @@ msgstr "Colore"
 #. module: uom
 #: model:ir.model.fields,field_description:uom.field_uom_uom__ratio
 msgid "Combined Ratio"
-msgstr "Combined Ratio"
+msgstr "Rapporto combinato"
 
 #. module: uom
 #: model:ir.model.fields,help:uom.field_uom_uom__category_id
@@ -114,7 +108,7 @@ msgstr "Data creazione"
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_day
 msgid "Days"
-msgstr "Giorni"
+msgstr "Giorno/i"
 
 #. module: uom
 #: model:ir.model.fields,field_description:uom.field_uom_category__display_name
@@ -125,7 +119,7 @@ msgstr "Nome visualizzato"
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_dozen
 msgid "Dozens"
-msgstr "Dozzine"
+msgstr "Dozzina/e"
 
 #. module: uom
 #: model_terms:ir.ui.view,arch_db:uom.uom_uom_view_search
@@ -135,7 +129,7 @@ msgstr "Raggruppa per"
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_hour
 msgid "Hours"
-msgstr "Ore"
+msgstr "Ora/e"
 
 #. module: uom
 #: model:ir.model.fields,help:uom.field_uom_uom__factor_inv
@@ -238,6 +232,7 @@ msgid "Smaller than the reference Unit of Measure"
 msgstr "Minore dell'unità di misura di riferimento"
 
 #. module: uom
+#. odoo-python
 #: code:addons/uom/models/uom_uom.py:0
 #, python-format
 msgid ""
@@ -277,6 +272,7 @@ msgid "The conversion ratio for a unit of measure cannot be 0!"
 msgstr "Il rapporto di conversione per una unità di misura non può essere 0."
 
 #. module: uom
+#. odoo-python
 #: code:addons/uom/models/uom_uom.py:0
 #, python-format
 msgid ""
@@ -297,6 +293,7 @@ msgid "The rounding precision must be strictly positive."
 msgstr "La precisione di arrotondamento deve essere strettamente positiva."
 
 #. module: uom
+#. odoo-python
 #: code:addons/uom/models/uom_uom.py:0
 #, python-format
 msgid ""
@@ -311,6 +308,7 @@ msgstr ""
 "stessa categoria."
 
 #. module: uom
+#. odoo-python
 #: code:addons/uom/models/uom_uom.py:0
 #, python-format
 msgid "The value of ratio could not be Zero"
@@ -382,6 +380,7 @@ msgstr ""
 "            ore, giorni."
 
 #. module: uom
+#. odoo-python
 #: code:addons/uom/models/uom_uom.py:0
 #, python-format
 msgid "UoM category %s must have at least one reference unit of measure."
@@ -389,12 +388,14 @@ msgstr ""
 "La categoria UdM %s deve avere almeno un'unità di misura di riferimento."
 
 #. module: uom
+#. odoo-python
 #: code:addons/uom/models/uom_uom.py:0
 #, python-format
 msgid "UoM category %s should have a reference unit of measure."
 msgstr "La categoria UdM %s deve avere un'unità di misura di riferimento."
 
 #. module: uom
+#. odoo-python
 #: code:addons/uom/models/uom_uom.py:0
 #, python-format
 msgid "UoM category %s should only have one reference unit of measure."
@@ -412,6 +413,7 @@ msgid "Volume"
 msgstr "Volume"
 
 #. module: uom
+#. odoo-python
 #: code:addons/uom/models/uom_uom.py:0
 #, python-format
 msgid "Warning for %s"
@@ -425,7 +427,7 @@ msgstr "Peso"
 #. module: uom
 #: model:uom.category,name:uom.uom_categ_wtime
 msgid "Working Time"
-msgstr "Orario lavorativo"
+msgstr "Orario di lavoro"
 
 #. module: uom
 #: model_terms:ir.actions.act_window,help:uom.product_uom_form_action
@@ -444,12 +446,12 @@ msgstr "cm"
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_floz
 msgid "fl oz (US)"
-msgstr "fl oz (Stati Uniti)"
+msgstr "fl oz"
 
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_foot
 msgid "ft"
-msgstr "ft"
+msgstr "piede(ft)"
 
 #. module: uom
 #: model:uom.uom,name:uom.uom_square_foot
@@ -464,12 +466,12 @@ msgstr "ft³"
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_gal
 msgid "gal (US)"
-msgstr "gal (Stati Uniti)"
+msgstr "gal(i)"
 
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_inch
 msgid "in"
-msgstr "in"
+msgstr "pollice(i)"
 
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_cubic_inch
@@ -489,12 +491,12 @@ msgstr "km"
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_lb
 msgid "lb"
-msgstr "lb"
+msgstr "lb(s)"
 
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_mile
 msgid "mi"
-msgstr "mi"
+msgstr "miglio(i)"
 
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_millimeter
@@ -514,12 +516,12 @@ msgstr "m³"
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_oz
 msgid "oz"
-msgstr "oz"
+msgstr "oz(s)"
 
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_qt
 msgid "qt (US)"
-msgstr "qt (Stati Uniti)"
+msgstr "quantità"
 
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_yard

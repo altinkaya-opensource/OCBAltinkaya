@@ -1,36 +1,19 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* note
-# 
-# Translators:
-# Paweł Wodyński <pw@myodoo.pl>, 2022
-# Andrzej Wiśniewski <a.wisniewski@hadron.eu.com>, 2022
-# Dariusz Żbikowski <darek@krokus.com.pl>, 2022
-# Dawid Prus, 2022
-# Judyta Kaźmierczak <judyta.kazmierczak@openglobe.pl>, 2022
-# Natalia Gros <nag@odoo.com>, 2022
-# Piotr Strębski <strebski@gmail.com>, 2022
-# Karol Rybak <karolrybak85@gmail.com>, 2022
-# Martin Trigaux, 2022
-# Marcin Młynarczyk <mlynarczyk@gmail.com>, 2022
-# Grzegorz Grzelak <grzegorz.grzelak@openglobe.pl>, 2022
-# Wojciech Warczakowski <w.warczakowski@gmail.com>, 2022
-# Piotr Szlązak <szlazakpiotr@gmail.com>, 2022
-# Tadeusz Karpiński <tadeuszkarpinski@gmail.com>, 2023
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-06 13:31+0000\n"
-"PO-Revision-Date: 2022-09-22 05:53+0000\n"
-"Last-Translator: Tadeusz Karpiński <tadeuszkarpinski@gmail.com>, 2023\n"
-"Language-Team: Polish (https://app.transifex.com/odoo/teams/41243/pl/)\n"
+"POT-Creation-Date: 2025-02-14 19:51+0000\n"
+"PO-Revision-Date: 2025-02-14 19:51+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: pl\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"Plural-Forms: \n"
 
 #. module: note
 #: model_terms:ir.ui.view,arch_db:note.view_note_note_kanban
@@ -138,6 +121,26 @@ msgid "By sticky note Category"
 msgstr "Według kategorii karteczki"
 
 #. module: note
+#: model:ir.model.fields,field_description:note.field_mail_activity__changeset_change_ids
+#: model:ir.model.fields,field_description:note.field_mail_activity_type__changeset_change_ids
+#: model:ir.model.fields,field_description:note.field_note_note__changeset_change_ids
+#: model:ir.model.fields,field_description:note.field_note_stage__changeset_change_ids
+#: model:ir.model.fields,field_description:note.field_note_tag__changeset_change_ids
+#: model:ir.model.fields,field_description:note.field_res_users__changeset_change_ids
+msgid "Changeset Changes"
+msgstr "Zmiany w zestawie zmian"
+
+#. module: note
+#: model:ir.model.fields,field_description:note.field_mail_activity__changeset_ids
+#: model:ir.model.fields,field_description:note.field_mail_activity_type__changeset_ids
+#: model:ir.model.fields,field_description:note.field_note_note__changeset_ids
+#: model:ir.model.fields,field_description:note.field_note_stage__changeset_ids
+#: model:ir.model.fields,field_description:note.field_note_tag__changeset_ids
+#: model:ir.model.fields,field_description:note.field_res_users__changeset_ids
+msgid "Changesets"
+msgstr "Changesets"
+
+#. module: note
 #. odoo-javascript
 #: code:addons/note/static/src/components/activity_menu_view/activity_menu_view.xml:0
 #, python-format
@@ -159,6 +162,36 @@ msgstr "Firma"
 #: model:ir.ui.menu,name:note.menu_note_configuration
 msgid "Configuration"
 msgstr "Konfiguracja"
+
+#. module: note
+#: model:ir.model.fields,field_description:note.field_mail_activity__count_changesets
+#: model:ir.model.fields,field_description:note.field_mail_activity_type__count_changesets
+#: model:ir.model.fields,field_description:note.field_note_note__count_changesets
+#: model:ir.model.fields,field_description:note.field_note_stage__count_changesets
+#: model:ir.model.fields,field_description:note.field_note_tag__count_changesets
+#: model:ir.model.fields,field_description:note.field_res_users__count_changesets
+msgid "Count Changesets"
+msgstr "Proszę liczyć zestawy zmian"
+
+#. module: note
+#: model:ir.model.fields,field_description:note.field_mail_activity__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:note.field_mail_activity_type__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:note.field_note_note__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:note.field_note_stage__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:note.field_note_tag__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:note.field_res_users__count_pending_changeset_changes
+msgid "Count Pending Changeset Changes"
+msgstr "Proszę policzyć oczekujące zmiany w zestawie zmian"
+
+#. module: note
+#: model:ir.model.fields,field_description:note.field_mail_activity__count_pending_changesets
+#: model:ir.model.fields,field_description:note.field_mail_activity_type__count_pending_changesets
+#: model:ir.model.fields,field_description:note.field_note_note__count_pending_changesets
+#: model:ir.model.fields,field_description:note.field_note_stage__count_pending_changesets
+#: model:ir.model.fields,field_description:note.field_note_tag__count_pending_changesets
+#: model:ir.model.fields,field_description:note.field_res_users__count_pending_changesets
+msgid "Count Pending Changesets"
+msgstr "Proszę policzyć oczekujące zestawy zmian"
 
 #. module: note
 #: model:ir.model.fields,field_description:note.field_note_note__create_uid
@@ -260,6 +293,7 @@ msgstr "Jeśli zaznaczone, nowe wiadomości wymagają twojej uwagi."
 
 #. module: note
 #: model:ir.model.fields,help:note.field_note_note__message_has_error
+#: model:ir.model.fields,help:note.field_note_note__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr ""
 "Jeśli zaznaczone, niektóre wiadomości napotkały błędy podczas doręczenia."
@@ -449,6 +483,11 @@ msgid "SAVE"
 msgstr "ZAPISZ"
 
 #. module: note
+#: model:ir.model.fields,field_description:note.field_note_note__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Błąd dostarczania wiadomości SMS"
+
+#. module: note
 #: model:ir.model.fields,field_description:note.field_note_note__sequence
 #: model:ir.model.fields,field_description:note.field_note_stage__sequence
 msgid "Sequence"
@@ -460,6 +499,16 @@ msgid "Show all records which has next action date is before today"
 msgstr ""
 "Pokaż wszystkie rekordy, których data kolejnej czynności przypada przed "
 "dzisiaj"
+
+#. module: note
+#: model:ir.model.fields,field_description:note.field_mail_activity__smart_search
+#: model:ir.model.fields,field_description:note.field_mail_activity_type__smart_search
+#: model:ir.model.fields,field_description:note.field_note_note__smart_search
+#: model:ir.model.fields,field_description:note.field_note_stage__smart_search
+#: model:ir.model.fields,field_description:note.field_note_tag__smart_search
+#: model:ir.model.fields,field_description:note.field_res_users__smart_search
+msgid "Smart Search"
+msgstr "Inteligentne wyszukiwanie"
 
 #. module: note
 #: model:ir.model.fields,field_description:note.field_note_note__stage_id
@@ -528,6 +577,36 @@ msgid "Tags"
 msgstr "Tagi"
 
 #. module: note
+#: model:ir.model.fields,help:note.field_mail_activity__count_pending_changeset_changes
+#: model:ir.model.fields,help:note.field_mail_activity_type__count_pending_changeset_changes
+#: model:ir.model.fields,help:note.field_note_note__count_pending_changeset_changes
+#: model:ir.model.fields,help:note.field_note_stage__count_pending_changeset_changes
+#: model:ir.model.fields,help:note.field_note_tag__count_pending_changeset_changes
+#: model:ir.model.fields,help:note.field_res_users__count_pending_changeset_changes
+msgid "The number of pending changes of this record"
+msgstr "Liczba oczekujących zmian tego rekordu"
+
+#. module: note
+#: model:ir.model.fields,help:note.field_mail_activity__count_pending_changesets
+#: model:ir.model.fields,help:note.field_mail_activity_type__count_pending_changesets
+#: model:ir.model.fields,help:note.field_note_note__count_pending_changesets
+#: model:ir.model.fields,help:note.field_note_stage__count_pending_changesets
+#: model:ir.model.fields,help:note.field_note_tag__count_pending_changesets
+#: model:ir.model.fields,help:note.field_res_users__count_pending_changesets
+msgid "The number of pending changesets of this record"
+msgstr "Liczba oczekujących zestawów zmian tego rekordu"
+
+#. module: note
+#: model:ir.model.fields,help:note.field_mail_activity__count_changesets
+#: model:ir.model.fields,help:note.field_mail_activity_type__count_changesets
+#: model:ir.model.fields,help:note.field_note_note__count_changesets
+#: model:ir.model.fields,help:note.field_note_stage__count_changesets
+#: model:ir.model.fields,help:note.field_note_tag__count_changesets
+#: model:ir.model.fields,help:note.field_res_users__count_changesets
+msgid "The overall number of changesets of this record"
+msgstr "Ogólna liczba zestawów zmian tego rekordu"
+
+#. module: note
 #. odoo-javascript
 #: code:addons/note/static/src/models/activity_menu_view.js:0
 #, python-format
@@ -553,3 +632,23 @@ msgstr "Typ wyjątku działania na rekordzie."
 #: model:ir.model,name:note.model_res_users
 msgid "User"
 msgstr "Użytkownik"
+
+#. module: note
+#: model:ir.model.fields,field_description:note.field_mail_activity__user_can_see_changeset
+#: model:ir.model.fields,field_description:note.field_mail_activity_type__user_can_see_changeset
+#: model:ir.model.fields,field_description:note.field_note_note__user_can_see_changeset
+#: model:ir.model.fields,field_description:note.field_note_stage__user_can_see_changeset
+#: model:ir.model.fields,field_description:note.field_note_tag__user_can_see_changeset
+#: model:ir.model.fields,field_description:note.field_res_users__user_can_see_changeset
+msgid "User Can See Changeset"
+msgstr "Użytkownik może zobaczyć zestaw zmian"
+
+#. module: note
+#: model:ir.model.fields,field_description:note.field_note_note__website_message_ids
+msgid "Website Messages"
+msgstr "Komunikaty na stronie internetowej"
+
+#. module: note
+#: model:ir.model.fields,help:note.field_note_note__website_message_ids
+msgid "Website communication history"
+msgstr "Historia komunikacji na stronie internetowej"

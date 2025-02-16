@@ -1,0 +1,1293 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* base_import
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-14 19:52+0000\n"
+"PO-Revision-Date: 2025-02-14 19:52+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid "%d records successfully imported"
+msgstr "%d εγγραφές που εισήχθησαν επιτυχώς"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid ""
+"A single column was found in the file, this often means the file separator "
+"is incorrect"
+msgstr ""
+"Βρέθηκε μία μοναδική στήλη στο αρχείο. Αυτό συχνά σημαίνει ότι ο διαχωριστής"
+" του αρχείου είναι λανθασμένος."
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid "Additional Fields"
+msgstr "Πρόσθετα πεδία"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Advanced"
+msgstr "Advanced"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Allow matching with subfields"
+msgstr "Επιτρέψτε την αντιστοίχιση με υποπεδία"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid ""
+"An unknown issue occurred during import (possibly lost connection, data "
+"limit exceeded or memory limits exceeded). Please retry in case the issue is"
+" transient. If the issue still occurs, try to split the file rather than "
+"import it at once."
+msgstr ""
+"Προέκυψε άγνωστο πρόβλημα κατά την εισαγωγή (πιθανόν απώλεια σύνδεσης, "
+"υπέρβαση ορίου δεδομένων ή υπέρβαση ορίων μνήμης). Παρακαλούμε επαναλάβετε "
+"την προσπάθεια σε περίπτωση που το πρόβλημα είναι παροδικό. Εάν το πρόβλημα "
+"εξακολουθεί να εμφανίζεται, δοκιμάστε να χωρίσετε το αρχείο αντί να το "
+"εισάγετε με τη μία."
+
+#. module: base_import
+#: model:ir.model,name:base_import.model_base
+msgid "Base"
+msgstr "Βάση"
+
+#. module: base_import
+#: model:ir.model,name:base_import.model_base_import_import
+msgid "Base Import"
+msgstr "Εισαγωγή βάσης"
+
+#. module: base_import
+#: model:ir.model,name:base_import.model_base_import_mapping
+msgid "Base Import Mapping"
+msgstr "Χαρτογράφηση εισαγωγής βάσης"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Batch Import"
+msgstr "Εισαγωγή παρτίδων"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Batch limit"
+msgstr "Όριο παρτίδας"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Cancel"
+msgstr "Ακύρωση"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Click 'Resume' to proceed with the import, resuming at line"
+msgstr ""
+"Κάντε κλικ στο \"Resume\" για να προχωρήσετε με την εισαγωγή, συνεχίζοντας "
+"στη γραμμή"
+
+#. module: base_import
+#. odoo-python
+#: code:addons/base_import/models/base_import.py:0
+#, python-format
+msgid "Column %s contains incorrect values (value: %s)"
+msgstr "Η στήλη %s περιέχει εσφαλμένες τιμές (τιμή: %s)"
+
+#. module: base_import
+#. odoo-python
+#: code:addons/base_import/models/base_import.py:0
+#, python-format
+msgid "Column %s contains incorrect values. Error in line %d: %s"
+msgstr "Η στήλη %s περιέχει εσφαλμένες τιμές. Σφάλμα στη γραμμή %d: %s"
+
+#. module: base_import
+#: model:ir.model.fields,field_description:base_import.field_base_import_mapping__column_name
+msgid "Column Name"
+msgstr "Όνομα στήλης"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid "Comma"
+msgstr "Κόμμα"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Comments"
+msgstr "Σχόλια"
+
+#. module: base_import
+#. odoo-python
+#: code:addons/base_import/models/base_import.py:0
+#, python-format
+msgid ""
+"Could not retrieve URL: %(url)s [%(field_name)s: L%(line_number)d]: "
+"%(error)s"
+msgstr ""
+"Δεν κατέστη δυνατή η ανάκτηση της διεύθυνσης URL: %(url)s [%(field_name)s: "
+"L%(line_number)d]: %(error)s"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Create new values"
+msgstr "Δημιουργία νέων αξιών"
+
+#. module: base_import
+#: model:ir.model.fields,field_description:base_import.field_base_import_import__create_uid
+#: model:ir.model.fields,field_description:base_import.field_base_import_mapping__create_uid
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char__create_uid
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_noreadonly__create_uid
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_readonly__create_uid
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_required__create_uid
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_states__create_uid
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_stillreadonly__create_uid
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_complex__create_uid
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_float__create_uid
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_m2o__create_uid
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_m2o_related__create_uid
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_m2o_required__create_uid
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_m2o_required_related__create_uid
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_o2m__create_uid
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_o2m_child__create_uid
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_preview__create_uid
+msgid "Created by"
+msgstr "Δημιουργήθηκε από"
+
+#. module: base_import
+#: model:ir.model.fields,field_description:base_import.field_base_import_import__create_date
+#: model:ir.model.fields,field_description:base_import.field_base_import_mapping__create_date
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char__create_date
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_noreadonly__create_date
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_readonly__create_date
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_required__create_date
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_states__create_date
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_stillreadonly__create_date
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_complex__create_date
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_float__create_date
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_m2o__create_date
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_m2o_related__create_date
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_m2o_required__create_date
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_m2o_required_related__create_date
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_o2m__create_date
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_o2m_child__create_date
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_preview__create_date
+msgid "Created on"
+msgstr "Δημιουργήθηκε στις"
+
+#. module: base_import
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_complex__currency_id
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_float__currency_id
+msgid "Currency"
+msgstr "Νόμισμα"
+
+#. module: base_import
+#. odoo-python
+#: code:addons/base_import/models/base_import.py:0
+#: code:addons/base_import/models/base_import.py:0
+#, python-format
+msgid "Database ID"
+msgstr "Αναγνωριστικό Βάσης Δεδομένων"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid "Date Format:"
+msgstr "Μορφή ημερομηνίας:"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid "Datetime Format:"
+msgstr "Μορφή ημερομηνίας:"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid "Decimal Separator:"
+msgstr "Δεκαδικός διαχωριστής:"
+
+#. module: base_import
+#: model:ir.model.fields,field_description:base_import.field_base_import_import__display_name
+#: model:ir.model.fields,field_description:base_import.field_base_import_mapping__display_name
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char__display_name
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_noreadonly__display_name
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_readonly__display_name
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_required__display_name
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_states__display_name
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_stillreadonly__display_name
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_complex__display_name
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_float__display_name
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_m2o__display_name
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_m2o_related__display_name
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_m2o_required__display_name
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_m2o_required_related__display_name
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_o2m__display_name
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_o2m_child__display_name
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_preview__display_name
+msgid "Display Name"
+msgstr "Εμφάνιση Ονόματος"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid "Dot"
+msgstr "Dot"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Download"
+msgstr "Λήψη"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Download Template"
+msgstr "Λήψη προτύπου"
+
+#. module: base_import
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_complex__dt
+msgid "Dt"
+msgstr "Dt"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid "Encoding:"
+msgstr "Κωδικοποίηση:"
+
+#. module: base_import
+#. odoo-python
+#: code:addons/base_import/models/base_import.py:0
+#, python-format
+msgid "Error Parsing Date [%s:L%d]: %s"
+msgstr "Error Parsing Date [%s:L%d]: %s"
+
+#. module: base_import
+#. odoo-python
+#: code:addons/base_import/models/base_import.py:0
+#, python-format
+msgid ""
+"Error while importing records: Text Delimiter should be a single character."
+msgstr ""
+"Σφάλμα κατά την εισαγωγή εγγραφών: Ο διαχωριστής κειμένου πρέπει να είναι "
+"ένας μόνο χαρακτήρας."
+
+#. module: base_import
+#. odoo-python
+#: code:addons/base_import/models/base_import.py:0
+#, python-format
+msgid ""
+"Error while importing records: all rows should be of the same size, but the "
+"title row has %d entries while the first row has %d. You may need to change "
+"the separator character."
+msgstr ""
+"Σφάλμα κατά την εισαγωγή εγγραφών: όλες οι γραμμές πρέπει να έχουν το ίδιο "
+"μέγεθος, αλλά η γραμμή τίτλου έχει %d καταχωρήσεις ενώ η πρώτη γραμμή έχει "
+"%d. Ίσως χρειαστεί να αλλάξετε τον διαχωριστικό χαρακτήρα."
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Estimated time left:"
+msgstr "Εκτιμώμενος χρόνος που απομένει:"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid "Everything seems valid."
+msgstr "Όλα φαίνονται έγκυρα"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Excel files are recommended as formatting is automatic."
+msgstr "Συνιστάται η χρήση αρχείων Excel, καθώς η μορφοποίηση είναι αυτόματη."
+
+#. module: base_import
+#. odoo-python
+#: code:addons/base_import/models/base_import.py:0
+#: code:addons/base_import/models/base_import.py:0
+#, python-format
+msgid "External ID"
+msgstr "Εξωτερικό Αναγνωριστικό"
+
+#. module: base_import
+#: model:ir.model.fields,field_description:base_import.field_base_import_mapping__field_name
+msgid "Field Name"
+msgstr "Όνομα Πεδίου"
+
+#. module: base_import
+#: model:ir.model.fields,field_description:base_import.field_base_import_import__file
+msgid "File"
+msgstr "Αρχείο"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "File Column"
+msgstr "Στήλη αρχείου"
+
+#. module: base_import
+#: model:ir.model.fields,field_description:base_import.field_base_import_import__file_name
+msgid "File Name"
+msgstr "Όνομα Αρχείου"
+
+#. module: base_import
+#: model:ir.model.fields,field_description:base_import.field_base_import_import__file_type
+msgid "File Type"
+msgstr "Τύπος Αρχείου"
+
+#. module: base_import
+#. odoo-python
+#: code:addons/base_import/models/base_import.py:0
+#: code:addons/base_import/models/base_import.py:0
+#, python-format
+msgid "File size exceeds configured maximum (%s bytes)"
+msgstr "Το μέγεθος του αρχείου υπερβαίνει το ρυθμισμένο μέγιστο (%s bytes)"
+
+#. module: base_import
+#: model:ir.model.fields,help:base_import.field_base_import_import__file
+msgid "File to check and/or import, raw binary (not base64)"
+msgstr ""
+"Αρχείο προς έλεγχο ή/και εισαγωγή, μη επεξεργασμένο δυαδικό (όχι base64)"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Finalizing current batch before interrupting..."
+msgstr "Οριστικοποίηση της τρέχουσας παρτίδας πριν από τη διακοπή..."
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "For CSV files, you may need to select the correct separator."
+msgstr ""
+"Για τα αρχεία CSV, ενδέχεται να χρειαστεί να επιλέξετε το σωστό "
+"διαχωριστικό."
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Formatting"
+msgstr "Μορφοποίηση"
+
+#. module: base_import
+#. odoo-python
+#: code:addons/base_import/models/base_import.py:0
+#, python-format
+msgid ""
+"Found invalid image data, images should be imported as either URLs or "
+"base64-encoded data."
+msgstr ""
+"Βρέθηκαν άκυρα δεδομένα εικόνας, οι εικόνες θα πρέπει να εισάγονται είτε ως "
+"URL είτε ως δεδομένα κωδικοποιημένα με base64."
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Go to Import FAQ"
+msgstr "Μεταβείτε στις Συχνές ερωτήσεις εισαγωγής"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Help"
+msgstr "Βοήθεια"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Here is the start of the file we could not import:"
+msgstr "Εδώ είναι η αρχή του αρχείου που δεν μπορούμε να εισάγουμε:"
+
+#. module: base_import
+#: model:ir.model.fields,field_description:base_import.field_base_import_import__id
+#: model:ir.model.fields,field_description:base_import.field_base_import_mapping__id
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char__id
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_noreadonly__id
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_readonly__id
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_required__id
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_states__id
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_stillreadonly__id
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_complex__id
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_float__id
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_m2o__id
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_m2o_related__id
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_m2o_required__id
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_m2o_required_related__id
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_o2m__id
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_o2m_child__id
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_preview__id
+msgid "ID"
+msgstr "Κωδικός"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid ""
+"If the file contains\n"
+"                    the column names, Odoo can try auto-detecting the\n"
+"                    field corresponding to the column. This makes imports\n"
+"                    simpler especially when the file has many columns."
+msgstr ""
+"Εάν το αρχείο περιέχει\n"
+"                    τα ονόματα των στηλών, το Odoo μπορεί να προσπαθήσει να ανιχνεύσει αυτόματα το\n"
+"                    πεδίο που αντιστοιχεί στη στήλη. Αυτό καθιστά τις εισαγωγές\n"
+"                    απλούστερες, ιδίως όταν το αρχείο έχει πολλές στήλες."
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid ""
+"If the model uses openchatter, history tracking will set up subscriptions "
+"and send notifications during the import, but lead to a slower import."
+msgstr ""
+"Εάν το μοντέλο χρησιμοποιεί openchatter, η παρακολούθηση ιστορικού θα "
+"δημιουργήσει συνδρομές και θα στείλει ειδοποιήσεις κατά τη διάρκεια της "
+"εισαγωγής, αλλά θα οδηγήσει σε πιο αργή εισαγωγή."
+
+#. module: base_import
+#. odoo-python
+#: code:addons/base_import/models/base_import.py:0
+#, python-format
+msgid ""
+"Image size excessive, imported images must be smaller than 42 million pixel"
+msgstr ""
+"Υπερβολικό μέγεθος εικόνας, οι εισαγόμενες εικόνες πρέπει να είναι "
+"μικρότερες από 42 εκατομμύρια pixel"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Import"
+msgstr "Εισαγωγή"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Import FAQ"
+msgstr "Συχνές ερωτήσεις εισαγωγής"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid "Import a File"
+msgstr "Εισαγωγή ενός αρχείου"
+
+#. module: base_import
+#. odoo-python
+#: code:addons/base_import/models/base_import.py:0
+#, python-format
+msgid "Import file has no content or is corrupt"
+msgstr "Το αρχείο εισαγωγής δεν έχει περιεχόμενο ή είναι κατεστραμμένο"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Import preview failed due to:"
+msgstr "Η προεπισκόπηση εισαγωγής απέτυχε εξαιτίας:"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/import_records/import_records.xml:0
+#, python-format
+msgid "Import records"
+msgstr "Εισαγωγή αρχείων"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Imported file"
+msgstr "Εισαγόμενο αρχείο"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid "Importing"
+msgstr "Εισαγωγή"
+
+#. module: base_import
+#. odoo-python
+#: code:addons/base_import/models/base_import.py:0
+#, python-format
+msgid ""
+"Invalid cell format at row %(row)s, column %(col)s: %(cell_value)s, with "
+"format: %(cell_format)s, as (%(format_type)s) formats are not supported."
+msgstr ""
+"Άκυρη μορφή κελιού στη γραμμή %(row)s, στήλη %(col)s: %(cell_value)s, με "
+"μορφή: %(cell_format)s, καθώς δεν υποστηρίζονται μορφές (%(format_type)s)."
+
+#. module: base_import
+#. odoo-python
+#: code:addons/base_import/models/base_import.py:0
+#: code:addons/base_import/models/base_import.py:0
+#, python-format
+msgid "Invalid cell value at row %(row)s, column %(col)s: %(cell_value)s"
+msgstr ""
+"Μη έγκυρη τιμή κελιού στη γραμμή %(row)s, στήλη %(col)s: %(cell_value)s"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid "Label"
+msgstr "Ετικέτα"
+
+#. module: base_import
+#: model:ir.model.fields,field_description:base_import.field_base_import_import____last_update
+#: model:ir.model.fields,field_description:base_import.field_base_import_mapping____last_update
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char____last_update
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_noreadonly____last_update
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_readonly____last_update
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_required____last_update
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_states____last_update
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_stillreadonly____last_update
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_complex____last_update
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_float____last_update
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_m2o____last_update
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_m2o_related____last_update
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_m2o_required____last_update
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_m2o_required_related____last_update
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_o2m____last_update
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_o2m_child____last_update
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_preview____last_update
+msgid "Last Modified on"
+msgstr "Τελευταία τροποποίηση στις"
+
+#. module: base_import
+#: model:ir.model.fields,field_description:base_import.field_base_import_import__write_uid
+#: model:ir.model.fields,field_description:base_import.field_base_import_mapping__write_uid
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char__write_uid
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_noreadonly__write_uid
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_readonly__write_uid
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_required__write_uid
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_states__write_uid
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_stillreadonly__write_uid
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_complex__write_uid
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_float__write_uid
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_m2o__write_uid
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_m2o_related__write_uid
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_m2o_required__write_uid
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_m2o_required_related__write_uid
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_o2m__write_uid
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_o2m_child__write_uid
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_preview__write_uid
+msgid "Last Updated by"
+msgstr "Τελευταία Ενημέρωση από"
+
+#. module: base_import
+#: model:ir.model.fields,field_description:base_import.field_base_import_import__write_date
+#: model:ir.model.fields,field_description:base_import.field_base_import_mapping__write_date
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char__write_date
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_noreadonly__write_date
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_readonly__write_date
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_required__write_date
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_states__write_date
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_stillreadonly__write_date
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_complex__write_date
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_float__write_date
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_m2o__write_date
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_m2o_related__write_date
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_m2o_required__write_date
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_m2o_required_related__write_date
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_o2m__write_date
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_o2m_child__write_date
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_preview__write_date
+msgid "Last Updated on"
+msgstr "Τελευταία Ενημέρωση στις"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid "Load File"
+msgstr "Φόρτωση Αρχείου"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid "Loading file..."
+msgstr "Φόρτωση αρχείου..."
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#: model:ir.model.fields,field_description:base_import.field_base_import_import__res_model
+#, python-format
+msgid "Model"
+msgstr "Μοντέλο"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Multiple errors occurred"
+msgstr "Εμφανίστηκαν πολλαπλά σφάλματα"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_o2m__name
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_preview__name
+#, python-format
+msgid "Name"
+msgstr "Περιγραφή"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Need Help?"
+msgstr "Χρειάζεστε βοήθεια;"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid "No Separator"
+msgstr "Δεν υπάρχει διαχωριστικό"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "No matching records found for"
+msgstr "Δεν βρέθηκαν αντίστοιχες εγγραφές για"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "No matching records found for the following"
+msgstr "Δεν βρέθηκαν αντίστοιχες εγγραφές για τα ακόλουθα"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Odoo Field"
+msgstr "Πεδίο Odoo"
+
+#. module: base_import
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_preview__othervalue
+msgid "Other Variable"
+msgstr "Άλλη Μεταβλητή"
+
+#. module: base_import
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_o2m_child__parent_id
+msgid "Parent"
+msgstr "Μητρικός"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Prevent import"
+msgstr "Αποτροπή εισαγωγών"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid "Preview"
+msgstr "Προεπισκόπηση"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid "Relation Fields"
+msgstr "Σχετιζόμενα Πεδία"
+
+#. module: base_import
+#: model:ir.model.fields,field_description:base_import.field_base_import_mapping__res_model
+msgid "Res Model"
+msgstr "Μοντέλο Res"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Resume"
+msgstr "Βιογραφικό σημείωμα"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid "Search for a field..."
+msgstr "Αναζήτηση για έναν τομέα..."
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "See possible values"
+msgstr "Δείτε τις πιθανές τιμές"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid "Selected Sheet:"
+msgstr "Επιλεγμένο φύλλο:"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid "Semicolon"
+msgstr "Άνω Τελεία"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid "Separator:"
+msgstr "Διαχωριστικό:"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Set to:"
+msgstr "Ρύθμιση σε:"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Set to: False"
+msgstr "Ρύθμιση σε: False"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Set to: True"
+msgstr "Ρύθμιση σε: True"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Set value as empty"
+msgstr "Ορισμός τιμής ως κενή"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Sheet:"
+msgstr "Φύλλο:"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Skip record"
+msgstr "Παράλειψη εγγραφής"
+
+#. module: base_import
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_preview__somevalue
+msgid "Some Value"
+msgstr "Μερική Αξία"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid "Space"
+msgstr "Κενό"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid "Standard Fields"
+msgstr "Τυποποιημένα πεδία"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Start at line"
+msgstr "Ξεκινήστε από τη γραμμή"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Stop Import"
+msgstr "Σταματήστε την εισαγωγή"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid "Suggested Fields"
+msgstr "Προτεινόμενα πεδία"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid "Tab"
+msgstr "Καρτέλα"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Test"
+msgstr "Δοκιμή"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid "Testing"
+msgstr "Δοκιμές"
+
+#. module: base_import
+#: model:ir.model,name:base_import.model_base_import_tests_models_preview
+msgid "Tests : Base Import Model Preview"
+msgstr "Δοκιμές : Προεπισκόπηση βασικού μοντέλου εισαγωγής"
+
+#. module: base_import
+#: model:ir.model,name:base_import.model_base_import_tests_models_char
+msgid "Tests : Base Import Model, Character"
+msgstr "Δοκιμές : Βασικό μοντέλο εισαγωγής, χαρακτήρας"
+
+#. module: base_import
+#: model:ir.model,name:base_import.model_base_import_tests_models_char_noreadonly
+msgid "Tests : Base Import Model, Character No readonly"
+msgstr "Δοκιμές : Βασικό μοντέλο εισαγωγής, χαρακτήρας Όχι μόνο για ανάγνωση"
+
+#. module: base_import
+#: model:ir.model,name:base_import.model_base_import_tests_models_char_readonly
+msgid "Tests : Base Import Model, Character readonly"
+msgstr "Δοκιμές : Βασικό μοντέλο εισαγωγής, χαρακτήρας μόνο για ανάγνωση"
+
+#. module: base_import
+#: model:ir.model,name:base_import.model_base_import_tests_models_char_required
+msgid "Tests : Base Import Model, Character required"
+msgstr "Δοκιμές : Βασικό μοντέλο εισαγωγής, απαιτούμενος χαρακτήρας"
+
+#. module: base_import
+#: model:ir.model,name:base_import.model_base_import_tests_models_char_states
+msgid "Tests : Base Import Model, Character states"
+msgstr "Δοκιμές : Βασικό μοντέλο εισαγωγής, καταστάσεις χαρακτήρων"
+
+#. module: base_import
+#: model:ir.model,name:base_import.model_base_import_tests_models_char_stillreadonly
+msgid "Tests : Base Import Model, Character still readonly"
+msgstr ""
+"Δοκιμές : Βασικό μοντέλο εισαγωγής, χαρακτήρας εξακολουθεί να είναι μόνο για"
+" ανάγνωση"
+
+#. module: base_import
+#: model:ir.model,name:base_import.model_base_import_tests_models_m2o
+msgid "Tests : Base Import Model, Many to One"
+msgstr "Δοκιμές : Βασικό μοντέλο εισαγωγής, πολλά προς ένα"
+
+#. module: base_import
+#: model:ir.model,name:base_import.model_base_import_tests_models_m2o_related
+msgid "Tests : Base Import Model, Many to One related"
+msgstr "Δοκιμές : Βασικό μοντέλο εισαγωγής, πολλά προς ένα σχετικά"
+
+#. module: base_import
+#: model:ir.model,name:base_import.model_base_import_tests_models_m2o_required
+msgid "Tests : Base Import Model, Many to One required"
+msgstr "Δοκιμές : Βασικό μοντέλο εισαγωγής, απαιτούνται πολλά προς ένα"
+
+#. module: base_import
+#: model:ir.model,name:base_import.model_base_import_tests_models_m2o_required_related
+msgid "Tests : Base Import Model, Many to One required related"
+msgstr ""
+"Δοκιμές : Βασικό μοντέλο εισαγωγής, πολλά προς ένα που απαιτούνται σχετικά"
+
+#. module: base_import
+#: model:ir.model,name:base_import.model_base_import_tests_models_o2m
+msgid "Tests : Base Import Model, One to Many"
+msgstr "Δοκιμές : Βασικό μοντέλο εισαγωγής, ένα προς πολλά"
+
+#. module: base_import
+#: model:ir.model,name:base_import.model_base_import_tests_models_o2m_child
+msgid "Tests : Base Import Model, One to Many child"
+msgstr "Δοκιμές : Βασικό μοντέλο εισαγωγής, ένα προς πολλά παιδιά"
+
+#. module: base_import
+#: model:ir.model,name:base_import.model_base_import_tests_models_complex
+msgid "Tests: Base Import Model Complex"
+msgstr "Δοκιμές: Βασικό μοντέλο εισαγωγής Complex"
+
+#. module: base_import
+#: model:ir.model,name:base_import.model_base_import_tests_models_float
+msgid "Tests: Base Import Model Float"
+msgstr "Δοκιμές: Βασική εισαγωγή μοντέλου Float"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid "Text Delimiter:"
+msgstr "Διαχωριστής κειμένου:"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid "The file contains blocking errors (see below)"
+msgstr "Το αρχείο περιέχει σφάλματα αποκλεισμού (βλ. παρακάτω)"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid "The file contains non-blocking warnings (see below)"
+msgstr "Το αρχείο περιέχει προειδοποιήσεις που δεν μπλοκάρουν (βλ. παρακάτω)"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "The file will be imported by batches"
+msgstr "Το αρχείο θα εισαχθεί κατά παρτίδες"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "This column will be concatenated in field"
+msgstr "Αυτή η στήλη θα συνδεθεί στο πεδίο"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid "This file has been successfully imported up to line %d."
+msgstr "Αυτό το αρχείο έχει εισαχθεί επιτυχώς μέχρι τη γραμμή %d."
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid "Thousands Separator:"
+msgstr "Διαχωριστής χιλιάδων:"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "To import multiple values, separate them by a comma"
+msgstr "Για να εισαγάγετε πολλαπλές τιμές, διαχωρίστε τις με κόμμα"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid "To import, select a field..."
+msgstr "Για την εισαγωγή, επιλέξτε ένα πεδίο..."
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Track history during import"
+msgstr "Παρακολούθηση ιστορικού κατά την εισαγωγή"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/js/import_action.js:0
+#, python-format
+msgid "Type"
+msgstr "Τύπος"
+
+#. module: base_import
+#. odoo-python
+#: code:addons/base_import/models/base_import.py:0
+#, python-format
+msgid "Unable to load \"{extension}\" file: requires Python module \"{modname}\""
+msgstr ""
+"Αδυναμία φόρτωσης του αρχείου \"{extension}\": απαιτείται η ενότητα Python "
+"\"{modname}\""
+
+#. module: base_import
+#. odoo-python
+#: code:addons/base_import/models/base_import.py:0
+#, python-format
+msgid ""
+"Unsupported file format \"{}\", import only supports CSV, ODS, XLS and XLSX"
+msgstr ""
+"Μη υποστηριζόμενη μορφή αρχείου \"{}\", η εισαγωγή υποστηρίζει μόνο CSV, "
+"ODS, XLS και XLSX"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Untitled"
+msgstr "Untitled"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Upload File"
+msgstr "Ανέβασμα αρχείου"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Upload an Excel or CSV file to import"
+msgstr "Ανεβάστε ένα αρχείο Excel ή CSV για εισαγωγή"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "Use first row as header"
+msgstr "Χρησιμοποιήστε την πρώτη σειρά ως επικεφαλίδα"
+
+#. module: base_import
+#: model:ir.model,name:base_import.model_res_users
+msgid "User"
+msgstr "Χρήστης"
+
+#. module: base_import
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char__value
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_noreadonly__value
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_readonly__value
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_required__value
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_states__value
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_char_stillreadonly__value
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_float__value
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_m2o__value
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_m2o_related__value
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_m2o_required__value
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_m2o_required_related__value
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_o2m__value
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_o2m_child__value
+msgid "Value"
+msgstr "Τιμή"
+
+#. module: base_import
+#: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_float__value2
+msgid "Value2"
+msgstr "Value2"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid ""
+"Warning: ignores the labels line, empty lines and lines composed only of "
+"empty cells"
+msgstr ""
+"Προειδοποίηση: αγνοεί τη γραμμή ετικετών, τις κενές γραμμές και τις γραμμές "
+"που αποτελούνται μόνο από κενά κελιά"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "When a value cannot be matched:"
+msgstr "Όταν μια αξία δεν μπορεί να αντιστοιχηθεί:"
+
+#. module: base_import
+#. odoo-python
+#: code:addons/base_import/models/base_import.py:0
+#, python-format
+msgid ""
+"You can not import images via URL, check with your administrator or support "
+"for the reason."
+msgstr ""
+"Δεν μπορείτε να εισαγάγετε εικόνες μέσω URL, επικοινωνήστε με τον "
+"διαχειριστή σας ή την υποστήριξη για τον λόγο."
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "You can test or reload your file before resuming the import."
+msgstr ""
+"Μπορείτε να δοκιμάσετε ή να επαναφορτώσετε το αρχείο σας πριν συνεχίσετε την"
+" εισαγωγή."
+
+#. module: base_import
+#. odoo-python
+#: code:addons/base_import/models/base_import.py:0
+#, python-format
+msgid "You must configure at least one field to import"
+msgstr "Πρέπει να ρυθμίσετε τουλάχιστον ένα πεδίο προς εισαγωγή"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "at multiple rows"
+msgstr "σε πολλαπλές σειρές"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "at row"
+msgstr "στη σειρά"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "batch"
+msgstr "παρτίδα"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "create"
+msgstr "δημιουργήστε το"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "false"
+msgstr "false"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "in field"
+msgstr "στον τομέα"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "minutes"
+msgstr "πρακτικά"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "more)"
+msgstr "περισσότερα)"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "out of"
+msgstr "από"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "prevent"
+msgstr "πρόληψη"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "set_empty"
+msgstr "set_empty"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "skip_record"
+msgstr "skip_record"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "true"
+msgstr "true"
+
+#. module: base_import
+#. odoo-python
+#: code:addons/base_import/models/base_import.py:0
+#, python-format
+msgid "unknown error code %s"
+msgstr "άγνωστος κωδικός σφάλματος %s"

@@ -1,38 +1,19 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* base_import
-# 
-# Translators:
-# DanielDemedziuk <daniel.demedziuk@gmail.com>, 2022
-# Monika Motyczyńska <m.monia@op.pl>, 2022
-# Piotr Cierkosz <piotr.w.cierkosz@gmail.com>, 2022
-# Tomasz Leppich <t.leppich@gmail.com>, 2022
-# Wojciech Warczakowski <w.warczakowski@gmail.com>, 2022
-# Dariusz Żbikowski <darek@krokus.com.pl>, 2022
-# Piotr Strębski <strebski@gmail.com>, 2022
-# Marcin Młynarczyk <mlynarczyk@gmail.com>, 2022
-# Andrzej Wiśniewski <a.wisniewski@hadron.eu.com>, 2022
-# zieloo <zieloo@gmail.com>, 2022
-# Paweł Wodyński <pw@myodoo.pl>, 2022
-# Judyta Kaźmierczak <judyta.kazmierczak@openglobe.pl>, 2022
-# Piotr Szlązak <szlazakpiotr@gmail.com>, 2022
-# Grzegorz Grzelak <grzegorz.grzelak@openglobe.pl>, 2022
-# Martin Trigaux, 2022
-# Tadeusz Karpiński <tadeuszkarpinski@gmail.com>, 2023
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-06 13:31+0000\n"
-"PO-Revision-Date: 2022-09-22 05:45+0000\n"
-"Last-Translator: Tadeusz Karpiński <tadeuszkarpinski@gmail.com>, 2023\n"
-"Language-Team: Polish (https://app.transifex.com/odoo/teams/41243/pl/)\n"
+"POT-Creation-Date: 2025-02-14 19:52+0000\n"
+"PO-Revision-Date: 2025-02-14 19:52+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: pl\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"Plural-Forms: \n"
 
 #. module: base_import
 #. odoo-javascript
@@ -331,6 +312,8 @@ msgstr "Błąd podczas analizowania daty [%s:L%d]: %s"
 msgid ""
 "Error while importing records: Text Delimiter should be a single character."
 msgstr ""
+"Błąd podczas importowania rekordów: Ogranicznik tekstu powinien być "
+"pojedynczym znakiem."
 
 #. module: base_import
 #. odoo-python
@@ -341,6 +324,9 @@ msgid ""
 "title row has %d entries while the first row has %d. You may need to change "
 "the separator character."
 msgstr ""
+"Błąd podczas importowania rekordów: wszystkie wiersze powinny mieć ten sam "
+"rozmiar, ale wiersz tytułowy ma %d wpisów, podczas gdy pierwszy wiersz ma "
+"%d. Może być konieczna zmiana znaku separatora."
 
 #. module: base_import
 #. odoo-javascript
@@ -584,6 +570,19 @@ msgstr "Importowanie"
 
 #. module: base_import
 #. odoo-python
+#: code:addons/base_import/models/base_import.py:0
+#, python-format
+msgid ""
+"Invalid cell format at row %(row)s, column %(col)s: %(cell_value)s, with "
+"format: %(cell_format)s, as (%(format_type)s) formats are not supported."
+msgstr ""
+"Nieprawidłowy format komórki w wierszu %(row)s, kolumnie %(col)s: "
+"%(cell_value)s, z formatem: %(cell_format)s, ponieważ formaty "
+"(%(format_type)s) nie są obsługiwane."
+
+#. module: base_import
+#. odoo-python
+#: code:addons/base_import/models/base_import.py:0
 #: code:addons/base_import/models/base_import.py:0
 #, python-format
 msgid "Invalid cell value at row %(row)s, column %(col)s: %(cell_value)s"
@@ -1211,6 +1210,20 @@ msgstr "partia"
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "create"
+msgstr "tworzyć"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "false"
+msgstr "fałszywy"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "in field"
@@ -1236,6 +1249,34 @@ msgstr "więcej)"
 #, python-format
 msgid "out of"
 msgstr "poza"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "prevent"
+msgstr "zapobiegać"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "set_empty"
+msgstr "set_empty"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "skip_record"
+msgstr "skip_record"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "true"
+msgstr "prawda"
 
 #. module: base_import
 #. odoo-python

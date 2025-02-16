@@ -1,34 +1,19 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* spreadsheet
-# 
-# Translators:
-# Алексей <noosvet@gmail.com>, 2022
-# Viktor Pogrebniak <vp@aifil.ru>, 2022
-# Максим Дронь <dronmax@gmail.com>, 2022
-# Collex100, 2022
-# Vasiliy Korobatov <korobatov@gmail.com>, 2022
-# Gennady Marchenko <gennadym@gmail.com>, 2022
-# ILMIR <karamov@it-projects.info>, 2022
-# Irina Fedulova <istartlin@gmail.com>, 2022
-# Ivan Kropotkin <yelizariev@itpp.dev>, 2022
-# Martin Trigaux, 2024
-# Wil Odoo, 2024
-# Сергей Шебанин <sergey@shebanin.ru>, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-06 13:32+0000\n"
-"PO-Revision-Date: 2022-09-22 05:55+0000\n"
-"Last-Translator: Сергей Шебанин <sergey@shebanin.ru>, 2024\n"
-"Language-Team: Russian (https://app.transifex.com/odoo/teams/41243/ru/)\n"
+"POT-Creation-Date: 2025-02-14 19:45+0000\n"
+"PO-Revision-Date: 2025-02-14 19:45+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: \n"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -105,6 +90,11 @@ msgid ""
 "    (-2) Perform a binary search that relies on lookup_array being sorted in descending order. If not sorted, invalid results will be returned.\n"
 "    "
 msgstr ""
+"(1) Поиск начинается с первого элемента. \n"
+"    (-1) Поиск, начиная с последнего элемента. \n"
+"    (2) Выполните бинарный поиск, который основан на том, что lookup_array должен быть отсортирован по возрастанию. Если он не отсортирован, будут возвращены неверные результаты. \n"
+"    (-2) Выполните бинарный поиск, который основан на сортировке массива lookup_array по убыванию. Если он не отсортирован, будут возвращены недопустимые результаты.\n"
+"    "
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -619,13 +609,14 @@ msgstr "Невозможно найти файл отношений рабоче
 #, python-format
 msgid "Cannot open the chart side panel while no chart are selected"
 msgstr ""
+"Невозможно открыть боковую панель графиков, когда ни один график не выбран"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Cannot paste merged cells over a frozen pane."
-msgstr ""
+msgstr "Невозможно вставить объединенные ячейки на замороженную панель."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -653,6 +644,13 @@ msgstr "Категории / Этикетки"
 #, python-format
 msgid "Cell values"
 msgstr "Значения ячеек"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "CellIsRule"
+msgstr "CellIsRule"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -789,6 +787,13 @@ msgstr "Цвет при увеличении стоимости"
 #, python-format
 msgid "Color scale"
 msgstr "Цветовая гамма"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "ColorScaleRule"
+msgstr "ColorScaleRule"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1175,7 +1180,7 @@ msgstr "Диапазон данных"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Data series include title"
-msgstr ""
+msgstr "Серии данных включают название"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1544,7 +1549,7 @@ msgstr "Цвет заливки"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "FillColor"
-msgstr ""
+msgstr "FillColor"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1999,6 +2004,13 @@ msgstr "Номер недели в году по стандарту ISO"
 #, python-format
 msgid "Icon set"
 msgstr "Набор иконок"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "IconSetRule"
+msgstr "IconSetRule"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3333,7 +3345,7 @@ msgstr "Повторить"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Remove Filter"
-msgstr ""
+msgstr "Удалить фильтр"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3375,7 +3387,7 @@ msgstr "Переименовать лист"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Reorder rules"
-msgstr ""
+msgstr "Правила переупорядочивания"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3872,7 +3884,7 @@ msgstr "Начинается с"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Stop reordering rules"
-msgstr ""
+msgstr "Остановить правила повторного заказа"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3951,7 +3963,7 @@ msgstr "Цвет текста"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "TextColor"
-msgstr ""
+msgstr "TextColor"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4652,7 +4664,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The period (%s) must be less than or equal life (%."
-msgstr ""
+msgstr "Период (%s) должен быть меньше или равен жизни (%."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5317,7 +5329,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "This formula depends on invalid values"
-msgstr ""
+msgstr "Эта формула зависит от недопустимых значений"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5338,6 +5350,8 @@ msgid ""
 "This function can only return a single cell value, not an array. Provide "
 "valid row and column indices."
 msgstr ""
+"Эта функция может вернуть только значение одной ячейки, а не массива. "
+"Укажите правильные индексы строк и столбцов."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5931,14 +5945,111 @@ msgstr "и"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "and value"
-msgstr ""
+msgstr "и ценность"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "bottom"
+msgstr "дно"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "by default"
-msgstr ""
+msgstr "по умолчанию"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "difference"
+msgstr "разница"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/global_filters/components/filter_date_value/filter_date_value.xml:0
+#, python-format
+msgid "empty"
+msgstr "пустой"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "formula"
+msgstr "формула"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "ge"
+msgstr "ge"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "gt"
+msgstr "gt"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "left"
+msgstr "слева"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "none"
+msgstr "нет"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "number"
+msgstr "номер"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "percentage"
+msgstr "процент"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "percentile"
+msgstr "percentile"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5946,3 +6057,37 @@ msgstr ""
 #, python-format
 msgid "repeatable"
 msgstr "повторяющийся"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "right"
+msgstr "правильно"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "text"
+msgstr "текст"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "top"
+msgstr "топ"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "value"
+msgstr "значение"

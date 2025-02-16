@@ -1,27 +1,19 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* spreadsheet_dashboard_account
-# 
-# Translators:
-# Tamás Németh <ntomasz81@gmail.com>, 2022
-# Ákos Nagy <akos.nagy@oregional.hu>, 2022
-# gezza <geza.nagy@oregional.hu>, 2022
-# Martin Trigaux, 2022
-# krnkris, 2022
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-06 13:32+0000\n"
-"PO-Revision-Date: 2022-09-29 09:44+0000\n"
-"Last-Translator: krnkris, 2022\n"
-"Language-Team: Hungarian (https://app.transifex.com/odoo/teams/41243/hu/)\n"
+"POT-Creation-Date: 2025-02-14 19:47+0000\n"
+"PO-Revision-Date: 2025-02-14 19:47+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: hu\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: \n"
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
@@ -35,7 +27,7 @@ msgstr "nap"
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "# days"
-msgstr ""
+msgstr "# napok"
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
@@ -53,14 +45,14 @@ msgstr "Összeg"
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "Average Invoice"
-msgstr ""
+msgstr "Átlagos számla"
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "COGS"
-msgstr ""
+msgstr "COGS"
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
@@ -75,7 +67,7 @@ msgstr "Ország"
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "Current year"
-msgstr ""
+msgstr "Jelenlegi év"
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
@@ -89,7 +81,7 @@ msgstr "Ügyfél"
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "DSO"
-msgstr ""
+msgstr "DSO"
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
@@ -117,7 +109,7 @@ msgstr "Számlázva"
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "Invoiced by Month"
-msgstr ""
+msgstr "Hónapok szerinti számlázás"
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
@@ -131,7 +123,7 @@ msgstr "Számlák"
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "Invoices by Total Signed"
-msgstr ""
+msgstr "Számlák összesen aláírva"
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
@@ -139,14 +131,14 @@ msgstr ""
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "KPI - Average Invoice"
-msgstr ""
+msgstr "KPI - Átlagos számla"
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "KPI - DSO"
-msgstr ""
+msgstr "KPI - DSO"
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
@@ -154,14 +146,14 @@ msgstr ""
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "KPI - Income"
-msgstr ""
+msgstr "KPI - Bevételek"
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "KPI - Invoice Count"
-msgstr ""
+msgstr "KPI - Számlák száma"
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
@@ -169,7 +161,7 @@ msgstr ""
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "KPI - Unpaid Invoices"
-msgstr ""
+msgstr "KPI - kifizetetlen számlák"
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
@@ -247,7 +239,7 @@ msgstr "Állapot"
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "Top Categories"
-msgstr ""
+msgstr "Felső kategóriák"
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
@@ -255,14 +247,14 @@ msgstr ""
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "Top Countries"
-msgstr ""
+msgstr "Legnépszerűbb országok"
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "Top Invoices"
-msgstr ""
+msgstr "Legnépszerűbb számlák"
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
@@ -270,7 +262,7 @@ msgstr ""
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "Top Products"
-msgstr ""
+msgstr "Legjobb termékek"
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
@@ -278,18 +270,18 @@ msgstr ""
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "Top Salespeople"
-msgstr ""
+msgstr "Legjobb értékesítők"
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "in current year"
-msgstr ""
+msgstr "a folyó évben"
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "unpaid"
-msgstr ""
+msgstr "fizetés nélküli"

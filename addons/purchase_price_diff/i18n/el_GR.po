@@ -1,0 +1,130 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* purchase_price_diff
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-14 19:47+0000\n"
+"PO-Revision-Date: 2025-02-14 19:47+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: purchase_price_diff
+#: model:ir.model.fields,field_description:purchase_price_diff.field_account_move_line__changeset_change_ids
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_category__changeset_change_ids
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_template__changeset_change_ids
+msgid "Changeset Changes"
+msgstr "Αλλαγές σετ αλλαγών"
+
+#. module: purchase_price_diff
+#: model:ir.model.fields,field_description:purchase_price_diff.field_account_move_line__changeset_ids
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_category__changeset_ids
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_template__changeset_ids
+msgid "Changesets"
+msgstr "Changesets"
+
+#. module: purchase_price_diff
+#: model:ir.model.fields,field_description:purchase_price_diff.field_account_move_line__count_changesets
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_category__count_changesets
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_template__count_changesets
+msgid "Count Changesets"
+msgstr "Count Changesets"
+
+#. module: purchase_price_diff
+#: model:ir.model.fields,field_description:purchase_price_diff.field_account_move_line__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_category__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_template__count_pending_changeset_changes
+msgid "Count Pending Changeset Changes"
+msgstr "Μετρήστε τις αλλαγές που εκκρεμούν"
+
+#. module: purchase_price_diff
+#: model:ir.model.fields,field_description:purchase_price_diff.field_account_move_line__count_pending_changesets
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_category__count_pending_changesets
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_template__count_pending_changesets
+msgid "Count Pending Changesets"
+msgstr "Μετρήστε τα σύνολα αλλαγών που εκκρεμούν"
+
+#. module: purchase_price_diff
+#: model:ir.model,name:purchase_price_diff.model_account_move_line
+msgid "Journal Item"
+msgstr "Στοιχείο Ημερολογίου"
+
+#. module: purchase_price_diff
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_category__property_account_creditor_price_difference_categ
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_product__property_account_creditor_price_difference
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_template__property_account_creditor_price_difference
+msgid "Price Difference Account"
+msgstr "Λογαριασμός διαφοράς τιμής"
+
+#. module: purchase_price_diff
+#: model:ir.model,name:purchase_price_diff.model_product_template
+msgid "Product"
+msgstr "Πρότυπο Είδους "
+
+#. module: purchase_price_diff
+#: model:ir.model,name:purchase_price_diff.model_product_category
+msgid "Product Category"
+msgstr "Κατηγορία Είδους"
+
+#. module: purchase_price_diff
+#: model:ir.model.fields,field_description:purchase_price_diff.field_account_move_line__smart_search
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_category__smart_search
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_template__smart_search
+msgid "Smart Search"
+msgstr "Έξυπνη αναζήτηση"
+
+#. module: purchase_price_diff
+#: model:ir.model.fields,help:purchase_price_diff.field_account_move_line__count_pending_changeset_changes
+#: model:ir.model.fields,help:purchase_price_diff.field_product_category__count_pending_changeset_changes
+#: model:ir.model.fields,help:purchase_price_diff.field_product_template__count_pending_changeset_changes
+msgid "The number of pending changes of this record"
+msgstr "Ο αριθμός των εκκρεμών αλλαγών αυτής της εγγραφής"
+
+#. module: purchase_price_diff
+#: model:ir.model.fields,help:purchase_price_diff.field_account_move_line__count_pending_changesets
+#: model:ir.model.fields,help:purchase_price_diff.field_product_category__count_pending_changesets
+#: model:ir.model.fields,help:purchase_price_diff.field_product_template__count_pending_changesets
+msgid "The number of pending changesets of this record"
+msgstr "Ο αριθμός των εκκρεμών συνόλων αλλαγών αυτής της εγγραφής"
+
+#. module: purchase_price_diff
+#: model:ir.model.fields,help:purchase_price_diff.field_account_move_line__count_changesets
+#: model:ir.model.fields,help:purchase_price_diff.field_product_category__count_changesets
+#: model:ir.model.fields,help:purchase_price_diff.field_product_template__count_changesets
+msgid "The overall number of changesets of this record"
+msgstr "Ο συνολικός αριθμός των αλλαγών αυτού του αρχείου"
+
+#. module: purchase_price_diff
+#: model:ir.model.fields,help:purchase_price_diff.field_product_product__property_account_creditor_price_difference
+#: model:ir.model.fields,help:purchase_price_diff.field_product_template__property_account_creditor_price_difference
+msgid ""
+"This account is used in automated inventory valuation to record the price "
+"difference between a purchase order and its related vendor bill when "
+"validating this vendor bill."
+msgstr ""
+"Ο λογαριασμός αυτός χρησιμοποιείται στην αυτοματοποιημένη αποτίμηση "
+"αποθεμάτων για την καταγραφή της διαφοράς τιμής μεταξύ μιας παραγγελίας "
+"αγοράς και του σχετικού λογαριασμού του προμηθευτή κατά την επικύρωση αυτού "
+"του λογαριασμού του προμηθευτή."
+
+#. module: purchase_price_diff
+#: model:ir.model.fields,help:purchase_price_diff.field_product_category__property_account_creditor_price_difference_categ
+msgid ""
+"This account will be used to value price difference between purchase price "
+"and accounting cost."
+msgstr ""
+"Ο λογαριασμός αυτός θα χρησιμοποιείται για την αποτίμηση της διαφοράς τιμής "
+"μεταξύ τιμής αγοράς και λογιστικού κόστους."
+
+#. module: purchase_price_diff
+#: model:ir.model.fields,field_description:purchase_price_diff.field_account_move_line__user_can_see_changeset
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_category__user_can_see_changeset
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_template__user_can_see_changeset
+msgid "User Can See Changeset"
+msgstr "Ο χρήστης μπορεί να δει το σύνολο αλλαγών"

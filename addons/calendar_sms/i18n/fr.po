@@ -1,30 +1,24 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* calendar_sms
-# 
-# Translators:
-# Martin Trigaux, 2022
-# Cécile Collart <cco@odoo.com>, 2022
-# Jolien De Paepe, 2023
-# 
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0+e\n"
+"Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-15 12:50+0000\n"
-"PO-Revision-Date: 2022-09-22 05:45+0000\n"
-"Last-Translator: Jolien De Paepe, 2023\n"
-"Language-Team: French (https://app.transifex.com/odoo/teams/41243/fr/)\n"
+"POT-Creation-Date: 2025-02-14 19:50+0000\n"
+"PO-Revision-Date: 2025-02-14 19:50+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: fr\n"
-"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Plural-Forms: \n"
 
 #. module: calendar_sms
 #: model:ir.model,name:calendar_sms.model_calendar_event
 msgid "Calendar Event"
-msgstr "Événement calendrier"
+msgstr "Calendrier de l'événement"
 
 #. module: calendar_sms
 #: model:sms.template,name:calendar_sms.sms_template_data_calendar_reminder
@@ -53,9 +47,7 @@ msgstr "Rappel d'événement : %(name)s, %(time)s."
 msgid ""
 "Event reminder: {{ object.name }}, {{ "
 "object.get_display_time_tz(object.partner_id.tz) }}"
-msgstr ""
-"Rappel d'événement : {{ object.name }}, {{ "
-"object.get_display_time_tz(object.partner_id.tz) }}"
+msgstr "Rappel d'événement: ${object.name}, ${object.display_time}"
 
 #. module: calendar_sms
 #: model_terms:ir.ui.view,arch_db:calendar_sms.view_calendar_event_form_inherited
@@ -104,4 +96,4 @@ msgstr "Il n'y a pas de participants à ces événements"
 #. module: calendar_sms
 #: model:ir.model.fields,field_description:calendar_sms.field_calendar_alarm__alarm_type
 msgid "Type"
-msgstr "Type"
+msgstr "Type de document"

@@ -1,31 +1,19 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* note
-# 
-# Translators:
-# Андрей Гусев <gaussgss@gmail.com>, 2022
-# Irina Fedulova <istartlin@gmail.com>, 2022
-# Vasiliy Korobatov <korobatov@gmail.com>, 2022
-# Ekaterina <nawsikaya@bk.ru>, 2022
-# Ivan Kropotkin <yelizariev@itpp.dev>, 2022
-# ILMIR <karamov@it-projects.info>, 2022
-# Martin Trigaux, 2022
-# alenafairy, 2023
-# Сергей Шебанин <sergey@shebanin.ru>, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-06 13:31+0000\n"
-"PO-Revision-Date: 2022-09-22 05:53+0000\n"
-"Last-Translator: Сергей Шебанин <sergey@shebanin.ru>, 2024\n"
-"Language-Team: Russian (https://app.transifex.com/odoo/teams/41243/ru/)\n"
+"POT-Creation-Date: 2025-02-14 19:51+0000\n"
+"PO-Revision-Date: 2025-02-14 19:51+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: \n"
 
 #. module: note
 #: model_terms:ir.ui.view,arch_db:note.view_note_note_kanban
@@ -132,6 +120,26 @@ msgid "By sticky note Category"
 msgstr "По категории заметок-наклеек"
 
 #. module: note
+#: model:ir.model.fields,field_description:note.field_mail_activity__changeset_change_ids
+#: model:ir.model.fields,field_description:note.field_mail_activity_type__changeset_change_ids
+#: model:ir.model.fields,field_description:note.field_note_note__changeset_change_ids
+#: model:ir.model.fields,field_description:note.field_note_stage__changeset_change_ids
+#: model:ir.model.fields,field_description:note.field_note_tag__changeset_change_ids
+#: model:ir.model.fields,field_description:note.field_res_users__changeset_change_ids
+msgid "Changeset Changes"
+msgstr "Набор изменений Изменения"
+
+#. module: note
+#: model:ir.model.fields,field_description:note.field_mail_activity__changeset_ids
+#: model:ir.model.fields,field_description:note.field_mail_activity_type__changeset_ids
+#: model:ir.model.fields,field_description:note.field_note_note__changeset_ids
+#: model:ir.model.fields,field_description:note.field_note_stage__changeset_ids
+#: model:ir.model.fields,field_description:note.field_note_tag__changeset_ids
+#: model:ir.model.fields,field_description:note.field_res_users__changeset_ids
+msgid "Changesets"
+msgstr "Наборы изменений"
+
+#. module: note
 #. odoo-javascript
 #: code:addons/note/static/src/components/activity_menu_view/activity_menu_view.xml:0
 #, python-format
@@ -153,6 +161,36 @@ msgstr "Компания"
 #: model:ir.ui.menu,name:note.menu_note_configuration
 msgid "Configuration"
 msgstr "Конфигурация"
+
+#. module: note
+#: model:ir.model.fields,field_description:note.field_mail_activity__count_changesets
+#: model:ir.model.fields,field_description:note.field_mail_activity_type__count_changesets
+#: model:ir.model.fields,field_description:note.field_note_note__count_changesets
+#: model:ir.model.fields,field_description:note.field_note_stage__count_changesets
+#: model:ir.model.fields,field_description:note.field_note_tag__count_changesets
+#: model:ir.model.fields,field_description:note.field_res_users__count_changesets
+msgid "Count Changesets"
+msgstr "Наборы изменений"
+
+#. module: note
+#: model:ir.model.fields,field_description:note.field_mail_activity__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:note.field_mail_activity_type__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:note.field_note_note__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:note.field_note_stage__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:note.field_note_tag__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:note.field_res_users__count_pending_changeset_changes
+msgid "Count Pending Changeset Changes"
+msgstr "Подсчет ожидающих изменений набора изменений"
+
+#. module: note
+#: model:ir.model.fields,field_description:note.field_mail_activity__count_pending_changesets
+#: model:ir.model.fields,field_description:note.field_mail_activity_type__count_pending_changesets
+#: model:ir.model.fields,field_description:note.field_note_note__count_pending_changesets
+#: model:ir.model.fields,field_description:note.field_note_stage__count_pending_changesets
+#: model:ir.model.fields,field_description:note.field_note_tag__count_pending_changesets
+#: model:ir.model.fields,field_description:note.field_res_users__count_pending_changesets
+msgid "Count Pending Changesets"
+msgstr "Подсчет ожидающих изменений"
 
 #. module: note
 #: model:ir.model.fields,field_description:note.field_note_note__create_uid
@@ -254,6 +292,7 @@ msgstr "Если отмечено, новые сообщения будут тр
 
 #. module: note
 #: model:ir.model.fields,help:note.field_note_note__message_has_error
+#: model:ir.model.fields,help:note.field_note_note__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Если отмечено - некоторые сообщения имеют ошибку доставки."
 
@@ -442,6 +481,11 @@ msgid "SAVE"
 msgstr "СОХРАНИТЬ"
 
 #. module: note
+#: model:ir.model.fields,field_description:note.field_note_note__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Ошибка доставки SMS"
+
+#. module: note
 #: model:ir.model.fields,field_description:note.field_note_note__sequence
 #: model:ir.model.fields,field_description:note.field_note_stage__sequence
 msgid "Sequence"
@@ -453,6 +497,16 @@ msgid "Show all records which has next action date is before today"
 msgstr ""
 "Показать все записи, у которых дата следующего действия не превышает текущей"
 " даты"
+
+#. module: note
+#: model:ir.model.fields,field_description:note.field_mail_activity__smart_search
+#: model:ir.model.fields,field_description:note.field_mail_activity_type__smart_search
+#: model:ir.model.fields,field_description:note.field_note_note__smart_search
+#: model:ir.model.fields,field_description:note.field_note_stage__smart_search
+#: model:ir.model.fields,field_description:note.field_note_tag__smart_search
+#: model:ir.model.fields,field_description:note.field_res_users__smart_search
+msgid "Smart Search"
+msgstr "Умный поиск"
 
 #. module: note
 #: model:ir.model.fields,field_description:note.field_note_note__stage_id
@@ -521,6 +575,36 @@ msgid "Tags"
 msgstr "Теги"
 
 #. module: note
+#: model:ir.model.fields,help:note.field_mail_activity__count_pending_changeset_changes
+#: model:ir.model.fields,help:note.field_mail_activity_type__count_pending_changeset_changes
+#: model:ir.model.fields,help:note.field_note_note__count_pending_changeset_changes
+#: model:ir.model.fields,help:note.field_note_stage__count_pending_changeset_changes
+#: model:ir.model.fields,help:note.field_note_tag__count_pending_changeset_changes
+#: model:ir.model.fields,help:note.field_res_users__count_pending_changeset_changes
+msgid "The number of pending changes of this record"
+msgstr "Количество ожидающих изменений этой записи"
+
+#. module: note
+#: model:ir.model.fields,help:note.field_mail_activity__count_pending_changesets
+#: model:ir.model.fields,help:note.field_mail_activity_type__count_pending_changesets
+#: model:ir.model.fields,help:note.field_note_note__count_pending_changesets
+#: model:ir.model.fields,help:note.field_note_stage__count_pending_changesets
+#: model:ir.model.fields,help:note.field_note_tag__count_pending_changesets
+#: model:ir.model.fields,help:note.field_res_users__count_pending_changesets
+msgid "The number of pending changesets of this record"
+msgstr "Количество ожидающих изменений этой записи"
+
+#. module: note
+#: model:ir.model.fields,help:note.field_mail_activity__count_changesets
+#: model:ir.model.fields,help:note.field_mail_activity_type__count_changesets
+#: model:ir.model.fields,help:note.field_note_note__count_changesets
+#: model:ir.model.fields,help:note.field_note_stage__count_changesets
+#: model:ir.model.fields,help:note.field_note_tag__count_changesets
+#: model:ir.model.fields,help:note.field_res_users__count_changesets
+msgid "The overall number of changesets of this record"
+msgstr "Общее количество наборов изменений этой записи"
+
+#. module: note
 #. odoo-javascript
 #: code:addons/note/static/src/models/activity_menu_view.js:0
 #, python-format
@@ -546,3 +630,23 @@ msgstr "Тип активности исключения в записи."
 #: model:ir.model,name:note.model_res_users
 msgid "User"
 msgstr "Пользователь"
+
+#. module: note
+#: model:ir.model.fields,field_description:note.field_mail_activity__user_can_see_changeset
+#: model:ir.model.fields,field_description:note.field_mail_activity_type__user_can_see_changeset
+#: model:ir.model.fields,field_description:note.field_note_note__user_can_see_changeset
+#: model:ir.model.fields,field_description:note.field_note_stage__user_can_see_changeset
+#: model:ir.model.fields,field_description:note.field_note_tag__user_can_see_changeset
+#: model:ir.model.fields,field_description:note.field_res_users__user_can_see_changeset
+msgid "User Can See Changeset"
+msgstr "Пользователь может видеть набор изменений"
+
+#. module: note
+#: model:ir.model.fields,field_description:note.field_note_note__website_message_ids
+msgid "Website Messages"
+msgstr "Сообщения на сайте"
+
+#. module: note
+#: model:ir.model.fields,help:note.field_note_note__website_message_ids
+msgid "Website communication history"
+msgstr "История общения на сайте"

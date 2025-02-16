@@ -1,43 +1,37 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* hr_org_chart
-# 
-# Translators:
-# Manuela Silva <mmsrs@sky.com>, 2022
-# Martin Trigaux, 2022
-# Peter Lawrence Romão <peterromao@yahoo.co.uk>, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-06 13:31+0000\n"
-"PO-Revision-Date: 2022-09-22 05:52+0000\n"
-"Last-Translator: Peter Lawrence Romão <peterromao@yahoo.co.uk>, 2024\n"
-"Language-Team: Portuguese (https://app.transifex.com/odoo/teams/41243/pt/)\n"
+"POT-Creation-Date: 2025-02-14 19:48+0000\n"
+"PO-Revision-Date: 2025-02-14 19:48+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: pt\n"
-"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Plural-Forms: \n"
 
 #. module: hr_org_chart
 #: model:ir.model,name:hr_org_chart.model_hr_employee_base
 msgid "Basic Employee"
-msgstr ""
+msgstr "Funcionário básico"
 
 #. module: hr_org_chart
 #: model:ir.model.fields,help:hr_org_chart.field_hr_employee__subordinate_ids
 #: model:ir.model.fields,help:hr_org_chart.field_hr_employee_public__subordinate_ids
 msgid "Direct and indirect subordinates"
-msgstr ""
+msgstr "Subordinados diretos e indirectos"
 
 #. module: hr_org_chart
 #. odoo-javascript
 #: code:addons/hr_org_chart/static/src/fields/hr_org_chart.xml:0
 #, python-format
 msgid "Direct subordinates"
-msgstr ""
+msgstr "Subordinados diretos"
 
 #. module: hr_org_chart
 #: model:ir.model,name:hr_org_chart.model_hr_employee
@@ -49,21 +43,21 @@ msgstr "Funcionário"
 #: code:addons/hr_org_chart/static/src/fields/hr_org_chart.xml:0
 #, python-format
 msgid "In order to get an organigram, set a manager and save the record."
-msgstr ""
+msgstr "Para obter um organigrama, defina um gestor e guarde o registo."
 
 #. module: hr_org_chart
 #: model:ir.model.fields,field_description:hr_org_chart.field_hr_employee__child_all_count
 #: model:ir.model.fields,field_description:hr_org_chart.field_hr_employee_base__child_all_count
 #: model:ir.model.fields,field_description:hr_org_chart.field_hr_employee_public__child_all_count
 msgid "Indirect Subordinates Count"
-msgstr ""
+msgstr "Contagem de subordinados indirectos"
 
 #. module: hr_org_chart
 #. odoo-javascript
 #: code:addons/hr_org_chart/static/src/fields/hr_org_chart.xml:0
 #, python-format
 msgid "Indirect subordinates"
-msgstr ""
+msgstr "Subordinados indirectos"
 
 #. module: hr_org_chart
 #. odoo-javascript
@@ -71,21 +65,21 @@ msgstr ""
 #: code:addons/hr_org_chart/static/src/fields/hr_org_chart.xml:0
 #, python-format
 msgid "More managers"
-msgstr ""
+msgstr "Mais gestores"
 
 #. module: hr_org_chart
 #. odoo-javascript
 #: code:addons/hr_org_chart/static/src/fields/hr_org_chart.xml:0
 #, python-format
 msgid "No hierarchy position."
-msgstr ""
+msgstr "Posição não hierárquica."
 
 #. module: hr_org_chart
 #: model_terms:ir.ui.view,arch_db:hr_org_chart.hr_employee_public_view_form_inherit_org_chart
 #: model_terms:ir.ui.view,arch_db:hr_org_chart.hr_employee_view_form_inherit_org_chart
 #: model_terms:ir.ui.view,arch_db:hr_org_chart.res_users_view_form
 msgid "Organization Chart"
-msgstr ""
+msgstr "Organigrama"
 
 #. module: hr_org_chart
 #: model:ir.model,name:hr_org_chart.model_hr_employee_public
@@ -98,14 +92,14 @@ msgstr "Funcionário Público"
 #: code:addons/hr_org_chart/static/src/fields/hr_org_chart.xml:0
 #, python-format
 msgid "Redirect"
-msgstr ""
+msgstr "Redirecionar"
 
 #. module: hr_org_chart
 #. odoo-javascript
 #: code:addons/hr_org_chart/static/src/fields/hr_org_chart.xml:0
 #, python-format
 msgid "See All"
-msgstr ""
+msgstr "Veja tudo"
 
 #. module: hr_org_chart
 #: model:ir.model.fields,field_description:hr_org_chart.field_hr_employee__subordinate_ids
@@ -125,7 +119,7 @@ msgstr "Equipa"
 #: code:addons/hr_org_chart/static/src/fields/hr_org_chart.xml:0
 #, python-format
 msgid "This employee has no manager or subordinate."
-msgstr ""
+msgstr "Este colaborador não tem diretor ou subordinado."
 
 #. module: hr_org_chart
 #. odoo-javascript

@@ -1,41 +1,19 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* purchase_requisition
-# 
-# Translators:
-# Ramiz Deniz Öner <deniz@denizoner.com>, 2022
-# abc Def <hdogan1974@gmail.com>, 2022
-# Özlem Atalay <ozlema@eskayazilim.com.tr>, 2022
-# Ahmet Altinisik <aaltinisik@altinkaya.com.tr>, 2022
-# Buket Şeker <buket_skr@hotmail.com>, 2022
-# Levent Karakaş <levent@mektup.at>, 2022
-# Güven YILMAZ <guvenyilmaz@outlook.com.tr>, 2022
-# Nadir Gazioglu <nadirgazioglu@gmail.com>, 2022
-# Halil, 2022
-# Ozlem Cikrikci <ozlemc@eskayazilim.com.tr>, 2022
-# Murat Durmuş <muratd@projetgrup.com>, 2022
-# Umur Akın <umura@projetgrup.com>, 2022
-# Martin Trigaux, 2022
-# Murat Kaplan <muratk@projetgrup.com>, 2022
-# Ediz Duman <neps1192@gmail.com>, 2023
-# Tugay Hatıl <tugayh@projetgrup.com>, 2023
-# Ayhan KIZILTAN <akiziltan76@hotmail.com>, 2023
-# Melih Melik Sonmez, 2023
-# Ertuğrul Güreş <ertugrulg@projetgrup.com>, 2023
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-06 13:32+0000\n"
-"PO-Revision-Date: 2022-09-22 05:54+0000\n"
-"Last-Translator: Ertuğrul Güreş <ertugrulg@projetgrup.com>, 2023\n"
-"Language-Team: Turkish (https://app.transifex.com/odoo/teams/41243/tr/)\n"
+"POT-Creation-Date: 2025-02-14 19:49+0000\n"
+"PO-Revision-Date: 2025-02-14 19:49+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: tr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: \n"
 
 #. module: purchase_requisition
 #: model:ir.actions.report,print_report_name:purchase_requisition.action_report_purchase_requisitions
@@ -218,13 +196,18 @@ msgstr "Tedarikçi Seçimi"
 #. module: purchase_requisition
 #: model:purchase.requisition.type,name:purchase_requisition.type_single
 msgid "Blanket Order"
-msgstr "Kapsamlı Sipariş"
+msgstr "Sıralı Tekrarlı Satınalma"
 
 #. module: purchase_requisition
 #: model:ir.actions.act_window,name:purchase_requisition.action_purchase_requisition
 #: model:ir.ui.menu,name:purchase_requisition.menu_purchase_requisition_pro_mgt
 msgid "Blanket Orders"
 msgstr "Bağlantı Siparişleri"
+
+#. module: purchase_requisition
+#: model:purchase.requisition.type,name:purchase_requisition.type_multi
+msgid "Call for Tender"
+msgstr "Teklif Toplama"
 
 #. module: purchase_requisition
 #: model_terms:ir.ui.view,arch_db:purchase_requisition.purchase_requisition_alternative_warning_form
@@ -738,7 +721,7 @@ msgstr "Ürün Ölçü Birimi"
 #. module: purchase_requisition
 #: model:ir.model,name:purchase_requisition.model_product_product
 msgid "Product Variant"
-msgstr "Ürün Varyantı"
+msgstr "Ürün"
 
 #. module: purchase_requisition
 #: model_terms:ir.ui.view,arch_db:purchase_requisition.report_purchaserequisitions
@@ -901,7 +884,7 @@ msgstr "Satınalma Sözleşmelerinde Ara"
 #. module: purchase_requisition
 #: model:ir.model.fields.selection,name:purchase_requisition.selection__purchase_requisition_type__exclusive__multiple
 msgid "Select multiple RFQ (non-exclusive)"
-msgstr "Select multiple RFQ (non-exclusive)"
+msgstr "Birden fazla RFQ seçin (münhasır olmayan)"
 
 #. module: purchase_requisition
 #: model:ir.model.fields.selection,name:purchase_requisition.selection__purchase_requisition_type__exclusive__exclusive
@@ -915,9 +898,9 @@ msgid ""
 "\n"
 "                    Select multiple RFQ (non-exclusive): allows multiple purchase orders. On confirmation of a purchase order it does not cancel the remaining orders"
 msgstr ""
-"Select only one RFQ (exclusive):  when a purchase order is confirmed, cancel the remaining purchase order.\n"
+"Yalnızca bir RFQ seçin (özel): bir satın alma siparişi onaylandığında, kalan satın alma siparişini iptal edin.\n"
 "\n"
-"                    Select multiple RFQ (non-exclusive): allows multiple purchase orders. On confirmation of a purchase order it does not cancel the remaining orders"
+"                    Birden fazla RFQ seçin (münhasır olmayan): birden fazla satın alma siparişine izin verir. Bir satın alma siparişi onaylandığında kalan siparişleri iptal etmez"
 
 #. module: purchase_requisition
 #: model:ir.model.fields,field_description:purchase_requisition.field_purchase_requisition_type__sequence

@@ -1,0 +1,287 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* spreadsheet_dashboard_account
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-14 19:47+0000\n"
+"PO-Revision-Date: 2025-02-14 19:47+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid " days"
+msgstr "天数"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "# days"
+msgstr "# 天数"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "Amount"
+msgstr "数量"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "Average Invoice"
+msgstr "平均发票"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "COGS"
+msgstr "COGS"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "Country"
+msgstr "国家"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "Current year"
+msgstr "本年度"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "Customer"
+msgstr "客户"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "DSO"
+msgstr "DSO"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "Date"
+msgstr "翻译日期"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "Income"
+msgstr "收入"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "Invoiced"
+msgstr "发票"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "Invoiced by Month"
+msgstr "按月开票"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "Invoices"
+msgstr "发票"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "Invoices by Total Signed"
+msgstr "已签署发票总数"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "KPI - Average Invoice"
+msgstr "关键绩效指标 - 平均发票"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "KPI - DSO"
+msgstr "关键绩效指标 - DSO"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "KPI - Income"
+msgstr "关键绩效指标 - 收入"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "KPI - Invoice Count"
+msgstr "关键绩效指标 - 发票数量"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "KPI - Unpaid Invoices"
+msgstr "关键绩效指标 - 未付发票"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "Period"
+msgstr "期间"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "Product"
+msgstr "产品"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "Product Category"
+msgstr "产品类别"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "Ratio"
+msgstr "比率"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "Receivable"
+msgstr "应收账款"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "Reference"
+msgstr "参考资料"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "Revenue"
+msgstr "收入"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "Salesperson"
+msgstr "销售人员"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "Status"
+msgstr "现状"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "Top Categories"
+msgstr "热门类别"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "Top Countries"
+msgstr "热门国家"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "Top Invoices"
+msgstr "热门发票"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "Top Products"
+msgstr "顶级产品"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "Top Salespeople"
+msgstr "顶级销售人员"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "in current year"
+msgstr "本年度"
+
+#. module: spreadsheet_dashboard_account
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
+#, python-format
+msgid "unpaid"
+msgstr "未支付"
