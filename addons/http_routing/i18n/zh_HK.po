@@ -1,0 +1,115 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* http_routing
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-14 19:28+0000\n"
+"PO-Revision-Date: 2025-02-14 19:28+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: http_routing
+#: model_terms:ir.ui.view,arch_db:http_routing.403
+msgid "403: Forbidden"
+msgstr "403:禁止"
+
+#. module: http_routing
+#: model_terms:ir.ui.view,arch_db:http_routing.404
+msgid ""
+"<b>Don't panic.</b> If you think it's our mistake, please send us a message "
+"on"
+msgstr "<b>不要惊慌。</b>如果您认为是我们的失误，请通过以下方式给我们留言"
+
+#. module: http_routing
+#: model_terms:ir.ui.view,arch_db:http_routing.error_message
+#: model_terms:ir.ui.view,arch_db:http_routing.http_error_debug
+msgid "<strong>Error message:</strong>"
+msgstr "<strong>错误信息：</strong>"
+
+#. module: http_routing
+#: model_terms:ir.ui.view,arch_db:http_routing.500
+msgid "Back"
+msgstr "返回"
+
+#. module: http_routing
+#: model_terms:ir.ui.view,arch_db:http_routing.http_error_debug
+msgid "Error"
+msgstr "错误"
+
+#. module: http_routing
+#: model_terms:ir.ui.view,arch_db:http_routing.404
+msgid "Error 404"
+msgstr "错误 404"
+
+#. module: http_routing
+#: model:ir.model,name:http_routing.model_ir_http
+msgid "HTTP Routing"
+msgstr "HTTP 路由"
+
+#. module: http_routing
+#: model_terms:ir.ui.view,arch_db:http_routing.404
+#: model_terms:ir.ui.view,arch_db:http_routing.500
+msgid "Home"
+msgstr "首页"
+
+#. module: http_routing
+#: model_terms:ir.ui.view,arch_db:http_routing.404
+msgid "Maybe you were looking for one of these <b>popular pages?</b>"
+msgstr "也许您正在寻找这些<b>热门网页</b>之一<b>？</b>"
+
+#. module: http_routing
+#: model_terms:ir.ui.view,arch_db:http_routing.400
+msgid "Oops! Something went wrong."
+msgstr "哎呀！出错了"
+
+#. module: http_routing
+#: model_terms:ir.ui.view,arch_db:http_routing.http_error_debug
+msgid "QWeb"
+msgstr "QWeb"
+
+#. module: http_routing
+#: model:ir.model,name:http_routing.model_ir_qweb
+msgid "Qweb"
+msgstr "Qweb"
+
+#. module: http_routing
+#: model_terms:ir.ui.view,arch_db:http_routing.400
+msgid "Take a look at the error message below."
+msgstr "请看下面的错误信息。"
+
+#. module: http_routing
+#: model_terms:ir.ui.view,arch_db:http_routing.http_error_debug
+msgid "The error occurred while rendering the template"
+msgstr "渲染模板时发生错误"
+
+#. module: http_routing
+#: model_terms:ir.ui.view,arch_db:http_routing.403
+msgid "The page you were looking for could not be authorized."
+msgstr "您要查找的页面无法授权。"
+
+#. module: http_routing
+#: model_terms:ir.ui.view,arch_db:http_routing.http_error_debug
+msgid "Traceback"
+msgstr "回溯"
+
+#. module: http_routing
+#: model_terms:ir.ui.view,arch_db:http_routing.404
+msgid "We couldn't find the page you're looking for!"
+msgstr "我们无法找到您要查找的页面！"
+
+#. module: http_routing
+#: model_terms:ir.ui.view,arch_db:http_routing.http_error_debug
+msgid "and evaluating the following expression:"
+msgstr "并对以下表达式进行评估："
+
+#. module: http_routing
+#: model_terms:ir.ui.view,arch_db:http_routing.404
+msgid "this page"
+msgstr "本页"

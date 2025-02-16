@@ -1,0 +1,156 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* board
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-14 19:48+0000\n"
+"PO-Revision-Date: 2025-02-14 19:48+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: board
+#. odoo-javascript
+#: code:addons/board/static/src/add_to_board/add_to_board.js:0
+#, python-format
+msgid "\"%s\" added to dashboard"
+msgstr "\"%s \"已添加到仪表板"
+
+#. module: board
+#. odoo-javascript
+#: code:addons/board/static/src/board_controller.xml:0
+#, python-format
+msgid ""
+"\"Add to\n"
+"                  Dashboard\""
+msgstr ""
+"\"添加到\n"
+"                  仪表板\""
+
+#. module: board
+#. odoo-javascript
+#: code:addons/board/static/src/add_to_board/legacy_add_to_board.js:0
+#, python-format
+msgid "'%s' added to dashboard"
+msgstr "%s' 已添加到仪表板"
+
+#. module: board
+#. odoo-javascript
+#: code:addons/board/static/src/add_to_board/add_to_board.xml:0
+#, python-format
+msgid "Add"
+msgstr "新增内容"
+
+#. module: board
+#. odoo-javascript
+#: code:addons/board/static/src/add_to_board/add_to_board.xml:0
+#, python-format
+msgid "Add to my dashboard"
+msgstr "添加到我的仪表板"
+
+#. module: board
+#. odoo-javascript
+#: code:addons/board/static/src/board_controller.js:0
+#, python-format
+msgid "Are you sure that you want to remove this item?"
+msgstr "您确定要删除此项目吗？"
+
+#. module: board
+#. odoo-javascript
+#: code:addons/board/static/src/board_view.js:0
+#: model:ir.model,name:board.model_board_board
+#, python-format
+msgid "Board"
+msgstr "董事会"
+
+#. module: board
+#. odoo-javascript
+#: code:addons/board/static/src/board_controller.xml:0
+#, python-format
+msgid "Change Layout"
+msgstr "更改布局"
+
+#. module: board
+#. odoo-javascript
+#: code:addons/board/static/src/add_to_board/add_to_board.js:0
+#: code:addons/board/static/src/add_to_board/legacy_add_to_board.js:0
+#, python-format
+msgid "Could not add filter to dashboard"
+msgstr "无法在仪表板中添加过滤器"
+
+#. module: board
+#: model:ir.model.fields,field_description:board.field_board_board__id
+msgid "ID"
+msgstr "ID"
+
+#. module: board
+#. odoo-javascript
+#: code:addons/board/static/src/board_action.xml:0
+#, python-format
+msgid "Invalid action"
+msgstr "无效操作"
+
+#. module: board
+#. odoo-javascript
+#: code:addons/board/static/src/board_controller.xml:0
+#: code:addons/board/static/src/board_controller.xml:0
+#, python-format
+msgid "Layout"
+msgstr "布局"
+
+#. module: board
+#: model:ir.actions.act_window,name:board.open_board_my_dash_action
+#: model:ir.ui.menu,name:board.menu_board_my_dash
+#: model_terms:ir.ui.view,arch_db:board.board_my_dash_view
+msgid "My Dashboard"
+msgstr "我的控制面板"
+
+#. module: board
+#. odoo-javascript
+#: code:addons/board/static/src/add_to_board/add_to_board.js:0
+#: code:addons/board/static/src/add_to_board/legacy_add_to_board.js:0
+#, python-format
+msgid "Please refresh your browser for the changes to take effect."
+msgstr "请刷新浏览器，以便更改生效。"
+
+#. module: board
+#. odoo-javascript
+#: code:addons/board/static/src/board_controller.xml:0
+#, python-format
+msgid ""
+"To add your first report into this dashboard, go to any\n"
+"                  menu, switch to list or graph view, and click"
+msgstr ""
+"要将第一份报告添加到该仪表板中，请转到任何\n"
+"                  菜单，切换到列表或图表视图，然后单击"
+
+#. module: board
+#. odoo-javascript
+#: code:addons/board/static/src/board_controller.xml:0
+#, python-format
+msgid ""
+"You can filter and group data before inserting into the\n"
+"                  dashboard using the search options."
+msgstr ""
+"在将数据插入仪表盘之前，您可以使用搜索选项对数据进行过滤和分组。\n"
+"                  仪表板之前，可以使用搜索选项对数据进行过滤和分组。"
+
+#. module: board
+#. odoo-javascript
+#: code:addons/board/static/src/board_controller.xml:0
+#, python-format
+msgid "Your personal dashboard is empty"
+msgstr "您的个人仪表板是空的"
+
+#. module: board
+#. odoo-javascript
+#: code:addons/board/static/src/board_controller.xml:0
+#, python-format
+msgid "in the extended search options."
+msgstr "在扩展搜索选项中。"

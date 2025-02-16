@@ -1,28 +1,19 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* spreadsheet_dashboard_sale
-# 
-# Translators:
-# Ákos Nagy <akos.nagy@oregional.hu>, 2022
-# Istvan <leki69@gmail.com>, 2022
-# Tamás Németh <ntomasz81@gmail.com>, 2022
-# krnkris, 2022
-# Martin Trigaux, 2022
-# gezza <geza.nagy@oregional.hu>, 2022
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-25 10:43+0000\n"
-"PO-Revision-Date: 2022-09-29 09:44+0000\n"
-"Last-Translator: gezza <geza.nagy@oregional.hu>, 2022\n"
-"Language-Team: Hungarian (https://app.transifex.com/odoo/teams/41243/hu/)\n"
+"POT-Creation-Date: 2025-02-14 19:45+0000\n"
+"PO-Revision-Date: 2025-02-14 19:45+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: hu\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: \n"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
@@ -36,63 +27,63 @@ msgstr "Átlagos rendelés"
 #: code:addons/spreadsheet_dashboard_sale/data/files/sales_dashboard.json:0
 #, python-format
 msgid "Average order amount"
-msgstr ""
+msgstr "Átlagos megrendelés összege"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_sale/data/files/product_dashboard.json:0
 #, python-format
 msgid "Best Category"
-msgstr ""
+msgstr "Legjobb kategória"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_sale/data/files/product_dashboard.json:0
 #, python-format
 msgid "Best Seller"
-msgstr ""
+msgstr "Legjobb eladó"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_sale/data/files/product_dashboard.json:0
 #, python-format
 msgid "Best Sellers by Revenue"
-msgstr ""
+msgstr "Legjobb eladók árbevétel szerint"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_sale/data/files/product_dashboard.json:0
 #, python-format
 msgid "Best Sellers by Units Sold"
-msgstr ""
+msgstr "Legjobb eladók az eladott egységek szerint"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_sale/data/files/product_dashboard.json:0
 #, python-format
 msgid "Best Selling Categories"
-msgstr ""
+msgstr "Legkelendőbb kategóriák"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_sale/data/files/product_dashboard.json:0
 #, python-format
 msgid "Best Selling Products"
-msgstr ""
+msgstr "Legkelendőbb termékek"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_sale/data/files/product_dashboard.json:0
 #, python-format
 msgid "Best selling category"
-msgstr ""
+msgstr "Legjobban értékesített kategória"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_sale/data/files/product_dashboard.json:0
 #, python-format
 msgid "Best selling product"
-msgstr ""
+msgstr "Legjobban értékesített termék"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
@@ -135,7 +126,7 @@ msgstr "Ügyfél"
 #: code:addons/spreadsheet_dashboard_sale/data/files/sales_dashboard.json:0
 #, python-format
 msgid "Draft quotations"
-msgstr ""
+msgstr "Idézettervezetek"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
@@ -143,7 +134,7 @@ msgstr ""
 #: code:addons/spreadsheet_dashboard_sale/data/files/sales_dashboard.json:0
 #, python-format
 msgid "KPI"
-msgstr ""
+msgstr "KPI"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
@@ -158,7 +149,7 @@ msgstr "Közepes"
 #: code:addons/spreadsheet_dashboard_sale/data/files/sales_dashboard.json:0
 #, python-format
 msgid "Monthly Sales"
-msgstr ""
+msgstr "Havi értékesítés"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
@@ -235,14 +226,14 @@ msgstr "Árajánlatok"
 #: code:addons/spreadsheet_dashboard_sale/data/files/sales_dashboard.json:0
 #, python-format
 msgid "Quotations by Untaxed Amount"
-msgstr ""
+msgstr "Árajánlatok adózatlan összegek szerint"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_sale/data/files/sales_dashboard.json:0
 #, python-format
 msgid "Quotations sent"
-msgstr ""
+msgstr "Elküldött árajánlatok"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
@@ -270,21 +261,21 @@ msgstr "Bevétel"
 #: code:addons/spreadsheet_dashboard_sale/data/files/sales_dashboard.json:0
 #, python-format
 msgid "Sales Analysis by Customer"
-msgstr ""
+msgstr "Értékesítési elemzés ügyfelek szerint"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_sale/data/files/sales_dashboard.json:0
 #, python-format
 msgid "Sales Analysis by Customer Country"
-msgstr ""
+msgstr "Értékesítési elemzés ügyfélországok szerint"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_sale/data/files/sales_dashboard.json:0
 #, python-format
 msgid "Sales Analysis by Medium"
-msgstr ""
+msgstr "Értékesítési elemzés médiumonként"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
@@ -292,7 +283,7 @@ msgstr ""
 #: code:addons/spreadsheet_dashboard_sale/data/files/sales_dashboard.json:0
 #, python-format
 msgid "Sales Analysis by Product Category"
-msgstr ""
+msgstr "Értékesítési elemzés termékkategóriánként"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
@@ -300,35 +291,35 @@ msgstr ""
 #: code:addons/spreadsheet_dashboard_sale/data/files/sales_dashboard.json:0
 #, python-format
 msgid "Sales Analysis by Product Variant"
-msgstr ""
+msgstr "Értékesítési elemzés termékváltozatonként"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_sale/data/files/sales_dashboard.json:0
 #, python-format
 msgid "Sales Analysis by Sales Team"
-msgstr ""
+msgstr "Értékesítési elemzés értékesítési csoportonként"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_sale/data/files/sales_dashboard.json:0
 #, python-format
 msgid "Sales Analysis by Salesperson"
-msgstr ""
+msgstr "Értékesítési elemzés értékesítőnként"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_sale/data/files/sales_dashboard.json:0
 #, python-format
 msgid "Sales Analysis by Source"
-msgstr ""
+msgstr "Forrásonkénti értékesítési elemzés"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_sale/data/files/sales_dashboard.json:0
 #, python-format
 msgid "Sales Orders by Untaxed Amount"
-msgstr ""
+msgstr "Értékesítési megrendelések adózatlan összegek szerint"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
@@ -361,84 +352,84 @@ msgstr "Forrás"
 #: code:addons/spreadsheet_dashboard_sale/data/files/sales_dashboard.json:0
 #, python-format
 msgid "Top Categories"
-msgstr ""
+msgstr "Felső kategóriák"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_sale/data/files/sales_dashboard.json:0
 #, python-format
 msgid "Top Countries"
-msgstr ""
+msgstr "Legnépszerűbb országok"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_sale/data/files/sales_dashboard.json:0
 #, python-format
 msgid "Top Customers"
-msgstr ""
+msgstr "Legnépszerűbb ügyfelek"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_sale/data/files/sales_dashboard.json:0
 #, python-format
 msgid "Top Mediums"
-msgstr ""
+msgstr "Top médiumok"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_sale/data/files/sales_dashboard.json:0
 #, python-format
 msgid "Top Products"
-msgstr ""
+msgstr "Legjobb termékek"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_sale/data/files/sales_dashboard.json:0
 #, python-format
 msgid "Top Quotations"
-msgstr ""
+msgstr "Legjobb árajánlatok"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_sale/data/files/sales_dashboard.json:0
 #, python-format
 msgid "Top Sales Orders"
-msgstr ""
+msgstr "Legnagyobb értékesítési megrendelések"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_sale/data/files/sales_dashboard.json:0
 #, python-format
 msgid "Top Sales Teams"
-msgstr ""
+msgstr "Legjobb értékesítési csapatok"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_sale/data/files/sales_dashboard.json:0
 #, python-format
 msgid "Top Salespeople"
-msgstr ""
+msgstr "Legjobb értékesítők"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_sale/data/files/sales_dashboard.json:0
 #, python-format
 msgid "Top Sources"
-msgstr ""
+msgstr "Legjobb források"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_sale/data/files/sales_dashboard.json:0
 #, python-format
 msgid "Total orders"
-msgstr ""
+msgstr "Összes megrendelés"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_sale/data/files/sales_dashboard.json:0
 #, python-format
 msgid "Total quotations"
-msgstr ""
+msgstr "Összes árajánlat"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
@@ -457,21 +448,21 @@ msgstr "egység"
 #: code:addons/spreadsheet_dashboard_sale/data/files/sales_dashboard.json:0
 #, python-format
 msgid "since last period"
-msgstr ""
+msgstr "az elmúlt időszak óta"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_sale/data/files/sales_dashboard.json:0
 #, python-format
 msgid "so stats - current"
-msgstr ""
+msgstr "így statisztikák - jelenleg"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_sale/data/files/sales_dashboard.json:0
 #, python-format
 msgid "so stats - previous"
-msgstr ""
+msgstr "így statisztikák - korábbi"
 
 #. module: spreadsheet_dashboard_sale
 #. odoo-javascript
@@ -479,4 +470,4 @@ msgstr ""
 #: code:addons/spreadsheet_dashboard_sale/data/files/product_dashboard.json:0
 #, python-format
 msgid "sold"
-msgstr ""
+msgstr "eladva"

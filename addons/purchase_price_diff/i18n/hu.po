@@ -1,26 +1,54 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* purchase_price_diff
-# 
-# Translators:
-# Martin Trigaux, 2023
-# Tamás Németh <ntomasz81@gmail.com>, 2023
-# gezza <geza.nagy@oregional.hu>, 2023
-# krnkris, 2023
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-02 10:33+0000\n"
-"PO-Revision-Date: 2023-02-02 12:25+0000\n"
-"Last-Translator: krnkris, 2023\n"
-"Language-Team: Hungarian (https://app.transifex.com/odoo/teams/41243/hu/)\n"
+"POT-Creation-Date: 2025-02-14 19:47+0000\n"
+"PO-Revision-Date: 2025-02-14 19:47+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: hu\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: \n"
+
+#. module: purchase_price_diff
+#: model:ir.model.fields,field_description:purchase_price_diff.field_account_move_line__changeset_change_ids
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_category__changeset_change_ids
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_template__changeset_change_ids
+msgid "Changeset Changes"
+msgstr "Változáskészlet-változások"
+
+#. module: purchase_price_diff
+#: model:ir.model.fields,field_description:purchase_price_diff.field_account_move_line__changeset_ids
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_category__changeset_ids
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_template__changeset_ids
+msgid "Changesets"
+msgstr "Changesets"
+
+#. module: purchase_price_diff
+#: model:ir.model.fields,field_description:purchase_price_diff.field_account_move_line__count_changesets
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_category__count_changesets
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_template__count_changesets
+msgid "Count Changesets"
+msgstr "Count Changesets"
+
+#. module: purchase_price_diff
+#: model:ir.model.fields,field_description:purchase_price_diff.field_account_move_line__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_category__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_template__count_pending_changeset_changes
+msgid "Count Pending Changeset Changes"
+msgstr "Számolja a függőben lévő változtatáskészlet-változásokat"
+
+#. module: purchase_price_diff
+#: model:ir.model.fields,field_description:purchase_price_diff.field_account_move_line__count_pending_changesets
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_category__count_pending_changesets
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_template__count_pending_changesets
+msgid "Count Pending Changesets"
+msgstr "Függő módosításkészletek számolása"
 
 #. module: purchase_price_diff
 #: model:ir.model,name:purchase_price_diff.model_account_move_line
@@ -45,6 +73,34 @@ msgid "Product Category"
 msgstr "Termékkategória"
 
 #. module: purchase_price_diff
+#: model:ir.model.fields,field_description:purchase_price_diff.field_account_move_line__smart_search
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_category__smart_search
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_template__smart_search
+msgid "Smart Search"
+msgstr "Intelligens keresés"
+
+#. module: purchase_price_diff
+#: model:ir.model.fields,help:purchase_price_diff.field_account_move_line__count_pending_changeset_changes
+#: model:ir.model.fields,help:purchase_price_diff.field_product_category__count_pending_changeset_changes
+#: model:ir.model.fields,help:purchase_price_diff.field_product_template__count_pending_changeset_changes
+msgid "The number of pending changes of this record"
+msgstr "A bejegyzés függőben lévő módosításainak száma"
+
+#. module: purchase_price_diff
+#: model:ir.model.fields,help:purchase_price_diff.field_account_move_line__count_pending_changesets
+#: model:ir.model.fields,help:purchase_price_diff.field_product_category__count_pending_changesets
+#: model:ir.model.fields,help:purchase_price_diff.field_product_template__count_pending_changesets
+msgid "The number of pending changesets of this record"
+msgstr "A rekord folyamatban lévő módosításainak száma"
+
+#. module: purchase_price_diff
+#: model:ir.model.fields,help:purchase_price_diff.field_account_move_line__count_changesets
+#: model:ir.model.fields,help:purchase_price_diff.field_product_category__count_changesets
+#: model:ir.model.fields,help:purchase_price_diff.field_product_template__count_changesets
+msgid "The overall number of changesets of this record"
+msgstr "Az e rekordhoz tartozó módosítások teljes száma"
+
+#. module: purchase_price_diff
 #: model:ir.model.fields,help:purchase_price_diff.field_product_product__property_account_creditor_price_difference
 #: model:ir.model.fields,help:purchase_price_diff.field_product_template__property_account_creditor_price_difference
 msgid ""
@@ -52,6 +108,9 @@ msgid ""
 "difference between a purchase order and its related vendor bill when "
 "validating this vendor bill."
 msgstr ""
+"Ezt a számlát az automatizált készletértékelés során arra használják, hogy a"
+" szállítói számla érvényesítésekor rögzítsék a beszerzési rendelés és a "
+"hozzá tartozó szállítói számla közötti árkülönbséget."
 
 #. module: purchase_price_diff
 #: model:ir.model.fields,help:purchase_price_diff.field_product_category__property_account_creditor_price_difference_categ
@@ -62,3 +121,10 @@ msgstr ""
 "Ez a főkönyvi számla szolgál a tényleges bekerülési érték és a "
 "nyilvántartási ár /elszámoló ár/ közötti árkülönbözet értékének "
 "meghatározásához."
+
+#. module: purchase_price_diff
+#: model:ir.model.fields,field_description:purchase_price_diff.field_account_move_line__user_can_see_changeset
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_category__user_can_see_changeset
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_template__user_can_see_changeset
+msgid "User Can See Changeset"
+msgstr "A felhasználó láthatja a változtatáskészletet"

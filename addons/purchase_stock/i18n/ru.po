@@ -1,7 +1,7 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* purchase_stock
-# 
+#
 # Translators:
 # Irina Fedulova <istartlin@gmail.com>, 2022
 # Gennady Marchenko <gennadym@gmail.com>, 2022
@@ -14,7 +14,7 @@
 # Wil Odoo, 2024
 # Сергей Шебанин <sergey@shebanin.ru>, 2024
 # Смородин Даниил, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
@@ -23,10 +23,10 @@ msgstr ""
 "PO-Revision-Date: 2022-09-22 05:54+0000\n"
 "Last-Translator: Смородин Даниил, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/odoo/teams/41243/ru/)\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #. module: purchase_stock
@@ -59,6 +59,9 @@ msgid ""
 "specific.\" aria-label=\"Values set here are company-specific.\" "
 "groups=\"base.group_multi_company\"/>"
 msgstr ""
+"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
+"specific.\" aria-label=\"Values set here are company-specific.\" "
+"groups=\"base.group_multi_company\"/>"
 
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.res_config_settings_view_form_stock
@@ -103,6 +106,9 @@ msgid ""
 "  - Manual: the quantity is set manually on the line\n"
 "  - Stock Moves: the quantity comes from confirmed pickings\n"
 msgstr ""
+"В соответствии с конфигурацией товара, полученное количество может быть автоматически рассчитано механизмом :\n"
+"  - Вручную: количество задается вручную на линии\n"
+"  - Движение запасов: количество поступает из подтвержденной выборки\n"
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_rule__action
@@ -117,6 +123,10 @@ msgid ""
 "average value, therefore only use this as an aggregated value with "
 "group_operator=avg"
 msgstr ""
+"Количество времени между ожидаемой и фактической датой получения. Из-за "
+"хака, необходимого для расчета этого показателя, каждая запись будет "
+"показывать одно и то же среднее значение, поэтому используйте его только как"
+" агрегированное значение с group_operator=avg"
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_purchase_order__effective_date
@@ -126,7 +136,7 @@ msgstr "получение"
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_purchase_report__avg_receipt_delay
 msgid "Average Receipt Delay"
-msgstr ""
+msgstr "Средняя задержка поступления"
 
 #. module: purchase_stock
 #. odoo-python

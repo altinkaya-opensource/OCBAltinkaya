@@ -1,25 +1,19 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* base_import
-# 
-# Translators:
-# Martin Trigaux, 2022
-# Jolien De Paepe, 2023
-# Manon Rondou, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-06 13:31+0000\n"
-"PO-Revision-Date: 2022-09-22 05:45+0000\n"
-"Last-Translator: Manon Rondou, 2024\n"
-"Language-Team: French (https://app.transifex.com/odoo/teams/41243/fr/)\n"
+"POT-Creation-Date: 2025-02-14 19:52+0000\n"
+"PO-Revision-Date: 2025-02-14 19:52+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: fr\n"
-"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Plural-Forms: \n"
 
 #. module: base_import
 #. odoo-javascript
@@ -583,6 +577,19 @@ msgstr "En cours d'importation"
 #. odoo-python
 #: code:addons/base_import/models/base_import.py:0
 #, python-format
+msgid ""
+"Invalid cell format at row %(row)s, column %(col)s: %(cell_value)s, with "
+"format: %(cell_format)s, as (%(format_type)s) formats are not supported."
+msgstr ""
+"Format de cellule non valide à la ligne %(row)s, colonne %(col)s : "
+"%(cell_value)s, avec format : %(cell_format)s, car les formats "
+"(%(format_type)s) ne sont pas pris en charge."
+
+#. module: base_import
+#. odoo-python
+#: code:addons/base_import/models/base_import.py:0
+#: code:addons/base_import/models/base_import.py:0
+#, python-format
 msgid "Invalid cell value at row %(row)s, column %(col)s: %(cell_value)s"
 msgstr ""
 "Valeur de cellule invalide à la ligne %(row)s, colonne "
@@ -739,7 +746,7 @@ msgstr "Autre variable"
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_o2m_child__parent_id
 msgid "Parent"
-msgstr "Parent"
+msgstr "Parent d'élève"
 
 #. module: base_import
 #. odoo-javascript
@@ -765,7 +772,7 @@ msgstr "Champs relationnels"
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_mapping__res_model
 msgid "Res Model"
-msgstr "Res Model"
+msgstr "Modèle Res"
 
 #. module: base_import
 #. odoo-javascript
@@ -1065,7 +1072,7 @@ msgstr "Activer l'historique des modifications pendant l'importation"
 #: code:addons/base_import/static/src/legacy/js/import_action.js:0
 #, python-format
 msgid "Type"
-msgstr "Type"
+msgstr "Type de document"
 
 #. module: base_import
 #. odoo-python
@@ -1210,6 +1217,20 @@ msgstr "lot"
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "create"
+msgstr "créer"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "false"
+msgstr "faux"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "in field"
@@ -1220,7 +1241,7 @@ msgstr "dans le champ"
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "minutes"
-msgstr "minutes"
+msgstr "procès-verbaux"
 
 #. module: base_import
 #. odoo-javascript
@@ -1235,6 +1256,34 @@ msgstr "plus)"
 #, python-format
 msgid "out of"
 msgstr "sur"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "prevent"
+msgstr "prévenir"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "set_empty"
+msgstr "set_empty"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "skip_record"
+msgstr "sauter_enregistrement"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "true"
+msgstr "vrai"
 
 #. module: base_import
 #. odoo-python

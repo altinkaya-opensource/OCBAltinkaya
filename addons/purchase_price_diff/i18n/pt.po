@@ -1,26 +1,54 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* purchase_price_diff
-# 
-# Translators:
-# Ricardo Martins <ricardo.nbs.martins@gmail.com>, 2023
-# Nuno Silva <nuno.silva@arxi.pt>, 2023
-# Manuela Silva <mmsrs@sky.com>, 2023
-# Maitê Dietze, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-02 10:33+0000\n"
-"PO-Revision-Date: 2023-02-02 12:25+0000\n"
-"Last-Translator: Maitê Dietze, 2024\n"
-"Language-Team: Portuguese (https://app.transifex.com/odoo/teams/41243/pt/)\n"
+"POT-Creation-Date: 2025-02-14 19:47+0000\n"
+"PO-Revision-Date: 2025-02-14 19:47+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: pt\n"
-"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Plural-Forms: \n"
+
+#. module: purchase_price_diff
+#: model:ir.model.fields,field_description:purchase_price_diff.field_account_move_line__changeset_change_ids
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_category__changeset_change_ids
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_template__changeset_change_ids
+msgid "Changeset Changes"
+msgstr "Alterações do conjunto de alterações"
+
+#. module: purchase_price_diff
+#: model:ir.model.fields,field_description:purchase_price_diff.field_account_move_line__changeset_ids
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_category__changeset_ids
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_template__changeset_ids
+msgid "Changesets"
+msgstr "Conjunto de alterações"
+
+#. module: purchase_price_diff
+#: model:ir.model.fields,field_description:purchase_price_diff.field_account_move_line__count_changesets
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_category__count_changesets
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_template__count_changesets
+msgid "Count Changesets"
+msgstr "Contagem de conjuntos de alterações"
+
+#. module: purchase_price_diff
+#: model:ir.model.fields,field_description:purchase_price_diff.field_account_move_line__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_category__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_template__count_pending_changeset_changes
+msgid "Count Pending Changeset Changes"
+msgstr "Conte as alterações pendentes do conjunto de alterações"
+
+#. module: purchase_price_diff
+#: model:ir.model.fields,field_description:purchase_price_diff.field_account_move_line__count_pending_changesets
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_category__count_pending_changesets
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_template__count_pending_changesets
+msgid "Count Pending Changesets"
+msgstr "Conte os conjuntos de alterações pendentes"
 
 #. module: purchase_price_diff
 #: model:ir.model,name:purchase_price_diff.model_account_move_line
@@ -45,6 +73,34 @@ msgid "Product Category"
 msgstr "Categoria do Artigo"
 
 #. module: purchase_price_diff
+#: model:ir.model.fields,field_description:purchase_price_diff.field_account_move_line__smart_search
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_category__smart_search
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_template__smart_search
+msgid "Smart Search"
+msgstr "Pesquisa inteligente"
+
+#. module: purchase_price_diff
+#: model:ir.model.fields,help:purchase_price_diff.field_account_move_line__count_pending_changeset_changes
+#: model:ir.model.fields,help:purchase_price_diff.field_product_category__count_pending_changeset_changes
+#: model:ir.model.fields,help:purchase_price_diff.field_product_template__count_pending_changeset_changes
+msgid "The number of pending changes of this record"
+msgstr "O número de alterações pendentes deste registo"
+
+#. module: purchase_price_diff
+#: model:ir.model.fields,help:purchase_price_diff.field_account_move_line__count_pending_changesets
+#: model:ir.model.fields,help:purchase_price_diff.field_product_category__count_pending_changesets
+#: model:ir.model.fields,help:purchase_price_diff.field_product_template__count_pending_changesets
+msgid "The number of pending changesets of this record"
+msgstr "O número de conjuntos de alterações pendentes deste registo"
+
+#. module: purchase_price_diff
+#: model:ir.model.fields,help:purchase_price_diff.field_account_move_line__count_changesets
+#: model:ir.model.fields,help:purchase_price_diff.field_product_category__count_changesets
+#: model:ir.model.fields,help:purchase_price_diff.field_product_template__count_changesets
+msgid "The overall number of changesets of this record"
+msgstr "O número total de conjuntos de alterações deste registo"
+
+#. module: purchase_price_diff
 #: model:ir.model.fields,help:purchase_price_diff.field_product_product__property_account_creditor_price_difference
 #: model:ir.model.fields,help:purchase_price_diff.field_product_template__property_account_creditor_price_difference
 msgid ""
@@ -52,6 +108,9 @@ msgid ""
 "difference between a purchase order and its related vendor bill when "
 "validating this vendor bill."
 msgstr ""
+"Esta conta é utilizada na avaliação automatizada de inventário para registar"
+" a diferença de preço entre uma ordem de compra e a respectiva fatura do "
+"fornecedor ao validar esta fatura do fornecedor."
 
 #. module: purchase_price_diff
 #: model:ir.model.fields,help:purchase_price_diff.field_product_category__property_account_creditor_price_difference_categ
@@ -61,3 +120,10 @@ msgid ""
 msgstr ""
 "Esta conta será usada para valorizar a diferença de preço entre preço de "
 "compra e preço de custo."
+
+#. module: purchase_price_diff
+#: model:ir.model.fields,field_description:purchase_price_diff.field_account_move_line__user_can_see_changeset
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_category__user_can_see_changeset
+#: model:ir.model.fields,field_description:purchase_price_diff.field_product_template__user_can_see_changeset
+msgid "User Can See Changeset"
+msgstr "O utilizador pode ver o conjunto de alterações"

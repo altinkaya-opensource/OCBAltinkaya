@@ -1,44 +1,29 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* note
-# 
-# Translators:
-# KeyVillage, 2023
-# Igor Sheludko <igor.sheludko@gmail.com>, 2023
-# Александра Николова <alexandra1nikolova@gmail.com>, 2023
-# Martin Trigaux, 2023
-# Ivan Goychev <igoychev.projects@gmail.com>, 2023
-# Maria Boyadjieva <marabo2000@gmail.com>, 2023
-# Albena Mincheva <albena_vicheva@abv.bg>, 2023
-# Rosen Vladimirov <vladimirov.rosen@gmail.com>, 2023
-# Ивайло Малинов <iv.malinov@gmail.com>, 2023
-# aleksandar ivanov, 2023
-# Rumena Georgieva <rumena.georgieva@gmail.com>, 2024
-# Petko Karamotchev, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-06 13:31+0000\n"
-"PO-Revision-Date: 2022-09-22 05:53+0000\n"
-"Last-Translator: Petko Karamotchev, 2024\n"
-"Language-Team: Bulgarian (https://app.transifex.com/odoo/teams/41243/bg/)\n"
+"POT-Creation-Date: 2025-02-14 19:51+0000\n"
+"PO-Revision-Date: 2025-02-14 19:51+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: bg\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: \n"
 
 #. module: note
 #: model_terms:ir.ui.view,arch_db:note.view_note_note_kanban
 msgid "<i class=\"fa fa-check\" role=\"img\" aria-label=\"Opened\" title=\"Opened\"/>"
-msgstr ""
+msgstr "<i class=\"fa fa-check\" role=\"img\" aria-label=\"Opened\" title=\"Opened\"/>"
 
 #. module: note
 #: model_terms:ir.ui.view,arch_db:note.view_note_note_kanban
 msgid "<i class=\"fa fa-undo\" role=\"img\" aria-label=\"Closed\" title=\"Closed\"/>"
-msgstr ""
+msgstr "<i class=\"fa fa-undo\" role=\"img\" aria-label=\"Closed\" title=\"Closed\"/>"
 
 #. module: note
 #: model:ir.model.fields,field_description:note.field_mail_activity_type__category
@@ -99,7 +84,7 @@ msgstr "Икона за Вид Дейност"
 #. module: note
 #: model_terms:ir.actions.act_window,help:note.action_note_note
 msgid "Add a new personal note"
-msgstr ""
+msgstr "Добавяне на нова лична бележка"
 
 #. module: note
 #: model_terms:ir.actions.act_window,help:note.note_tag_action
@@ -118,7 +103,7 @@ msgstr "Добави бележка"
 #: code:addons/note/static/src/components/activity_menu_view/activity_menu_view.xml:0
 #, python-format
 msgid "Add new note"
-msgstr ""
+msgstr "Добавяне на нова бележка"
 
 #. module: note
 #: model_terms:ir.ui.view,arch_db:note.view_note_note_filter
@@ -134,6 +119,26 @@ msgstr "Брой Прикачени Файлове"
 #: model_terms:ir.ui.view,arch_db:note.view_note_note_filter
 msgid "By sticky note Category"
 msgstr "По категория на лепкавите бележки"
+
+#. module: note
+#: model:ir.model.fields,field_description:note.field_mail_activity__changeset_change_ids
+#: model:ir.model.fields,field_description:note.field_mail_activity_type__changeset_change_ids
+#: model:ir.model.fields,field_description:note.field_note_note__changeset_change_ids
+#: model:ir.model.fields,field_description:note.field_note_stage__changeset_change_ids
+#: model:ir.model.fields,field_description:note.field_note_tag__changeset_change_ids
+#: model:ir.model.fields,field_description:note.field_res_users__changeset_change_ids
+msgid "Changeset Changes"
+msgstr "Промени в набора от промени"
+
+#. module: note
+#: model:ir.model.fields,field_description:note.field_mail_activity__changeset_ids
+#: model:ir.model.fields,field_description:note.field_mail_activity_type__changeset_ids
+#: model:ir.model.fields,field_description:note.field_note_note__changeset_ids
+#: model:ir.model.fields,field_description:note.field_note_stage__changeset_ids
+#: model:ir.model.fields,field_description:note.field_note_tag__changeset_ids
+#: model:ir.model.fields,field_description:note.field_res_users__changeset_ids
+msgid "Changesets"
+msgstr "Промени"
 
 #. module: note
 #. odoo-javascript
@@ -157,6 +162,36 @@ msgstr "Фирма"
 #: model:ir.ui.menu,name:note.menu_note_configuration
 msgid "Configuration"
 msgstr "Конфигурация "
+
+#. module: note
+#: model:ir.model.fields,field_description:note.field_mail_activity__count_changesets
+#: model:ir.model.fields,field_description:note.field_mail_activity_type__count_changesets
+#: model:ir.model.fields,field_description:note.field_note_note__count_changesets
+#: model:ir.model.fields,field_description:note.field_note_stage__count_changesets
+#: model:ir.model.fields,field_description:note.field_note_tag__count_changesets
+#: model:ir.model.fields,field_description:note.field_res_users__count_changesets
+msgid "Count Changesets"
+msgstr "Промени в броя"
+
+#. module: note
+#: model:ir.model.fields,field_description:note.field_mail_activity__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:note.field_mail_activity_type__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:note.field_note_note__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:note.field_note_stage__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:note.field_note_tag__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:note.field_res_users__count_pending_changeset_changes
+msgid "Count Pending Changeset Changes"
+msgstr "Отчитане на чакащите промени в набора от промени"
+
+#. module: note
+#: model:ir.model.fields,field_description:note.field_mail_activity__count_pending_changesets
+#: model:ir.model.fields,field_description:note.field_mail_activity_type__count_pending_changesets
+#: model:ir.model.fields,field_description:note.field_note_note__count_pending_changesets
+#: model:ir.model.fields,field_description:note.field_note_stage__count_pending_changesets
+#: model:ir.model.fields,field_description:note.field_note_tag__count_pending_changesets
+#: model:ir.model.fields,field_description:note.field_res_users__count_pending_changesets
+msgid "Count Pending Changesets"
+msgstr "Брой чакащи промени"
 
 #. module: note
 #: model:ir.model.fields,field_description:note.field_note_note__create_uid
@@ -202,7 +237,7 @@ msgstr "Сгънато по подразбиране"
 #. module: note
 #: model_terms:ir.ui.view,arch_db:note.view_note_note_kanban
 msgid "Follower"
-msgstr ""
+msgstr "Следовник"
 
 #. module: note
 #: model:ir.model.fields,field_description:note.field_note_note__message_follower_ids
@@ -258,6 +293,7 @@ msgstr "Ако е отметнато, новите съобщения ще из�
 
 #. module: note
 #: model:ir.model.fields,help:note.field_note_note__message_has_error
+#: model:ir.model.fields,help:note.field_note_note__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Ако е отметнато, някои съобщения имат грешка при доставката."
 
@@ -300,7 +336,7 @@ msgstr "Основен прикачен Файл"
 #. module: note
 #: model:note.stage,name:note.note_stage_01
 msgid "Meeting Minutes"
-msgstr ""
+msgstr "Протоколи от срещи"
 
 #. module: note
 #: model:ir.model.fields,field_description:note.field_note_note__message_has_error
@@ -386,6 +422,8 @@ msgid ""
 "Notes are private, unless you share them by inviting follower on a note.\n"
 "            (Useful for meeting minutes)."
 msgstr ""
+"Бележките са лични, освен ако не ги споделите, като поканите последовател на бележка.\n"
+"            (Полезно за протоколи от срещи)."
 
 #. module: note
 #: model:ir.model.fields,field_description:note.field_note_note__message_needaction_counter
@@ -416,20 +454,20 @@ msgstr "Собственик"
 #. module: note
 #: model:ir.model.fields,field_description:note.field_mail_activity__note_id
 msgid "Related Note"
-msgstr ""
+msgstr "Свързана бележка"
 
 #. module: note
 #. odoo-javascript
 #: code:addons/note/static/src/components/activity_menu_view/activity_menu_view.xml:0
 #, python-format
 msgid "Remember..."
-msgstr ""
+msgstr "Запомнете..."
 
 #. module: note
 #: model:ir.model.fields.selection,name:note.selection__mail_activity_type__category__reminder
 #: model:mail.activity.type,name:note.mail_activity_data_reminder
 msgid "Reminder"
-msgstr ""
+msgstr "Напомняне"
 
 #. module: note
 #: model:ir.model.fields,field_description:note.field_note_note__activity_user_id
@@ -441,7 +479,12 @@ msgstr "Отговорник"
 #: code:addons/note/static/src/components/activity_menu_view/activity_menu_view.xml:0
 #, python-format
 msgid "SAVE"
-msgstr ""
+msgstr "SAVE"
+
+#. module: note
+#: model:ir.model.fields,field_description:note.field_note_note__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Грешка при доставката на SMS"
 
 #. module: note
 #: model:ir.model.fields,field_description:note.field_note_note__sequence
@@ -455,6 +498,16 @@ msgid "Show all records which has next action date is before today"
 msgstr ""
 "Показване на всички записи, на които следващата дата на действие е преди "
 "днес"
+
+#. module: note
+#: model:ir.model.fields,field_description:note.field_mail_activity__smart_search
+#: model:ir.model.fields,field_description:note.field_mail_activity_type__smart_search
+#: model:ir.model.fields,field_description:note.field_note_note__smart_search
+#: model:ir.model.fields,field_description:note.field_note_stage__smart_search
+#: model:ir.model.fields,field_description:note.field_note_tag__smart_search
+#: model:ir.model.fields,field_description:note.field_res_users__smart_search
+msgid "Smart Search"
+msgstr "Smart Search"
 
 #. module: note
 #: model:ir.model.fields,field_description:note.field_note_note__stage_id
@@ -523,6 +576,36 @@ msgid "Tags"
 msgstr "Маркери"
 
 #. module: note
+#: model:ir.model.fields,help:note.field_mail_activity__count_pending_changeset_changes
+#: model:ir.model.fields,help:note.field_mail_activity_type__count_pending_changeset_changes
+#: model:ir.model.fields,help:note.field_note_note__count_pending_changeset_changes
+#: model:ir.model.fields,help:note.field_note_stage__count_pending_changeset_changes
+#: model:ir.model.fields,help:note.field_note_tag__count_pending_changeset_changes
+#: model:ir.model.fields,help:note.field_res_users__count_pending_changeset_changes
+msgid "The number of pending changes of this record"
+msgstr "Брой на предстоящите промени на този запис"
+
+#. module: note
+#: model:ir.model.fields,help:note.field_mail_activity__count_pending_changesets
+#: model:ir.model.fields,help:note.field_mail_activity_type__count_pending_changesets
+#: model:ir.model.fields,help:note.field_note_note__count_pending_changesets
+#: model:ir.model.fields,help:note.field_note_stage__count_pending_changesets
+#: model:ir.model.fields,help:note.field_note_tag__count_pending_changesets
+#: model:ir.model.fields,help:note.field_res_users__count_pending_changesets
+msgid "The number of pending changesets of this record"
+msgstr "Броят на чакащите промени в този запис"
+
+#. module: note
+#: model:ir.model.fields,help:note.field_mail_activity__count_changesets
+#: model:ir.model.fields,help:note.field_mail_activity_type__count_changesets
+#: model:ir.model.fields,help:note.field_note_note__count_changesets
+#: model:ir.model.fields,help:note.field_note_stage__count_changesets
+#: model:ir.model.fields,help:note.field_note_tag__count_changesets
+#: model:ir.model.fields,help:note.field_res_users__count_changesets
+msgid "The overall number of changesets of this record"
+msgstr "Общ брой на промените в този запис"
+
+#. module: note
 #. odoo-javascript
 #: code:addons/note/static/src/models/activity_menu_view.js:0
 #, python-format
@@ -548,3 +631,23 @@ msgstr "Вид на изключение на дейност в базата."
 #: model:ir.model,name:note.model_res_users
 msgid "User"
 msgstr "Потребител"
+
+#. module: note
+#: model:ir.model.fields,field_description:note.field_mail_activity__user_can_see_changeset
+#: model:ir.model.fields,field_description:note.field_mail_activity_type__user_can_see_changeset
+#: model:ir.model.fields,field_description:note.field_note_note__user_can_see_changeset
+#: model:ir.model.fields,field_description:note.field_note_stage__user_can_see_changeset
+#: model:ir.model.fields,field_description:note.field_note_tag__user_can_see_changeset
+#: model:ir.model.fields,field_description:note.field_res_users__user_can_see_changeset
+msgid "User Can See Changeset"
+msgstr "Потребителят може да види набора от промени"
+
+#. module: note
+#: model:ir.model.fields,field_description:note.field_note_note__website_message_ids
+msgid "Website Messages"
+msgstr "Съобщения на уебсайта"
+
+#. module: note
+#: model:ir.model.fields,help:note.field_note_note__website_message_ids
+msgid "Website communication history"
+msgstr "История на комуникацията на уебсайта"

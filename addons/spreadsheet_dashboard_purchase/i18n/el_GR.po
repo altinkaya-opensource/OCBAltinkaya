@@ -1,0 +1,259 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* spreadsheet_dashboard_purchase
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-14 19:27+0000\n"
+"PO-Revision-Date: 2025-02-14 19:27+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: spreadsheet_dashboard_purchase
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#, python-format
+msgid " days"
+msgstr " ημέρες"
+
+#. module: spreadsheet_dashboard_purchase
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#, python-format
+msgid "Amount"
+msgstr "Ποσό"
+
+#. module: spreadsheet_dashboard_purchase
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#, python-format
+msgid "Buyer"
+msgstr "Αγοραστής"
+
+#. module: spreadsheet_dashboard_purchase
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#, python-format
+msgid "Country"
+msgstr "Χώρα"
+
+#. module: spreadsheet_dashboard_purchase
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#, python-format
+msgid "Current"
+msgstr "Τρέχον"
+
+#. module: spreadsheet_dashboard_purchase
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#, python-format
+msgid "Days to receive"
+msgstr "Ημέρες για την παραλαβή"
+
+#. module: spreadsheet_dashboard_purchase
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#, python-format
+msgid "KPI"
+msgstr "KPI"
+
+#. module: spreadsheet_dashboard_purchase
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#, python-format
+msgid "Lines"
+msgstr "Γραμμές"
+
+#. module: spreadsheet_dashboard_purchase
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#, python-format
+msgid "Order"
+msgstr "Παραγγελία"
+
+#. module: spreadsheet_dashboard_purchase
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#, python-format
+msgid "Ordered"
+msgstr "Παραγγελία"
+
+#. module: spreadsheet_dashboard_purchase
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#, python-format
+msgid "Orders"
+msgstr "Παραγγελίες"
+
+#. module: spreadsheet_dashboard_purchase
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#, python-format
+msgid "Period"
+msgstr "Περίοδος"
+
+#. module: spreadsheet_dashboard_purchase
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#, python-format
+msgid "Previous"
+msgstr "Προηγούμενο"
+
+#. module: spreadsheet_dashboard_purchase
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#, python-format
+msgid "Purchase Analysis by Partner Country"
+msgstr "Ανάλυση αγορών ανά χώρα εταίρο"
+
+#. module: spreadsheet_dashboard_purchase
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#, python-format
+msgid "Purchase Analysis by Purchase Representative"
+msgstr "Ανάλυση αγορών από εκπρόσωπο αγορών"
+
+#. module: spreadsheet_dashboard_purchase
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#, python-format
+msgid "Purchase Analysis by Vendor"
+msgstr "Ανάλυση αγορών ανά προμηθευτή"
+
+#. module: spreadsheet_dashboard_purchase
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#, python-format
+msgid "Purchase Orders by Untaxed Amount"
+msgstr "Παραγγελίες αγοράς ανά ακατάσχετο ποσό"
+
+#. module: spreadsheet_dashboard_purchase
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#, python-format
+msgid "Purchased"
+msgstr "Αγορασμένο"
+
+#. module: spreadsheet_dashboard_purchase
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#, python-format
+msgid "Qty ordered"
+msgstr "Ποσότητα παραγγελίας"
+
+#. module: spreadsheet_dashboard_purchase
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#, python-format
+msgid "Quantity ordered"
+msgstr "Παραγγελθείσα ποσότητα"
+
+#. module: spreadsheet_dashboard_purchase
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#, python-format
+msgid "Source"
+msgstr "Πηγή"
+
+#. module: spreadsheet_dashboard_purchase
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#, python-format
+msgid "Sourcing by Country"
+msgstr "Προμήθειες ανά χώρα"
+
+#. module: spreadsheet_dashboard_purchase
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#, python-format
+msgid "Top Buyers"
+msgstr "Κορυφαίοι αγοραστές"
+
+#. module: spreadsheet_dashboard_purchase
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#, python-format
+msgid "Top Orders"
+msgstr "Κορυφαίες παραγγελίες"
+
+#. module: spreadsheet_dashboard_purchase
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#, python-format
+msgid "Top Vendors"
+msgstr "Κορυφαίοι προμηθευτές"
+
+#. module: spreadsheet_dashboard_purchase
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#, python-format
+msgid "Top Vendors by Amount"
+msgstr "Κορυφαίοι προμηθευτές ανά ποσό"
+
+#. module: spreadsheet_dashboard_purchase
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#, python-format
+msgid "Untaxed total"
+msgstr "Σύνολο χωρίς φόρους"
+
+#. module: spreadsheet_dashboard_purchase
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#, python-format
+msgid "Vendor"
+msgstr "Προμηθευτής"
+
+#. module: spreadsheet_dashboard_purchase
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#, python-format
+msgid "last period"
+msgstr "τελευταία περίοδος"
+
+#. module: spreadsheet_dashboard_purchase
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#, python-format
+msgid "since last period"
+msgstr "από την προηγούμενη περίοδο"
+
+#. module: spreadsheet_dashboard_purchase
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#, python-format
+msgid "stats - current"
+msgstr "στατιστικά στοιχεία - τρέχοντα"
+
+#. module: spreadsheet_dashboard_purchase
+#. odoo-javascript
+#: code:addons/spreadsheet_dashboard_purchase/data/files/vendors_dashboard.json:0
+#, python-format
+msgid "stats - previous"
+msgstr "στατιστικά στοιχεία - προηγούμενα"

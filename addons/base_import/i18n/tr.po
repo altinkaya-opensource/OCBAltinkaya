@@ -1,34 +1,19 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* base_import
-# 
-# Translators:
-# İmat Yahya Çataklı <yahyacatakli@gmail.com>, 2022
-# Ertuğrul Güreş <ertugrulg@projetgrup.com>, 2022
-# Martin Trigaux, 2022
-# Cem Uygur <cemuygur.beb@gmail.com>, 2022
-# Umur Akın <umura@projetgrup.com>, 2022
-# Levent Karakaş <levent@mektup.at>, 2022
-# Murat Kaplan <muratk@projetgrup.com>, 2022
-# abc Def <hdogan1974@gmail.com>, 2022
-# Güven YILMAZ <guvenyilmaz@outlook.com.tr>, 2022
-# Ediz Duman <neps1192@gmail.com>, 2022
-# Gökhan Erdoğdu <gokhan.erdogdu@mechsoft.com.tr>, 2022
-# Tugay Hatıl <tugayh@projetgrup.com>, 2023
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-06 13:31+0000\n"
-"PO-Revision-Date: 2022-09-22 05:45+0000\n"
-"Last-Translator: Tugay Hatıl <tugayh@projetgrup.com>, 2023\n"
-"Language-Team: Turkish (https://app.transifex.com/odoo/teams/41243/tr/)\n"
+"POT-Creation-Date: 2025-02-14 19:52+0000\n"
+"PO-Revision-Date: 2025-02-14 19:52+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: tr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: \n"
 
 #. module: base_import
 #. odoo-javascript
@@ -93,7 +78,7 @@ msgstr "Temel"
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_import
 msgid "Base Import"
-msgstr "İçe Aktarım"
+msgstr "İçe aktarım"
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_mapping
@@ -327,6 +312,8 @@ msgstr "Tarihi ayrıştırma hatası [%s: L %d]: %s"
 msgid ""
 "Error while importing records: Text Delimiter should be a single character."
 msgstr ""
+"Kayıtlar içe aktarılırken hata oluştu: Metin Sınırlayıcı tek bir karakter "
+"olmalıdır."
 
 #. module: base_import
 #. odoo-python
@@ -337,6 +324,9 @@ msgid ""
 "title row has %d entries while the first row has %d. You may need to change "
 "the separator character."
 msgstr ""
+"Kayıtlar içe aktarılırken hata: tüm satırlar aynı boyutta olmalı, ancak "
+"başlık satırında %d giriş varken ilk satırda %d var. Ayırıcı karakteri "
+"değiştirmeniz gerekebilir."
 
 #. module: base_import
 #. odoo-javascript
@@ -581,6 +571,18 @@ msgstr "içe aktarılıyor"
 #. odoo-python
 #: code:addons/base_import/models/base_import.py:0
 #, python-format
+msgid ""
+"Invalid cell format at row %(row)s, column %(col)s: %(cell_value)s, with "
+"format: %(cell_format)s, as (%(format_type)s) formats are not supported."
+msgstr ""
+"Satır %(row)s, sütun %(col)s: %(cell_value)s, biçim: %(cell_format)s'de "
+"geçersiz hücre biçimi, çünkü (%(format_type)s) biçimleri desteklenmiyor."
+
+#. module: base_import
+#. odoo-python
+#: code:addons/base_import/models/base_import.py:0
+#: code:addons/base_import/models/base_import.py:0
+#, python-format
 msgid "Invalid cell value at row %(row)s, column %(col)s: %(cell_value)s"
 msgstr ""
 "%(col)s.sütun %(row)s.satırdaki hücre değeri geçersiz : %(cell_value)s"
@@ -762,7 +764,7 @@ msgstr "İlişkili Alanlar"
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_mapping__res_model
 msgid "Res Model"
-msgstr "Res Model"
+msgstr "Res Modeli"
 
 #. module: base_import
 #. odoo-javascript
@@ -1200,7 +1202,21 @@ msgstr "satır"
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "batch"
-msgstr "batch"
+msgstr "Batch"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "create"
+msgstr "oluşturmak"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "false"
+msgstr "yanlış"
 
 #. module: base_import
 #. odoo-javascript
@@ -1229,7 +1245,35 @@ msgstr "daha)"
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "out of"
-msgstr "out of"
+msgstr "dışında"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "prevent"
+msgstr "önlemek"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "set_empty"
+msgstr "set_empty"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "skip_record"
+msgstr "skip_record"
+
+#. module: base_import
+#. odoo-javascript
+#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
+#, python-format
+msgid "true"
+msgstr "gerçek"
 
 #. module: base_import
 #. odoo-python

@@ -1,7 +1,7 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* purchase_stock
-# 
+#
 # Translators:
 # Diogo Fonseca <dsf@thinkopensolutions.pt>, 2022
 # Daniel Reis, 2022
@@ -16,7 +16,7 @@
 # Ricardo Martins <ricardo.nbs.martins@gmail.com>, 2022
 # Peter Lawrence Romão <peterromao@yahoo.co.uk>, 2024
 # Maitê Dietze, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
@@ -25,10 +25,10 @@ msgstr ""
 "PO-Revision-Date: 2022-09-22 05:54+0000\n"
 "Last-Translator: Maitê Dietze, 2024\n"
 "Language-Team: Portuguese (https://app.transifex.com/odoo/teams/41243/pt/)\n"
+"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: pt\n"
 "Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #. module: purchase_stock
@@ -207,7 +207,7 @@ msgstr "Descrição Personalizada"
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.res_config_settings_view_form_stock
 msgid "Days needed to confirm a PO"
-msgstr ""
+msgstr "Dias necessários para confirmar um pedido de compra"
 
 #. module: purchase_stock
 #: model:ir.model.fields,help:purchase_stock.field_res_company__days_to_purchase
@@ -506,6 +506,9 @@ msgid ""
 " number of ordered products.x is either the System Parameter "
 "purchase_stock.on_time_delivery_days or the default 365"
 msgstr ""
+"Nos últimos x dias; o número de produtos recebidos a tempo dividido pelo "
+"número de produtos encomendados.x é o parâmetro do sistema "
+"purchase_stock.on_time_delivery_days ou a predefinição 365"
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_product_product__purchase_order_line_ids
@@ -676,7 +679,7 @@ msgstr "Rotas"
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.res_config_settings_view_form_stock
 msgid "Schedule request for quotations earlier to avoid delays"
-msgstr ""
+msgstr "Agende os pedidos de orçamento com antecedência para evitar atrasos"
 
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.product_supplierinfo_replenishment_tree_view
@@ -891,6 +894,9 @@ msgid ""
 "created to fulfill the need.<br/>Note: This rule will be used in combination"
 " with the rules<br/>of the reception route(s)"
 msgstr ""
+"Quando são necessários produtos em <b>%s</b>, <br/> é criado um pedido de "
+"cotação para satisfazer essa necessidade.<br/>Nota: Esta regra será "
+"utilizada em combinação com as regras<br/>do(s) itinerário(s) de receção"
 
 #. module: purchase_stock
 #. odoo-python

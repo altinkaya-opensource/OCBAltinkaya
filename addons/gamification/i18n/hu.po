@@ -1,38 +1,25 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* gamification
-# 
-# Translators:
-# Kovács Tibor <kovika@gmail.com>, 2022
-# Tibor Kőnig <konig.tibor@evitalit.hu>, 2022
-# sixsix six, 2022
-# Krisztián Juhász <juhasz.krisztian@josafar.hu>, 2022
-# Tamás Dombos, 2022
-# Ákos Nagy <akos.nagy@oregional.hu>, 2022
-# Martin Trigaux, 2022
-# Tamás Németh <ntomasz81@gmail.com>, 2022
-# krnkris, 2022
-# gezza <geza.nagy@oregional.hu>, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-23 08:24+0000\n"
-"PO-Revision-Date: 2022-09-22 05:46+0000\n"
-"Last-Translator: gezza <geza.nagy@oregional.hu>, 2024\n"
-"Language-Team: Hungarian (https://app.transifex.com/odoo/teams/41243/hu/)\n"
+"POT-Creation-Date: 2025-02-14 19:45+0000\n"
+"PO-Revision-Date: 2025-02-14 19:45+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: hu\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: \n"
 
 #. module: gamification
 #: model:ir.model.fields,field_description:gamification.field_gamification_challenge__user_count
 #: model:ir.model.fields,field_description:gamification.field_gamification_karma_rank__rank_users_count
 msgid "# Users"
-msgstr ""
+msgstr "# Felhasználók"
 
 #. module: gamification
 #. odoo-python
@@ -53,7 +40,7 @@ msgstr "%s visszautasította a kihívást"
 #: code:addons/gamification/models/gamification_challenge.py:0
 #, python-format
 msgid "<br/> %(rank)d. %(user_name)s - %(reward_name)s"
-msgstr "<br/> %(rank)d. %(user_name)s - %(reward_name)s"
+msgstr "<br/> %(rang)d. %(user_name)s - %(reward_name)s"
 
 #. module: gamification
 #. odoo-python
@@ -74,6 +61,8 @@ msgid ""
 "<br/>Reward (badge %(badge_name)s) for every succeeding user was sent to "
 "%(users)s."
 msgstr ""
+"<br/>Jutalom (jelvény %(jelvény_név)s) minden sikeres felhasználónak "
+"elküldtük %(felhasználók)s."
 
 #. module: gamification
 #. odoo-python
@@ -89,206 +78,368 @@ msgstr ""
 #. module: gamification
 #: model:mail.template,body_html:gamification.mail_template_data_new_rank_reached
 msgid ""
-"<div style=\"background:#F0F0F0;color:#515166;padding:10px 0px;font-family:Arial,Helvetica,sans-serif;font-size:14px;\">\n"
+"<html>\n"
+"  <body>\n"
+"    <div style=\"background:#F0F0F0;color:#515166;padding:10px 0px;font-family:Arial,Helvetica,sans-serif;font-size:14px;\">\n"
 "<table style=\"width:600px;margin:0px auto;background:white;border:1px solid #e1e1e1;\">\n"
 "    <tbody>\n"
 "        <tr>\n"
 "            <td style=\"padding:15px 20px 10px 20px;\">\n"
 "                <p>\n"
 "                    Congratulations\n"
-"                    <span t-out=\"object.name or ''\">Joel Willis</span>!\n"
+"                    <span><t t-out=\"object.name or &#x27;&#x27;\"></t></span>!\n"
 "                </p>\n"
 "                <p>\n"
-"                    You just reached a new rank : <strong t-out=\"object.rank_id.name or ''\">Newbie</strong>\n"
+"                    You just reached a new rank : <strong><t t-out=\"object.rank_id.name\"></t></strong>\n"
 "                </p>\n"
-"                <t t-if=\"object.next_rank_id.name\">\n"
-"                    <p>Continue your work to become a <strong t-out=\"object.next_rank_id.name or ''\">Student</strong> !</p>\n"
+"                % if object.next_rank_id.name\n"
+"                    <p>Continue your work to become a <strong><t t-out=\"object.next_rank_id.name\"></t></strong> !</p>\n"
 "                </t>\n"
 "                <div style=\"margin: 16px 0px 16px 0px;\">\n"
-"                    <t t-set=\"gamification_redirection_data\" t-value=\"object.get_gamification_redirection_data()\"></t>\n"
-"                    <t t-foreach=\"gamification_redirection_data\" t-as=\"data\">\n"
-"                        <t t-set=\"url\" t-value=\"data['url']\"></t>\n"
-"                        <t t-set=\"label\" t-value=\"data['label']\"></t>\n"
-"                        <a t-att-href=\"url\" style=\"background-color: #875A7B; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-radius: 5px; font-size:13px;\" t-out=\"label or ''\">LABEL</a>\n"
+"                    <t t-set=\"gamification_redirection_data\" t-value=\"object.get_gamification_redirection_data()\"/>\n"
+"                    % for data in gamification_redirection_data\n"
+"                        <t t-set=\"url\" t-value=\"data[&#x27;url&#x27;]\"/>\n"
+"                        <t t-set=\"label\" t-value=\"data[&#x27;label&#x27;]\"/>\n"
+"                        <a t-attf-href=\"{{url}}\" style=\"background-color: #875A7B; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-radius: 5px; font-size:13px;\"><t t-out=\"label\"></t></a>\n"
 "                    </t>\n"
 "                </div>\n"
 "            </td>\n"
 "            <td style=\"padding:15px 20px 10px 20px;\">\n"
 "                <p style=\"text-align: center;\">\n"
-"                    <img t-attf-src=\"/web/image/gamification.karma.rank/{{ object.rank_id.id }}/image_128\">\n"
+"                    <img t-attf-src=\"/web/image/gamification.karma.rank/{{object.rank_id.id}}/image_128\"/>\n"
 "                </p>\n"
 "            </td>\n"
 "        </tr>\n"
-"        <tr t-if=\"user.signature\">\n"
+"        % if user.signature\n"
+"        <tr>\n"
 "            <td style=\"padding:15px 20px 10px 20px;\">\n"
-"                <t t-out=\"user.signature or ''\">--<br>Mitchell Admin</t>\n"
+"                <t t-out=\"user.signature \"></t>\n"
 "            </td>\n"
 "        </tr>\n"
+"        </t>\n"
 "    </tbody>\n"
 " </table>\n"
-"</div>"
+"</div>\n"
+"  </body>\n"
+"</html>\n"
 msgstr ""
+"<html>\n"
+"  <body>\n"
+"    <div style=\"background:#F0F0F0;color:#515166;padding:10px 0px;font-family:Arial,Helvetica,sans-serif;font-size:14px;\">\n"
+"<table style=\"width:600px;margin:0px auto;background:white;border:1px solid #e1e1e1;\">\n"
+"    <tbody>\n"
+"        <tr>\n"
+"            <td style=\"padding:15px 20px 10px 20px;\">\n"
+"                <p>\n"
+"                    Congratulations\n"
+"                    <span><t t-out=\"object.name or ''\"/></span>!\n"
+"                </p>\n"
+"                <p>\n"
+"                    You just reached a new rank : <strong><t t-out=\"object.rank_id.name\"/></strong>\n"
+"                </p>\n"
+"                % if object.next_rank_id.name\n"
+"                    <p>Continue your work to become a <strong><t t-out=\"object.next_rank_id.name\"/></strong> !</p>\n"
+"                \n"
+"                <div style=\"margin: 16px 0px 16px 0px;\">\n"
+"                    <t t-set=\"gamification_redirection_data\" t-value=\"object.get_gamification_redirection_data()\"/>\n"
+"                    % for data in gamification_redirection_data\n"
+"                        <t t-set=\"url\" t-value=\"data['url']\"/>\n"
+"                        <t t-set=\"label\" t-value=\"data['label']\"/>\n"
+"                        <a t-attf-href=\"{{url}}\" style=\"background-color: #875A7B; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-radius: 5px; font-size:13px;\"><t t-out=\"label\"/></a>\n"
+"                    \n"
+"                </div>\n"
+"            </td>\n"
+"            <td style=\"padding:15px 20px 10px 20px;\">\n"
+"                <p style=\"text-align: center;\">\n"
+"                    <img t-attf-src=\"/web/image/gamification.karma.rank/{{object.rank_id.id}}/image_128\"/>\n"
+"                </p>\n"
+"            </td>\n"
+"        </tr>\n"
+"        % if user.signature\n"
+"        <tr>\n"
+"            <td style=\"padding:15px 20px 10px 20px;\">\n"
+"                <t t-out=\"user.signature \"/>\n"
+"            </td>\n"
+"        </tr>\n"
+"        \n"
+"    </tbody>\n"
+" </table>\n"
+"</div>\n"
+"  </body>\n"
+"</html>\n"
 
 #. module: gamification
 #: model:mail.template,body_html:gamification.email_template_goal_reminder
 msgid ""
-"<div>\n"
-"    <strong>Reminder</strong><br>\n"
-"    You have not updated your progress for the goal <t t-out=\"object.definition_id.name or ''\"></t> (currently reached at <t t-out=\"object.completeness or ''\"></t>%) for at least <t t-out=\"object.remind_update_delay or ''\"></t> days. Do not forget to do it.\n"
-"    <br><br>\n"
+"<html>\n"
+"  <body><div><strong>Reminder <t t-out=\"object.name\"></t></strong><br/>\n"
+"    You have not updated your progress for the goal <t t-out=\"object.definition_id.name\"></t> (currently reached at <t t-out=\"object.completeness\"></t>%) for at least <t t-out=\"object.remind_update_delay\"></t> days. Do not forget to do it.\n"
+"    <br/><br/>\n"
 "    Thank you,\n"
 "    <t t-if=\"object.challenge_id.manager_id.signature\">\n"
-"        <br>\n"
-"        <t t-out=\"object.challenge_id.manager_id.signature or ''\"></t>\n"
+"        <br/>\n"
+"        <t t-out=\"object.challenge_id.manager_id.signature \"></t>\n"
 "    </t>\n"
-"</div>"
+"</div>\n"
+"    </body>\n"
+"</html>\n"
 msgstr ""
-
-#. module: gamification
-#: model_terms:ir.ui.view,arch_db:gamification.goal_kanban_view
-msgid ""
-"<i role=\"img\" class=\"fa fa-clock-o fa-3x\" title=\"Goal in Progress\" "
-"aria-label=\"Goal in Progress\"/>"
-msgstr ""
-"<i role=\"img\" class=\"fa fa-clock-o fa-3x\" title=\"Goal in Progress\" "
-"aria-label=\"Goal in Progress\"/>"
-
-#. module: gamification
-#: model_terms:ir.ui.view,arch_db:gamification.goal_kanban_view
-msgid ""
-"<i role=\"img\" class=\"text-danger fa fa-times fa-3x\" title=\"Goal "
-"Failed\" aria-label=\"Goal Failed\"/>"
-msgstr ""
-
-#. module: gamification
-#: model_terms:ir.ui.view,arch_db:gamification.goal_kanban_view
-msgid ""
-"<i role=\"img\" class=\"text-success fa fa-check fa-3x\" title=\"Goal "
-"Reached\" aria-label=\"Goal Reached\"/>"
-msgstr ""
-
-#. module: gamification
-#: model_terms:ir.ui.view,arch_db:gamification.challenge_form_view
-msgid ""
-"<span class=\"o_stat_text\">Related</span>\n"
-"                                <span class=\"o_stat_text\">Goals</span>"
-msgstr ""
-"<span class=\"o_stat_text\">Kapcsolódó</span>\n"
-"                                <span class=\"o_stat_text\">Célok</span>"
-
-#. module: gamification
-#: model_terms:ir.ui.view,arch_db:gamification.gamification_karma_rank_view_form
-msgid "<span class=\"o_stat_text\">Users</span>"
-msgstr ""
+"<html>\n"
+"  <body><div><strong>Reminder <t t-out=\"object.name\"/></strong><br/>\n"
+"    You have not updated your progress for the goal <t t-out=\"object.definition_id.name\"/> (currently reached at <t t-out=\"object.completeness\"/>%) for at least <t t-out=\"object.remind_update_delay\"/> days. Do not forget to do it.\n"
+"    <br/><br/>\n"
+"    Thank you,\n"
+"    <t t-if=\"object.challenge_id.manager_id.signature\">\n"
+"        <br/>\n"
+"        <t t-out=\"object.challenge_id.manager_id.signature \"/>\n"
+"    </t>\n"
+"</div>\n"
+"    </body>\n"
+"</html>\n"
 
 #. module: gamification
 #: model:mail.template,body_html:gamification.email_template_badge_received
 msgid ""
-"<table border=\"0\" cellpadding=\"0\" style=\"padding-top: 16px; background-color: #F1F1F1; color: #454748; width: 100%; border-collapse:separate;\"><tr><td align=\"center\">\n"
-"<table border=\"0\" width=\"590\" cellpadding=\"0\" style=\"padding: 16px; background-color: white; color: #454748; border-collapse:separate;\" summary=\"o_mail_notification\">\n"
-"<tbody>\n"
-"    <!-- HEADER -->\n"
-"    <tr>\n"
-"        <td align=\"center\" style=\"min-width: 590px;\">\n"
-"            <table width=\"590\" border=\"0\" cellpadding=\"0\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
-"                <tr><td valign=\"middle\">\n"
-"                    <span style=\"font-size: 10px;\">Your Badge</span><br>\n"
-"                    <span style=\"font-size: 20px; font-weight: bold;\" t-out=\"object.badge_id.name or ''\"></span>\n"
-"                </td><td valign=\"middle\" align=\"right\">\n"
-"                    <img t-attf-src=\"/logo.png?company={{ object.user_id.company_id.id }}\" style=\"padding: 0px; margin: 0px; height: auto; width: 80px;\" t-att-alt=\"object.user_id.company_id.name\">\n"
-"                </td></tr>\n"
-"                <tr><td colspan=\"2\" style=\"text-align:center;\">\n"
-"                  <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\">\n"
-"                </td></tr>\n"
-"            </table>\n"
-"        </td>\n"
-"    </tr>\n"
-"    <!-- CONTENT -->\n"
-"    <tr>\n"
-"        <td align=\"center\" style=\"min-width: 590px;\">\n"
-"            <table width=\"590\" border=\"0\" cellpadding=\"0\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
-"                <tr><td valign=\"top\" style=\"font-size: 14px;\">\n"
-"                    <div>\n"
-"                        Congratulations <t t-out=\"object.user_id.name or ''\"></t> !<br>\n"
-"                        You just received badge <strong t-out=\"object.badge_id.name or ''\"></strong> !<br>\n"
-"                        <table t-if=\"not is_html_empty(object.badge_id.description)\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\" style=\"width: 560px; margin-top: 5px;\">\n"
-"                            <tbody><tr>\n"
-"                                <td valign=\"center\">\n"
-"                                    <img t-attf-src=\"/web/image/gamification.badge/{{ object.badge_id.id }}/image_128/80x80\" style=\"padding: 0px; margin: 0px; height: auto; width: 80px;\" t-att-alt=\"user.company_id.name\">\n"
-"                                </td>\n"
-"                                <td valign=\"center\">\n"
-"                                    <cite t-out=\"object.badge_id.description or ''\"></cite>\n"
-"                                </td>\n"
-"                            </tr></tbody>\n"
-"                        </table>\n"
-"                        <br>\n"
-"                        <t t-if=\"object.sender_id\">\n"
-"                            This badge was granted by <strong t-out=\"object.sender_id.name or ''\"></strong>.\n"
+"<html>\n"
+"  <body><table border=\"0\" cellpadding=\"0\" style=\"padding-top: 16px; background-color: #F1F1F1; color: #454748; width: 100%; border-collapse:separate;\">\n"
+"        <tr>\n"
+"          <td align=\"center\">\n"
+"            <table border=\"0\" width=\"590\" cellpadding=\"0\" style=\"padding: 16px; background-color: white; color: #454748; border-collapse:separate;\" summary=\"o_mail_notification\">\n"
+"              <tbody>\n"
+"                <!-- HEADER -->\n"
+"                <tr>\n"
+"                  <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                    <table width=\"590\" border=\"0\" cellpadding=\"0\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                      <tr>\n"
+"                        <td valign=\"middle\">\n"
+"                          <span style=\"font-size: 10px;\">Your Badge</span>\n"
+"                          <br/>\n"
+"                          <span style=\"font-size: 20px; font-weight: bold;\">\n"
+"                        <t t-out=\"object.badge_id.name\"></t>\n"
+"                    </span>\n"
+"                        </td>\n"
+"                        <td valign=\"middle\" align=\"right\">\n"
+"                          <img t-attf-src=\"/logo.png?company={{object.user_id.company_id.id}}\" style=\"padding: 0px; margin: 0px; height: auto; width: 80px;\" t-attf-alt=\"{{object.user_id.company_id.name}}\"/>\n"
+"                        </td>\n"
+"                      </tr>\n"
+"                      <tr>\n"
+"                        <td colspan=\"2\" style=\"text-align:center;\">\n"
+"                          <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\"/>\n"
+"                        </td>\n"
+"                      </tr>\n"
+"                    </table>\n"
+"                  </td>\n"
+"                </tr>\n"
+"                <!-- CONTENT -->\n"
+"                <tr>\n"
+"                  <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                    <table width=\"590\" border=\"0\" cellpadding=\"0\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                      <tr>\n"
+"                        <td valign=\"top\" style=\"font-size: 14px;\">\n"
+"                          <div>\n"
+"                        Congratulations <t t-out=\"object.user_id.name\"></t> !<br/>\n"
+"                        You just received badge <strong><t t-out=\"object.badge_id.name\"></t></strong> !<br/>\n"
+"                        % if object.badge_id.description\n"
+"                            <table cellspacing=\"0\" cellpadding=\"0\" border=\"0\" style=\"width: 560px; margin-top: 5px;\"><tbody><tr><td valign=\"center\"><img t-attf-src=\"/web/image/gamification.badge/{{object.badge_id.id}}/image_128/80x80\" style=\"padding: 0px; margin: 0px; height: auto; width: 80px;\" t-attf-alt=\"{{user.company_id.name}}\"/></td><td valign=\"center\"><cite><t t-out=\"object.badge_id.description\"></t></cite></td></tr></tbody></table>\n"
 "                        </t>\n"
-"                        <br>\n"
-"                        <t t-if=\"object.comment\" t-out=\"object.comment or ''\"></t>\n"
-"                        <br><br>\n"
+"                        <br/>\n"
+"                        % if object.sender_id\n"
+"                            This badge was granted by <strong><t t-out=\"object.sender_id.name\"></t></strong>.\n"
+"                        </t>\n"
+"                        <br/>\n"
+"                        % if object.comment\n"
+"                            <t t-out=\"object.comment\"></t>\n"
+"                        </t>\n"
+"                        <br/><br/>\n"
 "                        Thank you,\n"
 "                        <t t-if=\"object.sender_id.signature\">\n"
-"                            <br>\n"
-"                            <t t-out=\"object.sender_id.signature or ''\"></t>\n"
+"                            <br/>\n"
+"                            <t t-out=\"object.sender_id.signature \"></t>\n"
 "                        </t>\n"
 "                    </div>\n"
-"                </td></tr>\n"
-"                <tr><td style=\"text-align:center;\">\n"
-"                  <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\">\n"
-"                </td></tr>\n"
-"            </table>\n"
-"        </td>\n"
-"    </tr>\n"
-"    <!-- FOOTER -->\n"
-"    <tr>\n"
-"        <td align=\"center\" style=\"min-width: 590px;\">\n"
-"            <table width=\"590\" border=\"0\" cellpadding=\"0\" style=\"min-width: 590px; background-color: white; font-size: 12px; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
-"                <tr><td valign=\"middle\" align=\"left\">\n"
-"                    <t t-out=\"object.user_id.company_id.name or ''\">YourCompany</t>\n"
-"                </td></tr>\n"
-"                <tr><td valign=\"middle\" align=\"left\" style=\"opacity: 0.7;\">\n"
-"                    <t t-out=\"object.user_id.company_id.phone or ''\">+1 650-123-4567</t>\n"
-"                    <t t-if=\"object.user_id.company_id.email\">\n"
-"                        | <a t-attf-href=\"'mailto:%s' % {{ object.user_id.company_id.email }}\" style=\"text-decoration:none; color: #454748;\" t-out=\"object.user_id.company_id.email or ''\">info@yourcompany.com</a>\n"
+"                        </td>\n"
+"                      </tr>\n"
+"                      <tr>\n"
+"                        <td style=\"text-align:center;\">\n"
+"                          <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\"/>\n"
+"                        </td>\n"
+"                      </tr>\n"
+"                    </table>\n"
+"                  </td>\n"
+"                </tr>\n"
+"                <!-- FOOTER -->\n"
+"                <tr>\n"
+"                  <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                    <table width=\"590\" border=\"0\" cellpadding=\"0\" style=\"min-width: 590px; background-color: white; font-size: 12px; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                      <tr>\n"
+"                        <td valign=\"middle\" align=\"left\">\n"
+"                    <t t-out=\"object.user_id.company_id.name\"></t>\n"
+"                </td>\n"
+"                      </tr>\n"
+"                      <tr>\n"
+"                        <td valign=\"middle\" align=\"left\" style=\"opacity: 0.7;\">\n"
+"                    <t t-out=\"object.user_id.company_id.phone\"></t>\n"
+"                    % if object.user_id.company_id.email\n"
+"                        | <a t-attf-href=\"'mailto:%s' % {{object.user_id.company_id.email}}\" style=\"text-decoration:none; color: #454748;\"><t t-out=\"object.user_id.company_id.email\"></t></a>\n"
 "                    </t>\n"
-"                    <t t-if=\"object.user_id.company_id.website\">\n"
-"                        | <a t-attf-href=\"'%s' % {{ object.user_id.company_id.website }}\" style=\"text-decoration:none; color: #454748;\" t-out=\"object.user_id.company_id.website or ''\">http://www.example.com</a>\n"
+"                    % if object.user_id.company_id.website\n"
+"                        | <a t-attf-href=\"'%s' % {{object.user_id.company_id.website}}\" style=\"text-decoration:none; color: #454748;\">\n"
+"                        <t t-out=\"object.user_id.company_id.website\"></t>\n"
+"                    </a>\n"
 "                    </t>\n"
-"                </td></tr>\n"
+"                </td>\n"
+"                      </tr>\n"
+"                    </table>\n"
+"                  </td>\n"
+"                </tr>\n"
+"              </tbody>\n"
 "            </table>\n"
-"        </td>\n"
-"    </tr>\n"
-"</tbody>\n"
-"</table>\n"
-"</td></tr>\n"
-"<!-- POWERED BY -->\n"
-"<tr><td align=\"center\" style=\"min-width: 590px;\">\n"
-"    <table width=\"590\" border=\"0\" cellpadding=\"0\" style=\"min-width: 590px; background-color: #F1F1F1; color: #454748; padding: 8px; border-collapse:separate;\">\n"
-"      <tr><td style=\"text-align: center; font-size: 14px;\">\n"
+"          </td>\n"
+"        </tr>\n"
+"        <!-- POWERED BY -->\n"
+"        <tr>\n"
+"          <td align=\"center\" style=\"min-width: 590px;\">\n"
+"            <table width=\"590\" border=\"0\" cellpadding=\"0\" style=\"min-width: 590px; background-color: #F1F1F1; color: #454748; padding: 8px; border-collapse:separate;\">\n"
+"              <tr>\n"
+"                <td style=\"text-align: center; font-size: 14px;\">\n"
 "        Powered by <a target=\"_blank\" href=\"https://www.odoo.com?utm_source=db&amp;utm_medium=gamification\" style=\"color: #875A7B;\">Odoo</a>\n"
-"      </td></tr>\n"
-"    </table>\n"
-"</td></tr>\n"
-"</table>"
+"      </td>\n"
+"              </tr>\n"
+"            </table>\n"
+"          </td>\n"
+"        </tr>\n"
+"      </table>\n"
+"    </body>\n"
+"</html>\n"
 msgstr ""
+"<html>\n"
+"  <body><table border=\"0\" cellpadding=\"0\" style=\"padding-top: 16px; background-color: #F1F1F1; color: #454748; width: 100%; border-collapse:separate;\">\n"
+"        <tr>\n"
+"          <td align=\"center\">\n"
+"            <table border=\"0\" width=\"590\" cellpadding=\"0\" style=\"padding: 16px; background-color: white; color: #454748; border-collapse:separate;\" summary=\"o_mail_notification\">\n"
+"              <tbody>\n"
+"                <!-- HEADER -->\n"
+"                <tr>\n"
+"                  <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                    <table width=\"590\" border=\"0\" cellpadding=\"0\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                      <tr>\n"
+"                        <td valign=\"middle\">\n"
+"                          <span style=\"font-size: 10px;\">Your Badge</span>\n"
+"                          <br/>\n"
+"                          <span style=\"font-size: 20px; font-weight: bold;\">\n"
+"                        <t t-out=\"object.badge_id.name\"/>\n"
+"                    </span>\n"
+"                        </td>\n"
+"                        <td valign=\"middle\" align=\"right\">\n"
+"                          <img t-attf-src=\"/logo.png?company={{object.user_id.company_id.id}}\" style=\"padding: 0px; margin: 0px; height: auto; width: 80px;\" t-attf-alt=\"{{object.user_id.company_id.name}}\"/>\n"
+"                        </td>\n"
+"                      </tr>\n"
+"                      <tr>\n"
+"                        <td colspan=\"2\" style=\"text-align:center;\">\n"
+"                          <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\"/>\n"
+"                        </td>\n"
+"                      </tr>\n"
+"                    </table>\n"
+"                  </td>\n"
+"                </tr>\n"
+"                <!-- CONTENT -->\n"
+"                <tr>\n"
+"                  <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                    <table width=\"590\" border=\"0\" cellpadding=\"0\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                      <tr>\n"
+"                        <td valign=\"top\" style=\"font-size: 14px;\">\n"
+"                          <div>\n"
+"                        Congratulations <t t-out=\"object.user_id.name\"/> !<br/>\n"
+"                        You just received badge <strong><t t-out=\"object.badge_id.name\"/></strong> !<br/>\n"
+"                        % if object.badge_id.description\n"
+"                            <table cellspacing=\"0\" cellpadding=\"0\" border=\"0\" style=\"width: 560px; margin-top: 5px;\"><tbody><tr><td valign=\"center\"><img t-attf-src=\"/web/image/gamification.badge/{{object.badge_id.id}}/image_128/80x80\" style=\"padding: 0px; margin: 0px; height: auto; width: 80px;\" t-attf-alt=\"{{user.company_id.name}}\"/></td><td valign=\"center\"><cite><t t-out=\"object.badge_id.description\"/></cite></td></tr></tbody></table>\n"
+"                        \n"
+"                        <br/>\n"
+"                        % if object.sender_id\n"
+"                            This badge was granted by <strong><t t-out=\"object.sender_id.name\"/></strong>.\n"
+"                        \n"
+"                        <br/>\n"
+"                        % if object.comment\n"
+"                            <t t-out=\"object.comment\"/>\n"
+"                        \n"
+"                        <br/><br/>\n"
+"                        Thank you,\n"
+"                        <t t-if=\"object.sender_id.signature\">\n"
+"                            <br/>\n"
+"                            <t t-out=\"object.sender_id.signature \"/>\n"
+"                        </t>\n"
+"                    </div>\n"
+"                        </td>\n"
+"                      </tr>\n"
+"                      <tr>\n"
+"                        <td style=\"text-align:center;\">\n"
+"                          <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\"/>\n"
+"                        </td>\n"
+"                      </tr>\n"
+"                    </table>\n"
+"                  </td>\n"
+"                </tr>\n"
+"                <!-- FOOTER -->\n"
+"                <tr>\n"
+"                  <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                    <table width=\"590\" border=\"0\" cellpadding=\"0\" style=\"min-width: 590px; background-color: white; font-size: 12px; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                      <tr>\n"
+"                        <td valign=\"middle\" align=\"left\">\n"
+"                    <t t-out=\"object.user_id.company_id.name\"/>\n"
+"                </td>\n"
+"                      </tr>\n"
+"                      <tr>\n"
+"                        <td valign=\"middle\" align=\"left\" style=\"opacity: 0.7;\">\n"
+"                    <t t-out=\"object.user_id.company_id.phone\"/>\n"
+"                    % if object.user_id.company_id.email\n"
+"                        | <a t-attf-href=\"'mailto:%s' % {{object.user_id.company_id.email}}\" style=\"text-decoration:none; color: #454748;\"><t t-out=\"object.user_id.company_id.email\"/></a>\n"
+"                    \n"
+"                    % if object.user_id.company_id.website\n"
+"                        | <a t-attf-href=\"'%s' % {{object.user_id.company_id.website}}\" style=\"text-decoration:none; color: #454748;\">\n"
+"                        <t t-out=\"object.user_id.company_id.website\"/>\n"
+"                    </a>\n"
+"                    \n"
+"                </td>\n"
+"                      </tr>\n"
+"                    </table>\n"
+"                  </td>\n"
+"                </tr>\n"
+"              </tbody>\n"
+"            </table>\n"
+"          </td>\n"
+"        </tr>\n"
+"        <!-- POWERED BY -->\n"
+"        <tr>\n"
+"          <td align=\"center\" style=\"min-width: 590px;\">\n"
+"            <table width=\"590\" border=\"0\" cellpadding=\"0\" style=\"min-width: 590px; background-color: #F1F1F1; color: #454748; padding: 8px; border-collapse:separate;\">\n"
+"              <tr>\n"
+"                <td style=\"text-align: center; font-size: 14px;\">\n"
+"        Powered by <a target=\"_blank\" href=\"https://www.odoo.com?utm_source=db&amp;utm_medium=gamification\" style=\"color: #875A7B;\">Odoo</a>\n"
+"      </td>\n"
+"              </tr>\n"
+"            </table>\n"
+"          </td>\n"
+"        </tr>\n"
+"      </table>\n"
+"    </body>\n"
+"</html>\n"
 
 #. module: gamification
 #: model:mail.template,body_html:gamification.simple_report_template
 msgid ""
-"<table cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" style=\"background-color: #EEE; border-collapse: collapse;\">\n"
+"<html>\n"
+"  <body><table cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" style=\"background-color: #EEE; border-collapse: collapse;\">\n"
 "<tr>\n"
 "    <td valign=\"top\" align=\"center\">\n"
-"        <t t-set=\"object_ctx\" t-value=\"ctx.get('object')\"></t>\n"
-"        <t t-set=\"company\" t-value=\"object_ctx and object_ctx.company_id or user.company_id\"></t>\n"
-"        <t t-set=\"challenge_lines\" t-value=\"ctx.get('challenge_lines', [])\"></t>\n"
+"        <t t-set=\"record\" t-value=\"ctx.get(&#x27;record&#x27;)\"/>\n"
+"        <t t-set=\"company\" t-value=\"record and record.company_id or user.company_id\"/>\n"
+"        <t t-set=\"challenge_lines\" t-value=\"ctx.get(&#x27;challenge_lines&#x27;, [])    \"/>\n"
 "        <table cellspacing=\"0\" cellpadding=\"0\" width=\"600\" style=\"margin: 0 auto; width: 570px;\">\n"
 "            <tr><td>\n"
 "                <table cellspacing=\"0\" cellpadding=\"0\" width=\"100%\">\n"
 "                    <tr>\n"
 "                        <div>\n"
-"                            <t t-if=\"object.visibility_mode == 'ranking'\">\n"
+"                            <t t-if=\"object.visibility_mode == &#x27;ranking&#x27;\">\n"
 "                                <td style=\"padding:15px;\">\n"
 "                                    <p style=\"font-size:20px;color:#666666;\" align=\"center\">Leaderboard</p>\n"
 "                                </td>\n"
@@ -298,8 +449,8 @@ msgid ""
 "                </table>\n"
 "                <table cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" bgcolor=\"#fff\" style=\"background-color:#fff;\">\n"
 "                    <tr><td style=\"padding: 15px;\">\n"
-"                        <t t-if=\"object.visibility_mode == 'personal'\">\n"
-"                            <span style=\"color:#666666;font-size:13px;\">Here is your current progress in the challenge <strong t-out=\"object.name or ''\"></strong>.</span>\n"
+"                        <t t-if=\"object.visibility_mode == &#x27;personal&#x27;\">\n"
+"                            <span style=\"color:#666666;font-size:13px;\">Here is your current progress in the challenge <strong><t t-out=\"object.name\"></t></strong>.</span>\n"
 "                            <table cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" style=\"margin-top:20px;\">\n"
 "                                <tr>\n"
 "                                    <td align=\"center\">\n"
@@ -316,41 +467,245 @@ msgid ""
 "                                        <th style=\"width:20%;text-align:right;\" align=\"right\">Completeness</th>\n"
 "                                    </tr>\n"
 "                                    <tr>\n"
-"                                        <td colspan=\"5\" style=\"height:1px;background-color:#9A6C8E;\"></td>\n"
+"                                        <td colspan=\"5\" style=\"height:1px;background-color:#9A6C8E;\"/>\n"
 "                                    </tr>\n"
 "                                </thead>\n"
-"                                <tbody t-foreach=\"challenge_lines\" t-as=\"line\">\n"
+"                                <tbody>\n"
+"                                <t t-foreach=\"challenge_lines\" t-as=\"line\">\n"
 "                                    <tr style=\"font-weight:bold;\">\n"
 "                                        <td style=\"padding: 20px 0;\" align=\"left\">\n"
-"                                            <t t-out=\"line['name'] or ''\"></t>\n"
-"                                            <t t-if=\"line['suffix'] or line['monetary']\">\n"
-"                                                (<t t-out=\"line['full_suffix'] or ''\"></t>)\n"
+"                                            <t t-out=\"line[&#x27;name&#x27;]\"></t>\n"
+"                                            <t t-if=\"line[&#x27;suffix&#x27;] or line[&#x27;monetary&#x27;]\">\n"
+"                                                (<t t-out=\"line[&#x27;full_suffix&#x27;]\"></t>)\n"
 "                                            </t>\n"
 "                                        </td>\n"
-"                                        <td style=\"padding: 20px 0;\" align=\"right\"><t t-out=\"&quot;%.2f&quot; % line['target'] or ''\"></t>\n"
-"                                            <t t-if=\"line['suffix']\" t-out=\"line['suffix'] or ''\"></t>\n"
+"                                        <td style=\"padding: 20px 0;\" align=\"right\"><t t-out=\"&quot;%.2f&quot; % line[&#x27;target&#x27;]\"></t>\n"
+"                                            <t t-if=\"line[&#x27;suffix&#x27;]\">\n"
+"                                                <t t-out=\"line[&#x27;suffix&#x27;]\"></t>\n"
+"                                            </t>\n"
 "                                        </td>\n"
-"                                        <td style=\"padding: 20px 0;\" align=\"right\"><t t-out=\"&quot;%.2f&quot; % line['current'] or ''\"></t>\n"
-"                                            <t t-if=\"line['suffix']\" t-out=\"line['suffix'] or ''\"></t>\n"
+"                                        <td style=\"padding: 20px 0;\" align=\"right\"><t t-out=\"&quot;%.2f&quot; % line[&#x27;current&#x27;]\"></t>\n"
+"                                            <t t-if=\"line[&#x27;suffix&#x27;]\">\n"
+"                                                <t t-out=\"line[&#x27;suffix&#x27;]\"></t>\n"
+"                                            </t>\n"
 "                                        </td>\n"
-"                                        <td style=\"padding: 20px 0;font-size:25px;color:#9A6C8E;\" align=\"right\"><strong><t t-out=\"int(line['completeness']) or ''\"></t>%</strong></td>\n"
+"                                        <td style=\"padding: 20px 0;font-size:25px;color:#9A6C8E;\" align=\"right\"><strong><t t-out=\"line[&#x27;completeness&#x27;]| int\"></t>%</strong></td>\n"
 "                                    </tr>\n"
 "                                    <tr>\n"
-"                                        <td colspan=\"5\" style=\"height:1px;background-color:#e3e3e3;\"></td>\n"
+"                                        <td colspan=\"5\" style=\"height:1px;background-color:#e3e3e3;\"/>\n"
 "                                    </tr>\n"
+"                                </t>\n"
 "                                </tbody>\n"
 "                            </table>                   \n"
-"                        </t>\n"
-"                        <t t-else=\"\">\n"
+"                        % else: \n"
 "                            <span style=\"color:#A8A8A8;font-size:13px;\">\n"
-"                                Challenge: <strong t-out=\"object.name or ''\"></strong>.\n"
+"                                Challenge: <strong><t t-out=\"object.name\"></t></strong>.\n"
 "                            </span> \n"
 "                            <t t-foreach=\"challenge_lines\" t-as=\"line\">\n"
 "                                <!-- Header + Button table -->\n"
 "                                <table cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" style=\"margin-top:35px;\">\n"
 "                                    <tr>\n"
 "                                        <td width=\"50%\">\n"
-"                                            <div>Top Achievers for goal <strong t-out=\"line['name'] or ''\"></strong></div>\n"
+"                                            <div>Top Achievers for goal <strong><t t-out=\"line[&#x27;name&#x27;]\"></t></strong></div>\n"
+"                                        </td>\n"
+"                                    </tr>\n"
+"                                </table>\n"
+"                                <!-- Podium -->\n"
+"                                <t t-if=\"len(line[&#x27;goals&#x27;]) == 2\">\n"
+"                                    <table cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" style=\"margin-top:10px;\">\n"
+"                                        <tr><td style=\"padding:0 30px;\">\n"
+"                                            <table cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" style=\"table-layout: fixed;\">\n"
+"                                                <tr>\n"
+"                                                    <t t-set=\"top_goals\" t-value=\"line[&#x27;goals&#x27;][:3]\"/>\n"
+"                                                    <t t-foreach=\"top_goals\" t-as=\"goal\">\n"
+"                                                        <td align=\"center\" style=\"width:32%;\">\n"
+"                                                            <t t-if=\"loop.index == 1\">\n"
+"                                                                <t t-set=\"extra_div\" t-value=\"&#x27;&lt;div style=&quot;height:40px;&quot;/&gt;&#x27;\"/>\n"
+"                                                                <t t-set=\"heightA\" t-value=\"95\"/>\n"
+"                                                                <t t-set=\"heightB\" t-value=\"75\"/>\n"
+"                                                                <t t-set=\"bgColor\" t-value=\"&#x27;#b898b0&#x27;\"/>\n"
+"                                                                <t t-set=\"fontSize\" t-value=\"50\"/>\n"
+"                                                                <t t-set=\"podiumPosition\" t-value=\"&#x27;2&#x27;\"/>\n"
+"                                                            % elif loop.index == 2:\n"
+"                                                                <t t-set=\"extra_div\" t-value=\"&#x27;&#x27;\"/>\n"
+"                                                                <t t-set=\"heightA\" t-value=\"55\"/>\n"
+"                                                                <t t-set=\"heightB\" t-value=\"115\"/>\n"
+"                                                                <t t-set=\"bgColor\" t-value=\"&#x27;#9A6C8E&#x27;\"/>\n"
+"                                                                <t t-set=\"fontSize\" t-value=\"85\"/>\n"
+"                                                                <t t-set=\"podiumPosition\" t-value=\"&#x27;1&#x27;\"/>\n"
+"                                                            % elif loop.index == 3:\n"
+"                                                                <t t-set=\"extra_div\" t-value=\"&#x27;&lt;div style=&quot;height:60px;&quot;/&gt;&#x27;\"/>\n"
+"                                                                <t t-set=\"heightA\" t-value=\"115\"/>\n"
+"                                                                <t t-set=\"heightB\" t-value=\"55\"/>\n"
+"                                                                <t t-set=\"bgColor\" t-value=\"&#x27;#c8afc1&#x27;\"/>\n"
+"                                                                <t t-set=\"fontSize\" t-value=\"35\"/>\n"
+"                                                                <t t-set=\"podiumPosition\" t-value=\"&#x27;3&#x27;\"/>\n"
+"                                                            </t>\n"
+"                                                            <div style=\"margin:0 3px 0 3px;height:220px;\">\n"
+"                                                                <div t-attf-style=\"height:{{heightA}}px;\">\n"
+"                                                                    <t t-out=\"extra_div \"></t>   \n"
+"                                                                    <div style=\"height:55px;\">\n"
+"                                                                        <img style=\"margin-bottom:5px;width:50px;height:50px;border-radius:50%;object-fit:cover;\" t-att-src=\"image_data_uri(object.env['res.users'].browse(goal['user_id']).partner_id.image_128)\" t-attf-alt=\"{{goal['name']}}\"/>\n"
+"                                                                    </div>\n"
+"                                                                    <div align=\"center\" t-attf-style=\"color:{{bgColor}};height:20px\">\n"
+"                                                                        <t t-out=\"goal[&#x27;name&#x27;]\"></t>\n"
+"                                                                    </div>\n"
+"                                                                </div>\n"
+"                                                                <div t-attf-style=\"background-color:{{bgColor}};height:{{heightB}}px;\">\n"
+"                                                                    <strong><span t-attf-style=\"color:#fff;font-size:{{fontSize}}px;\"><t t-out=\"podiumPosition \"></t></span></strong>\n"
+"                                                                </div>\n"
+"                                                                <div style=\"height:30px;\">\n"
+"                                                                    <t t-out=\"&quot;%.2f&quot; % goal[&#x27;current&#x27;]\"></t>\n"
+"                                                                    <t t-if=\"line[&#x27;suffix&#x27;] or line[&#x27;monetary&#x27;]\">\n"
+"                                                                        <t t-out=\"line[&#x27;full_suffix&#x27;]\"></t>\n"
+"                                                                    </t>\n"
+"                                                                </div>\n"
+"                                                            </div>\n"
+"                                                        </td>\n"
+"                                                    </t>\n"
+"                                                </tr>\n"
+"                                            </table>\n"
+"                                            </td>\n"
+"                                        </tr>\n"
+"                                    </table>\n"
+"                                </t>\n"
+"                                <!-- data table -->\n"
+"                                <table cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" style=\"margin-bottom:5px\">\n"
+"                                    <tr>\n"
+"                                        <td>\n"
+"                                            <table cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" style=\"margin-top:30px;margin-bottom:5px;color:#666666;\">\n"
+"                                                <thead>\n"
+"                                                    <tr style=\"color:#9A6C8E; font-size:12px;\">\n"
+"                                                        <th style=\"width:15%;text-align:center;\">Rank</th>\n"
+"                                                        <th style=\"width:25%;text-align:left;\">Name</th>\n"
+"                                                        <th style=\"width:30%;text-align:right;\">Performance \n"
+"                                                            <t t-if=\"line[&#x27;suffix&#x27;]\">\n"
+"                                                                (<t t-out=\"line[&#x27;suffix&#x27;]\"></t>)\n"
+"                                                            % elif line['monetary']:\n"
+"                                                                (<t t-out=\"company.currency_id.symbol\"></t>)\n"
+"                                                            </t>\n"
+"                                                        </th>\n"
+"                                                        <th style=\"width:30%;text-align:right;\">Completeness</th>\n"
+"                                                    </tr>\n"
+"                                                    <tr>\n"
+"                                                        <td colspan=\"5\" style=\"height:1px;background-color:#9A6C8E;\"/>\n"
+"                                                    </tr>\n"
+"                                                </thead>\n"
+"                                                <tbody>\n"
+"                                                    <t t-foreach=\"line[&#x27;goals&#x27;]\" t-as=\"goal\">\n"
+"                                                        <tr>\n"
+"                                                            <t t-set=\"tdBgColor\" t-value=\"&#x27;#fff&#x27;\"/>\n"
+"                                                            <t t-set=\"tdColor\" t-value=\"&#x27;gray&#x27;\"/>\n"
+"                                                            <t t-set=\"mutedColor\" t-value=\"&#x27;#AAAAAA&#x27;\"/>\n"
+"                                                            <t t-set=\"tdPercentageColor\" t-value=\"&#x27;#9A6C8E&#x27;\"/>\n"
+"                                                            <td width=\"15%\" align=\"center\" valign=\"middle\" t-attf-style=\"background-color:{{tdBgColor}};padding :5px 0;font-size:20px;\"><t t-out=\"goal[&#x27;rank&#x27;]+1\"></t>\n"
+"                                                            </td>\n"
+"                                                            <td width=\"25%\" align=\"left\" valign=\"middle\" t-attf-style=\"background-color:{{tdBgColor}};padding :5px 0;font-size:13px;\"><t t-out=\"goal[&#x27;name&#x27;]\"></t></td>\n"
+"                                                            <td width=\"30%\" align=\"right\" t-attf-style=\"background-color:{{tdBgColor}};padding:5px 0;line-height:1;\"><t t-out=\"&quot;%.2f&quot; % goal[&#x27;current&#x27;]\"></t><br/><span t-attf-style=\"font-size:13px;color:{{mutedColor}};\">on <t t-out=\"&quot;%.2f&quot; % line[&#x27;target&#x27;]\"></t></span>\n"
+"                                                            </td>\n"
+"                                                            <td width=\"30%\" t-attf-style=\"color:{{tdPercentageColor}};background-color:{{tdBgColor}};padding-right:15px;font-size:22px;\" align=\"right\"><strong><t t-out=\"goal[&#x27;completeness&#x27;] | int\"></t>%</strong></td>\n"
+"                                                        </tr>\n"
+"                                                        <tr>\n"
+"                                                            <td colspan=\"5\" style=\"height:1px;background-color:#DADADA;\"/>\n"
+"                                                        </tr>\n"
+"                                                    </t>\n"
+"                                                </tbody>\n"
+"                                            </table>\n"
+"                                        </td>\n"
+"                                    </tr>\n"
+"                                </table> \n"
+"                            </t>\n"
+"                        </t>\n"
+"                    </td></tr>\n"
+"                </table>\n"
+"            </td></tr>\n"
+"        </table>\n"
+"    </td>\n"
+"</tr>\n"
+"</table>\n"
+"            </body>\n"
+"</html>\n"
+msgstr ""
+"<html>\n"
+"  <body><table cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" style=\"background-color: #EEE; border-collapse: collapse;\">\n"
+"<tr>\n"
+"    <td valign=\"top\" align=\"center\">\n"
+"        <t t-set=\"record\" t-value=\"ctx.get('record')\"/>\n"
+"        <t t-set=\"company\" t-value=\"record and record.company_id or user.company_id\"/>\n"
+"        <t t-set=\"challenge_lines\" t-value=\"ctx.get('challenge_lines', [])    \"/>\n"
+"        <table cellspacing=\"0\" cellpadding=\"0\" width=\"600\" style=\"margin: 0 auto; width: 570px;\">\n"
+"            <tr><td>\n"
+"                <table cellspacing=\"0\" cellpadding=\"0\" width=\"100%\">\n"
+"                    <tr>\n"
+"                        <div>\n"
+"                            <t t-if=\"object.visibility_mode == 'ranking'\">\n"
+"                                <td style=\"padding:15px;\">\n"
+"                                    <p style=\"font-size:20px;color:#666666;\" align=\"center\">Leaderboard</p>\n"
+"                                </td>\n"
+"                            </t>\n"
+"                        </div>\n"
+"                    </tr>\n"
+"                </table>\n"
+"                <table cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" bgcolor=\"#fff\" style=\"background-color:#fff;\">\n"
+"                    <tr><td style=\"padding: 15px;\">\n"
+"                        <t t-if=\"object.visibility_mode == 'personal'\">\n"
+"                            <span style=\"color:#666666;font-size:13px;\">Here is your current progress in the challenge <strong><t t-out=\"object.name\"/></strong>.</span>\n"
+"                            <table cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" style=\"margin-top:20px;\">\n"
+"                                <tr>\n"
+"                                    <td align=\"center\">\n"
+"                                        <div>Personal Performance</div>\n"
+"                                    </td>\n"
+"                                </tr>\n"
+"                            </table>\n"
+"                            <table cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" style=\"margin-top:30px;color:#666666;\">\n"
+"                                <thead>\n"
+"                                    <tr style=\"color:#9A6C8E; font-size:12px;\">\n"
+"                                        <th align=\"left\" style=\"padding-bottom: 0px;width:40%;text-align:left;\">Goals</th>\n"
+"                                        <th style=\"width:20%;text-align:right;\" align=\"left\">Target</th>\n"
+"                                        <th style=\"width:20%;text-align:right;\" align=\"right\">Current</th>\n"
+"                                        <th style=\"width:20%;text-align:right;\" align=\"right\">Completeness</th>\n"
+"                                    </tr>\n"
+"                                    <tr>\n"
+"                                        <td colspan=\"5\" style=\"height:1px;background-color:#9A6C8E;\"/>\n"
+"                                    </tr>\n"
+"                                </thead>\n"
+"                                <tbody>\n"
+"                                <t t-foreach=\"challenge_lines\" t-as=\"line\">\n"
+"                                    <tr style=\"font-weight:bold;\">\n"
+"                                        <td style=\"padding: 20px 0;\" align=\"left\">\n"
+"                                            <t t-out=\"line['name']\"/>\n"
+"                                            <t t-if=\"line['suffix'] or line['monetary']\">\n"
+"                                                (<t t-out=\"line['full_suffix']\"/>)\n"
+"                                            </t>\n"
+"                                        </td>\n"
+"                                        <td style=\"padding: 20px 0;\" align=\"right\"><t t-out=\"&quot;%.2f&quot; % line['target']\"/>\n"
+"                                            <t t-if=\"line['suffix']\">\n"
+"                                                <t t-out=\"line['suffix']\"/>\n"
+"                                            </t>\n"
+"                                        </td>\n"
+"                                        <td style=\"padding: 20px 0;\" align=\"right\"><t t-out=\"&quot;%.2f&quot; % line['current']\"/>\n"
+"                                            <t t-if=\"line['suffix']\">\n"
+"                                                <t t-out=\"line['suffix']\"/>\n"
+"                                            </t>\n"
+"                                        </td>\n"
+"                                        <td style=\"padding: 20px 0;font-size:25px;color:#9A6C8E;\" align=\"right\"><strong><t t-out=\"line['completeness']| int\"/>%</strong></td>\n"
+"                                    </tr>\n"
+"                                    <tr>\n"
+"                                        <td colspan=\"5\" style=\"height:1px;background-color:#e3e3e3;\"/>\n"
+"                                    </tr>\n"
+"                                </t>\n"
+"                                </tbody>\n"
+"                            </table>                   \n"
+"                        % else: \n"
+"                            <span style=\"color:#A8A8A8;font-size:13px;\">\n"
+"                                Challenge: <strong><t t-out=\"object.name\"/></strong>.\n"
+"                            </span> \n"
+"                            <t t-foreach=\"challenge_lines\" t-as=\"line\">\n"
+"                                <!-- Header + Button table -->\n"
+"                                <table cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" style=\"margin-top:35px;\">\n"
+"                                    <tr>\n"
+"                                        <td width=\"50%\">\n"
+"                                            <div>Top Achievers for goal <strong><t t-out=\"line['name']\"/></strong></div>\n"
 "                                        </td>\n"
 "                                    </tr>\n"
 "                                </table>\n"
@@ -360,50 +715,48 @@ msgid ""
 "                                        <tr><td style=\"padding:0 30px;\">\n"
 "                                            <table cellspacing=\"0\" cellpadding=\"0\" width=\"100%\" style=\"table-layout: fixed;\">\n"
 "                                                <tr>\n"
-"                                                    <t t-set=\"top_goals\" t-value=\"line['goals'][:3]\"></t>\n"
+"                                                    <t t-set=\"top_goals\" t-value=\"line['goals'][:3]\"/>\n"
 "                                                    <t t-foreach=\"top_goals\" t-as=\"goal\">\n"
 "                                                        <td align=\"center\" style=\"width:32%;\">\n"
 "                                                            <t t-if=\"loop.index == 1\">\n"
-"                                                                <t t-set=\"extra_div\" t-value=\"'&lt;div style=&quot;height:40px;&quot;&gt;&lt;/div&gt;'\"></t>\n"
-"                                                                <t t-set=\"heightA\" t-value=\"95\"></t>\n"
-"                                                                <t t-set=\"heightB\" t-value=\"75\"></t>\n"
-"                                                                <t t-set=\"bgColor\" t-value=\"'#b898b0'\"></t>\n"
-"                                                                <t t-set=\"fontSize\" t-value=\"50\"></t>\n"
-"                                                                <t t-set=\"podiumPosition\" t-value=\"'2'\"></t>\n"
-"                                                            </t>\n"
-"                                                            <t t-elif=\"loop.index == 2\">\n"
-"                                                                <t t-set=\"extra_div\" t-value=\"''\"></t>\n"
-"                                                                <t t-set=\"heightA\" t-value=\"55\"></t>\n"
-"                                                                <t t-set=\"heightB\" t-value=\"115\"></t>\n"
-"                                                                <t t-set=\"bgColor\" t-value=\"'#9A6C8E'\"></t>\n"
-"                                                                <t t-set=\"fontSize\" t-value=\"85\"></t>\n"
-"                                                                <t t-set=\"podiumPosition\" t-value=\"'1'\"></t>\n"
-"                                                            </t>\n"
-"                                                            <t t-elif=\"loop.index == 3\">\n"
-"                                                                <t t-set=\"extra_div\" t-value=\"'&lt;div style=&quot;height:60px;&quot;&gt;&lt;/div&gt;'\"></t>\n"
-"                                                                <t t-set=\"heightA\" t-value=\"115\"></t>\n"
-"                                                                <t t-set=\"heightB\" t-value=\"55\"></t>\n"
-"                                                                <t t-set=\"bgColor\" t-value=\"'#c8afc1'\"></t>\n"
-"                                                                <t t-set=\"fontSize\" t-value=\"35\"></t>\n"
-"                                                                <t t-set=\"podiumPosition\" t-value=\"'3'\"></t>\n"
+"                                                                <t t-set=\"extra_div\" t-value=\"'&lt;div style=&quot;height:40px;&quot;/&gt;'\"/>\n"
+"                                                                <t t-set=\"heightA\" t-value=\"95\"/>\n"
+"                                                                <t t-set=\"heightB\" t-value=\"75\"/>\n"
+"                                                                <t t-set=\"bgColor\" t-value=\"'#b898b0'\"/>\n"
+"                                                                <t t-set=\"fontSize\" t-value=\"50\"/>\n"
+"                                                                <t t-set=\"podiumPosition\" t-value=\"'2'\"/>\n"
+"                                                            % elif loop.index == 2:\n"
+"                                                                <t t-set=\"extra_div\" t-value=\"''\"/>\n"
+"                                                                <t t-set=\"heightA\" t-value=\"55\"/>\n"
+"                                                                <t t-set=\"heightB\" t-value=\"115\"/>\n"
+"                                                                <t t-set=\"bgColor\" t-value=\"'#9A6C8E'\"/>\n"
+"                                                                <t t-set=\"fontSize\" t-value=\"85\"/>\n"
+"                                                                <t t-set=\"podiumPosition\" t-value=\"'1'\"/>\n"
+"                                                            % elif loop.index == 3:\n"
+"                                                                <t t-set=\"extra_div\" t-value=\"'&lt;div style=&quot;height:60px;&quot;/&gt;'\"/>\n"
+"                                                                <t t-set=\"heightA\" t-value=\"115\"/>\n"
+"                                                                <t t-set=\"heightB\" t-value=\"55\"/>\n"
+"                                                                <t t-set=\"bgColor\" t-value=\"'#c8afc1'\"/>\n"
+"                                                                <t t-set=\"fontSize\" t-value=\"35\"/>\n"
+"                                                                <t t-set=\"podiumPosition\" t-value=\"'3'\"/>\n"
 "                                                            </t>\n"
 "                                                            <div style=\"margin:0 3px 0 3px;height:220px;\">\n"
-"                                                                <div t-attf-style=\"height:{{ heightA }}px;\">\n"
-"                                                                    <t t-out=\"extra_div or ''\"></t>\n"
+"                                                                <div t-attf-style=\"height:{{heightA}}px;\">\n"
+"                                                                    <t t-out=\"extra_div \"/>   \n"
 "                                                                    <div style=\"height:55px;\">\n"
-"                                                                        <img style=\"margin-bottom:5px;width:50px;height:50px;border-radius:50%;object-fit:cover;\" t-att-src=\"image_data_uri(object.env['res.users'].browse(goal['user_id']).partner_id.image_128)\" t-att-alt=\"goal['name']\">\n"
+"                                                                        <img style=\"margin-bottom:5px;width:50px;height:50px;border-radius:50%;object-fit:cover;\" t-att-src=\"image_data_uri(object.env['res.users'].browse(goal['user_id']).partner_id.image_128)\" t-attf-alt=\"{{goal['name']}}\"/>\n"
 "                                                                    </div>\n"
-"                                                                    <div align=\"center\" t-attf-style=\"color:{{ bgColor }};height:20px\">\n"
-"                                                                        <t t-out=\"goal['name'] or ''\"></t>\n"
+"                                                                    <div align=\"center\" t-attf-style=\"color:{{bgColor}};height:20px\">\n"
+"                                                                        <t t-out=\"goal['name']\"/>\n"
 "                                                                    </div>\n"
 "                                                                </div>\n"
-"                                                                <div t-attf-style=\"background-color:{{ bgColor }};height:{{ heightB }}px;\">\n"
-"                                                                    <strong><span t-attf-style=\"color:#fff;font-size:{{ fontSize }}px;\" t-out=\"podiumPosition or ''\"></span></strong>\n"
+"                                                                <div t-attf-style=\"background-color:{{bgColor}};height:{{heightB}}px;\">\n"
+"                                                                    <strong><span t-attf-style=\"color:#fff;font-size:{{fontSize}}px;\"><t t-out=\"podiumPosition \"/></span></strong>\n"
 "                                                                </div>\n"
 "                                                                <div style=\"height:30px;\">\n"
-"                                                                    <t t-out=\"&quot;%.2f&quot; % goal['current'] or ''\"></t>\n"
+"                                                                    <t t-out=\"&quot;%.2f&quot; % goal['current']\"/>\n"
 "                                                                    <t t-if=\"line['suffix'] or line['monetary']\">\n"
-"                                                                        <t t-out=\"line['full_suffix'] or ''\"></t>\n"
+"                                                                        <t t-out=\"line['full_suffix']\"/>\n"
 "                                                                    </t>\n"
 "                                                                </div>\n"
 "                                                            </div>\n"
@@ -426,34 +779,35 @@ msgid ""
 "                                                        <th style=\"width:25%;text-align:left;\">Name</th>\n"
 "                                                        <th style=\"width:30%;text-align:right;\">Performance \n"
 "                                                            <t t-if=\"line['suffix']\">\n"
-"                                                                (<t t-out=\"line['suffix'] or ''\"></t>)\n"
-"                                                            </t>\n"
-"                                                            <t t-elif=\"line['monetary']\">\n"
-"                                                                (<t t-out=\"company.currency_id.symbol or ''\"></t>)\n"
+"                                                                (<t t-out=\"line['suffix']\"/>)\n"
+"                                                            % elif line['monetary']:\n"
+"                                                                (<t t-out=\"company.currency_id.symbol\"/>)\n"
 "                                                            </t>\n"
 "                                                        </th>\n"
 "                                                        <th style=\"width:30%;text-align:right;\">Completeness</th>\n"
 "                                                    </tr>\n"
 "                                                    <tr>\n"
-"                                                        <td colspan=\"5\" style=\"height:1px;background-color:#9A6C8E;\"></td>\n"
+"                                                        <td colspan=\"5\" style=\"height:1px;background-color:#9A6C8E;\"/>\n"
 "                                                    </tr>\n"
 "                                                </thead>\n"
-"                                                <tbody t-foreach=\"line['goals']\" t-as=\"goal\">\n"
-"                                                    <tr>\n"
-"                                                        <t t-set=\"tdBgColor\" t-value=\"'#fff'\"></t>\n"
-"                                                        <t t-set=\"tdColor\" t-value=\"'gray'\"></t>\n"
-"                                                        <t t-set=\"mutedColor\" t-value=\"'#AAAAAA'\"></t>\n"
-"                                                        <t t-set=\"tdPercentageColor\" t-value=\"'#9A6C8E'\"></t>\n"
-"                                                        <td width=\"15%\" align=\"center\" valign=\"middle\" t-attf-style=\"background-color:{{ tdBgColor }};padding :5px 0;font-size:20px;\"><t t-out=\"goal['rank']+1 or ''\"></t>\n"
-"                                                        </td>\n"
-"                                                        <td width=\"25%\" align=\"left\" valign=\"middle\" t-attf-style=\"background-color:{{ tdBgColor }};padding :5px 0;font-size:13px;\"><t t-out=\"goal['name'] or ''\"></t></td>\n"
-"                                                        <td width=\"30%\" align=\"right\" t-attf-style=\"background-color:{{ tdBgColor }};padding:5px 0;line-height:1;\"><t t-out=\"&quot;%.2f&quot; % goal['current'] or ''\"></t><br><span t-attf-style=\"font-size:13px;color:{{ mutedColor }};\">on <t t-out=\"&quot;%.2f&quot; % line['target'] or ''\"></t></span>\n"
-"                                                        </td>\n"
-"                                                        <td width=\"30%\" t-attf-style=\"color:{{ tdPercentageColor }};background-color:{{ tdBgColor }};padding-right:15px;font-size:22px;\" align=\"right\"><strong><t t-out=\"int(goal['completeness']) or ''\"></t>%</strong></td>\n"
-"                                                    </tr>\n"
-"                                                    <tr>\n"
-"                                                        <td colspan=\"5\" style=\"height:1px;background-color:#DADADA;\"></td>\n"
-"                                                    </tr>\n"
+"                                                <tbody>\n"
+"                                                    <t t-foreach=\"line['goals']\" t-as=\"goal\">\n"
+"                                                        <tr>\n"
+"                                                            <t t-set=\"tdBgColor\" t-value=\"'#fff'\"/>\n"
+"                                                            <t t-set=\"tdColor\" t-value=\"'gray'\"/>\n"
+"                                                            <t t-set=\"mutedColor\" t-value=\"'#AAAAAA'\"/>\n"
+"                                                            <t t-set=\"tdPercentageColor\" t-value=\"'#9A6C8E'\"/>\n"
+"                                                            <td width=\"15%\" align=\"center\" valign=\"middle\" t-attf-style=\"background-color:{{tdBgColor}};padding :5px 0;font-size:20px;\"><t t-out=\"goal['rank']+1\"/>\n"
+"                                                            </td>\n"
+"                                                            <td width=\"25%\" align=\"left\" valign=\"middle\" t-attf-style=\"background-color:{{tdBgColor}};padding :5px 0;font-size:13px;\"><t t-out=\"goal['name']\"/></td>\n"
+"                                                            <td width=\"30%\" align=\"right\" t-attf-style=\"background-color:{{tdBgColor}};padding:5px 0;line-height:1;\"><t t-out=\"&quot;%.2f&quot; % goal['current']\"/><br/><span t-attf-style=\"font-size:13px;color:{{mutedColor}};\">on <t t-out=\"&quot;%.2f&quot; % line['target']\"/></span>\n"
+"                                                            </td>\n"
+"                                                            <td width=\"30%\" t-attf-style=\"color:{{tdPercentageColor}};background-color:{{tdBgColor}};padding-right:15px;font-size:22px;\" align=\"right\"><strong><t t-out=\"goal['completeness'] | int\"/>%</strong></td>\n"
+"                                                        </tr>\n"
+"                                                        <tr>\n"
+"                                                            <td colspan=\"5\" style=\"height:1px;background-color:#DADADA;\"/>\n"
+"                                                        </tr>\n"
+"                                                    </t>\n"
 "                                                </tbody>\n"
 "                                            </table>\n"
 "                                        </td>\n"
@@ -468,8 +822,49 @@ msgid ""
 "    </td>\n"
 "</tr>\n"
 "</table>\n"
-"            "
+"            </body>\n"
+"</html>\n"
+
+#. module: gamification
+#: model_terms:ir.ui.view,arch_db:gamification.goal_kanban_view
+msgid ""
+"<i role=\"img\" class=\"fa fa-clock-o fa-3x\" title=\"Goal in Progress\" "
+"aria-label=\"Goal in Progress\"/>"
 msgstr ""
+"<i role=\"img\" class=\"fa fa-clock-o fa-3x\" title=\"Goal in Progress\" "
+"aria-label=\"Goal in Progress\"/>"
+
+#. module: gamification
+#: model_terms:ir.ui.view,arch_db:gamification.goal_kanban_view
+msgid ""
+"<i role=\"img\" class=\"text-danger fa fa-times fa-3x\" title=\"Goal "
+"Failed\" aria-label=\"Goal Failed\"/>"
+msgstr ""
+"<i role=\"img\" class=\"text-danger fa fa-times fa-3x\" title=\"Goal "
+"Failed\" aria-label=\"Goal Failed\"/>"
+
+#. module: gamification
+#: model_terms:ir.ui.view,arch_db:gamification.goal_kanban_view
+msgid ""
+"<i role=\"img\" class=\"text-success fa fa-check fa-3x\" title=\"Goal "
+"Reached\" aria-label=\"Goal Reached\"/>"
+msgstr ""
+"<i role=\"img\" class=\"text-success fa fa-check fa-3x\" title=\"Goal "
+"Reached\" aria-label=\"Goal Reached\"/>"
+
+#. module: gamification
+#: model_terms:ir.ui.view,arch_db:gamification.challenge_form_view
+msgid ""
+"<span class=\"o_stat_text\">Related</span>\n"
+"                                <span class=\"o_stat_text\">Goals</span>"
+msgstr ""
+"<span class=\"o_stat_text\">Kapcsolódó</span>\n"
+"                                <span class=\"o_stat_text\">Célok</span>"
+
+#. module: gamification
+#: model_terms:ir.ui.view,arch_db:gamification.gamification_karma_rank_view_form
+msgid "<span class=\"o_stat_text\">Users</span>"
+msgstr "<span class=\"o_stat_text\">Felhasználók</span>"
 
 #. module: gamification
 #: model_terms:ir.actions.act_window,help:gamification.badge_list_action
@@ -488,6 +883,8 @@ msgid ""
 "A goal definition is a technical specification of a condition to reach.\n"
 "                The dates, values to reach or users are defined in goal instance."
 msgstr ""
+"A célmeghatározás egy elérendő állapot technikai specifikációja.\n"
+"                A célpéldányban az elérendő dátumok, értékek vagy felhasználók kerülnek meghatározásra."
 
 #. module: gamification
 #: model:ir.model.fields,help:gamification.field_gamification_challenge_line__condition
@@ -514,6 +911,8 @@ msgid ""
 "A rank correspond to a fixed karma level. The more you have karma, the more your rank is high.\n"
 "                    This is used to quickly know which user is new or old or highly or not active."
 msgstr ""
+"A rang egy rögzített karmaszintnek felel meg. Minél több karmád van, annál magasabb a rangod.\n"
+"                    Ez arra szolgál, hogy gyorsan megtudjuk, melyik felhasználó új vagy régi, illetve magasan aktív vagy nem aktív."
 
 #. module: gamification
 #: model:ir.model.fields.selection,name:gamification.selection__gamification_badge__rule_auth__users
@@ -560,7 +959,7 @@ msgstr "Archivált"
 #. module: gamification
 #: model_terms:ir.ui.view,arch_db:gamification.challenge_form_view
 msgid "Assign Challenge to"
-msgstr ""
+msgstr "Kihívás hozzárendelése ehhez"
 
 #. module: gamification
 #: model_terms:ir.actions.act_window,help:gamification.challenge_list_action
@@ -602,7 +1001,7 @@ msgstr "Automatikus: összeg egy mezőn"
 #. module: gamification
 #: model:gamification.karma.rank,name:gamification.rank_bachelor
 msgid "Bachelor"
-msgstr "Alapképzés"
+msgstr "Alapképzés (főiskola)"
 
 #. module: gamification
 #: model:ir.model.fields,field_description:gamification.field_gamification_badge__name
@@ -788,7 +1187,7 @@ msgstr "Feltétel"
 #: model:ir.model.fields,field_description:gamification.field_gamification_karma_tracking__consolidated
 #: model_terms:ir.ui.view,arch_db:gamification.gamification_karma_tracking_view_search
 msgid "Consolidated"
-msgstr ""
+msgstr "Összevont"
 
 #. module: gamification
 #: model:ir.actions.act_window,name:gamification.action_new_simplified_res_users
@@ -895,6 +1294,8 @@ msgid ""
 "Define how the goals will be computed. The result of the operation will be "
 "stored in the field 'Current'."
 msgstr ""
+"Határozza meg, hogyan számítja a célokat. A művelet eredményét eltárolja a "
+"'Jelenlegi' mezőben."
 
 #. module: gamification
 #: model:ir.model.fields,help:gamification.field_gamification_challenge__challenge_category
@@ -1080,7 +1481,7 @@ msgstr "Összes eredményes felhasználónak"
 #. module: gamification
 #: model_terms:ir.ui.view,arch_db:gamification.goal_definition_form_view
 msgid "Formatting Options"
-msgstr ""
+msgstr "Formázási lehetőségek"
 
 #. module: gamification
 #: model:ir.model.fields,field_description:gamification.field_gamification_badge__level
@@ -1100,27 +1501,27 @@ msgstr "Teljes utótag"
 #. module: gamification
 #: model:ir.model,name:gamification.model_gamification_badge
 msgid "Gamification Badge"
-msgstr ""
+msgstr "Gamification jelvény"
 
 #. module: gamification
 #: model:ir.model,name:gamification.model_gamification_challenge
 msgid "Gamification Challenge"
-msgstr ""
+msgstr "Gamification kihívás"
 
 #. module: gamification
 #: model:ir.model,name:gamification.model_gamification_goal
 msgid "Gamification Goal"
-msgstr ""
+msgstr "Gamification cél"
 
 #. module: gamification
 #: model:ir.model,name:gamification.model_gamification_goal_definition
 msgid "Gamification Goal Definition"
-msgstr ""
+msgstr "Gamification célmeghatározás"
 
 #. module: gamification
 #: model:ir.model,name:gamification.model_gamification_goal_wizard
 msgid "Gamification Goal Wizard"
-msgstr ""
+msgstr "Gamification célvarázsló"
 
 #. module: gamification
 #: model:ir.ui.menu,name:gamification.gamification_menu
@@ -1130,12 +1531,12 @@ msgstr "Gammifikációs/Játékos eszközök"
 #. module: gamification
 #: model:ir.model,name:gamification.model_gamification_badge_user
 msgid "Gamification User Badge"
-msgstr ""
+msgstr "Gamification felhasználói jelvény"
 
 #. module: gamification
 #: model:ir.model,name:gamification.model_gamification_badge_user_wizard
 msgid "Gamification User Badge Wizard"
-msgstr ""
+msgstr "Gamification felhasználói jelvény varázsló"
 
 #. module: gamification
 #: model:ir.model,name:gamification.model_gamification_challenge_line
@@ -1145,12 +1546,12 @@ msgstr "Gamifikációs/játékos cél a kihíváshoz"
 #. module: gamification
 #: model:mail.template,name:gamification.email_template_badge_received
 msgid "Gamification: Badge Received"
-msgstr ""
+msgstr "Gamification: Jelvényt kaptunk"
 
 #. module: gamification
 #: model:mail.template,name:gamification.simple_report_template
 msgid "Gamification: Challenge Report"
-msgstr ""
+msgstr "Gamification: Kihívásjelentés"
 
 #. module: gamification
 #: model:ir.actions.server,name:gamification.ir_cron_check_challenge_ir_actions_server
@@ -1162,17 +1563,17 @@ msgstr "Gamifikáció: Cél elérésének ellenőrzése"
 #: model:ir.actions.server,name:gamification.ir_cron_consolidate_last_month_ir_actions_server
 #: model:ir.cron,cron_name:gamification.ir_cron_consolidate_last_month
 msgid "Gamification: Karma tracking consolidation"
-msgstr ""
+msgstr "Gamification: Karma nyomon követésének konszolidálása"
 
 #. module: gamification
 #: model:mail.template,name:gamification.mail_template_data_new_rank_reached
 msgid "Gamification: New Rank Reached"
-msgstr ""
+msgstr "Gamification: Új rangot ért el"
 
 #. module: gamification
 #: model:mail.template,name:gamification.email_template_goal_reminder
 msgid "Gamification: Reminder For Goal Update"
-msgstr ""
+msgstr "Gamification: Emlékeztető a célok frissítéséhez"
 
 #. module: gamification
 #: model:ir.model.fields,field_description:gamification.field_gamification_goal_wizard__goal_id
@@ -1312,7 +1713,7 @@ msgstr "Rejtett"
 #. module: gamification
 #: model_terms:ir.ui.view,arch_db:gamification.goal_definition_form_view
 msgid "How is the goal computed?"
-msgstr ""
+msgstr "Hogyan számítják ki a célt?"
 
 #. module: gamification
 #: model:ir.model.fields.selection,name:gamification.selection__gamification_challenge__challenge_category__hr
@@ -1406,6 +1807,8 @@ msgid ""
 "In batch mode, this indicates which field distinguishes one user from the "
 "other, e.g. user_id, partner_id..."
 msgstr ""
+"Tömeges módban, ez mutatja meg, melyik mező határolja el egyik felhasználót "
+"a másiktól, pl. user_id, partner_id..."
 
 #. module: gamification
 #: model:ir.model.fields,help:gamification.field_gamification_goal__last_update
@@ -1452,7 +1855,7 @@ msgstr "Karma"
 #. module: gamification
 #: model:ir.model.fields,field_description:gamification.field_res_users__karma_tracking_ids
 msgid "Karma Changes"
-msgstr ""
+msgstr "Karma változások"
 
 #. module: gamification
 #: model:ir.model.fields,field_description:gamification.field_gamification_badge____last_update
@@ -1532,6 +1935,11 @@ msgid "List of goals that will be set"
 msgstr "Beállítandó célok listája"
 
 #. module: gamification
+#: model:gamification.goal.definition,name:gamification.definition_nbr_following
+msgid "Mail Group Following"
+msgstr "Levelezés csoport követők"
+
+#. module: gamification
 #: model:ir.model.fields,field_description:gamification.field_gamification_badge__message_main_attachment_id
 #: model:ir.model.fields,field_description:gamification.field_gamification_challenge__message_main_attachment_id
 msgid "Main Attachment"
@@ -1590,12 +1998,12 @@ msgstr "Összes havi"
 #: model:ir.model.fields,field_description:gamification.field_gamification_karma_rank__description_motivational
 #: model_terms:ir.ui.view,arch_db:gamification.gamification_karma_rank_view_form
 msgid "Motivational"
-msgstr ""
+msgstr "Motiváló"
 
 #. module: gamification
 #: model:ir.model.fields,help:gamification.field_gamification_karma_rank__description_motivational
 msgid "Motivational phrase to reach this rank on your profile page"
-msgstr ""
+msgstr "Motiváló mondat, hogy elérje ezt a rangsort a profiloldalán"
 
 #. module: gamification
 #: model_terms:ir.ui.view,arch_db:gamification.goal_search_view
@@ -1635,17 +2043,17 @@ msgstr "Ne emlékeztessen, ha nincs érték vagy nulla van megadva."
 #. module: gamification
 #: model:ir.model.fields,field_description:gamification.field_gamification_karma_tracking__new_value
 msgid "New Karma Value"
-msgstr ""
+msgstr "New Karma Value"
 
 #. module: gamification
 #: model:mail.template,subject:gamification.email_template_badge_received
-msgid "New badge {{ object.badge_id.name }} granted"
-msgstr ""
+msgid "New badge {{object.badge_id.name}} granted"
+msgstr "Új jelvény {{object.badge_id.name}} megadva"
 
 #. module: gamification
 #: model:mail.template,subject:gamification.mail_template_data_new_rank_reached
-msgid "New rank: {{ object.rank_id.name }}"
-msgstr ""
+msgid "New rank: {{object.rank_id.name}}"
+msgstr "Új rang: {{object.rank_id.name}}"
 
 #. module: gamification
 #: model:gamification.karma.rank,name:gamification.rank_newbie
@@ -1737,7 +2145,7 @@ msgstr "Felhasználók száma"
 #. module: gamification
 #: model:ir.model.fields,field_description:gamification.field_gamification_karma_tracking__old_value
 msgid "Old Karma Value"
-msgstr ""
+msgstr "Old Karma Value"
 
 #. module: gamification
 #: model:ir.model.fields.selection,name:gamification.selection__gamification_challenge__report_message_frequency__onchange
@@ -1793,6 +2201,8 @@ msgid ""
 "Period of automatic goal assignment. If none is selected, should be launched"
 " manually."
 msgstr ""
+"Az automatikus célkiosztás időszaka. Ha egyik sincs kiválasztva, manuálisan "
+"kell elindítani."
 
 #. module: gamification
 #: model:ir.model.fields,field_description:gamification.field_gamification_challenge__period
@@ -1838,7 +2248,7 @@ msgstr "Rang neve"
 #. module: gamification
 #: model:ir.model,name:gamification.model_gamification_karma_rank
 msgid "Rank based on karma"
-msgstr ""
+msgstr "Rangsor a karma alapján"
 
 #. module: gamification
 #: model:ir.actions.act_window,name:gamification.gamification_karma_ranks_action
@@ -1854,42 +2264,24 @@ msgstr "Ranglista"
 #. module: gamification
 #: model_terms:gamification.karma.rank,description_motivational:gamification.rank_master
 msgid "Reach the next rank and become a Master!"
-msgstr ""
+msgstr "Érje el a következő rangot, és váljon mesterré!"
 
 #. module: gamification
 #: model_terms:gamification.karma.rank,description_motivational:gamification.rank_doctor
 msgid "Reach the next rank and become a powerful user!"
-msgstr ""
-
-#. module: gamification
-#: model_terms:gamification.karma.rank,description_motivational:gamification.rank_bachelor
-msgid "Reach the next rank and gain a very magic wand !"
-msgstr ""
-
-#. module: gamification
-#: model_terms:gamification.karma.rank,description_motivational:gamification.rank_master
-msgid "Reach the next rank and gain a very nice hat !"
-msgstr ""
-
-#. module: gamification
-#: model_terms:gamification.karma.rank,description_motivational:gamification.rank_student
-msgid "Reach the next rank and gain a very nice mug !"
-msgstr ""
-
-#. module: gamification
-#: model_terms:gamification.karma.rank,description_motivational:gamification.rank_doctor
-msgid "Reach the next rank and gain a very nice unicorn !"
-msgstr ""
+msgstr "Érje el a következő rangot, és váljon erőteljes felhasználóvá!"
 
 #. module: gamification
 #: model_terms:gamification.karma.rank,description_motivational:gamification.rank_bachelor
 msgid "Reach the next rank to improve your status!"
-msgstr ""
+msgstr "Érje el a következő rangot, hogy javítsa státuszát!"
 
 #. module: gamification
 #: model_terms:gamification.karma.rank,description_motivational:gamification.rank_student
 msgid "Reach the next rank to show the rest of the world you exist."
 msgstr ""
+"Érje el a következő rangot, hogy megmutassa a világ többi részének, hogy "
+"létezik."
 
 #. module: gamification
 #: model:ir.model.fields.selection,name:gamification.selection__gamification_goal__state__reached
@@ -1960,7 +2352,7 @@ msgstr "Kötelező kitűzők "
 #. module: gamification
 #: model:ir.model.fields,field_description:gamification.field_gamification_karma_rank__karma_min
 msgid "Required Karma"
-msgstr ""
+msgstr "Szükséges karma"
 
 #. module: gamification
 #: model_terms:ir.ui.view,arch_db:gamification.goal_form_view
@@ -2054,7 +2446,7 @@ msgstr "Rangok keresése"
 #. module: gamification
 #: model_terms:ir.ui.view,arch_db:gamification.gamification_karma_tracking_view_search
 msgid "Search Trackings"
-msgstr ""
+msgstr "Keresés nyomon követése"
 
 #. module: gamification
 #: model_terms:ir.ui.view,arch_db:gamification.badge_form_view
@@ -2073,7 +2465,7 @@ msgstr "Kimutatás küldése"
 #. module: gamification
 #: model:mail.template,description:gamification.simple_report_template
 msgid "Send a challenge report to all participants"
-msgstr ""
+msgstr "Kihívásjelentés küldése minden résztvevőnek"
 
 #. module: gamification
 #: model:ir.model.fields,field_description:gamification.field_gamification_challenge__report_message_group_id
@@ -2089,16 +2481,18 @@ msgstr "Küldő"
 #: model:mail.template,description:gamification.email_template_goal_reminder
 msgid "Sent automatically to participant who haven't updated their goal"
 msgstr ""
+"Automatikusan elküldjük azoknak a résztvevőknek, akik nem frissítették a "
+"céljukat."
 
 #. module: gamification
 #: model:mail.template,description:gamification.email_template_badge_received
 msgid "Sent automatically to the user who received a badge"
-msgstr ""
+msgstr "Automatikusan elküldi a jelvényt kapott felhasználónak."
 
 #. module: gamification
 #: model:mail.template,description:gamification.mail_template_data_new_rank_reached
 msgid "Sent automatically when user reaches a new rank"
-msgstr ""
+msgstr "Automatikusan elküldi, ha a felhasználó új rangot ér el"
 
 #. module: gamification
 #: model:ir.model.fields,field_description:gamification.field_gamification_challenge_line__sequence
@@ -2318,6 +2712,9 @@ msgid ""
 "\n"
 "%(error)s not found"
 msgstr ""
+"A %(név)s definíció modellkonfigurációja hibásnak tűnik, kérjük, ellenőrizze.\n"
+"\n"
+"%(hiba)s nem található"
 
 #. module: gamification
 #. odoo-python
@@ -2328,6 +2725,9 @@ msgid ""
 "\n"
 "%(field_name)s not stored"
 msgstr ""
+"A %(név)s definíció modellkonfigurációja hibásnak tűnik, kérjük, ellenőrizze.\n"
+"\n"
+"%(field_name)s nem tárolt"
 
 #. module: gamification
 #: model:ir.model.fields,help:gamification.field_gamification_goal__remind_update_delay
@@ -2374,7 +2774,7 @@ msgstr "Ahányszor ezt a kitűzőt megkapták."
 #. module: gamification
 #: model:ir.model.constraint,message:gamification.constraint_gamification_karma_rank_karma_min_check
 msgid "The required karma has to be above 0."
-msgstr ""
+msgstr "A szükséges karmának 0 fölött kell lennie."
 
 #. module: gamification
 #: model:ir.model.fields,help:gamification.field_gamification_challenge_line__definition_monetary
@@ -2395,6 +2795,8 @@ msgid ""
 "The users that have succeeded these goals will receive automatically the "
 "badge."
 msgstr ""
+"Azok a felhasználók, akiknek sikerült elérni ezeket a célokat, automatikusan"
+" megkapják a jelvényt."
 
 #. module: gamification
 #: model:ir.model.fields,help:gamification.field_gamification_goal_definition__batch_user_expression
@@ -2413,6 +2815,8 @@ msgid ""
 "There is no goal associated to this challenge matching your search.\n"
 "            Make sure that your challenge is active and assigned to at least one user."
 msgstr ""
+"Ehhez a kihíváshoz nem kapcsolódik a keresésének megfelelő cél.\n"
+"            Győződjön meg róla, hogy a kihívás aktív és legalább egy felhasználóhoz van hozzárendelve."
 
 #. module: gamification
 #. odoo-python
@@ -2444,7 +2848,7 @@ msgstr "Összesen"
 #. module: gamification
 #: model:ir.model,name:gamification.model_gamification_karma_tracking
 msgid "Track Karma Changes"
-msgstr ""
+msgstr "Karma-változások nyomon követése"
 
 #. module: gamification
 #: model_terms:ir.ui.view,arch_db:gamification.gamification_karma_tracking_view_form
@@ -2454,14 +2858,14 @@ msgstr "Nyomon követés"
 #. module: gamification
 #: model:ir.model.fields,field_description:gamification.field_gamification_karma_tracking__tracking_date
 msgid "Tracking Date"
-msgstr ""
+msgstr "Nyomon követési dátum"
 
 #. module: gamification
 #: model:ir.actions.act_window,name:gamification.gamification_karma_tracking_action
 #: model:ir.ui.menu,name:gamification.gamification_karma_tracking_menu
 #: model_terms:ir.ui.view,arch_db:gamification.gamification_karma_tracking_view_tree
 msgid "Trackings"
-msgstr ""
+msgstr "Nyomon követés"
 
 #. module: gamification
 #: model:ir.model.fields,field_description:gamification.field_gamification_badge__unique_owner_ids
@@ -2596,27 +3000,27 @@ msgstr "Megtalálta az elrejtett kitűzőt"
 #. module: gamification
 #: model_terms:gamification.karma.rank,description:gamification.rank_doctor
 msgid "You have reached the last rank. Congratulations!"
-msgstr ""
+msgstr "Ön elérte az utolsó rangsort. Gratulálunk!"
 
 #. module: gamification
 #: model_terms:gamification.karma.rank,description:gamification.rank_newbie
 msgid "You just began the adventure! Welcome!"
-msgstr ""
+msgstr "Ön csak most kezdte a kalandot! Üdvözöljük!"
 
 #. module: gamification
 #: model_terms:gamification.karma.rank,description:gamification.rank_master
 msgid "You know what you are talking about. People learn from you."
-msgstr ""
+msgstr "Tudja, hogy miről beszél. Az emberek Öntől tanulnak."
 
 #. module: gamification
 #: model_terms:gamification.karma.rank,description:gamification.rank_bachelor
 msgid "You love learning things. Curiosity is a good way to progress."
-msgstr ""
+msgstr "Szeretsz dolgokat tanulni. A kíváncsiság jó út a fejlődéshez."
 
 #. module: gamification
 #: model_terms:gamification.karma.rank,description:gamification.rank_student
 msgid "You're a young padawan now. May the force be with you!"
-msgstr ""
+msgstr "Most már fiatal padawan vagy. Az erő legyen veled!"
 
 #. module: gamification
 #: model_terms:ir.ui.view,arch_db:gamification.badge_form_view
@@ -2635,16 +3039,17 @@ msgid ""
 "e.g. A Master Chief knows quite everything on the forum! You cannot beat "
 "him!"
 msgstr ""
+"Pl. Egy mesterfőnök eléggé mindent tud a fórumon! Őt nem lehet legyőzni!"
 
 #. module: gamification
 #: model_terms:ir.ui.view,arch_db:gamification.goal_definition_form_view
 msgid "e.g. Get started"
-msgstr ""
+msgstr "pl. Kezdje el"
 
 #. module: gamification
 #: model_terms:ir.ui.view,arch_db:gamification.gamification_karma_rank_view_form
 msgid "e.g. Master Chief"
-msgstr ""
+msgstr "pl. Master Chief"
 
 #. module: gamification
 #: model_terms:ir.ui.view,arch_db:gamification.challenge_form_view
@@ -2654,17 +3059,17 @@ msgstr "pl. Havi értékesítési cél"
 #. module: gamification
 #: model_terms:ir.ui.view,arch_db:gamification.badge_form_view
 msgid "e.g. Problem Solver"
-msgstr ""
+msgstr "pl. Problémamegoldó"
 
 #. module: gamification
 #: model_terms:ir.ui.view,arch_db:gamification.gamification_karma_rank_view_form
 msgid "e.g. Reach this rank to gain a free mug !"
-msgstr ""
+msgstr "pl. Érje el ezt a rangot, hogy ingyen bögrét kapjon !"
 
 #. module: gamification
 #: model_terms:ir.ui.view,arch_db:gamification.goal_definition_form_view
 msgid "e.g. Register to the platform"
-msgstr ""
+msgstr "pl. Regisztráljon a platformra"
 
 #. module: gamification
 #: model_terms:ir.ui.view,arch_db:gamification.goal_definition_form_view

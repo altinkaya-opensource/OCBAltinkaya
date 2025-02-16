@@ -1,31 +1,54 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* auth_password_policy
-# 
-# Translators:
-# Piotr Szlązak <szlazakpiotr@gmail.com>, 2022
-# Piotr Cierkosz <piotr.w.cierkosz@gmail.com>, 2022
-# Maksym <ms@myodoo.pl>, 2022
-# Tadeusz Karpiński <tadeuszkarpinski@gmail.com>, 2023
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-06 13:31+0000\n"
-"PO-Revision-Date: 2022-09-22 05:45+0000\n"
-"Last-Translator: Tadeusz Karpiński <tadeuszkarpinski@gmail.com>, 2023\n"
-"Language-Team: Polish (https://app.transifex.com/odoo/teams/41243/pl/)\n"
+"POT-Creation-Date: 2025-02-14 19:44+0000\n"
+"PO-Revision-Date: 2025-02-14 19:44+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: pl\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"Plural-Forms: \n"
+
+#. module: auth_password_policy
+#: model:ir.model.fields,field_description:auth_password_policy.field_res_config_settings__changeset_change_ids
+#: model:ir.model.fields,field_description:auth_password_policy.field_res_users__changeset_change_ids
+msgid "Changeset Changes"
+msgstr "Zmiany w zestawie zmian"
+
+#. module: auth_password_policy
+#: model:ir.model.fields,field_description:auth_password_policy.field_res_config_settings__changeset_ids
+#: model:ir.model.fields,field_description:auth_password_policy.field_res_users__changeset_ids
+msgid "Changesets"
+msgstr "Changesets"
 
 #. module: auth_password_policy
 #: model:ir.model,name:auth_password_policy.model_res_config_settings
 msgid "Config Settings"
 msgstr "Ustawienia konfiguracji"
+
+#. module: auth_password_policy
+#: model:ir.model.fields,field_description:auth_password_policy.field_res_config_settings__count_changesets
+#: model:ir.model.fields,field_description:auth_password_policy.field_res_users__count_changesets
+msgid "Count Changesets"
+msgstr "Proszę liczyć zestawy zmian"
+
+#. module: auth_password_policy
+#: model:ir.model.fields,field_description:auth_password_policy.field_res_config_settings__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:auth_password_policy.field_res_users__count_pending_changeset_changes
+msgid "Count Pending Changeset Changes"
+msgstr "Proszę policzyć oczekujące zmiany w zestawie zmian"
+
+#. module: auth_password_policy
+#: model:ir.model.fields,field_description:auth_password_policy.field_res_config_settings__count_pending_changesets
+#: model:ir.model.fields,field_description:auth_password_policy.field_res_users__count_pending_changesets
+msgid "Count Pending Changesets"
+msgstr "Proszę policzyć oczekujące zestawy zmian"
 
 #. module: auth_password_policy
 #: model:ir.model.fields,field_description:auth_password_policy.field_res_config_settings__minlength
@@ -67,9 +90,39 @@ msgstr ""
 "Podpowiedź: aby zwiększyć siłę hasła, zwiększ jego długość, użyj wielu słów i użyj znaków specjalnych lub cyfr."
 
 #. module: auth_password_policy
+#: model:ir.model.fields,field_description:auth_password_policy.field_res_config_settings__smart_search
+#: model:ir.model.fields,field_description:auth_password_policy.field_res_users__smart_search
+msgid "Smart Search"
+msgstr "Inteligentne wyszukiwanie"
+
+#. module: auth_password_policy
+#: model:ir.model.fields,help:auth_password_policy.field_res_config_settings__count_pending_changeset_changes
+#: model:ir.model.fields,help:auth_password_policy.field_res_users__count_pending_changeset_changes
+msgid "The number of pending changes of this record"
+msgstr "Liczba oczekujących zmian tego rekordu"
+
+#. module: auth_password_policy
+#: model:ir.model.fields,help:auth_password_policy.field_res_config_settings__count_pending_changesets
+#: model:ir.model.fields,help:auth_password_policy.field_res_users__count_pending_changesets
+msgid "The number of pending changesets of this record"
+msgstr "Liczba oczekujących zestawów zmian tego rekordu"
+
+#. module: auth_password_policy
+#: model:ir.model.fields,help:auth_password_policy.field_res_config_settings__count_changesets
+#: model:ir.model.fields,help:auth_password_policy.field_res_users__count_changesets
+msgid "The overall number of changesets of this record"
+msgstr "Ogólna liczba zestawów zmian tego rekordu"
+
+#. module: auth_password_policy
 #: model:ir.model,name:auth_password_policy.model_res_users
 msgid "User"
 msgstr "Użytkownik"
+
+#. module: auth_password_policy
+#: model:ir.model.fields,field_description:auth_password_policy.field_res_config_settings__user_can_see_changeset
+#: model:ir.model.fields,field_description:auth_password_policy.field_res_users__user_can_see_changeset
+msgid "User Can See Changeset"
+msgstr "Użytkownik może zobaczyć zestaw zmian"
 
 #. module: auth_password_policy
 #. odoo-javascript

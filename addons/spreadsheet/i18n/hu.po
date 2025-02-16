@@ -1,31 +1,19 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* spreadsheet
-# 
-# Translators:
-# Csaba Tóth <i3rendszerhaz@gmail.com>, 2022
-# Istvan <leki69@gmail.com>, 2022
-# Krisztián Juhász <juhasz.krisztian@josafar.hu>, 2022
-# Ákos Nagy <akos.nagy@oregional.hu>, 2022
-# gezza <geza.nagy@oregional.hu>, 2022
-# krnkris, 2022
-# Tamás Németh <ntomasz81@gmail.com>, 2022
-# Martin Trigaux, 2024
-# Tamás Dombos, 2024
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-06 13:32+0000\n"
-"PO-Revision-Date: 2022-09-22 05:55+0000\n"
-"Last-Translator: Tamás Dombos, 2024\n"
-"Language-Team: Hungarian (https://app.transifex.com/odoo/teams/41243/hu/)\n"
+"POT-Creation-Date: 2025-02-14 19:45+0000\n"
+"PO-Revision-Date: 2025-02-14 19:45+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: hu\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: \n"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -35,48 +23,50 @@ msgid ""
 " A string, possible empty, or a reference to a valid string. If empty, the "
 "text will be simply concatenated."
 msgstr ""
+" Egy karakterlánc, esetleg üres, vagy egy érvényes karakterláncra való "
+"hivatkozás. Ha üres, a szöveg egyszerűen össze lesz fűzve."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "%s %s and %s"
-msgstr ""
+msgstr "%s %s és %s"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "%s Columns left"
-msgstr ""
+msgstr "%s oszlopok balra"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "%s Columns right"
-msgstr ""
+msgstr "%s oszlopok jobbra"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "%s Rows above"
-msgstr ""
+msgstr "%s Fenti sorok"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "%s Rows below"
-msgstr ""
+msgstr "%s sorok alul"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/assets_backend/spreadsheet_action_loader.js:0
 #, python-format
 msgid "%s couldn't be loaded"
-msgstr ""
+msgstr "%s nem tölthető be"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -86,6 +76,8 @@ msgid ""
 "(0) Exact match. (-1) Return next smaller item if no match. (1) Return next "
 "greater item if no match."
 msgstr ""
+"(0) Pontos egyezés. (-1) A következő kisebb elem visszaadása, ha nincs "
+"találat. (1) A következő nagyobb elem visszaadása, ha nincs egyezés."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -98,55 +90,60 @@ msgid ""
 "    (-2) Perform a binary search that relies on lookup_array being sorted in descending order. If not sorted, invalid results will be returned.\n"
 "    "
 msgstr ""
+"(1) Keresés az első elemtől kezdve. \n"
+"    (-1) Keresés az utolsó elemtől kezdve. \n"
+"    (2) Olyan bináris keresés végrehajtása, amely a lookup_array növekvő sorrendbe rendezésére támaszkodik. Ha nincs rendezve, érvénytelen eredményeket kapunk vissza. \n"
+"    (-2) Olyan bináris keresés végrehajtása, amely a lookup_array csökkenő sorrendbe rendezésén alapul. Ha nincs rendezve, érvénytelen eredmények kerülnek visszaadásra.\n"
+"    "
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "(Blanks)"
-msgstr ""
+msgstr "(Üresen)"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "+ Add another rule"
-msgstr ""
+msgstr "+ Újabb szabály hozzáadása"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "- [optional]"
-msgstr ""
+msgstr "- [opcionális]"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "1 column"
-msgstr ""
+msgstr "1 oszlop"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "1 row"
-msgstr ""
+msgstr "1 sor"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "2 columns"
-msgstr ""
+msgstr "2 oszlopok"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "2 rows"
-msgstr ""
+msgstr "2 sor"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -156,104 +153,106 @@ msgid ""
 "A boolean; if TRUE, empty cells selected in the text arguments won't be "
 "included in the result."
 msgstr ""
+"Boolean; ha TRUE, akkor a szöveges érvekben kijelölt üres cellák nem "
+"kerülnek bele az eredménybe."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "A conditional count across a range."
-msgstr ""
+msgstr "A feltételes számolás egy tartományon keresztül."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "A conditional sum across a range."
-msgstr ""
+msgstr "Egy feltételes összeg egy tartományon keresztül."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "A filter can only be created on a continuous selection."
-msgstr ""
+msgstr "Szűrő csak folyamatos kiválasztás esetén hozható létre."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "A maximum range limit value is needed"
-msgstr ""
+msgstr "Egy maximális tartományi határértékre van szükség"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "A minimum range limit value is needed"
-msgstr ""
+msgstr "Szükség van egy minimális tartományi határértékre"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "A number raised to a power."
-msgstr ""
+msgstr "Egy hatalomra emelt szám."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "A random number between 0 inclusive and 1 exclusive."
-msgstr ""
+msgstr "Egy véletlenszerű szám a 0 inkluzív és az 1 exkluzív között."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "A range needs to be defined"
-msgstr ""
+msgstr "Egy tartományt kell meghatározni"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "A sheet with the name %s already exists. Please select another name."
-msgstr ""
+msgstr "A %s nevű lap már létezik. Kérjük, válasszon másik nevet."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "ABOUT"
-msgstr ""
+msgstr "A  CÍMRŐL"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Absolute value"
-msgstr ""
+msgstr "Abszolút érték"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Absolute value of a number."
-msgstr ""
+msgstr "Egy szám abszolút értéke."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Accrued interest of security paying at maturity."
-msgstr ""
+msgstr "A lejáratkor fizetett értékpapír felhalmozott kamatai."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/global_filters/plugins/global_filters_ui_plugin.js:0
 #, python-format
 msgid "Active Filters"
-msgstr ""
+msgstr "Aktív szűrők"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -267,21 +266,21 @@ msgstr "Hozzáadás"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Add Filter"
-msgstr ""
+msgstr "Szűrő hozzáadása"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Add range"
-msgstr ""
+msgstr "Tartomány hozzáadása"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Additional text item(s)."
-msgstr ""
+msgstr "További szövegrész(ek)."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -291,55 +290,57 @@ msgid ""
 "All the dates should be greater or equal to the first date in cashflow_dates"
 " (%s)."
 msgstr ""
+"Minden dátumnak nagyobbnak vagy egyenlőnek kell lennie a cashflow_dates (%s)"
+" első dátumával."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Amount received at maturity for a security."
-msgstr ""
+msgstr "Egy értékpapír lejáratakor kapott összeg."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Angle from the X axis to a point (x,y), in radians."
-msgstr ""
+msgstr "Az X tengely és egy (x,y) pont közötti szög radiánban."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Annual effective interest rate."
-msgstr ""
+msgstr "Éves effektív kamatláb."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Annual nominal interest rate."
-msgstr ""
+msgstr "Éves nominális kamatláb."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Annual yield of a discount security."
-msgstr ""
+msgstr "Egy diszkont értékpapír éves hozama."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Annual yield of a security paying interest at maturity."
-msgstr ""
+msgstr "Egy lejáratkor kamatot fizető értékpapír éves hozama."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Annual yield of a security paying periodic interest."
-msgstr ""
+msgstr "Egy időszakos kamatot fizető értékpapír éves hozama."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -355,6 +356,8 @@ msgstr "Ismeretlen"
 msgid ""
 "Any text item. This could be a string, or an array of strings in a range."
 msgstr ""
+"Bármilyen szöveges elem. Ez lehet egy karakterlánc, vagy egy tartományban "
+"lévő karakterláncok tömbje."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -368,14 +371,14 @@ msgstr "Alkalmazás"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Apply a large number format"
-msgstr ""
+msgstr "Alkalmazzon nagyszámú formátumot"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Apply to range"
-msgstr ""
+msgstr "Jelentkezzen a tartományba"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -390,7 +393,7 @@ msgstr "Április"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Are you sure you want to delete this sheet ?"
-msgstr ""
+msgstr "Biztos, hogy törölni szeretné ezt a lapot ?"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -398,6 +401,8 @@ msgstr ""
 #, python-format
 msgid "Argument must be a reference to a cell or range."
 msgstr ""
+"Az argumentumnak egy cellára vagy tartományra való hivatkozásnak kell "
+"lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -405,7 +410,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Ascending (A ⟶ Z)"
-msgstr ""
+msgstr "Felfelé haladva (A ⟶ Z)"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -427,35 +432,35 @@ msgstr "Automatikus"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Average magnitude of deviations from mean."
-msgstr ""
+msgstr "Az átlagtól való eltérések átlagos nagysága."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Average of a set of values from a table-like range."
-msgstr ""
+msgstr "Egy táblázatszerű tartományból származó értékkészlet átlaga."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Average of values depending on criteria."
-msgstr ""
+msgstr "A kritériumoktól függő értékek átlaga."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Average of values depending on multiple criteria."
-msgstr ""
+msgstr "Több kritériumtól függő értékek átlaga."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Avg"
-msgstr ""
+msgstr "Avg"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -483,7 +488,7 @@ msgstr "Háttérszín"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Bad zone format"
-msgstr ""
+msgstr "Rossz zóna formátum"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -491,42 +496,42 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Bar"
-msgstr ""
+msgstr "Bar"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Baseline color"
-msgstr ""
+msgstr "Alapszín"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Baseline configuration"
-msgstr ""
+msgstr "Alapkonfiguráció"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Baseline description"
-msgstr ""
+msgstr "Alapvető leírás"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Baseline format"
-msgstr ""
+msgstr "Alapformátum"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Baseline value"
-msgstr ""
+msgstr "Alapérték"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -542,7 +547,7 @@ msgstr "Félkövér"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Borders"
-msgstr ""
+msgstr "Határok"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -558,7 +563,7 @@ msgstr "Alul"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Calculates effective interest rate."
-msgstr ""
+msgstr "Kiszámítja az effektív kamatlábat."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -568,6 +573,8 @@ msgid ""
 "Calculates the price of a security paying interest at maturity, based on "
 "expected yield."
 msgstr ""
+"Kiszámítja a lejáratkor kamatot fizető értékpapír árát a várható hozam "
+"alapján."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -583,14 +590,14 @@ msgstr "Mégse"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Cannot do a special paste of a figure."
-msgstr ""
+msgstr "Nem lehet egy ábra speciális beillesztését elvégezni."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Cannot find workbook relations file"
-msgstr ""
+msgstr "Nem találja a munkafüzet kapcsolatai fájlt"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -598,6 +605,8 @@ msgstr ""
 #, python-format
 msgid "Cannot open the chart side panel while no chart are selected"
 msgstr ""
+"Nem lehet megnyitni a diagram oldalsó panelt, miközben nincs diagram "
+"kiválasztva"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -605,6 +614,7 @@ msgstr ""
 #, python-format
 msgid "Cannot paste merged cells over a frozen pane."
 msgstr ""
+"Nem lehet beilleszteni az egyesített cellákat egy befagyott ablaktábla fölé."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -614,6 +624,8 @@ msgid ""
 "Cannot sort. To sort, select only cells or only merges that have the same "
 "size."
 msgstr ""
+"Nem tud válogatni. A rendezéshez csak az azonos méretű cellákat vagy csak az"
+" azonos méretű összevonásokat válassza ki."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -622,14 +634,21 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Categories / Labels"
-msgstr ""
+msgstr "Kategóriák / Címkék"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Cell values"
-msgstr ""
+msgstr "Cell értékek"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "CellIsRule"
+msgstr "CellIsRule"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -644,21 +663,21 @@ msgstr "Grafikon"
 #: code:addons/spreadsheet/static/src/chart/plugins/odoo_chart_core_plugin.js:0
 #, python-format
 msgid "Chart - %s"
-msgstr ""
+msgstr "Diagram - %s"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Chart type"
-msgstr ""
+msgstr "Táblázat típusa"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Circular reference"
-msgstr ""
+msgstr "Körlevél hivatkozás"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -673,63 +692,63 @@ msgstr "Törlés"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Clear Format"
-msgstr ""
+msgstr "Egyértelmű formátum"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Clear column %s"
-msgstr ""
+msgstr "Törölje az oszlopot %s"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Clear columns"
-msgstr ""
+msgstr "Tiszta oszlopok"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Clear columns %s - %s"
-msgstr ""
+msgstr "%s oszlopok törlése - %s"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Clear formatting"
-msgstr ""
+msgstr "Egyértelmű formázás"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Clear row %s"
-msgstr ""
+msgstr "Sor törlése %s"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Clear rows"
-msgstr ""
+msgstr "Tiszta sorok"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Clear rows %s - %s"
-msgstr ""
+msgstr "Sorok törlése %s - %s"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Clip"
-msgstr ""
+msgstr "Clip"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -743,21 +762,21 @@ msgstr "Kód"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Color Up"
-msgstr ""
+msgstr "Color Up"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Color on value decrease"
-msgstr ""
+msgstr "Szín az értékcsökkenésen"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Color on value increase"
-msgstr ""
+msgstr "Szín az értéknövekedésről"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -765,35 +784,42 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Color scale"
-msgstr ""
+msgstr "Színskála"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "ColorScaleRule"
+msgstr "ColorScaleRule"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Column left"
-msgstr ""
+msgstr "Bal oldali oszlop"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Column number of a specified cell."
-msgstr ""
+msgstr "Egy megadott cella oszlopszáma."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Column right"
-msgstr ""
+msgstr "Oszlop jobbra"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Compare two numeric values, returning 1 if they're equal."
-msgstr ""
+msgstr "Két numerikus érték összehasonlítása, 1-t ad vissza, ha egyenlőek."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -802,6 +828,8 @@ msgstr ""
 msgid ""
 "Computes the number of periods needed for an investment to reach a value."
 msgstr ""
+"Kiszámítja, hogy hány időszak szükséges ahhoz, hogy egy beruházás elérjen "
+"egy értéket."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -811,6 +839,8 @@ msgid ""
 "Computes the rate needed for an investment to reach a specific value within "
 "a specific number of periods."
 msgstr ""
+"Kiszámítja azt az arányt, amely ahhoz szükséges, hogy egy beruházás egy "
+"adott értéket egy adott számú időszakon belül elérjen."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -820,7 +850,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Conditional formatting"
-msgstr ""
+msgstr "Feltételes formázás"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -850,56 +880,56 @@ msgstr "Tartalmaz"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Convert a decimal fraction to decimal value."
-msgstr ""
+msgstr "Tizedes tört tizedes értékre történő átalakítása."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Convert a decimal value to decimal fraction."
-msgstr ""
+msgstr "Tizedes érték átalakítása tizedes törtre."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Converts a date string to a date value."
-msgstr ""
+msgstr "Egy dátumsorozatot dátumértékké alakít."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Converts a time string into its serial number representation."
-msgstr ""
+msgstr "Átalakítja az idősztringet a sorozatszám ábrázolásába."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Converts an angle value in radians to degrees."
-msgstr ""
+msgstr "Átvált egy radiánban megadott szögértéket fokokra."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Converts from another base to decimal."
-msgstr ""
+msgstr "Más bázisról decimálisra konvertál."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Converts hour/minute/second into a time."
-msgstr ""
+msgstr "Óra/perc/másodperc/másodperc időre történő átszámítása."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Converts year/month/day into a date."
-msgstr ""
+msgstr "Az év/hónap/nap dátumra történő átszámítása."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -917,28 +947,28 @@ msgstr "Másolás"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Copy of %s"
-msgstr ""
+msgstr "A %s másolata"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Cosecant of an angle provided in radians."
-msgstr ""
+msgstr "Egy radiánban megadott szög kozekánsa."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Cosine of an angle provided in radians."
-msgstr ""
+msgstr "Egy szög koszinuszának radiánban megadott értéke."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Cotangent of an angle provided in radians."
-msgstr ""
+msgstr "Egy szög radiánban megadott kotangens."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -953,14 +983,14 @@ msgstr "Darab"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Count Numbers"
-msgstr ""
+msgstr "Számok számolása"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Count values depending on multiple criteria."
-msgstr ""
+msgstr "Számértékek több kritériumtól függően."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -969,55 +999,57 @@ msgstr ""
 msgid ""
 "Counts number of unique values in a range, filtered by a set of criteria."
 msgstr ""
+"Megszámolja az egyedi értékek számát egy tartományban, bizonyos kritériumok "
+"alapján szűrve."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Counts number of unique values in a range."
-msgstr ""
+msgstr "Megszámolja az egyedi értékek számát egy tartományban."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Counts values and text from a table-like range."
-msgstr ""
+msgstr "Számolja az értékeket és a szöveget egy táblázatszerű tartományból."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Counts values from a table-like range."
-msgstr ""
+msgstr "Számolja az értékeket egy táblázatszerű tartományból."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Create filter"
-msgstr ""
+msgstr "Szűrő létrehozása"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Cumulative data"
-msgstr ""
+msgstr "Összesített adatok"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Cumulative interest paid over a set of periods."
-msgstr ""
+msgstr "Egy sor időszak alatt fizetett kumulatív kamat."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Cumulative principal paid over a set of periods."
-msgstr ""
+msgstr "Egy sor időszak alatt fizetett kumulatív tőke."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1038,35 +1070,35 @@ msgstr "Árfolyam"
 #: code:addons/spreadsheet/static/src/currency/currency_data_source.js:0
 #, python-format
 msgid "Currency not available for this company."
-msgstr ""
+msgstr "A vállalat számára nem elérhető pénznem."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/currency/currency_data_source.js:0
 #, python-format
 msgid "Currency rate unavailable."
-msgstr ""
+msgstr "Valutaárfolyam nem áll rendelkezésre."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Currency rounded"
-msgstr ""
+msgstr "Pénznem kerekítve"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Current date and time as a date value."
-msgstr ""
+msgstr "Aktuális dátum és idő dátumértékként."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Current date as a date value."
-msgstr ""
+msgstr "Aktuális dátum mint dátumérték."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1081,14 +1113,14 @@ msgstr "Egyéni"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Custom currency"
-msgstr ""
+msgstr "Egyedi pénznem"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Custom currency format"
-msgstr ""
+msgstr "Egyedi pénznem formátum"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1099,7 +1131,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Cut"
-msgstr ""
+msgstr "Cut"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1115,7 +1147,7 @@ msgstr "Adat"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Data Series"
-msgstr ""
+msgstr "Adatsorozat"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1123,21 +1155,21 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/errors.js:0
 #, python-format
 msgid "Data is loading"
-msgstr ""
+msgstr "Az adatok betöltése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Data not available"
-msgstr ""
+msgstr "Nem elérhető adatok"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Data range"
-msgstr ""
+msgstr "Adattartomány"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1146,7 +1178,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Data series include title"
-msgstr ""
+msgstr "Az adatsorok közé tartozik a cím"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1160,42 +1192,42 @@ msgstr "Dátum"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Date a number of months before/after another date."
-msgstr ""
+msgstr "Dátum néhány hónappal egy másik dátum előtt/után."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Date after a number of workdays (specifying weekends)."
-msgstr ""
+msgstr "Dátum a munkanapok száma után (hétvégék megadása)."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Date after a number of workdays."
-msgstr ""
+msgstr "Dátum több munkanap után."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Date time"
-msgstr ""
+msgstr "Időpont"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Day of the month that a specific date falls on."
-msgstr ""
+msgstr "A hónap azon napja, amelyre egy adott dátum esik."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Day of the week of the date provided (as number)."
-msgstr ""
+msgstr "A megadott dátum hét napja (számként)."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1203,14 +1235,14 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Days from settlement until next coupon."
-msgstr ""
+msgstr "Napok az elszámolástól a következő szelvényig."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Days in coupon period containing settlement date."
-msgstr ""
+msgstr "Az elszámolási dátumot tartalmazó szelvényidőszak napjai."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1225,7 +1257,7 @@ msgstr "December"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Decrease decimal places"
-msgstr ""
+msgstr "Tizedesjegyek csökkentése"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1240,105 +1272,105 @@ msgstr "Törlés"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Delete cell and shift left"
-msgstr ""
+msgstr "Cella törlése és balra tolása"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Delete cell and shift up"
-msgstr ""
+msgstr "Cella törlése és váltás felfelé"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Delete cells"
-msgstr ""
+msgstr "Cellák törlése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Delete column %s"
-msgstr ""
+msgstr "%s oszlop törlése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Delete columns"
-msgstr ""
+msgstr "Oszlopok törlése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Delete columns %s - %s"
-msgstr ""
+msgstr "%s - %s oszlopok törlése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Delete row %s"
-msgstr ""
+msgstr "Sor törlése %s"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Delete rows"
-msgstr ""
+msgstr "Sorok törlése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Delete rows %s - %s"
-msgstr ""
+msgstr "Sorok törlése %s - %s"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Delete values"
-msgstr ""
+msgstr "Értékek törlése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Depreciation for an accounting period."
-msgstr ""
+msgstr "Értékcsökkenés egy elszámolási időszakra vonatkozóan."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Depreciation of an asset using the straight-line method."
-msgstr ""
+msgstr "Egy eszköz lineáris módszerrel történő értékcsökkenése."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Depreciation via declining balance method."
-msgstr ""
+msgstr "Értékcsökkenési leírás degresszív módszerrel."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Depreciation via double-declining balance method."
-msgstr ""
+msgstr "Értékcsökkenés kettős degressziós módszerrel."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Depreciation via sum of years digit method."
-msgstr ""
+msgstr "Értékcsökkenés az évek összegének számjegyes módszerével."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1346,7 +1378,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Descending (Z ⟶ A)"
-msgstr ""
+msgstr "Lefelé haladva (Z ⟶ A)"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1363,14 +1395,14 @@ msgstr "Tervezés"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Did not find value '%s' in [[FUNCTION_NAME]] evaluation."
-msgstr ""
+msgstr "Nem találtuk a [[FUNCTION_NAME]] értékelésben a '%s' értéket."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Discount rate of a security based on price."
-msgstr ""
+msgstr "Egy értékpapír diszkontrátája az ár alapján."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1407,7 +1439,7 @@ msgstr "Szerkesztés"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Edit link"
-msgstr ""
+msgstr "Link szerkesztése"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1415,28 +1447,28 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Else"
-msgstr ""
+msgstr "Else"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Ends with"
-msgstr ""
+msgstr "Vége a"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Equivalent rate of return for a US Treasury bill."
-msgstr ""
+msgstr "Egy amerikai kincstárjegy egyenértékű hozamrátája."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Euler's number, e (~2.718) raised to a power."
-msgstr ""
+msgstr "Euler száma, e (~2,718) egy hatványra emelve."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1456,13 +1488,15 @@ msgstr ""
 msgid ""
 "Evaluation of function [[FUNCTION_NAME]] caused a divide by zero error."
 msgstr ""
+"A [[FUNCTION_NAME]] függvény kiértékelése nullával való osztás hibáját "
+"okozta."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Exact number of years between two dates."
-msgstr ""
+msgstr "A két dátum közötti évek pontos száma."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1477,21 +1511,21 @@ msgstr "Február"
 #: code:addons/spreadsheet/static/src/pivot/pivot_model.js:0
 #, python-format
 msgid "Field %s does not exist"
-msgstr ""
+msgstr "A %s mező nem létezik"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/pivot/pivot_model.js:0
 #, python-format
 msgid "Field %s is not supported because of its type (%s)"
-msgstr ""
+msgstr "A %s mező nem támogatott a típusa miatt (%s)."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/list/list_data_source.js:0
 #, python-format
 msgid "Fields of type \"%s\" are not supported"
-msgstr ""
+msgstr "A \"%s\" típusú mezők nem támogatottak."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1508,63 +1542,63 @@ msgstr "Fájl"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Fill Color"
-msgstr ""
+msgstr "Kitöltés színe"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "FillColor"
-msgstr ""
+msgstr "FillColor"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/global_filters/plugins/global_filters_ui_plugin.js:0
 #, python-format
 msgid "Filter \"%s\" not found"
-msgstr ""
+msgstr "A \"%s\" szűrő nem található"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Find and Replace"
-msgstr ""
+msgstr "Keresés és csere"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Find and replace"
-msgstr ""
+msgstr "Keresés és csere"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "First day of the month preceding a date."
-msgstr ""
+msgstr "A dátumot megelőző hónap első napja."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "First day of the quarter of the year a specific date falls in."
-msgstr ""
+msgstr "Az év negyedévének első napja, amelyre egy adott dátum esik."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "First day of the year a specific date falls in."
-msgstr ""
+msgstr "Az év első napja, amelyre egy adott dátum esik."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "FixedNumber"
-msgstr ""
+msgstr "FixedNumber"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1593,28 +1627,28 @@ msgstr "Formátum"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Format as percent"
-msgstr ""
+msgstr "Formátum százalékban"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Format cells if..."
-msgstr ""
+msgstr "Formátum cellák, ha..."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Format rules"
-msgstr ""
+msgstr "Formázási szabályok"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Formatting style"
-msgstr ""
+msgstr "Formázási stílus"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1630,7 +1664,7 @@ msgstr "Képlet"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Freeze"
-msgstr ""
+msgstr "Freeze"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1647,6 +1681,8 @@ msgid ""
 "Function ${name} has an argument that has been declared with more than one "
 "type whose type 'META'. The 'META' type can only be declared alone."
 msgstr ""
+"A ${név} függvénynek egynél több olyan típusú argumentuma van, amelynek "
+"típusa 'META'. A 'META' típus csak egyedül deklarálható."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1656,6 +1692,9 @@ msgid ""
 "Function ${name} has at mandatory arguments declared after optional ones. "
 "All optional arguments must be after all mandatory arguments."
 msgstr ""
+"A ${név} függvénynek a kötelező argumentumok után opcionális argumentumokat "
+"kell deklarálni. Minden opcionális argumentumnak az összes kötelező "
+"argumentum után kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1665,6 +1704,9 @@ msgid ""
 "Function ${name} has no-repeatable arguments declared after repeatable ones."
 " All repeatable arguments must be declared last."
 msgstr ""
+"A ${név} függvénynek az ismételhető argumentumok után deklarált nem "
+"ismételhető argumentumai vannak. Minden megismételhető argumentumot "
+"utolsóként kell deklarálni."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1674,6 +1716,8 @@ msgid ""
 "Function %s expects its parameters to be single values or single cell "
 "references, not ranges."
 msgstr ""
+"A %s függvény elvárja, hogy a paraméterei egyetlen értékek vagy egyetlen "
+"cellahivatkozások legyenek, ne pedig tartományok."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1683,6 +1727,8 @@ msgid ""
 "Function %s expects the parameter %s to be a single value or a single cell "
 "reference, not a range."
 msgstr ""
+"A %s függvény a %s paramétertől egyetlen értéket vagy egyetlen "
+"cellahivatkozást vár, nem pedig tartományt."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1692,20 +1738,22 @@ msgid ""
 "Function %s expects the parameter %s to be reference to a cell or range, not"
 " a %s."
 msgstr ""
+"A %s függvény azt várja, hogy a %s paraméter egy cellára vagy tartományra "
+"való hivatkozás legyen, nem pedig egy %s."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/pivot/pivot_functions.js:0
 #, python-format
 msgid "Function PIVOT takes an even number of arguments."
-msgstr ""
+msgstr "A PIVOT függvény páros számú argumentumot fogad el."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Function [[FUNCTION_NAME]] caused a divide by zero error."
-msgstr ""
+msgstr "A [[FUNCTION_NAME]] függvény nullával való osztás hibát okozott."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1713,7 +1761,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Function [[FUNCTION_NAME]] didn't find any result."
-msgstr ""
+msgstr "A [[FUNCTION_NAME]] funkció nem talált eredményt."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1723,6 +1771,8 @@ msgid ""
 "Function [[FUNCTION_NAME]] expects criteria_range and criterion to be in "
 "pairs."
 msgstr ""
+"A [[FUNCTION_NAME]] függvény elvárja, hogy a criteria_range és criterion "
+"páros legyen."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1731,6 +1781,8 @@ msgstr ""
 msgid ""
 "Function [[FUNCTION_NAME]] expects criteria_range to have the same dimension"
 msgstr ""
+"A [[FUNCTION_NAME]] függvény elvárja, hogy a criteria_range azonos "
+"dimenzióval rendelkezzen."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1739,6 +1791,8 @@ msgstr ""
 #, python-format
 msgid "Function [[FUNCTION_NAME]] parameter 2 value (%s) is out of range."
 msgstr ""
+"A [[FUNCTION_NAME]] függvény 2. paraméterének értéke (%s) tartományon kívül "
+"van."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1747,202 +1801,203 @@ msgstr ""
 #, python-format
 msgid "Function [[FUNCTION_NAME]] parameter 2 value is out of range."
 msgstr ""
+"A [[FUNCTION_NAME]] függvény 2. paraméterének értéke tartományon kívül van."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Future value of an annuity investment."
-msgstr ""
+msgstr "Egy életjáradéki befektetés jövőbeli értéke."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Future value of principal from series of rates."
-msgstr ""
+msgstr "A tőke jövőbeli értéke az árfolyamsorozatból."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Gauge"
-msgstr ""
+msgstr "Gauge"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/pivot/pivot_functions.js:0
 #, python-format
 msgid "Get the absolute ID of an element in the pivot"
-msgstr ""
+msgstr "Egy elem abszolút azonosítójának lekérdezése a pivotban"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/list/list_functions.js:0
 #, python-format
 msgid "Get the header of a list."
-msgstr ""
+msgstr "Szerezze be a lista fejlécét."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/pivot/pivot_functions.js:0
 #, python-format
 msgid "Get the header of a pivot."
-msgstr ""
+msgstr "Szerezd meg a pivot fejlécet."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/translation.js:0
 #, python-format
 msgid "Get the translated value of the given string"
-msgstr ""
+msgstr "Az adott karakterlánc lefordított értékének lekérdezése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/list/list_functions.js:0
 #, python-format
 msgid "Get the value from a list."
-msgstr ""
+msgstr "Szerezze meg az értéket egy listából."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/pivot/pivot_functions.js:0
 #, python-format
 msgid "Get the value from a pivot."
-msgstr ""
+msgstr "Szerezze meg az értéket a pivotból."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Hide column %s"
-msgstr ""
+msgstr "%s oszlop elrejtése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Hide columns"
-msgstr ""
+msgstr "Oszlopok elrejtése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Hide columns %s - %s"
-msgstr ""
+msgstr "%s - %s oszlopok elrejtése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Hide formulas"
-msgstr ""
+msgstr "Képletek elrejtése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Hide gridlines"
-msgstr ""
+msgstr "Rácsvonalak elrejtése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Hide row %s"
-msgstr ""
+msgstr "Sor %s elrejtése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Hide rows"
-msgstr ""
+msgstr "Sorok elrejtése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Hide rows %s - %s"
-msgstr ""
+msgstr "Sorok elrejtése %s - %s"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Hide sheet"
-msgstr ""
+msgstr "Lap elrejtése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Horizontal align"
-msgstr ""
+msgstr "Horizontális összehangolás"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Horizontal lookup"
-msgstr ""
+msgstr "Vízszintes keresés"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Hour component of a specific time."
-msgstr ""
+msgstr "Egy adott idő órányi összetevője."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Hyperbolic cosecant of any real number."
-msgstr ""
+msgstr "Bármely valós szám hiperbolikus koszekánsa."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Hyperbolic cosine of any real number."
-msgstr ""
+msgstr "Bármely valós szám hiperbolikus koszinusza."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Hyperbolic cotangent of any real number."
-msgstr ""
+msgstr "Bármely valós szám hiperbolikus kotangensének."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Hyperbolic secant of any real number."
-msgstr ""
+msgstr "Bármely valós szám hiperbolikus szekánsa."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Hyperbolic sine of any real number."
-msgstr ""
+msgstr "Bármely valós szám hiperbolikus szinusza."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Hyperbolic tangent of any real number."
-msgstr ""
+msgstr "Bármely valós szám hiperbolikus érintője."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "ISO week number of the year."
-msgstr ""
+msgstr "Az év ISO-hét száma."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1950,196 +2005,203 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Icon set"
-msgstr ""
+msgstr "Ikonkészlet"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "IconSetRule"
+msgstr "IconSetRule"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Icons"
-msgstr ""
+msgstr "Ikonok"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "If a valid match is not found, return this value."
-msgstr ""
+msgstr "Ha nem talál érvényes egyezést, adja vissza ezt az értéket."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Increase decimal places"
-msgstr ""
+msgstr "Tizedesjegyek növelése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Index out of range."
-msgstr ""
+msgstr "Index a tartományon kívül."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Insert"
-msgstr ""
+msgstr "A  weboldal beillesztése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Insert %s columns"
-msgstr ""
+msgstr "%s oszlopok beillesztése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Insert %s columns left"
-msgstr ""
+msgstr "%s oszlopok beillesztése balra"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Insert %s columns right"
-msgstr ""
+msgstr "%s oszlopok beillesztése jobbra"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Insert %s rows"
-msgstr ""
+msgstr "%s sorok beillesztése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Insert %s rows above"
-msgstr ""
+msgstr "%s sorok beillesztése fentebb"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Insert %s rows below"
-msgstr ""
+msgstr "%s sorok beillesztése alul"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Insert cells"
-msgstr ""
+msgstr "Cellák beillesztése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Insert cells and shift down"
-msgstr ""
+msgstr "Cellák beillesztése és eltolás lefelé"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Insert cells and shift right"
-msgstr ""
+msgstr "Cellák beszúrása és jobbra tolása"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Insert column"
-msgstr ""
+msgstr "Oszlop beillesztése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Insert column left"
-msgstr ""
+msgstr "Bal oldali oszlop beillesztése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Insert column right"
-msgstr ""
+msgstr "Oszlop beillesztése jobbra"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Insert link"
-msgstr ""
+msgstr "Link beillesztése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Insert row"
-msgstr ""
+msgstr "Sor beillesztése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Insert row above"
-msgstr ""
+msgstr "A fenti sor beillesztése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Insert row below"
-msgstr ""
+msgstr "Az alábbi sor beszúrása"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Interest rate of an annuity investment."
-msgstr ""
+msgstr "Egy életjáradéki befektetés kamatlába."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Internal rate of return given non-periodic cash flows."
-msgstr ""
+msgstr "Belső megtérülési ráta nem periodikus pénzáramlások mellett."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Internal rate of return given periodic cashflows."
-msgstr ""
+msgstr "Belső megtérülési ráta az időszakos pénzforgalomra tekintettel."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Invalid Maxpoint formula"
-msgstr ""
+msgstr "Érvénytelen Maxpoint formula"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Invalid Midpoint formula"
-msgstr ""
+msgstr "Érvénytelen középponti képlet"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Invalid Minpoint formula"
-msgstr ""
+msgstr "Érvénytelen Minpoint formula"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2153,7 +2215,7 @@ msgstr "Érvénytelen kifejezés"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Invalid lower inflection point formula"
-msgstr ""
+msgstr "Érvénytelen alsó inflexiós pont képlet"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2163,6 +2225,8 @@ msgid ""
 "Invalid number of arguments for the %s function. Expected %s maximum, but "
 "got %s instead."
 msgstr ""
+"A %s függvényhez tartozó érvek száma érvénytelen. Maximum %s értéket várt, "
+"de ehelyett %s értéket kapott."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2172,6 +2236,8 @@ msgid ""
 "Invalid number of arguments for the %s function. Expected %s minimum, but "
 "got %s instead."
 msgstr ""
+"A %s függvényhez tartozó érvek száma érvénytelen. Minimum %s értéket várt, "
+"de ehelyett %s értéket kapott."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2181,167 +2247,169 @@ msgid ""
 "Invalid number of arguments for the %s function. Expected all arguments "
 "after position %s to be supplied by groups of %s arguments"
 msgstr ""
+"A %s függvényhez tartozó érvek száma érvénytelen. A %s pozíció utáni összes "
+"argumentumot %s argumentumcsoportoktól vártuk."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Invalid reference"
-msgstr ""
+msgstr "Érvénytelen hivatkozás"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Invalid sheet"
-msgstr ""
+msgstr "Érvénytelen lap"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Invalid sheet name"
-msgstr ""
+msgstr "Érvénytelen lapnév"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Invalid sheet name: %s"
-msgstr ""
+msgstr "Érvénytelen lapnév: %s"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Invalid upper inflection point formula"
-msgstr ""
+msgstr "Érvénytelen felső inflexiós pont képlet"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Inverse cosine of a value, in radians."
-msgstr ""
+msgstr "Egy érték inverz koszinusza, radiánban kifejezve."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Inverse cotangent of a value."
-msgstr ""
+msgstr "Egy érték inverz kotangensének fordítottja."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Inverse hyperbolic cosine of a number."
-msgstr ""
+msgstr "Egy szám inverz hiperbolikus koszinusza."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Inverse hyperbolic cotangent of a value."
-msgstr ""
+msgstr "Egy érték inverz hiperbolikus kotangensének fordítottja."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Inverse hyperbolic sine of a number."
-msgstr ""
+msgstr "Egy szám inverz hiperbolikus szinuszának fordítottja."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Inverse hyperbolic tangent of a number."
-msgstr ""
+msgstr "Egy szám inverz hiperbolikus érintője."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Inverse sine of a value, in radians."
-msgstr ""
+msgstr "Egy érték inverz szinusza, radiánban kifejezve."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Inverse tangent of a value, in radians."
-msgstr ""
+msgstr "Egy érték fordított érintője, radiánban kifejezve."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Is between"
-msgstr ""
+msgstr "A következők között"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Is empty"
-msgstr ""
+msgstr "Üres"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Is equal to"
-msgstr ""
+msgstr "Egyenlő a következőkkel"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Is greater than"
-msgstr ""
+msgstr "Nagyobb, mint"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Is greater than or equal to"
-msgstr ""
+msgstr "Nagyobb vagy egyenlő, mint"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Is less than"
-msgstr ""
+msgstr "Kevesebb, mint"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Is less than or equal to"
-msgstr ""
+msgstr "Kisebb vagy egyenlő, mint"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Is not between"
-msgstr ""
+msgstr "Nem a"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Is not empty"
-msgstr ""
+msgstr "Nem üres"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Is not equal to"
-msgstr ""
+msgstr "Nem egyenlő a"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2381,28 +2449,28 @@ msgstr "Június"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Key value"
-msgstr ""
+msgstr "Kulcsérték"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Labels are invalid"
-msgstr ""
+msgstr "A címkék érvénytelenek"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/helpers/constants.js:0
 #, python-format
 msgid "Last 180 Days"
-msgstr ""
+msgstr "Utolsó 180 nap"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/helpers/constants.js:0
 #, python-format
 msgid "Last 3 Years"
-msgstr ""
+msgstr "Az elmúlt 3 év"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2430,7 +2498,7 @@ msgstr "Elmúlt 7 nap"
 #: code:addons/spreadsheet/static/src/helpers/constants.js:0
 #, python-format
 msgid "Last 90 Days"
-msgstr ""
+msgstr "Az elmúlt 90 nap"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2438,34 +2506,36 @@ msgstr ""
 #, python-format
 msgid "Last coupon date prior to or on the settlement date."
 msgstr ""
+"Az utolsó szelvény dátuma az elszámolás napja előtt vagy az elszámolás "
+"napján."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Last day of a month before or after a date."
-msgstr ""
+msgstr "Egy hónap utolsó napja egy dátum előtt vagy után."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Last day of the month following a date."
-msgstr ""
+msgstr "A dátumot követő hónap utolsó napja."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Last day of the quarter of the year a specific date falls in."
-msgstr ""
+msgstr "Az év negyedévének utolsó napja, amelyre egy adott dátum esik."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Last day of the year a specific date falls in."
-msgstr ""
+msgstr "Az év utolsó napja, amelyre egy adott dátum esik."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2485,7 +2555,7 @@ msgstr "Bal"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Legend position"
-msgstr ""
+msgstr "Legenda pozíció"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2508,14 +2578,14 @@ msgstr "Hivatkozás"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Link sheet"
-msgstr ""
+msgstr "Link lap"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/list/plugins/list_core_plugin.js:0
 #, python-format
 msgid "List #%s"
-msgstr ""
+msgstr "Lista #%s"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2529,28 +2599,28 @@ msgstr "Betöltés…"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Logical `and` operator."
-msgstr ""
+msgstr "Logikai \"és\" operátor."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Logical `or` operator."
-msgstr ""
+msgstr "Logikai `vagy` operátor."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Logical `xor` operator."
-msgstr ""
+msgstr "Logikai `xor` operátor."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Look up a value."
-msgstr ""
+msgstr "Keressen meg egy értéket."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2558,6 +2628,8 @@ msgstr ""
 #, python-format
 msgid "Lower inflection point must be smaller than upper inflection point"
 msgstr ""
+"Az alsó inflexiós pontnak kisebbnek kell lennie, mint a felső inflexiós "
+"pontnak."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2572,49 +2644,49 @@ msgstr "Március"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Match case"
-msgstr ""
+msgstr "Párhuzamos eset"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Match entire cell content"
-msgstr ""
+msgstr "A teljes cella tartalmának megfeleltetése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Max"
-msgstr ""
+msgstr "Max"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "MaxPoint"
-msgstr ""
+msgstr "MaxPoint"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Maximum numeric value in a dataset."
-msgstr ""
+msgstr "Maximális numerikus érték egy adathalmazban."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Maximum of values from a table-like range."
-msgstr ""
+msgstr "A táblázatszerű tartományból származó értékek maximuma."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Maximum value in a numeric dataset."
-msgstr ""
+msgstr "Maximális érték egy numerikus adathalmazban."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2629,14 +2701,14 @@ msgstr "Május"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Median value in a numeric dataset."
-msgstr ""
+msgstr "Középérték egy numerikus adathalmazban."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Merge Cells"
-msgstr ""
+msgstr "Cellák egyesítése"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2646,6 +2718,8 @@ msgid ""
 "Merged cells are preventing this operation. Unmerge those cells and try "
 "again."
 msgstr ""
+"Az összevont cellák megakadályozzák ezt a műveletet. Távolítsa el ezeket a "
+"cellákat, és próbálja meg újra."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2654,55 +2728,57 @@ msgstr ""
 msgid ""
 "Merging these cells will only preserve the top-leftmost value. Merge anyway?"
 msgstr ""
+"Ezeknek a celláknak az összevonása csak a bal felső értéket fogja megőrizni."
+" Összevonás egyébként?"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "MidPoint"
-msgstr ""
+msgstr "MidPoint"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Midpoint must be smaller then Maximum"
-msgstr ""
+msgstr "A középpontnak kisebbnek kell lennie, mint a Maximum"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Min"
-msgstr ""
+msgstr "Min"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Minimum must be smaller then Maximum"
-msgstr ""
+msgstr "A minimumnak kisebbnek kell lennie, mint a maximumnak"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Minimum must be smaller then Midpoint"
-msgstr ""
+msgstr "A minimumnak kisebbnek kell lennie, mint a Midpoint"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Minimum numeric value in a dataset."
-msgstr ""
+msgstr "Minimális numerikus érték egy adathalmazban."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Minimum of values from a table-like range."
-msgstr ""
+msgstr "Egy táblázatszerű tartományból származó értékek minimuma."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2710,20 +2786,22 @@ msgstr ""
 #, python-format
 msgid "Minimum range limit must be smaller than maximum range limit"
 msgstr ""
+"A minimális tartományhatárnak kisebbnek kell lennie, mint a maximális "
+"tartományhatárnak."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Minimum value in a numeric dataset."
-msgstr ""
+msgstr "Minimális érték egy numerikus adathalmazban."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Minpoint"
-msgstr ""
+msgstr "Minpoint"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2731,28 +2809,28 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Minute component of a specific time."
-msgstr ""
+msgstr "Egy adott idő percenkénti összetevője."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Modified Macaulay duration."
-msgstr ""
+msgstr "Módosított Macaulay időtartam."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Modified internal rate of return."
-msgstr ""
+msgstr "Módosított belső megtérülési ráta."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Modulo (remainder) operator."
-msgstr ""
+msgstr "Modulo (maradék) operátor."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2766,70 +2844,70 @@ msgstr "Hétfő"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Month of the year a specific date falls in"
-msgstr ""
+msgstr "Az év hónapja, amelyre egy adott dátum esik"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "More formats"
-msgstr ""
+msgstr "További formátumok"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "More strings to append in sequence."
-msgstr ""
+msgstr "További karakterláncok csatolása a sorrendben."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "More than one match found in DGET evaluation."
-msgstr ""
+msgstr "Több egynél több egyezést találtunk a DGET értékelésében."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "More values to be appended using delimiter."
-msgstr ""
+msgstr "További értékeket kell csatolni az elválasztójel segítségével."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Move left"
-msgstr ""
+msgstr "Mozgás balra"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Move right"
-msgstr ""
+msgstr "Mozgás jobbra"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Net present value given to non-periodic cash flows.."
-msgstr ""
+msgstr "A nem periódikus pénzáramlásokhoz adott nettó jelenérték.."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Net working days between two dates (specifying weekends)."
-msgstr ""
+msgstr "Két dátum közötti nettó munkanapok (hétvégék megadása)."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Net working days between two provided days."
-msgstr ""
+msgstr "Nettó munkanapok két megadott nap között."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2840,14 +2918,14 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "New Chart"
-msgstr ""
+msgstr "Új táblázat"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "New sheet"
-msgstr ""
+msgstr "Új lap"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2861,21 +2939,21 @@ msgstr "Következő"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Next coupon date after the settlement date."
-msgstr ""
+msgstr "A következő szelvény dátuma az elszámolás dátuma után."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "No columns"
-msgstr ""
+msgstr "Nincsenek oszlopok"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "No match."
-msgstr ""
+msgstr "Nincs egyezés."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2889,7 +2967,7 @@ msgstr "Nincs eredmény"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "No rows"
-msgstr ""
+msgstr "Nincsenek sorok"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2908,7 +2986,7 @@ msgstr "Nincs"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Not implemented operator %s for kind of conditional formatting:  %s"
-msgstr ""
+msgstr "Nem implementált operátor %s a feltételes formázás fajtájához: %s"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2923,14 +3001,14 @@ msgstr "November"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Nth largest element from a data set."
-msgstr ""
+msgstr "Az N-edik legnagyobb elem egy adathalmazból."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Nth smallest element in a data set."
-msgstr ""
+msgstr "Egy adathalmaz N-edik legkisebb eleme."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2947,14 +3025,14 @@ msgstr "Szám"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Number of columns in a specified array or range."
-msgstr ""
+msgstr "Az oszlopok száma egy megadott tömbben vagy tartományban."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Number of coupons between settlement and maturity."
-msgstr ""
+msgstr "Az elszámolás és a lejárat közötti szelvények száma."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2962,28 +3040,28 @@ msgstr ""
 #, python-format
 msgid ""
 "Number of days between two dates on a 360-day year (months of 30 days)."
-msgstr ""
+msgstr "Két dátum közötti napok száma egy 360 napos évben (30 napos hónapok)."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Number of days between two dates."
-msgstr ""
+msgstr "Két dátum közötti napok száma."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Number of empty values."
-msgstr ""
+msgstr "Üres értékek száma."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Number of payment periods for an investment."
-msgstr ""
+msgstr "Egy beruházás fizetési időszakainak száma."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2991,13 +3069,15 @@ msgstr ""
 #, python-format
 msgid "Number of periods for an investment to reach a value."
 msgstr ""
+"Azoknak az időszakoknak a száma, amelyek alatt egy befektetés elér egy "
+"értéket."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Number of rows in a specified array or range."
-msgstr ""
+msgstr "A sorok száma egy megadott tömbben vagy tartományban."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3012,13 +3092,14 @@ msgstr "Számok"
 #, python-format
 msgid "Numerical average value in a dataset, ignoring text."
 msgstr ""
+"Számszerű átlagérték egy adathalmazban, a szöveg figyelmen kívül hagyásával."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Numerical average value in a dataset."
-msgstr ""
+msgstr "Számszerű átlagérték egy adathalmazban."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3033,14 +3114,14 @@ msgstr "Október"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Overflow"
-msgstr ""
+msgstr "Túlcsordulás"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Paint Format"
-msgstr ""
+msgstr "Festék formátum"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3050,7 +3131,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Paste"
-msgstr ""
+msgstr "Paste"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3060,7 +3141,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Paste format only"
-msgstr ""
+msgstr "Csak beillesztési formátum"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3070,7 +3151,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Paste special"
-msgstr ""
+msgstr "Beillesztés speciális"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3079,14 +3160,14 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Paste value only"
-msgstr ""
+msgstr "Csak az érték beillesztése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Paste values only"
-msgstr ""
+msgstr "Csak az értékek beillesztése"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3094,7 +3175,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Payment on the principal of an investment."
-msgstr ""
+msgstr "Fizetés egy befektetés tőkéjére."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3118,7 +3199,7 @@ msgstr "Százalék"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Percentage change from key value"
-msgstr ""
+msgstr "Százalékos változás a kulcsértékhez képest"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3127,14 +3208,14 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Percentile"
-msgstr ""
+msgstr "Percentile"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Periodic payment for an annuity investment."
-msgstr ""
+msgstr "Rendszeres kifizetés egy életjáradéki befektetésért."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3142,35 +3223,35 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Pie"
-msgstr ""
+msgstr "Pie"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/pivot/plugins/pivot_core_plugin.js:0
 #, python-format
 msgid "Pivot #%s"
-msgstr ""
+msgstr "Pivot #%s"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Position of item in range that matches value."
-msgstr ""
+msgstr "A tétel pozíciója az értéknek megfelelő tartományban."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Positive square root of a positive number."
-msgstr ""
+msgstr "Pozitív szám pozitív négyzetgyöke."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Present value of an annuity investment."
-msgstr ""
+msgstr "Egy életjáradéki befektetés jelenértéke."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3185,7 +3266,7 @@ msgstr "Előnézet"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Preview text"
-msgstr ""
+msgstr "Szöveg előnézet"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3199,42 +3280,42 @@ msgstr "Előző"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Price of a US Treasury bill."
-msgstr ""
+msgstr "Egy amerikai kincstárjegy ára."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Price of a discount security."
-msgstr ""
+msgstr "Kedvezményes értékpapír ára."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Price of a security paying periodic interest."
-msgstr ""
+msgstr "Egy időszakos kamatot fizető értékpapír ára."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Product of values from a table-like range."
-msgstr ""
+msgstr "Táblázatszerű tartományból származó értékek terméke."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Quarter of the year a specific date falls in"
-msgstr ""
+msgstr "Az év egy adott negyedévére esik egy adott dátum"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Random integer between two values, inclusive."
-msgstr ""
+msgstr "Véletlen egész szám két érték között, beleértve."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3248,7 +3329,7 @@ msgstr "Hatótáv"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Readonly Access"
-msgstr ""
+msgstr "Csak olvasható hozzáférés"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3263,7 +3344,7 @@ msgstr "Újra"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Remove Filter"
-msgstr ""
+msgstr "Szűrő eltávolítása"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3277,14 +3358,14 @@ msgstr "Hivatkozás eltávolítása"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Remove rule"
-msgstr ""
+msgstr "Szabály eltávolítása"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Remove selected filters"
-msgstr ""
+msgstr "Kiválasztott szűrők eltávolítása"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3298,14 +3379,14 @@ msgstr "Átnevezés"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Rename Sheet"
-msgstr ""
+msgstr "Átnevezési lap"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Reorder rules"
-msgstr ""
+msgstr "Újrarendelési szabályok"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3320,7 +3401,7 @@ msgstr "Kicserél"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Replace all"
-msgstr ""
+msgstr "Cserélje ki az összes"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3334,49 +3415,49 @@ msgstr "Visszaállítás"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Result of multiplying a series of numbers together."
-msgstr ""
+msgstr "Számsorozat összeszorzásának eredménye."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/pivot/pivot_functions.js:0
 #, python-format
 msgid "Return the current value of a spreadsheet filter."
-msgstr ""
+msgstr "Egy táblázatkezelő szűrő aktuális értékének visszaadása."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Returns a value depending on multiple logical expressions."
-msgstr ""
+msgstr "Több logikai kifejezéstől függő értéket ad vissza."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Returns opposite of provided logical value."
-msgstr ""
+msgstr "A megadott logikai értékkel ellentétes értéket ad vissza."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Returns the content of a cell, specified by row and column offset."
-msgstr ""
+msgstr "Visszaadja egy cella tartalmát, a sor- és oszlopeltolással megadva."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Returns the error value #N/A."
-msgstr ""
+msgstr "Visszaadja a #N/A hibaértéket."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Returns the interest paid at a particular period of an investment."
-msgstr ""
+msgstr "A hozam egy befektetés adott időszakában fizetett kamat."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3386,6 +3467,8 @@ msgid ""
 "Returns the maximum value in a range of cells, filtered by a set of "
 "criteria."
 msgstr ""
+"Visszaadja a maximális értéket egy cellatartományban, bizonyos kritériumok "
+"alapján szűrve."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3395,20 +3478,22 @@ msgid ""
 "Returns the minimum value in a range of cells, filtered by a set of "
 "criteria."
 msgstr ""
+"Visszaadja a minimális értéket egy cellatartományban, bizonyos kritériumok "
+"alapján szűrve."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Returns value depending on logical expression."
-msgstr ""
+msgstr "Visszaadja az értéket a logikai kifejezés függvényében."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Reverse icons"
-msgstr ""
+msgstr "Fordított ikonok"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3426,21 +3511,21 @@ msgstr "Jobb"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Rounds a number according to standard rules."
-msgstr ""
+msgstr "Egy számot szabványos szabályok szerint kerekít."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Rounds a number up to the nearest odd integer."
-msgstr ""
+msgstr "Egy számot a legközelebbi páratlan egész számra kerekít."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Rounds down a number."
-msgstr ""
+msgstr "Lekerekít egy számot."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3449,7 +3534,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Rounds number down to nearest multiple of factor."
-msgstr ""
+msgstr "A számot a tényező legközelebbi többszörösére kerekíti."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3459,35 +3544,35 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Rounds number up to nearest multiple of factor."
-msgstr ""
+msgstr "A számot a tényező legközelebbi többszörösére kerekíti."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Rounds up a number."
-msgstr ""
+msgstr "Felkerekít egy számot."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Row above"
-msgstr ""
+msgstr "Fenti sor"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Row below"
-msgstr ""
+msgstr "Az alábbi sor"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Row number of a specified cell."
-msgstr ""
+msgstr "Egy megadott cella sorszáma."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3509,7 +3594,7 @@ msgstr "Mentés"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Scorecard"
-msgstr ""
+msgstr "Scorecard"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3526,13 +3611,15 @@ msgid ""
 "Search a range for a match and return the corresponding item from a second "
 "range."
 msgstr ""
+"Keressen egy tartományban egyezést, és adja vissza a megfelelő elemet egy "
+"második tartományból."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Search in formulas"
-msgstr ""
+msgstr "Keresés a képletekben"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3546,21 +3633,21 @@ msgstr "Keresés..."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Secant of an angle provided in radians."
-msgstr ""
+msgstr "Egy szög radiánban megadott szekánsának."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/list/index.js:0
 #, python-format
 msgid "See record"
-msgstr ""
+msgstr "Lásd a rekordot"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/pivot/index.js:0
 #, python-format
 msgid "See records"
-msgstr ""
+msgstr "Lásd a nyilvántartásokat"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3571,14 +3658,14 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Select a color..."
-msgstr ""
+msgstr "Válasszon egy színt..."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Select all"
-msgstr ""
+msgstr "Válassza ki az összes"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3586,7 +3673,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/global_filters/components/filter_value/filter_value.xml:0
 #, python-format
 msgid "Select period..."
-msgstr ""
+msgstr "Válassza ki az időszakot..."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3601,7 +3688,7 @@ msgstr "Szeptember"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Series"
-msgstr ""
+msgstr "Sorozat"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3616,7 +3703,7 @@ msgstr "Táblázat"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Shift down"
-msgstr ""
+msgstr "Lefelé váltás"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3637,42 +3724,42 @@ msgstr "Jobbra vált"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Shift up"
-msgstr ""
+msgstr "Műszakváltás felfelé"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Show formulas"
-msgstr ""
+msgstr "Képletek megjelenítése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Show gridlines"
-msgstr ""
+msgstr "Rácsvonalak megjelenítése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Sine of an angle provided in radians."
-msgstr ""
+msgstr "Egy szög szinusza radiánban megadva."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Single color"
-msgstr ""
+msgstr "Egyszínű"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Single value from a table-like range."
-msgstr ""
+msgstr "Egyetlen érték egy táblázatszerű tartományból."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3682,55 +3769,57 @@ msgid ""
 "Some used characters are not allowed in a sheet name (Forbidden characters "
 "are %s)."
 msgstr ""
+"Néhány használt karakter nem megengedett a lap nevében (a tiltott karakterek"
+" a %s)."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Sort ascending (A ⟶ Z)"
-msgstr ""
+msgstr "Rendezés növekvő (A ⟶ Z)"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Sort column"
-msgstr ""
+msgstr "Rendezés oszlop"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Sort columns"
-msgstr ""
+msgstr "Oszlopok rendezése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Sort descending (Z ⟶ A)"
-msgstr ""
+msgstr "Rendezés csökkenő (Z ⟶ A)"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Sort range"
-msgstr ""
+msgstr "Válogatási tartomány"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Stacked barchart"
-msgstr ""
+msgstr "Halmozott oszlopdiagram"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Stacked linechart"
-msgstr ""
+msgstr "Halmozott vonaldiagram"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3744,14 +3833,14 @@ msgstr "Általános"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Standard deviation of entire population (text as 0)."
-msgstr ""
+msgstr "A teljes populáció szórása (a szöveg 0-nak felel meg)."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Standard deviation of entire population from table."
-msgstr ""
+msgstr "A teljes populáció szórása a táblázatból."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3759,21 +3848,21 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Standard deviation of entire population."
-msgstr ""
+msgstr "A teljes populáció szórása."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Standard deviation of population sample from table."
-msgstr ""
+msgstr "A populációs minta szórása a táblázatból."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Standard deviation of sample (text as 0)."
-msgstr ""
+msgstr "A minta szórása (a szöveg 0-nak felel meg)."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3781,21 +3870,21 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Standard deviation."
-msgstr ""
+msgstr "Szabványos eltérés."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Starts with"
-msgstr ""
+msgstr "Kezdődik"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Stop reordering rules"
-msgstr ""
+msgstr "Az újrarendezési szabályok leállítása"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3818,21 +3907,21 @@ msgstr "Összeg"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Sum of a series of numbers and/or cells."
-msgstr ""
+msgstr "Számok és/vagy cellák sorozatának összege."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Sum of values from a table-like range."
-msgstr ""
+msgstr "Egy táblázatszerű tartomány értékeinek összege."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Sums a range depending on multiple criteria."
-msgstr ""
+msgstr "Összegez egy tartományt több kritériumtól függően."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3853,7 +3942,7 @@ msgstr "Szimbólum"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Tangent of an angle provided in radians."
-msgstr ""
+msgstr "Egy szög radiánban megadott érintője."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3867,49 +3956,49 @@ msgstr "Szöveg"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Text Color"
-msgstr ""
+msgstr "Szöveg színe"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "TextColor"
-msgstr ""
+msgstr "TextColor"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The anchor must be part of the provided zone"
-msgstr ""
+msgstr "A horgonynak a megadott zóna részét kell képeznie"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/pivot/pivot_functions.js:0
 #, python-format
 msgid "The argument %s is not a valid measure. Here are the measures: %s"
-msgstr ""
+msgstr "A %s érv nem érvényes mértékegység. Itt vannak az intézkedések: %s"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The argument is missing. Please provide a value"
-msgstr ""
+msgstr "Az érv hiányzik. Kérjük, adjon meg egy értéket"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The base (%s) must be between 2 and 36 inclusive."
-msgstr ""
+msgstr "A bázisnak (%s) 2 és 36 között kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The baseline value is invalid"
-msgstr ""
+msgstr "Az alapérték érvénytelen"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3919,6 +4008,8 @@ msgid ""
 "The cashflow_amounts and cashflow_dates ranges must have the same "
 "dimensions."
 msgstr ""
+"A cashflow_amounts és cashflow_dates tartományoknak azonos méretekkel kell "
+"rendelkezniük."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3926,13 +4017,14 @@ msgstr ""
 #, python-format
 msgid "The cashflow_amounts must include negative and positive values."
 msgstr ""
+"A cashflow_amounts-nak negatív és pozitív értékeket is tartalmaznia kell."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The cell you are trying to edit has been deleted."
-msgstr ""
+msgstr "A szerkeszteni kívánt cella törlésre került."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3940,6 +4032,7 @@ msgstr ""
 #, python-format
 msgid "The character or string to place between each concatenated value."
 msgstr ""
+"Az egyes összekapcsolt értékek közé helyezendő karakter vagy karakterlánc."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3948,27 +4041,28 @@ msgstr ""
 #, python-format
 msgid "The character within text_to_search at which to start the search."
 msgstr ""
+"A text_to_search-en belüli karakter, amelynél a keresést el kell kezdeni."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The chart definition is invalid for an unknown reason"
-msgstr ""
+msgstr "A táblázat definíciója ismeretlen okból érvénytelen."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The cost (%s) must be positive or null."
-msgstr ""
+msgstr "A költségnek (%s) pozitívnak vagy nullának kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The cost (%s) must be strictly positive."
-msgstr ""
+msgstr "A költségnek (%s) szigorúan pozitívnak kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3976,7 +4070,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The covariance of a dataset."
-msgstr ""
+msgstr "Egy adathalmaz kovarianciája."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3984,6 +4078,7 @@ msgstr ""
 #, python-format
 msgid "The criteria range contains %s row, it must be at least 2 rows."
 msgstr ""
+"A kritériumtartomány %s sort tartalmaz, legalább 2 sornak kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3993,27 +4088,30 @@ msgid ""
 "The current window is too small to display this sheet properly. Consider "
 "resizing your browser window or adjusting frozen rows and columns."
 msgstr ""
+"A jelenlegi ablak túl kicsi a lap megfelelő megjelenítéséhez. Fontolja meg a"
+" böngészőablak átméretezését vagy a befagyasztott sorok és oszlopok "
+"beállítását."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The data range is invalid"
-msgstr ""
+msgstr "Az adatkör érvénytelen"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The dataset is invalid"
-msgstr ""
+msgstr "Az adatkészlet érvénytelen"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The date_string (%s) cannot be parsed to date/time."
-msgstr ""
+msgstr "A date_string (%s) nem elemezhető dátumra/időre."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4021,56 +4119,56 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The day_count_convention (%s) must be between 0 and 4 inclusive."
-msgstr ""
+msgstr "A day_count_convention (%s) értéknek 0 és 4 között kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The depreciation factor (%s) must be strictly positive."
-msgstr ""
+msgstr "Az értékcsökkenési tényezőnek (%s) szigorúan pozitívnak kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The discount (%s) must be different from -1."
-msgstr ""
+msgstr "A kedvezménynek (%s) nem lehet -1."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The discount (%s) must be smaller than 1."
-msgstr ""
+msgstr "A kedvezménynek (%s) 1-nél kisebbnek kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The discount (%s) must be strictly positive."
-msgstr ""
+msgstr "A kedvezménynek (%s) szigorúan pozitívnak kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The divisor must be different from 0."
-msgstr ""
+msgstr "Az osztónak 0-tól eltérőnek kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The effective rate (%s) must must strictly greater than 0."
-msgstr ""
+msgstr "Az effektív aránynak (%s) szigorúan nagyobbnak kell lennie 0-nál."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The end_date (%s) must be positive or null."
-msgstr ""
+msgstr "A end_date (%s) értéknek pozitívnak vagy nullának kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4078,6 +4176,7 @@ msgstr ""
 #, python-format
 msgid "The end_period (%s) must be greater or equal than 0."
 msgstr ""
+"A end_period (%s) értéknek nagyobbnak vagy egyenlőnek kell lennie 0-nál."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4085,20 +4184,22 @@ msgstr ""
 #, python-format
 msgid "The end_period (%s) must be smaller or equal to the life (%s)."
 msgstr ""
+"A end_period (%s) kisebb vagy egyenlő kell, hogy legyen az élettartammal "
+"(%s)."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The exponent (%s) must be an integer when the base is negative."
-msgstr ""
+msgstr "Az exponensnek (%s) egész számnak kell lennie, ha a bázis negatív."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The exponent to raise base to."
-msgstr ""
+msgstr "Az exponens emelni bázisra."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4106,14 +4207,14 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The factor (%s) must be positive when the value (%s) is positive."
-msgstr ""
+msgstr "A tényezőnek (%s) pozitívnak kell lennie, ha az érték (%s) pozitív."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/list/list_data_source.js:0
 #, python-format
 msgid "The field %s does not exist or you do not have access to that field"
-msgstr ""
+msgstr "A %s mező nem létezik, vagy nincs hozzáférése a mezőhöz."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4123,48 +4224,50 @@ msgid ""
 "The field (%s) must be one of %s or must be a number between 1 and %s "
 "inclusive."
 msgstr ""
+"A mezőnek (%s) a %s egyikének kell lennie, vagy 1 és %s közötti számnak kell"
+" lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The field (%s) must be one of %s."
-msgstr ""
+msgstr "A mezőnek (%s) a %s egyikének kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The field must be a number or a string"
-msgstr ""
+msgstr "A mezőnek számnak vagy karakterláncnak kell lennie"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The first addend."
-msgstr ""
+msgstr "Az első kiegészítés."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The first multiplicand."
-msgstr ""
+msgstr "Az első szorzószám."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The first string to compare."
-msgstr ""
+msgstr "Az első húr az összehasonlításhoz."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The first value must be a number"
-msgstr ""
+msgstr "Az első értéknek egy számnak kell lennie"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4172,7 +4275,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The first value."
-msgstr ""
+msgstr "Az első érték."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4181,27 +4284,29 @@ msgstr ""
 msgid ""
 "The first_period (%s) must be smaller or equal to the last_period (%s)."
 msgstr ""
+"Az első_időszaknak (%s) kisebbnek vagy egyenlőnek kell lennie az "
+"utolsó_időszakkal (%s)."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The first_period (%s) must be strictly positive."
-msgstr ""
+msgstr "Az első_időszak (%s) szigorúan pozitívnak kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The formatting unit should be 'k', 'm' or 'b'."
-msgstr ""
+msgstr "A formázási egységnek \"k\"-nak, \"m\"-nek vagy \"b\"-nek kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The frequency (%s) must be one of %s"
-msgstr ""
+msgstr "A gyakoriságnak (%s) a %s egyikének kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4211,6 +4316,8 @@ msgid ""
 "The function [[FUNCTION_NAME]] expects a boolean value, but '%s' is a text, "
 "and cannot be coerced to a number."
 msgstr ""
+"A [[FUNCTION_NAME]] függvény boolean értéket vár, de a '%s' egy szöveg, és "
+"nem kényszeríthető számmá."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4220,13 +4327,15 @@ msgid ""
 "The function [[FUNCTION_NAME]] expects a number value, but '%s' is a string,"
 " and cannot be coerced to a number."
 msgstr ""
+"A [[FUNCTION_NAME]] függvény számértéket vár, de a '%s' egy karakterlánc, és"
+" nem kényszeríthető számmá."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The function [[FUNCTION_NAME]] result cannot be negative"
-msgstr ""
+msgstr "A [[FUNCTION_NAME]] funkció eredménye nem lehet negatív."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4236,13 +4345,15 @@ msgid ""
 "The function [[FUNCTION_NAME]] result must be greater than or equal "
 "01/01/1900."
 msgstr ""
+"A [[FUNCTION_NAME]] függvény eredményének nagyobbnak vagy egyenlőnek kell "
+"lennie, mint 01/01/1900."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The future_value (%s) must be strictly positive."
-msgstr ""
+msgstr "A future_value (%s) értéknek szigorúan pozitívnak kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4250,6 +4361,8 @@ msgstr ""
 #, python-format
 msgid "The high (%s) must be greater than or equal to the low (%s)."
 msgstr ""
+"A magas (%s) értéknek nagyobbnak vagy egyenlőnek kell lennie az alacsony "
+"(%s) értékkel."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4259,13 +4372,15 @@ msgid ""
 "The index from the left of string from which to begin extracting. The first "
 "character in string has the index 1."
 msgstr ""
+"Az index a bal oldali karakterláncból, amelyből a kivonatolást meg kell "
+"kezdeni. A karakterlánc első karakterének indexe 1."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The initial string."
-msgstr ""
+msgstr "A kezdeti húr."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4277,20 +4392,24 @@ msgid ""
 "however, if occurrence_number is specified, only the indicated instance of "
 "search_for is replaced."
 msgstr ""
+"A search_for példánya a text_to_search-en belül replace with replace_with. "
+"Alapértelmezés szerint a search_for minden előfordulása kicserélődik; ha "
+"azonban az occurrence_number meg van adva, akkor csak a search_for megadott "
+"példánya kerül kicserélésre."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The investment (%s) must be strictly positive."
-msgstr ""
+msgstr "A beruházásnak (%) szigorúan pozitívnak kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The key value is invalid"
-msgstr ""
+msgstr "A legfontosabb érték az érvénytelen"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4299,41 +4418,43 @@ msgstr ""
 msgid ""
 "The last_period (%s) must be smaller or equal to the number_of_periods (%s)."
 msgstr ""
+"Az utolsó_időszaknak (%s) kisebbnek vagy egyenlőnek kell lennie a "
+"number_of_periods (%s) értékkel."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The last_period (%s) must be strictly positive."
-msgstr ""
+msgstr "A last_period (%s) értéknek szigorúan pozitívnak kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The length of the segment to extract."
-msgstr ""
+msgstr "A kivonandó szegmens hossza."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The life (%s) must be strictly positive."
-msgstr ""
+msgstr "Az életnek (%s) szigorúan pozitívnak kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The logarithm of a number, base e (euler's number)."
-msgstr ""
+msgstr "Egy szám logaritmusa, e bázisú (euler-szám)."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The lower inflection point value must be a number"
-msgstr ""
+msgstr "Az alsó inflexiós pont értékének egy számnak kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4341,55 +4462,57 @@ msgstr ""
 #, python-format
 msgid "The maturity (%s) must be strictly greater than the settlement (%s)."
 msgstr ""
+"Az érettségnek (%s) szigorúan nagyobbnak kell lennie, mint az elszámolásnak "
+"(%s)."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The maximum range limit value must be a number"
-msgstr ""
+msgstr "A maximális tartományi határértéknek egy számnak kell lennie"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The maxpoint must be a number"
-msgstr ""
+msgstr "A maxpointnak egy számnak kell lennie"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The midpoint must be a number"
-msgstr ""
+msgstr "A középpontnak egy számnak kell lennie"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The minimum range limit value must be a number"
-msgstr ""
+msgstr "A minimális tartományi határértéknek egy számnak kell lennie"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The minpoint must be a number"
-msgstr ""
+msgstr "A minpointnak egy számot kell"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The minuend, or number to be subtracted from."
-msgstr ""
+msgstr "A minuend, vagy a kivonandó szám."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The month (%s) must be between 1 and 12 inclusive."
-msgstr ""
+msgstr "A hónapnak (%s) 1 és 12 között kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4399,41 +4522,43 @@ msgid ""
 "The net present value of an investment based on a series of periodic cash "
 "flows and a discount rate."
 msgstr ""
+"Egy befektetés nettó jelenértéke, amely időszakos pénzáramlások sorozatán és"
+" egy diszkontrátán alapul."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The nominal rate (%s) must be strictly greater than 0."
-msgstr ""
+msgstr "A névleges aránynak (%s) szigorúan 0-nál nagyobbnak kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The number of characters in the text to be replaced."
-msgstr ""
+msgstr "A lecserélendő szövegben szereplő karakterek száma."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The number of characters to return from the left side of string."
-msgstr ""
+msgstr "A karakterlánc bal oldaláról visszaadandó karakterek száma."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The number of characters to return from the right side of string."
-msgstr ""
+msgstr "A karakterlánc jobb oldaláról visszaadandó karakterek száma."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The number of numeric values in dataset."
-msgstr ""
+msgstr "Az adatkészletben szereplő numerikus értékek száma."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4442,13 +4567,14 @@ msgstr ""
 #, python-format
 msgid "The number of periods by year (%s) must strictly greater than 0."
 msgstr ""
+"Az évenkénti időszakok számának (%s) szigorúan nagyobbnak kell lennie 0-nál."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The number of periods must be different than 0."
-msgstr ""
+msgstr "Az időszakok számának 0-tól eltérőnek kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4458,34 +4584,36 @@ msgid ""
 "The number of the character to look up from the current Unicode table in "
 "decimal format."
 msgstr ""
+"A karakter száma, amelyet az aktuális Unicode-táblázatból kell keresni "
+"tizedes formátumban."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The number of values in a dataset."
-msgstr ""
+msgstr "Az értékek száma egy adathalmazban."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The number pi."
-msgstr ""
+msgstr "A szám pi."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The number to be divided."
-msgstr ""
+msgstr "A felosztandó szám."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The number to divide by."
-msgstr ""
+msgstr "Az osztandó szám."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4495,34 +4623,36 @@ msgid ""
 "The number to have its sign reversed. Equivalently, the number to multiply "
 "by -1."
 msgstr ""
+"A szám előjelének megfordítása. Ennek megfelelően a szám, amelyet -1-gyel "
+"kell megszorozni."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The number to raise to the exponent power."
-msgstr ""
+msgstr "Az a szám, amelyet az exponens hatványára kell emelni."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The number to return."
-msgstr ""
+msgstr "A visszatérő szám."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The number, date or time to format."
-msgstr ""
+msgstr "A szám, a dátum vagy az időpont formázása."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The number_of_periods (%s) must be greater than 0."
-msgstr ""
+msgstr "A number_of_periods (%s) értéknek nagyobbnak kell lennie 0-nál."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4530,70 +4660,70 @@ msgstr ""
 #, python-format
 msgid ""
 "The pattern by which to format the number, enclosed in quotation marks."
-msgstr ""
+msgstr "Az idézőjelekbe zárt szám formázásának mintája."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The period (%s) must be less than or equal life (%."
-msgstr ""
+msgstr "Az időszaknak (%s) kisebbnek vagy egyenlőnek kell lennie az élet (%."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The period (%s) must be less than or equal to %s."
-msgstr ""
+msgstr "A periódusnak (%s) kisebbnek vagy egyenlőnek kell lennie %s-nél."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The period (%s) must be positive or null."
-msgstr ""
+msgstr "Az időszaknak (%s) pozitívnak vagy nullának kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The period (%s) must be strictly positive."
-msgstr ""
+msgstr "Az időszaknak (%s) szigorúan pozitívnak kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The period must be between 1 and number_of_periods"
-msgstr ""
+msgstr "Az időszaknak 1 és number_of_periods között kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The position where the replacement will begin (starting from 1)."
-msgstr ""
+msgstr "A pozíció, ahol a helyettesítés kezdődik (1-től kezdődően)."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The present value (%s) must be strictly positive."
-msgstr ""
+msgstr "A jelenértéknek (%s) szigorúan pozitívnak kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The present_value (%s) must be strictly positive."
-msgstr ""
+msgstr "A present_value (%s) értéknek szigorúan pozitívnak kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The price (%s) must be strictly positive."
-msgstr ""
+msgstr "Az árnak (%s) szigorúan pozitívnak kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4601,6 +4731,7 @@ msgstr ""
 #, python-format
 msgid "The provided anchor is invalid. The cell must be part of the zone."
 msgstr ""
+"A megadott horgony érvénytelen. A cellának a zóna részének kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4608,6 +4739,7 @@ msgstr ""
 #, python-format
 msgid "The purchase_date (%s) must be before the first_period_end (%s)."
 msgstr ""
+"A purchase_date (%s) dátumnak az first_period_end (%s) előtt kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4617,20 +4749,22 @@ msgid ""
 "The range containing the return value. Should have the same dimensions as "
 "lookup_range."
 msgstr ""
+"A visszatérési értéket tartalmazó tartomány. Ugyanazokkal a méretekkel kell "
+"rendelkeznie, mint a lookup_range."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The range is invalid"
-msgstr ""
+msgstr "A tartomány érvénytelen"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The range must be a single row or a single column."
-msgstr ""
+msgstr "A tartománynak egyetlen sornak vagy oszlopnak kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4640,6 +4774,8 @@ msgid ""
 "The range to consider for the search. Should be a single column or a single "
 "row."
 msgstr ""
+"A keresés során figyelembe veendő tartomány. Egyetlen oszlopnak vagy "
+"egyetlen sornak kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4650,28 +4786,28 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The rate (%s) must be positive or null."
-msgstr ""
+msgstr "Az aránynak (%s) pozitívnak vagy nullának kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The rate (%s) must be strictly positive."
-msgstr ""
+msgstr "Az aránynak (%s) szigorúan pozitívnak kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The rate_guess (%s) must be strictly greater than -1."
-msgstr ""
+msgstr "A rate_guess (%s) értéknek szigorúan nagyobbnak kell lennie, mint -1."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The redemption (%s) must be strictly positive."
-msgstr ""
+msgstr "A megváltásnak (%s) szigorúan pozitívnak kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4679,20 +4815,21 @@ msgstr ""
 #, python-format
 msgid "The result_range must be a single row or a single column."
 msgstr ""
+"Az result_range-nek egyetlen sornak vagy egyetlen oszlopnak kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The rule is invalid for an unknown reason"
-msgstr ""
+msgstr "A szabály ismeretlen okból érvénytelen"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The salvage (%s) must be positive or null."
-msgstr ""
+msgstr "A mentésnek (%s) pozitívnak vagy nullának kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4700,48 +4837,49 @@ msgstr ""
 #, python-format
 msgid "The salvage (%s) must be smaller or equal than the cost (%s)."
 msgstr ""
+"A mentésnek (%s) kisebbnek vagy egyenlőnek kell lennie, mint a költség (%s)."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The sample covariance of a dataset."
-msgstr ""
+msgstr "Egy adathalmaz mintakovarianciája."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The second addend."
-msgstr ""
+msgstr "A második kiegészítés."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The second argument is missing. Please provide a value"
-msgstr ""
+msgstr "A második érv hiányzik. Kérjük, adjon meg egy értéket"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The second multiplicand."
-msgstr ""
+msgstr "A második szorzótényező."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The second string to compare."
-msgstr ""
+msgstr "A második húr, amelyet össze kell hasonlítani."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The second value must be a number"
-msgstr ""
+msgstr "A második értéknek egy számnak kell lennie"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4751,7 +4889,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The second value."
-msgstr ""
+msgstr "A második érték."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4759,6 +4897,8 @@ msgstr ""
 #, python-format
 msgid "The settlement (%s) must be greater than or equal to the issue (%s)."
 msgstr ""
+"Az elszámolásnak (%s) nagyobbnak vagy egyenlőnek kell lennie a kiadással "
+"(%s)."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4767,6 +4907,8 @@ msgstr ""
 msgid ""
 "The settlement date (%s) must at most one year after the maturity date (%s)."
 msgstr ""
+"Az elszámolási dátum (%s) legfeljebb egy évvel a lejárati dátum (%s) után "
+"lehet."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4775,20 +4917,22 @@ msgstr ""
 msgid ""
 "The settlement date (%s) must be strictly greater than the issue date (%s)."
 msgstr ""
+"Az elszámolási dátumnak (%s) szigorúan nagyobbnak kell lennie, mint a "
+"kibocsátási dátumnak (%s)."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The sheet name cannot be empty."
-msgstr ""
+msgstr "A lap neve nem lehet üres."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The start_date (%s) must be positive or null."
-msgstr ""
+msgstr "A start_date (%s) értéknek pozitívnak vagy nullának kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4796,6 +4940,7 @@ msgstr ""
 #, python-format
 msgid "The start_period (%s) must be greater or equal than 0."
 msgstr ""
+"A start_period (%s) értéknek nagyobbnak vagy egyenlőnek kell lennie 0-nál."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4803,48 +4948,50 @@ msgstr ""
 #, python-format
 msgid "The start_period (%s) must be smaller or equal to the end_period (%s)."
 msgstr ""
+"A kezdő_időszaknak (%s) kisebbnek vagy egyenlőnek kell lennie a "
+"vég_időszakkal (%s)."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The string from which the left portion will be returned."
-msgstr ""
+msgstr "A karakterlánc, amelyből a bal oldali rész visszaadódik."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The string from which the right portion will be returned."
-msgstr ""
+msgstr "Az a karakterlánc, amelyből a jobb oldali rész visszaadódik."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The string that will replace search_for."
-msgstr ""
+msgstr "A search_for helyettesítendő karakterlánc."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The string to convert to lowercase."
-msgstr ""
+msgstr "A kisbetűvé alakítandó karakterlánc."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The string to convert to uppercase."
-msgstr ""
+msgstr "A nagybetűvé alakítandó karakterlánc."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The string to extract a segment from."
-msgstr ""
+msgstr "A szegmens kivonására szolgáló karakterlánc."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4852,28 +4999,28 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The string to look for within text_to_search."
-msgstr ""
+msgstr "A keresett karakterlánc a text_to_search-en belül."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The string to search for within text_to_search."
-msgstr ""
+msgstr "A keresendő karakterlánc a text_to_search-en belül."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The string whose length will be returned."
-msgstr ""
+msgstr "A karakterlánc, amelynek hossza visszaküldésre kerül."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The subtrahend, or number to subtract from value1."
-msgstr ""
+msgstr "A szubtrend, vagyis az értékből kivonandó szám1."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4881,6 +5028,7 @@ msgstr ""
 #, python-format
 msgid "The text or reference to a cell containing text to be trimmed."
 msgstr ""
+"A vágandó szöveget tartalmazó cellára vonatkozó szöveg vagy hivatkozás."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4888,14 +5036,14 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The text to search for the first occurrence of search_for."
-msgstr ""
+msgstr "A keresendő szöveg a search_for első előfordulása."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The text which will be inserted into the original text."
-msgstr ""
+msgstr "Az eredeti szövegbe beillesztendő szöveg."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4905,48 +5053,50 @@ msgid ""
 "The text which will be returned with the first letter of each word in "
 "uppercase and all other letters in lowercase."
 msgstr ""
+"A visszaküldendő szöveg minden szó első betűjét nagybetűvel, az összes többi"
+" betűt pedig kisbetűvel írjuk."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The text whose non-printable characters are to be removed."
-msgstr ""
+msgstr "Az a szöveg, amelynek nem nyomtatható karaktereit el kell távolítani."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The text within which to search and replace."
-msgstr ""
+msgstr "A szöveg, amelyen belül keresni és helyettesíteni kell."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The text, a part of which will be replaced."
-msgstr ""
+msgstr "A szöveg, amelynek egy részét lecseréljük."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The time_string (%s) cannot be parsed to date/time."
-msgstr ""
+msgstr "A time_string (%s) nem elemezhető dátumra/időre."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The type (%s) is out of range."
-msgstr ""
+msgstr "A típus (%s) a tartományon kívül van."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The type (%s) must be 1, 2 or 3."
-msgstr ""
+msgstr "A típusnak (%s) 1, 2 vagy 3 kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4954,21 +5104,21 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The unit (%s) must be strictly positive."
-msgstr ""
+msgstr "Az egységnek (%s) szigorúan pozitívnak kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The upper inflection point value must be a number"
-msgstr ""
+msgstr "A felső inflexiós pont értékének egy számnak kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The value (%s) cannot be between -1 and 1 inclusive."
-msgstr ""
+msgstr "Az érték (%s) nem lehet -1 és 1 között."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4976,14 +5126,14 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The value (%s) must be a valid base %s representation."
-msgstr ""
+msgstr "Az értéknek (%s) érvényes %s bázisú ábrázolásnak kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The value (%s) must be between -1 and 1 exclusive."
-msgstr ""
+msgstr "Az értéknek (%s) -1 és 1 között kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4991,105 +5141,105 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The value (%s) must be between -1 and 1 inclusive."
-msgstr ""
+msgstr "Az értéknek (%s) -1 és 1 között kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The value (%s) must be greater than or equal to 1."
-msgstr ""
+msgstr "Az értéknek (%s) nagyobbnak vagy egyenlőnek kell lennie 1-nél."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The value (%s) must be positive or null."
-msgstr ""
+msgstr "Az értéknek (%s) pozitívnak vagy nullának kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The value (%s) must be strictly positive."
-msgstr ""
+msgstr "Az értéknek (%s) szigorúan pozitívnak kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The value or values to be appended using delimiter."
-msgstr ""
+msgstr "Az elhatárolójel segítségével csatolandó érték vagy értékek."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The value to append to value1."
-msgstr ""
+msgstr "A value1-hez csatolandó érték."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The value to interpret as a percentage."
-msgstr ""
+msgstr "Az értéket százalékban kifejezve kell értelmezni."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The value to search for."
-msgstr ""
+msgstr "A keresendő érték."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The value to test against value1 for equality."
-msgstr ""
+msgstr "Az értékkel szemben tesztelendő érték1 az egyenlőség érdekében."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The value to test against value1 for inequality."
-msgstr ""
+msgstr "Az egyenlőtlenség érték1 ellenében tesztelendő érték."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The value to test as being greater than or equal to value2."
-msgstr ""
+msgstr "A tesztelendő érték nagyobb vagy egyenlő, mint az érték2."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The value to test as being greater than value2."
-msgstr ""
+msgstr "A tesztelendő érték nagyobb, mint az érték2."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The value to test as being less than or equal to value2."
-msgstr ""
+msgstr "A tesztelendő érték kisebb vagy egyenlő, mint az érték2."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The value to test as being less than value2."
-msgstr ""
+msgstr "A tesztelendő érték kisebb, mint az érték2."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The value to which value2 will be appended."
-msgstr ""
+msgstr "Az az érték, amelyhez a value2 hozzá lesz csatolva."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5098,27 +5248,29 @@ msgstr ""
 msgid ""
 "The weekend (%s) must be a string or a number in the range 1-7 or 11-17."
 msgstr ""
+"A hétvégének (%s) egy karakterláncnak vagy egy számnak kell lennie az 1-7 "
+"vagy 11-17 közötti tartományban."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The weekend (%s) must be different from '1111111'."
-msgstr ""
+msgstr "A hétvégének (%s) nem lehet azonos a '1111111'-gyel."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The weekend must be a number or a string."
-msgstr ""
+msgstr "A hétvégének egy számnak vagy egy karakterláncnak kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The year (%s) must be between 0 and 9999 inclusive."
-msgstr ""
+msgstr "Az évszámnak (%s) 0 és 9999 között kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5127,28 +5279,28 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The yield (%s) must be positive or null."
-msgstr ""
+msgstr "A hozamnak (%s) pozitívnak vagy nullának kell lennie."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The yield of a US Treasury bill based on price."
-msgstr ""
+msgstr "Az amerikai kincstárjegy hozama az árfolyam alapján."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/list/list_functions.js:0
 #, python-format
 msgid "There is no list with id \"%s\""
-msgstr ""
+msgstr "Nincs lista a \"%s\" azonosítóval."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/pivot/pivot_functions.js:0
 #, python-format
 msgid "There is no pivot with id \"%s\""
-msgstr ""
+msgstr "Nincs pivot a \"%s\" azonosítóval."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5158,6 +5310,8 @@ msgid ""
 "There must be both positive and negative values in [payment_amount, "
 "present_value, future_value]."
 msgstr ""
+"A [payment_amount, present_value, future_value]-ban pozitív és negatív "
+"értékeknek is kell lenniük."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5165,7 +5319,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "There must be both positive and negative values in cashflow_amounts."
-msgstr ""
+msgstr "A cashflow_amounts-ban pozitív és negatív értékeknek is kell lenniük."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5175,13 +5329,15 @@ msgid ""
 "There must be the same number of values in cashflow_amounts and "
 "cashflow_dates."
 msgstr ""
+"A cashflow_amounts és a cashflow_dates értékeknek azonos számúnak kell "
+"lenniük."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "This formula depends on invalid values"
-msgstr ""
+msgstr "Ez a képlet érvénytelen értékektől függ"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5191,6 +5347,8 @@ msgid ""
 "This formula has over 100 parts. It can't be processed properly, consider "
 "splitting it into multiple cells"
 msgstr ""
+"Ez a képlet több mint 100 részből áll. Nem lehet megfelelően feldolgozni, "
+"fontolja meg a több cellára való felosztását."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5200,6 +5358,8 @@ msgid ""
 "This function can only return a single cell value, not an array. Provide "
 "valid row and column indices."
 msgstr ""
+"Ez a függvény csak egyetlen cella értékét tudja visszaadni, tömböt nem. "
+"Adjon meg érvényes sor- és oszlopindexeket."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5209,6 +5369,8 @@ msgid ""
 "This function takes in two currency codes as arguments, and returns the "
 "exchange rate from the first currency to the second as float."
 msgstr ""
+"Ez a funkció két pénznemkódot vesz fel argumentumként, és az első pénznemről"
+" a második pénznemre vonatkozó árfolyamot adja vissza floatként."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5216,7 +5378,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "This operation is not allowed with multiple selections."
-msgstr ""
+msgstr "Ez a művelet többszörös kiválasztás esetén nem engedélyezett."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5226,13 +5388,15 @@ msgid ""
 "This operation is not possible due to a merge. Please remove the merges "
 "first than try again."
 msgstr ""
+"Ez a művelet egy egyesülés miatt nem lehetséges. Kérjük, először távolítsa "
+"el az összevonásokat, majd próbálja meg újra."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Thresholds"
-msgstr ""
+msgstr "Küszöbértékek"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5280,14 +5444,14 @@ msgstr "Összesen"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Treat labels as text"
-msgstr ""
+msgstr "A címkéket szövegként kezelje"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Truncates a number."
-msgstr ""
+msgstr "Csökkenti a számot."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5309,7 +5473,7 @@ msgstr "Típus"
 #: code:addons/spreadsheet/static/src/data_sources/metadata_repository.js:0
 #, python-format
 msgid "Unable to fetch the label of %s of model %s"
-msgstr ""
+msgstr "Nem sikerült lekérni a %s modell %s címkéjét."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5332,63 +5496,63 @@ msgstr "Visszavonás"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Unfreeze"
-msgstr ""
+msgstr "Unfreeze"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Unhide all columns"
-msgstr ""
+msgstr "Minden oszlop elrejtésének feloldása"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Unhide all rows"
-msgstr ""
+msgstr "Minden sor elrejtése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Unhide columns"
-msgstr ""
+msgstr "Oszlopok elrejtése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Unhide rows"
-msgstr ""
+msgstr "Sorok elrejtése"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Unknown function: \"%s\""
-msgstr ""
+msgstr "Ismeretlen funkció: \"%s\""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/helpers/constants.js:0
 #, python-format
 msgid "Untitled spreadsheet"
-msgstr ""
+msgstr "Cím nélküli táblázat"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Up to current column"
-msgstr ""
+msgstr "Aktuális oszlop"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Up to current row"
-msgstr ""
+msgstr "A jelenlegi sorig"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5405,6 +5569,8 @@ msgstr "Érték"
 #, python-format
 msgid "Value at a given percentile of a dataset exclusive of 0 and 1."
 msgstr ""
+"Egy adathalmaz adott percentilisénél lévő érték, amely a 0 és 1 értékeket "
+"kizárja."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5412,28 +5578,28 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Value at a given percentile of a dataset."
-msgstr ""
+msgstr "Érték egy adathalmaz adott percentilisénél."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Value change from key value"
-msgstr ""
+msgstr "Értékváltozás a kulcsértékből"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Value if it is not an #N/A error, otherwise 2nd argument."
-msgstr ""
+msgstr "Érték, ha nem #N/A hiba, egyébként 2. érv."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Value if it is not an error, otherwise 2nd argument."
-msgstr ""
+msgstr "Érték, ha nem hiba, egyébként 2. érv."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5442,6 +5608,8 @@ msgstr ""
 msgid ""
 "Value nearest to a specific quartile of a dataset exclusive of 0 and 4."
 msgstr ""
+"Egy adathalmaz egy adott kvartiliséhez legközelebbi érték, 0 és 4 "
+"kivételével."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5449,7 +5617,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Value nearest to a specific quartile of a dataset."
-msgstr ""
+msgstr "Egy adathalmaz egy adott kvartiliséhez legközelebbi érték."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5457,20 +5625,21 @@ msgstr ""
 #, python-format
 msgid "Variable declining balance. WARNING : does not handle decimal periods."
 msgstr ""
+"Változó csökkenő egyenleg. FIGYELMEZTETÉS : nem kezeli a tizedesvesszőket."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Variance of a population from a table-like range."
-msgstr ""
+msgstr "Egy populáció eltérése egy táblázatszerű tartománytól."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Variance of entire population (text as 0)."
-msgstr ""
+msgstr "A teljes populáció eltérése (szöveg 0-ként)."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5478,21 +5647,21 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Variance of entire population."
-msgstr ""
+msgstr "A teljes populáció eltérése."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Variance of population sample from table-like range."
-msgstr ""
+msgstr "A populációs minta eltérése a táblázatszerű tartománytól."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Variance of sample (text as 0)."
-msgstr ""
+msgstr "A minta eltérése (szöveg 0-ként)."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5500,7 +5669,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Variance."
-msgstr ""
+msgstr "Eltérés."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5508,14 +5677,14 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Vertical axis position"
-msgstr ""
+msgstr "Függőleges tengely pozíciója"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Vertical lookup."
-msgstr ""
+msgstr "Függőleges keresés."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5532,6 +5701,8 @@ msgid ""
 "We found data next to your selection. Since this data was not selected, it "
 "will not be sorted. Do you want to extend your selection?"
 msgstr ""
+"A kiválasztása mellett találtunk adatokat. Mivel ez az adat nem volt "
+"kiválasztva, nem lesz rendezve. Szeretné bővíteni a kiválasztását?"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5545,28 +5716,28 @@ msgstr "Szerda"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Week number of the year."
-msgstr ""
+msgstr "Az év hetének száma."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Weighted average."
-msgstr ""
+msgstr "Súlyozott átlag."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "When value is"
-msgstr ""
+msgstr "Amikor az érték"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "When value is below"
-msgstr ""
+msgstr "Amikor az érték alatt van"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5574,55 +5745,57 @@ msgstr ""
 #, python-format
 msgid "When weekend is a string (%s) it must be composed of \"0\" or \"1\"."
 msgstr ""
+"Ha a hétvége egy karakterlánc (%s), akkor annak \"0\"-ból vagy \"1\"-ből "
+"kell állnia."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Whether a value is `true` or `false`."
-msgstr ""
+msgstr "Hogy egy érték `igaz` vagy `hamis`."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Whether a value is a number."
-msgstr ""
+msgstr "Akár egy érték egy szám."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Whether a value is an error other than #N/A."
-msgstr ""
+msgstr "Akár egy érték a #N/A-tól eltérő hiba."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Whether a value is an error."
-msgstr ""
+msgstr "Akár egy érték hiba."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Whether a value is non-textual."
-msgstr ""
+msgstr "Akár egy érték nem szöveges."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Whether a value is text."
-msgstr ""
+msgstr "Akár szöveges értékről van szó."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Whether a value is the error #N/A."
-msgstr ""
+msgstr "Akár egy érték a hiba #N/A."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5630,49 +5803,49 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Whether the provided value is even."
-msgstr ""
+msgstr "Akár a szolgáltatott érték is."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Whether the referenced cell is empty"
-msgstr ""
+msgstr "Akár üres a hivatkozott cella"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Wrap"
-msgstr ""
+msgstr "Wrap"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Wrapping"
-msgstr ""
+msgstr "Csomagolás"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Wrong number of Argument[]. Expected an even number of Argument[]."
-msgstr ""
+msgstr "Rossz számú érv[]. Páros számú Argument[]-t várt."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Wrong number of arguments. Expected an even number of arguments."
-msgstr ""
+msgstr "Rossz számú érv. Páros számú érvet várt."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Year specified by a given date."
-msgstr ""
+msgstr "Adott dátummal megadott év."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5680,27 +5853,28 @@ msgstr ""
 #, python-format
 msgid "You can't create a filter over a range that contains a merge."
 msgstr ""
+"Nem hozhat létre szűrőt olyan tartomány felett, amely összevonást tartalmaz."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "You can't merge cells inside of an existing filter."
-msgstr ""
+msgstr "Egy meglévő szűrőn belül nem lehet cellákat összevonni."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "You cannot create overlapping filters."
-msgstr ""
+msgstr "Nem hozhat létre átfedő szűrőket."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/pivot/pivot_functions.js:0
 #, python-format
 msgid "[[FUNCTION_NAME]] cannot be called from the spreadsheet."
-msgstr ""
+msgstr "A [[FUNCTION_NAME]] nem hívható meg a táblázatkezelőből."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5709,27 +5883,28 @@ msgstr ""
 #, python-format
 msgid "[[FUNCTION_NAME]] evaluates to an out of bounds range."
 msgstr ""
+"A [[FUNCTION_NAME]] kiértékelése egy határon túli tartományban történik."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "[[FUNCTION_NAME]] evaluates to an out of range column value %s."
-msgstr ""
+msgstr "[[FUNCTION_NAME]] kiértékelése a tartományon kívüli oszlopértékre %s."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "[[FUNCTION_NAME]] evaluates to an out of range row value %s."
-msgstr ""
+msgstr "A [[FUNCTION_NAME]] kiértékelése tartományon kívüli sorértékre %s."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "[[FUNCTION_NAME]] expects number values."
-msgstr ""
+msgstr "[[FUNCTION_NAME]] számértékeket vár."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5737,20 +5912,21 @@ msgstr ""
 #, python-format
 msgid "[[FUNCTION_NAME]] expects the weight to be positive or equal to 0."
 msgstr ""
+"[[FUNCTION_NAME]] elvárja, hogy a súly pozitív vagy 0-val egyenlő legyen."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "[[FUNCTION_NAME]] has mismatched argument count %s vs %s."
-msgstr ""
+msgstr "[[FUNCTION_NAME]] has mismatched argument count %s vs %s."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "[[FUNCTION_NAME]] has mismatched range sizes."
-msgstr ""
+msgstr "[[FUNCTION_NAME]] nem megfelelő tartományméretekkel rendelkezik."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5762,7 +5938,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "[[FUNCTION_NAME]] has no valid input data."
-msgstr ""
+msgstr "[[FUNCTION_NAME]] nem rendelkezik érvényes bemeneti adatokkal."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5776,18 +5952,149 @@ msgstr "és"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "and value"
-msgstr ""
+msgstr "és érték"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "bottom"
+msgstr "bottom"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "by default"
-msgstr ""
+msgstr "alapértelmezés szerint"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "difference"
+msgstr "különbség"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/global_filters/components/filter_date_value/filter_date_value.xml:0
+#, python-format
+msgid "empty"
+msgstr "üres"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "formula"
+msgstr "formula"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "ge"
+msgstr "ge"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "gt"
+msgstr "gt"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "left"
+msgstr "balra"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "none"
+msgstr "nincs"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "number"
+msgstr "szám"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "percentage"
+msgstr "százalékos arány"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "percentile"
+msgstr "percentile"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "repeatable"
-msgstr ""
+msgstr "megismételhető"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "right"
+msgstr "right"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "text"
+msgstr "szöveg"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "top"
+msgstr "top"
+
+#. module: spreadsheet
+#. odoo-javascript
+#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
+#, python-format
+msgid "value"
+msgstr "érték"

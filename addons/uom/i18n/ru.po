@@ -1,32 +1,19 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* uom
-# 
-# Translators:
-# ILMIR <karamov@it-projects.info>, 2022
-# Irina Fedulova <istartlin@gmail.com>, 2022
-# Диляра Дельтаева <dilya.kz93@gmail.com>, 2022
-# nle_odoo, 2022
-# Denis Trepalin <zekarious@gmail.com>, 2022
-# Collex100, 2022
-# Ivan Kropotkin <yelizariev@itpp.dev>, 2022
-# Martin Trigaux, 2022
-# Сергей Шебанин <sergey@shebanin.ru>, 2022
-# Wil Odoo, 2024
-# 
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0beta\n"
+"Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-23 08:03+0000\n"
-"PO-Revision-Date: 2022-09-22 05:55+0000\n"
-"Last-Translator: Wil Odoo, 2024\n"
-"Language-Team: Russian (https://app.transifex.com/odoo/teams/41243/ru/)\n"
+"POT-Creation-Date: 2025-02-14 19:28+0000\n"
+"PO-Revision-Date: 2025-02-14 19:28+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: \n"
 
 #. module: uom
 #: model_terms:ir.ui.view,arch_db:uom.product_uom_form_view
@@ -120,7 +107,7 @@ msgstr "Дата создания"
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_day
 msgid "Days"
-msgstr "Дни"
+msgstr "День(и)"
 
 #. module: uom
 #: model:ir.model.fields,field_description:uom.field_uom_category__display_name
@@ -131,7 +118,7 @@ msgstr "Отображаемое имя"
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_dozen
 msgid "Dozens"
-msgstr "Дюжины"
+msgstr "Дюжина(и)"
 
 #. module: uom
 #: model_terms:ir.ui.view,arch_db:uom.uom_uom_view_search
@@ -141,7 +128,7 @@ msgstr "Группировка"
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_hour
 msgid "Hours"
-msgstr "Часы"
+msgstr "Час(и)"
 
 #. module: uom
 #: model:ir.model.fields,help:uom.field_uom_uom__factor_inv
@@ -189,7 +176,7 @@ msgstr "Последнее обновление"
 #. module: uom
 #: model:uom.category,name:uom.uom_categ_length
 msgid "Length / Distance"
-msgstr "Длина / Расстояние"
+msgstr "Длинна / Расстояние"
 
 #. module: uom
 #: model:res.groups,name:uom.group_uom
@@ -243,6 +230,7 @@ msgid "Smaller than the reference Unit of Measure"
 msgstr "Меньше, чем базовая единица измерения"
 
 #. module: uom
+#. odoo-python
 #: code:addons/uom/models/uom_uom.py:0
 #, python-format
 msgid ""
@@ -284,6 +272,7 @@ msgstr ""
 "Коэффициент преобразования для единиц измерения не может быть нулевым !"
 
 #. module: uom
+#. odoo-python
 #: code:addons/uom/models/uom_uom.py:0
 #, python-format
 msgid ""
@@ -305,6 +294,7 @@ msgid "The rounding precision must be strictly positive."
 msgstr "Точность округления должна быть строго положительной."
 
 #. module: uom
+#. odoo-python
 #: code:addons/uom/models/uom_uom.py:0
 #, python-format
 msgid ""
@@ -319,6 +309,7 @@ msgstr ""
 "должны относиться к одной и той же категории."
 
 #. module: uom
+#. odoo-python
 #: code:addons/uom/models/uom_uom.py:0
 #, python-format
 msgid "The value of ratio could not be Zero"
@@ -340,7 +331,7 @@ msgstr ""
 #. module: uom
 #: model:uom.category,name:uom.product_uom_categ_unit
 msgid "Unit"
-msgstr "Штуки"
+msgstr "Ед."
 
 #. module: uom
 #: model:ir.model.fields,field_description:uom.field_uom_uom__name
@@ -355,7 +346,7 @@ msgstr "Категория единиц измерения"
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_unit
 msgid "Units"
-msgstr "Шт."
+msgstr "Подразделение(я)"
 
 #. module: uom
 #: model:ir.actions.act_window,name:uom.product_uom_form_action
@@ -390,6 +381,7 @@ msgstr ""
 "             Часы, Дни."
 
 #. module: uom
+#. odoo-python
 #: code:addons/uom/models/uom_uom.py:0
 #, python-format
 msgid "UoM category %s must have at least one reference unit of measure."
@@ -397,12 +389,14 @@ msgstr ""
 "Категория UoM %s должна иметь хотя бы одну эталонную единицу измерения."
 
 #. module: uom
+#. odoo-python
 #: code:addons/uom/models/uom_uom.py:0
 #, python-format
 msgid "UoM category %s should have a reference unit of measure."
 msgstr "Категория UoM %s должна иметь эталонную единицу измерения."
 
 #. module: uom
+#. odoo-python
 #: code:addons/uom/models/uom_uom.py:0
 #, python-format
 msgid "UoM category %s should only have one reference unit of measure."
@@ -421,6 +415,7 @@ msgid "Volume"
 msgstr "Объём"
 
 #. module: uom
+#. odoo-python
 #: code:addons/uom/models/uom_uom.py:0
 #, python-format
 msgid "Warning for %s"
@@ -448,17 +443,17 @@ msgstr ""
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_cm
 msgid "cm"
-msgstr "см"
+msgstr "cm"
 
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_floz
 msgid "fl oz (US)"
-msgstr "жидкая унция США"
+msgstr "fl oz"
 
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_foot
 msgid "ft"
-msgstr "фут"
+msgstr "фут (футы)"
 
 #. module: uom
 #: model:uom.uom,name:uom.uom_square_foot
@@ -473,12 +468,12 @@ msgstr "фут³"
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_gal
 msgid "gal (US)"
-msgstr "галлон США"
+msgstr "гал(и)"
 
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_inch
 msgid "in"
-msgstr "дм"
+msgstr "дюйм(ы)"
 
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_cubic_inch
@@ -488,22 +483,22 @@ msgstr "дм³"
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_kgm
 msgid "kg"
-msgstr "кг"
+msgstr "kg"
 
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_km
 msgid "km"
-msgstr "км"
+msgstr "km"
 
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_lb
 msgid "lb"
-msgstr "фунт"
+msgstr "lb(s)"
 
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_mile
 msgid "mi"
-msgstr "миля"
+msgstr "миля(и)"
 
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_millimeter
@@ -523,12 +518,12 @@ msgstr "м³"
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_oz
 msgid "oz"
-msgstr "унция"
+msgstr "оз(ы)"
 
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_qt
 msgid "qt (US)"
-msgstr "кварта США"
+msgstr "количество"
 
 #. module: uom
 #: model:uom.uom,name:uom.product_uom_yard

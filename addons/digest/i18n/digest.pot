@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-06 13:31+0000\n"
-"PO-Revision-Date: 2024-02-06 13:31+0000\n"
+"POT-Creation-Date: 2025-02-14 19:50+0000\n"
+"PO-Revision-Date: 2025-02-14 19:50+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -507,6 +507,11 @@ msgid "Weekly"
 msgstr ""
 
 #. module: digest
+#: model:digest.digest,name:digest.digest_digest_default
+msgid "Weekly Stats in Odoo"
+msgstr ""
+
+#. module: digest
 #: model_terms:digest.tip,tip_description:digest.digest_tip_digest_2
 msgid ""
 "When editing a number, you can use formulae by typing the `=` character. "
@@ -524,11 +529,6 @@ msgstr ""
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.portal_digest_unsubscribed
 msgid "You have been successfully unsubscribed from:<br/>"
-msgstr ""
-
-#. module: digest
-#: model:digest.digest,name:digest.digest_digest_default
-msgid "Your Odoo Periodic Digest"
 msgstr ""
 
 #. module: digest

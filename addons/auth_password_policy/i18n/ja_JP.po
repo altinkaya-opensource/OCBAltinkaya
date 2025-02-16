@@ -1,0 +1,152 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* auth_password_policy
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-14 19:44+0000\n"
+"PO-Revision-Date: 2025-02-14 19:44+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: auth_password_policy
+#: model:ir.model.fields,field_description:auth_password_policy.field_res_config_settings__changeset_change_ids
+#: model:ir.model.fields,field_description:auth_password_policy.field_res_users__changeset_change_ids
+msgid "Changeset Changes"
+msgstr "チェンジセットの変更"
+
+#. module: auth_password_policy
+#: model:ir.model.fields,field_description:auth_password_policy.field_res_config_settings__changeset_ids
+#: model:ir.model.fields,field_description:auth_password_policy.field_res_users__changeset_ids
+msgid "Changesets"
+msgstr "チェンジセット"
+
+#. module: auth_password_policy
+#: model:ir.model,name:auth_password_policy.model_res_config_settings
+msgid "Config Settings"
+msgstr "コンフィグ設定"
+
+#. module: auth_password_policy
+#: model:ir.model.fields,field_description:auth_password_policy.field_res_config_settings__count_changesets
+#: model:ir.model.fields,field_description:auth_password_policy.field_res_users__count_changesets
+msgid "Count Changesets"
+msgstr "チェンジセット数"
+
+#. module: auth_password_policy
+#: model:ir.model.fields,field_description:auth_password_policy.field_res_config_settings__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:auth_password_policy.field_res_users__count_pending_changeset_changes
+msgid "Count Pending Changeset Changes"
+msgstr "保留中のチェンジセットの変更をカウント"
+
+#. module: auth_password_policy
+#: model:ir.model.fields,field_description:auth_password_policy.field_res_config_settings__count_pending_changesets
+#: model:ir.model.fields,field_description:auth_password_policy.field_res_users__count_pending_changesets
+msgid "Count Pending Changesets"
+msgstr "保留中のチェンジセットをカウント"
+
+#. module: auth_password_policy
+#: model:ir.model.fields,field_description:auth_password_policy.field_res_config_settings__minlength
+msgid "Minimum Password Length"
+msgstr "最小パスワード長"
+
+#. module: auth_password_policy
+#: model:ir.model.fields,help:auth_password_policy.field_res_config_settings__minlength
+msgid ""
+"Minimum number of characters passwords must contain, set to 0 to disable."
+msgstr "パスワードの最小文字数, 設定が不要の場合0に設定"
+
+#. module: auth_password_policy
+#. odoo-javascript
+#: code:addons/auth_password_policy/static/src/password_field.js:0
+#, python-format
+msgid "Password"
+msgstr "パスワード"
+
+#. module: auth_password_policy
+#. odoo-python
+#: code:addons/auth_password_policy/models/res_users.py:0
+#, python-format
+msgid "Passwords must have at least %d characters, got %d."
+msgstr "パスワードは%d文字以上である必要がありますが、%d文字でした"
+
+#. module: auth_password_policy
+#. odoo-javascript
+#: code:addons/auth_password_policy/static/src/password_meter.js:0
+#, python-format
+msgid ""
+"Required: %s\n"
+"\n"
+"Hint: to increase password strength, increase length, use multiple words, and use non-letter characters."
+msgstr ""
+"必須： %s\n"
+"\n"
+"ヒント：パスワードの強度を上げるために、長くする、複数の単語を使う、文字以外の文字を使用して下さい。"
+
+#. module: auth_password_policy
+#: model:ir.model.fields,field_description:auth_password_policy.field_res_config_settings__smart_search
+#: model:ir.model.fields,field_description:auth_password_policy.field_res_users__smart_search
+msgid "Smart Search"
+msgstr "スマート検索"
+
+#. module: auth_password_policy
+#: model:ir.model.fields,help:auth_password_policy.field_res_config_settings__count_pending_changeset_changes
+#: model:ir.model.fields,help:auth_password_policy.field_res_users__count_pending_changeset_changes
+msgid "The number of pending changes of this record"
+msgstr "このレコードの保留中の変更数"
+
+#. module: auth_password_policy
+#: model:ir.model.fields,help:auth_password_policy.field_res_config_settings__count_pending_changesets
+#: model:ir.model.fields,help:auth_password_policy.field_res_users__count_pending_changesets
+msgid "The number of pending changesets of this record"
+msgstr "このレコードの保留中のチェンジセットの数"
+
+#. module: auth_password_policy
+#: model:ir.model.fields,help:auth_password_policy.field_res_config_settings__count_changesets
+#: model:ir.model.fields,help:auth_password_policy.field_res_users__count_changesets
+msgid "The overall number of changesets of this record"
+msgstr "このレコードの全体のチェンジセット数"
+
+#. module: auth_password_policy
+#: model:ir.model,name:auth_password_policy.model_res_users
+msgid "User"
+msgstr "ユーザ"
+
+#. module: auth_password_policy
+#: model:ir.model.fields,field_description:auth_password_policy.field_res_config_settings__user_can_see_changeset
+#: model:ir.model.fields,field_description:auth_password_policy.field_res_users__user_can_see_changeset
+msgid "User Can See Changeset"
+msgstr "ユーザーは変更セットを見ることができます"
+
+#. module: auth_password_policy
+#. odoo-javascript
+#: code:addons/auth_password_policy/static/src/password_policy.js:0
+#, python-format
+msgid "at least %s character classes"
+msgstr "少なくとも%sの文字クラス"
+
+#. module: auth_password_policy
+#. odoo-javascript
+#: code:addons/auth_password_policy/static/src/password_policy.js:0
+#, python-format
+msgid "at least %s characters"
+msgstr "少なくとも %s 文字"
+
+#. module: auth_password_policy
+#. odoo-javascript
+#: code:addons/auth_password_policy/static/src/password_policy.js:0
+#, python-format
+msgid "at least %s words"
+msgstr "最低 %s 語以上"
+
+#. module: auth_password_policy
+#. odoo-javascript
+#: code:addons/auth_password_policy/static/src/password_meter.js:0
+#, python-format
+msgid "no requirements"
+msgstr "必要事項なし"
