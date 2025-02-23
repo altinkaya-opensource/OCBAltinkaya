@@ -1,19 +1,28 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* base_import
-#
+# 
+# Translators:
+# Krisztián Juhász <juhasz.krisztian@josafar.hu>, 2022
+# Ákos Nagy <akos.nagy@oregional.hu>, 2022
+# gezza <geza.nagy@oregional.hu>, 2022
+# krnkris, 2022
+# Martin Trigaux, 2022
+# Tamás Németh <ntomasz81@gmail.com>, 2022
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-14 19:52+0000\n"
-"PO-Revision-Date: 2025-02-14 19:52+0000\n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"POT-Creation-Date: 2024-02-06 13:31+0000\n"
+"PO-Revision-Date: 2022-09-22 05:45+0000\n"
+"Last-Translator: Tamás Németh <ntomasz81@gmail.com>, 2022\n"
+"Language-Team: Hungarian (https://app.transifex.com/odoo/teams/41243/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: \n"
+"Language: hu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. module: base_import
 #. odoo-javascript
@@ -53,7 +62,7 @@ msgstr "Haladó"
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Allow matching with subfields"
-msgstr "Engedélyezze a megfeleltetést almezőkkel"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -65,10 +74,6 @@ msgid ""
 " transient. If the issue still occurs, try to split the file rather than "
 "import it at once."
 msgstr ""
-"Az importálás során ismeretlen probléma merült fel (valószínűleg "
-"kapcsolatvesztés, adat- vagy memóriakorlát túllépése). Kérjük, próbálja meg "
-"újra, ha a probléma átmeneti. Ha a probléma továbbra is fennáll, próbálja "
-"meg felosztani a fájlt, és ne egyszerre importálja."
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base
@@ -83,21 +88,21 @@ msgstr "Alap importálás"
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_mapping
 msgid "Base Import Mapping"
-msgstr "Bázis import leképezés"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Batch Import"
-msgstr "Tételes importálás"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Batch limit"
-msgstr "Tételhatár"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -112,8 +117,6 @@ msgstr "Mégse"
 #, python-format
 msgid "Click 'Resume' to proceed with the import, resuming at line"
 msgstr ""
-"Kattintson a \"Folytatás\" gombra az importálás folytatásához, a folytatás a"
-" következő sorban történik"
 
 #. module: base_import
 #. odoo-python
@@ -157,15 +160,13 @@ msgid ""
 "Could not retrieve URL: %(url)s [%(field_name)s: L%(line_number)d]: "
 "%(error)s"
 msgstr ""
-"Nem sikerült lekérni az URL-t: %(url)s [%(field_name)s: L%(line_number)d]: "
-"%(error)s"
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Create new values"
-msgstr "Új értékek létrehozása"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_import__create_uid
@@ -292,7 +293,7 @@ msgstr "Sablon letöltése"
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_complex__dt
 msgid "Dt"
-msgstr "Dt"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -315,8 +316,6 @@ msgstr "Hiba dátum feldolgozásakor [%s:L%d]: %s"
 msgid ""
 "Error while importing records: Text Delimiter should be a single character."
 msgstr ""
-"Hiba a rekordok importálása során: A szöveghatárolónak egyetlen karakternek "
-"kell lennie."
 
 #. module: base_import
 #. odoo-python
@@ -327,9 +326,6 @@ msgid ""
 "title row has %d entries while the first row has %d. You may need to change "
 "the separator character."
 msgstr ""
-"Hiba a rekordok importálása során: minden sornak azonos méretűnek kellene "
-"lennie, de a címsor %d bejegyzést tartalmaz, míg az első sor %d bejegyzést "
-"tartalmaz. Lehet, hogy meg kell változtatni az elválasztó karaktert."
 
 #. module: base_import
 #. odoo-javascript
@@ -350,7 +346,7 @@ msgstr "Minden megfelelőnek tűnik."
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Excel files are recommended as formatting is automatic."
-msgstr "Az Excel fájlok használata ajánlott, mivel a formázás automatikus."
+msgstr ""
 
 #. module: base_import
 #. odoo-python
@@ -378,7 +374,7 @@ msgstr "Fájl"
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "File Column"
-msgstr "Fájl oszlop"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_import__file_name
@@ -409,7 +405,7 @@ msgstr ""
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Finalizing current batch before interrupting..."
-msgstr "Az aktuális tétel véglegesítése a megszakítás előtt..."
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -433,15 +429,13 @@ msgid ""
 "Found invalid image data, images should be imported as either URLs or "
 "base64-encoded data."
 msgstr ""
-"Érvénytelen képadatokat találtak, a képeket vagy URL-ként vagy base64-kódolt"
-" adatként kell importálni."
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Go to Import FAQ"
-msgstr "Tovább a GYIK importáláshoz"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -488,10 +482,6 @@ msgid ""
 "                    field corresponding to the column. This makes imports\n"
 "                    simpler especially when the file has many columns."
 msgstr ""
-"Ha a fájl tartalmaz\n"
-"                    az oszlopneveket, az Odoo megpróbálhatja automatikusan felismerni a\n"
-"                    oszlopnak megfelelő mezőt. Ezáltal az importálás\n"
-"                    egyszerűbbé, különösen akkor, ha a fájl sok oszlopot tartalmaz."
 
 #. module: base_import
 #. odoo-javascript
@@ -501,9 +491,6 @@ msgid ""
 "If the model uses openchatter, history tracking will set up subscriptions "
 "and send notifications during the import, but lead to a slower import."
 msgstr ""
-"Ha a modell openchattert használ, az előzménykövetés előfizetéseket hoz "
-"létre és értesítéseket küld az importálás során, de lassabb importáláshoz "
-"vezet."
 
 #. module: base_import
 #. odoo-python
@@ -512,8 +499,6 @@ msgstr ""
 msgid ""
 "Image size excessive, imported images must be smaller than 42 million pixel"
 msgstr ""
-"Túlzott képméret, az importált képeknek 42 millió pixelnél kisebbnek kell "
-"lenniük."
 
 #. module: base_import
 #. odoo-javascript
@@ -541,7 +526,7 @@ msgstr "Fájl importálása"
 #: code:addons/base_import/models/base_import.py:0
 #, python-format
 msgid "Import file has no content or is corrupt"
-msgstr "Az importált fájlnak nincs tartalma vagy hibás"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -575,23 +560,8 @@ msgstr "Importálás"
 #. odoo-python
 #: code:addons/base_import/models/base_import.py:0
 #, python-format
-msgid ""
-"Invalid cell format at row %(row)s, column %(col)s: %(cell_value)s, with "
-"format: %(cell_format)s, as (%(format_type)s) formats are not supported."
-msgstr ""
-"Érvénytelen cellaformátum a %(row)s sorban, %(col)s oszlopban: "
-"%(cell_value)s, formátummal: %(cell_format)s, mivel a (%(format_type)s) "
-"formátumok nem támogatottak."
-
-#. module: base_import
-#. odoo-python
-#: code:addons/base_import/models/base_import.py:0
-#: code:addons/base_import/models/base_import.py:0
-#, python-format
 msgid "Invalid cell value at row %(row)s, column %(col)s: %(cell_value)s"
 msgstr ""
-"Érvénytelen cellaérték a %(sor)s sorban, %(oszlop)s oszlopban: "
-"%(cell_érték)s"
 
 #. module: base_import
 #. odoo-javascript
@@ -720,14 +690,14 @@ msgstr "Nincs elválasztó"
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "No matching records found for"
-msgstr "Nem találtunk megfelelő rekordot a következőhöz"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "No matching records found for the following"
-msgstr "Nem találtunk megfelelő rekordot a következőhöz"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -751,7 +721,7 @@ msgstr "Szülő"
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Prevent import"
-msgstr "Az import megakadályozása"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -784,7 +754,7 @@ msgstr "Folytatás"
 #: code:addons/base_import/static/src/legacy/js/import_action.js:0
 #, python-format
 msgid "Search for a field..."
-msgstr "Keressünk egy területi..."
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -799,7 +769,7 @@ msgstr "Nézze meg a lehetséges értékeket"
 #: code:addons/base_import/static/src/legacy/js/import_action.js:0
 #, python-format
 msgid "Selected Sheet:"
-msgstr "Kiválasztott lap:"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -820,42 +790,42 @@ msgstr "Elválasztó:"
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Set to:"
-msgstr "Beállítva:"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Set to: False"
-msgstr "Beállítva: False"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Set to: True"
-msgstr "Beállítva: True"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Set value as empty"
-msgstr "Üres érték beállítása"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Sheet:"
-msgstr "Lap:"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Skip record"
-msgstr "Rekord kihagyása"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_preview__somevalue
@@ -874,28 +844,28 @@ msgstr "Szóköz"
 #: code:addons/base_import/static/src/legacy/js/import_action.js:0
 #, python-format
 msgid "Standard Fields"
-msgstr "Standard mezők"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Start at line"
-msgstr "Kezdje a sort"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Stop Import"
-msgstr "Stop Import"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/js/import_action.js:0
 #, python-format
 msgid "Suggested Fields"
-msgstr "Javasolt területek"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -921,77 +891,77 @@ msgstr "Tesztelés"
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_preview
 msgid "Tests : Base Import Model Preview"
-msgstr "Tesztek : Alap import modell előnézet"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_char
 msgid "Tests : Base Import Model, Character"
-msgstr "Tesztek : Alap import modell, karakter"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_char_noreadonly
 msgid "Tests : Base Import Model, Character No readonly"
-msgstr "Tesztek : Base Import Model, karakter Nem írásvédett"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_char_readonly
 msgid "Tests : Base Import Model, Character readonly"
-msgstr "Tesztek : Base Import Model, karakter readonly"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_char_required
 msgid "Tests : Base Import Model, Character required"
-msgstr "Tesztek : Alap import modell, szükséges karakter"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_char_states
 msgid "Tests : Base Import Model, Character states"
-msgstr "Tesztek : Alap import modell, karakterállapotok"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_char_stillreadonly
 msgid "Tests : Base Import Model, Character still readonly"
-msgstr "Tesztek : Alap import modell, karakter még mindig csak olvasható"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_m2o
 msgid "Tests : Base Import Model, Many to One"
-msgstr "Tesztek : Alap import modell, sok az egyhez"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_m2o_related
 msgid "Tests : Base Import Model, Many to One related"
-msgstr "Tesztek : Alap import modell, sok az egyhez kapcsolódóan"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_m2o_required
 msgid "Tests : Base Import Model, Many to One required"
-msgstr "Tesztek : Alap import modell, sok az egyhez szükséges"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_m2o_required_related
 msgid "Tests : Base Import Model, Many to One required related"
-msgstr "Tesztek : Alap import modell, sok az egyhez szükséges kapcsolódóan"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_o2m
 msgid "Tests : Base Import Model, One to Many"
-msgstr "Tesztek : Alap import modell, egytől sokig"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_o2m_child
 msgid "Tests : Base Import Model, One to Many child"
-msgstr "Tesztek : Alap import modell, egytől sokig gyermek"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_complex
 msgid "Tests: Base Import Model Complex"
-msgstr "Vizsgálatok: Bázis import modell komplex"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_float
 msgid "Tests: Base Import Model Float"
-msgstr "Vizsgálatok: Bázis import modell float"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -1005,35 +975,35 @@ msgstr "Szöveg elválasztó:"
 #: code:addons/base_import/static/src/legacy/js/import_action.js:0
 #, python-format
 msgid "The file contains blocking errors (see below)"
-msgstr "A fájl blokkolási hibákat tartalmaz (lásd alább)"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/js/import_action.js:0
 #, python-format
 msgid "The file contains non-blocking warnings (see below)"
-msgstr "A fájl nem blokkoló figyelmeztetéseket tartalmaz (lásd alább)."
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "The file will be imported by batches"
-msgstr "A fájlt tételesen importáljuk"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "This column will be concatenated in field"
-msgstr "Ezt az oszlopot a mezőben fogják összefűzni"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/js/import_action.js:0
 #, python-format
 msgid "This file has been successfully imported up to line %d."
-msgstr "Ez a fájl a %d sorig sikeresen importálva lett."
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -1047,14 +1017,14 @@ msgstr "Ezres elválasztó:"
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "To import multiple values, separate them by a comma"
-msgstr "Több érték importálásához válassza szét őket vesszővel"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/js/import_action.js:0
 #, python-format
 msgid "To import, select a field..."
-msgstr "Az importáláshoz válasszon ki egy mezőt..."
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -1108,14 +1078,14 @@ msgstr "Fájl feltöltése"
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Upload an Excel or CSV file to import"
-msgstr "Töltsön fel egy Excel- vagy CSV-fájlt az importáláshoz."
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Use first row as header"
-msgstr "Használja az első sort fejlécként"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_res_users
@@ -1152,15 +1122,13 @@ msgid ""
 "Warning: ignores the labels line, empty lines and lines composed only of "
 "empty cells"
 msgstr ""
-"Figyelmeztetés: figyelmen kívül hagyja a címkék sorát, az üres sorokat és a "
-"csak üres cellákból álló sorokat."
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "When a value cannot be matched:"
-msgstr "Amikor egy értéket nem lehet megfeleltetni:"
+msgstr ""
 
 #. module: base_import
 #. odoo-python
@@ -1170,15 +1138,13 @@ msgid ""
 "You can not import images via URL, check with your administrator or support "
 "for the reason."
 msgstr ""
-"Nem tud képeket importálni URL-en keresztül, ennek okát kérdezze meg a "
-"rendszergazdától vagy a támogatásból."
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "You can test or reload your file before resuming the import."
-msgstr "Az importálás folytatása előtt tesztelheti vagy újratöltheti a fájlt."
+msgstr ""
 
 #. module: base_import
 #. odoo-python
@@ -1192,35 +1158,21 @@ msgstr "Legalább egy mezőt be kell állítania az importáláshoz"
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "at multiple rows"
-msgstr "több sorban"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "at row"
-msgstr "a sorban"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "batch"
-msgstr "Batch"
-
-#. module: base_import
-#. odoo-javascript
-#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
-#, python-format
-msgid "create"
-msgstr "létrehozása"
-
-#. module: base_import
-#. odoo-javascript
-#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
-#, python-format
-msgid "false"
-msgstr "hamis"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -1228,7 +1180,7 @@ msgstr "hamis"
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "in field"
-msgstr "a területen"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -1242,42 +1194,14 @@ msgstr "perc"
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "more)"
-msgstr "tovább)"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "out of"
-msgstr "a"
-
-#. module: base_import
-#. odoo-javascript
-#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
-#, python-format
-msgid "prevent"
-msgstr "megelőzni a"
-
-#. module: base_import
-#. odoo-javascript
-#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
-#, python-format
-msgid "set_empty"
-msgstr "set_empty"
-
-#. module: base_import
-#. odoo-javascript
-#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
-#, python-format
-msgid "skip_record"
-msgstr "skip_record"
-
-#. module: base_import
-#. odoo-javascript
-#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
-#, python-format
-msgid "true"
-msgstr "true"
+msgstr ""
 
 #. module: base_import
 #. odoo-python

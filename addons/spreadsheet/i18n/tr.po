@@ -1,19 +1,38 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* spreadsheet
-#
+# 
+# Translators:
+# Tugay Hatıl <tugayh@projetgrup.com>, 2022
+# Ali Zeynel AĞCA <zeynelagca@gmail.com>, 2022
+# İlknur Püskül <ilknurpuskull@gmail.com>, 2022
+# Saban Yildiz <sabany@projetgrup.com>, 2022
+# Nadir Gazioglu <nadirgazioglu@gmail.com>, 2022
+# Halil, 2022
+# Levent Karakaş <levent@mektup.at>, 2022
+# Martin Trigaux, 2022
+# Umur Akın <umura@projetgrup.com>, 2022
+# abc Def <hdogan1974@gmail.com>, 2022
+# Murat Durmuş <muratd@projetgrup.com>, 2022
+# Ertuğrul Güreş <ertugrulg@projetgrup.com>, 2023
+# Ediz Duman <neps1192@gmail.com>, 2023
+# sinem cil, 2024
+# İmat Yahya Çataklı <yahyacatakli@gmail.com>, 2024
+# Murat Kaplan <muratk@projetgrup.com>, 2024
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-14 19:45+0000\n"
-"PO-Revision-Date: 2025-02-14 19:45+0000\n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"POT-Creation-Date: 2024-02-06 13:32+0000\n"
+"PO-Revision-Date: 2022-09-22 05:55+0000\n"
+"Last-Translator: Murat Kaplan <muratk@projetgrup.com>, 2024\n"
+"Language-Team: Turkish (https://app.transifex.com/odoo/teams/41243/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: \n"
+"Language: tr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -23,8 +42,6 @@ msgid ""
 " A string, possible empty, or a reference to a valid string. If empty, the "
 "text will be simply concatenated."
 msgstr ""
-" Bir dize, boş olabilir veya geçerli bir dizeye referans olabilir. Boşsa, "
-"metin basitçe birleştirilecektir."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -66,7 +83,7 @@ msgstr "%s Aşağıdaki satırlar"
 #: code:addons/spreadsheet/static/src/assets_backend/spreadsheet_action_loader.js:0
 #, python-format
 msgid "%s couldn't be loaded"
-msgstr "s yüklenemedi"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -76,8 +93,6 @@ msgid ""
 "(0) Exact match. (-1) Return next smaller item if no match. (1) Return next "
 "greater item if no match."
 msgstr ""
-"(0) Tam eşleşme. (-1) Eşleşme yoksa bir sonraki küçük öğeyi döndürür. (1) "
-"Eşleşme yoksa bir sonraki büyük öğeyi döndürür."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -90,46 +105,41 @@ msgid ""
 "    (-2) Perform a binary search that relies on lookup_array being sorted in descending order. If not sorted, invalid results will be returned.\n"
 "    "
 msgstr ""
-"(1) İlk öğeden başlayarak arama yapın. \n"
-"    (-1) Son öğeden başlayarak arama yapın. \n"
-"    (2) Lookup_array'in artan sırada sıralanmasına dayanan ikili bir arama gerçekleştirin. Sıralanmamışsa geçersiz sonuçlar döndürülür. \n"
-"    (-2) Lookup_array'in azalan sırada sıralanmasına dayanan bir ikili arama gerçekleştirin. Sıralanmazsa geçersiz sonuçlar döndürülür.\n"
-"    "
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "(Blanks)"
-msgstr "(Boşluklar)"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "+ Add another rule"
-msgstr "+ Başka bir kural ekle"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "- [optional]"
-msgstr "- [isteğe bağlı]"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "1 column"
-msgstr "1 sütun"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "1 row"
-msgstr "1 satır"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -143,7 +153,7 @@ msgstr "2 sütun"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "2 rows"
-msgstr "2 satır"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -153,8 +163,6 @@ msgid ""
 "A boolean; if TRUE, empty cells selected in the text arguments won't be "
 "included in the result."
 msgstr ""
-"Bir boolean; DOĞRU ise, metin argümanlarında seçilen boş hücreler sonuca "
-"dahil edilmeyecektir."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -175,21 +183,21 @@ msgstr "Bir aralıktaki koşullu toplam."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "A filter can only be created on a continuous selection."
-msgstr "Bir filtre yalnızca sürekli bir seçim üzerinde oluşturulabilir."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "A maximum range limit value is needed"
-msgstr "Bir maksimum aralık sınır değeri gereklidir"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "A minimum range limit value is needed"
-msgstr "Minimum aralık sınır değeri gereklidir"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -217,21 +225,21 @@ msgstr "Bir aralığın tanımlanması gerekiyor"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "A sheet with the name %s already exists. Please select another name."
-msgstr "s adında bir sayfa zaten mevcut. Lütfen başka bir isim seçin."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "ABOUT"
-msgstr "HAKKINDA"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Absolute value"
-msgstr "Mutlak değer"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -245,14 +253,14 @@ msgstr "Bir sayının mutlak değeri."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Accrued interest of security paying at maturity."
-msgstr "Vade sonunda ödenen menkul kıymetin tahakkuk eden faizi."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/global_filters/plugins/global_filters_ui_plugin.js:0
 #, python-format
 msgid "Active Filters"
-msgstr "Aktif Filtreler"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -266,21 +274,21 @@ msgstr "Ekle"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Add Filter"
-msgstr "Filtre Ekle"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Add range"
-msgstr "Aralık ekle"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Additional text item(s)."
-msgstr "Ek metin öğeleri."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -290,15 +298,13 @@ msgid ""
 "All the dates should be greater or equal to the first date in cashflow_dates"
 " (%s)."
 msgstr ""
-"Tüm tarihler cashflow_dates (%s) içindeki ilk tarihten büyük veya eşit "
-"olmalıdır."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Amount received at maturity for a security."
-msgstr "Bir menkul kıymet için vade sonunda alınan tutar."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -312,21 +318,21 @@ msgstr "X ekseninden bir (x,y) noktasına radyan cinsinden açı."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Annual effective interest rate."
-msgstr "Yıllık efektif faiz oranı."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Annual nominal interest rate."
-msgstr "Yıllık nominal faiz oranı."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Annual yield of a discount security."
-msgstr "Bir iskontolu menkul kıymetin yıllık getirisi."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -356,8 +362,6 @@ msgstr "İsimsiz"
 msgid ""
 "Any text item. This could be a string, or an array of strings in a range."
 msgstr ""
-"Herhangi bir metin öğesi. Bu bir dize veya bir aralıktaki dizelerden oluşan "
-"bir dizi olabilir."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -371,14 +375,14 @@ msgstr "Uygula"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Apply a large number format"
-msgstr "Çok sayıda format uygulayın"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Apply to range"
-msgstr "Aralığa başvur"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -458,7 +462,7 @@ msgstr "Birden çok kritere bağlı olarak değerlerin ortalaması."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Avg"
-msgstr "Avg"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -486,7 +490,7 @@ msgstr "Arka plan rengi"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Bad zone format"
-msgstr "Kötü bölge formatı"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -501,35 +505,35 @@ msgstr "Bar"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Baseline color"
-msgstr "Temel renk"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Baseline configuration"
-msgstr "Temel yapılandırma"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Baseline description"
-msgstr "Temel açıklama"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Baseline format"
-msgstr "Temel format"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Baseline value"
-msgstr "Temel değer"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -545,7 +549,7 @@ msgstr "Kalın"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Borders"
-msgstr "Sınırlar"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -561,7 +565,7 @@ msgstr "Alt"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Calculates effective interest rate."
-msgstr "Etkin faiz oranını hesaplar."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -571,8 +575,6 @@ msgid ""
 "Calculates the price of a security paying interest at maturity, based on "
 "expected yield."
 msgstr ""
-"Vade sonunda faiz ödeyen bir menkul kıymetin fiyatını beklenen getiriye göre"
-" hesaplar."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -588,28 +590,28 @@ msgstr "İptal"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Cannot do a special paste of a figure."
-msgstr "Bir şeklin özel bir yapıştırması yapılamıyor."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Cannot find workbook relations file"
-msgstr "Çalışma kitabı ilişkileri dosyası bulunamıyor"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Cannot open the chart side panel while no chart are selected"
-msgstr "Hiçbir grafik seçili değilken grafik yan paneli açılamıyor"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Cannot paste merged cells over a frozen pane."
-msgstr "Birleştirilmiş hücreler donmuş bir bölmenin üzerine yapıştırılamıyor."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -640,13 +642,6 @@ msgstr "Hücre değerleri"
 
 #. module: spreadsheet
 #. odoo-javascript
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#, python-format
-msgid "CellIsRule"
-msgstr "CellIsRule"
-
-#. module: spreadsheet
-#. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
@@ -658,7 +653,7 @@ msgstr "Plan"
 #: code:addons/spreadsheet/static/src/chart/plugins/odoo_chart_core_plugin.js:0
 #, python-format
 msgid "Chart - %s"
-msgstr "Grafik - %s"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -687,7 +682,7 @@ msgstr "Temizle"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Clear Format"
-msgstr "Net Format"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -701,7 +696,7 @@ msgstr "%s sütununu temizle"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Clear columns"
-msgstr "Net sütunlar"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -715,7 +710,7 @@ msgstr "%s - %s sütunlarını temizle"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Clear formatting"
-msgstr "Net biçimlendirme"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -729,7 +724,7 @@ msgstr "%s satırını temizle"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Clear rows"
-msgstr "Satırları temizle"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -743,7 +738,7 @@ msgstr "%s - %s satırlarını temizle"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Clip"
-msgstr "Klips"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -757,21 +752,21 @@ msgstr "Kod"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Color Up"
-msgstr "Color Up"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Color on value decrease"
-msgstr "Değer düşüşünde renk"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Color on value increase"
-msgstr "Değer artışında renk"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -780,13 +775,6 @@ msgstr "Değer artışında renk"
 #, python-format
 msgid "Color scale"
 msgstr "Renk skalası"
-
-#. module: spreadsheet
-#. odoo-javascript
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#, python-format
-msgid "ColorScaleRule"
-msgstr "ColorScaleRule"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -814,7 +802,7 @@ msgstr "Sağ sütun"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Compare two numeric values, returning 1 if they're equal."
-msgstr "İki sayısal değeri karşılaştırır, eşitlerse 1 döndürür."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -833,8 +821,6 @@ msgid ""
 "Computes the rate needed for an investment to reach a specific value within "
 "a specific number of periods."
 msgstr ""
-"Bir yatırımın belirli sayıda dönem içinde belirli bir değere ulaşması için "
-"gereken oranı hesaplar."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -874,14 +860,14 @@ msgstr "İçerir"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Convert a decimal fraction to decimal value."
-msgstr "Ondalık kesri ondalık değere dönüştürme."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Convert a decimal value to decimal fraction."
-msgstr "Ondalık değeri ondalık kesre dönüştürme."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -977,7 +963,7 @@ msgstr "Sayı"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Count Numbers"
-msgstr "Sayılar"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1022,28 +1008,28 @@ msgstr "Tablo benzeri bir aralıktaki değerleri sayar."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Create filter"
-msgstr "Filtre oluştur"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Cumulative data"
-msgstr "Kümülatif veriler"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Cumulative interest paid over a set of periods."
-msgstr "Bir dizi dönem boyunca ödenen kümülatif faiz."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Cumulative principal paid over a set of periods."
-msgstr "Bir dizi dönem boyunca ödenen kümülatif anapara."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1057,28 +1043,28 @@ msgstr "Para Birimi"
 #. module: spreadsheet
 #: model:ir.model,name:spreadsheet.model_res_currency_rate
 msgid "Currency Rate"
-msgstr "Döviz Kuru"
+msgstr "Para Birimi Çevrim Oranı"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/currency/currency_data_source.js:0
 #, python-format
 msgid "Currency not available for this company."
-msgstr "Bu şirket için para birimi mevcut değil."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/currency/currency_data_source.js:0
 #, python-format
 msgid "Currency rate unavailable."
-msgstr "Döviz kuruna ulaşılamıyor."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Currency rounded"
-msgstr "Para birimi yuvarlandı"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1107,14 +1093,14 @@ msgstr "Özel"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Custom currency"
-msgstr "Özel para birimi"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Custom currency format"
-msgstr "Özel para birimi formatı"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1149,21 +1135,21 @@ msgstr "Veri Serisi"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/errors.js:0
 #, python-format
 msgid "Data is loading"
-msgstr "Veri yükleniyor"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Data not available"
-msgstr "Veri mevcut değil"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Data range"
-msgstr "Veri aralığı"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1193,21 +1179,21 @@ msgstr "Başka bir tarihten birkaç ay önce/sonra tarih."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Date after a number of workdays (specifying weekends)."
-msgstr "Birkaç iş gününden sonraki tarih (hafta sonları belirtilerek)."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Date after a number of workdays."
-msgstr "Birkaç iş gününden sonraki tarih."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Date time"
-msgstr "Tarih saat"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1229,14 +1215,14 @@ msgstr "Verilen tarihin haftanın günü (sayı olarak)."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Days from settlement until next coupon."
-msgstr "Anlaşmadan bir sonraki kupona kadar geçen günler."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Days in coupon period containing settlement date."
-msgstr "Uzlaşma tarihini içeren kupon dönemindeki günler."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1251,7 +1237,7 @@ msgstr "Aralık"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Decrease decimal places"
-msgstr "Ondalık basamakları azaltın"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1294,7 +1280,7 @@ msgstr "%s sütununu sil"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Delete columns"
-msgstr "Sütunları sil"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1315,7 +1301,7 @@ msgstr "%s satırını sil"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Delete rows"
-msgstr "Satırları sil"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1336,7 +1322,7 @@ msgstr "Değerleri sil"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Depreciation for an accounting period."
-msgstr "Bir hesap dönemi için amortisman."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1344,8 +1330,6 @@ msgstr "Bir hesap dönemi için amortisman."
 #, python-format
 msgid "Depreciation of an asset using the straight-line method."
 msgstr ""
-"Bir varlığın doğrusal amortisman yöntemi kullanılarak amortismana tabi "
-"tutulması."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1359,14 +1343,14 @@ msgstr "Azalan bakiye yöntemiyle amortisman."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Depreciation via double-declining balance method."
-msgstr "Çift azalan bakiyeler yöntemi ile amortisman."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Depreciation via sum of years digit method."
-msgstr "Yılların toplamı yöntemi ile amortisman."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1457,7 +1441,7 @@ msgstr "İle Biten"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Equivalent rate of return for a US Treasury bill."
-msgstr "ABD Hazine bonosu için eşdeğer getiri oranı."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1507,21 +1491,21 @@ msgstr "Şubat"
 #: code:addons/spreadsheet/static/src/pivot/pivot_model.js:0
 #, python-format
 msgid "Field %s does not exist"
-msgstr "Alan %s mevcut değil"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/pivot/pivot_model.js:0
 #, python-format
 msgid "Field %s is not supported because of its type (%s)"
-msgstr "Alan %s türü (%s) nedeniyle desteklenmiyor"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/list/list_data_source.js:0
 #, python-format
 msgid "Fields of type \"%s\" are not supported"
-msgstr "\"%s\" türündeki alanlar desteklenmiyor"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1545,7 +1529,7 @@ msgstr "Dolgu Rengi"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "FillColor"
-msgstr "FillColor"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1573,28 +1557,28 @@ msgstr "Bulma ve değiştirme"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "First day of the month preceding a date."
-msgstr "Bir tarihten önceki ayın ilk günü."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "First day of the quarter of the year a specific date falls in."
-msgstr "Belirli bir tarihin denk geldiği yılın çeyreğinin ilk günü."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "First day of the year a specific date falls in."
-msgstr "Belirli bir tarihin denk geldiği yılın ilk günü."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "FixedNumber"
-msgstr "SabitNumara"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1623,7 +1607,7 @@ msgstr "Biçim"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Format as percent"
-msgstr "Yüzde olarak biçim"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1660,7 +1644,7 @@ msgstr "Formül"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Freeze"
-msgstr "Dondurma"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1757,7 +1741,7 @@ msgstr "[[FUNCTION_NAME]] işlevi, sıfıra bölme hatasına neden oldu."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Function [[FUNCTION_NAME]] didn't find any result."
-msgstr "Fonksiyon [[FUNCTION_NAME]] herhangi bir sonuç bulamadı."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1808,14 +1792,14 @@ msgstr "Yıllık yatırımın gelecekteki değeri."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Future value of principal from series of rates."
-msgstr "Oran serilerinden elde edilen anaparanın gelecekteki değeri."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Gauge"
-msgstr "Gösterge"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1843,7 +1827,7 @@ msgstr "Bir pivotun başlığını alın."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/translation.js:0
 #, python-format
 msgid "Get the translated value of the given string"
-msgstr "Verilen dizenin çevrilmiş değerini alın"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1920,14 +1904,14 @@ msgstr "%s - %s satırlarını gizle"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Hide sheet"
-msgstr "Sayfayı gizle"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Horizontal align"
-msgstr "Yatay hizalama"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2004,13 +1988,6 @@ msgstr "Simge kümesi"
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
-msgid "IconSetRule"
-msgstr "IconSetRule"
-
-#. module: spreadsheet
-#. odoo-javascript
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#, python-format
 msgid "Icons"
 msgstr "Simgeler"
 
@@ -2019,21 +1996,21 @@ msgstr "Simgeler"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "If a valid match is not found, return this value."
-msgstr "Geçerli bir eşleşme bulunamazsa bu değeri döndürün."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Increase decimal places"
-msgstr "Ondalık basamakları artırın"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Index out of range."
-msgstr "Dizin kapsam dışı."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2159,7 +2136,7 @@ msgstr "Aşağıya satır ekle"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Interest rate of an annuity investment."
-msgstr "Yıllık gelir yatırımının faiz oranı."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2167,7 +2144,6 @@ msgstr "Yıllık gelir yatırımının faiz oranı."
 #, python-format
 msgid "Internal rate of return given non-periodic cash flows."
 msgstr ""
-"Periyodik olmayan nakit akışları göz önüne alındığında iç getiri oranı."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2444,7 +2420,7 @@ msgstr "Haziran"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Key value"
-msgstr "Anahtar değer"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2458,14 +2434,14 @@ msgstr "Etiketler geçersiz"
 #: code:addons/spreadsheet/static/src/helpers/constants.js:0
 #, python-format
 msgid "Last 180 Days"
-msgstr "Son 180 Gün"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/helpers/constants.js:0
 #, python-format
 msgid "Last 3 Years"
-msgstr "Son 3 Yıl"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2493,14 +2469,14 @@ msgstr "Son 7 Gün"
 #: code:addons/spreadsheet/static/src/helpers/constants.js:0
 #, python-format
 msgid "Last 90 Days"
-msgstr "Son 90 Gün"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Last coupon date prior to or on the settlement date."
-msgstr "Son kupon tarihi ödeme tarihinden önce veya ödeme tarihinde."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2514,21 +2490,21 @@ msgstr "Bir tarihten önce veya sonra bir ayın son günü."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Last day of the month following a date."
-msgstr "Bir tarihi takip eden ayın son günü."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Last day of the quarter of the year a specific date falls in."
-msgstr "Belirli bir tarihin denk geldiği yılın çeyreğinin son günü."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Last day of the year a specific date falls in."
-msgstr "Belirli bir tarihin denk geldiği yılın son günü."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2548,7 +2524,7 @@ msgstr "Sol"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Legend position"
-msgstr "Efsane pozisyonu"
+msgstr "Legend position"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2578,7 +2554,7 @@ msgstr "Bağlantı sayfası"
 #: code:addons/spreadsheet/static/src/list/plugins/list_core_plugin.js:0
 #, python-format
 msgid "List #%s"
-msgstr "Liste #%s"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2620,7 +2596,7 @@ msgstr "Bir değer arayın."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Lower inflection point must be smaller than upper inflection point"
-msgstr "Alt bükülme noktası üst bükülme noktasından daha küçük olmalıdır"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2649,14 +2625,14 @@ msgstr "Tüm hücre içeriğini eşleştirme"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Max"
-msgstr "Max"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "MaxPoint"
-msgstr "MaxPoint"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2699,7 +2675,7 @@ msgstr "Sayısal veri kümesindeki medyan değer."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Merge Cells"
-msgstr "Hücreleri Birleştir"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2727,7 +2703,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "MidPoint"
-msgstr "MidPoint"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2741,7 +2717,7 @@ msgstr "Orta nokta Maksimum'dan daha küçük olmalıdır"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Min"
-msgstr "Min"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2776,7 +2752,7 @@ msgstr "Tablo benzeri bir aralıktaki minimum değerler."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Minimum range limit must be smaller than maximum range limit"
-msgstr "Minimum aralık sınırı maksimum aralık sınırından küçük olmalıdır"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2812,7 +2788,7 @@ msgstr "Değiştirilmiş Macaulay süresi."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Modified internal rate of return."
-msgstr "Değiştirilmiş iç karlılık oranı."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2840,14 +2816,14 @@ msgstr "Belirli bir tarihin düştüğü yılın ayı"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "More formats"
-msgstr "Daha fazla format"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "More strings to append in sequence."
-msgstr "Sırayla eklenecek daha fazla dize."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2861,7 +2837,7 @@ msgstr "DGET değerlendirmesinde birden fazla eşleşme bulundu."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "More values to be appended using delimiter."
-msgstr "Sınırlayıcı kullanılarak eklenecek daha fazla değer."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2882,7 +2858,7 @@ msgstr "Sağa taşı"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Net present value given to non-periodic cash flows.."
-msgstr "Dönemsel olmayan nakit akışlarına verilen net bugünkü değer..."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2929,14 +2905,14 @@ msgstr "Sonraki"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Next coupon date after the settlement date."
-msgstr "Uzlaşma tarihinden sonraki bir sonraki kupon tarihi."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "No columns"
-msgstr "Sütun yok"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2957,7 +2933,7 @@ msgstr "Sonuç yok"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "No rows"
-msgstr "Satır yok"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3022,7 +2998,7 @@ msgstr "Belirli bir dizi veya aralıktaki sütun sayısı."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Number of coupons between settlement and maturity."
-msgstr "Takas ve vade arasındaki kupon sayısı."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3031,7 +3007,6 @@ msgstr "Takas ve vade arasındaki kupon sayısı."
 msgid ""
 "Number of days between two dates on a 360-day year (months of 30 days)."
 msgstr ""
-"360 günlük bir yılda iki tarih arasındaki gün sayısı (30 günlük aylar)."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3052,7 +3027,7 @@ msgstr "Boş değerlerin sayısı."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Number of payment periods for an investment."
-msgstr "Bir yatırım için ödeme dönemi sayısı."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3102,14 +3077,14 @@ msgstr "Ekim"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Overflow"
-msgstr "Taşma"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Paint Format"
-msgstr "Boya Formatı"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3163,7 +3138,7 @@ msgstr "Yalnızca değerleri yapıştırma"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Payment on the principal of an investment."
-msgstr "Bir yatırımın anapara ödemesi."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3187,7 +3162,7 @@ msgstr "Yüzde"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Percentage change from key value"
-msgstr "Temel değerden yüzde değişim"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3203,7 +3178,7 @@ msgstr "Yüzdelik"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Periodic payment for an annuity investment."
-msgstr "Yıllık gelir yatırımı için periyodik ödeme."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3218,7 +3193,7 @@ msgstr "Turta"
 #: code:addons/spreadsheet/static/src/pivot/plugins/pivot_core_plugin.js:0
 #, python-format
 msgid "Pivot #%s"
-msgstr "Pivot #%s"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3275,7 +3250,7 @@ msgstr "ABD Hazine bonosu fiyatı."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Price of a discount security."
-msgstr "İndirimli menkul kıymet fiyatı."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3296,7 +3271,7 @@ msgstr "Tablo benzeri bir aralıktaki değerlerin çarpımı."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Quarter of the year a specific date falls in"
-msgstr "Yılın belirli bir tarihine denk gelen çeyreği"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3317,7 +3292,7 @@ msgstr "Aralık"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Readonly Access"
-msgstr "Salt Okunur Erişim"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3332,7 +3307,7 @@ msgstr "Yeniden Yap"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Remove Filter"
-msgstr "Filtreyi Kaldır"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3353,7 +3328,7 @@ msgstr "Kuralı kaldır"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Remove selected filters"
-msgstr "Seçili filtreleri kaldır"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3374,7 +3349,7 @@ msgstr "Sayfayı Yeniden Adlandır"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Reorder rules"
-msgstr "Yeniden sipariş kuralları"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3431,21 +3406,21 @@ msgstr "Sağlanan mantıksal değerin tersini döndürür."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Returns the content of a cell, specified by row and column offset."
-msgstr "Satır ve sütun ofseti ile belirtilen bir hücrenin içeriğini döndürür."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Returns the error value #N/A."
-msgstr "N/A hata değerini döndürür."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Returns the interest paid at a particular period of an investment."
-msgstr "Bir yatırımın belirli bir döneminde ödenen faiz getirisi."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3582,7 +3557,7 @@ msgstr "Kaydet"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Scorecard"
-msgstr "Skor Kartı"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3599,8 +3574,6 @@ msgid ""
 "Search a range for a match and return the corresponding item from a second "
 "range."
 msgstr ""
-"Bir eşleşme için bir aralıkta arama yapın ve ikinci bir aralıktan ilgili "
-"öğeyi döndürün."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3628,7 +3601,7 @@ msgstr "Radyan cinsinden sağlanan bir açının sekantı."
 #: code:addons/spreadsheet/static/src/list/index.js:0
 #, python-format
 msgid "See record"
-msgstr "Kayıtlara bakın"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3661,7 +3634,7 @@ msgstr "Hepsini Seç"
 #: code:addons/spreadsheet/static/src/global_filters/components/filter_value/filter_value.xml:0
 #, python-format
 msgid "Select period..."
-msgstr "Dönem seçimi..."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3757,15 +3730,13 @@ msgid ""
 "Some used characters are not allowed in a sheet name (Forbidden characters "
 "are %s)."
 msgstr ""
-"Sayfa adında kullanılan bazı karakterlere izin verilmez (Yasak karakterler "
-"%s'dir)."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Sort ascending (A ⟶ Z)"
-msgstr "Artan sıralama (A ⟶ Z)"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3786,7 +3757,7 @@ msgstr "Sütunları sırala"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Sort descending (Z ⟶ A)"
-msgstr "Azalan sıralama (Z ⟶ A)"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3807,7 +3778,7 @@ msgstr "Yığılmış çubuk grafik"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Stacked linechart"
-msgstr "Yığılmış çizgi grafiği"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3872,7 +3843,7 @@ msgstr "Şununla başlayan"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Stop reordering rules"
-msgstr "Yeniden sıralama kurallarını durdurun"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3951,7 +3922,7 @@ msgstr "Metin Rengi"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "TextColor"
-msgstr "TextColor"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3986,7 +3957,7 @@ msgstr "Taban (%s) 2 ile 36 arasında olmalıdır."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The baseline value is invalid"
-msgstr "Temel değer geçersizdir"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3996,8 +3967,6 @@ msgid ""
 "The cashflow_amounts and cashflow_dates ranges must have the same "
 "dimensions."
 msgstr ""
-"Cashflow_amounts ve cashflow_dates aralıkları aynı boyutlara sahip "
-"olmalıdır."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4019,7 +3988,6 @@ msgstr "Düzenlemeye çalıştığınız hücre silindi."
 #, python-format
 msgid "The character or string to place between each concatenated value."
 msgstr ""
-"Birleştirilmiş her bir değer arasına yerleştirilecek karakter veya dize."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4027,7 +3995,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The character within text_to_search at which to start the search."
-msgstr "text_to_search içinde aramanın başlatılacağı karakter."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4041,7 +4009,7 @@ msgstr "Grafik tanımı bilinmeyen bir nedenle geçersiz"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The cost (%s) must be positive or null."
-msgstr "Maliyet (%s) pozitif veya sıfır olmalıdır."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4073,16 +4041,13 @@ msgid ""
 "The current window is too small to display this sheet properly. Consider "
 "resizing your browser window or adjusting frozen rows and columns."
 msgstr ""
-"Mevcut pencere bu sayfayı düzgün görüntülemek için çok küçük. Tarayıcı "
-"pencerenizi yeniden boyutlandırmayı veya dondurulmuş satır ve sütunları "
-"ayarlamayı düşünün."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The data range is invalid"
-msgstr "Veri aralığı geçersiz"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4111,7 +4076,7 @@ msgstr "Day_count_convention (%s) 0 ile 4 arasında olmalıdır."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The depreciation factor (%s) must be strictly positive."
-msgstr "Amortisman faktörü (%s) kesinlikle pozitif olmalıdır."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4146,7 +4111,7 @@ msgstr "Bölen 0'dan farklı olmalıdır."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The effective rate (%s) must must strictly greater than 0."
-msgstr "Etkin oran (%s) kesinlikle 0'dan büyük olmalıdır."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4160,14 +4125,14 @@ msgstr "Bitiş_tarihi (%s) pozitif veya boş olmalıdır."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The end_period (%s) must be greater or equal than 0."
-msgstr "End_period (%s) 0'dan büyük veya eşit olmalıdır."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The end_period (%s) must be smaller or equal to the life (%s)."
-msgstr "End_period (%s), life (%s) değerinden küçük veya eşit olmalıdır."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4181,7 +4146,7 @@ msgstr "Taban negatif olduğunda üs (%s) bir tam sayı olmalıdır."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The exponent to raise base to."
-msgstr "Tabanı yükseltmek için üs."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4228,21 +4193,21 @@ msgstr "Alan bir sayı veya dize olmalıdır"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The first addend."
-msgstr "İlk eklenti."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The first multiplicand."
-msgstr "İlk çarpım."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The first string to compare."
-msgstr "Karşılaştırılacak ilk dize."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4257,7 +4222,7 @@ msgstr "İlk değer bir sayı olmalıdır"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The first value."
-msgstr "İlk değer."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4265,21 +4230,21 @@ msgstr "İlk değer."
 #, python-format
 msgid ""
 "The first_period (%s) must be smaller or equal to the last_period (%s)."
-msgstr "First_period (%s), last_period'dan (%s) küçük veya eşit olmalıdır."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The first_period (%s) must be strictly positive."
-msgstr "First_period (%s) kesinlikle pozitif olmalıdır."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The formatting unit should be 'k', 'm' or 'b'."
-msgstr "Biçimlendirme birimi 'k', 'm' veya 'b' olmalıdır."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4350,15 +4315,13 @@ msgid ""
 "The index from the left of string from which to begin extracting. The first "
 "character in string has the index 1."
 msgstr ""
-"Dizenin solundan ayıklamaya başlanacak dizin. Dizedeki ilk karakter 1 "
-"indeksine sahiptir."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The initial string."
-msgstr "İlk dize."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4370,24 +4333,20 @@ msgid ""
 "however, if occurrence_number is specified, only the indicated instance of "
 "search_for is replaced."
 msgstr ""
-"text_to_search içindeki search_for örneği replace_with ile "
-"değiştirilecektir. Varsayılan olarak, tüm search_for örnekleri değiştirilir;"
-" ancak, occurrence_number belirtilirse, yalnızca belirtilen search_for "
-"örneği değiştirilir."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The investment (%s) must be strictly positive."
-msgstr "Yatırım (%s) kesinlikle pozitif olmalıdır."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The key value is invalid"
-msgstr "Anahtar değer geçersizdir"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4396,22 +4355,20 @@ msgstr "Anahtar değer geçersizdir"
 msgid ""
 "The last_period (%s) must be smaller or equal to the number_of_periods (%s)."
 msgstr ""
-"Last_period (%s), number_of_periods (%s) değerinden küçük veya eşit "
-"olmalıdır."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The last_period (%s) must be strictly positive."
-msgstr "Last_period (%s) kesinlikle pozitif olmalıdır."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The length of the segment to extract."
-msgstr "Çıkarılacak segmentin uzunluğu."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4432,7 +4389,7 @@ msgstr "Bir sayının logaritması, taban e (euler sayısı)."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The lower inflection point value must be a number"
-msgstr "Alt bükülme noktası değeri bir sayı olmalıdır"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4446,7 +4403,7 @@ msgstr "Vade (%s), kapatmadan (%s) kesinlikle daha büyük olmalıdır."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The maximum range limit value must be a number"
-msgstr "Maksimum aralık sınır değeri bir sayı olmalıdır"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4467,7 +4424,7 @@ msgstr "Orta nokta bir sayı olmalıdır"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The minimum range limit value must be a number"
-msgstr "Minimum aralık sınır değeri bir sayı olmalıdır"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4481,7 +4438,7 @@ msgstr "Minpoint bir sayı olmalıdır"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The minuend, or number to be subtracted from."
-msgstr "Minuend veya çıkarılması gereken sayı."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4506,28 +4463,28 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The nominal rate (%s) must be strictly greater than 0."
-msgstr "Nominal oran (%s) kesinlikle 0'dan büyük olmalıdır."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The number of characters in the text to be replaced."
-msgstr "Değiştirilecek metindeki karakter sayısı."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The number of characters to return from the left side of string."
-msgstr "Dizenin sol tarafından döndürülecek karakter sayısı."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The number of characters to return from the right side of string."
-msgstr "Dizenin sağ tarafından döndürülecek karakter sayısı."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4542,14 +4499,14 @@ msgstr "Veri kümesindeki sayısal değerlerin sayısı."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The number of periods by year (%s) must strictly greater than 0."
-msgstr "Yıllara göre dönem sayısı (%s) kesinlikle 0'dan büyük olmalıdır."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The number of periods must be different than 0."
-msgstr "Nokta sayısı 0'dan farklı olmalıdır."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4559,7 +4516,6 @@ msgid ""
 "The number of the character to look up from the current Unicode table in "
 "decimal format."
 msgstr ""
-"Mevcut Unicode tablosundan ondalık formatta aranacak karakterin numarası."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4580,14 +4536,14 @@ msgstr "Pi sayısı."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The number to be divided."
-msgstr "Bölünecek sayı."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The number to divide by."
-msgstr "Bölünecek sayı."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4597,35 +4553,34 @@ msgid ""
 "The number to have its sign reversed. Equivalently, the number to multiply "
 "by -1."
 msgstr ""
-"İşareti tersine çevrilecek sayı. Eşdeğer olarak, -1 ile çarpılacak sayı."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The number to raise to the exponent power."
-msgstr "Üs kuvvetine yükseltilecek sayı."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The number to return."
-msgstr "İade edilecek numara."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The number, date or time to format."
-msgstr "Biçimlendirilecek sayı, tarih veya saat."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The number_of_periods (%s) must be greater than 0."
-msgstr "Dönem_sayısı (%s) 0'dan büyük olmalıdır."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4633,14 +4588,14 @@ msgstr "Dönem_sayısı (%s) 0'dan büyük olmalıdır."
 #, python-format
 msgid ""
 "The pattern by which to format the number, enclosed in quotation marks."
-msgstr "Tırnak işareti içine alınmış sayının biçimlendirileceği kalıp."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The period (%s) must be less than or equal life (%."
-msgstr "Dönem (%s), yaşam süresine eşit veya daha az olmalıdır (%."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4654,7 +4609,7 @@ msgstr "Dönem (%s), %s'den küçük veya buna eşit olmalıdır."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The period (%s) must be positive or null."
-msgstr "Nokta (%s) pozitif veya boş olmalıdır."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4668,21 +4623,21 @@ msgstr "Dönem (%s) kesinlikle pozitif olmalıdır."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The period must be between 1 and number_of_periods"
-msgstr "Dönem 1 ile dönem_sayısı arasında olmalıdır"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The position where the replacement will begin (starting from 1)."
-msgstr "Değişimin başlayacağı pozisyon (1'den başlayarak)."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The present value (%s) must be strictly positive."
-msgstr "Bugünkü değer (%s) kesinlikle pozitif olmalıdır."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4703,14 +4658,14 @@ msgstr "Fiyat (%s) kesinlikle pozitif olmalıdır."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The provided anchor is invalid. The cell must be part of the zone."
-msgstr "Sağlanan bağlantı geçersizdir. Hücre bölgenin bir parçası olmalıdır."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The purchase_date (%s) must be before the first_period_end (%s)."
-msgstr "Satın alma_tarihi (%s) ilk_dönem_sonundan (%s) önce olmalıdır."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4720,8 +4675,6 @@ msgid ""
 "The range containing the return value. Should have the same dimensions as "
 "lookup_range."
 msgstr ""
-"Dönüş değerini içeren aralık. lookup_range ile aynı boyutlara sahip "
-"olmalıdır."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4745,8 +4698,6 @@ msgid ""
 "The range to consider for the search. Should be a single column or a single "
 "row."
 msgstr ""
-"Arama için dikkate alınması gereken aralık. Tek bir sütun veya tek bir satır"
-" olmalıdır."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4806,7 +4757,7 @@ msgstr "Kurtarma (%s) pozitif veya boş olmalıdır."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The salvage (%s) must be smaller or equal than the cost (%s)."
-msgstr "Kurtarma (%s), maliyetten (%s) daha küçük veya eşit olmalıdır."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4820,7 +4771,7 @@ msgstr "Bir veri kümesinin örnek kovaryansı."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The second addend."
-msgstr "İkinci eklenti."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4834,14 +4785,14 @@ msgstr "İkinci argüman eksik. Lütfen bir değer girin"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The second multiplicand."
-msgstr "İkinci çarpan."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The second string to compare."
-msgstr "Karşılaştırılacak ikinci dize."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4858,7 +4809,7 @@ msgstr "İkinci değer bir sayı olmalıdır"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The second value."
-msgstr "İkinci değer."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4874,7 +4825,6 @@ msgstr "Kapatma (%s), sorundan (%s) büyük veya ona eşit olmalıdır."
 msgid ""
 "The settlement date (%s) must at most one year after the maturity date (%s)."
 msgstr ""
-"Ödeme tarihi (%s), vade tarihinden (%s) en fazla bir yıl sonra olmalıdır."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4883,14 +4833,13 @@ msgstr ""
 msgid ""
 "The settlement date (%s) must be strictly greater than the issue date (%s)."
 msgstr ""
-"Mutabakat tarihi (%s) kesinlikle düzenleme tarihinden (%s) büyük olmalıdır."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The sheet name cannot be empty."
-msgstr "Sayfa adı boş olamaz."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4904,7 +4853,7 @@ msgstr "Start_date (%s) pozitif veya null olmalıdır."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The start_period (%s) must be greater or equal than 0."
-msgstr "Start_period (%s) 0'dan büyük veya eşit olmalıdır."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4912,49 +4861,48 @@ msgstr "Start_period (%s) 0'dan büyük veya eşit olmalıdır."
 #, python-format
 msgid "The start_period (%s) must be smaller or equal to the end_period (%s)."
 msgstr ""
-"Başlangıç_dönemi (%s) bitiş_döneminden (%s) küçük veya eşit olmalıdır."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The string from which the left portion will be returned."
-msgstr "Sol kısmın döndürüleceği dize."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The string from which the right portion will be returned."
-msgstr "Doğru kısmın döndürüleceği dize."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The string that will replace search_for."
-msgstr "search_for yerine geçecek dize."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The string to convert to lowercase."
-msgstr "Küçük harfe dönüştürülecek dize."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The string to convert to uppercase."
-msgstr "Büyük harfe dönüştürülecek dize."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The string to extract a segment from."
-msgstr "Bir segmentin çıkarılacağı dize."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4962,35 +4910,35 @@ msgstr "Bir segmentin çıkarılacağı dize."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The string to look for within text_to_search."
-msgstr "text_to_search içinde aranacak dize."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The string to search for within text_to_search."
-msgstr "text_to_search içinde aranacak dize."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The string whose length will be returned."
-msgstr "Uzunluğu döndürülecek olan dize."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The subtrahend, or number to subtract from value1."
-msgstr "Subtrahend veya değerden çıkarılacak sayı1."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The text or reference to a cell containing text to be trimmed."
-msgstr "Kırpılacak metni içeren metin veya hücre referansı."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -4998,14 +4946,14 @@ msgstr "Kırpılacak metni içeren metin veya hücre referansı."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The text to search for the first occurrence of search_for."
-msgstr "search_for sözcüğünün ilk geçtiği yerde aranacak metin."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The text which will be inserted into the original text."
-msgstr "Orijinal metne eklenecek olan metin."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5015,29 +4963,27 @@ msgid ""
 "The text which will be returned with the first letter of each word in "
 "uppercase and all other letters in lowercase."
 msgstr ""
-"Her kelimenin ilk harfi büyük ve diğer tüm harfler küçük olacak şekilde geri"
-" dönecek olan metin."
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The text whose non-printable characters are to be removed."
-msgstr "Yazdırılamayan karakterleri kaldırılacak olan metin."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The text within which to search and replace."
-msgstr "İçinde arama yapılacak ve değiştirilecek metin."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The text, a part of which will be replaced."
-msgstr "Bir kısmı değiştirilecek olan metin."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5066,14 +5012,14 @@ msgstr "Tür (%s) 1, 2 veya 3 olmalıdır."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The unit (%s) must be strictly positive."
-msgstr "Birim (%s) kesinlikle pozitif olmalıdır."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The upper inflection point value must be a number"
-msgstr "Üst bükülme noktası değeri bir sayı olmalıdır"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5131,77 +5077,77 @@ msgstr "Değer (%s) kesinlikle pozitif olmalıdır."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The value or values to be appended using delimiter."
-msgstr "Sınırlayıcı kullanılarak eklenecek değer veya değerler."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The value to append to value1."
-msgstr "Değer1'e eklenecek değer."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The value to interpret as a percentage."
-msgstr "Yüzde olarak yorumlanacak değer."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The value to search for."
-msgstr "Aranacak değer."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The value to test against value1 for equality."
-msgstr "Eşitlik için değer1'e karşı test edilecek değer."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The value to test against value1 for inequality."
-msgstr "Eşitsizlik için değer1'e karşı test edilecek değer."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The value to test as being greater than or equal to value2."
-msgstr "Test edilecek değerin değer2'den büyük veya eşit olması."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The value to test as being greater than value2."
-msgstr "Test edilecek değerin değer2'den büyük olması."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The value to test as being less than or equal to value2."
-msgstr "Test edilecek değerin değer2'den küçük veya eşit olması."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The value to test as being less than value2."
-msgstr "Test edilecek değerin değer2'den az olması."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The value to which value2 will be appended."
-msgstr "Değer2'nin ekleneceği değer."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5224,7 +5170,7 @@ msgstr "Hafta sonu (%s) '111111'den farklı olmalıdır."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The weekend must be a number or a string."
-msgstr "Hafta sonu bir sayı veya dize olmalıdır."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5247,14 +5193,14 @@ msgstr "Verim (%s) pozitif veya boş olmalıdır."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "The yield of a US Treasury bill based on price."
-msgstr "Bir ABD Hazine bonosunun fiyata dayalı getirisi."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/list/list_functions.js:0
 #, python-format
 msgid "There is no list with id \"%s\""
-msgstr "\"%s\" kimliğine sahip bir liste yok"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5271,8 +5217,6 @@ msgid ""
 "There must be both positive and negative values in [payment_amount, "
 "present_value, future_value]."
 msgstr ""
-"payment_amount, present_value, future_value] içinde hem pozitif hem de "
-"negatif değerler olmalıdır."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5281,7 +5225,6 @@ msgstr ""
 #, python-format
 msgid "There must be both positive and negative values in cashflow_amounts."
 msgstr ""
-"Cashflow_amounts içinde hem pozitif hem de negatif değerler bulunmalıdır."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5291,7 +5234,6 @@ msgid ""
 "There must be the same number of values in cashflow_amounts and "
 "cashflow_dates."
 msgstr ""
-"cashflow_amounts ve cashflow_dates içinde aynı sayıda değer olmalıdır."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5319,8 +5261,6 @@ msgid ""
 "This function can only return a single cell value, not an array. Provide "
 "valid row and column indices."
 msgstr ""
-"Bu işlev bir dizi değil, yalnızca tek bir hücre değeri döndürebilir. Geçerli"
-" satır ve sütun indisleri sağlayın."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5330,8 +5270,6 @@ msgid ""
 "This function takes in two currency codes as arguments, and returns the "
 "exchange rate from the first currency to the second as float."
 msgstr ""
-"Bu fonksiyon, argüman olarak iki para birimi kodu alır ve ilk para "
-"biriminden ikincisine olan döviz kurunu float olarak döndürür."
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5357,7 +5295,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Thresholds"
-msgstr "Eşikler"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5405,7 +5343,7 @@ msgstr "Toplam"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Treat labels as text"
-msgstr "Etiketleri metin olarak değerlendirin"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5457,7 +5395,7 @@ msgstr "Geri Alma"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Unfreeze"
-msgstr "Unfreeze"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5478,21 +5416,21 @@ msgstr "Tüm satırları göster"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Unhide columns"
-msgstr "Sütunları göster"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Unhide rows"
-msgstr "Satırları göster"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Unknown function: \"%s\""
-msgstr "Bilinmeyen fonksiyon: \"%s\""
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5506,14 +5444,14 @@ msgstr "Adsız e-tablo"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Up to current column"
-msgstr "Güncel sütuna kadar"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Up to current row"
-msgstr "Güncel satıra kadar"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5545,14 +5483,14 @@ msgstr "Bir veri kümesinin belirli bir yüzdelik dilimindeki değer."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Value change from key value"
-msgstr "Temel değerden değer değişimi"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Value if it is not an #N/A error, otherwise 2nd argument."
-msgstr "Bir #N/A hatası değilse değer, aksi takdirde 2. bağımsız değişken."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5583,7 +5521,7 @@ msgstr "Bir veri kümesinin belirli bir çeyreğine en yakın değer."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Variable declining balance. WARNING : does not handle decimal periods."
-msgstr "Değişken azalan bakiye. UYARI : ondalık dönemleri işlemez."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5695,7 +5633,7 @@ msgstr "Değer olduğunda"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "When value is below"
-msgstr "Değer aşağıda olduğunda"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5723,7 +5661,7 @@ msgstr "Bir değerin sayı olup olmadığı."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Whether a value is an error other than #N/A."
-msgstr "Bir değerin #N/A dışında bir hata olup olmadığı."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5751,7 +5689,7 @@ msgstr "Bir değerin metin olup olmadığı."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Whether a value is the error #N/A."
-msgstr "Bir değerin #N/A hatası olup olmadığı."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5766,21 +5704,21 @@ msgstr "Sağlanan değerin eşit olup olmadığı."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Whether the referenced cell is empty"
-msgstr "Başvurulan hücrenin boş olup olmadığı"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Wrap"
-msgstr "Wrap"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Wrapping"
-msgstr "Paketleme"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5808,21 +5746,21 @@ msgstr "Belirli bir tarihe göre belirtilen yıl."
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "You can't create a filter over a range that contains a merge."
-msgstr "Birleştirme içeren bir aralık üzerinde filtre oluşturamazsınız."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "You can't merge cells inside of an existing filter."
-msgstr "Mevcut bir filtrenin içindeki hücreleri birleştiremezsiniz."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "You cannot create overlapping filters."
-msgstr "Çakışan filtreler oluşturamazsınız."
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5905,16 +5843,7 @@ msgstr "ve"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "and value"
-msgstr "ve değer"
-
-#. module: spreadsheet
-#. odoo-javascript
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#, python-format
-msgid "bottom"
-msgstr "alt"
+msgstr ""
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5927,127 +5856,5 @@ msgstr "varsayılan olarak"
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
-msgid "difference"
-msgstr "fark"
-
-#. module: spreadsheet
-#. odoo-javascript
-#: code:addons/spreadsheet/static/src/global_filters/components/filter_date_value/filter_date_value.xml:0
-#, python-format
-msgid "empty"
-msgstr "boş"
-
-#. module: spreadsheet
-#. odoo-javascript
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#, python-format
-msgid "formula"
-msgstr "formül"
-
-#. module: spreadsheet
-#. odoo-javascript
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#, python-format
-msgid "ge"
-msgstr "ge"
-
-#. module: spreadsheet
-#. odoo-javascript
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#, python-format
-msgid "gt"
-msgstr "gt"
-
-#. module: spreadsheet
-#. odoo-javascript
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#, python-format
-msgid "left"
-msgstr "sol"
-
-#. module: spreadsheet
-#. odoo-javascript
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#, python-format
-msgid "none"
-msgstr "hiçbiri"
-
-#. module: spreadsheet
-#. odoo-javascript
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#, python-format
-msgid "number"
-msgstr "sayı"
-
-#. module: spreadsheet
-#. odoo-javascript
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#, python-format
-msgid "percentage"
-msgstr "yüzde"
-
-#. module: spreadsheet
-#. odoo-javascript
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#, python-format
-msgid "percentile"
-msgstr "yüzdelik dilim"
-
-#. module: spreadsheet
-#. odoo-javascript
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#, python-format
 msgid "repeatable"
-msgstr "tekrarlanabilir"
-
-#. module: spreadsheet
-#. odoo-javascript
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#, python-format
-msgid "right"
-msgstr "doğru"
-
-#. module: spreadsheet
-#. odoo-javascript
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#, python-format
-msgid "text"
-msgstr "metin"
-
-#. module: spreadsheet
-#. odoo-javascript
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#, python-format
-msgid "top"
-msgstr "üst"
-
-#. module: spreadsheet
-#. odoo-javascript
-#: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
-#, python-format
-msgid "value"
-msgstr "değer"
+msgstr ""

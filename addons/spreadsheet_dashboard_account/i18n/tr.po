@@ -1,19 +1,27 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* spreadsheet_dashboard_account
-#
+# 
+# Translators:
+# Ediz Duman <neps1192@gmail.com>, 2022
+# Ertuğrul Güreş <ertugrulg@projetgrup.com>, 2022
+# Martin Trigaux, 2022
+# Murat Kaplan <muratk@projetgrup.com>, 2022
+# Ayhan Kızıltan, 2024
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-14 19:47+0000\n"
-"PO-Revision-Date: 2025-02-14 19:47+0000\n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"POT-Creation-Date: 2024-02-06 13:32+0000\n"
+"PO-Revision-Date: 2022-09-29 09:44+0000\n"
+"Last-Translator: Ayhan Kızıltan, 2024\n"
+"Language-Team: Turkish (https://app.transifex.com/odoo/teams/41243/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: \n"
+"Language: tr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
@@ -27,7 +35,7 @@ msgstr " gün"
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "# days"
-msgstr "# günler"
+msgstr ""
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
@@ -45,14 +53,14 @@ msgstr "Tutar"
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "Average Invoice"
-msgstr "Ortalama Fatura"
+msgstr ""
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "COGS"
-msgstr "COGS"
+msgstr ""
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
@@ -67,7 +75,7 @@ msgstr "Ülke"
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "Current year"
-msgstr "Güncel yıl"
+msgstr ""
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
@@ -81,7 +89,7 @@ msgstr "Müşteri"
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "DSO"
-msgstr "DSO"
+msgstr ""
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
@@ -109,7 +117,7 @@ msgstr "Faturalanan"
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "Invoiced by Month"
-msgstr "Aylara Göre Faturalandırılan"
+msgstr ""
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
@@ -123,7 +131,7 @@ msgstr "Faturalar"
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "Invoices by Total Signed"
-msgstr "Toplam İmzalanan Faturalar"
+msgstr ""
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
@@ -131,14 +139,14 @@ msgstr "Toplam İmzalanan Faturalar"
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "KPI - Average Invoice"
-msgstr "KPI - Ortalama Fatura"
+msgstr ""
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "KPI - DSO"
-msgstr "KPI - DSO"
+msgstr ""
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
@@ -146,14 +154,14 @@ msgstr "KPI - DSO"
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "KPI - Income"
-msgstr "KPI - Gelir"
+msgstr ""
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "KPI - Invoice Count"
-msgstr "KPI - Fatura Sayısı"
+msgstr ""
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
@@ -161,7 +169,7 @@ msgstr "KPI - Fatura Sayısı"
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "KPI - Unpaid Invoices"
-msgstr "KPI - Ödenmemiş Faturalar"
+msgstr ""
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
@@ -239,7 +247,7 @@ msgstr "Durumu"
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "Top Categories"
-msgstr "Üst Kategoriler"
+msgstr ""
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
@@ -247,14 +255,14 @@ msgstr "Üst Kategoriler"
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "Top Countries"
-msgstr "En İyi Ülkeler"
+msgstr ""
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "Top Invoices"
-msgstr "En İyi Faturalar"
+msgstr ""
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
@@ -262,7 +270,7 @@ msgstr "En İyi Faturalar"
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "Top Products"
-msgstr "En İyi Ürünler"
+msgstr ""
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
@@ -277,11 +285,11 @@ msgstr "En İyi Satış Görevlisi"
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "in current year"
-msgstr "cari yıl içinde"
+msgstr ""
 
 #. module: spreadsheet_dashboard_account
 #. odoo-javascript
 #: code:addons/spreadsheet_dashboard_account/data/files/invoicing_dashboard.json:0
 #, python-format
 msgid "unpaid"
-msgstr "ödenmemiş"
+msgstr ""

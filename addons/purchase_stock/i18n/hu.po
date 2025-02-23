@@ -1,7 +1,7 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* purchase_stock
-#
+# 
 # Translators:
 # Kovács Tibor <kovika@gmail.com>, 2022
 # Zsolt Godó <zsolttokio@gmail.com>, 2022
@@ -12,7 +12,7 @@
 # krnkris, 2022
 # Tamás Németh <ntomasz81@gmail.com>, 2023
 # gezza <geza.nagy@oregional.hu>, 2024
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
@@ -21,10 +21,10 @@ msgstr ""
 "PO-Revision-Date: 2022-09-22 05:54+0000\n"
 "Last-Translator: gezza <geza.nagy@oregional.hu>, 2024\n"
 "Language-Team: Hungarian (https://app.transifex.com/odoo/teams/41243/hu/)\n"
-"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
+"Language: hu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. module: purchase_stock
@@ -104,9 +104,6 @@ msgid ""
 "  - Manual: the quantity is set manually on the line\n"
 "  - Stock Moves: the quantity comes from confirmed pickings\n"
 msgstr ""
-"A termékkonfigurációnak megfelelően a beérkezett mennyiség automatikusan kiszámítható a mechanizmussal :\n"
-"  - Kézi: a mennyiséget kézzel állítják be a soron.\n"
-"  - Készletmozgások: a mennyiség a visszaigazolt készletfelvételekből származik.\n"
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_rule__action
@@ -121,14 +118,11 @@ msgid ""
 "average value, therefore only use this as an aggregated value with "
 "group_operator=avg"
 msgstr ""
-"A várt és a tényleges átvételi dátum közötti idő. A számításhoz szükséges "
-"hack miatt minden rekord ugyanazt az átlagértéket fogja mutatni, ezért csak "
-"aggregált értékként használja ezt a group_operator=avg értékkel."
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_purchase_order__effective_date
 msgid "Arrival"
-msgstr "Érkezés"
+msgstr ""
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_purchase_report__avg_receipt_delay
@@ -163,7 +157,7 @@ msgstr "Vállalatok"
 #. module: purchase_stock
 #: model:ir.model.fields,help:purchase_stock.field_purchase_order__effective_date
 msgid "Completion date of the first receipt order."
-msgstr "Az első átvételi megbízás teljesítési dátuma."
+msgstr ""
 
 #. module: purchase_stock
 #: model:ir.model,name:purchase_stock.model_res_config_settings
@@ -180,7 +174,7 @@ msgstr "Kapcsolat"
 #: code:addons/purchase_stock/models/purchase.py:0
 #, python-format
 msgid "Corresponding receipt not found."
-msgstr "Megfelelő bizonylat nem található."
+msgstr ""
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_move__created_purchase_line_id
@@ -203,15 +197,13 @@ msgstr "Egyedi leírás"
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.res_config_settings_view_form_stock
 msgid "Days needed to confirm a PO"
-msgstr "A PO megerősítéséhez szükséges napok"
+msgstr ""
 
 #. module: purchase_stock
 #: model:ir.model.fields,help:purchase_stock.field_res_company__days_to_purchase
 #: model:ir.model.fields,help:purchase_stock.field_res_config_settings__days_to_purchase
 msgid "Days needed to confirm a PO, define when a PO should be validated"
 msgstr ""
-"A PO megerősítéséhez szükséges napok, meghatározza, hogy mikor kell a PO-t "
-"érvényesíteni."
 
 #. module: purchase_stock
 #. odoo-python
@@ -235,8 +227,6 @@ msgid ""
 "of the product: whether it will be bought, manufactured, replenished on "
 "order, etc."
 msgstr ""
-"A telepített moduloktól függően ez lehetővé teszi a termék útvonalának "
-"meghatározását: megvásároljuk-e, gyártjuk-e, rendelésre pótoljuk-e stb."
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_purchase_order__default_location_dest_id_usage
@@ -262,7 +252,7 @@ msgstr "Követő mozgások"
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_purchase_order__dest_address_id
 msgid "Dropship Address"
-msgstr "Dropship cím"
+msgstr ""
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_res_config_settings__module_stock_dropshipping
@@ -278,7 +268,7 @@ msgstr "Tényleges dátum"
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.vendor_delay_report_filter
 msgid "Effective Date Last Year"
-msgstr "Hatálybalépés dátuma Tavalyi év"
+msgstr ""
 
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.exception_on_po
@@ -299,9 +289,6 @@ msgid ""
 " with the location (%s) of the reordering rule (%s). Change the operation "
 "type or cancel the request for quotation."
 msgstr ""
-"A %s termék esetében a művelettípus (%s) raktára nem egyezik az átrendezési "
-"szabály (%s) helyével (%s). Módosítsa a művelettípust, vagy törölje az "
-"ajánlatkérést."
 
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.purchase_order_view_form_inherit
@@ -311,12 +298,12 @@ msgstr "Előrejelzés kimutatás"
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_purchase_order_line__forecasted_issue
 msgid "Forecasted Issue"
-msgstr "Előre jelzett kiadás"
+msgstr ""
 
 #. module: purchase_stock
 #: model:ir.model.fields.selection,name:purchase_stock.selection__purchase_order__receipt_status__full
 msgid "Fully Received"
-msgstr "Teljes körűen átvett"
+msgstr ""
 
 #. module: purchase_stock
 #. odoo-javascript
@@ -342,7 +329,7 @@ msgstr "Azonosító"
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_purchase_order__incoming_picking_count
 msgid "Incoming Shipment count"
-msgstr "Bejövő küldemények számolása"
+msgstr ""
 
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.purchase_order_view_form_inherit
@@ -357,7 +344,7 @@ msgstr "Nemzetközi Kereskedelmi Feltétel"
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_purchase_order__incoterm_location
 msgid "Incoterm Location"
-msgstr "Incoterm Helyszín"
+msgstr ""
 
 #. module: purchase_stock
 #: model:ir.model.fields,help:purchase_stock.field_purchase_order__incoterm_id
@@ -432,7 +419,7 @@ msgstr "Minimum készlet szabály"
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.res_config_settings_view_form_stock
 msgid "Move forward expected request creation date by"
-msgstr "A kérelem létrehozásának várható időpontja"
+msgstr ""
 
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.exception_on_po
@@ -457,8 +444,6 @@ msgid ""
 "Odoo is not able to generate the anglo saxon entries. The total valuation of"
 " %s is zero."
 msgstr ""
-"Az Odoo nem képes létrehozni az angolszász bejegyzéseket. A %s teljes "
-"értékelése nulla."
 
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.vendor_delay_report_view_graph
@@ -503,26 +488,23 @@ msgid ""
 " number of ordered products.x is either the System Parameter "
 "purchase_stock.on_time_delivery_days or the default 365"
 msgstr ""
-"Az elmúlt x napban; az időben érkezett termékek száma osztva a megrendelt "
-"termékek számával. x vagy a rendszerparaméter "
-"purchase_stock.on_time_delivery_days vagy az alapértelmezett 365."
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_product_product__purchase_order_line_ids
 msgid "PO Lines"
-msgstr "PO sorok"
+msgstr ""
 
 #. module: purchase_stock
 #: model:ir.model.fields.selection,name:purchase_stock.selection__purchase_order__receipt_status__partial
 msgid "Partially Received"
-msgstr "Részben megkaptuk"
+msgstr ""
 
 #. module: purchase_stock
 #. odoo-javascript
 #: code:addons/purchase_stock/static/src/js/tours/purchase_stock.js:0
 #, python-format
 msgid "Process all the receipt quantities."
-msgstr "Az összes átvételi mennyiség feldolgozása."
+msgstr ""
 
 #. module: purchase_stock
 #: model:ir.model,name:purchase_stock.model_procurement_group
@@ -545,7 +527,7 @@ msgstr "Termék kategória"
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_replenishment_info__supplierinfo_id
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_warehouse_orderpoint__supplier_id
 msgid "Product Supplier"
-msgstr "Termékbeszállító"
+msgstr ""
 
 #. module: purchase_stock
 #: model:ir.model,name:purchase_stock.model_product_product
@@ -555,7 +537,7 @@ msgstr "Termékváltozat"
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_purchase_order_line__propagate_cancel
 msgid "Propagate cancellation"
-msgstr "Propagálja a törlést"
+msgstr ""
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_res_partner__purchase_line_ids
@@ -596,7 +578,7 @@ msgstr "Beszerzési biztonsági átfutási idő"
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_warehouse_orderpoint__purchase_visibility_days
 msgid "Purchase Visibility Days"
-msgstr "Vásárlás láthatósági napok"
+msgstr ""
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_lot__purchase_order_count
@@ -638,7 +620,7 @@ msgstr "A megrendelt termékek átvétele."
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_purchase_order_line__qty_received_method
 msgid "Received Qty Method"
-msgstr "Beérkezett mennyiség módszer"
+msgstr ""
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_purchase_order__picking_ids
@@ -677,17 +659,16 @@ msgstr "Útvonalak"
 #: model_terms:ir.ui.view,arch_db:purchase_stock.res_config_settings_view_form_stock
 msgid "Schedule request for quotations earlier to avoid delays"
 msgstr ""
-"A késedelmek elkerülése érdekében ütemezze be korábban az ajánlatkérést"
 
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.product_supplierinfo_replenishment_tree_view
 msgid "Set as Supplier"
-msgstr "Beszállítóként beállítva"
+msgstr ""
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_product_supplierinfo__show_set_supplier_button
 msgid "Show Set Supplier Button"
-msgstr "Beszállító beállítása gomb megjelenítése"
+msgstr ""
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_warehouse_orderpoint__show_supplier
@@ -723,7 +704,7 @@ msgstr "Készletszabály riport"
 #. module: purchase_stock
 #: model:ir.model,name:purchase_stock.model_stock_replenishment_info
 msgid "Stock supplier replenishment information"
-msgstr "Készletszállítói feltöltési információk"
+msgstr ""
 
 #. module: purchase_stock
 #: model:ir.model,name:purchase_stock.model_product_supplierinfo
@@ -733,7 +714,7 @@ msgstr "Beszállító árlista"
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_replenishment_info__supplierinfo_ids
 msgid "Supplierinfo"
-msgstr "Supplierinfo"
+msgstr ""
 
 #. module: purchase_stock
 #: model:ir.model.fields,help:purchase_stock.field_purchase_order__default_location_dest_id_usage
@@ -745,7 +726,7 @@ msgstr "Technikai mező a Közvetlen szállítás címének megjelenítésére"
 #: code:addons/purchase_stock/models/stock.py:0
 #, python-format
 msgid "The following replenishment order has been generated"
-msgstr "A következő feltöltési megbízás generálásra került"
+msgstr ""
 
 #. module: purchase_stock
 #. odoo-python
@@ -755,8 +736,6 @@ msgid ""
 "The quantities on your purchase order indicate less than billed. You should "
 "ask for a refund."
 msgstr ""
-"A megrendelésén szereplő mennyiségek a számlázottnál kevesebbet jeleznek. "
-"Kérje a visszatérítést."
 
 #. module: purchase_stock
 #. odoo-python
@@ -767,10 +746,6 @@ msgid ""
 " %s (no vendor defined, minimum quantity not reached, dates not valid, ...)."
 " Go on the product form and complete the list of vendors."
 msgstr ""
-"Nincs megfelelő szállítói ár a %s termék beszerzési megrendelésének "
-"létrehozásához (nincs meghatározott szállító, a minimális mennyiséget nem "
-"érte el, a dátumok nem érvényesek, ...). Menjen a termék űrlapra, és töltse "
-"ki a szállítók listáját."
 
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.res_config_settings_view_form_purchase
@@ -800,15 +775,13 @@ msgid ""
 "Those dates couldn’t be modified accordingly on the receipt %s which had "
 "already been validated."
 msgstr ""
-"Ezeket a dátumokat nem lehetett ennek megfelelően módosítani a már "
-"érvényesített nyugta %okon."
 
 #. module: purchase_stock
 #. odoo-python
 #: code:addons/purchase_stock/models/purchase.py:0
 #, python-format
 msgid "Those dates have been updated accordingly on the receipt %s."
-msgstr "Ezeket a dátumokat ennek megfelelően frissítettük a nyugta %s."
+msgstr ""
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_vendor_delay_report__qty_total
@@ -836,7 +809,7 @@ msgstr ""
 #: code:addons/purchase_stock/static/src/js/tours/purchase_stock.js:0
 #, python-format
 msgid "Validate the receipt of all ordered products."
-msgstr "Minden megrendelt termék átvételének hitelesítése."
+msgstr ""
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_warehouse_orderpoint__vendor_id
@@ -870,7 +843,7 @@ msgstr "Beszállítók"
 #. module: purchase_stock
 #: model:ir.model.fields,help:purchase_stock.field_stock_warehouse_orderpoint__purchase_visibility_days
 msgid "Visibility Days applied on the purchase routes."
-msgstr "A beszerzési útvonalakon alkalmazott láthatósági napok."
+msgstr ""
 
 #. module: purchase_stock
 #: model:ir.model,name:purchase_stock.model_stock_warehouse
@@ -892,9 +865,6 @@ msgid ""
 "created to fulfill the need.<br/>Note: This rule will be used in combination"
 " with the rules<br/>of the reception route(s)"
 msgstr ""
-"Ha a termékekre <b>%s-ban</b> van szükség, <br/> az igény kielégítésére "
-"ajánlatkérés készül.<br/>Megjegyzés: Ezt a szabályt a<br/>szabályokkal "
-"együtt kell használni a fogadó útvonal(ak) szabályaival együtt."
 
 #. module: purchase_stock
 #. odoo-python

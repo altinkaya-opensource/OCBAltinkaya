@@ -1,19 +1,31 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* base_import
-#
+# 
+# Translators:
+# KeyVillage, 2023
+# Igor Sheludko <igor.sheludko@gmail.com>, 2023
+# Albena Mincheva <albena_vicheva@abv.bg>, 2023
+# Martin Trigaux, 2023
+# aleksandar ivanov, 2023
+# Maria Boyadjieva <marabo2000@gmail.com>, 2023
+# Venelin Stoykov, 2024
+# Milena Georgieva, 2024
+# Martin Dinovski, 2025
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-14 19:52+0000\n"
-"PO-Revision-Date: 2025-02-14 19:52+0000\n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"POT-Creation-Date: 2024-02-06 13:31+0000\n"
+"PO-Revision-Date: 2022-09-22 05:45+0000\n"
+"Last-Translator: Martin Dinovski, 2025\n"
+"Language-Team: Bulgarian (https://app.transifex.com/odoo/teams/41243/bg/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: \n"
+"Language: bg\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. module: base_import
 #. odoo-javascript
@@ -21,7 +33,7 @@ msgstr ""
 #: code:addons/base_import/static/src/legacy/js/import_action.js:0
 #, python-format
 msgid "%d records successfully imported"
-msgstr "%d успешно импортирани записи"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -53,7 +65,7 @@ msgstr "Разширени"
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Allow matching with subfields"
-msgstr "Позволете съпоставяне с подполета"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -65,11 +77,6 @@ msgid ""
 " transient. If the issue still occurs, try to split the file rather than "
 "import it at once."
 msgstr ""
-"По време на импортирането е възникнал неизвестен проблем (възможно е да е "
-"загубена връзка, да е превишен лимитът на данните или лимитът на паметта). "
-"Моля, опитайте отново, в случай че проблемът е преходен. Ако проблемът "
-"продължава да се появява, опитайте да разделите файла, а не да го "
-"импортирате наведнъж."
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base
@@ -79,26 +86,26 @@ msgstr "Основа"
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_import
 msgid "Base Import"
-msgstr "Базов внос"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_mapping
 msgid "Base Import Mapping"
-msgstr "Картографиране на базов внос"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Batch Import"
-msgstr "Внос на партиди"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Batch limit"
-msgstr "Ограничение на партидата"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -113,8 +120,6 @@ msgstr "Отказ"
 #, python-format
 msgid "Click 'Resume' to proceed with the import, resuming at line"
 msgstr ""
-"Щракнете върху \"Resume\" (Възобновяване), за да продължите с импорта, като "
-"продължите от реда"
 
 #. module: base_import
 #. odoo-python
@@ -133,7 +138,7 @@ msgstr "Колоната %s съдържа неправилни стойност
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_mapping__column_name
 msgid "Column Name"
-msgstr "Име на колоната"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -158,15 +163,13 @@ msgid ""
 "Could not retrieve URL: %(url)s [%(field_name)s: L%(line_number)d]: "
 "%(error)s"
 msgstr ""
-"Не може да се извлече URL адрес: %(url)s [%(field_name)s: L%(line_number)d]:"
-" %(error)s"
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Create new values"
-msgstr "Създаване на нови ценности"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_import__create_uid
@@ -288,12 +291,12 @@ msgstr "Изтеглете от системата"
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Download Template"
-msgstr "Изтегляне на шаблона"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_complex__dt
 msgid "Dt"
-msgstr "Dt"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -316,8 +319,6 @@ msgstr "Грешка при разбора на датата [%s:L %d]:%s"
 msgid ""
 "Error while importing records: Text Delimiter should be a single character."
 msgstr ""
-"Грешка при импортиране на записи: Разделителят на текста трябва да бъде "
-"единичен символ."
 
 #. module: base_import
 #. odoo-python
@@ -328,16 +329,13 @@ msgid ""
 "title row has %d entries while the first row has %d. You may need to change "
 "the separator character."
 msgstr ""
-"Грешка при импортиране на записи: всички редове трябва да са с еднакъв "
-"размер, но заглавният ред има %d записи, докато първият ред има %d. Може да "
-"се наложи да промените разделителния символ."
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Estimated time left:"
-msgstr "Очаквано оставащо време:"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -352,8 +350,6 @@ msgstr "Всичко изглежда валидно."
 #, python-format
 msgid "Excel files are recommended as formatting is automatic."
 msgstr ""
-"Препоръчва се използването на файлове в Excel, тъй като форматирането е "
-"автоматично."
 
 #. module: base_import
 #. odoo-python
@@ -381,7 +377,7 @@ msgstr "Файл"
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "File Column"
-msgstr "Колона за файлове"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_import__file_name
@@ -399,7 +395,7 @@ msgstr "Вид файл"
 #: code:addons/base_import/models/base_import.py:0
 #, python-format
 msgid "File size exceeds configured maximum (%s bytes)"
-msgstr "Размерът на файла надхвърля конфигурирания максимум (%s байта)"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model.fields,help:base_import.field_base_import_import__file
@@ -411,14 +407,14 @@ msgstr "Файл за проверка и/или въвеждане, двоич�
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Finalizing current batch before interrupting..."
-msgstr "Финализиране на текущата партида, преди да се прекъсне..."
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "For CSV files, you may need to select the correct separator."
-msgstr "За CSV файлове може да се наложи да изберете правилния разделител."
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -435,15 +431,13 @@ msgid ""
 "Found invalid image data, images should be imported as either URLs or "
 "base64-encoded data."
 msgstr ""
-"Установени са невалидни данни за изображения, изображенията трябва да се "
-"импортират като URL адреси или като данни, кодирани в base64."
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Go to Import FAQ"
-msgstr "Към често задавани въпроси за внос"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -490,10 +484,6 @@ msgid ""
 "                    field corresponding to the column. This makes imports\n"
 "                    simpler especially when the file has many columns."
 msgstr ""
-"Ако файлът съдържа\n"
-"                    имената на колоните, Odoo може да се опита да открие автоматично\n"
-"                    полето, съответстващо на колоната. Това прави вноса\n"
-"                    по-лесно, особено когато файлът съдържа много колони."
 
 #. module: base_import
 #. odoo-javascript
@@ -503,9 +493,6 @@ msgid ""
 "If the model uses openchatter, history tracking will set up subscriptions "
 "and send notifications during the import, but lead to a slower import."
 msgstr ""
-"Ако моделът използва openchatter, проследяването на историята ще създаде "
-"абонаменти и ще изпраща известия по време на импорта, но ще доведе до по-"
-"бавен импорт."
 
 #. module: base_import
 #. odoo-python
@@ -514,8 +501,6 @@ msgstr ""
 msgid ""
 "Image size excessive, imported images must be smaller than 42 million pixel"
 msgstr ""
-"Прекомерно голям размер на изображението, внесените изображения трябва да са"
-" по-малки от 42 милиона пиксела"
 
 #. module: base_import
 #. odoo-javascript
@@ -529,7 +514,7 @@ msgstr "Внос"
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Import FAQ"
-msgstr "Често задавани въпроси за внос"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -543,7 +528,7 @@ msgstr "Въведете файл"
 #: code:addons/base_import/models/base_import.py:0
 #, python-format
 msgid "Import file has no content or is corrupt"
-msgstr "Импортният файл няма съдържание или е повреден"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -564,35 +549,21 @@ msgstr "Импортиране на записи"
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Imported file"
-msgstr "Импортиран файл"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/js/import_action.js:0
 #, python-format
 msgid "Importing"
-msgstr "Внос на"
-
-#. module: base_import
-#. odoo-python
-#: code:addons/base_import/models/base_import.py:0
-#, python-format
-msgid ""
-"Invalid cell format at row %(row)s, column %(col)s: %(cell_value)s, with "
-"format: %(cell_format)s, as (%(format_type)s) formats are not supported."
 msgstr ""
-"Невалиден формат на клетките в ред %(row)s, колона %(col)s: %(cell_value)s, "
-"с формат: %(cell_format)s, тъй като (%(format_type)s) форматите не се "
-"поддържат."
 
 #. module: base_import
 #. odoo-python
-#: code:addons/base_import/models/base_import.py:0
 #: code:addons/base_import/models/base_import.py:0
 #, python-format
 msgid "Invalid cell value at row %(row)s, column %(col)s: %(cell_value)s"
 msgstr ""
-"Невалидна стойност на клетката в ред %(row)s, колона %(col)s: %(cell_value)s"
 
 #. module: base_import
 #. odoo-javascript
@@ -676,7 +647,7 @@ msgstr "Заредете файл"
 #: code:addons/base_import/static/src/legacy/js/import_action.js:0
 #, python-format
 msgid "Loading file..."
-msgstr "Зареждане на файл..."
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -691,7 +662,7 @@ msgstr "Модел"
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Multiple errors occurred"
-msgstr "Появиха се множество грешки"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -707,35 +678,35 @@ msgstr "Име"
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Need Help?"
-msgstr "Имате нужда от помощ?"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/js/import_action.js:0
 #, python-format
 msgid "No Separator"
-msgstr "Без разделител"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "No matching records found for"
-msgstr "Не са намерени съвпадащи записи за"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "No matching records found for the following"
-msgstr "Не са намерени съвпадащи записи за следното"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Odoo Field"
-msgstr "Област на Odoo"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_preview__othervalue
@@ -752,7 +723,7 @@ msgstr "Основен"
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Prevent import"
-msgstr "Предотвратяване на вноса"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -785,7 +756,7 @@ msgstr "Обобщение"
 #: code:addons/base_import/static/src/legacy/js/import_action.js:0
 #, python-format
 msgid "Search for a field..."
-msgstr "Търсене на специалист в областта..."
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -793,14 +764,14 @@ msgstr "Търсене на специалист в областта..."
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "See possible values"
-msgstr "Вижте възможните стойности"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/js/import_action.js:0
 #, python-format
 msgid "Selected Sheet:"
-msgstr "Избран лист:"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -821,42 +792,42 @@ msgstr "Разделител:"
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Set to:"
-msgstr "Задайте да:"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Set to: False"
-msgstr "Задайте да: False"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Set to: True"
-msgstr "Задайте да: True"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Set value as empty"
-msgstr "Задайте стойност като празна"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Sheet:"
-msgstr "Лист:"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Skip record"
-msgstr "Пропуснете записа"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_preview__somevalue
@@ -875,28 +846,28 @@ msgstr "Празно място"
 #: code:addons/base_import/static/src/legacy/js/import_action.js:0
 #, python-format
 msgid "Standard Fields"
-msgstr "Стандартни полета"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Start at line"
-msgstr "Започнете от линия"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Stop Import"
-msgstr "Спрете вноса"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/js/import_action.js:0
 #, python-format
 msgid "Suggested Fields"
-msgstr "Предложени области"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -917,84 +888,82 @@ msgstr "Тест"
 #: code:addons/base_import/static/src/legacy/js/import_action.js:0
 #, python-format
 msgid "Testing"
-msgstr "Тестване"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_preview
 msgid "Tests : Base Import Model Preview"
-msgstr "Тестове : Предварителен преглед на базовия модел за внос"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_char
 msgid "Tests : Base Import Model, Character"
-msgstr "Тестове : Базов модел за внос, Символ"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_char_noreadonly
 msgid "Tests : Base Import Model, Character No readonly"
-msgstr "Тестове : Базов модел за внос, символ Не е само за четене"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_char_readonly
 msgid "Tests : Base Import Model, Character readonly"
-msgstr "Тестове : Базов модел за внос, само за четене"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_char_required
 msgid "Tests : Base Import Model, Character required"
-msgstr "Тестове : Базов модел за внос, Необходими знаци"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_char_states
 msgid "Tests : Base Import Model, Character states"
-msgstr "Тестове : Базов модел за внос, състояния на символите"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_char_stillreadonly
 msgid "Tests : Base Import Model, Character still readonly"
 msgstr ""
-"Тестове : Базов модел за импортиране, Символът все още е само за четене"
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_m2o
 msgid "Tests : Base Import Model, Many to One"
-msgstr "Тестове : Базов модел за внос, от много към едно"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_m2o_related
 msgid "Tests : Base Import Model, Many to One related"
-msgstr "Тестове : Базов модел за внос, свързан с много към едно"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_m2o_required
 msgid "Tests : Base Import Model, Many to One required"
-msgstr "Тестове : Базов модел за внос, изисква се от много към едно"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_m2o_required_related
 msgid "Tests : Base Import Model, Many to One required related"
 msgstr ""
-"Тестове : Базов модел за внос, изисква се сроден модел от много към едно"
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_o2m
 msgid "Tests : Base Import Model, One to Many"
-msgstr "Тестове : базов модел за внос, от един към много"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_o2m_child
 msgid "Tests : Base Import Model, One to Many child"
-msgstr "Тестове : базов модел за внос, дете от един към много"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_complex
 msgid "Tests: Base Import Model Complex"
-msgstr "Тестове: Базов модел за внос Комплекс"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_float
 msgid "Tests: Base Import Model Float"
-msgstr "Тестове: Внос на базов модел Float"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -1008,35 +977,35 @@ msgstr "Текстов разделител:"
 #: code:addons/base_import/static/src/legacy/js/import_action.js:0
 #, python-format
 msgid "The file contains blocking errors (see below)"
-msgstr "Файлът съдържа грешки при блокирането (вж. по-долу)"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/js/import_action.js:0
 #, python-format
 msgid "The file contains non-blocking warnings (see below)"
-msgstr "Файлът съдържа неблокиращи предупреждения (вж. по-долу)"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "The file will be imported by batches"
-msgstr "Файлът ще бъде импортиран на партиди"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "This column will be concatenated in field"
-msgstr "Тази колона ще бъде слята в полето"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/js/import_action.js:0
 #, python-format
 msgid "This file has been successfully imported up to line %d."
-msgstr "Този файл е успешно импортиран до ред %d."
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -1050,14 +1019,14 @@ msgstr "Разделител за хиляди:"
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "To import multiple values, separate them by a comma"
-msgstr "За да импортирате няколко стойности, разделете ги със запетая"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/js/import_action.js:0
 #, python-format
 msgid "To import, select a field..."
-msgstr "За да импортирате, изберете поле..."
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -1103,21 +1072,21 @@ msgstr "Неозаглавен"
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Upload File"
-msgstr "Качване на файл"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Upload an Excel or CSV file to import"
-msgstr "Качете файл Excel или CSV за импортиране"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Use first row as header"
-msgstr "Използвайте първия ред като заглавие"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_res_users
@@ -1144,7 +1113,7 @@ msgstr "Стойност"
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_float__value2
 msgid "Value2"
-msgstr "Value2"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -1154,15 +1123,13 @@ msgid ""
 "Warning: ignores the labels line, empty lines and lines composed only of "
 "empty cells"
 msgstr ""
-"Предупреждение: игнорира реда с етикети, празните редове и редовете, "
-"съставени само от празни клетки"
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "When a value cannot be matched:"
-msgstr "Когато една стойност не може да бъде сравнена:"
+msgstr ""
 
 #. module: base_import
 #. odoo-python
@@ -1172,8 +1139,6 @@ msgid ""
 "You can not import images via URL, check with your administrator or support "
 "for the reason."
 msgstr ""
-"Не можете да импортирате изображения чрез URL, проверете причината при вашия"
-" администратор или поддръжка."
 
 #. module: base_import
 #. odoo-javascript
@@ -1181,8 +1146,6 @@ msgstr ""
 #, python-format
 msgid "You can test or reload your file before resuming the import."
 msgstr ""
-"Можете да тествате или да презаредите файла си, преди да възобновите "
-"импорта."
 
 #. module: base_import
 #. odoo-python
@@ -1196,35 +1159,21 @@ msgstr "Трябва да конфигурирате поне едно поле 
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "at multiple rows"
-msgstr "в няколко реда"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "at row"
-msgstr "в ред"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "batch"
-msgstr "партида"
-
-#. module: base_import
-#. odoo-javascript
-#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
-#, python-format
-msgid "create"
-msgstr "създаване на"
-
-#. module: base_import
-#. odoo-javascript
-#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
-#, python-format
-msgid "false"
-msgstr "фалшив"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -1232,7 +1181,7 @@ msgstr "фалшив"
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "in field"
-msgstr "в областта"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -1246,46 +1195,18 @@ msgstr "минути"
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "more)"
-msgstr "повече)"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "out of"
-msgstr "от"
-
-#. module: base_import
-#. odoo-javascript
-#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
-#, python-format
-msgid "prevent"
-msgstr "предотвратяване на"
-
-#. module: base_import
-#. odoo-javascript
-#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
-#, python-format
-msgid "set_empty"
-msgstr "set_empty"
-
-#. module: base_import
-#. odoo-javascript
-#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
-#, python-format
-msgid "skip_record"
-msgstr "skip_record"
-
-#. module: base_import
-#. odoo-javascript
-#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
-#, python-format
-msgid "true"
-msgstr "true"
+msgstr ""
 
 #. module: base_import
 #. odoo-python
 #: code:addons/base_import/models/base_import.py:0
 #, python-format
 msgid "unknown error code %s"
-msgstr "Неизвестен код за грешка %s"
+msgstr ""

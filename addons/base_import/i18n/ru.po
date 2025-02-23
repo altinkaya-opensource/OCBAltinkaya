@@ -1,19 +1,33 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* base_import
-#
+# 
+# Translators:
+# Vasiliy Korobatov <korobatov@gmail.com>, 2022
+# Irina Fedulova <istartlin@gmail.com>, 2022
+# Иван Дроздов <hiraetari@gmail.com>, 2022
+# Collex100, 2022
+# Сергей Шебанин <sergey@shebanin.ru>, 2022
+# ILMIR <karamov@it-projects.info>, 2022
+# Ivan Kropotkin <yelizariev@itpp.dev>, 2022
+# Martin Trigaux, 2022
+# Wil Odoo, 2024
+# Смородин Даниил, 2024
+# Ilya Rozhkov, 2024
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-14 19:52+0000\n"
-"PO-Revision-Date: 2025-02-14 19:52+0000\n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"POT-Creation-Date: 2024-02-06 13:31+0000\n"
+"PO-Revision-Date: 2022-09-22 05:45+0000\n"
+"Last-Translator: Ilya Rozhkov, 2024\n"
+"Language-Team: Russian (https://app.transifex.com/odoo/teams/41243/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: \n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #. module: base_import
 #. odoo-javascript
@@ -112,7 +126,6 @@ msgstr "Отмена"
 #, python-format
 msgid "Click 'Resume' to proceed with the import, resuming at line"
 msgstr ""
-"Нажмите кнопку 'Resume', чтобы продолжить импорт, возобновив его на строке"
 
 #. module: base_import
 #. odoo-python
@@ -574,19 +587,6 @@ msgstr "Импорт"
 #. odoo-python
 #: code:addons/base_import/models/base_import.py:0
 #, python-format
-msgid ""
-"Invalid cell format at row %(row)s, column %(col)s: %(cell_value)s, with "
-"format: %(cell_format)s, as (%(format_type)s) formats are not supported."
-msgstr ""
-"Неверный формат ячейки в строке %(row)s, столбце %(col)s: %(cell_value)s, с "
-"форматом: %(cell_format)s, поскольку форматы (%(format_type)s) не "
-"поддерживаются."
-
-#. module: base_import
-#. odoo-python
-#: code:addons/base_import/models/base_import.py:0
-#: code:addons/base_import/models/base_import.py:0
-#, python-format
 msgid "Invalid cell value at row %(row)s, column %(col)s: %(cell_value)s"
 msgstr ""
 "Недействительное значение ячейки в строке %(row)s, столбец %(col)s: "
@@ -719,14 +719,14 @@ msgstr "Есть разделителя"
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "No matching records found for"
-msgstr "Не найдено ни одной подходящей записи для"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "No matching records found for the following"
-msgstr "Не найдено ни одной подходящей записи для следующего"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -769,7 +769,7 @@ msgstr "Поля отношений"
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_mapping__res_model
 msgid "Res Model"
-msgstr "Модель Res"
+msgstr "Res Model"
 
 #. module: base_import
 #. odoo-javascript
@@ -819,7 +819,7 @@ msgstr "Разделитель:"
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "Set to:"
-msgstr "Задано на:"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -1011,7 +1011,7 @@ msgstr "Файл содержит ошибки блокировки (см. ни�
 #: code:addons/base_import/static/src/legacy/js/import_action.js:0
 #, python-format
 msgid "The file contains non-blocking warnings (see below)"
-msgstr "Файл содержит неблокирующие предупреждения (см. ниже)"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -1032,7 +1032,7 @@ msgstr "Этот столбец будет конкатенирован в по�
 #: code:addons/base_import/static/src/legacy/js/import_action.js:0
 #, python-format
 msgid "This file has been successfully imported up to line %d."
-msgstr "Этот файл был успешно импортирован до строки %d."
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -1046,7 +1046,7 @@ msgstr "Разделитель тысяч:"
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "To import multiple values, separate them by a comma"
-msgstr "Чтобы импортировать несколько значений, разделите их запятой"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -1211,20 +1211,6 @@ msgstr "партию"
 #. module: base_import
 #. odoo-javascript
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
-#, python-format
-msgid "create"
-msgstr "создать"
-
-#. module: base_import
-#. odoo-javascript
-#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
-#, python-format
-msgid "false"
-msgstr "ложь"
-
-#. module: base_import
-#. odoo-javascript
-#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "in field"
@@ -1242,7 +1228,7 @@ msgstr "минут"
 #: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
 #, python-format
 msgid "more)"
-msgstr "подробнее)"
+msgstr ""
 
 #. module: base_import
 #. odoo-javascript
@@ -1250,34 +1236,6 @@ msgstr "подробнее)"
 #, python-format
 msgid "out of"
 msgstr "из"
-
-#. module: base_import
-#. odoo-javascript
-#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
-#, python-format
-msgid "prevent"
-msgstr "предотвратить"
-
-#. module: base_import
-#. odoo-javascript
-#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
-#, python-format
-msgid "set_empty"
-msgstr "set_empty"
-
-#. module: base_import
-#. odoo-javascript
-#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
-#, python-format
-msgid "skip_record"
-msgstr "skip_record"
-
-#. module: base_import
-#. odoo-javascript
-#: code:addons/base_import/static/src/legacy/xml/base_import.xml:0
-#, python-format
-msgid "true"
-msgstr "true"
 
 #. module: base_import
 #. odoo-python
