@@ -3962,7 +3962,7 @@ var SnippetsMenu = Widget.extend({
      * @param {Event} ev - a touch event
      */
     _onTouchEvent(ev) {
-        if (ev.touches.length > 1) {
+        if (ev.touches.length > 1 || ev.changedTouches.length < 1) {
             // Ignore multi-touch events.
             return;
         }
@@ -4581,10 +4581,21 @@ var SnippetsMenu = Widget.extend({
             // This is async but using the main editor mutex, currently locked.
             this._updateInvisibleDOM();
 
+            // Updating options upon changing preview mode to avoid ghost overlay
+            const enabledInvisibleOverrideEl = this.options.wysiwyg.lastElement &&
+                this.options.wysiwyg.lastElement.closest(".o_snippet_mobile_invisible, .o_snippet_desktop_invisible");
+            const needDeactivate = enabledInvisibleOverrideEl && enabledInvisibleOverrideEl.dataset.invisible === "1";
+
             return new Promise(resolve => {
-                this.trigger_up('snippet_option_update', {
-                    onSuccess: () => resolve(),
-                });
+                // No need to trigger "snippet_option_update" when snippet is deactivated.
+                if (needDeactivate) {
+                    this._activateSnippet(false);
+                    resolve();
+                } else {
+                    this.trigger_up("snippet_option_update", {
+                        onSuccess: () => resolve(),
+                    });
+                }
             });
         }, false);
     },
