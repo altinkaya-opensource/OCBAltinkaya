@@ -11,6 +11,8 @@ var utils = require('web.utils');
 var { Gui } = require('point_of_sale.Gui');
 const { batched, uuidv4 } = require("point_of_sale.utils");
 const { escape } = require("@web/core/utils/strings");
+const { rpcService } = require('@web/core/network/rpc_service');
+const { isIOS, isIosApp } = require('@web/core/browser/feature_detection');
 
 var QWeb = core.qweb;
 var _t = core._t;
@@ -162,7 +164,30 @@ class PosGlobalState extends PosModel {
         this.uom_unit_id = uom_id[1];
     }
 
+    shouldInvoiceNewTab(actionRecord) {
+        return (
+            (isIOS() || isIosApp()) &&
+            actionRecord.type === "ir.actions.report" &&
+            actionRecord.report_type === "qweb-pdf"
+        );
+    }
+
+    async loadInvoiceReportAction() {
+        try {
+            const future_rpc = rpcService.start({ bus: this.env.posbus });
+            const action = await future_rpc("/web/action/load", {
+                action_id: this.invoiceReportAction,
+            });
+            this.invoiceActionRecord = action;
+        } catch {
+            console.warn(
+                "Error loading invoice report action. In an iOS environment, " +
+                "invoicing an order will replace the current page which will cause reload of the app.");
+        }
+    }
+
     async after_load_server_data(){
+        await this.loadInvoiceReportAction();
         await this.load_product_uom_unit();
         await this.load_orders();
         this.set_start_order();
@@ -264,8 +289,20 @@ class PosGlobalState extends PosModel {
                     }
                 }
                 else {
-                    for (const correspondingProduct of products) {
-                        this._assignApplicableItems(pricelist, correspondingProduct, pricelistItem);
+                    for (const correspondingProduct of modelProducts) {
+                        if (pricelistItem.categ_id) {
+                            let pricelistItem_categ_id = pricelistItem.categ_id[0];
+                            let product_categ_id = correspondingProduct.categ && correspondingProduct.categ.id; 
+                            let parent_categ_ids = correspondingProduct.parent_category_ids;
+                            if (product_categ_id && parent_categ_ids) {
+                                if (_.contains(parent_categ_ids.concat(product_categ_id), pricelistItem_categ_id)) {
+                                    this._assignApplicableItems(pricelist, correspondingProduct, pricelistItem);
+                                }
+                            }
+                        } 
+                        else {
+                            this._assignApplicableItems(pricelist, correspondingProduct, pricelistItem);
+                        }
                     }
                 }
             }
@@ -1566,7 +1603,6 @@ class Product extends PosModel {
     }
     isPricelistItemUsable(item, date) {
         return (
-            (!item.categ_id || _.contains(this.parent_category_ids.concat(this.categ.id), item.categ_id[0])) &&
             (!item.date_start || moment.utc(item.date_start).isSameOrBefore(date)) &&
             (!item.date_end || moment.utc(item.date_end).isSameOrAfter(date))
         );

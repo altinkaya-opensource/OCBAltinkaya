@@ -9,8 +9,8 @@
 # Martin Trigaux, 2022
 # Arnis Putniņš <arnis@allegro.lv>, 2022
 # Anzelika Adejanova, 2022
-# ievaputnina <ievai.putninai@gmail.com>, 2024
 # Will Sensors, 2025
+# ievaputnina <ievai.putninai@gmail.com>, 2025
 # Armīns Jeltajevs <armins.jeltajevs@gmail.com>, 2025
 # 
 msgid ""
@@ -70,7 +70,7 @@ msgstr "\"%s\" nepieciešama piekļuve mikrofonam"
 #: code:addons/mail/static/src/models/channel_member_list_category_view.js:0
 #, python-format
 msgid "%(categoryText)s - %(memberCount)s"
-msgstr ""
+msgstr "%(categoryText)s - %(memberCount)s"
 
 #. module: mail
 #. odoo-python
@@ -2191,6 +2191,8 @@ msgid ""
 "Channel \"%(channel_name)s\" only accepts members of group "
 "\"%(group_name)s\". Forbidden for: %(partner_names)s"
 msgstr ""
+"Kanāls \"%(channel_name)s\" pieņem tikai grupas \"%(group_name)s\" "
+"dalībniekus. Aizliegts: %(partner_names)s"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_channel_rtc_session__channel_member_id
@@ -2871,7 +2873,7 @@ msgstr "Termiņš: %s"
 #: code:addons/mail/static/src/models/call_action_list_view.js:0
 #, python-format
 msgid "Deafen"
-msgstr ""
+msgstr "Atslēgt skaņu"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.message_activity_assigned
@@ -3685,7 +3687,7 @@ msgstr ""
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "FREE"
-msgstr ""
+msgstr "BEZMAKSAS"
 
 #. module: mail
 #. odoo-javascript
@@ -9763,7 +9765,7 @@ msgstr "Iemesls noņemšanai no melnā saraksta: %s"
 #: code:addons/mail/static/src/models/call_action_list_view.js:0
 #, python-format
 msgid "Undeafen"
-msgstr ""
+msgstr "Ieslēgt skaņu"
 
 #. module: mail
 #. odoo-javascript
@@ -14468,7 +14470,7 @@ msgstr ""
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "closed"
-msgstr ""
+msgstr "slēgts"
 
 #. module: mail
 #. odoo-javascript
@@ -15815,14 +15817,14 @@ msgstr ""
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "deaf"
-msgstr ""
+msgstr "izslēgta skaņa"
 
 #. module: mail
 #. odoo-javascript
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "deaf man"
-msgstr ""
+msgstr "kurls vīrietis"
 
 #. module: mail
 #. odoo-javascript
@@ -15830,14 +15832,14 @@ msgstr ""
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "deaf person"
-msgstr ""
+msgstr "kurla persona"
 
 #. module: mail
 #. odoo-javascript
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "deaf woman"
-msgstr ""
+msgstr "kurla sieviete"
 
 #. module: mail
 #. odoo-javascript
@@ -15911,7 +15913,7 @@ msgstr ""
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "delivery"
-msgstr ""
+msgstr "piegāde"
 
 #. module: mail
 #. odoo-javascript
@@ -20796,7 +20798,7 @@ msgstr ""
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "home"
-msgstr ""
+msgstr "māja"
 
 #. module: mail
 #. odoo-javascript
@@ -23613,7 +23615,7 @@ msgstr ""
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "man raising hand"
-msgstr ""
+msgstr "vīrietis pacēla roku"
 
 #. module: mail
 #. odoo-javascript
@@ -26937,7 +26939,7 @@ msgstr ""
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "person raising hand"
-msgstr ""
+msgstr "persona ar paceltu roku"
 
 #. module: mail
 #. odoo-javascript
@@ -28405,7 +28407,7 @@ msgstr ""
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "raised hand"
-msgstr ""
+msgstr "pacelta roka"
 
 #. module: mail
 #. odoo-javascript
@@ -28413,7 +28415,7 @@ msgstr ""
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "raising hand"
-msgstr ""
+msgstr "pacēla roku"
 
 #. module: mail
 #. odoo-javascript
@@ -28421,7 +28423,7 @@ msgstr ""
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "raising hands"
-msgstr ""
+msgstr "paceltas rokas"
 
 #. module: mail
 #. odoo-javascript
@@ -30236,7 +30238,7 @@ msgstr ""
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "sign"
-msgstr ""
+msgstr "parakstīšana"
 
 #. module: mail
 #. odoo-javascript
@@ -35248,7 +35250,7 @@ msgstr ""
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "woman raising hand"
-msgstr ""
+msgstr "sieviete ar paceltu roku"
 
 #. module: mail
 #. odoo-javascript

@@ -49,6 +49,7 @@ _ref_vat = {
     'gr': 'GR12345670',
     'hu': 'HU12345676',
     'hr': 'HR01234567896',  # Croatia, contributed by Milan Tribuson
+    'id': '1234567890123456',
     'ie': 'IE1234567FA',
     'in': "12AAAAA1234AAZA",
     'is': 'IS062199',

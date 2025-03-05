@@ -442,6 +442,8 @@ class AccountAccount(models.Model):
                 account.reconcile = False
             elif account.account_type in ('asset_receivable', 'liability_payable'):
                 account.reconcile = True
+            elif account.account_type == 'asset_cash':
+                account.reconcile = False
             # For other asset/liability accounts, don't do any change to account.reconcile.
 
     def _set_opening_debit(self):
@@ -614,6 +616,8 @@ class AccountAccount(models.Model):
 
         for company, company_accounts in accounts_per_company.items():
             company._update_opening_move({account: data[account.id] for account in company_accounts})
+
+        self.env.flush_all()
 
     def _toggle_reconcile_to_true(self):
         '''Toggle the `reconcile´ boolean from False -> True
