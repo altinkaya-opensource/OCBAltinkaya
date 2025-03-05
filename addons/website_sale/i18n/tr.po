@@ -1,15 +1,39 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* website_sale
-#
+# 
+# Translators:
+# Mehmet Demirel <mdemirell@gmail.com>, 2022
+# Ugur Yilmaz <ugurlu2001@hotmail.com>, 2022
+# Nadir Gazioglu <nadirgazioglu@gmail.com>, 2022
+# İlknur Püskül <ilknurpuskull@gmail.com>, 2022
+# Güven YILMAZ <guvenyilmaz@outlook.com.tr>, 2022
+# Buket Şeker <buket_skr@hotmail.com>, 2022
+# abc Def <hdogan1974@gmail.com>, 2022
+# Gökhan Yüksel <yg_yuksel@hotmail.com>, 2022
+# Gökhan Erdoğdu <gokhan.erdogdu@mechsoft.com.tr>, 2022
+# Saban Yildiz <sabany@projetgrup.com>, 2022
+# Levent Karakaş <levent@mektup.at>, 2022
+# Ramiz Deniz Öner <deniz@denizoner.com>, 2022
+# Murat Durmuş <muratd@projetgrup.com>, 2022
+# Umur Akın <umura@projetgrup.com>, 2022
+# Halil, 2023
+# Martin Trigaux, 2023
+# Murat Kaplan <muratk@projetgrup.com>, 2023
+# Ediz Duman <neps1192@gmail.com>, 2024
+# Ertuğrul Güreş <ertugrulg@projetgrup.com>, 2024
+# Tugay Hatıl <tugayh@projetgrup.com>, 2024
+# Ertan Atay, 2024
+# Wil Odoo, 2025
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-11 14:03+0000\n"
-"PO-Revision-Date: 2023-09-11 14:03+0000\n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"POT-Creation-Date: 2025-02-10 08:26+0000\n"
+"PO-Revision-Date: 2022-09-22 05:57+0000\n"
+"Last-Translator: Wil Odoo, 2025\n"
+"Language-Team: Turkish (https://app.transifex.com/odoo/teams/41243/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -44,6 +68,11 @@ msgstr "%s yorumlar"
 #: model_terms:ir.ui.view,arch_db:website_sale.confirmation
 msgid "&amp; Shipping"
 msgstr "ve Teslimat Adresi"
+
+#. module: website_sale
+#: model_terms:ir.ui.view,arch_db:website_sale.products_item
+msgid "&amp;nbsp;"
+msgstr "&amp;nbsp;"
 
 #. module: website_sale
 #: model_terms:ir.ui.view,arch_db:website_sale.products
@@ -1034,21 +1063,6 @@ msgstr "Görüntü 1024 yakınlaştırılabilir"
 #: model:ir.model.fields,field_description:website_sale.field_product_template__can_publish
 msgid "Can Publish"
 msgstr "Yayınlanabilir"
-
-#. module: website_sale
-#. odoo-python
-#: code:addons/website_sale/controllers/main.py:0
-#, python-format
-msgid "Can not resequence a video at first position."
-msgstr ""
-
-#. module: website_sale
-#. odoo-python
-#: code:addons/website_sale/controllers/main.py:0
-#, python-format
-msgid "Can not resequence embedded image/video with a non compatible image."
-msgstr ""
-"Gömülü görüntü/video uyumlu olmayan bir görüntüyle yeniden sıralanamaz."
 
 #. module: website_sale
 #. odoo-javascript
@@ -4310,6 +4324,13 @@ msgid ""
 msgstr ""
 "<b>Fatura ve gönderim</b> adreslerinizi aynı anda düzenliyorsunuz!<br/>\n"
 "                                            Gönderim adresinizi değiştirmek istiyorsanız,"
+
+#. module: website_sale
+#. odoo-python
+#: code:addons/website_sale/controllers/main.py:0
+#, python-format
+msgid "You can't use a video as the product's main image."
+msgstr "Bir videoyu ürünün ana görseli olarak kullanamazsınız."
 
 #. module: website_sale
 #: model_terms:ir.actions.act_window,help:website_sale.sale_report_action_carts
