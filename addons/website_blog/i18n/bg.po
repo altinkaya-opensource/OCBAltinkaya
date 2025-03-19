@@ -16,22 +16,28 @@
 # Kaloyan Naumov <kaloyan@lumnus.net>, 2023
 # Rumena Georgieva <rumena.georgieva@gmail.com>, 2024
 # Elena Varbanova, 2024
-# Petko Karamotchev, 2024
 # Veselina Slavkova, 2024
+# Petko Karamotchev, 2025
+# Martin Dinovski, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-06 13:32+0000\n"
+"POT-Creation-Date: 2025-02-10 08:28+0000\n"
 "PO-Revision-Date: 2022-09-22 05:56+0000\n"
-"Last-Translator: Veselina Slavkova, 2024\n"
+"Last-Translator: Martin Dinovski, 2025\n"
 "Language-Team: Bulgarian (https://app.transifex.com/odoo/teams/41243/bg/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: bg\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: website_blog
+#: model_terms:ir.ui.view,arch_db:website_blog.date_selector
+msgid "#{year}"
+msgstr ""
 
 #. module: website_blog
 #. odoo-python
@@ -383,7 +389,7 @@ msgstr "По тези линии, колко трудно е настройка�
 #: code:addons/website_blog/static/src/js/website_blog.js:0
 #, python-format
 msgid "Amazing blog article: %s! Check it live: %s"
-msgstr ""
+msgstr "Невероятна блог статия: %s! Проверете на живо: %s"
 
 #. module: website_blog
 #: model:blog.post,subtitle:website_blog.blog_post_1
@@ -1755,7 +1761,7 @@ msgstr ""
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.opt_blog_cover_post
 msgid "Read more"
-msgstr ""
+msgstr "Прочетете повече"
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.posts_loop
@@ -2423,7 +2429,7 @@ msgstr ""
 #. module: website_blog
 #: model:blog.blog,name:website_blog.blog_blog_1
 msgid "Travel"
-msgstr ""
+msgstr "Пътуване"
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.opt_blog_post_share_links_display
@@ -2459,7 +2465,7 @@ msgstr "Използвано във:"
 #: code:addons/website_blog/models/website_snippet_filter.py:0
 #, python-format
 msgid "Viewpoints"
-msgstr ""
+msgstr "Гледни точки"
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.post_info
@@ -2598,7 +2604,7 @@ msgstr ""
 #. module: website_blog
 #: model:blog.tag,name:website_blog.blog_tag_2
 msgid "adventure"
-msgstr ""
+msgstr "приключение"
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.blog_post_template_new_post
@@ -2619,7 +2625,7 @@ msgstr "от"
 #. module: website_blog
 #: model:blog.tag,name:website_blog.blog_tag_5
 msgid "discovery"
-msgstr ""
+msgstr "Откритие"
 
 #. module: website_blog
 #: model:blog.tag,name:website_blog.blog_tag_3
@@ -2634,7 +2640,7 @@ msgstr "е публикуван в"
 #. module: website_blog
 #: model:blog.tag,name:website_blog.blog_tag_1
 msgid "hotels"
-msgstr ""
+msgstr "хотели"
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.blog_post_content
@@ -2654,17 +2660,22 @@ msgstr ""
 #. module: website_blog
 #: model:blog.tag,name:website_blog.blog_tag_4
 msgid "telescopes"
-msgstr ""
+msgstr "телескопи"
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.opt_blog_post_comment
 msgid "to leave a comment"
-msgstr ""
+msgstr "да оставиш коментар"
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.posts_loop
 msgid "unpublished"
 msgstr "отменена публикация"
+
+#. module: website_blog
+#: model_terms:ir.ui.view,arch_db:website_blog.blogs_nav
+msgid "{{blog.name if blog else 'All Blogs'}}"
+msgstr ""
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.opt_blog_post_regular_cover

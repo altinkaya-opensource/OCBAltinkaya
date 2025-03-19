@@ -1,6 +1,6 @@
 import ast
 from collections import defaultdict
-from contextlib import contextmanager
+from contextlib import contextmanager, ExitStack
 from datetime import date, timedelta
 from functools import lru_cache
 
@@ -1419,11 +1419,10 @@ class AccountMoveLine(models.Model):
         before = existing()
         yield
         after = existing()
-        protected = container.get('protected', {})
         for line in after:
             if (
                 line.display_type == 'product'
-                and 'amount_currency' not in protected.get(line, {})
+                and not self.env.is_protected(self._fields['amount_currency'], line)
                 and (not changed('amount_currency') or line not in before)
             ):
                 amount_currency = line.move_id.direction_sign * line.currency_id.round(line.price_subtotal)
@@ -1436,7 +1435,7 @@ class AccountMoveLine(models.Model):
         for line in after:
             if (
                 (changed('amount_currency') or changed('currency_rate') or changed('move_type'))
-                and 'balance' not in protected.get(line, {})
+                and not self.env.is_protected(self._fields['balance'], line)
                 and (not changed('balance') or (line not in before and not line.balance))
             ):
                 balance = line.company_id.currency_id.round(line.amount_currency / line.currency_rate)
@@ -1453,11 +1452,12 @@ class AccountMoveLine(models.Model):
         container = {'records': self}
         move_container = {'records': moves}
         with moves._check_balanced(move_container),\
+             ExitStack() as exit_stack,\
              moves._sync_dynamic_lines(move_container),\
              self._sync_invoice(container):
             lines = super().create([self._sanitize_vals(vals) for vals in vals_list])
+            exit_stack.enter_context(self.env.protecting([protected for vals, line in zip(vals_list, lines) for protected in self.env['account.move']._get_protected_vals(vals, line)]))
             container['records'] = lines
-            container['protected'] = {line: set(vals.keys()) for line, vals in zip(lines, vals_list)}
 
         for line in lines:
             if line.move_id.state == 'posted':
@@ -1512,8 +1512,9 @@ class AccountMoveLine(models.Model):
 
         move_container = {'records': self.move_id}
         with self.move_id._check_balanced(move_container),\
+             self.env.protecting(self.env['account.move']._get_protected_vals(vals, self)),\
              self.move_id._sync_dynamic_lines(move_container),\
-             self._sync_invoice({'records': self, 'protected': {line: set(vals.keys()) for line in self}}):
+             self._sync_invoice({'records': self}):
             self = line_to_write
             if not self:
                 return True
@@ -1557,7 +1558,6 @@ class AccountMoveLine(models.Model):
                                 body=msg,
                                 tracking_value_ids=tracking_value_ids
                             )
-
 
         return result
 
@@ -1880,7 +1880,7 @@ class AccountMoveLine(models.Model):
 
         # Computation of the partial exchange difference. You can skip this part using the
         # `no_exchange_difference` context key (when reconciling an exchange difference for example).
-        if not self._context.get('no_exchange_difference'):
+        if not self._context.get('no_exchange_difference') and not self._context.get('no_exchange_difference_no_recursive'):
             exchange_lines_to_fix = self.env['account.move.line']
             amounts_list = []
             if recon_currency == company_currency:
@@ -2436,7 +2436,11 @@ class AccountMoveLine(models.Model):
         # ==== Create partials ====
 
         partial_no_exch_diff = bool(self.env['ir.config_parameter'].sudo().get_param('account.disable_partial_exchange_diff'))
-        sorted_lines_ctx = sorted_lines.with_context(no_exchange_difference=self._context.get('no_exchange_difference') or partial_no_exch_diff)
+        partial_no_exch_diff_no_recursive = self._context.get('no_exchange_difference_no_recursive', False)
+        sorted_lines_ctx = sorted_lines.with_context(
+            no_exchange_difference_no_recursive=partial_no_exch_diff_no_recursive,  # Don't propagate it recursively
+            no_exchange_difference=self._context.get('no_exchange_difference') or partial_no_exch_diff,
+        )
         partials = sorted_lines_ctx._create_reconciliation_partials()
         results['partials'] = partials
         involved_partials += partials
@@ -2450,7 +2454,7 @@ class AccountMoveLine(models.Model):
 
         is_cash_basis_needed = account.company_id.tax_exigibility and account.account_type in ('asset_receivable', 'liability_payable')
         if is_cash_basis_needed and not self._context.get('move_reverse_cancel') and not self._context.get('no_cash_basis'):
-            tax_cash_basis_moves = partials._create_tax_cash_basis_moves()
+            tax_cash_basis_moves = partials.with_context(no_exchange_difference_no_recursive=False)._create_tax_cash_basis_moves()
             results['tax_cash_basis_moves'] = tax_cash_basis_moves
 
         # ==== Check if a full reconcile is needed ====

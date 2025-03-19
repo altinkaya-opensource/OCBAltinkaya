@@ -5,15 +5,15 @@
 # Translators:
 # Martin Trigaux, 2022
 # Pak Wai Ho, 2023
-# Tony Ng, 2024
+# Tony Ng, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-23 08:23+0000\n"
+"POT-Creation-Date: 2025-02-10 08:27+0000\n"
 "PO-Revision-Date: 2022-09-22 05:53+0000\n"
-"Last-Translator: Tony Ng, 2024\n"
+"Last-Translator: Tony Ng, 2025\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/odoo/teams/41243/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -163,14 +163,14 @@ msgstr "只有管理員才可連接 Outlook 郵件伺服器。"
 #: model:ir.model.fields,field_description:microsoft_outlook.field_ir_mail_server__microsoft_outlook_access_token
 #: model:ir.model.fields,field_description:microsoft_outlook.field_microsoft_outlook_mixin__microsoft_outlook_access_token
 msgid "Outlook Access Token"
-msgstr "Outlook 存取代碼"
+msgstr "Outlook 存取權杖"
 
 #. module: microsoft_outlook
 #: model:ir.model.fields,field_description:microsoft_outlook.field_fetchmail_server__microsoft_outlook_access_token_expiration
 #: model:ir.model.fields,field_description:microsoft_outlook.field_ir_mail_server__microsoft_outlook_access_token_expiration
 #: model:ir.model.fields,field_description:microsoft_outlook.field_microsoft_outlook_mixin__microsoft_outlook_access_token_expiration
 msgid "Outlook Access Token Expiration Timestamp"
-msgstr "Outlook 存取代碼時間戳到期"
+msgstr "Outlook 存取權杖時間戳到期"
 
 #. module: microsoft_outlook
 #: model:ir.model.fields,field_description:microsoft_outlook.field_res_config_settings__microsoft_outlook_client_identifier
@@ -271,15 +271,6 @@ msgstr "在一般設定中，設置 Outlook API 登入資訊以連結 Outlook �
 #: model:ir.model.fields,help:microsoft_outlook.field_microsoft_outlook_mixin__microsoft_outlook_uri
 msgid "The URL to generate the authorization code from Outlook"
 msgstr "從 Outlook 產生授權碼的網址"
-
-#. module: microsoft_outlook
-#. odoo-python
-#: code:addons/microsoft_outlook/models/ir_mail_server.py:0
-#, python-format
-msgid ""
-"This server %r can only be used for your personal email address. Please fill"
-" the \"from_filter\" field with %r."
-msgstr "此伺服器 %r 只能用於你的個人電子郵件地址。請在 from_filter 欄位填寫 %r。"
 
 #. module: microsoft_outlook
 #. odoo-python

@@ -1070,6 +1070,7 @@ class HTTPRequest:
         httprequest = werkzeug.wrappers.Request(environ)
         httprequest.user_agent_class = UserAgent  # use vendored userAgent since it will be removed in 2.1
         httprequest.parameter_storage_class = werkzeug.datastructures.ImmutableOrderedMultiDict
+        httprequest.max_form_memory_size = 10 * 1024 * 1024  # 10 MB
 
         self.__wrapped = httprequest
         self.__environ = self.__wrapped.environ
@@ -1596,8 +1597,12 @@ class Request:
         try:
             directory = root.statics[module]
             filepath = werkzeug.security.safe_join(directory, path)
+            debug = (
+                'assets' in self.session.debug and
+                ' wkhtmltopdf ' not in self.httprequest.user_agent.string
+            )
             res = Stream.from_path(filepath, public=True).get_response(
-                max_age=0 if 'assets' in self.session.debug else STATIC_CACHE,
+                max_age=0 if debug else STATIC_CACHE,
                 content_security_policy=None,
             )
             root.set_csp(res)
