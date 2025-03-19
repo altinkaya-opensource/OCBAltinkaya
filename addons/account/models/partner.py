@@ -337,7 +337,8 @@ class ResPartner(models.Model):
         where_params = [tuple(self.ids)] + where_params
         if where_clause:
             where_clause = 'AND ' + where_clause
-        self._cr.execute("""SELECT account_move_line.partner_id, a.account_type, SUM(account_move_line.amount_residual)
+        # yigit: Added coalesce to prevent null values
+        self._cr.execute("""SELECT account_move_line.partner_id, a.account_type, COALESCE(SUM(account_move_line.amount_residual), 0)
                       FROM """ + tables + """
                       LEFT JOIN account_account a ON (account_move_line.account_id=a.id)
                       WHERE a.account_type IN ('asset_receivable','liability_payable')
