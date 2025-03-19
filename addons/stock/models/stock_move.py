@@ -13,7 +13,7 @@ from odoo.osv.expression import OR
 from odoo.tools.float_utils import float_compare, float_is_zero, float_round
 from odoo.tools.misc import clean_context, OrderedSet, groupby
 
-PROCUREMENT_PRIORITIES = [('0', 'Normal'), ('1', 'Urgent')]
+PROCUREMENT_PRIORITIES = [('0', 'Not urgent'), ('1', 'Normal'), ('2', 'Urgent'), ('3', 'Very Urgent')]
 
 
 class StockMove(models.Model):
