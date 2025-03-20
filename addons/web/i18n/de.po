@@ -11,6 +11,7 @@
 # Michael Hofer, 2023
 # Martin Trigaux, 2023
 # Wil Odoo, 2025
+# Tiffany Chang, 2025
 # Larissa Manderfeld, 2025
 # 
 msgid ""
