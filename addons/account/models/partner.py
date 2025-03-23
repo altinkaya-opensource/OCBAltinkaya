@@ -337,7 +337,8 @@ class ResPartner(models.Model):
         where_params = [tuple(self.ids)] + where_params
         if where_clause:
             where_clause = 'AND ' + where_clause
-        self._cr.execute("""SELECT account_move_line.partner_id, a.account_type, SUM(account_move_line.amount_residual)
+        # yigit: Added coalesce to prevent null values
+        self._cr.execute("""SELECT account_move_line.partner_id, a.account_type, COALESCE(SUM(account_move_line.amount_residual), 0)
                       FROM """ + tables + """
                       LEFT JOIN account_account a ON (account_move_line.account_id=a.id)
                       WHERE a.account_type IN ('asset_receivable','liability_payable')
@@ -404,7 +405,7 @@ class ResPartner(models.Model):
         all_partner_ids = []
         for partner in self.filtered('id'):
             # price_total is in the company currency
-            all_partners_and_children[partner] = self.with_context(active_test=False).search([('id', 'child_of', partner.id)]).ids
+            all_partners_and_children[partner] = set(self.with_context(active_test=False).search([('id', 'child_of', partner.id)]).ids)
             all_partner_ids += all_partners_and_children[partner]
 
         domain = [
@@ -549,9 +550,8 @@ class ResPartner(models.Model):
             partner.bank_account_count = mapped_data.get(partner.id, 0)
 
     def _compute_supplier_invoice_count(self):
-        # retrieve all children partners and prefetch 'parent_id' on them
+        # retrieve all children partners
         all_partners = self.with_context(active_test=False).search([('id', 'child_of', self.ids)])
-        all_partners.read(['parent_id'])
 
         supplier_invoice_groups = self.env['account.move']._read_group(
             domain=[('partner_id', 'in', all_partners.ids),
