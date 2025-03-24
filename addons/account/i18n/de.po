@@ -93,6 +93,12 @@ msgid "# Reconciled Statement Lines"
 msgstr "# Abgestimmte Kontoauszugszeilen"
 
 #. module: account
+#: model:ir.model.fields,field_description:account.field_res_partner__supplier_invoice_count
+#: model:ir.model.fields,field_description:account.field_res_users__supplier_invoice_count
+msgid "# Vendor Bills"
+msgstr "# Lieferantenrechnungen"
+
+#. module: account
 #: model:ir.model.fields,field_description:account.field_account_chart_template__code_digits
 msgid "# of Digits"
 msgstr "# Nachkommastellen"
@@ -11872,6 +11878,11 @@ msgid "Reconciliation Parts"
 msgstr "Abstimmungsteile"
 
 #. module: account
+#: model_terms:ir.actions.act_window,help:account.res_partner_action_supplier_bills
+msgid "Record a new vendor bill"
+msgstr "Eine neue Lieferantenrechnung erfassen"
+
+#. module: account
 #. odoo-python
 #: code:addons/account/models/account_tax.py:0
 #, python-format
@@ -16392,8 +16403,10 @@ msgstr "Lieferantenrechnung erstellt"
 #. odoo-python
 #: code:addons/account/models/account_analytic_account.py:0
 #: code:addons/account/models/chart_template.py:0
+#: model:ir.actions.act_window,name:account.res_partner_action_supplier_bills
 #: model:ir.model.fields.selection,name:account.selection__res_company__quick_edit_mode__in_invoices
 #: model_terms:ir.ui.view,arch_db:account.account_analytic_account_view_form_inherit
+#: model_terms:ir.ui.view,arch_db:account.partner_view_buttons
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
 #: model_terms:ir.ui.view,arch_db:account.res_partner_view_search
 #, python-format
@@ -16453,6 +16466,19 @@ msgstr "Lieferant:"
 #: model_terms:ir.ui.view,arch_db:account.view_account_invoice_report_search
 msgid "Vendors"
 msgstr "Lieferanten"
+
+#. module: account
+#: model_terms:ir.actions.act_window,help:account.res_partner_action_supplier_bills
+msgid ""
+"Vendors bills can be pre-generated based on purchase\n"
+"                orders or receipts. This allows you to control bills\n"
+"                you receive from your vendor according to the draft\n"
+"                document in Odoo."
+msgstr ""
+"Lieferantenrechnungen können vorab auf Grundlage\n"
+"                von Bestellungen oder Lieferungen erstellt werden. Dies\n"
+"                ermöglicht Ihnen die Kontrolle über die Rechnungen,\n"
+"                die Sie von Lieferanten auf Grundlage der Rechnungsentwürfe in Odoo erhalten."
 
 #. module: account
 #. odoo-javascript
@@ -17130,6 +17156,15 @@ msgstr ""
 
 #. module: account
 #. odoo-python
+#: code:addons/account/models/account_account.py:0
+#, python-format
+msgid "You cannot deprecate an account that is used in a tax distribution."
+msgstr ""
+"Ein Konto, das für eine Steuerverteilung verwendet wird, kann nicht "
+"abgeschrieben werden."
+
+#. module: account
+#. odoo-python
 #: code:addons/account/models/res_config_settings.py:0
 #, python-format
 msgid ""
@@ -17390,8 +17425,10 @@ msgstr ""
 #. odoo-python
 #: code:addons/account/models/account_move.py:0
 #, python-format
-msgid "You cannot switch the type of a posted document."
-msgstr "Sie können die Art eines gebuchten Dokuments nicht ändern."
+msgid "You cannot switch the type of a document which has been posted once."
+msgstr ""
+"Sie können die Art eines Dokuments nicht ändern, wenn es bereits gebucht "
+"wurde."
 
 #. module: account
 #. odoo-python
