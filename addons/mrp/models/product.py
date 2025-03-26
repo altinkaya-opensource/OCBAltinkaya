@@ -251,16 +251,19 @@ class ProductProduct(models.Model):
         for product in bom_kits:
             __, bom_sub_lines = bom_kits[product].explode(product, 1)
             bom_sub_lines_per_kit[product] = bom_sub_lines
-            for bom_line, __ in bom_sub_lines:
-                if bom_line.product_id.id not in qties:
-                    prefetch_component_ids.add(bom_line.product_id.id)
+            # erol edit: Changed the way of getting the product id because
+            # of mrp.bom.template.line
+            for __, data in bom_sub_lines:
+                if data['target_product'].id not in qties:
+                    prefetch_component_ids.add(data["target_product"].id)
         # compute kit quantities
         for product in bom_kits:
             bom_sub_lines = bom_sub_lines_per_kit[product]
             # group lines by component
             bom_sub_lines_grouped = collections.defaultdict(list)
             for info in bom_sub_lines:
-                bom_sub_lines_grouped[info[0].product_id].append(info)
+                # erol edit
+                bom_sub_lines_grouped[info[1]["target_product"]].append(info)
             ratios_virtual_available = []
             ratios_qty_available = []
             ratios_incoming_qty = []
@@ -277,7 +280,12 @@ class ProductProduct(models.Model):
                         # products have 0 qty available.
                         continue
                     uom_qty_per_kit = bom_line_data['qty'] / bom_line_data['original_qty']
-                    qty_per_kit += bom_line.product_uom_id._compute_quantity(uom_qty_per_kit, bom_line.product_id.uom_id, round=False, raise_if_failure=False)
+                    qty_per_kit += bom_line.product_uom_id._compute_quantity(
+                        uom_qty_per_kit,
+                        bom_line_data["target_product"].uom_id, # erol edit
+                        round=False,
+                        raise_if_failure=False,
+                    )
                 if not qty_per_kit:
                     continue
                 rounding = component.uom_id.rounding
