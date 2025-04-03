@@ -328,7 +328,7 @@ class MrpBom(models.Model):
                 if product.id in products_ids and product not in bom_by_product:
                     # yigit: Double check if product has its own BoM when we are looking
                     # for phantom BoMs.
-                    if bom_type == "phantom" and self.search([("product_id", "=", product.id)], limit=1):
+                    if bom_type == "phantom" and self.search([("product_id", "=", product.id), ("type", "!=", "phantom")], limit=1):
                         continue
                     bom_by_product[product] = bom
 
