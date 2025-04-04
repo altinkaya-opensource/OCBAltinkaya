@@ -137,7 +137,7 @@ class CustomerPortal(portal.CustomerPortal):
                     order_sudo.id,
                     message=msg,
                     token=order_sudo.access_token,
-                    message_type="notification",
+                    message_type="comment",
                     subtype_xmlid="mail.mt_note",
                     partner_ids=order_sudo.user_id.sudo().partner_id.ids,
                 )
