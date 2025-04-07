@@ -2899,14 +2899,14 @@ msgstr "Mevcut Seri numarası. Lütfen kodlanmış seri numaralarını düzeltin
 #: code:addons/stock/static/src/widgets/forecast_widget.xml:0
 #, python-format
 msgid "Exp"
-msgstr "Exp"
+msgstr "Glck"
 
 #. module: stock
 #. odoo-python
 #: code:addons/stock/models/stock_picking.py:0
 #, python-format
 msgid "Exp %s"
-msgstr "Exp %s"
+msgstr "Glck. %s"
 
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__stock_picking__products_availability_state__expected
