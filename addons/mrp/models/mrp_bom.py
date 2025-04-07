@@ -314,6 +314,10 @@ class MrpBom(models.Model):
             bom = self.search(domain, order='sequence, product_id, id')
             # yigit: prioritize bom with product_id over bom with product_tmpl_id
             bom_with_product_id = bom.filtered(lambda b: b.product_id == products)
+            if bom and bom.bom_template_line_ids and not bom_with_product_id:
+                # yigit: Yet again, find the exact BoM
+                bom_with_product_id = self.search([("product_id", "=", products.id), ("type", "!=", "phantom")], limit=1)
+
             bom = fields.first(bom_with_product_id or bom)
             if bom:
                 bom_by_product[products] = bom
