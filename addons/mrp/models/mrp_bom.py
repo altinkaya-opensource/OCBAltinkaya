@@ -307,6 +307,11 @@ class MrpBom(models.Model):
         products = products.filtered(lambda p: p.type != 'service')
         if not products:
             return bom_by_product
+
+        # yigit: if product has non-phantom specific BoM, it's not a kit.
+        if len(products) == 1 and self.env["mrp.bom"].search([("product_id", "=", products.id), ("type", "!=", "phantom")], limit=1):
+            return bom_by_product
+
         domain = self._bom_find_domain(products, picking_type=picking_type, company_id=company_id, bom_type=bom_type)
 
         # Performance optimization, allow usage of limit and avoid the for loop `bom.product_tmpl_id.product_variant_ids`
@@ -314,10 +319,6 @@ class MrpBom(models.Model):
             bom = self.search(domain, order='sequence, product_id, id')
             # yigit: prioritize bom with product_id over bom with product_tmpl_id
             bom_with_product_id = bom.filtered(lambda b: b.product_id == products)
-            if bom and bom.bom_template_line_ids and not bom_with_product_id:
-                # yigit: Yet again, find the exact BoM
-                bom_with_product_id = self.search([("product_id", "=", products.id), ("type", "!=", "phantom")], limit=1)
-
             bom = fields.first(bom_with_product_id or bom)
             if bom:
                 bom_by_product[products] = bom
