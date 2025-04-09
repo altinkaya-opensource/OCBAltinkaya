@@ -309,7 +309,7 @@ class MrpBom(models.Model):
             return bom_by_product
 
         # yigit: if product has non-phantom specific BoM, it's not a kit.
-        if len(products) == 1 and self.env["mrp.bom"].search([("product_id", "=", products.id), ("type", "!=", "phantom")], limit=1):
+        if bom_type == "phantom" and len(products) == 1 and self.env["mrp.bom"].search([("product_id", "=", products.id), ("type", "!=", "phantom")], limit=1):
             return bom_by_product
 
         domain = self._bom_find_domain(products, picking_type=picking_type, company_id=company_id, bom_type=bom_type)
