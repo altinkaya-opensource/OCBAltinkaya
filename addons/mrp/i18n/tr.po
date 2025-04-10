@@ -1,47 +1,19 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* mrp
-# 
-# Translators:
-# checkyoursix <batuhan.akpinar@gmail.com>, 2022
-# Ayhan KIZILTAN <akiziltan76@hotmail.com>, 2022
-# İmat Yahya Çataklı <yahya.catakli@soluto.com.tr>, 2022
-# Ahmet Altinisik <aaltinisik@altinkaya.com.tr>, 2022
-# Fırat Kaya <firat.kaya@mechsoft.com.tr>, 2022
-# Güven YILMAZ <guvenyilmaz@outlook.com.tr>, 2022
-# Ramiz Deniz Öner <deniz@denizoner.com>, 2022
-# Nadir Gazioglu <nadirgazioglu@gmail.com>, 2022
-# Ozlem Cikrikci <ozlemc@eskayazilim.com.tr>, 2022
-# abc Def <hdogan1974@gmail.com>, 2022
-# Buket Şeker <buket_skr@hotmail.com>, 2022
-# Martin Trigaux, 2022
-# Gökhan Erdoğdu <gokhan.erdogdu@mechsoft.com.tr>, 2022
-# Halil, 2022
-# Murat Durmuş <muratd@projetgrup.com>, 2022
-# Özlem Atalay <ozlema@eskayazilim.com.tr>, 2022
-# Umur Akın <umura@projetgrup.com>, 2022
-# Murat Kaplan <muratk@projetgrup.com>, 2022
-# Tugay Hatıl <tugayh@projetgrup.com>, 2022
-# İlknur Gözütok, 2023
-# Ediz Duman <neps1192@gmail.com>, 2023
-# Ertuğrul Güreş <ertugrulg@projetgrup.com>, 2023
-# Melih Melik Sonmez, 2023
-# Levent Karakaş <levent@mektup.at>, 2024
-# Wil Odoo, 2025
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-10 08:26+0000\n"
-"PO-Revision-Date: 2022-09-22 05:53+0000\n"
-"Last-Translator: Wil Odoo, 2025\n"
-"Language-Team: Turkish (https://app.transifex.com/odoo/teams/41243/tr/)\n"
+"POT-Creation-Date: 2025-04-10 09:28+0000\n"
+"PO-Revision-Date: 2025-04-10 09:28+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: tr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: \n"
 
 #. module: mrp
 #: model:ir.model.fields,help:mrp.field_mrp_production__state
@@ -105,7 +77,7 @@ msgstr "# Ürün Reçetesi Kullanılan Yerin"
 #: code:addons/mrp/models/mrp_unbuild.py:0
 #, python-format
 msgid "%(qty)s %(measure)s unbuilt in %(order)s"
-msgstr "%(qty)s %(measure)s unbuilt in %(order)s"
+msgstr ""
 
 #. module: mrp
 #. odoo-python
@@ -174,11 +146,6 @@ msgstr ""
 "            Manuel işlem gerekli olabilir."
 
 #. module: mrp
-#: model_terms:product.template,description:mrp.product_product_computer_desk_leg_product_template
-msgid "18″ x 2½″ Square Leg"
-msgstr "18″ x 2½″ Kare Ayak"
-
-#. module: mrp
 #. odoo-python
 #: code:addons/mrp/models/mrp_unbuild.py:0
 #, python-format
@@ -194,17 +161,17 @@ msgstr "<i class=\"fa fa-ellipsis-v\" role=\"img\" aria-label=\"Yönet\" title=\
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.workcenter_line_kanban
 msgid "<i class=\"fa fa-pause\" role=\"img\" aria-label=\"Pause\" title=\"Pause\"/>"
-msgstr "<i class=\"fa fa-pause\" role=\"img\" aria-label=\"Pause\" title=\"Pause\"/>"
+msgstr ""
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.workcenter_line_kanban
 msgid "<i class=\"fa fa-play\" role=\"img\" aria-label=\"Run\" title=\"Run\"/>"
-msgstr "<i class=\"fa fa-play\" role=\"img\" aria-label=\"Run\" title=\"Run\"/>"
+msgstr ""
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.workcenter_line_kanban
 msgid "<i class=\"fa fa-stop\" role=\"img\" aria-label=\"Stop\" title=\"Stop\"/>"
-msgstr "<i class=\"fa fa-stop\" role=\"img\" aria-label=\"Stop\" title=\"Stop\"/>"
+msgstr ""
 
 #. module: mrp
 #. odoo-python
@@ -226,7 +193,7 @@ msgstr ""
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_production_form_view
 msgid "<span attrs=\"{'invisible': [('state', '=', 'draft')]}\">/</span>"
-msgstr "<span attrs=\"{'invisible': [('state', '=', 'draft')]}\">/</span>"
+msgstr ""
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.res_config_settings_view_form
@@ -235,9 +202,6 @@ msgid ""
 "specific.\" role=\"img\" aria-label=\"Values set here are company-"
 "specific.\" groups=\"base.group_multi_company\"/>"
 msgstr ""
-"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
-"specific.\" role=\"img\" aria-label=\"Values set here are company-"
-"specific.\" groups=\"base.group_multi_company\"/>"
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_production_form_view
@@ -273,7 +237,7 @@ msgstr "<span class=\"o_stat_text\">Üretilen</span>"
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_workcenter_view
 msgid "<span class=\"o_stat_text\">OEE</span>"
-msgstr "<span class=\"o_stat_text\">OEE</span>"
+msgstr ""
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_bom_form_view
@@ -299,7 +263,7 @@ msgstr "<span class=\"o_stat_text\">Kaynak MO</span>"
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_production_form_view
 msgid "<span class=\"o_stat_text\">Unbuilds</span>"
-msgstr "<span class=\"o_stat_text\">Unbuilds</span>"
+msgstr ""
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.report_mrp_production_components
@@ -483,15 +447,6 @@ msgstr "Ürünü bileşenlerine bölmek için bir BoM tipi kit kullanılır."
 #, python-format
 msgid "A Manufacturing Order is already done or cancelled."
 msgstr "Üretim Emri tamamlanmış ya da iptal edilmiş."
-
-#. module: mrp
-#. odoo-python
-#: code:addons/mrp/models/stock_warehouse.py:0
-#, python-format
-msgid ""
-"A product with a kit-type bill of materials can not have a reordering rule."
-msgstr ""
-"Kit tipi ürün reçetesine sahip bir ürünün yeniden sıralama kuralı olamaz."
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_document__access_token
@@ -822,7 +777,7 @@ msgstr "Uygun"
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.workcenter_line_kanban
 msgid "Avatar"
-msgstr "Avatar"
+msgstr ""
 
 #. module: mrp
 #: model:ir.model.fields,help:mrp.field_product_product__produce_delay
@@ -1026,7 +981,7 @@ msgstr "Bloklar"
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_bom_byproduct__bom_id
 msgid "BoM"
-msgstr "BoM"
+msgstr ""
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_product_product__bom_line_ids
@@ -1066,11 +1021,6 @@ msgstr "BoM Genel Bakış"
 #: model_terms:ir.ui.view,arch_db:mrp.view_mrp_bom_filter
 msgid "BoM Type"
 msgstr "BoM Türü"
-
-#. module: mrp
-#: model:product.template,name:mrp.product_product_computer_desk_bolt_product_template
-msgid "Bolt"
-msgstr "Civata"
 
 #. module: mrp
 #. odoo-javascript
@@ -1209,6 +1159,106 @@ msgid "Change Quantity To Produce"
 msgstr "Üretilecek Miktarı Değiştir"
 
 #. module: mrp
+#: model:ir.model.fields,field_description:mrp.field_change_production_qty__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_bom__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_bom_byproduct__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_bom_line__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_consumption_warning__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_consumption_warning_line__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_document__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_immediate_production__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_immediate_production_line__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_production__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_backorder__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_backorder_line__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_split__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_split_line__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_split_multi__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_routing_workcenter__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_unbuild__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_capacity__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_productivity__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_productivity_loss__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_productivity_loss_type__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_tag__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_workorder__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_procurement_group__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_product_product__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_product_template__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_report_mrp_report_bom_structure__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_report_stock_report_product_product_replenishment__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_report_stock_report_reception__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_report_stock_report_stock_rule__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_res_company__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_res_config_settings__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_stock_assign_serial__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_stock_lot__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_stock_move__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_stock_move_line__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_stock_picking__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_stock_picking_type__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_stock_quant__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_stock_rule__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_stock_scrap__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_stock_traceability_report__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_stock_warehouse__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_stock_warehouse_orderpoint__changeset_change_ids
+#: model:ir.model.fields,field_description:mrp.field_stock_warn_insufficient_qty_unbuild__changeset_change_ids
+msgid "Changeset Changes"
+msgstr "Changeset Değişiklikleri"
+
+#. module: mrp
+#: model:ir.model.fields,field_description:mrp.field_change_production_qty__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_bom__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_bom_byproduct__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_bom_line__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_consumption_warning__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_consumption_warning_line__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_document__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_immediate_production__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_immediate_production_line__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_production__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_backorder__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_backorder_line__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_split__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_split_line__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_split_multi__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_routing_workcenter__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_unbuild__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_capacity__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_productivity__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_productivity_loss__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_productivity_loss_type__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_tag__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_workorder__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_procurement_group__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_product_product__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_product_template__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_report_mrp_report_bom_structure__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_report_stock_report_product_product_replenishment__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_report_stock_report_reception__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_report_stock_report_stock_rule__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_res_company__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_res_config_settings__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_stock_assign_serial__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_stock_lot__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_stock_move__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_stock_move_line__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_stock_picking__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_stock_picking_type__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_stock_quant__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_stock_rule__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_stock_scrap__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_stock_traceability_report__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_stock_warehouse__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_stock_warehouse_orderpoint__changeset_ids
+#: model:ir.model.fields,field_description:mrp.field_stock_warn_insufficient_qty_unbuild__changeset_ids
+msgid "Changesets"
+msgstr "Değişiklikler"
+
+#. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_production_form_view
 msgid "Check availability"
 msgstr "Uygunluk Kontrolü"
@@ -1216,7 +1266,7 @@ msgstr "Uygunluk Kontrolü"
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_document__checksum
 msgid "Checksum/SHA1"
-msgstr "Checksum/SHA1"
+msgstr ""
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_workcenter__time_stop
@@ -1247,7 +1297,7 @@ msgstr "Renk İndeksi"
 #. module: mrp
 #: model:ir.model,name:mrp.model_res_company
 msgid "Companies"
-msgstr "Şirketler"
+msgstr "Firmalar"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_bom__company_id
@@ -1468,6 +1518,156 @@ msgid "Could not display the selected spreadsheet"
 msgstr "Seçili elektronik tablo görüntülenemedi"
 
 #. module: mrp
+#: model:ir.model.fields,field_description:mrp.field_change_production_qty__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_bom__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_bom_byproduct__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_bom_line__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_consumption_warning__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_consumption_warning_line__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_document__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_immediate_production__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_immediate_production_line__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_production__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_backorder__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_backorder_line__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_split__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_split_line__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_split_multi__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_routing_workcenter__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_unbuild__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_capacity__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_productivity__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_productivity_loss__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_productivity_loss_type__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_tag__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_workorder__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_procurement_group__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_product_product__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_product_template__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_report_mrp_report_bom_structure__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_report_stock_report_product_product_replenishment__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_report_stock_report_reception__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_report_stock_report_stock_rule__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_res_company__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_res_config_settings__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_stock_assign_serial__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_stock_lot__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_stock_move__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_stock_move_line__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_stock_picking__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_stock_picking_type__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_stock_quant__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_stock_rule__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_stock_scrap__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_stock_traceability_report__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_stock_warehouse__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_stock_warehouse_orderpoint__count_changesets
+#: model:ir.model.fields,field_description:mrp.field_stock_warn_insufficient_qty_unbuild__count_changesets
+msgid "Count Changesets"
+msgstr "Sayım Değişiklik Setleri"
+
+#. module: mrp
+#: model:ir.model.fields,field_description:mrp.field_change_production_qty__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_mrp_bom__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_mrp_bom_byproduct__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_mrp_bom_line__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_mrp_consumption_warning__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_mrp_consumption_warning_line__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_mrp_document__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_mrp_immediate_production__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_mrp_immediate_production_line__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_mrp_production__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_backorder__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_backorder_line__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_split__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_split_line__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_split_multi__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_mrp_routing_workcenter__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_mrp_unbuild__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_capacity__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_productivity__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_productivity_loss__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_productivity_loss_type__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_tag__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_mrp_workorder__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_procurement_group__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_product_product__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_product_template__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_report_mrp_report_bom_structure__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_report_stock_report_product_product_replenishment__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_report_stock_report_reception__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_report_stock_report_stock_rule__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_res_company__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_res_config_settings__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_stock_assign_serial__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_stock_lot__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_stock_move__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_stock_move_line__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_stock_picking__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_stock_picking_type__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_stock_quant__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_stock_rule__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_stock_scrap__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_stock_traceability_report__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_stock_warehouse__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_stock_warehouse_orderpoint__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:mrp.field_stock_warn_insufficient_qty_unbuild__count_pending_changeset_changes
+msgid "Count Pending Changeset Changes"
+msgstr "Bekleyen Değişiklik Seti Değişikliklerini Say"
+
+#. module: mrp
+#: model:ir.model.fields,field_description:mrp.field_change_production_qty__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_bom__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_bom_byproduct__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_bom_line__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_consumption_warning__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_consumption_warning_line__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_document__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_immediate_production__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_immediate_production_line__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_production__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_backorder__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_backorder_line__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_split__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_split_line__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_split_multi__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_routing_workcenter__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_unbuild__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_capacity__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_productivity__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_productivity_loss__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_productivity_loss_type__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_tag__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_mrp_workorder__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_procurement_group__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_product_product__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_product_template__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_report_mrp_report_bom_structure__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_report_stock_report_product_product_replenishment__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_report_stock_report_reception__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_report_stock_report_stock_rule__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_res_company__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_res_config_settings__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_stock_assign_serial__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_stock_lot__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_stock_move__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_stock_move_line__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_stock_picking__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_stock_picking_type__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_stock_quant__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_stock_rule__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_stock_scrap__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_stock_traceability_report__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_stock_warehouse__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_stock_warehouse_orderpoint__count_pending_changesets
+#: model:ir.model.fields,field_description:mrp.field_stock_warn_insufficient_qty_unbuild__count_pending_changesets
+msgid "Count Pending Changesets"
+msgstr "Bekleyen Değişiklik Setlerini Say"
+
+#. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_production__mrp_production_backorder_count
 msgid "Count of linked backorder"
 msgstr "Bağlantılı ön teslimat sayısı"
@@ -1500,7 +1700,7 @@ msgstr ""
 #. module: mrp
 #: model_terms:ir.actions.act_window,help:mrp.mrp_production_report
 msgid "Create a new manufacturing order"
-msgstr " Yeni bir üretim emri oluştur "
+msgstr "Yeni bir üretim emri oluştur"
 
 #. module: mrp
 #: model_terms:ir.actions.act_window,help:mrp.mrp_routing_action
@@ -1900,21 +2100,6 @@ msgid "Draft"
 msgstr "Taslak"
 
 #. module: mrp
-#: model:product.template,name:mrp.product_product_drawer_drawer_product_template
-msgid "Drawer Black"
-msgstr "Siyah Çekmece"
-
-#. module: mrp
-#: model:product.template,name:mrp.product_product_drawer_case_product_template
-msgid "Drawer Case Black"
-msgstr "Siyah Portatif Çekmece"
-
-#. module: mrp
-#: model_terms:product.template,description:mrp.product_product_drawer_drawer_product_template
-msgid "Drawer on casters for great usability."
-msgstr "Mükemmel kullanılabilirlik için tekerlekler üzerinde çekmece."
-
-#. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.view_document_file_kanban_mrp
 msgid "Dropdown menu"
 msgstr "Aşağı Açılır Menü"
@@ -1990,6 +2175,11 @@ msgid "Ensure the traceability of a storable product in your warehouse."
 msgstr "Deponuzda stoklanabilir bir ürünün izlenebilirliğini sağlayın."
 
 #. module: mrp
+#: model:stock.route,name:mrp.route_warehouse0_manufacture
+msgid "Eski Üretim"
+msgstr "Üretim"
+
+#. module: mrp
 #. odoo-python
 #: code:addons/mrp/report/mrp_report_bom_structure.py:0
 #, python-format
@@ -2018,7 +2208,7 @@ msgstr "Mevcut Seri Numaraları (%s)"
 #: code:addons/mrp/models/mrp_production.py:0
 #, python-format
 msgid "Exp %s"
-msgstr "Exp %s"
+msgstr ""
 
 #. module: mrp
 #: model:ir.model.fields.selection,name:mrp.selection__mrp_production__components_availability_state__expected
@@ -2048,6 +2238,13 @@ msgstr "Beklenen Süre (dakika)"
 #: model:ir.model.fields,field_description:mrp.field_stock_assign_serial__expected_qty
 msgid "Expected Quantity"
 msgstr "Beklenen Miktar"
+
+#. module: mrp
+#: model:ir.model.fields,field_description:mrp.field_mrp_bom__failed_message_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_production__failed_message_ids
+#: model:ir.model.fields,field_description:mrp.field_mrp_unbuild__failed_message_ids
+msgid "Failed Messages"
+msgstr ""
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_document__datas
@@ -2340,7 +2537,7 @@ msgstr "Saat"
 #: model:ir.model.fields,field_description:mrp.field_mrp_workorder__id
 #: model:ir.model.fields,field_description:mrp.field_stock_warn_insufficient_qty_unbuild__id
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_production__activity_exception_icon
@@ -2576,17 +2773,12 @@ msgid "JSON data for the popover widget"
 msgstr "Popover widget'ı için JSON verisi"
 
 #. module: mrp
-#: model:ir.model.fields,field_description:mrp.field_mrp_document__key
-msgid "Key"
-msgstr "Anahtar"
-
-#. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_stock_move__description_bom_line
 #: model:ir.model.fields,field_description:mrp.field_stock_move_line__description_bom_line
 #: model:ir.model.fields.selection,name:mrp.selection__mrp_bom__type__phantom
 #: model_terms:ir.ui.view,arch_db:mrp.view_mrp_bom_filter
 msgid "Kit"
-msgstr "Kit"
+msgstr ""
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_change_production_qty____last_update
@@ -2708,11 +2900,6 @@ msgid ""
 msgstr ""
 "Bu MO için en son bileşen kullanılabilirlik durumu. Yeşilse, Malzeme Listesi"
 " yapılandırmasına göre MO'nun hazır olma durumu hazırdır."
-
-#. module: mrp
-#: model_terms:product.template,description:mrp.product_product_wood_ply_product_template
-msgid "Layers that are stick together to assemble wood panels."
-msgstr "Ahşap panelleri monte etmek için birbirine yapışan katmanlar."
 
 #. module: mrp
 #. odoo-javascript
@@ -2904,7 +3091,6 @@ msgstr "Üretim Akış Zamanı"
 #: code:addons/mrp/models/stock_warehouse.py:0
 #: model:ir.model.fields,field_description:mrp.field_stock_warehouse__manufacture_steps
 #: model:ir.model.fields.selection,name:mrp.selection__stock_rule__action__manufacture
-#: model:stock.route,name:mrp.route_warehouse0_manufacture
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_report_stock_rule
 #, python-format
 msgid "Manufacture"
@@ -3152,7 +3338,7 @@ msgstr "Diğer"
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_immediate_production__mo_ids
 msgid "Mo"
-msgstr "Mo"
+msgstr ""
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_production__move_byproduct_ids
@@ -3304,10 +3490,10 @@ msgstr ""
 
 #. module: mrp
 #: model:ir.model.fields.selection,name:mrp.selection__mrp_document__priority__0
-#: model:ir.model.fields.selection,name:mrp.selection__mrp_production__priority__0
+#: model:ir.model.fields.selection,name:mrp.selection__mrp_production__priority__1
 #: model:ir.model.fields.selection,name:mrp.selection__mrp_workcenter__working_state__normal
 msgid "Normal"
-msgstr "Normal"
+msgstr ""
 
 #. module: mrp
 #. odoo-python
@@ -3316,6 +3502,11 @@ msgstr "Normal"
 #, python-format
 msgid "Not Available"
 msgstr "Mevcut Değil"
+
+#. module: mrp
+#: model:ir.model.fields.selection,name:mrp.selection__mrp_production__priority__0
+msgid "Not urgent"
+msgstr "Acil Değil"
 
 #. module: mrp
 #. odoo-python
@@ -3413,7 +3604,7 @@ msgstr "Kaynak MO adedi"
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_workcenter_kanban
 msgid "OEE"
-msgstr "OEE"
+msgstr ""
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_workcenter__oee_target
@@ -3592,7 +3783,7 @@ msgstr "Genel Bakış"
 #: model:ir.model.fields,field_description:mrp.field_mrp_routing_workcenter__worksheet
 #: model:ir.model.fields.selection,name:mrp.selection__mrp_routing_workcenter__worksheet_type__pdf
 msgid "PDF"
-msgstr "PDF"
+msgstr ""
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_bom_line__bom_id
@@ -3750,21 +3941,6 @@ msgid "Planning Issues"
 msgstr "Planlama Sorunları"
 
 #. module: mrp
-#: model:product.template,name:mrp.product_product_plastic_laminate_product_template
-msgid "Plastic Laminate"
-msgstr "Plastik laminat"
-
-#. module: mrp
-#: model:product.template,name:mrp.product_product_wood_ply_product_template
-msgid "Ply Layer"
-msgstr "Kat Tabakası"
-
-#. module: mrp
-#: model:product.template,name:mrp.product_product_ply_veneer_product_template
-msgid "Ply Veneer"
-msgstr "Kat Kaplama"
-
-#. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_workorder__json_popover
 msgid "Popover Data JSON"
 msgstr "Popover JSON Verisi"
@@ -3814,7 +3990,7 @@ msgstr "Öncelik"
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.res_config_settings_view_form
 msgid "Process operations at specific work centers"
-msgstr "Process operations at specific work centers"
+msgstr ""
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_unbuild__produce_line_ids
@@ -3890,7 +4066,7 @@ msgstr "Operasyonda Üretilen"
 #: model_terms:ir.ui.view,arch_db:mrp.view_mrp_production_work_order_search
 #, python-format
 msgid "Product"
-msgstr "Ürün"
+msgstr "Ürün Şablonu"
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_bom_form_view
@@ -3963,7 +4139,7 @@ msgstr "Ürün Ölçü Birimi"
 #: model:ir.model,name:mrp.model_product_product
 #: model:ir.model.fields,field_description:mrp.field_mrp_bom__product_id
 msgid "Product Variant"
-msgstr "Ürün Varyantı"
+msgstr "Ürün"
 
 #. module: mrp
 #: model:ir.actions.act_window,name:mrp.mrp_product_variant_action
@@ -4178,7 +4354,7 @@ msgstr "Miktar:"
 #. module: mrp
 #: model:ir.model,name:mrp.model_stock_quant
 msgid "Quants"
-msgstr "Stoklar"
+msgstr "Adet"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_workorder__move_raw_ids
@@ -4446,11 +4622,6 @@ msgid "Scraps"
 msgstr "Hurdalar"
 
 #. module: mrp
-#: model:product.template,name:mrp.product_product_computer_desk_screw_product_template
-msgid "Screw"
-msgstr "Vida"
-
-#. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_unbuild_search_view
 msgid "Search"
 msgstr "Arama"
@@ -4634,14 +4805,54 @@ msgid "Slot into workcenter calendar once planned"
 msgstr "Takvim planlandığından iş merkezine yerleştirin."
 
 #. module: mrp
-#: model_terms:product.template,description:mrp.product_product_computer_desk_head_product_template
-msgid "Solid wood is a durable natural material."
-msgstr "Masif ahşap, dayanıklı bir doğal malzemedir."
-
-#. module: mrp
-#: model_terms:product.template,description:mrp.product_product_computer_desk_product_template
-msgid "Solid wood table."
-msgstr "Masif ahşap masa."
+#: model:ir.model.fields,field_description:mrp.field_change_production_qty__smart_search
+#: model:ir.model.fields,field_description:mrp.field_mrp_bom__smart_search
+#: model:ir.model.fields,field_description:mrp.field_mrp_bom_byproduct__smart_search
+#: model:ir.model.fields,field_description:mrp.field_mrp_bom_line__smart_search
+#: model:ir.model.fields,field_description:mrp.field_mrp_consumption_warning__smart_search
+#: model:ir.model.fields,field_description:mrp.field_mrp_consumption_warning_line__smart_search
+#: model:ir.model.fields,field_description:mrp.field_mrp_document__smart_search
+#: model:ir.model.fields,field_description:mrp.field_mrp_immediate_production__smart_search
+#: model:ir.model.fields,field_description:mrp.field_mrp_immediate_production_line__smart_search
+#: model:ir.model.fields,field_description:mrp.field_mrp_production__smart_search
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_backorder__smart_search
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_backorder_line__smart_search
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_split__smart_search
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_split_line__smart_search
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_split_multi__smart_search
+#: model:ir.model.fields,field_description:mrp.field_mrp_routing_workcenter__smart_search
+#: model:ir.model.fields,field_description:mrp.field_mrp_unbuild__smart_search
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter__smart_search
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_capacity__smart_search
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_productivity__smart_search
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_productivity_loss__smart_search
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_productivity_loss_type__smart_search
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_tag__smart_search
+#: model:ir.model.fields,field_description:mrp.field_mrp_workorder__smart_search
+#: model:ir.model.fields,field_description:mrp.field_procurement_group__smart_search
+#: model:ir.model.fields,field_description:mrp.field_product_product__smart_search
+#: model:ir.model.fields,field_description:mrp.field_product_template__smart_search
+#: model:ir.model.fields,field_description:mrp.field_report_mrp_report_bom_structure__smart_search
+#: model:ir.model.fields,field_description:mrp.field_report_stock_report_product_product_replenishment__smart_search
+#: model:ir.model.fields,field_description:mrp.field_report_stock_report_reception__smart_search
+#: model:ir.model.fields,field_description:mrp.field_report_stock_report_stock_rule__smart_search
+#: model:ir.model.fields,field_description:mrp.field_res_company__smart_search
+#: model:ir.model.fields,field_description:mrp.field_res_config_settings__smart_search
+#: model:ir.model.fields,field_description:mrp.field_stock_assign_serial__smart_search
+#: model:ir.model.fields,field_description:mrp.field_stock_lot__smart_search
+#: model:ir.model.fields,field_description:mrp.field_stock_move__smart_search
+#: model:ir.model.fields,field_description:mrp.field_stock_move_line__smart_search
+#: model:ir.model.fields,field_description:mrp.field_stock_picking__smart_search
+#: model:ir.model.fields,field_description:mrp.field_stock_picking_type__smart_search
+#: model:ir.model.fields,field_description:mrp.field_stock_quant__smart_search
+#: model:ir.model.fields,field_description:mrp.field_stock_rule__smart_search
+#: model:ir.model.fields,field_description:mrp.field_stock_scrap__smart_search
+#: model:ir.model.fields,field_description:mrp.field_stock_traceability_report__smart_search
+#: model:ir.model.fields,field_description:mrp.field_stock_warehouse__smart_search
+#: model:ir.model.fields,field_description:mrp.field_stock_warehouse_orderpoint__smart_search
+#: model:ir.model.fields,field_description:mrp.field_stock_warn_insufficient_qty_unbuild__smart_search
+msgid "Smart Search"
+msgstr "Akıllı Arama"
 
 #. module: mrp
 #. odoo-python
@@ -4758,16 +4969,6 @@ msgstr "Bölünmüş üretim"
 #: model:ir.actions.act_window,name:mrp.action_mrp_production_split_multi
 msgid "Split productions"
 msgstr "Bölünmüş üretimler"
-
-#. module: mrp
-#: model_terms:product.template,description:mrp.product_product_computer_desk_screw_product_template
-msgid "Stainless steel screw"
-msgstr "Çelik paslanmaz vida"
-
-#. module: mrp
-#: model_terms:product.template,description:mrp.product_product_computer_desk_bolt_product_template
-msgid "Stainless steel screw full (dia - 5mm, Length - 10mm)"
-msgstr "Paslanmaz çelik vida (çap - 5mm, Uzunluk - 10mm)"
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.view_mrp_production_filter
@@ -4902,31 +5103,6 @@ msgid "Subcontracting"
 msgstr "Fason"
 
 #. module: mrp
-#: model:product.template,name:mrp.product_product_computer_desk_product_template
-msgid "Table"
-msgstr "Masa"
-
-#. module: mrp
-#: model:product.template,name:mrp.product_product_table_kit_product_template
-msgid "Table Kit"
-msgstr "Masa Parçası"
-
-#. module: mrp
-#: model:product.template,name:mrp.product_product_computer_desk_leg_product_template
-msgid "Table Leg"
-msgstr "Masa Ayağı"
-
-#. module: mrp
-#: model:product.template,name:mrp.product_product_computer_desk_head_product_template
-msgid "Table Top"
-msgstr "Masa Üstü"
-
-#. module: mrp
-#: model_terms:product.template,description:mrp.product_product_table_kit_product_template
-msgid "Table kit"
-msgstr "Masa parçası"
-
-#. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_workcenter__tag_ids
 msgid "Tag"
 msgstr "Etiket"
@@ -5021,6 +5197,106 @@ msgid "The following replenishment order has been generated"
 msgstr "Aşağıdaki yenileme siparişi oluşturuldu"
 
 #. module: mrp
+#: model:ir.model.fields,help:mrp.field_change_production_qty__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_mrp_bom__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_mrp_bom_byproduct__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_mrp_bom_line__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_mrp_consumption_warning__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_mrp_consumption_warning_line__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_mrp_document__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_mrp_immediate_production__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_mrp_immediate_production_line__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_mrp_production__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_mrp_production_backorder__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_mrp_production_backorder_line__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_mrp_production_split__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_mrp_production_split_line__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_mrp_production_split_multi__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_mrp_routing_workcenter__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_mrp_unbuild__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_mrp_workcenter__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_mrp_workcenter_capacity__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_mrp_workcenter_productivity__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_mrp_workcenter_productivity_loss__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_mrp_workcenter_productivity_loss_type__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_mrp_workcenter_tag__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_mrp_workorder__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_procurement_group__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_product_product__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_product_template__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_report_mrp_report_bom_structure__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_report_stock_report_product_product_replenishment__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_report_stock_report_reception__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_report_stock_report_stock_rule__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_res_company__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_res_config_settings__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_stock_assign_serial__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_stock_lot__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_stock_move__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_stock_move_line__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_stock_picking__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_stock_picking_type__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_stock_quant__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_stock_rule__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_stock_scrap__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_stock_traceability_report__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_stock_warehouse__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_stock_warehouse_orderpoint__count_pending_changeset_changes
+#: model:ir.model.fields,help:mrp.field_stock_warn_insufficient_qty_unbuild__count_pending_changeset_changes
+msgid "The number of pending changes of this record"
+msgstr "Bu kaydın bekleyen değişiklik sayısı"
+
+#. module: mrp
+#: model:ir.model.fields,help:mrp.field_change_production_qty__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_bom__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_bom_byproduct__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_bom_line__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_consumption_warning__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_consumption_warning_line__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_document__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_immediate_production__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_immediate_production_line__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_production__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_production_backorder__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_production_backorder_line__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_production_split__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_production_split_line__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_production_split_multi__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_routing_workcenter__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_unbuild__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_workcenter__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_workcenter_capacity__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_workcenter_productivity__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_workcenter_productivity_loss__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_workcenter_productivity_loss_type__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_workcenter_tag__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_workorder__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_procurement_group__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_product_product__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_product_template__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_report_mrp_report_bom_structure__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_report_stock_report_product_product_replenishment__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_report_stock_report_reception__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_report_stock_report_stock_rule__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_res_company__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_res_config_settings__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_stock_assign_serial__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_stock_lot__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_stock_move__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_stock_move_line__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_stock_picking__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_stock_picking_type__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_stock_quant__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_stock_rule__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_stock_scrap__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_stock_traceability_report__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_stock_warehouse__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_stock_warehouse_orderpoint__count_pending_changesets
+#: model:ir.model.fields,help:mrp.field_stock_warn_insufficient_qty_unbuild__count_pending_changesets
+msgid "The number of pending changesets of this record"
+msgstr "Bu kaydın bekleyen değişiklik setlerinin sayısı"
+
+#. module: mrp
 #: model:ir.model.fields,help:mrp.field_mrp_workorder__qty_produced
 msgid "The number of products already handled by this work order"
 msgstr "Bu iş emri tarafından halihazırda ele alınan ürünlerin sayısı"
@@ -5031,6 +5307,56 @@ msgid ""
 "The operation where the components are consumed, or the finished products "
 "created."
 msgstr "Bileşenlerin tüketildiği veya bitmiş ürünler oluşturulduğu işlem."
+
+#. module: mrp
+#: model:ir.model.fields,help:mrp.field_change_production_qty__count_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_bom__count_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_bom_byproduct__count_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_bom_line__count_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_consumption_warning__count_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_consumption_warning_line__count_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_document__count_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_immediate_production__count_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_immediate_production_line__count_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_production__count_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_production_backorder__count_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_production_backorder_line__count_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_production_split__count_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_production_split_line__count_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_production_split_multi__count_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_routing_workcenter__count_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_unbuild__count_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_workcenter__count_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_workcenter_capacity__count_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_workcenter_productivity__count_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_workcenter_productivity_loss__count_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_workcenter_productivity_loss_type__count_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_workcenter_tag__count_changesets
+#: model:ir.model.fields,help:mrp.field_mrp_workorder__count_changesets
+#: model:ir.model.fields,help:mrp.field_procurement_group__count_changesets
+#: model:ir.model.fields,help:mrp.field_product_product__count_changesets
+#: model:ir.model.fields,help:mrp.field_product_template__count_changesets
+#: model:ir.model.fields,help:mrp.field_report_mrp_report_bom_structure__count_changesets
+#: model:ir.model.fields,help:mrp.field_report_stock_report_product_product_replenishment__count_changesets
+#: model:ir.model.fields,help:mrp.field_report_stock_report_reception__count_changesets
+#: model:ir.model.fields,help:mrp.field_report_stock_report_stock_rule__count_changesets
+#: model:ir.model.fields,help:mrp.field_res_company__count_changesets
+#: model:ir.model.fields,help:mrp.field_res_config_settings__count_changesets
+#: model:ir.model.fields,help:mrp.field_stock_assign_serial__count_changesets
+#: model:ir.model.fields,help:mrp.field_stock_lot__count_changesets
+#: model:ir.model.fields,help:mrp.field_stock_move__count_changesets
+#: model:ir.model.fields,help:mrp.field_stock_move_line__count_changesets
+#: model:ir.model.fields,help:mrp.field_stock_picking__count_changesets
+#: model:ir.model.fields,help:mrp.field_stock_picking_type__count_changesets
+#: model:ir.model.fields,help:mrp.field_stock_quant__count_changesets
+#: model:ir.model.fields,help:mrp.field_stock_rule__count_changesets
+#: model:ir.model.fields,help:mrp.field_stock_scrap__count_changesets
+#: model:ir.model.fields,help:mrp.field_stock_traceability_report__count_changesets
+#: model:ir.model.fields,help:mrp.field_stock_warehouse__count_changesets
+#: model:ir.model.fields,help:mrp.field_stock_warehouse_orderpoint__count_changesets
+#: model:ir.model.fields,help:mrp.field_stock_warn_insufficient_qty_unbuild__count_changesets
+msgid "The overall number of changesets of this record"
+msgstr "Bu kaydın toplam değişiklik seti sayısı"
 
 #. module: mrp
 #: model:ir.model.fields,help:mrp.field_mrp_bom_byproduct__cost_share
@@ -5144,11 +5470,6 @@ msgstr ""
 #, python-format
 msgid "The work order should have already been processed."
 msgstr "İş emri çoktan işlenmeliydi."
-
-#. module: mrp
-#: model:ir.model.fields,field_description:mrp.field_mrp_document__theme_template_id
-msgid "Theme Template"
-msgstr "Tema Şablonu"
 
 #. module: mrp
 #. odoo-python
@@ -5360,11 +5681,6 @@ msgid "Today Activities"
 msgstr "Bugünkü Aktiviteler"
 
 #. module: mrp
-#: model_terms:product.template,description:mrp.product_product_wood_wear_product_template
-msgid "Top layer of a wood panel."
-msgstr "Bir ahşap panelin üst katmanı."
-
-#. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_routing_workcenter_bom_tree_view
 msgid "Total Duration"
 msgstr "Toplam Süre"
@@ -5446,7 +5762,7 @@ msgstr "İzleme"
 #. module: mrp
 #: model:ir.model,name:mrp.model_stock_picking
 msgid "Transfer"
-msgstr "Transfer"
+msgstr "Teslimat"
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_production_form_view
@@ -5624,14 +5940,14 @@ msgid "Upload your PDF file."
 msgstr "PDF dosyanızı yükleyin."
 
 #. module: mrp
-#: model:ir.model.fields.selection,name:mrp.selection__mrp_production__priority__1
+#: model:ir.model.fields.selection,name:mrp.selection__mrp_production__priority__2
 msgid "Urgent"
 msgstr "Acil"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_document__url
 msgid "Url"
-msgstr "Url"
+msgstr ""
 
 #. module: mrp
 #: model:res.groups,name:mrp.group_mrp_workorder_dependencies
@@ -5655,6 +5971,56 @@ msgstr "Burada Kullanıldı"
 #: model_terms:ir.ui.view,arch_db:mrp.oee_search_view
 msgid "User"
 msgstr "Kullanıcı"
+
+#. module: mrp
+#: model:ir.model.fields,field_description:mrp.field_change_production_qty__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_mrp_bom__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_mrp_bom_byproduct__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_mrp_bom_line__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_mrp_consumption_warning__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_mrp_consumption_warning_line__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_mrp_document__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_mrp_immediate_production__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_mrp_immediate_production_line__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_mrp_production__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_backorder__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_backorder_line__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_split__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_split_line__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_mrp_production_split_multi__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_mrp_routing_workcenter__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_mrp_unbuild__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_capacity__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_productivity__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_productivity_loss__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_productivity_loss_type__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_mrp_workcenter_tag__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_mrp_workorder__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_procurement_group__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_product_product__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_product_template__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_report_mrp_report_bom_structure__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_report_stock_report_product_product_replenishment__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_report_stock_report_reception__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_report_stock_report_stock_rule__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_res_company__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_res_config_settings__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_stock_assign_serial__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_stock_lot__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_stock_move__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_stock_move_line__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_stock_picking__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_stock_picking_type__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_stock_quant__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_stock_rule__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_stock_scrap__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_stock_traceability_report__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_stock_warehouse__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_stock_warehouse_orderpoint__user_can_see_changeset
+#: model:ir.model.fields,field_description:mrp.field_stock_warn_insufficient_qty_unbuild__user_can_see_changeset
+msgid "User Can See Changeset"
+msgstr "Kullanıcı Değişiklikleri Görebilir"
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.res_config_settings_view_form
@@ -5698,6 +6064,11 @@ msgstr "Varyant:"
 #: model:ir.model.fields.selection,name:mrp.selection__mrp_document__priority__3
 msgid "Very High"
 msgstr "Çok Yüksek"
+
+#. module: mrp
+#: model:ir.model.fields.selection,name:mrp.selection__mrp_production__priority__3
+msgid "Very Urgent"
+msgstr "Çok Acil"
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.mrp_production_workorder_form_view_inherit
@@ -5783,16 +6154,6 @@ msgstr "Uyarı"
 #: model_terms:ir.ui.view,arch_db:mrp.view_mrp_production_filter
 msgid "Warnings"
 msgstr "Uyarılar"
-
-#. module: mrp
-#: model:product.template,name:mrp.product_product_wood_wear_product_template
-msgid "Wear Layer"
-msgstr "Aşınma Katmanı"
-
-#. module: mrp
-#: model:ir.model.fields,field_description:mrp.field_mrp_document__website_id
-msgid "Website"
-msgstr "Websitesi"
 
 #. module: mrp
 #: model:ir.model.fields,field_description:mrp.field_mrp_bom__website_message_ids
@@ -5890,11 +6251,6 @@ msgstr "Üretimi Bölme Sihirbazı"
 #: model:ir.model,name:mrp.model_mrp_production_backorder
 msgid "Wizard to mark as done or create back order"
 msgstr "Tamamlandı olarak işaretleme veya ön teslimat oluşturma sihirbazı"
-
-#. module: mrp
-#: model:product.template,name:mrp.product_product_wood_panel_product_template
-msgid "Wood Panel"
-msgstr "Ahşap Panel"
 
 #. module: mrp
 #: model:ir.model,name:mrp.model_mrp_workcenter
@@ -6132,6 +6488,11 @@ msgid "Worksheet URL"
 msgstr "Çalışma sayfası URL'si"
 
 #. module: mrp
+#: model_terms:ir.actions.act_window,help:mrp.mrp_product_variant_action
+msgid "Yeni Oluştur Ürün"
+msgstr ""
+
+#. module: mrp
 #. odoo-python
 #: code:addons/mrp/models/stock_lot.py:0
 #, python-format
@@ -6312,7 +6673,7 @@ msgstr ""
 "                            Lütfen bileşen tüketiminizi gözden geçirin ya da bir yöneticiden bu\n"
 "                            <span attrs=\"{'invisible':[('mrp_production_count', '!=', 1)]}\">bu üretim emrini</span>\n"
 "                            <span attrs=\"{'invisible':[('mrp_production_count', '=', 1)]}\">bu üretim emirlerini</span>.\n"
-"                         doğrulamasını isteyin.</b> "
+"                         doğrulamasını isteyin.</b>"
 
 #. module: mrp
 #. odoo-python
@@ -6343,7 +6704,7 @@ msgid ""
 "<i>apply</i> Odoo will produce all the finished products and consume all "
 "components."
 msgstr ""
-" Henüz <i> üretilen </i> miktarları kaydetmediniz <i>uygula</i> 'ya "
+"Henüz <i> üretilen </i> miktarları kaydetmediniz <i>uygula</i> 'ya "
 "tıkladığınızda Odoo tüm bitmiş ürünleri üretecek ve tüm bileşenleri "
 "tüketecektir."
 
@@ -6523,7 +6884,7 @@ msgstr "dakika"
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.exception_on_mo
 msgid "of"
-msgstr " ile ilgili"
+msgstr "ile ilgili"
 
 #. module: mrp
 #: model_terms:ir.ui.view,arch_db:mrp.view_mrp_document_form
