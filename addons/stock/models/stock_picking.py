@@ -866,8 +866,9 @@ class Picking(models.Model):
         # call `_action_confirm` on every draft move
         self.move_ids.filtered(lambda move: move.state == 'draft')._action_confirm()
 
+        # yigit: we disabled following code to avoid runnig the scheduler instantly
         # run scheduler for moves forecasted to not have enough in stock
-        self.move_ids.filtered(lambda move: move.state not in ('draft', 'cancel', 'done'))._trigger_scheduler()
+        # self.move_ids.filtered(lambda move: move.state not in ('draft', 'cancel', 'done'))._trigger_scheduler()
         return True
 
     def action_assign(self):
