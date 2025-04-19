@@ -10299,12 +10299,12 @@ msgstr ""
 "\n"
 "次の日付を追跡できます：\n"
 "-------------------------------\n"
-"- 人生の終わり\n"
-"- 賞味期限\n"
-"- 除去日\n"
+"- 使用終了日\n"
+"- 品質保持期限\n"
+"- 払出期限\n"
 "- アラート日\n"
 "\n"
-"また、食品産業において、例えば、除去戦略、有効期限ファーストアウト(FEFO)の、広く使用されている実装がされています。\n"
+"食品業界などで広く使用されている払出(廃棄)戦略である、使用期限順先出(FEFO)も実装されています。\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_transifex
@@ -13888,23 +13888,23 @@ msgstr "添付ファイルのリストとドキュメントのインデックス
 #. module: base
 #: model:ir.module.module,summary:base.module_hr_holidays_attendance
 msgid "Attendance Holidays"
-msgstr "出勤 休暇"
+msgstr "勤怠・休暇連携"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_human_resources_attendances
 #: model:ir.module.module,shortdesc:base.module_hr_attendance
 msgid "Attendances"
-msgstr "出勤"
+msgstr "勤怠管理"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_attendance_mobile
 msgid "Attendances Barcode in Mobile"
-msgstr "モバイルでの出席バーコード"
+msgstr "モバイル勤怠バーコード管理"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_hr_attendance_mobile
 msgid "Attendances Barcode scan in Mobile"
-msgstr "モバイルでの出席バーコードスキャン"
+msgstr "モバイルでの出退勤バーコードスキャン"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_mass_mailing
@@ -18096,7 +18096,7 @@ msgstr "会社を複製することは許可されていません。代わりに
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_profile__duration
 msgid "Duration"
-msgstr "経過時間"
+msgstr "所要時間"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_l10n_nl_reports_sbr
@@ -18426,7 +18426,7 @@ msgstr "従業員契約レポート"
 #. module: base
 #: model:ir.module.category,name:base.module_category_services_employee_hourly_cost
 msgid "Employee Hourly Cost"
-msgstr "従業員毎時コスト"
+msgstr "従業員の時間単価"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_hourly_cost
@@ -22237,7 +22237,7 @@ msgstr "逆レート"
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_partner__type__invoice
 msgid "Invoice Address"
-msgstr "請求先"
+msgstr "請求先住所"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_account
@@ -30676,12 +30676,12 @@ msgstr "販売-プロジェクト"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_expense
 msgid "Sales Expense"
-msgstr "販売経費"
+msgstr "販売費用"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_expense_margin
 msgid "Sales Expense Margin"
-msgstr "販売経費マージン"
+msgstr "販売費用マージン"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sales_team
@@ -34180,7 +34180,7 @@ msgstr "給与明細内での休暇 企業版"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_holidays_gantt
 msgid "Time off Gantt"
-msgstr "ガントの休暇"
+msgstr "休暇ガントビュー"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_timer
@@ -36010,7 +36010,7 @@ msgstr "ウェブサイトがリード生成企業版にアクセス"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_profile
 msgid "Website profile"
-msgstr "ウェブサイトプロフィール"
+msgstr "ウェブサイトプロファイル"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__res_lang__week_start__3

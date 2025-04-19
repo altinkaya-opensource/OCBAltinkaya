@@ -2814,20 +2814,25 @@ class MailThread(models.AbstractModel):
         # have a fallback in case replies mess with Messsage-Id in the In-Reply-To (e.g. amazon
         # SES SMTP may replace Message-Id and In-Reply-To refers an internal ID not stored in Odoo)
         message_sudo = message.sudo()
-        outgoing_types = ('comment', 'auto_comment', 'email', 'email_outgoing')
-        note_type = self.env.ref('mail.mt_note')
         ancestors = self.env['mail.message'].sudo().search(
             [
                 ('model', '=', message_sudo.model), ('res_id', '=', message_sudo.res_id),
-                ('message_type', 'in', outgoing_types),
                 ('id', '!=', message_sudo.id),
-                ('subtype_id', '!=', note_type.id),  # filters out notes, using subtype which is indexed
-            ], limit=16, order='id DESC',
+                ('subtype_id', '!=', False),  # filters out logs
+                ('message_id', '!=', False),  # ignore records that somehow don't have a message_id (non ORM created)
+            ], limit=32, order='id DESC',  # take 32 last, hoping to find public discussions in it
         )
-        # filter out internal messages that are not notes, manually because of indexes
-        ancestors = ancestors.filtered(lambda m: not m.is_internal and m.subtype_id and not m.subtype_id.internal)[:3]
-        # order frrom oldest to newest
-        references = ' '.join(m.message_id for m in (ancestors[::-1] + message_sudo))
+
+        # filter out internal messages, to fetch 'public discussion' first
+        outgoing_types = ('comment', 'auto_comment', 'email', 'email_outgoing')
+        history_ancestors = ancestors.sorted(lambda m: (
+            not m.is_internal and not m.subtype_id.internal,
+            m.message_type in outgoing_types,
+            m.message_type != 'user_notification',  # user notif -> avoid if possible
+        ), reverse=True)  # False before True unless reverse
+        # order from oldest to newest
+        ancestors = history_ancestors[:3].sorted('id')
+        references = ' '.join(m.message_id for m in (ancestors + message_sudo))
         # prepare notification mail values
         base_mail_values = {
             'mail_message_id': message.id,
@@ -3452,7 +3457,9 @@ class MailThread(models.AbstractModel):
                 'display_name': follower.display_name,
                 'email': follower.email,
                 'is_active': follower.is_active,
-                'partner': follower.partner_id.mail_partner_format()[follower.partner_id],
+                # sudo: res.partner - can read partners of found followers, in particular allows
+                # by-passing multi-company ACL for portal partners
+                'partner': follower.partner_id.sudo().mail_partner_format()[follower.partner_id],
             } for follower in self.message_follower_ids]
         if 'suggestedRecipients' in request_list:
             res['suggestedRecipients'] = self._message_get_suggested_recipients()[self.id]

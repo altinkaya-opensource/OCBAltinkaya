@@ -1126,8 +1126,7 @@ msgid ""
 "vendor pricelist lead time then today's date."
 msgstr ""
 "Ngày giao hàng dự kiến từ nhà cung cấp. Ngày này được đặt mặc định tương ứng"
-" theo thời gian hoàn thành trong bảng giá của nhà cung cấp rồi đến ngày hôm "
-"nay."
+" theo thời gian hoàn thành trong bảng giá nhập hàng rồi đến ngày hôm nay."
 
 #. module: purchase
 #: model:ir.model.fields,help:purchase.field_purchase_order__date_planned
@@ -2446,7 +2445,7 @@ msgid ""
 "on the delivery order sent by your vendor."
 msgstr ""
 "Mã đơn bán hàng hoặc chào thầu gửi bởi nhà cung cấp. Mã số này được sử dụng "
-"để so sánh lúc bạn nhận sản phẩm vì nó thường được viết trên phiếu xuất kho "
+"để so sánh lúc bạn nhận sản phẩm vì nó thường được viết trên lệnh giao hàng "
 "do nhà cung cấp gửi."
 
 #. module: purchase
@@ -2849,8 +2848,8 @@ msgid ""
 "This currency will be used, instead of the default one, for purchases from "
 "the current partner"
 msgstr ""
-"Tiền tệ này sẽ được sử dụng để mua hàng từ nhà cung cấp hiện tại thay vì "
-"tiền tệ mặc định"
+"Tiền tệ này sẽ được sử dụng để mua hàng từ đối tác hiện tại thay vì tiền tệ "
+"mặc định"
 
 #. module: purchase
 #: model:ir.model.fields,help:purchase.field_res_config_settings__default_purchase_method
@@ -3048,7 +3047,7 @@ msgstr "Số tiền trước thuế"
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_report__untaxed_total
 msgid "Untaxed Total"
-msgstr "Tổng tiền trước thuế"
+msgstr "Tổng trước thuế"
 
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_form
@@ -3121,7 +3120,7 @@ msgstr "Quốc gia của nhà cung cấp"
 #. module: purchase
 #: model:ir.ui.menu,name:purchase.menu_product_pricelist_action2_purchase
 msgid "Vendor Pricelists"
-msgstr "Bảng giá của nhà cung cấp"
+msgstr "Bảng giá nhập hàng"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order__partner_ref

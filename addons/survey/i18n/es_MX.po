@@ -6,8 +6,8 @@
 # Lucia Pacheco, 2023
 # Braulio D. López Vázquez <bdl@odoo.com>, 2023
 # Iran Villalobos López, 2023
-# Fernanda Alvarez, 2024
 # Martin Trigaux, 2025
+# Fernanda Alvarez, 2025
 # Patricia Gutiérrez Capetillo <pagc@odoo.com>, 2025
 # 
 msgid ""
@@ -1880,7 +1880,7 @@ msgstr "Eyjafjallajökull (Islandia)"
 #: model_terms:ir.ui.view,arch_db:survey.survey_user_input_view_form
 #, python-format
 msgid "Failed"
-msgstr "Fallido"
+msgstr "No aprobó"
 
 #. module: survey
 #: model_terms:ir.ui.view,arch_db:survey.survey_results_filters
@@ -5555,7 +5555,7 @@ msgstr "páginas"
 #. module: survey
 #: model_terms:ir.ui.view,arch_db:survey.survey_fill_form_done
 msgid "review your answers"
-msgstr "revisar sus respuestas"
+msgstr "Revise sus respuestas"
 
 #. module: survey
 #: model_terms:ir.ui.view,arch_db:survey.survey_closed_expired

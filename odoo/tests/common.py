@@ -53,6 +53,8 @@ import odoo
 from odoo import api
 from odoo.models import BaseModel
 from odoo.exceptions import AccessError
+from odoo.http import BadRequest
+from odoo.modules import module
 from odoo.modules.registry import Registry
 from odoo.osv import expression
 from odoo.osv.expression import normalize_domain, TRUE_LEAF, FALSE_LEAF
@@ -91,6 +93,7 @@ ADMIN_USER_ID = odoo.SUPERUSER_ID
 CHECK_BROWSER_SLEEP = 0.1 # seconds
 CHECK_BROWSER_ITERATIONS = 100
 BROWSER_WAIT = CHECK_BROWSER_SLEEP * CHECK_BROWSER_ITERATIONS # seconds
+TEST_CURSOR_COOKIE_NAME = 'test_request_key'
 
 def get_db_name():
     db = odoo.tools.config['db_name']
@@ -666,6 +669,56 @@ class BaseCase(case.TestCase, metaclass=MetaCase):
         p = patch('requests.Session.request', Mock(spec_set=[]))
         self.addCleanup(p.stop)
         return p.start()
+
+    def setUp(self):
+        super().setUp()
+        self.http_request_key = self.canonical_tag
+        self.http_request_strict_check = False  # by default, don't be to strict
+
+        def reset_http_key():
+            self.http_request_key = None
+        self.addCleanup(reset_http_key)  # this should avoid to have a request executing during teardown
+
+    def mandatory_request_route(self, route):
+        return route == "/websocket"
+
+    def check_test_cursor(self, operation):
+        if odoo.modules.module.current_test != self:
+            message = f"Trying to open a test cursor for {self.canonical_tag} while already in a test {odoo.modules.module.current_test.canonical_tag}"
+            _logger.error(message)
+            raise BadRequest(message)
+        request = odoo.http.request
+        if not request or isinstance(request, Mock):
+            return
+        if not self.http_request_key:
+            message = f'Using a test cursor without http_request_key, most likely between two tests on request {request.httprequest.path} in {module.current_test.canonical_tag}'
+            _logger.error(message)
+            raise BadRequest(message)
+        http_request_key = request.httprequest.cookies.get(TEST_CURSOR_COOKIE_NAME)
+        if not http_request_key:
+            if self.http_request_strict_check or self.mandatory_request_route(request.httprequest.path):
+                reason = 'for this path'
+                if self.http_request_strict_check:
+                    reason = 'after a browser_js call'
+                message = f'Using a test cursor without specified test on request {request.httprequest.path} in {module.current_test.canonical_tag} as been ignored since cookie is mandatory {reason}'
+                _logger.info(message)
+                raise BadRequest(message)
+            if operation == '__init__':  # main difference with master, don't fail if no cookie is defined_check
+                message = f'Opening a test cursor without specified test on request {request.httprequest.path} in {module.current_test.canonical_tag}'
+                _logger.info(message)
+            return
+        http_request_required_key = self.http_request_key
+        if http_request_key != http_request_required_key:
+            expected = http_request_required_key
+            _logger.error(
+                'Request with path %s has been ignored during test as it '
+                'it does not contain the test_cursor cookie or it is expired.'
+                ' (required "%s", got "%s")',
+                request.httprequest.path, expected, http_request_key
+            )
+            raise BadRequest(
+                'Request ignored during test as it does not contain the required cookie.'
+            )
 
 savepoint_seq = itertools.count()
 
@@ -1518,11 +1571,11 @@ which leads to stray network requests and inconsistencies."""
         """, 'awaitPromise': True})
         # wait for the screenshot or whatever
         wait(self._responses.values(), 10)
+        self.navigate_to('about:blank', wait_stop=True)
         self._logger.info('Deleting cookies and clearing local storage')
+        self._websocket_request('Storage.clearDataForOrigin', params={'origin': HOST, 'storageTypes': 'local_storage, session_storage'})
         self._websocket_request('Network.clearBrowserCache')
         self._websocket_request('Network.clearBrowserCookies')
-        self._websocket_request('Runtime.evaluate', params={'expression': 'try {localStorage.clear(); sessionStorage.clear();} catch(e) {}'})
-        self.navigate_to('about:blank', wait_stop=True)
         # hopefully after navigating to about:blank there's no event left
         self._frames.clear()
         # wait for the clearing requests to finish in case the browser is re-used
@@ -1635,7 +1688,14 @@ class Transport(xmlrpclib.Transport):
     def request(self, *args, **kwargs):
         self.cr.flush()
         self.cr.clear()
-        return super().request(*args, **kwargs)
+        test = module.current_test
+        if test:
+            check = test.http_request_strict_check
+            test.http_request_strict_check = False
+        res = super().request(*args, **kwargs)
+        if test:
+            test.http_request_strict_check = check
+        return res
 
 
 class HttpCase(TransactionCase):
@@ -1670,6 +1730,7 @@ class HttpCase(TransactionCase):
         self.xmlrpc_object = xmlrpclib.ServerProxy(self.xmlrpc_url + 'object', transport=Transport(self.cr))
         # setup an url opener helper
         self.opener = Opener(self.cr)
+        self.opener.cookies[TEST_CURSOR_COOKIE_NAME] = self.canonical_tag
 
     def parse_http_location(self, location):
         """ Parse a Location http header typically found in 201/3xx
@@ -1787,9 +1848,11 @@ class HttpCase(TransactionCase):
         # completely) or clear-ing session.cookies.
         self.opener = Opener(self.cr)
         self.opener.cookies['session_id'] = session.sid
+        self.opener.cookies[TEST_CURSOR_COOKIE_NAME] = self.http_request_key
         if self.browser:
             self._logger.info('Setting session cookie in browser')
             self.browser.set_cookie('session_id', session.sid, '/', HOST)
+            self.browser.set_cookie(TEST_CURSOR_COOKIE_NAME, self.http_request_key, '/', HOST)
 
         return session
 
@@ -1827,7 +1890,9 @@ class HttpCase(TransactionCase):
             self.browser._chrome_without_limit([self.browser.executable, debug_front_end])
             time.sleep(3)
         try:
+            self.http_request_key = self.canonical_tag + '_browser_js'
             self.authenticate(login, login)
+            self.http_request_strict_check = True
             # Flush and clear the current transaction.  This is useful in case
             # we make requests to the server, as these requests are made with
             # test cursors, which uses different caches than this transaction.
@@ -1881,9 +1946,10 @@ class HttpCase(TransactionCase):
         finally:
             # clear browser to make it stop sending requests, in case we call
             # the method several times in a test method
-            self.browser.delete_cookie('session_id', domain=HOST)
             self.browser.clear()
             self._wait_remaining_requests()
+            self.http_request_key = self.canonical_tag
+            self.opener.cookies[TEST_CURSOR_COOKIE_NAME] = self.http_request_key
 
     @classmethod
     def base_url(cls):

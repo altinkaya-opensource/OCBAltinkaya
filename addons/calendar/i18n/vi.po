@@ -1801,7 +1801,7 @@ msgstr "Số lượng tin gửi đi bị lỗi"
 #: model:ir.model.fields.selection,name:calendar.selection__calendar_event__end_type__count
 #: model:ir.model.fields.selection,name:calendar.selection__calendar_recurrence__end_type__count
 msgid "Number of repetitions"
-msgstr "Số lần tái diễn"
+msgstr "Số lần lặp lại"
 
 #. module: calendar
 #. odoo-javascript
@@ -1857,7 +1857,7 @@ msgstr "ID máy khách Outlook"
 #. module: calendar
 #: model:ir.model.fields,field_description:calendar.field_calendar_provider_config__microsoft_outlook_client_secret
 msgid "Outlook Client Secret"
-msgstr "Mã bí mật của ứng dụng Outlook"
+msgstr "Mã bí mật của máy khách Outlook"
 
 #. module: calendar
 #: model:ir.model.fields,field_description:calendar.field_calendar_event__attendee_ids
@@ -2215,7 +2215,7 @@ msgstr "Thời lượng không thể mang dấu âm."
 #: code:addons/calendar/models/calendar_recurrence.py:0
 #, python-format
 msgid "The number of repetitions cannot be negative."
-msgstr "Số lượng lặp lại không thể là số âm."
+msgstr "Số lần lặp lại không thể là số âm."
 
 #. module: calendar
 #. odoo-python

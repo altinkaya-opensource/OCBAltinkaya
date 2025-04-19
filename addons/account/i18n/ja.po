@@ -3,7 +3,6 @@
 # 	* account
 # 
 # Translators:
-# Norimichi Sugimoto <norimichi.sugimoto@tls-ltd.co.jp>, 2022
 # Tim Siu Lai <tl@roomsfor.hk>, 2022
 # Noma Yuki, 2022
 # Martin Trigaux, 2023
@@ -1832,7 +1831,7 @@ msgstr "収益の期間を移動させるために使用する科目"
 #. module: account
 #: model:ir.model.fields,help:account.field_res_company__expense_accrual_account_id
 msgid "Account used to move the period of an expense"
-msgstr "消費の期間を移動させるために使用する科目"
+msgstr "費用の期間配分に使用する勘定科目"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_tax__cash_basis_transition_account_id
@@ -3764,12 +3763,12 @@ msgstr "カテゴリ"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_chart_template__property_account_expense_categ_id
 msgid "Category of Expense Account"
-msgstr "支出勘定の区分"
+msgstr "費用勘定のカテゴリ"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_chart_template__property_account_income_categ_id
 msgid "Category of Income Account"
-msgstr "収益勘定の区分"
+msgstr "収益勘定のカテゴリ"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_default_terms_and_conditions
@@ -5388,7 +5387,7 @@ msgstr "お届け先"
 #: model:ir.model.fields,help:account.field_account_move__partner_shipping_id
 #: model:ir.model.fields,help:account.field_account_payment__partner_shipping_id
 msgid "Delivery address for current invoice."
-msgstr "現在の請求書の配達先住所。"
+msgstr "現在の請求書の配送先住所。"
 
 #. module: account
 #: model:account.account.tag,name:account.demo_ceo_wages_account
@@ -7289,7 +7288,7 @@ msgid ""
 "must charge VAT based on the delivery address. This rule applies regardless "
 "of where you are located."
 msgstr ""
-"EU加盟国のお客様に商品及びサービスを販売するため、配送住所によってVATが課税されます。あなたの所在国にかかわらず、ルールが適用されます、"
+"EU加盟国のお客様に商品及びサービスを販売するため、配送先住所によってVATが課税されます。あなたの所在国にかかわらず、ルールが適用されます、"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_unreconcile_view
@@ -8040,7 +8039,7 @@ msgstr "完了しました"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_invoice_send__is_mail_template_editor
 msgid "Is Editor"
-msgstr "編集者であり"
+msgstr "編集者である"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_account__message_is_follower
@@ -12869,7 +12868,7 @@ msgstr "状態"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_fiscal_position__states_count
 msgid "States Count"
-msgstr "アメリカカウント"
+msgstr "ステータスカウント"
 
 #. module: account
 #. odoo-python
@@ -16341,7 +16340,7 @@ msgstr "このレポート(%s)を削除することはできません。この�
 #: code:addons/account/models/account_account.py:0
 #, python-format
 msgid "You cannot deprecate an account that is used in a tax distribution."
-msgstr ""
+msgstr "税分配で使用されている勘定科目を廃止することはできません。"
 
 #. module: account
 #. odoo-python

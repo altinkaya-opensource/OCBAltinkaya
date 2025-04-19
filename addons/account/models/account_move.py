@@ -624,7 +624,8 @@ class AccountMove(models.Model):
     def _compute_hide_post_button(self):
         for record in self:
             record.hide_post_button = record.state != 'draft' \
-                or record.auto_post != 'no' and record.date > fields.Date.context_today(record)
+                or record.auto_post != 'no' and \
+                record.date and record.date > fields.Date.context_today(record)
 
     @api.depends('journal_id')
     def _compute_company_id(self):
@@ -1881,6 +1882,7 @@ class AccountMove(models.Model):
         having the biggest balance.
         '''
         self.ensure_one()
+        self = self.with_company(self.company_id.id)
         def _compute_cash_rounding(self, total_amount_currency):
             ''' Compute the amount differences due to the cash rounding.
             :param self:                    The current account.move record.
@@ -3981,6 +3983,20 @@ class AccountMove(models.Model):
 
     def _get_report_base_filename(self):
         return self._get_move_display_name()
+
+    def _get_report_attachment_filename(self):
+        self.ensure_one()
+        if self.state == 'posted':
+            name = self.name or _('INV')
+        else:
+            name = self._get_report_base_filename()
+        return f"{name.replace('/', '_')}.pdf"
+
+    def _get_report_mail_attachment_filename(self):
+        self.ensure_one()
+        invoice_name = (self.name or '').replace('/', '_')
+        post_suffix = _('_draft') if self.state == 'draft' else ''
+        return _('Invoice_%(name)s%(post)s', name=invoice_name, post=post_suffix)
 
     # -------------------------------------------------------------------------
     # CRON

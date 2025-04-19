@@ -3,9 +3,9 @@
 # 	* spreadsheet
 # 
 # Translators:
-# Nurlan Farajov <coolinuxoid@gmail.com>, 2024
 # shahriyar rzayev, 2024
 # Jumshud Sultanov <cumshud@gmail.com>, 2025
+# Nurlan Farajov <coolinuxoid@gmail.com>, 2025
 # erpgo translator <jumshud@erpgo.az>, 2025
 # 
 msgid ""
@@ -134,7 +134,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "2 columns"
-msgstr ""
+msgstr "2 sütun"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -530,7 +530,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Bold"
-msgstr ""
+msgstr "Qalın"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1115,7 +1115,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Data"
-msgstr ""
+msgstr "Data"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1517,7 +1517,7 @@ msgstr "Fayl"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Fill Color"
-msgstr ""
+msgstr "Doldurma Rəngi"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1595,7 +1595,7 @@ msgstr "Şrift Ölçüsü"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Format"
-msgstr ""
+msgstr "Format"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -1973,7 +1973,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Icons"
-msgstr ""
+msgstr "İkonlar"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2001,7 +2001,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Insert"
-msgstr ""
+msgstr "Daxil et"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -2817,14 +2817,14 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Move left"
-msgstr ""
+msgstr "Sola daşı"
 
 #. module: spreadsheet
 #. odoo-javascript
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.js:0
 #, python-format
 msgid "Move right"
-msgstr ""
+msgstr "Sağa daşı"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3286,7 +3286,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Remove link"
-msgstr ""
+msgstr "Linki silin"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -3594,7 +3594,7 @@ msgstr ""
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "Select all"
-msgstr ""
+msgstr "Hamısını seçin"
 
 #. module: spreadsheet
 #. odoo-javascript
@@ -5866,7 +5866,7 @@ msgstr "Sol"
 #: code:addons/spreadsheet/static/src/o_spreadsheet/o_spreadsheet.xml:0
 #, python-format
 msgid "none"
-msgstr ""
+msgstr "heç biri"
 
 #. module: spreadsheet
 #. odoo-javascript
