@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<odoo noupdate="1">
     <!-- UTM Tag -->
     <record id="utm_tag_1" model="utm.tag">
         <field name="name">Marketing</field>
