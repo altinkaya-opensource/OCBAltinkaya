@@ -50,7 +50,7 @@
 
 // Cover image
 img.o_img_product_cover {
-    object-fit: cover;
+    object-fit: contain;
 }
 // Force the image to have a square ratio
 img.o_img_product_square {
