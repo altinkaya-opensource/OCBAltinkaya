@@ -518,11 +518,11 @@ class StockWarehouseOrderpoint(models.Model):
         date_planned = self.product_id._get_date_with_security_lead_days(date_planned, self.location_id, route_ids=self.route_id)
         return {
             'route_ids': self.route_id,
-            'date_planned': date_planned,
+            'date_planned': date_planned, # date_planned is used to compute the lead time
             'date_deadline': date or False,
             'warehouse_id': self.warehouse_id,
             'orderpoint_id': self,
-            'group_id': group or self.group_id,
+            'group_id': group or self.group_id or self.env['procurement.group'].create({"name": f"{self.name} {fields.Datetime.now().strftime('%H%M%S')}"}),
         }
 
     def _procure_orderpoint_confirm(self, use_new_cursor=False, company_id=None, raise_user_error=True):
