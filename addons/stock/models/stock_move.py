@@ -1760,14 +1760,25 @@ Please change the quantity done or the rounding precision of your unit of measur
 
         for move in moves_to_cancel:
             siblings_states = (move.move_dest_ids.mapped('move_orig_ids') - move).mapped('state')
-            if move.propagate_cancel:
-                # only cancel the next move if all my siblings are also cancelled
-                if all(state == 'cancel' for state in siblings_states):
-                    move.move_dest_ids.filtered(lambda m: m.state != 'done')._action_cancel()
-            else:
-                if all(state in ('done', 'cancel') for state in siblings_states):
-                    move.move_dest_ids.write({'procure_method': 'make_to_stock'})
-                    move.move_dest_ids.write({'move_orig_ids': [(3, move.id, 0)]})
+            # yigit: disable cancelling destination moves for now
+            move.move_dest_ids.write(
+                {
+                    "state": "confirmed",
+                    "procure_method": "make_to_stock",
+                    "move_orig_ids": [(3, move.id, 0)],
+                }
+            )
+            # move.move_dest_ids.write({'state': 'confirmed'})
+            # move.move_dest_ids.write({'procure_method': 'make_to_stock'})
+            # move.move_dest_ids.write({'move_orig_ids': [(3, move.id, 0)]})
+            # if move.propagate_cancel:
+            #     # only cancel the next move if all my siblings are also cancelled
+            #     if all(state == 'cancel' for state in siblings_states):
+            #         move.move_dest_ids.filtered(lambda m: m.state != 'done')._action_cancel()
+            # else:
+            #     if all(state in ('done', 'cancel') for state in siblings_states):
+            #         move.move_dest_ids.write({'procure_method': 'make_to_stock'})
+            #         move.move_dest_ids.write({'move_orig_ids': [(3, move.id, 0)]})
         moves_to_cancel.write({
             'state': 'cancel',
             'move_orig_ids': [(5, 0, 0)],
