@@ -192,7 +192,8 @@ class Currency(models.Model):
             logging.getLogger(__name__).warning("The library 'num2words' is missing, cannot render textual amounts.")
             return ""
 
-        formatted = "%.{0}f".format(self.decimal_places) % amount
+        # yigit: always use two decimal places in sayin
+        formatted = "%.2f" % amount
         parts = formatted.partition('.')
         integer_value = int(parts[0])
         fractional_value = int(parts[2] or 0)
