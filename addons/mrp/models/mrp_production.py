@@ -1709,21 +1709,22 @@ class MrpProduction(models.Model):
                 if move.additional:
                     continue
                 move_to_backorder_moves[move] = self.env['stock.move']
-                unit_factor = move.product_uom_qty / initial_qty_by_production[production]
                 initial_move_vals = move.copy_data(move._get_backorder_move_vals())[0]
-                move.with_context(do_not_unreserve=True).product_uom_qty = production.product_qty * unit_factor
+                initial_move_qty = move.product_uom_qty
+                move.with_context(do_not_unreserve=True).product_uom_qty = move.should_consume_qty
 
-                for backorder in production_to_backorders[production]:
-                    move_vals = dict(
-                        initial_move_vals,
-                        product_uom_qty=backorder.product_qty * unit_factor
-                    )
-                    if move.raw_material_production_id:
-                        move_vals['raw_material_production_id'] = backorder.id
-                    else:
-                        move_vals['production_id'] = backorder.id
-                    new_moves_vals.append(move_vals)
-                    moves.append(move)
+                if initial_move_qty - move.should_consume_qty:
+                    for backorder in production_to_backorders[production]:
+                        move_vals = dict(
+                            initial_move_vals,
+                            product_uom_qty=float_round(initial_move_qty - move.should_consume_qty, precision_rounding=move.product_uom.rounding)
+                        )
+                        if move.raw_material_production_id:
+                            move_vals['raw_material_production_id'] = backorder.id
+                        else:
+                            move_vals['production_id'] = backorder.id
+                        new_moves_vals.append(move_vals)
+                        moves.append(move)
 
         backorder_moves = self.env['stock.move'].create(new_moves_vals)
         # Split `stock.move.line`s. 2 options for this:
