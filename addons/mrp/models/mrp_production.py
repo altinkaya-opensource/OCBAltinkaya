@@ -1711,13 +1711,13 @@ class MrpProduction(models.Model):
                 move_to_backorder_moves[move] = self.env['stock.move']
                 initial_move_vals = move.copy_data(move._get_backorder_move_vals())[0]
                 initial_move_qty = move.product_uom_qty
-                move.with_context(do_not_unreserve=True).product_uom_qty = move.should_consume_qty
+                move.with_context(do_not_unreserve=True).product_uom_qty = move.quantity_done
 
-                if initial_move_qty - move.should_consume_qty:
+                if initial_move_qty - move.quantity_done:
                     for backorder in production_to_backorders[production]:
                         move_vals = dict(
                             initial_move_vals,
-                            product_uom_qty=float_round(initial_move_qty - move.should_consume_qty, precision_rounding=move.product_uom.rounding)
+                            product_uom_qty=float_round(initial_move_qty - move.quantity_done, precision_rounding=move.product_uom.rounding)
                         )
                         if move.raw_material_production_id:
                             move_vals['raw_material_production_id'] = backorder.id
