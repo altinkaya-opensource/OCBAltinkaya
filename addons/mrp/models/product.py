@@ -158,7 +158,15 @@ class ProductProduct(models.Model):
         kits_template_ids = {b['product_tmpl_id'][0] for b in tmpl_bom_mapping}
         kits_product_ids = {b['product_id'][0] for b in product_bom_mapping if b['product_id']}
         for product in self:
-            product.is_kits = (product.id in kits_product_ids or product.product_tmpl_id.id in kits_template_ids)
+            # yigit: Double check if product has its own BoM when we are looking
+            # for phantom BoMs.
+            is_kits = (product.id in kits_product_ids or product.product_tmpl_id.id in kits_template_ids)
+            if is_kits:
+                specific_bom = self.env["mrp.bom"].search([("product_id", "=", product.id)], limit=1)
+                if specific_bom and specific_bom.type != "phantom":
+                    is_kits = False
+
+            product.is_kits = is_kits
 
     def _search_is_kits(self, operator, value):
         assert operator in ('=', '!='), 'Unsupported operator'
