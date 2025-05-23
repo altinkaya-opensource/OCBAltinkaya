@@ -528,24 +528,27 @@ class configmanager(object):
         else:
             self.options['addons_path'] = ",".join(
                 self._normalize(x)
-                for x in self.options['addons_path'].split(','))
+                for x in self.options['addons_path'].split(',')
+                if x.strip())
 
         self.options["upgrade_path"] = (
             ",".join(self._normalize(x)
-                for x in self.options['upgrade_path'].split(','))
+                for x in self.options['upgrade_path'].split(',')
+                if x.strip())
             if self.options['upgrade_path']
             else ""
         )
         self.options["pre_upgrade_scripts"] = (
             ",".join(self._normalize(x)
-                for x in self.options['pre_upgrade_scripts'].split(','))
+                for x in self.options['pre_upgrade_scripts'].split(',')
+                if x.strip())
             if self.options['pre_upgrade_scripts']
             else ""
         )
 
         self.options['init'] = opt.init and dict.fromkeys(opt.init.split(','), 1) or {}
-        self.options['without_demo'] = self.options['without_demo'] not in (False, '', 'False', 'false')
-        self.options['demo'] = (dict(self.options['init']) if self.options['without_demo'] else {})
+        self.options['demo'] = (dict(self.options['init'])
+                                if not self.options['without_demo'] else {})
         self.options['update'] = opt.update and dict.fromkeys(opt.update.split(','), 1) or {}
         self.options['translate_modules'] = opt.translate_modules and [m.strip() for m in opt.translate_modules.split(',')] or ['all']
         self.options['translate_modules'].sort()

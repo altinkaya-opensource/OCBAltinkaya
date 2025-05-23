@@ -3599,7 +3599,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"Voeg een selectie van verzendwijzes toe aan je E-commerce-winkel.\n"
+"Voeg een selectie van verzendmethoden toe aan je E-commerce-winkel.\n"
 "Configureer je eigen methoden met een prijslijst of integreer met carriers voor een volledig geautomatiseerd verzendproces."
 
 #. module: base
@@ -4063,7 +4063,7 @@ msgid ""
 "invoices from picking, the system is able to add and compute the shipping line.\n"
 msgstr ""
 "\n"
-"Staat je toe om nieuwe verzendwijzes toe te voegen in verkooporders en leveringen. ============================================================== \n"
+"Staat je toe om nieuwe verzendmethoden toe te voegen in verkooporders en leveringen. ============================================================== \n"
 "\n"
 "Je kunt je eigen vervoerder voor prijzen definiëren. Wanneer je een\n"
 "factuur aanmaakt vanuit een levering kan het systeem de verzendregel toevoegen en berekenen.\n"
@@ -17050,7 +17050,7 @@ msgstr "Instellingen installer"
 #: model:ir.model,name:base.model_ir_actions_todo
 #: model:ir.ui.menu,name:base.menu_ir_actions_todo_form
 msgid "Configuration Wizards"
-msgstr "Configuratie wizard"
+msgstr "Configuratiewizards"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_event_twitter_wall
@@ -29777,7 +29777,7 @@ msgstr "Relatie"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_partner_autocomplete
 msgid "Partner Autocomplete"
-msgstr "Relatie automatisch aanvullen"
+msgstr "Partner Autocomplete"
 
 #. module: base
 #: model:ir.model,name:base.model_res_partner_category
@@ -34897,7 +34897,7 @@ msgstr "Het uur moet tussen 0 en 23 . liggen"
 #: model:ir.model.fields,help:base.field_res_partner__user_id
 #: model:ir.model.fields,help:base.field_res_users__user_id
 msgid "The internal user in charge of this contact."
-msgstr "De interne gebruiker verantwoordelijk voor dit contract."
+msgstr "De interne gebruiker verantwoordelijk voor dit contact."
 
 #. module: base
 #. odoo-python
@@ -36447,7 +36447,7 @@ msgstr "Soort:"
 #. module: base
 #: model:res.country,name:base.tr
 msgid "Türkiye"
-msgstr "Turkjije"
+msgstr "Turkije"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_tr
