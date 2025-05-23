@@ -1747,8 +1747,8 @@ class AccountMove(models.Model):
         ''', [tuple(moves.ids)])
         res = self._cr.fetchall()
         if res:
-            raise ValidationError(_('Posted journal entry must have an unique sequence number per company.\n'
-                                    'Problematic numbers: %s\n') % ', '.join(r[1] for r in res))
+            sequence = self._get_last_sequence()
+            self.name = sequence
 
     @contextmanager
     def _check_balanced(self, container):
