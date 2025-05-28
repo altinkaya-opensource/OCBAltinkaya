@@ -353,7 +353,16 @@ class ProductProduct(models.Model):
         components = self - self.env['product.product'].concat(*list(bom_kits.keys()))
         for product in bom_kits:
             boms, bom_sub_lines = bom_kits[product].explode(product, 1)
-            components |= self.env['product.product'].concat(*[l[0].product_id for l in bom_sub_lines])
+
+            # erol edit: Changed the way of getting the product id because
+            # of mrp.bom.template.line
+            for bl in bom_sub_lines:
+                if bl[0]._name == "mrp.bom.template.line":
+                    components |= bl[0]._match_possible_variant(product)
+                    continue
+                
+                components |= bl[0].product_id
+
         res = super(ProductProduct, components).action_open_quants()
         if bom_kits:
             res['context']['single_product'] = False
