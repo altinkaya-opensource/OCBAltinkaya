@@ -1761,7 +1761,7 @@ Please change the quantity done or the rounding precision of your unit of measur
         for move in moves_to_cancel:
             siblings_states = (move.move_dest_ids.mapped('move_orig_ids') - move).mapped('state')
             # yigit: disable cancelling destination moves for now
-            move.move_dest_ids.write(
+            move.move_dest_ids.filtered(lambda m: m.state not in ('done', 'cancel')).write(
                 {
                     "state": "confirmed",
                     "procure_method": "make_to_stock",
