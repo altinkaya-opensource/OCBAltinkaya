@@ -788,12 +788,12 @@ class AccountPayment(models.Model):
                         move.display_name,
                     ))
 
-                if any(line.currency_id != all_lines[0].currency_id for line in all_lines):
-                    raise UserError(_(
-                        "Journal Entry %s is not valid. In order to proceed, the journal items must "
-                        "share the same currency.",
-                        move.display_name,
-                    ))
+                # if any(line.currency_id != all_lines[0].currency_id for line in all_lines):
+                #     raise UserError(_(
+                #         "Journal Entry %s is not valid. In order to proceed, the journal items must "
+                #         "share the same currency.",
+                #         move.display_name,
+                #     ))
 
                 if any(line.partner_id != all_lines[0].partner_id for line in all_lines):
                     raise UserError(_(
