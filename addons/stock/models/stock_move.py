@@ -1818,7 +1818,8 @@ Please change the quantity done or the rounding precision of your unit of measur
             self = self.with_context(avoid_putaway_rules=True, extra_move_mode=True)
             extra_move = self.copy(default=extra_move_vals)
 
-            merge_into_self = all(self[field] == extra_move[field] for field in self._prepare_merge_moves_distinct_fields())
+            # merge_into_self = all(self[field] == extra_move[field] for field in self._prepare_merge_moves_distinct_fields())
+            merge_into_self = False
 
             if merge_into_self:
                 extra_move = extra_move._action_confirm(merge_into=self)
