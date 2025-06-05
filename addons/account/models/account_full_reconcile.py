@@ -22,7 +22,9 @@ class AccountFullReconcile(models.Model):
         if not self:
             return True
 
-        moves_to_reverse = self.exchange_move_id
+        # yigit: disabled exchange move reversal
+        # moves_to_reverse = self.exchange_move_id
+        moves_to_reverse = False
 
         res = super().unlink()
 
