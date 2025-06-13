@@ -119,6 +119,8 @@ class IrUiView(models.Model):
         """ Given a ``record`` and its HTML ``field``, detect any
         usage of a custom snippet and copy its translations.
         """
+        # yigit: This function prevents writing languages on their own.
+        return True
         lang_value = record[html_field]
         if not lang_value:
             return
@@ -143,6 +145,8 @@ class IrUiView(models.Model):
 
         The method takes care of read and write access of both records/fields.
         """
+        # yigit: This function prevents writing languages on their own.
+        return True
         record_to.check_access_rights('write')
         record_to.check_access_rule('write')
         record_to.check_field_access_rights('write', [name_field_to])
