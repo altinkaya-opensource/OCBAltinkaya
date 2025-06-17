@@ -726,14 +726,16 @@ class Web_Editor(http.Controller):
         else:
             svg = self._get_shape_svg(module, 'shapes', filename)
 
-        svg, options = self._update_svg_colors(kwargs, svg)
-        flip_value = options.get('flip', False)
-        if flip_value == 'x':
-            svg = svg.replace('<svg ', '<svg style="transform: scaleX(-1);" ', 1)
-        elif flip_value == 'y':
-            svg = svg.replace('<svg ', '<svg style="transform: scaleY(-1)" ', 1)
-        elif flip_value == 'xy':
-            svg = svg.replace('<svg ', '<svg style="transform: scale(-1)" ', 1)
+        # yigit: since attachment indexing disabled for us, we've also disabled this
+        # functionality for avoiding errors on portal.
+        # svg, options = self._update_svg_colors(kwargs, svg)
+        # flip_value = options.get('flip', False)
+        # if flip_value == 'x':
+        #     svg = svg.replace('<svg ', '<svg style="transform: scaleX(-1);" ', 1)
+        # elif flip_value == 'y':
+        #     svg = svg.replace('<svg ', '<svg style="transform: scaleY(-1)" ', 1)
+        # elif flip_value == 'xy':
+        #     svg = svg.replace('<svg ', '<svg style="transform: scale(-1)" ', 1)
 
         return request.make_response(svg, [
             ('Content-type', 'image/svg+xml'),
