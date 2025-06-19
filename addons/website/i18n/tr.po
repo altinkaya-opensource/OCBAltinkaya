@@ -7235,7 +7235,7 @@ msgstr "Sonuç bulunamadı, aramanızı genişletin."
 #: model_terms:ir.ui.view,arch_db:website.list_website_public_pages
 #, python-format
 msgid "No results found for '"
-msgstr "' için sonuç bulunamadı"
+msgstr "Bu arama için bir sonuç bulunamadı '"
 
 #. module: website
 #. odoo-javascript
