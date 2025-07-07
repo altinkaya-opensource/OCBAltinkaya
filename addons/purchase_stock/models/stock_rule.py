@@ -296,9 +296,11 @@ class StockRule(models.Model):
         }
 
     def _make_po_get_domain(self, company_id, values, partner):
-        gpo = self.group_propagation_option
-        group = (gpo == 'fixed' and self.group_id) or \
-                (gpo == 'propagate' and 'group_id' in values and values['group_id']) or False
+        # yigit: we always want to merge procurements no matter the group propagation option.
+        # gpo = self.group_propagation_option
+        # group = (gpo == 'fixed' and self.group_id) or \
+        #         (gpo == 'propagate' and 'group_id' in values and values['group_id']) or False
+        group = False
 
         domain = (
             ('partner_id', '=', partner.id),
