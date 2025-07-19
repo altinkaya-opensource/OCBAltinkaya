@@ -1121,7 +1121,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:portal.portal_share_wizard
 #, python-format
 msgid "Send"
-msgstr "Gönderme"
+msgstr "Gönder"
 
 #. module: portal
 #: model:ir.actions.act_window,name:portal.portal_share_action

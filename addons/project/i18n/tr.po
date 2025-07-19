@@ -4857,7 +4857,7 @@ msgstr "Güvenlik Token"
 #: model_terms:ir.ui.view,arch_db:project.project_share_wizard_view_form
 #, python-format
 msgid "Send"
-msgstr "Gönderme"
+msgstr "Gönder"
 
 #. module: project
 #: model:ir.actions.act_window,name:project.action_send_mail_project_project
