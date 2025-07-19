@@ -480,8 +480,11 @@ class CustomerPortal(Controller):
             if len(model.company_id) > 1:
                 raise UserError(_('Multi company reports are not supported.'))
             ReportAction = ReportAction.with_company(model.company_id)
-
-        if "py3o" in report_ref:
+        
+        # Check the type of the action to check
+        # if we need to use py3o rendering 
+        action = request.env.ref(report_ref).sudo()
+        if action.report_type == "py3o":
             method_name = '_render_py3o'
         else:
             method_name = '_render_qweb_%s' % (report_type)
