@@ -16567,12 +16567,12 @@ msgstr "チャネルで/leadコマンドを使用して新しいリードを作�
 #. module: base
 #: model:ir.module.module,summary:base.module_hr_work_entry_contract_attendance
 msgid "Create work entries from the employee's attendances"
-msgstr "従業員の出勤からワークエントリを作成"
+msgstr "従業員の出勤から勤務記録を作成"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_hr_work_entry_contract_planning
 msgid "Create work entries from the employee's planning"
-msgstr "従業員の計画からワークエントリを作成"
+msgstr "従業員の計画から勤務記録を作成"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.module_form
@@ -17008,8 +17008,8 @@ msgstr "D - 電気、ガス、蒸気、空調の供給"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_delivery_dhl
-msgid "DHL Express Shipping"
-msgstr "DHLエクスプレス配送"
+msgid "DHL Express Shipping (Legacy)"
+msgstr "DHL Express配送 (旧版)"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_din5008
@@ -17537,13 +17537,13 @@ msgstr "デスクメーカー"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_base_partner_merge_automatic_wizard__dst_partner_id
 msgid "Destination Contact"
-msgstr "行き先の連絡先"
+msgstr "マージ先連絡先"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_actions_act_window__res_model
 #: model:ir.model.fields,field_description:base.field_ir_actions_client__res_model
 msgid "Destination Model"
-msgstr "宛先モデル"
+msgstr "対象モデル"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_rule_form
@@ -23340,7 +23340,7 @@ msgstr "ログ管理"
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.ir_logging_form_view
 msgid "Logging details"
-msgstr "ロギングの詳細"
+msgstr "ログ詳細"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_users__login
@@ -23866,7 +23866,7 @@ msgstr "応募者に送信する署名の管理"
 #: model:ir.module.module,summary:base.module_hr_work_entry_contract
 #: model:ir.module.module,summary:base.module_hr_work_entry_contract_enterprise
 msgid "Manage work entries"
-msgstr "作業エントリの管理"
+msgstr "勤務記録の管理"
 
 #. module: base
 #: model:ir.module.module,description:base.module_social_facebook
@@ -29735,18 +29735,18 @@ msgstr "レート"
 #: model:ir.model.fields,field_description:base.field_ir_model_access__perm_read
 #: model_terms:ir.ui.view,arch_db:base.ir_access_view_search
 msgid "Read Access"
-msgstr "読出権限"
+msgstr "読み取りアクセス"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_rule_search
 msgid "Read Access Right"
-msgstr "読出権限"
+msgstr "読み取りアクセス権"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_model_fields__readonly
 #: model_terms:ir.ui.view,arch_db:base.view_model_fields_search
 msgid "Readonly"
-msgstr "読出のみ"
+msgstr "読み取り専用"
 
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_L
@@ -31184,8 +31184,13 @@ msgstr "shiprocketで小包を送り、オンラインで追跡します"
 
 #. module: base
 #: model:ir.module.module,description:base.module_delivery_dhl
-msgid "Send your shippings through DHL and track them online"
-msgstr "DHLを通して発送し、オンラインで追跡します"
+msgid ""
+"This is the legacy integration with DHL Express that is no longer supported."
+" Please install the new \"DHL Express Shipping\" module and uninstall this "
+"one as soon as possible."
+msgstr ""
+"こちらは旧バージョンの DHL Express 連携モジュールであり、現在はサポートされていません。新しいDHL "
+"Express配送モジュールをインストールし、本モジュールはできるだけ早くアンインストールしてください。"
 
 #. module: base
 #: model:ir.module.module,description:base.module_delivery_fedex_rest
@@ -36166,27 +36171,27 @@ msgstr "ウッドコーナーは、顧客が木、花、菌類を扱うのを助
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_work_entry
 msgid "Work Entries"
-msgstr "作業エントリ"
+msgstr "勤務記録"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_work_entry_contract_attendance
 msgid "Work Entries - Attendance"
-msgstr "ワークエントリ - 勤怠"
+msgstr "勤務記録 - 勤怠"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_work_entry_contract
 msgid "Work Entries - Contract"
-msgstr "作業エントリ-契約"
+msgstr "勤務記録-契約"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_work_entry_contract_enterprise
 msgid "Work Entries - Contract Enterprise"
-msgstr "ワークエントリ - 契約 企業版"
+msgstr "勤務記録 - 契約 企業版"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_work_entry_contract_planning
 msgid "Work Entries - Planning"
-msgstr "ワークエントリ - 計画"
+msgstr "勤務記録 - 計画"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_mrp_workorder
@@ -36212,18 +36217,18 @@ msgstr "介入を計画する際のワークシートテンプレート"
 #: model:ir.model.fields,field_description:base.field_ir_model_access__perm_write
 #: model_terms:ir.ui.view,arch_db:base.ir_access_view_search
 msgid "Write Access"
-msgstr "更新権限"
+msgstr "書き込みアクセス"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_rule_search
 msgid "Write Access Right"
-msgstr "更新権限"
+msgstr "書き込みアクセス件"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_model_constraint__write_date
 #: model:ir.model.fields,field_description:base.field_ir_model_relation__write_date
 msgid "Write Date"
-msgstr "日付を書く"
+msgstr "更新日時"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_actions_server__code

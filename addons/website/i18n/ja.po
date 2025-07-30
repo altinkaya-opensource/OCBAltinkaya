@@ -128,7 +128,7 @@ msgstr "$9.00"
 #: code:addons/website/static/src/snippets/s_website_form/options.js:0
 #, python-format
 msgid "%s List"
-msgstr ""
+msgstr "%s リスト"
 
 #. module: website
 #. odoo-javascript
@@ -1388,7 +1388,7 @@ msgstr "カラーブロック"
 #: model_terms:ir.ui.view,arch_db:website.s_masonry_block_reversed_template
 #: model_terms:ir.ui.view,arch_db:website.s_masonry_block_texts_image_texts_template
 msgid "A great title"
-msgstr "素晴らしいタイトル"
+msgstr "魅力的なタイトル"
 
 #. module: website
 #: model:ir.model.fields,help:website.field_website_snippet_filter__field_names
@@ -1409,12 +1409,12 @@ msgstr "最後の接続が8時間以上前の場合は新規訪問と判断さ�
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_showcase
 msgid "A short description of this great feature."
-msgstr "この優れた特徴の簡単な説明。"
+msgstr "この優れた機能の簡単な説明です。"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_features
 msgid "A small explanation of this great <br/>feature, in clear words."
-msgstr "この素晴らしい特徴を<br/>簡単な言葉で説明しましょう。"
+msgstr "この優れた機能について<br/>わかりやすく簡潔に説明します。"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_timeline
@@ -1931,7 +1931,7 @@ msgstr "素晴らしい注釈"
 #: code:addons/website/static/src/xml/website.editor.xml:0
 #, python-format
 msgid "Animate text"
-msgstr "アニメーションテキスト"
+msgstr "テキストアニメーション"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_progress_bar_options
@@ -4259,7 +4259,7 @@ msgstr "例"
 #: code:addons/website/static/src/snippets/s_website_form/options.js:0
 #, python-format
 msgid "Existing fields"
-msgstr ""
+msgstr "既存のフィールド"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_comparisons
@@ -5840,17 +5840,17 @@ msgstr "次の数値より上回る、又はそれに等しい:"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
 msgid "Is less than"
-msgstr "次の数値を下回る:"
+msgstr "次より小さい:"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
 msgid "Is less than or equal to"
-msgstr "次の数値を下回る、又はそれに等しい:"
+msgstr "次以下:"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
 msgid "Is not between (excluded)"
-msgstr "次の数値の間ではない (それらの数値を含まない)"
+msgstr "次の範囲外(除外): "
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
@@ -5860,12 +5860,12 @@ msgstr "次の数値に等しくない:"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
 msgid "Is not set"
-msgstr "設定してない"
+msgstr "未設定"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
 msgid "Is set"
-msgstr "設定してる"
+msgstr "設定済"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -5883,7 +5883,7 @@ msgstr ""
 #: code:addons/website/static/src/components/dialog/page_properties.xml:0
 #, python-format
 msgid "It looks like your file is being called by"
-msgstr "ファイルは次のユーザーに呼び出されているみたいです:"
+msgstr "ファイルは次のユーザに呼び出されているようです:"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -8342,7 +8342,7 @@ msgstr "丸い"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_image_gallery_options
 msgid "Rounded Miniatures"
-msgstr "丸いミニチュア"
+msgstr "丸型サムネイル"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_rewrite__route_id
@@ -8753,7 +8753,7 @@ msgstr "一番良い事例研究を共有"
 #. module: website
 #: model:ir.model.fields,field_description:website.field_res_config_settings__shared_user_account
 msgid "Shared Customer Accounts"
-msgstr "共有済顧客アカウント"
+msgstr "共有顧客アカウント"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form

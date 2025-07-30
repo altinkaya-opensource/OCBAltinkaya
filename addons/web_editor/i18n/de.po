@@ -1271,7 +1271,7 @@ msgstr ""
 #: code:addons/web_editor/static/src/xml/snippets.xml:0
 #, python-format
 msgid "Gradient"
-msgstr "Gradient"
+msgstr "Farbverlauf"
 
 #. module: web_editor
 #: model:ir.model,name:web_editor.model_ir_http
@@ -3470,4 +3470,4 @@ msgstr "Websocket-Nachrichtbearbeitung"
 #. module: web_editor
 #: model_terms:ir.ui.view,arch_db:web_editor.snippet_options
 msgid "www.example.com"
-msgstr "www.example.com"
+msgstr "www.beispiel.com"

@@ -126,7 +126,7 @@ msgstr "$9.00"
 #: code:addons/website/static/src/snippets/s_website_form/options.js:0
 #, python-format
 msgid "%s List"
-msgstr ""
+msgstr "%s 清單"
 
 #. module: website
 #. odoo-javascript
@@ -1606,7 +1606,7 @@ msgstr "加上絕佳的口號."
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_product_catalog
 msgid "Add a menu description."
-msgstr "新增選項說明."
+msgstr "加入選單描述。"
 
 #. module: website
 #. odoo-javascript
@@ -1637,7 +1637,7 @@ msgstr "新增語言"
 #: code:addons/website/static/src/snippets/s_website_form/options.js:0
 #, python-format
 msgid "Add new %s"
-msgstr "新增一個%s"
+msgstr "加入新 %s"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.external_snippets
@@ -4251,7 +4251,7 @@ msgstr "例子"
 #: code:addons/website/static/src/snippets/s_website_form/options.js:0
 #, python-format
 msgid "Existing fields"
-msgstr ""
+msgstr "現有欄位"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_comparisons
@@ -4729,7 +4729,7 @@ msgstr "全螢幕"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_tabs_options
 msgid "Full Width"
-msgstr "Full Width"
+msgstr "全寬"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -5642,7 +5642,7 @@ msgstr "加入「分享」小工具。"
 #: code:addons/website/static/src/components/wysiwyg_adapter/wysiwyg_adapter.js:0
 #, python-format
 msgid "Insert a text Highlight snippet."
-msgstr "加入焦點文字區塊。"
+msgstr "插入焦點文字片段。"
 
 #. module: website
 #. odoo-javascript
@@ -8696,7 +8696,7 @@ msgstr "服務"
 #: model_terms:ir.ui.view,arch_db:website.template_footer_links
 #: model_terms:ir.ui.view,arch_db:website.template_footer_minimalist
 msgid "Services"
-msgstr "服務介紹"
+msgstr "服務"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.cookie_policy
@@ -9915,7 +9915,7 @@ msgid ""
 "To add a fourth column, reduce the size of these three columns using the "
 "right icon of each block. Then, duplicate one of the columns to create a new"
 " one as a copy."
-msgstr "要增加第四列，請使用每個塊的右圖示減小這三列的大小.然後，複製其中一列以建立一個新列作為副本."
+msgstr "若要新增第四個直欄，請使用其餘三欄的右側圖示，縮小這三欄的欄寬。然後，複製其中一欄，建立新的副本。"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_tabs
@@ -11558,7 +11558,7 @@ msgstr "電子商務"
 #. module: website
 #: model:website.configurator.feature,name:website.feature_module_elearning
 msgid "eLearning"
-msgstr "網上教學"
+msgstr "網上學習"
 
 #. module: website
 #. odoo-python

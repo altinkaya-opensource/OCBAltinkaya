@@ -1369,21 +1369,17 @@ class AccountMove(models.Model):
     @api.depends('move_type', 'partner_id', 'company_id')
     def _compute_narration(self):
         use_invoice_terms = self.env['ir.config_parameter'].sudo().get_param('account.use_invoice_terms')
-        for move in self:
-            if not move.is_sale_document(include_receipts=True):
-                continue
-            if not use_invoice_terms:
-                move.narration = False
+        invoice_to_update_terms = self.filtered(lambda m: use_invoice_terms and m.is_sale_document(include_receipts=True))
+        for move in invoice_to_update_terms:
+            lang = move.partner_id.lang or self.env.user.lang
+            if move.company_id.terms_type != 'html':
+                narration = move.company_id.with_context(lang=lang).invoice_terms if not is_html_empty(move.company_id.invoice_terms) else ''
             else:
-                lang = move.partner_id.lang or self.env.user.lang
-                if not move.company_id.terms_type == 'html':
-                    narration = move.company_id.with_context(lang=lang).invoice_terms if not is_html_empty(move.company_id.invoice_terms) else ''
-                else:
-                    baseurl = self.env.company.get_base_url() + '/terms'
-                    context = {'lang': lang}
-                    narration = _('Terms & Conditions: %s', baseurl)
-                    del context
-                move.narration = narration or False
+                baseurl = self.env.company.get_base_url() + '/terms'
+                context = {'lang': lang}
+                narration = _('Terms & Conditions: %s', baseurl)
+                del context
+            move.narration = narration or False
 
     @api.depends('company_id', 'partner_id', 'tax_totals', 'currency_id')
     def _compute_partner_credit_warning(self):
@@ -2256,13 +2252,20 @@ class AccountMove(models.Model):
         copied_am = super().copy(default)
         message_origin = '' if not copied_am.auto_post_origin_id else \
             '<br/>' + _('This recurring entry originated from %s', copied_am.auto_post_origin_id._get_html_link())
-        copied_am._message_log(body=_(
-            'This entry has been duplicated from %s%s',
-            self._get_html_link(),
-            message_origin,
-        ))
+        message_content = self._get_copy_message_content(default)
+        copied_am._message_log(
+            body=message_content + message_origin,
+        )
 
         return copied_am
+
+    def _get_copy_message_content(self, default):
+        """Hook method to customize the message content when copying a move.
+        This method can be overridden by other modules to add custom logic.
+        :param default: The default values dict passed to copy method
+        :return: The message content string
+        """
+        return _('This entry has been duplicated from %s', self._get_html_link())
 
     def _sanitize_vals(self, vals):
         if vals.get('invoice_line_ids') and vals.get('line_ids'):

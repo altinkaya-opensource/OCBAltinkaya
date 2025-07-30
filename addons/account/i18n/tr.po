@@ -36,14 +36,15 @@
 # Melih Melik Sonmez, 2025
 # Hakan Türkün, 2025
 # Wil Odoo, 2025
+# Deniz Guvener_Odoo <degu@odoo.com>, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-06 20:35+0000\n"
+"POT-Creation-Date: 2025-07-04 01:32+0000\n"
 "PO-Revision-Date: 2022-09-22 05:44+0000\n"
-"Last-Translator: Wil Odoo, 2025\n"
+"Last-Translator: Deniz Guvener_Odoo <degu@odoo.com>, 2025\n"
 "Language-Team: Turkish (https://app.transifex.com/odoo/teams/41243/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1525,7 +1526,7 @@ msgstr ""
 #: code:addons/account/models/account_move_line.py:0
 #, python-format
 msgid "Account %s is of payable type, but is used in a sale operation."
-msgstr ""
+msgstr "Hesap %s ödenecek türdedir, ancak satış işleminde kullanılır."
 
 #. module: account
 #. odoo-python
@@ -1533,6 +1534,7 @@ msgstr ""
 #, python-format
 msgid "Account %s is of receivable type, but is used in a purchase operation."
 msgstr ""
+"Hesap %s, borçlular hesabı türündendir, ancak satış işleminde kullanılır."
 
 #. module: account
 #: model:ir.model,name:account.model_account_cash_rounding
@@ -3601,7 +3603,7 @@ msgstr "Satış yevmiyesi olmadığında satış belgesi oluşturulamıyor"
 #: code:addons/account/wizard/accrued_orders.py:0
 #, python-format
 msgid "Cannot create an accrual entry with orders in different currencies."
-msgstr ""
+msgstr "Farklı para birimlerinde siparişler ile tahakkuk kaydı oluşturulamaz."
 
 #. module: account
 #. odoo-python
@@ -7832,6 +7834,7 @@ msgstr ""
 msgid ""
 "Internal field to shorten expression_ids creation for the tax_tags engine"
 msgstr ""
+"tax_tags motoru için expression_ids oluşturulmasını kısaltan dahili alan"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_bank_statement_line__invoice_incoterm_id
@@ -8217,7 +8220,7 @@ msgstr "Arasında"
 #: model:ir.model.fields,field_description:account.field_res_partner__is_coa_installed
 #: model:ir.model.fields,field_description:account.field_res_users__is_coa_installed
 msgid "Is Coa Installed"
-msgstr ""
+msgstr "Hesap Planı Kurulu mu?"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_bank_statement__is_complete
@@ -8336,7 +8339,7 @@ msgstr "Daha önce '%(previous)s' idi ve şimdi '%(current)s'."
 #: code:addons/account/models/account_move_line.py:0
 #, python-format
 msgid "Items With Missing Analytic Distribution"
-msgstr ""
+msgstr "Analitik Dağılımı Eksik Kalemler"
 
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__res_company__fiscalyear_last_month__1
@@ -12487,7 +12490,7 @@ msgstr "Tüm aktiviteleri görün"
 #: code:addons/account/models/account_move_line.py:0
 #, python-format
 msgid "See items"
-msgstr ""
+msgstr "Kalemleri Gör"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_journal__type
@@ -12583,7 +12586,7 @@ msgstr "Seçim"
 #: model:ir.model.fields.selection,name:account.selection__account_payment__payment_type__outbound
 #: model_terms:ir.ui.view,arch_db:account.account_invoice_send_wizard_form
 msgid "Send"
-msgstr "Para Gönder"
+msgstr "Gönder"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_invoice_send_wizard_form
@@ -12776,6 +12779,7 @@ msgstr "Bir fiyat belirleyin"
 #: model:ir.model.fields,help:account.field_res_users__use_partner_credit_limit
 msgid "Set a value greater than 0.0 to activate a credit limit check"
 msgstr ""
+"Kredi limiti kontrolünü etkinleştirmek için 0.0'dan büyük bir değer girin."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_account_tag__active
@@ -13593,7 +13597,7 @@ msgstr "Vergi Etiketleri"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_report_line__tax_tags_formula
 msgid "Tax Tags Formula Shortcut"
-msgstr ""
+msgstr "Vergi Etiketi Formül Kısayolu"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_tax_template_search
@@ -13930,6 +13934,8 @@ msgid ""
 "The Availability is set to 'Country Matches' but the field Country is not "
 "set."
 msgstr ""
+"Kullanılabilirlik \"Ülke Eşleşiyor\" olarak ayarlanmış ancak Ülke alanı "
+"belirtilmemiş."
 
 #. module: account
 #. odoo-python
@@ -14158,6 +14164,8 @@ msgid ""
 "The country code of the foreign VAT number does not match any country in the"
 " group."
 msgstr ""
+"Yabancı KDV numarasının ülke kodu, gruptaki herhangi bir ülke ile "
+"eşleşmiyor."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_tax_group__country_id
@@ -15228,8 +15236,8 @@ msgstr ""
 #. odoo-python
 #: code:addons/account/models/account_move.py:0
 #, python-format
-msgid "This entry has been duplicated from %s%s"
-msgstr "Bu kayıt %s%s'den kopyalanmıştır"
+msgid "This entry has been duplicated from %s"
+msgstr "Bu kayıt %s kaydından kopyalanmıştır"
 
 #. module: account
 #. odoo-python
@@ -16259,6 +16267,10 @@ msgid ""
 "                you receive from your vendor according to the draft\n"
 "                document in Odoo."
 msgstr ""
+"Tedarikçi faturaları, satın alma siparişleri veya teslimatlar baz alınarak\n"
+"                önceden oluşturulabilir. Böylece, satıcıdan gelen faturaları\n"
+"                Odoo'daki taslak belgeye göre\n"
+"                kontrol edebilirsiniz."
 
 #. module: account
 #. odoo-javascript
@@ -16914,7 +16926,7 @@ msgstr ""
 #: code:addons/account/models/account_account.py:0
 #, python-format
 msgid "You cannot deprecate an account that is used in a tax distribution."
-msgstr ""
+msgstr "Vergi dağılımında kullanılan bir hesabı kullanımdan kaldıramazsınız."
 
 #. module: account
 #. odoo-python
@@ -17168,7 +17180,7 @@ msgstr ""
 #: code:addons/account/models/account_move.py:0
 #, python-format
 msgid "You cannot switch the type of a document which has been posted once."
-msgstr ""
+msgstr "Bir kez muhasebeleştirilmiş bir belgenin türünü değiştiremezsiniz."
 
 #. module: account
 #. odoo-python

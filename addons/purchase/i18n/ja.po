@@ -661,7 +661,7 @@ msgstr "金額"
 msgid ""
 "Amount of time between date planned and order by date for each purchase "
 "order line."
-msgstr "各発注書ラインの計画日から注文日までの時間。"
+msgstr "各購買オーダ明細における、計画日とオーダ期日の間の所要時間。"
 
 #. module: purchase
 #: model:ir.model.fields,help:purchase.field_purchase_report__avg_days_to_purchase
@@ -839,7 +839,7 @@ msgstr "ブロッキングメッセージ"
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order__user_id
 msgid "Buyer"
-msgstr "購買担当者"
+msgstr "購入者"
 
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_calendar
@@ -1278,7 +1278,7 @@ msgstr "メッセージあり"
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_line_search
 msgid "Hide cancelled lines"
-msgstr "取消行非表示"
+msgstr "キャンセル済明細を非表示"
 
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.portal_my_purchase_order
@@ -2135,7 +2135,7 @@ msgstr "購買担当者"
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_res_config_settings__group_warning_purchase
 msgid "Purchase Warnings"
-msgstr "購入の警告"
+msgstr "購買警告"
 
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_view_search
@@ -3121,12 +3121,12 @@ msgstr "%s の警告です。"
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.res_partner_view_purchase_buttons
 msgid "Warning on the Purchase Order"
-msgstr "購買オーダにて警告"
+msgstr "購買オーダに関する警告"
 
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.view_product_supplier_inherit
 msgid "Warning when Purchasing this Product"
-msgstr "プロダクト購買時に警告"
+msgstr "このプロダクトを購買する際の警告"
 
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_view_search

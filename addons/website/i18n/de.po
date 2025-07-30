@@ -733,7 +733,7 @@ msgid ""
 "me-2\"/><span>info@yourcompany.example.com</span>"
 msgstr ""
 "<i class=\"fa fa-1x fa-fw fa-envelope "
-"me-2\"/><span>info@yourcompany.example.com</span>"
+"me-2\"/><span>info@ihrunternehmen.beispiel.com</span>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.template_footer_call_to_action
@@ -1225,7 +1225,7 @@ msgid ""
 "MyCompany</span>"
 msgstr ""
 "<span class=\"s_blockquote_author\"><b>Iris DOE</b> - CEO von "
-"MyCompany</span>"
+"MeinUnternehmen</span>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_quotes_carousel
@@ -1234,7 +1234,7 @@ msgid ""
 "MyCompany</span>"
 msgstr ""
 "<span class=\"s_blockquote_author\"><b>Jane DOE</b> - CEO von "
-"MyCompany</span>"
+"MeinUnternehmen</span>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_blockquote
@@ -1244,7 +1244,7 @@ msgid ""
 "MyCompany</span>"
 msgstr ""
 "<span class=\"s_blockquote_author\"><b>Lieschen Müller</b> - CEO von "
-"MyCompany</span>"
+"MeinUnternehmen</span>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_comparisons
@@ -6560,7 +6560,7 @@ msgstr "Logo"
 #: model_terms:ir.ui.view,arch_db:website.template_footer_contact
 #: model_terms:ir.ui.view,arch_db:website.template_footer_minimalist
 msgid "Logo of MyCompany"
-msgstr "Logo von MyCompany"
+msgstr "Logo von MeinUnternehmen"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -7058,7 +7058,7 @@ msgstr "Meine Website"
 #: model_terms:ir.ui.view,arch_db:website.template_footer_links
 #: model_terms:ir.ui.view,arch_db:website.template_footer_minimalist
 msgid "MyCompany"
-msgstr "MyCompany"
+msgstr "MeinUnternehmen"
 
 #. module: website
 #. odoo-javascript
@@ -7635,7 +7635,7 @@ msgstr "Hervorragende Bilder"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "Over The Content"
-msgstr "Über den Inhalt"
+msgstr "Über dem Inhalt"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -12001,7 +12001,7 @@ msgstr "Überschrift, Ü1"
 #: model_terms:ir.ui.view,arch_db:website.template_footer_contact
 #: model_terms:ir.ui.view,arch_db:website.template_footer_descriptive
 msgid "hello@mycompany.com"
-msgstr "hello@mycompany.com"
+msgstr "hello@meinunternehmen.com"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets
@@ -12053,7 +12053,7 @@ msgstr "in der oberen rechten Ecke, um mit dem Entwurf zu beginnen."
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.template_footer_links
 msgid "info@yourcompany.com"
-msgstr "info@yourcompany.com"
+msgstr "info@ihrunternehmen.com"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.footer_custom
@@ -12064,7 +12064,7 @@ msgstr "info@yourcompany.com"
 #: model_terms:ir.ui.view,arch_db:website.template_header_hamburger_oe_structure_header_hamburger_3
 #: model_terms:ir.ui.view,arch_db:website.template_header_sidebar_oe_structure_header_sidebar_1
 msgid "info@yourcompany.example.com"
-msgstr "info@yourcompany.example.com"
+msgstr "info@ihrunternehmen.beispiel.com"
 
 #. module: website
 #. odoo-javascript

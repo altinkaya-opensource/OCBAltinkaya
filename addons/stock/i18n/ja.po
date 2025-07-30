@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-10 08:26+0000\n"
+"POT-Creation-Date: 2025-06-13 18:35+0000\n"
 "PO-Revision-Date: 2022-09-22 05:55+0000\n"
 "Last-Translator: Junko Augias, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/odoo/teams/41243/ja/)\n"
@@ -848,7 +848,7 @@ msgstr "新しいストレージカテゴリを追加"
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_form
 msgid ""
 "Add an internal note that will be printed on the Picking Operations sheet"
-msgstr "ピッキング作業シートに印刷される内部ノートを追加する"
+msgstr "ピッキングオペレーションシートに印刷される内部メモを追加"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_res_config_settings__group_stock_adv_location
@@ -1619,8 +1619,10 @@ msgstr "配送費用を計算"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
-msgid "Compute shipping costs and ship with DHL"
-msgstr "DHLで配送費用計算し出荷"
+msgid ""
+"Compute shipping costs and ship with DHL<br/>\n"
+"                                        <strong>(please go to Home&gt;Apps to install)</strong>"
+msgstr ""
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
@@ -1629,8 +1631,10 @@ msgstr "Easypostで配送費用計算し出荷"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
-msgid "Compute shipping costs and ship with FedEx"
-msgstr "FedExで配送費用計算し出荷"
+msgid ""
+"Compute shipping costs and ship with FedEx<br/>\n"
+"                                        <strong>(please go to Home&gt;Apps to install)</strong>"
+msgstr ""
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
@@ -1639,13 +1643,17 @@ msgstr "Sendcloudで配送費用計算し出荷"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
-msgid "Compute shipping costs and ship with UPS"
-msgstr "UPSで配送費用計算し出荷"
+msgid ""
+"Compute shipping costs and ship with UPS<br/>\n"
+"                                        <strong>(please go to Home&gt;Apps to install)</strong>"
+msgstr ""
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
-msgid "Compute shipping costs and ship with USPS"
-msgstr "USPSで配送費用計算し出荷"
+msgid ""
+"Compute shipping costs and ship with USPS<br/>\n"
+"                                        <strong>(please go to Home&gt;Apps to install)</strong>"
+msgstr ""
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
@@ -1790,32 +1798,32 @@ msgstr "カウント"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking_type__count_picking
 msgid "Count Picking"
-msgstr "カウントピッキング"
+msgstr "ピッキング件数"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking_type__count_picking_backorders
 msgid "Count Picking Backorders"
-msgstr "ピッキングバックオーダのカウント"
+msgstr "ピッキングのバックオーダ件数"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking_type__count_picking_draft
 msgid "Count Picking Draft"
-msgstr "ピッキングドラフトを数える"
+msgstr "ピッキングのドラフト件数"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking_type__count_picking_late
 msgid "Count Picking Late"
-msgstr "ピッキングを遅らせる"
+msgstr "期限超過ピッキング件数"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking_type__count_picking_ready
 msgid "Count Picking Ready"
-msgstr "ピッキング準備完了カウント"
+msgstr "準備完了ピッキング件数"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking_type__count_picking_waiting
 msgid "Count Picking Waiting"
-msgstr "ピッキング待機カウント"
+msgstr "処理待ちピッキング件数"
 
 #. module: stock
 #. odoo-javascript
@@ -2085,6 +2093,11 @@ msgstr "顧客ロケーション"
 #: model_terms:ir.ui.view,arch_db:stock.view_location_form
 msgid "Cyclic Counting"
 msgstr "サイクルカウント"
+
+#. module: stock
+#: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
+msgid "DHL Connector"
+msgstr ""
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_config_settings__module_delivery_dhl
@@ -2479,7 +2492,7 @@ msgstr "説明ピッキング"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_move__partner_id
 msgid "Destination Address "
-msgstr "移動先アドレス (引当用)"
+msgstr "配送先住所"
 
 #. module: stock
 #. odoo-python
@@ -2887,6 +2900,7 @@ msgstr "2月"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_config_settings__module_delivery_fedex
+#: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
 msgid "FedEx Connector"
 msgstr "FedExコネクター"
 
@@ -5681,12 +5695,12 @@ msgstr "取引先アドレス"
 #: model:ir.model.fields,field_description:stock.field_stock_immediate_transfer__pick_ids
 #, python-format
 msgid "Pick"
-msgstr "集荷"
+msgstr "ピッキング"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse__pick_type_id
 msgid "Pick Type"
-msgstr "ピックタイプ"
+msgstr "ピッキングタイプ"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_lot_label_layout__picking_ids
@@ -5702,7 +5716,7 @@ msgstr "ピッキング"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_internal_search
 msgid "Picking Lists"
-msgstr "集荷リスト"
+msgstr "ピッキングリスト"
 
 #. module: stock
 #: model:ir.actions.report,name:stock.action_report_picking
@@ -6883,7 +6897,7 @@ msgstr "補充ルート"
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_form
 #: model_terms:ir.ui.view,arch_db:stock.view_stock_return_picking_form
 msgid "Return"
-msgstr "返却"
+msgstr "返品"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_return_picking__location_id
@@ -6893,12 +6907,12 @@ msgstr "返品ロケーション"
 #. module: stock
 #: model:ir.model,name:stock.model_stock_return_picking
 msgid "Return Picking"
-msgstr "ピッキングの戻し"
+msgstr "返品ピッキング"
 
 #. module: stock
 #: model:ir.model,name:stock.model_stock_return_picking_line
 msgid "Return Picking Line"
-msgstr "ピッキングラインを返す"
+msgstr "返品ピッキング明細"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse__return_type_id
@@ -6910,14 +6924,14 @@ msgstr "申告タイプ"
 #: code:addons/stock/wizard/stock_picking_return.py:0
 #, python-format
 msgid "Return of %s"
-msgstr "%sの戻り"
+msgstr "%sの返品"
 
 #. module: stock
 #. odoo-python
 #: code:addons/stock/wizard/stock_picking_return.py:0
 #, python-format
 msgid "Returned Picking"
-msgstr "返送品の選別"
+msgstr "返品済ピッキング"
 
 #. module: stock
 #. odoo-python
@@ -6948,7 +6962,7 @@ msgstr ""
 #. module: stock
 #: model:ir.actions.act_window,name:stock.act_stock_return_picking
 msgid "Reverse Transfer"
-msgstr "移動戻し"
+msgstr "リバース転送"
 
 #. module: stock
 #: model:ir.actions.server,name:stock.action_revert_inventory_adjustment
@@ -8838,11 +8852,13 @@ msgstr "記録上の例外アクティビティのタイプ。"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_config_settings__module_delivery_ups
+#: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
 msgid "UPS Connector"
 msgstr "UPSコネクター"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_config_settings__module_delivery_usps
+#: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
 msgid "USPS Connector"
 msgstr "USPSコネクター"
 
@@ -9932,7 +9948,7 @@ msgstr "お客様のT&amp;Cを反映させるために、この文書を更新�
 #: code:addons/stock/models/stock_warehouse.py:0
 #, python-format
 msgid "You still have ongoing operations for picking types %s in warehouse %s"
-msgstr "倉庫%sでタイプ%sを選択するための進行中の操作がまだあります"
+msgstr "倉庫%s内に処理中のピッキングタイプ%sのオペレーションがまだ残っています。"
 
 #. module: stock
 #. odoo-python
@@ -9948,7 +9964,7 @@ msgstr "この製品には、まだいくつかのアクティブな並べ替え
 #: code:addons/stock/models/stock_location.py:0
 #, python-format
 msgid "You still have some product in locations %s"
-msgstr "%sの場所にまだいくつかの製品があります"
+msgstr "ロケーション%sにまだプロダクトがあります"
 
 #. module: stock
 #. odoo-javascript
@@ -9982,7 +9998,7 @@ msgstr "ランチが届きました。お食事をお楽しみ下さい！"
 #: code:addons/stock/models/stock_quant.py:0
 #, python-format
 msgid "Your stock is currently empty"
-msgstr "現在、在庫はございません。"
+msgstr "現在、在庫が空です"
 
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__lot_label_layout__print_format__zpl

@@ -10,13 +10,14 @@
 # Mads Søndergaard, 2022
 # JonathanStein <jstein@image.dk>, 2023
 # lhmflexerp <lhm@flexerp.dk>, 2024
-# Sanne Kristensen <sanne@vkdata.dk>, 2024
 # Mads Søndergaard, 2024
 # Morten Paaske, 2024
 # Sammi Iversen <sammi@vkdata.dk>, 2025
 # Wil Odoo, 2025
 # Martin Trigaux, 2025
 # Larissa Manderfeld, 2025
+# Sanne Kristensen <sanne@vkdata.dk>, 2025
+# Kira Petersen, 2025
 # 
 msgid ""
 msgstr ""
@@ -24,7 +25,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-06 20:35+0000\n"
 "PO-Revision-Date: 2022-09-22 05:53+0000\n"
-"Last-Translator: Larissa Manderfeld, 2025\n"
+"Last-Translator: Kira Petersen, 2025\n"
 "Language-Team: Danish (https://app.transifex.com/odoo/teams/41243/da/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -4195,7 +4196,7 @@ msgstr "Grupper"
 #: model:ir.model.fields,field_description:mail.field_res_users_settings_volumes__guest_id
 #, python-format
 msgid "Guest"
-msgstr ""
+msgstr "Gæst"
 
 #. module: mail
 #. odoo-python
@@ -5518,7 +5519,7 @@ msgstr "Indlæs mere"
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.email_compose_message_wizard_form
 msgid "Load template"
-msgstr ""
+msgstr "Indlæs skabelon"
 
 #. module: mail
 #. odoo-javascript
@@ -5657,7 +5658,7 @@ msgstr "Mail kanal formular"
 #. module: mail
 #: model:ir.model,name:mail.model_mail_composer_mixin
 msgid "Mail Composer Mixin"
-msgstr ""
+msgstr "Mixin til mail-editor"
 
 #. module: mail
 #. odoo-javascript
@@ -6142,7 +6143,7 @@ msgstr "Milky Way"
 #. module: mail
 #: model:ir.model.fields.selection,name:mail.selection__mail_mail__failure_type__mail_email_missing
 msgid "Missing email"
-msgstr ""
+msgstr "Manglende e-mail"
 
 #. module: mail
 #: model:ir.model.fields.selection,name:mail.selection__mail_notification__failure_type__mail_email_missing
@@ -10415,7 +10416,7 @@ msgstr ""
 #: code:addons/mail/static/src/components/welcome_view/welcome_view.xml:0
 #, python-format
 msgid "What's your name?"
-msgstr ""
+msgstr "Hvad hedder du?"
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_fetchmail_server__original
@@ -12407,7 +12408,7 @@ msgstr ""
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "bill"
-msgstr ""
+msgstr "Faktura"
 
 #. module: mail
 #. odoo-javascript
@@ -18832,7 +18833,7 @@ msgstr ""
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "floor"
-msgstr ""
+msgstr "rum"
 
 #. module: mail
 #. odoo-javascript
@@ -23802,7 +23803,7 @@ msgstr ""
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "man police officer"
-msgstr ""
+msgstr "mandlig politibetjent"
 
 #. module: mail
 #. odoo-javascript
@@ -25361,7 +25362,7 @@ msgstr ""
 #: code:addons/mail/static/src/models_data/emoji_data.js:0
 #, python-format
 msgid "net"
-msgstr ""
+msgstr "netto"
 
 #. module: mail
 #. odoo-javascript

@@ -9868,14 +9868,14 @@ msgstr ""
 #. module: base
 #: model:ir.model,name:base.model_res_users_apikeys_description
 msgid "API Key Description"
-msgstr ""
+msgstr "תיאור מפתח API"
 
 #. module: base
 #. odoo-python
 #: code:addons/base/models/res_users.py:0
 #, python-format
 msgid "API Key Ready"
-msgstr ""
+msgstr "מפתח  API מוכן"
 
 #. module: base
 #: model:ir.actions.act_window,name:base.action_res_users_keys_description
@@ -14677,8 +14677,8 @@ msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_delivery_dhl
-msgid "DHL Express Shipping"
-msgstr "DHL משלוח אקספרס "
+msgid "DHL Express Shipping (Legacy)"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_din5008
@@ -21407,7 +21407,7 @@ msgstr "נהל ופרסם פלטפורמת למידה מקוונת"
 #. module: base
 #: model:ir.module.module,summary:base.module_account_asset_fleet
 msgid "Manage assets with fleets"
-msgstr ""
+msgstr "נהל את הנכסים עם צי רכב"
 
 #. module: base
 #: model:ir.module.module,description:base.module_account_disallowed_expenses
@@ -25495,7 +25495,7 @@ msgstr "דירוג פורטל"
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_users_search
 msgid "Portal Users"
-msgstr ""
+msgstr "משתמשי פורטל"
 
 #. module: base
 #: model:res.groups,comment:base.group_portal
@@ -25546,7 +25546,7 @@ msgstr ""
 #: code:addons/base/models/ir_qweb_fields.py:0
 #, python-format
 msgid "Precision Digits"
-msgstr ""
+msgstr "מספרי דיוק"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_predictive_bills
@@ -26115,7 +26115,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,summary:base.module_website_knowledge
 msgid "Publish your articles"
-msgstr ""
+msgstr "פרסם את המאמרים שלך"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_customer
@@ -27823,7 +27823,7 @@ msgstr "למכור כרטיסים לאירוע באינטרנט"
 #. module: base
 #: model:ir.module.module,summary:base.module_website_sale_renting
 msgid "Sell rental products on your eCommerce"
-msgstr ""
+msgstr "מכור מוצרים להשכרה באתר האינטרנט שלך"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_sale_renting_product_configurator
@@ -27848,7 +27848,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,summary:base.module_website_sale_subscription
 msgid "Sell subscription products on your eCommerce"
-msgstr ""
+msgstr "מכור מוצרים מסוג מנוי באתר האינטרנט שלך"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_sale_slides
@@ -27908,7 +27908,7 @@ msgstr "שליחת הודעות טקסט כתזכורות לאירועים"
 #: model:ir.module.module,description:base.module_stock_sms
 #: model:ir.module.module,summary:base.module_stock_sms
 msgid "Send text messages when final stock move"
-msgstr ""
+msgstr "שלח הודעות טקסט בעת תנועת מלאי סופית"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_industry_fsm_sms
@@ -27919,7 +27919,7 @@ msgstr ""
 #: model:ir.module.module,description:base.module_project_sms
 #: model:ir.module.module,summary:base.module_project_sms
 msgid "Send text messages when project/task stage move"
-msgstr ""
+msgstr "שלח הודעות טקסט כאשר שלב הפרויקט/המשימה משתנה."
 
 #. module: base
 #: model:ir.module.module,description:base.module_helpdesk_sms
@@ -27939,8 +27939,11 @@ msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_delivery_dhl
-msgid "Send your shippings through DHL and track them online"
-msgstr "שלח את החבילות שלך דרך DHL ולעקוב אחריהם באינטרנט"
+msgid ""
+"This is the legacy integration with DHL Express that is no longer supported."
+" Please install the new \"DHL Express Shipping\" module and uninstall this "
+"one as soon as possible."
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_delivery_fedex_rest
@@ -27960,7 +27963,7 @@ msgstr "שלח את החבילות שלך דרך USPS ולעקוב אחריהם 
 #. module: base
 #: model:ir.module.module,summary:base.module_survey
 msgid "Send your surveys or share them live."
-msgstr ""
+msgstr "שלח סקרים או שתף אותם בזמן אמת."
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_delivery_sendcloud
@@ -28730,12 +28733,12 @@ msgstr ""
 #: model:ir.module.module,shortdesc:base.module_spreadsheet_dashboard_documents
 #: model:ir.module.module,summary:base.module_spreadsheet_dashboard_documents
 msgid "Spreadsheet Documents"
-msgstr ""
+msgstr "מסמכי גיליונות עבודה"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_spreadsheet_dashboard
 msgid "Spreadsheet dashboard"
-msgstr ""
+msgstr "לוח בקרה של גליון אלקטרוני"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_spreadsheet_dashboard_edition
@@ -29751,6 +29754,9 @@ msgid ""
 "order to be valid, any derogation must be expressly agreed to in advance in "
 "writing."
 msgstr ""
+"הלקוח מוותר במפורש על התנאים וההתניות הסטנדרטיים שלו, גם אם נוסחו לאחר תנאי "
+"מכירה סטנדרטיים אלה. כל סטייה מהתנאים תחייב תוקף רק אם סוכמה מראש ובכתב "
+"באופן מפורש."
 
 #. module: base
 #: model:ir.model.constraint,message:base.constraint_res_country_code_uniq
@@ -29770,7 +29776,7 @@ msgstr "הקוד של המדינה חייב להיות ייחודי לפי מד�
 #. module: base
 #: model:ir.model.constraint,message:base.constraint_res_partner_bank_unique_number
 msgid "The combination Account Number/Partner must be unique."
-msgstr ""
+msgstr "השילוב של מספר חשבון\\ספק או לקוח חייב להיות ייחודי."
 
 #. module: base
 #. odoo-python
@@ -29780,6 +29786,8 @@ msgid ""
 "The company %(company_name)s cannot be archived because it is still used as "
 "the default company of %(active_users)s users."
 msgstr ""
+"לא ניתן להכניס לארכיון את החברה %(company_name)s מכיוון שהיא עדיין מוגדרת "
+"כברירת מחדל עבור המשתמשים %(active_users)s."
 
 #. module: base
 #: model:ir.model.constraint,message:base.constraint_res_company_name_uniq
@@ -29901,7 +29909,7 @@ msgstr ""
 #: code:addons/models.py:0
 #, python-format
 msgid "The following languages are not activated: %(missing_names)s"
-msgstr ""
+msgstr "השפות הבאות לא פעילות: %(missing_names)s"
 
 #. module: base
 #. odoo-python
@@ -29941,6 +29949,8 @@ msgid ""
 "The languages that you selected have been successfully installed. Users can "
 "choose their favorite language in their preferences."
 msgstr ""
+"השפות שבחרת הותקנו בהצלחה. משתמשים יכולים לבחור את השפה המועדפת עליהם "
+"בהגדרות האישיות."
 
 #. module: base
 #. odoo-python
@@ -30017,6 +30027,8 @@ msgid ""
 "The name for the current rate is empty.\n"
 "Please set it."
 msgstr ""
+"השם עבור השער הנוכחי ריק.\n"
+"אנא הגדר אותו."
 
 #. module: base
 #: model:ir.model.constraint,message:base.constraint_res_country_name_uniq
@@ -30150,7 +30162,7 @@ msgstr "הנתיב לקובץ הדו\"ח הראשי (תלוי בסוג דוח) �
 #. module: base
 #: model:ir.module.module,summary:base.module_payment
 msgid "The payment engine used by payment provider modules."
-msgstr ""
+msgstr "מנוע התשלומים שבו משתמשים מודולי ספקי התשלום."
 
 #. module: base
 #. odoo-python
@@ -30195,7 +30207,7 @@ msgstr "שער המטבע למטבע השער 1"
 #. module: base
 #: model:ir.model.fields,help:base.field_res_currency_rate__inverse_company_rate
 msgid "The rate of the currency to the currency of rate 1 "
-msgstr ""
+msgstr "השער של המטבע ביחס למטבע ששערו הוא 1"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_currency__rate
@@ -30267,7 +30279,7 @@ msgstr "גורם העיגול חייב להיות גדול מ -0!"
 #: code:addons/base/models/ir_mail_server.py:0
 #, python-format
 msgid "The server \"%s\" cannot be used because it is archived."
-msgstr ""
+msgstr "השרת \"%s\" לא ניתן לשימוש היות והוא בארכיון."
 
 #. module: base
 #. odoo-python
@@ -30867,7 +30879,7 @@ msgstr ""
 #: code:addons/base/models/ir_module.py:0
 #, python-format
 msgid "Those modules cannot be uninstalled: %s"
-msgstr ""
+msgstr "אין אפשרות להסיר את המודולים:%s"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_lang__thousands_sep
@@ -31703,7 +31715,7 @@ msgstr "שם שדה לא ידוע '%s' בשדה קשור '%s'"
 #: code:addons/base/models/ir_model.py:0
 #, python-format
 msgid "Unknown model name '%s' in Related Model"
-msgstr ""
+msgstr "שם מודול לא ידוע '%s' במודול קשור"
 
 #. module: base
 #. odoo-python
@@ -31880,7 +31892,7 @@ msgstr "השתמש בקופונים, מבצעים, כרטיסי מתנה ותו�
 #. module: base
 #: model:ir.module.module,summary:base.module_sale_loyalty
 msgid "Use discounts and loyalty programs in sales orders"
-msgstr ""
+msgstr "השתמש בהנחות ותוכניות נאמנות בהזמנות לקוח"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_loyalty
@@ -31888,6 +31900,8 @@ msgid ""
 "Use discounts, gift card, eWallets and loyalty programs in different sales "
 "channels"
 msgstr ""
+"השתמש בהנחות, כרטיסי מתנה, ארנקים דיגיטליים ותוכניות נאמנות בערוצי מכירה "
+"שונים."
 
 #. module: base
 #: model_terms:ir.actions.act_window,help:base.action_country_group
@@ -31972,7 +31986,7 @@ msgstr "משמש להזמין חברות ב מתג סויץ' "
 msgid ""
 "Used when the user only selects one language and is given the option to "
 "switch to it"
-msgstr ""
+msgstr "בשימוש כאשר המשתמש בוחר שפה אחת בלבד ומקבל את האפשרות לעבור אליה"
 
 #. module: base
 #: model:ir.model,name:base.model_res_users
@@ -32107,7 +32121,7 @@ msgstr ""
 #. module: base
 #: model:ir.model,name:base.model_res_users_deletion
 msgid "Users Deletion Request"
-msgstr ""
+msgstr "בקשת מחיקה של משתמש"
 
 #. module: base
 #: model:ir.model,name:base.model_res_users_log
@@ -32475,7 +32489,7 @@ msgstr "ניהול מחסן: העברת Batch"
 #: model:ir.module.module,description:base.module_data_merge_stock_account
 #: model:ir.module.module,summary:base.module_data_merge_stock_account
 msgid "Warn user in case of products merging"
-msgstr ""
+msgstr "הזהר במקרה של מיזוג מוצרים"
 
 #. module: base
 #. odoo-python

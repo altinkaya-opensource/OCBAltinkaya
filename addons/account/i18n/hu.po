@@ -19,16 +19,16 @@
 # Tamás Dombos, 2024
 # Krisztián Juhász <juhasz.krisztian@josafar.hu>, 2024
 # Pammer József, 2025
-# gezza <geza.nagy@oregional.hu>, 2025
 # krnkris, 2025
 # Veronika Kocsis, 2025
+# gezza <geza.nagy@oregional.hu>, 2025
 # Valics Lehel, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-06 20:35+0000\n"
+"POT-Creation-Date: 2025-07-04 01:32+0000\n"
 "PO-Revision-Date: 2022-09-22 05:44+0000\n"
 "Last-Translator: Valics Lehel, 2025\n"
 "Language-Team: Hungarian (https://app.transifex.com/odoo/teams/41243/hu/)\n"
@@ -4532,6 +4532,8 @@ msgid ""
 "Create invoices, register payments and keep track of the discussions with "
 "your vendors."
 msgstr ""
+"Számlák létrehozása, fizetése regisztrálása és szállítókkal történő "
+"beszélgetések nyomonkövetése."
 
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.rounding_list_action
@@ -5730,7 +5732,7 @@ msgstr "Dokumentum digitalizálás"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_tax_repartition_line__document_type
 msgid "Document Type"
-msgstr ""
+msgstr "Dokumentum típus"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
@@ -15027,8 +15029,8 @@ msgstr ""
 #. odoo-python
 #: code:addons/account/models/account_move.py:0
 #, python-format
-msgid "This entry has been duplicated from %s%s"
-msgstr ""
+msgid "This entry has been duplicated from %s"
+msgstr "Ez a bejegyzés másolat készült a %s-ból"
 
 #. module: account
 #. odoo-python

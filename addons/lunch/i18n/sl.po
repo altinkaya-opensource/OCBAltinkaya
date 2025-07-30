@@ -552,7 +552,7 @@ msgstr ""
 #. module: lunch
 #: model:lunch.product,name:lunch.product_coke_0
 msgid "Coca Cola"
-msgstr ""
+msgstr "Coca Cola"
 
 #. module: lunch
 #: model:ir.model,name:lunch.model_res_company
@@ -732,7 +732,7 @@ msgstr ""
 #. module: lunch
 #: model:lunch.product.category,name:lunch.categ_drinks
 msgid "Drinks"
-msgstr ""
+msgstr "Pijače"
 
 #. module: lunch
 #. odoo-javascript
@@ -831,7 +831,7 @@ msgstr ""
 #. module: lunch
 #: model:ir.model.fields,field_description:lunch.field_lunch_product__favorite_user_ids
 msgid "Favorite User"
-msgstr ""
+msgstr "Priljubljeni uporabnik"
 
 #. module: lunch
 #: model:ir.model.fields,field_description:lunch.field_lunch_supplier__message_follower_ids
@@ -1007,7 +1007,7 @@ msgstr ""
 #. module: lunch
 #: model:ir.model.fields,field_description:lunch.field_lunch_product__is_favorite
 msgid "Is Favorite"
-msgstr ""
+msgstr "Je priljubljen"
 
 #. module: lunch
 #: model:ir.model.fields,field_description:lunch.field_lunch_supplier__message_is_follower

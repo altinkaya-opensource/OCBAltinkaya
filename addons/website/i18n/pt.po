@@ -25,12 +25,12 @@
 # NumerSpiral HBG, 2024
 # Marta Marouço, 2024
 # Samuel Afonso, 2024
-# Maitê Dietze, 2024
-# Rita Bastos, 2024
 # Manuela Silva <mmsrs@sky.com>, 2024
 # Peter Lawrence Romão <peterromao@yahoo.co.uk>, 2025
 # Wil Odoo, 2025
 # Arxi, 2025
+# Rita Bastos, 2025
+# Maitê Dietze, 2025
 # Daniel Reis, 2025
 # 
 msgid ""
@@ -830,6 +830,8 @@ msgid ""
 "<i class=\"fa fa-phone fa-fw me-2\"/><span class=\"o_force_ltr\">+1 "
 "555-555-5556</span>"
 msgstr ""
+"<i class=\"fa fa-phone fa-fw me-2\"/><span class=\"o_force_ltr\">+1 "
+"555-555-5556</span>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.language_selector_add_language
@@ -1452,7 +1454,7 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_media_list_options
 msgid "Add Media"
-msgstr ""
+msgstr "Adicionar mídia"
 
 #. module: website
 #. odoo-javascript
@@ -2786,7 +2788,7 @@ msgstr "Empresa"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets
 msgid "Comparisons"
-msgstr ""
+msgstr "Comparações"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_comparisons
@@ -3053,7 +3055,7 @@ msgstr "Curso"
 #: model_terms:ir.ui.view,arch_db:website.snippets
 #, python-format
 msgid "Cover"
-msgstr ""
+msgstr "Capa"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_facebook_page_options
@@ -3272,7 +3274,7 @@ msgstr "Perigo"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options_border_line_widgets
 msgid "Dashed"
-msgstr ""
+msgstr "Tracejado"
 
 #. module: website
 #. odoo-javascript
@@ -3781,12 +3783,12 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options_border_line_widgets
 msgid "Dotted"
-msgstr ""
+msgstr "Pontilhado"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options_border_line_widgets
 msgid "Double"
-msgstr ""
+msgstr "Duplo"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_features_grid
@@ -4614,7 +4616,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:website.s_popup_options
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "Full"
-msgstr ""
+msgstr "Total"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -5349,7 +5351,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:website.s_image_gallery_options
 #: model_terms:ir.ui.view,arch_db:website.s_masonry_block_options
 msgid "Images"
-msgstr ""
+msgstr "Imagens"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_image_gallery_options
@@ -5559,7 +5561,7 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.template_footer_links
 msgid "Instagram"
-msgstr ""
+msgstr "Instagram"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website__social_instagram
@@ -9119,7 +9121,7 @@ msgstr ""
 #: code:addons/website/controllers/form.py:0
 #, python-format
 msgid "Suspicious activity detected by Google reCaptcha."
-msgstr ""
+msgstr "Atividade suspeita detetada pelo Google reCaptcha."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -9810,7 +9812,7 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
 msgid "Toggle"
-msgstr ""
+msgstr "Alternar"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view

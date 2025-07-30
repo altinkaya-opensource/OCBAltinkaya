@@ -19,14 +19,15 @@
 # Tamás Dombos, 2023
 # Valics Lehel, 2025
 # gezza <geza.nagy@oregional.hu>, 2025
+# Pammer József, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-06 20:35+0000\n"
+"POT-Creation-Date: 2025-05-22 18:35+0000\n"
 "PO-Revision-Date: 2022-09-22 05:54+0000\n"
-"Last-Translator: gezza <geza.nagy@oregional.hu>, 2025\n"
+"Last-Translator: Pammer József, 2025\n"
 "Language-Team: Hungarian (https://app.transifex.com/odoo/teams/41243/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -47,6 +48,13 @@ msgid ""
 "                </p>\n"
 "            "
 msgstr ""
+"\n"
+"                <p class=\"o_view_nocontent_smiling_face\">\n"
+"                    Nincsenek mérföldkövek. Készítsen egyet!\n"
+"                </p><p>\n"
+"                    Kövesse nyomon a sikeres megvalósításhoz vezető lényegesebb előrehaladási pontokat.\n"
+"                </p>\n"
+"            "
 
 #. module: project
 #. odoo-javascript
@@ -1123,12 +1131,12 @@ msgstr "Avatár"
 #: model:ir.model.fields,field_description:project.field_project_task__rating_avg
 #: model:ir.model.fields,field_description:project.field_report_project_task_user__rating_avg
 msgid "Average Rating"
-msgstr ""
+msgstr "Átlag Értékelés"
 
 #. module: project
 #: model:ir.model.fields,field_description:project.field_project_project__rating_avg_percentage
 msgid "Average Rating (%)"
-msgstr ""
+msgstr "Átlag Értékelés (%)"
 
 #. module: project
 #: model_terms:ir.ui.view,arch_db:project.view_project_kanban
@@ -1358,7 +1366,7 @@ msgstr "Közreműködők"
 #. module: project
 #: model:ir.model,name:project.model_project_collaborator
 msgid "Collaborators in project shared"
-msgstr ""
+msgstr "Együttműködők megosztott projektben"
 
 #. module: project
 #: model:ir.model.fields,help:project.field_project_project__rating_status
@@ -1892,6 +1900,8 @@ msgid ""
 "Deliver your services automatically when a milestone is reached by linking "
 "it to a sales order item."
 msgstr ""
+"Kapcsolja a mérföldkövet vevői rendelés tételhez és teljesítse "
+"szolgáltatásait automatikusan a mérföldkő elérésekor."
 
 #. module: project
 #. odoo-javascript
@@ -3867,6 +3877,20 @@ msgid "Portal Access URL"
 msgstr "Portálelérés webcíme"
 
 #. module: project
+#. odoo-python
+#: code:addons/project/models/project.py:0
+#, python-format
+msgid "Portal Parent Task"
+msgstr ""
+
+#. module: project
+#. odoo-python
+#: code:addons/project/models/project.py:0
+#, python-format
+msgid "Portal Sub-tasks"
+msgstr ""
+
+#. module: project
 #: model:ir.model.fields,field_description:project.field_project_task__portal_user_names
 msgid "Portal User Names"
 msgstr ""
@@ -4077,7 +4101,7 @@ msgstr "Projekt feladatok"
 #: model:ir.model,name:project.model_project_update
 #: model_terms:ir.ui.view,arch_db:project.project_update_view_form
 msgid "Project Update"
-msgstr ""
+msgstr "Projekt állapot"
 
 #. module: project
 #: model:ir.actions.act_window,name:project.project_update_all_action

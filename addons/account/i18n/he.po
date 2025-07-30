@@ -27,7 +27,6 @@
 # Martin Trigaux, 2023
 # MichaelHadar, 2023
 # Sagi Ahiel, 2023
-# yael terner, 2024
 # Hed Shefer <hed@laylinetech.com>, 2024
 # Orel Nahmany, 2024
 # Ha Ketem <haketem@gmail.com>, 2024
@@ -35,14 +34,15 @@
 # Lilach Gilliam <lilach.gilliam@gmail.com>, 2025
 # ZVI BLONDER <ZVIBLONDER@gmail.com>, 2025
 # or balmas, 2025
+# yael terner, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-06 20:35+0000\n"
+"POT-Creation-Date: 2025-07-04 01:32+0000\n"
 "PO-Revision-Date: 2022-09-22 05:44+0000\n"
-"Last-Translator: or balmas, 2025\n"
+"Last-Translator: yael terner, 2025\n"
 "Language-Team: Hebrew (https://app.transifex.com/odoo/teams/41243/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -5972,7 +5972,7 @@ msgstr "הנחת מכירה מוקדמת הוענקה בשורה זו"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_payment_register_form
 msgid "Early Payment Discount of"
-msgstr ""
+msgstr "הנחת תשלום מוקדם של "
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_move_line_tree
@@ -9595,7 +9595,7 @@ msgstr ""
 msgid ""
 "No original purchase document could be found for any of the selected "
 "purchase documents."
-msgstr ""
+msgstr "לא נמצא מסמך רכישה מקורי עבור אף אחד ממסמכי הרכישה שנבחרו."
 
 #. module: account
 #. odoo-python
@@ -11066,7 +11066,7 @@ msgstr "סכום המשנה הקודם"
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_report_expression__engine__account_codes
 msgid "Prefix of Account Codes"
-msgstr ""
+msgstr "קידומות של קודי חשבונות"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_chart_template__bank_account_code_prefix
@@ -12221,7 +12221,7 @@ msgstr "ראה את כל הפעילויות"
 #: code:addons/account/models/account_move_line.py:0
 #, python-format
 msgid "See items"
-msgstr ""
+msgstr "צפה בפריטים"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_journal__type
@@ -12500,7 +12500,7 @@ msgstr "קבע מחיר"
 #: model:ir.model.fields,help:account.field_res_partner__use_partner_credit_limit
 #: model:ir.model.fields,help:account.field_res_users__use_partner_credit_limit
 msgid "Set a value greater than 0.0 to activate a credit limit check"
-msgstr ""
+msgstr "הגדר ערך הגדול מ-0.0 כדי להפעיל בדיקת גבול אשראי."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_account_tag__active
@@ -13023,7 +13023,7 @@ msgstr "צפייה בחשבון "
 #. module: account
 #: model:ir.actions.server,name:account.action_move_switch_invoice_to_credit_note
 msgid "Switch into invoice/credit note"
-msgstr ""
+msgstr "החלף לחשבונית / זיכוי"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_payment_term_line__end_month
@@ -13302,7 +13302,7 @@ msgstr "תגית מס"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_report_line__tax_tags_formula
 msgid "Tax Tags Formula Shortcut"
-msgstr ""
+msgstr "קיצור דרך לנוסחה לתגיות מס"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_tax_template_search
@@ -13728,7 +13728,7 @@ msgstr "היומן החשבונאי בו יירשמו הפרשי שערים או
 msgid ""
 "The amount expressed in an optional other currency if it is a multi-currency"
 " entry."
-msgstr ""
+msgstr "הסכום המובע במטבע אופציונלי נוסף אם מדובר בפקודה מרובת מטבעות."
 
 #. module: account
 #: model:ir.model.constraint,message:account.constraint_account_move_line_check_amount_currency_balance_sign
@@ -13779,6 +13779,8 @@ msgid ""
 "The cash basis entries created from the taxes on this entry, when "
 "reconciling its lines."
 msgstr ""
+"פקודות יומן של בסיס המזומנים שנוצרו מהמיסים בפקודת יומן זו זה, בעת ביצוע "
+"התאמה בין השורות."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_res_company__chart_template_id
@@ -13800,6 +13802,9 @@ msgid ""
 "order to be valid, any derogation must be expressly agreed to in advance in "
 "writing."
 msgstr ""
+"הלקוח מוותר במפורש על התנאים וההתניות הסטנדרטיים שלו, גם אם נוסחו לאחר תנאי "
+"מכירה סטנדרטיים אלה. כל סטייה מהתנאים תחייב תוקף רק אם סוכמה מראש ובכתב "
+"באופן מפורש."
 
 #. module: account
 #: model:ir.model.constraint,message:account.constraint_account_account_code_company_uniq
@@ -13818,12 +13823,12 @@ msgstr "השילוב של קוד / אמצעי תשלום כבר קיים!"
 msgid ""
 "The combination of reference model and reference type on the journal is not "
 "implemented"
-msgstr ""
+msgstr "השילוב בין מודל ההתייחסות לסוג ההתייחסות ביומן אינו מיושם"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_tax_repartition_line__company_id
 msgid "The company this distribution line belongs to."
-msgstr ""
+msgstr "החברה שאליה משתייכת שורת חלוקה זו"
 
 #. module: account
 #. odoo-python
@@ -13832,7 +13837,7 @@ msgstr ""
 msgid ""
 "The country code of the foreign VAT number does not match any country in the"
 " group."
-msgstr ""
+msgstr "קוד המדינה של מספר המע\"מ הזר אינו תואם לאף מדינה בקבוצה."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_tax_group__country_id
@@ -13903,6 +13908,9 @@ msgid ""
 "The current total is %s but the expected total is %s. In order to post the "
 "invoice/bill, you can adjust its lines or the expected Total (tax inc.)."
 msgstr ""
+"הסכום הכולל הנוכחי הוא%s , אך הסכום הכולל הצפוי הוא %s. כדי לרשום את "
+"החשבונית/הקבלה, תוכל להתאים את השורות שלה או את הסכום הכולל הצפוי (כולל "
+"מע״מ)."
 
 #. module: account
 #. odoo-python
@@ -14033,7 +14041,7 @@ msgstr ""
 #. module: account
 #: model:ir.model.fields,help:account.field_account_report_external_value__foreign_vat_fiscal_position_id
 msgid "The foreign fiscal position for which this external value is made."
-msgstr ""
+msgstr "מעמד הפיסיקלי הזר שלפיו נוצר ערך חיצוני זה."
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.report_hash_integrity
@@ -14055,14 +14063,14 @@ msgstr "הבעלים של חשבון בנק של יומן חייבים להיו�
 #, python-format
 msgid ""
 "The invoice already contains lines, it was not updated from the attachment."
-msgstr ""
+msgstr "החשבונית כבר מכילה שורות, ולכן לא עודכנה מהקובץ המצורף."
 
 #. module: account
 #. odoo-javascript
 #: code:addons/account/static/src/js/tours/account.js:0
 #, python-format
 msgid "The invoice having been sent, the button has changed priority."
-msgstr ""
+msgstr "החשבונית נשלחה, כפתור הפעולה שינה את סדר העדיפויות שלו."
 
 #. module: account
 #. odoo-python
@@ -14097,7 +14105,7 @@ msgstr "פקודת היומן המכילה את היתרה הראשונית של
 msgid ""
 "The journal entry from which this tax cash basis journal entry has been "
 "created."
-msgstr ""
+msgstr "פקודת היומן שממנה נוצרה פקודת יומן זו על בסיס מזומן למס."
 
 #. module: account
 #. odoo-python
@@ -14125,7 +14133,7 @@ msgstr ""
 #. module: account
 #: model:ir.model.constraint,message:account.constraint_account_group_check_length_prefix
 msgid "The length of the starting and the ending code prefix must be the same"
-msgstr ""
+msgstr "אורך קידומת הקוד ההתחלתית והסופית חייבות להיות זהות."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_reconcile_model__partner_mapping_line_ids
@@ -14205,6 +14213,7 @@ msgstr ""
 msgid ""
 "The partners of the journal's company and the related bank account mismatch."
 msgstr ""
+"קיימת חוסר התאמה בין הלקוחות\\ספקים של יומן החברה לבין חשבון הבנק הרלוונטי."
 
 #. module: account
 #: model:ir.model.constraint,message:account.constraint_account_payment_check_amount_not_negative
@@ -14456,6 +14465,10 @@ msgid ""
 "The financial end year detected here is '%(year_end)s'.\n"
 "The incrementing number in this case is '%(formatted_seq)s'."
 msgstr ""
+"הרצף יתאפס ויתחיל מ-1 בתחילתה של כל שנת כספים.\n"
+"שנת הכספים ההתחלתית שזוהתה כאן היא '%(year)s'.\n"
+"שנת הכספים הסופית שזוהתה כאן היא '%(year_end)s'.\n"
+"המספר העוקב במקרה זה הוא '%(formatted_seq)s'."
 
 #. module: account
 #. odoo-python
@@ -14502,6 +14515,8 @@ msgid ""
 "The sequences of this journal are different for Payments and non-Payments "
 "but you selected some of both types."
 msgstr ""
+"רצפי היומן הזה שונים עבור תשלומים ועבור פעולות שאינן תשלומים, אך בחרת שילוב "
+"של שני הסוגים."
 
 #. module: account
 #. odoo-python
@@ -14511,6 +14526,7 @@ msgid ""
 "The starting balance doesn't match the ending balance of the previous "
 "statement, or an earlier statement is missing."
 msgstr ""
+"יתרת הפתיחה אינה תואמת ליתרת הסיום של הדיווח הקודם, או שחסר דיווח קודם."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_move_line__statement_line_id
@@ -14524,6 +14540,8 @@ msgid ""
 "The sum of total residual amount propositions and the statement line amount "
 "allowed gap type."
 msgstr ""
+"הסכום הכולל של ההצעות ליתרה שנותרה ושל סכום שורת התדפיס הבנק תואם את סוג "
+"הפער המותר."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_reconcile_model__payment_tolerance_param
@@ -14533,6 +14551,8 @@ msgid ""
 "The sum of total residual amount propositions matches the statement line "
 "amount under this amount/percentage."
 msgstr ""
+"סכום כל ההצעות לסכום השארית הכוללת תואם לסכום שורת הדף בנק בהתאם לסכום/אחוז "
+"זה."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_fiscal_position__foreign_vat
@@ -14546,6 +14566,7 @@ msgstr "מזהה המס של החברה שלך באזור ממופה על ידי
 #, python-format
 msgid "The tax group must have the same country_id as the tax using it."
 msgstr ""
+"קבוצת המס חייבת להיות עם אותו מזהה מדינה (country_id) כמו המס שמשתמש בה."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_tax_repartition_line__invoice_tax_id
@@ -14588,6 +14609,8 @@ msgid ""
 "The warning informs a rounding factor change might be dangerous on "
 "res.currency's form view."
 msgstr ""
+"האזהרה מודיעה ששינוי גורם העיגול (rounding factor) עלול להיות מסוכן בתצוגת "
+"הטופס של המטבע (res.currency)."
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.portal_my_invoices
@@ -14640,6 +14663,8 @@ msgid ""
 "There is no tax cash basis journal defined for the '%s' company.\n"
 "Configure it in Accounting/Configuration/Settings"
 msgstr ""
+"אין יומן מס מבוסס מזומן מוגדר עבור החברה '%s'.\n"
+"יש להגדיר זאת ב-חשבונאות/תצורה/הגדרות."
 
 #. module: account
 #. odoo-python
@@ -14663,6 +14688,8 @@ msgid ""
 "There was an error when trying to add the banner to the original PDF.\n"
 "Please make sure the source file is valid."
 msgstr ""
+"הייתה שגיאה בעת ניסיון להוסיף את הבאנר לקובץ ה-PDF המקורי.\n"
+"אנא ודא שקובץ המקור תקין."
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
@@ -14715,6 +14742,8 @@ msgid ""
 "%(journal_ids)s) as payment debit or credit account. This means that this "
 "account's type should be reconcilable."
 msgstr ""
+"החשבון הזה מוגדר ביומן/יומנים %(journal_names)s (%(journal_ids)s) כחשבון חיוב או זיכוי לתשלומים.\n"
+"משמעות הדבר היא שסוג החשבון צריך להיות ניתן להתאמה ."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_res_partner__property_account_payable_id
@@ -14723,6 +14752,7 @@ msgid ""
 "This account will be used instead of the default one as the payable account "
 "for the current partner"
 msgstr ""
+"חשבון זה ישמש כחשבון תשלומים במקום חשבון ברירת המחדל עבור השותף הנוכחי."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_res_partner__property_account_receivable_id
@@ -14787,6 +14817,8 @@ msgid ""
 " country. Check company fiscal country in the settings and tax country in "
 "taxes configuration."
 msgstr ""
+"הפקודת יומן כוללת מיסים שאינם תואמים את המדינה הפיסקלית של החברה. יש לוודא "
+"את הגדרת המדינה הפיסקלית בהגדרות ואת מדינת המיסים בתצורת המיסים."
 
 #. module: account
 #. odoo-python
@@ -14796,13 +14828,15 @@ msgid ""
 "This entry contains taxes that are not compatible with your fiscal position."
 " Check the country set in fiscal position and in your tax configuration."
 msgstr ""
+"פקודת יומן זו מכילה מיסים שאינם תואמים את המעמד הפיסקלי שלך. בדוק את המדינה "
+"המוגדרת במעמד הפיסקלי ובתצורת המיסים שלך."
 
 #. module: account
 #. odoo-python
 #: code:addons/account/models/account_move.py:0
 #, python-format
-msgid "This entry has been duplicated from %s%s"
-msgstr "רשומה זו שוכפלה מ%s %s"
+msgid "This entry has been duplicated from %s"
+msgstr "פקודה זו שוכפלה מ %s"
 
 #. module: account
 #. odoo-python
@@ -14820,6 +14854,8 @@ msgid ""
 "This field is used for payable and receivable journal entries. You can put "
 "the limit date for the payment of this line."
 msgstr ""
+"שדה זה משמש לפקודות יומן של תשלומים ותקבולים. ניתן להזין בו את תאריך המועד "
+"האחרון לתשלום עבור שורה זו"
 
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.open_account_journal_dashboard_kanban
@@ -14888,7 +14924,7 @@ msgstr "תנועה זו תפורסם בתאריך החשבון: %(date)s"
 #: code:addons/account/static/src/components/account_move_service/account_move_service.js:0
 #, python-format
 msgid "This operation will create a gap in the sequence."
-msgstr ""
+msgstr "פעולה זאת תיצור פער ברצף."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_invoice_send__auto_delete
@@ -14939,6 +14975,8 @@ msgid ""
 "This product is already being used in posted Journal Entries.\n"
 "If you want to change its Unit of Measure, please archive this product and create a new one."
 msgstr ""
+"מוצר זה כבר נמצא בשימוש בפקודות יומן שנרשמו.\n"
+"אם ברצונך לשנות את יחידת המידה שלו, אנא הכנס את המוצר לארכיון וצור מוצר חדש."
 
 #. module: account
 #. odoo-python
@@ -14948,6 +14986,8 @@ msgid ""
 "This reconciliation model can't be used in the manual reconciliation widget "
 "because its configuration is not adapted"
 msgstr ""
+"לא ניתן להשתמש במודל ההתאמה הזה בווידג'ט ההתאמה הידנית, מכיוון שהתצורה שלו "
+"אינה מתאימה."
 
 #. module: account
 #. odoo-python
@@ -15512,7 +15552,7 @@ msgstr "השתמש בדומיין פעיל"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_res_company__anglo_saxon_accounting
 msgid "Use anglo-saxon accounting"
-msgstr ""
+msgstr "השתמש בשיטת החשבונאות האנגלו-סקסונית"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_res_config_settings__module_account_batch_payment
@@ -15806,7 +15846,7 @@ msgstr "אזהרה עבור %s"
 #: code:addons/account/models/account_move.py:0
 #, python-format
 msgid "Warning for Cash Rounding Method: %s"
-msgstr ""
+msgstr "אזהרה לגבי שיטת עיגול במזומן: %s"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.partner_view_buttons
@@ -15943,7 +15983,7 @@ msgstr "עם Odoo לא תצטרכו לרשום חשבוניות ידנית"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_reconcile_model_search
 msgid "With Partner matching"
-msgstr ""
+msgstr "עם התאמה לספק\\לקוח"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_reconcile_model_search
@@ -16180,7 +16220,7 @@ msgstr ""
 msgid ""
 "You can't open the register payment wizard without at least one "
 "receivable/payable line."
-msgstr ""
+msgstr "אינך יכול לפתוח את אשף רישום התשלום ללא לפחות שורת זכות/חובה אחת."
 
 #. module: account
 #. odoo-python
@@ -16261,6 +16301,7 @@ msgid ""
 "You cannot change the type of an account set as Bank Account on a journal to"
 " Receivable or Payable."
 msgstr ""
+"לא ניתן לשנות את סוג החשבון שהוגדר כחשבון בנק ביומן לחשבון לקוחות או ספקים."
 
 #. module: account
 #. odoo-python
@@ -16269,7 +16310,7 @@ msgstr ""
 msgid ""
 "You cannot create a fiscal position with a country outside of the selected "
 "country group."
-msgstr ""
+msgstr "אינך יכול ליצור מעמד פיסקלי עם מדינה מחוץ לקבוצת המדינות שנבחרה."
 
 #. module: account
 #. odoo-python
@@ -16279,6 +16320,8 @@ msgid ""
 "You cannot create a fiscal position with a foreign VAT within your fiscal "
 "country without assigning it a state."
 msgstr ""
+"לא ניתן ליצור סוג תנועה עם מע\"מ זר בתוך המדינה הפיסקלית שלך מבלי להקצות לו "
+"מדינה."
 
 #. module: account
 #. odoo-python
@@ -16322,7 +16365,7 @@ msgstr "לא ניתן ליצור קבוצות רקורסיביות"
 msgid ""
 "You cannot delete a payable/receivable line as it would not be consistent "
 "with the payment terms"
-msgstr ""
+msgstr "אינך יכול למחוק שורת חובה/זכות מכיוון שזה לא יהיה תואם לתנאי התשלום."
 
 #. module: account
 #. odoo-python
@@ -16345,7 +16388,7 @@ msgstr "אי אפשר למחוק פריט המשוייך לרשומה קיימת
 msgid ""
 "You cannot delete this account tag (%s), it is used on the chart of account "
 "definition."
-msgstr ""
+msgstr "אינך יכול למחוק את תגית החשבון (%s), הוא בשימוש בהגדרת לוח החשבונות."
 
 #. module: account
 #. odoo-python
@@ -16366,13 +16409,15 @@ msgid ""
 "You cannot delete this report (%s), it is used by the accounting PDF "
 "generation engine."
 msgstr ""
+"אין אפשרות למחוק את הדו\"ח הזה (%s), הוא משמש למנוע יצירת קובץ ה-PDF של "
+"הנהלת החשבונות."
 
 #. module: account
 #. odoo-python
 #: code:addons/account/models/account_account.py:0
 #, python-format
 msgid "You cannot deprecate an account that is used in a tax distribution."
-msgstr ""
+msgstr "לא ניתן לבטל חשבון שמשמש בחלוקת מיסים."
 
 #. module: account
 #. odoo-python
@@ -16414,6 +16459,9 @@ msgid ""
 "The following entries are already hashed:\n"
 "%s"
 msgstr ""
+"אינך יכול לערוך את השדות הבאים:%s.\n"
+"הפקודות יומן הבאות כבר מוצפנות:\n"
+"%s"
 
 #. module: account
 #. odoo-python
@@ -16559,6 +16607,8 @@ msgid ""
 "You cannot remove/deactivate the accounts \"%s\" which are set on the "
 "account mapping of a fiscal position."
 msgstr ""
+"אתה לא יכול להסיר/לבטל את ההפעלה של החשבונות \"%s\" אשר מוגדרים במיפוי "
+"החשבונות של המעמד הפיסקלי."
 
 #. module: account
 #. odoo-python
@@ -16615,7 +16665,7 @@ msgstr "אינך יכול להשתמש בחשבון שהוצא משימוש."
 #: code:addons/account/models/account_move_line.py:0
 #, python-format
 msgid "You cannot use taxes on lines with an Off-Balance account"
-msgstr ""
+msgstr "לא ניתן להשתמש בשורות של מס בחשבון לא מאזני"
 
 #. module: account
 #. odoo-python
@@ -16689,7 +16739,7 @@ msgstr "בחרת את סוגי המסמכים הבאים באותו זמן:"
 #: code:addons/account/models/account_move.py:0
 #, python-format
 msgid "You must specify the Profit Account (company dependent)"
-msgstr ""
+msgstr "עליך לציין את חשבון הרווח (תלוי בחברה)."
 
 #. module: account
 #. odoo-python

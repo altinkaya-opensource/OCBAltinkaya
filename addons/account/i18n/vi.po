@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-06 20:35+0000\n"
+"POT-Creation-Date: 2025-07-04 01:32+0000\n"
 "PO-Revision-Date: 2022-09-22 05:44+0000\n"
 "Last-Translator: Wil Odoo, 2025\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
@@ -9626,7 +9626,7 @@ msgstr "Phép nhân tùy thuộc vào loại tài liệu, để chuyển giá th
 #: model:ir.model.fields,field_description:account.field_account_setup_bank_manual_config__my_activity_date_deadline
 #: model:ir.model.fields,field_description:account.field_res_partner_bank__my_activity_date_deadline
 msgid "My Activity Deadline"
-msgstr "Hạn chót hoạt động"
+msgstr "Thời hạn hoạt động"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_invoice_filter
@@ -9760,7 +9760,7 @@ msgstr "Sự kiện trên lịch cho hoạt động tiếp theo"
 #: model:ir.model.fields,field_description:account.field_account_setup_bank_manual_config__activity_date_deadline
 #: model:ir.model.fields,field_description:account.field_res_partner_bank__activity_date_deadline
 msgid "Next Activity Deadline"
-msgstr "Hạn chót cho hành động kế tiếp"
+msgstr "Thời hạn cho hành động kế tiếp"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_line__activity_summary
@@ -12167,7 +12167,7 @@ msgstr "Đảo ngược"
 #: model_terms:ir.ui.view,arch_db:account.onboarding_chart_of_account_step
 #: model_terms:ir.ui.view,arch_db:account.onboarding_taxes_step
 msgid "Review"
-msgstr "Xem trước"
+msgstr "Rà soát"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_account__root_id
@@ -12503,7 +12503,7 @@ msgstr "Xem tất cả hoạt động"
 #: code:addons/account/models/account_move_line.py:0
 #, python-format
 msgid "See items"
-msgstr ""
+msgstr "Xem hạng mục"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_journal__type
@@ -13519,7 +13519,7 @@ msgstr "Thuế khoá"
 #: model:ir.model.fields,field_description:account.field_account_move__tax_lock_date_message
 #: model:ir.model.fields,field_description:account.field_account_payment__tax_lock_date_message
 msgid "Tax Lock Date Message"
-msgstr "Thông báo ngày chốt thuế"
+msgstr "Thông báo ngày khoá thuế"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_fiscal_position__tax_ids
@@ -15243,8 +15243,8 @@ msgstr ""
 #. odoo-python
 #: code:addons/account/models/account_move.py:0
 #, python-format
-msgid "This entry has been duplicated from %s%s"
-msgstr "Bút toán này đã được sao chép từ %s%s"
+msgid "This entry has been duplicated from %s"
+msgstr "Bút toán này đã được sao chép từ %s"
 
 #. module: account
 #. odoo-python

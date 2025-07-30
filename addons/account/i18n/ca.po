@@ -38,20 +38,21 @@
 # Jonathan Pasquier <jpasquier@fundesplai.org>, 2024
 # Santiago Payà <santiagopim@gmail.com>, 2024
 # EstudiTIC - estuditic.com <odoo@estuditic.com>, 2024
-# Óscar Fonseca <tecnico@pyming.com>, 2024
 # marcescu, 2024
 # Eugeni Chafer <eugeni@chafer.cat>, 2024
-# Xavier, 2025
+# Harcogourmet, 2025
 # Quim, 2025
 # Josep Anton Belchi, 2025
 # Noemi Pla, 2025
+# Jaime Ruiz, 2025
+# Óscar Fonseca <tecnico@pyming.com>, 2025
 # Wil Odoo, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-06 20:35+0000\n"
+"POT-Creation-Date: 2025-07-04 01:32+0000\n"
 "PO-Revision-Date: 2022-09-22 05:44+0000\n"
 "Last-Translator: Wil Odoo, 2025\n"
 "Language-Team: Catalan (https://app.transifex.com/odoo/teams/41243/ca/)\n"
@@ -8207,7 +8208,7 @@ msgstr "Factura: S'està enviant"
 #: code:addons/account/models/account_move.py:0
 #, python-format
 msgid "Invoice_%(name)s%(post)s"
-msgstr ""
+msgstr "Factura_%(name)s%(post)s"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_invoice_report_search
@@ -8236,7 +8237,7 @@ msgstr "Factures"
 #: model_terms:ir.ui.view,arch_db:account.portal_my_home_invoice
 #: model_terms:ir.ui.view,arch_db:account.portal_my_home_menu_invoice
 msgid "Invoices &amp; Bills"
-msgstr "Factures i amp; Factures"
+msgstr "Factures de clients i de proveïdors"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_account_invoice_report_all
@@ -15386,8 +15387,8 @@ msgstr ""
 #. odoo-python
 #: code:addons/account/models/account_move.py:0
 #, python-format
-msgid "This entry has been duplicated from %s%s"
-msgstr "Aquesta entrada s'ha duplicat de %s%s"
+msgid "This entry has been duplicated from %s"
+msgstr "Aquest assentament ha estat duplicat des de %s"
 
 #. module: account
 #. odoo-python
@@ -15610,8 +15611,8 @@ msgid ""
 "Those options will be selected by default when clicking \"Send &amp; Print\""
 " on invoices"
 msgstr ""
-"Aquestes opcions es seleccionaran per omissió en clicar a \"Aper &amp; "
-"Print\" a Sovoices"
+"Aquelles opcions seran seleccionades per defecte quan feu click a \"Enviar i"
+" imprimir\" a les factures"
 
 #. module: account
 #: model:digest.tip,name:account.digest_tip_account_0
@@ -15774,7 +15775,7 @@ msgstr "Total de moneda amb signe"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
 msgid "Track costs &amp; revenues by project, department, etc"
-msgstr "La pista costa &amp; ingressos pel projecte, departament, etc."
+msgstr "Seguiment d'ingressos i costos per projecte, departament, etc"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_line__transaction_type
@@ -17550,7 +17551,7 @@ msgstr "[No establert]"
 #: code:addons/account/models/account_move.py:0
 #, python-format
 msgid "_draft"
-msgstr ""
+msgstr "_esborrany"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
@@ -17757,7 +17758,7 @@ msgstr "nom"
 #: model:ir.actions.report,print_report_name:account.account_invoices
 #: model:ir.actions.report,print_report_name:account.account_invoices_without_payment
 msgid "object._get_report_base_filename()"
-msgstr ""
+msgstr "object._get_report_base_filename()"
 
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_tax_repartition_line__repartition_type__tax
@@ -17902,7 +17903,7 @@ msgstr "{{ (object.name or '').replace('/','-') }}"
 #. module: account
 #: model:mail.template,report_name:account.email_template_edi_invoice
 msgid "{{ object._get_report_mail_attachment_filename() }}"
-msgstr ""
+msgstr "{{ object._get_report_mail_attachment_filename() }}"
 
 #. module: account
 #: model:mail.template,subject:account.email_template_edi_credit_note
