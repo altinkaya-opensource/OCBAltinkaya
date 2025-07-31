@@ -481,7 +481,13 @@ class CustomerPortal(Controller):
                 raise UserError(_('Multi company reports are not supported.'))
             ReportAction = ReportAction.with_company(model.company_id)
 
-        method_name = '_render_qweb_%s' % (report_type)
+        # Check the type of the action to check
+        # if we need to use py3o rendering
+        action = request.env.ref(report_ref).sudo()
+        if action.report_type == "py3o":
+            method_name = '_render_py3o'
+        else:
+            method_name = '_render_qweb_%s' % (report_type)
         report = getattr(ReportAction, method_name)(report_ref, list(model.ids), data={'report_type': report_type})[0]
         reporthttpheaders = [
             ('Content-Type', 'application/pdf' if report_type == 'pdf' else 'text/html'),
