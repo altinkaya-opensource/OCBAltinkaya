@@ -120,7 +120,7 @@ class AccountInvoiceReport(models.Model):
                 LEFT JOIN uom_uom uom_template ON uom_template.id = template.uom_id
                 INNER JOIN account_move move ON move.id = line.move_id
                 LEFT JOIN res_partner commercial_partner ON commercial_partner.id = move.commercial_partner_id
-                JOIN {currency_table} ON currency_table.company_id = line.company_id
+                JOIN (VALUES (1, 1.0, 2)) AS currency_table(company_id, rate, precision) ON currency_table.company_id = COALESCE(line.company_id, 1)
         '''.format(
             currency_table=self.env['res.currency']._get_query_currency_table({'multi_company': True, 'date': {'date_to': fields.Date.today()}}),
         )
