@@ -452,7 +452,7 @@ class MonetaryConverter(models.AbstractModel):
         # yigit:
         prec = display_currency.decimal_places
         if prec and isinstance(prec, int) and prec > 2:
-            if value < 1.000:
+            if abs(value) < 1.000:
                 prec = 4
             else:
                 prec = 2
