@@ -65,12 +65,13 @@ class ProductTemplate(models.Model):
             neg = 'not '
         return [('id', neg + 'inselect', bom_tmpl_query.subselect('product_tmpl_id'))]
 
-    def _compute_show_qty_status_button(self):
-        super()._compute_show_qty_status_button()
-        for template in self:
-            if template.is_kits:
-                template.show_on_hand_qty_status_button = template.product_variant_count <= 1
-                template.show_forecasted_qty_status_button = False
+    # yigit: we don't use it, so disable
+    # def _compute_show_qty_status_button(self):
+    #     super()._compute_show_qty_status_button()
+    #     for template in self:
+    #         if template.is_kits:
+    #             template.show_on_hand_qty_status_button = template.product_variant_count <= 1
+    #             template.show_forecasted_qty_status_button = False
 
     def _compute_used_in_bom_count(self):
         for template in self:
@@ -360,7 +361,7 @@ class ProductProduct(models.Model):
                 if bl[0]._name == "mrp.bom.template.line":
                     components |= bl[0]._match_possible_variant(product)
                     continue
-                
+
                 components |= bl[0].product_id
 
         res = super(ProductProduct, components).action_open_quants()
