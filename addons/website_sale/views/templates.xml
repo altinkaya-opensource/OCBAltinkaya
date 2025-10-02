@@ -2281,8 +2281,7 @@
             <t t-set="payment_tx_id" t-value="order.get_portal_last_transaction()"/>
             <div t-attf-class="card #{
                 (payment_tx_id.state == 'pending' and 'bg-info') or
-                (payment_tx_id.state == 'done' and order.amount_total == payment_tx_id.amount and 'alert-success') or
-                (payment_tx_id.state == 'done' and order.amount_total != payment_tx_id.amount and 'bg-warning') or
+                (payment_tx_id.state == 'done' and 'alert-success') or
                 (payment_tx_id.state == 'authorized' and 'alert-success') or
                 'bg-danger'}">
                 <div class="card-header">
@@ -2296,7 +2295,7 @@
                     <t t-if="payment_tx_id.state == 'done'">
                         <span t-if='payment_tx_id.provider_id.sudo().done_msg' t-out="payment_tx_id.provider_id.sudo().done_msg"/>
                     </t>
-                    <t t-if="payment_tx_id.state == 'done' and order.amount_total != payment_tx_id.amount">
+                    <t t-if="payment_tx_id.state == 'done' and abs(order.amount_total-payment_tx_id.amount) &gt; 1">
                         <span>Unfortunately your order can not be confirmed as the amount of your payment does not match the amount of your cart.
                         Please contact the responsible of the shop for more information.</span>
                     </t>
