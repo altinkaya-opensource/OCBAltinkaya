@@ -830,6 +830,10 @@ const Wysiwyg = Widget.extend({
         await this.cleanForSave();
 
         const editables = this.options.getContentEditableAreas();
+        
+        // EROL FIX:
+        await this.saveNewImages(editables.length ? $(editables) : this.$editable);
+
         await this.saveModifiedImages(editables.length ? $(editables) : this.$editable);
         await this._saveViewBlocks();
         this.savingContent = false;
@@ -916,6 +920,42 @@ const Wysiwyg = Widget.extend({
                 } else {
                     el.setAttribute('src', newAttachmentSrc);
                 }
+            });
+            return Promise.all(proms);
+        });
+        return Promise.all(defs);
+    },
+    /**
+     * EROL FIX
+     * Create newly added attachments
+     * which haven't yet been uploaded.
+     *
+     * @param {jQuery} $editable
+     * @returns {Promise}
+     */
+    saveNewImages: function ($editable = this.$editable) {
+        const defs = _.map($editable, async editableEl => {
+            const proms = [...editableEl.querySelectorAll('.o_new_image_to_save')].map(async el => {
+                // Creating a new image attachment.
+                const newAttachmentSrc = await this._rpc({
+                    route: `/web_editor/attachment/add_data`,
+                    params: {
+                        data: el.getAttribute("src").split(",")[1],
+                        name: el.dataset.fileName ? el.dataset.fileName : null,
+                        is_image: true,
+                        quality: 80,
+                    },
+                });
+                if (newAttachmentSrc.error) {
+                    el.remove();
+                    return;
+                }
+                el.classList.remove('o_new_image_to_save');
+
+                el.setAttribute('src', newAttachmentSrc.image_src);
+                el.dataset.originalId = newAttachmentSrc.id;
+                el.dataset.mimetype = newAttachmentSrc.mimetype;
+                el.dataset.fileName = newAttachmentSrc.name;
             });
             return Promise.all(proms);
         });
