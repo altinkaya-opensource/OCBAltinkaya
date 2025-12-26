@@ -178,8 +178,10 @@ export const CLIPBOARD_WHITELISTS = {
         // Miscellaneous
         /^btn/,
         /^fa/,
+        // Odoo editor
+        'o_new_image_to_save',
     ],
-    attributes: ['class', 'href', 'src', 'target'],
+    attributes: ['class', 'href', 'src', 'target', 'data-file-name'],
     styledTags: ['SPAN', 'B', 'STRONG', 'I', 'S', 'U', 'FONT', 'TD'],
 };
 
@@ -4710,7 +4712,14 @@ export class OdooEditor extends EventTarget {
         for (const imageFile of imageFiles) {
             const imageNode = document.createElement('img');
             imageNode.style.width = '100%';
-            imageNode.classList.add('img-fluid');
+
+            // EROL FIX:
+
+            // Mark the image as to save to prevent
+            // direct embedding in the pages, used in
+            // wysiwyg.js to query images to upload.
+            imageNode.classList.add('img-fluid', 'o_new_image_to_save');
+
             imageNode.dataset.fileName = imageFile.name;
             promises.push(getImageUrl(imageFile).then(url => {
                 imageNode.src = url;
