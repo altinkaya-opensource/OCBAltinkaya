@@ -291,7 +291,6 @@ class Message(models.Model):
             return ids
 
         pid = self.env.user.partner_id.id
-        user_is_salesperson = self.env.user.has_group('sales_team.group_sale_salesman')
         author_ids, partner_ids, allowed_ids = set([]), set([]), set([])
         model_ids = {}
 
@@ -302,7 +301,7 @@ class Message(models.Model):
         self.env['mail.notification'].flush_model(['mail_message_id', 'res_partner_id'])
         for sub_ids in self._cr.split_for_in_conditions(ids):
             self._cr.execute("""
-                SELECT DISTINCT m.id, m.model, m.res_id, m.author_id, m.message_type, m.gmail_id,
+                SELECT DISTINCT m.id, m.model, m.res_id, m.author_id, m.message_type,
                                 COALESCE(partner_rel.res_partner_id, needaction_rel.res_partner_id)
                 FROM "%s" m
                 LEFT JOIN "mail_message_res_partner_rel" partner_rel
@@ -310,13 +309,11 @@ class Message(models.Model):
                 LEFT JOIN "mail_notification" needaction_rel
                 ON needaction_rel.mail_message_id = m.id AND needaction_rel.res_partner_id = %%(pid)s
                 WHERE m.id = ANY (%%(ids)s)""" % self._table, dict(pid=pid, ids=list(sub_ids)))
-            for msg_id, rmod, rid, author_id, message_type, gmail_id, partner_id in self._cr.fetchall():
+            for msg_id, rmod, rid, author_id, message_type, partner_id in self._cr.fetchall():
                 if author_id == pid:
                     author_ids.add(msg_id)
                 elif partner_id == pid:
                     partner_ids.add(msg_id)
-                elif gmail_id and user_is_salesperson:
-                    partner_ids.add(msg_id)  # yigit: allow all internal users to see gmail messages
                 elif rmod and rid and message_type != 'user_notification':
                     model_ids.setdefault(rmod, {}).setdefault(rid, set()).add(msg_id)
 
