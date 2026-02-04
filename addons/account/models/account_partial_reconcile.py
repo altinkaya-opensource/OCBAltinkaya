@@ -110,13 +110,17 @@ class AccountPartialReconcile(models.Model):
         # Remove the matching numbers before reversing the moves to avoid trying to remove the full twice.
         full_to_unlink.unlink()
 
-        # Reverse CABA entries.
+        # yigit: Delete exchange difference moves instead of reversing them.
+        # # Reverse CABA entries.
+        # if moves_to_reverse:
+        #     default_values_list = [{
+        #         'date': move._get_accounting_date(move.date, move._affect_tax_report()),
+        #         'ref': _('Reversal of: %s') % move.name,
+        #     } for move in moves_to_reverse]
+        #     moves_to_reverse._reverse_moves(default_values_list, cancel=True)
+        # Delete CABA and exchange difference entries instead of reversing them.
         if moves_to_reverse:
-            default_values_list = [{
-                'date': move._get_accounting_date(move.date, move._affect_tax_report()),
-                'ref': _('Reversal of: %s') % move.name,
-            } for move in moves_to_reverse]
-            moves_to_reverse._reverse_moves(default_values_list, cancel=True)
+            moves_to_reverse.with_context(force_delete=True).unlink()
 
         return res
 
