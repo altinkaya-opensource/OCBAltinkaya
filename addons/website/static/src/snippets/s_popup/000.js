@@ -447,6 +447,7 @@ publicWidget.registry.cookies_bar = PopupWidget.extend({
      * @param ev
      */
     _onAcceptClick(ev) {
+        ev.preventDefault();//to prevent site from reloading
         const isFullConsent = ev.target.id === "cookies-consent-all";
         this.cookieValue = `{"required": true, "optional": ${isFullConsent}}`;
         if (isFullConsent) {
