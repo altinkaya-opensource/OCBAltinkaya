@@ -81,7 +81,7 @@ class AccountInvoiceReport(models.Model):
                 line.journal_id,
                 line.company_id,
                 line.company_currency_id,
-                line.partner_id AS commercial_partner_id,
+                move.commercial_partner_id,
                 account.account_type AS user_type,
                 move.state,
                 move.move_type,
