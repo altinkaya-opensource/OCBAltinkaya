@@ -905,19 +905,27 @@ def fchain(future, next_callback):
     return new_future
 
 
-def save_test_file(test_name, content, prefix, extension='png', logger=_logger, document_type='Screenshot', date_format="%Y%m%d_%H%M%S_%f"):
+def save_test_file(test_name, content, prefix, extension='png', logger=_logger, document_type='Screenshot', date_format="%Y%m%d_%H%M%S_%f", loglevel=logging.RUNBOT, directory=''):
     assert re.fullmatch(r'\w*_', prefix)
     assert re.fullmatch(r'[a-z]+', extension)
     assert re.fullmatch(r'\w+', test_name)
     now = datetime.now().strftime(date_format)
-    screenshots_dir = pathlib.Path(odoo.tools.config['screenshots']) / get_db_name() / 'screenshots'
-    screenshots_dir.mkdir(parents=True, exist_ok=True)
-    fname = f'{prefix}{now}_{test_name}.{extension}'
-    full_path = screenshots_dir / fname
+    dest = pathlib.Path(odoo.tools.config['screenshots']) / get_db_name() / directory
+    dest.mkdir(parents=True, exist_ok=True)
+    full_path = dest / f'{prefix}{now}_{test_name}.{extension}'
+    full_path.write_bytes(content)
+    logger.log(loglevel, "%s in: %s", document_type, full_path)
 
-    with full_path.open('wb') as f:
-        f.write(content)
-    logger.runbot(f'{document_type} in: {full_path}')
+
+if os.name == 'posix' and platform.system() != 'Darwin':
+    # since the introduction of pointer compression in Chrome 80 (v8 v8.0),
+    # the memory reservation algorithm requires more than 8GiB of
+    # virtual mem for alignment this exceeds our default memory limits.
+    def _preexec():
+        import resource  # noqa: PLC0415
+        resource.setrlimit(resource.RLIMIT_AS, (resource.RLIM_INFINITY, resource.RLIM_INFINITY))
+else:
+    _preexec = None
 
 
 class ChromeBrowser:
@@ -935,6 +943,7 @@ class ChromeBrowser:
         self.ws = None  # websocket
         self.user_data_dir = tempfile.mkdtemp(suffix='_chrome_odoo')
         self.chrome_pid = None
+        self.chrome_log_level = logging.RUNBOT
 
         otc = odoo.tools.config
         self.screenshots_dir = os.path.join(otc['screenshots'], get_db_name(), 'screenshots')
@@ -1005,14 +1014,40 @@ class ChromeBrowser:
 
     def stop(self):
         if self.ws is not None:
-            self._logger.info("Closing chrome headless with pid %s", self.chrome_pid)
-            self._websocket_send('Browser.close')
-            self._logger.info("Closing websocket connection")
-            self.ws.close()
+            try:
+                self._logger.info("Closing chrome headless with pid %s", self.chrome_pid)
+                self._websocket_send('Browser.close')
+                self._logger.info("Closing websocket connection")
+                self.ws.close()
+            except Exception as e:  # noqa: BLE001
+                self._logger.error("Error while terminating chrome: %s", e)
+                self.chrome_log_level = logging.RUNBOT
         if self.chrome_pid is not None:
             self._logger.info("Terminating chrome headless with pid %s", self.chrome_pid)
             os.kill(self.chrome_pid, signal.SIGTERM)
+            t = time.time() + 5
+            while time.time() < t:
+                pid, _status = os.waitpid(self.chrome_pid, os.WNOHANG)
+                if pid == self.chrome_pid:
+                    break
+                time.sleep(0.25)
+            else:
+                self.chrome_log_level = logging.RUNBOT
+                os.kill(self.chrome_pid, signal.SIGKILL)
+                os.waitpid(self.chrome_pid, 0)
         if self.user_data_dir and os.path.isdir(self.user_data_dir) and self.user_data_dir != '/':
+            log = self.read_log()
+            if log:
+                save_test_file(
+                    self.test_class.__name__,
+                    log,
+                    prefix='chrome_log_',
+                    extension='txt',
+                    document_type="Chrome Log",
+                    logger=self._logger,
+                    loglevel=self.chrome_log_level,
+                    directory='chrome_logs',
+                )
             self._logger.info('Removing chrome user profile "%s"', self.user_data_dir)
             shutil.rmtree(self.user_data_dir, ignore_errors=True)
         # Restore previous signal handler
@@ -1049,24 +1084,18 @@ class ChromeBrowser:
                 if os.path.exists(bin_):
                     return bin_
 
+        self._logger.warning('Chrome executable not found')
         raise unittest.SkipTest("Chrome executable not found")
 
-    def _chrome_without_limit(self, cmd):
-        if os.name == 'posix' and platform.system() != 'Darwin':
-            # since the introduction of pointer compression in Chrome 80 (v8 v8.0),
-            # the memory reservation algorithm requires more than 8GiB of
-            # virtual mem for alignment this exceeds our default memory limits.
-            def preexec():
-                import resource
-                resource.setrlimit(resource.RLIMIT_AS, (resource.RLIM_INFINITY, resource.RLIM_INFINITY))
-        else:
-            preexec = None
-
-        # pylint: disable=subprocess-popen-preexec-fn
-        return subprocess.Popen(cmd, stderr=subprocess.DEVNULL, preexec_fn=preexec)
-
     def _spawn_chrome(self, cmd):
-        proc = self._chrome_without_limit(cmd)
+        # pylint: disable=subprocess-popen-preexec-fn
+        proc = subprocess.Popen(
+            cmd,
+            stderr=subprocess.DEVNULL,
+            preexec_fn=_preexec,
+            env={**os.environ, 'TMPDIR': self.user_data_dir},
+        )  # noqa: PLW1509
+
         port_file = pathlib.Path(self.user_data_dir, 'DevToolsActivePort')
         for _ in range(CHECK_BROWSER_ITERATIONS):
             time.sleep(CHECK_BROWSER_SLEEP)
@@ -1074,6 +1103,22 @@ class ChromeBrowser:
                 with port_file.open('r', encoding='utf-8') as f:
                     self.devtools_port = int(f.readline())
                     return proc.pid
+
+        if proc.poll() is None:
+            proc.terminate()
+            try:
+                proc.wait(5)
+            except subprocess.TimeoutExpired:
+                proc.kill()
+                proc.wait()
+        self._logger.warning(
+            'Chrome headless failed to start:\n%s',
+            self.read_log().decode(),
+        )
+        # since the chrome never started, it's not going to be `stop`-ed so we
+        # need to cleanup the directory here
+        shutil.rmtree(self.user_data_dir, ignore_errors=True)
+
         raise unittest.SkipTest(f'Failed to detect chrome devtools port after {BROWSER_WAIT :.1f}s.')
 
     def _chrome_start(self):
@@ -1097,6 +1142,8 @@ class ChromeBrowser:
             '--disable-device-discovery-notifications': '',
             '--disable-namespace-sandbox': '',
             '--user-data-dir': self.user_data_dir,
+            '--enable-logging': '',
+            '--v': str(int(os.environ.get("ODOO_BROWSER_LOG_VERBOSITY", "0"))),
             '--disable-translate': '',
             # required for tours that use Youtube autoplay conditions (namely website_slides' "course_tour")
             '--autoplay-policy': 'no-user-gesture-required',
@@ -1104,6 +1151,7 @@ class ChromeBrowser:
             '--remote-debugging-port': str(self.remote_debugging_port),
             '--no-sandbox': '',
             '--disable-gpu': '',
+            '--mute-audio': '',
             '--remote-allow-origins': '*',
             # '--enable-precise-memory-info': '', # uncomment to debug memory leaks in qunit suite
             # '--js-flags': '--expose-gc', # uncomment to debug memory leaks in qunit suite
@@ -1122,6 +1170,12 @@ class ChromeBrowser:
         except OSError:
             raise unittest.SkipTest("%s not found" % cmd[0])
         self._logger.info('Chrome pid: %s', self.chrome_pid)
+
+    def read_log(self) -> bytes:
+        try:
+            return pathlib.Path(self.user_data_dir, 'chrome_debug.log').read_bytes()
+        except FileNotFoundError:
+            return b''
 
     def _find_websocket(self):
         version = self._json_command('version')
@@ -1459,15 +1513,8 @@ which leads to stray network requests and inconsistencies."""
             if not base_png:
                 self._logger.runbot("Couldn't capture screenshot: expected image data, got %r", base_png)
                 return
-
             decoded = base64.b64decode(base_png, validate=True)
-            fname = '{}{:%Y%m%d_%H%M%S_%f}{}.png'.format(
-                prefix, datetime.now(),
-                suffix or '_%s' % self.test_class.__name__)
-            full_path = os.path.join(self.screenshots_dir, fname)
-            with open(full_path, 'wb') as f:
-                f.write(decoded)
-            self._logger.runbot('Screenshot in: %s', full_path)
+            save_test_file(self.test_class.__name__, decoded, prefix, logger=self._logger, directory='screenshots')
 
         self._logger.info('Asking for screenshot')
         f = self._websocket_send('Page.captureScreenshot', with_future=True)
@@ -1581,9 +1628,11 @@ which leads to stray network requests and inconsistencies."""
             # if the runcode was a promise which took some time to execute,
             # discount that from the timeout
             if self._result.result(time.time() - start + timeout) and not self.had_failure:
+                self.chrome_log_level = logging.INFO
                 return
         except CancelledError:
             # regular-ish shutdown
+            self.chrome_log_level = logging.INFO
             return
         except Exception as e:
             err = e

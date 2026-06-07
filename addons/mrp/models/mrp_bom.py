@@ -331,7 +331,7 @@ class MrpBom(models.Model):
 
         products_ids = set(products.ids)
         for bom in boms:
-            products_implies = bom.product_id or bom.product_tmpl_id.product_variant_ids
+            products_implies = bom.product_id or bom.product_tmpl_id.with_context(active_test=False).product_variant_ids
             for product in products_implies:
                 if product.id in products_ids and product not in bom_by_product:
                     # yigit: Double check if product has its own BoM when we are looking

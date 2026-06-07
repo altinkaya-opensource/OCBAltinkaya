@@ -378,6 +378,7 @@ from itertools import count, chain
 from lxml import etree
 from dateutil.relativedelta import relativedelta
 from psycopg2.extensions import TransactionRollbackError
+from urllib.parse import unquote_plus
 
 from odoo import api, models, tools
 from odoo.tools import config, safe_eval, pycompat, SUPPORTED_DEBUGGER
@@ -461,6 +462,11 @@ SPECIAL_DIRECTIVES = {'t-translation', 't-ignore', 't-title'}
 # Name of the variable to insert the content in t-call in the template.
 # The slot will be replaced by the `t-call` tag content of the caller.
 T_CALL_SLOT = '0'
+
+
+# Only allow a javascript scheme if it is followed by [ ][window.]history.back()
+MALICIOUS_SCHEMES = re.compile(r'javascript:(?!((window\.)?)history\.back\(\)$)', re.I).findall
+WHITESPACE_REGEX = re.compile(r'[\s\x00-\x08\x0B\x0C\x0E-\x19]+')
 
 
 def indent_code(code, level):
@@ -611,6 +617,7 @@ class IrQWeb(models.AbstractModel):
 
     @QwebTracker.wrap_compile
     def _compile(self, template):
+        assert isinstance(self, IrQWeb)
         if isinstance(template, etree._Element):
             self = self.with_context(is_t_cache_disabled=True)
             ref = None
@@ -1308,7 +1315,7 @@ class IrQWeb(models.AbstractModel):
         """ Compile a purely static element into a list of string. """
         if not el.nsmap:
             unqualified_el_tag = el_tag = el.tag
-            attrib = self._post_processing_att(el.tag, el.attrib)
+            attrib = self._post_processing_att(el.tag, {**el.attrib, '__is_static_node': True})
         else:
             # Etree will remove the ns prefixes indirection by inlining the corresponding
             # nsmap definition into the tag attribute. Restore the tag and prefix here.
@@ -1338,7 +1345,7 @@ class IrQWeb(models.AbstractModel):
                 else:
                     attrib[key] = value
 
-            attrib = self._post_processing_att(el.tag, attrib)
+            attrib = self._post_processing_att(el.tag, {**attrib, '__is_static_node': True})
 
             # Update the dict of inherited namespaces before continuing the recursion. Note:
             # since `compile_context['nsmap']` is a dict (and therefore mutable) and we do **not**
@@ -2367,6 +2374,11 @@ class IrQWeb(models.AbstractModel):
 
             @returns dict
         """
+        if atts.pop('__is_static_node', False):
+            return atts
+        href = str(atts.get('href') or '')
+        if MALICIOUS_SCHEMES(WHITESPACE_REGEX.sub('', unquote_plus(href))):
+            atts['href'] = ""
         return atts
 
     def _get_field(self, record, field_name, expression, tagName, field_options, values):

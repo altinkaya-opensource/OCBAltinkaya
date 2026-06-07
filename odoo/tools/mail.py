@@ -52,6 +52,9 @@ safe_attrs = defs.safe_attrs | frozenset(
      'data-oe-protected',  # editor
      'data-behavior-props', 'data-prop-name',  # knowledge commands
      ])
+
+defs.link_attrs |= {'xlink:href'}
+
 SANITIZE_TAGS = {
     # allow new semantic HTML5 tags
     'allow_tags': defs.tags | frozenset('article bdi section header footer hgroup nav aside figure main'.split() + [etree.Comment]),
@@ -255,6 +258,8 @@ def html_normalize(src, filter_callback=None):
     if doc is not None:
         for el in doc.iter(tag=etree.Element):
             tag_quote(el)
+
+    doc = html.fromstring(html.tostring(doc))
 
     if filter_callback:
         doc = filter_callback(doc)
