@@ -1,31 +1,19 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* base_vat
-# 
-# Translators:
-# Ediz Duman <neps1192@gmail.com>, 2022
-# abc Def <hdogan1974@gmail.com>, 2022
-# Levent Karakaş <levent@mektup.at>, 2022
-# Murat Kaplan <muratk@projetgrup.com>, 2022
-# Umur Akın <umura@projetgrup.com>, 2022
-# Tugay Hatıl <tugayh@projetgrup.com>, 2023
-# Ayhan Kızıltan, 2024
-# Ertuğrul Güreş <ertugrulg@projetgrup.com>, 2024
-# Deniz Guvener_Odoo <degu@odoo.com>, 2025
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-10 08:27+0000\n"
-"PO-Revision-Date: 2022-09-22 05:45+0000\n"
-"Last-Translator: Deniz Guvener_Odoo <degu@odoo.com>, 2025\n"
-"Language-Team: Turkish (https://app.transifex.com/odoo/teams/41243/tr/)\n"
+"POT-Creation-Date: 2026-06-08 14:51+0000\n"
+"PO-Revision-Date: 2026-06-08 14:51+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: tr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: \n"
 
 #. module: base_vat
 #. odoo-python
@@ -79,9 +67,6 @@ msgid ""
 "specific.\" aria-label=\"Values set here are company-specific.\" "
 "groups=\"base.group_multi_company\" role=\"img\"/>"
 msgstr ""
-"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
-"specific.\" aria-label=\"Values set here are company-specific.\" "
-"groups=\"base.group_multi_company\" role=\"img\"/>"
 
 #. module: base_vat
 #. odoo-python
@@ -105,9 +90,25 @@ msgid "CO213123432-1 or CO213.123.432-1"
 msgstr ""
 
 #. module: base_vat
+#: model:ir.model.fields,field_description:base_vat.field_account_fiscal_position__changeset_change_ids
+#: model:ir.model.fields,field_description:base_vat.field_res_company__changeset_change_ids
+#: model:ir.model.fields,field_description:base_vat.field_res_config_settings__changeset_change_ids
+#: model:ir.model.fields,field_description:base_vat.field_res_partner__changeset_change_ids
+msgid "Changeset Changes"
+msgstr "Changeset Değişiklikleri"
+
+#. module: base_vat
+#: model:ir.model.fields,field_description:base_vat.field_account_fiscal_position__changeset_ids
+#: model:ir.model.fields,field_description:base_vat.field_res_company__changeset_ids
+#: model:ir.model.fields,field_description:base_vat.field_res_config_settings__changeset_ids
+#: model:ir.model.fields,field_description:base_vat.field_res_partner__changeset_ids
+msgid "Changesets"
+msgstr "Değişiklikler"
+
+#. module: base_vat
 #: model:ir.model,name:base_vat.model_res_company
 msgid "Companies"
-msgstr "Şirketler"
+msgstr "Firmalar"
 
 #. module: base_vat
 #: model:ir.model,name:base_vat.model_res_config_settings
@@ -118,6 +119,30 @@ msgstr "Yapılandırma Ayarları"
 #: model:ir.model,name:base_vat.model_res_partner
 msgid "Contact"
 msgstr "Kontak"
+
+#. module: base_vat
+#: model:ir.model.fields,field_description:base_vat.field_account_fiscal_position__count_changesets
+#: model:ir.model.fields,field_description:base_vat.field_res_company__count_changesets
+#: model:ir.model.fields,field_description:base_vat.field_res_config_settings__count_changesets
+#: model:ir.model.fields,field_description:base_vat.field_res_partner__count_changesets
+msgid "Count Changesets"
+msgstr "Sayım Değişiklik Setleri"
+
+#. module: base_vat
+#: model:ir.model.fields,field_description:base_vat.field_account_fiscal_position__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:base_vat.field_res_company__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:base_vat.field_res_config_settings__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:base_vat.field_res_partner__count_pending_changeset_changes
+msgid "Count Pending Changeset Changes"
+msgstr "Bekleyen Değişiklik Seti Değişikliklerini Say"
+
+#. module: base_vat
+#: model:ir.model.fields,field_description:base_vat.field_account_fiscal_position__count_pending_changesets
+#: model:ir.model.fields,field_description:base_vat.field_res_company__count_pending_changesets
+#: model:ir.model.fields,field_description:base_vat.field_res_config_settings__count_pending_changesets
+#: model:ir.model.fields,field_description:base_vat.field_res_partner__count_pending_changesets
+msgid "Count Pending Changesets"
+msgstr "Bekleyen Değişiklik Setlerini Say"
 
 #. module: base_vat
 #. odoo-python
@@ -177,6 +202,14 @@ msgid "MXGODE561231GR8 or GODE561231GR8"
 msgstr ""
 
 #. module: base_vat
+#: model:ir.model.fields,field_description:base_vat.field_account_fiscal_position__smart_search
+#: model:ir.model.fields,field_description:base_vat.field_res_company__smart_search
+#: model:ir.model.fields,field_description:base_vat.field_res_config_settings__smart_search
+#: model:ir.model.fields,field_description:base_vat.field_res_partner__smart_search
+msgid "Smart Search"
+msgstr "Akıllı Arama"
+
+#. module: base_vat
 #: model:ir.model.fields,field_description:base_vat.field_res_partner__vies_failed_message
 #: model:ir.model.fields,field_description:base_vat.field_res_users__vies_failed_message
 msgid "Technical field display a message to the user if the VIES check fails."
@@ -234,6 +267,38 @@ msgid ""
 msgstr ""
 "Yabancı KDV numarasının ülkesi tespit edilemedi. Lütfen mali koşula bir ülke"
 " atayın veya bir ülke grubu ayarlayın"
+
+#. module: base_vat
+#: model:ir.model.fields,help:base_vat.field_account_fiscal_position__count_pending_changeset_changes
+#: model:ir.model.fields,help:base_vat.field_res_company__count_pending_changeset_changes
+#: model:ir.model.fields,help:base_vat.field_res_config_settings__count_pending_changeset_changes
+#: model:ir.model.fields,help:base_vat.field_res_partner__count_pending_changeset_changes
+msgid "The number of pending changes of this record"
+msgstr "Bu kaydın bekleyen değişiklik sayısı"
+
+#. module: base_vat
+#: model:ir.model.fields,help:base_vat.field_account_fiscal_position__count_pending_changesets
+#: model:ir.model.fields,help:base_vat.field_res_company__count_pending_changesets
+#: model:ir.model.fields,help:base_vat.field_res_config_settings__count_pending_changesets
+#: model:ir.model.fields,help:base_vat.field_res_partner__count_pending_changesets
+msgid "The number of pending changesets of this record"
+msgstr "Bu kaydın bekleyen değişiklik setlerinin sayısı"
+
+#. module: base_vat
+#: model:ir.model.fields,help:base_vat.field_account_fiscal_position__count_changesets
+#: model:ir.model.fields,help:base_vat.field_res_company__count_changesets
+#: model:ir.model.fields,help:base_vat.field_res_config_settings__count_changesets
+#: model:ir.model.fields,help:base_vat.field_res_partner__count_changesets
+msgid "The overall number of changesets of this record"
+msgstr "Bu kaydın toplam değişiklik seti sayısı"
+
+#. module: base_vat
+#: model:ir.model.fields,field_description:base_vat.field_account_fiscal_position__user_can_see_changeset
+#: model:ir.model.fields,field_description:base_vat.field_res_company__user_can_see_changeset
+#: model:ir.model.fields,field_description:base_vat.field_res_config_settings__user_can_see_changeset
+#: model:ir.model.fields,field_description:base_vat.field_res_partner__user_can_see_changeset
+msgid "User Can See Changeset"
+msgstr "Kullanıcı Değişiklikleri Görebilir"
 
 #. module: base_vat
 #. odoo-python

@@ -1,27 +1,19 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* base_vat
-# 
-# Translators:
-# Manuela Silva <mmsrs@sky.com>, 2022
-# Pedro Filipe <pedro2.10@hotmail.com>, 2022
-# Reinaldo Ramos <reinaldo.ramos@arxi.pt>, 2022
-# Martin Trigaux, 2022
-# Nuno Silva <nuno.silva@arxi.pt>, 2023
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-10 08:27+0000\n"
-"PO-Revision-Date: 2022-09-22 05:45+0000\n"
-"Last-Translator: Nuno Silva <nuno.silva@arxi.pt>, 2023\n"
-"Language-Team: Portuguese (https://app.transifex.com/odoo/teams/41243/pt/)\n"
+"POT-Creation-Date: 2026-06-08 14:51+0000\n"
+"PO-Revision-Date: 2026-06-08 14:51+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: pt\n"
-"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+"Plural-Forms: \n"
 
 #. module: base_vat
 #. odoo-python
@@ -99,6 +91,22 @@ msgid "CO213123432-1 or CO213.123.432-1"
 msgstr ""
 
 #. module: base_vat
+#: model:ir.model.fields,field_description:base_vat.field_account_fiscal_position__changeset_change_ids
+#: model:ir.model.fields,field_description:base_vat.field_res_company__changeset_change_ids
+#: model:ir.model.fields,field_description:base_vat.field_res_config_settings__changeset_change_ids
+#: model:ir.model.fields,field_description:base_vat.field_res_partner__changeset_change_ids
+msgid "Changeset Changes"
+msgstr "Alterações do conjunto de alterações"
+
+#. module: base_vat
+#: model:ir.model.fields,field_description:base_vat.field_account_fiscal_position__changeset_ids
+#: model:ir.model.fields,field_description:base_vat.field_res_company__changeset_ids
+#: model:ir.model.fields,field_description:base_vat.field_res_config_settings__changeset_ids
+#: model:ir.model.fields,field_description:base_vat.field_res_partner__changeset_ids
+msgid "Changesets"
+msgstr "Conjunto de alterações"
+
+#. module: base_vat
 #: model:ir.model,name:base_vat.model_res_company
 msgid "Companies"
 msgstr "Empresas"
@@ -112,6 +120,30 @@ msgstr "Configurações"
 #: model:ir.model,name:base_vat.model_res_partner
 msgid "Contact"
 msgstr "Contacto"
+
+#. module: base_vat
+#: model:ir.model.fields,field_description:base_vat.field_account_fiscal_position__count_changesets
+#: model:ir.model.fields,field_description:base_vat.field_res_company__count_changesets
+#: model:ir.model.fields,field_description:base_vat.field_res_config_settings__count_changesets
+#: model:ir.model.fields,field_description:base_vat.field_res_partner__count_changesets
+msgid "Count Changesets"
+msgstr "Contagem de conjuntos de alterações"
+
+#. module: base_vat
+#: model:ir.model.fields,field_description:base_vat.field_account_fiscal_position__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:base_vat.field_res_company__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:base_vat.field_res_config_settings__count_pending_changeset_changes
+#: model:ir.model.fields,field_description:base_vat.field_res_partner__count_pending_changeset_changes
+msgid "Count Pending Changeset Changes"
+msgstr "Conte as alterações pendentes do conjunto de alterações"
+
+#. module: base_vat
+#: model:ir.model.fields,field_description:base_vat.field_account_fiscal_position__count_pending_changesets
+#: model:ir.model.fields,field_description:base_vat.field_res_company__count_pending_changesets
+#: model:ir.model.fields,field_description:base_vat.field_res_config_settings__count_pending_changesets
+#: model:ir.model.fields,field_description:base_vat.field_res_partner__count_pending_changesets
+msgid "Count Pending Changesets"
+msgstr "Conte os conjuntos de alterações pendentes"
 
 #. module: base_vat
 #. odoo-python
@@ -169,6 +201,14 @@ msgid "MXGODE561231GR8 or GODE561231GR8"
 msgstr ""
 
 #. module: base_vat
+#: model:ir.model.fields,field_description:base_vat.field_account_fiscal_position__smart_search
+#: model:ir.model.fields,field_description:base_vat.field_res_company__smart_search
+#: model:ir.model.fields,field_description:base_vat.field_res_config_settings__smart_search
+#: model:ir.model.fields,field_description:base_vat.field_res_partner__smart_search
+msgid "Smart Search"
+msgstr "Pesquisa inteligente"
+
+#. module: base_vat
 #: model:ir.model.fields,field_description:base_vat.field_res_partner__vies_failed_message
 #: model:ir.model.fields,field_description:base_vat.field_res_users__vies_failed_message
 msgid "Technical field display a message to the user if the VIES check fails."
@@ -182,6 +222,8 @@ msgid ""
 "The %(vat_label)s number [%(wrong_vat)s] does not seem to be valid. \n"
 "Note: the expected format is %(expected_format)s"
 msgstr ""
+"O número %(vat_label)s [%(wrong_vat)s] não parece ser válido. \n"
+"Nota: o formato esperado é %(expected_format)s"
 
 #. module: base_vat
 #. odoo-python
@@ -191,6 +233,8 @@ msgid ""
 "The %(vat_label)s number [%(wrong_vat)s] for %(record_label)s does not seem to be valid. \n"
 "Note: the expected format is %(expected_format)s"
 msgstr ""
+"O número %(vat_label)s [%(wrong_vat)s] para %(record_label)s não parece ser válido. \n"
+"Nota: o formato esperado é %(expected_format)s"
 
 #. module: base_vat
 #. odoo-python
@@ -216,6 +260,38 @@ msgid ""
 "The country of the foreign VAT number could not be detected. Please assign a"
 " country to the fiscal position or set a country group"
 msgstr ""
+
+#. module: base_vat
+#: model:ir.model.fields,help:base_vat.field_account_fiscal_position__count_pending_changeset_changes
+#: model:ir.model.fields,help:base_vat.field_res_company__count_pending_changeset_changes
+#: model:ir.model.fields,help:base_vat.field_res_config_settings__count_pending_changeset_changes
+#: model:ir.model.fields,help:base_vat.field_res_partner__count_pending_changeset_changes
+msgid "The number of pending changes of this record"
+msgstr "O número de alterações pendentes deste registo"
+
+#. module: base_vat
+#: model:ir.model.fields,help:base_vat.field_account_fiscal_position__count_pending_changesets
+#: model:ir.model.fields,help:base_vat.field_res_company__count_pending_changesets
+#: model:ir.model.fields,help:base_vat.field_res_config_settings__count_pending_changesets
+#: model:ir.model.fields,help:base_vat.field_res_partner__count_pending_changesets
+msgid "The number of pending changesets of this record"
+msgstr "O número de conjuntos de alterações pendentes deste registo"
+
+#. module: base_vat
+#: model:ir.model.fields,help:base_vat.field_account_fiscal_position__count_changesets
+#: model:ir.model.fields,help:base_vat.field_res_company__count_changesets
+#: model:ir.model.fields,help:base_vat.field_res_config_settings__count_changesets
+#: model:ir.model.fields,help:base_vat.field_res_partner__count_changesets
+msgid "The overall number of changesets of this record"
+msgstr "O número total de conjuntos de alterações deste registo"
+
+#. module: base_vat
+#: model:ir.model.fields,field_description:base_vat.field_account_fiscal_position__user_can_see_changeset
+#: model:ir.model.fields,field_description:base_vat.field_res_company__user_can_see_changeset
+#: model:ir.model.fields,field_description:base_vat.field_res_config_settings__user_can_see_changeset
+#: model:ir.model.fields,field_description:base_vat.field_res_partner__user_can_see_changeset
+msgid "User Can See Changeset"
+msgstr "O utilizador pode ver o conjunto de alterações"
 
 #. module: base_vat
 #. odoo-python

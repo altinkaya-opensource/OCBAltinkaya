@@ -27,7 +27,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/base_vat/models/res_partner.py:0
 #, python-format
-msgid "1111111111 (NIN) or 22222222222 (VKN)"
+msgid "17291716060 (NIN) or 1729171602 (VKN)"
 msgstr ""
 
 #. module: base_vat
@@ -93,7 +93,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_vat.field_res_config_settings__changeset_change_ids
 #: model:ir.model.fields,field_description:base_vat.field_res_partner__changeset_change_ids
 msgid "Changeset Changes"
-msgstr "Változáskészlet-változások"
+msgstr "Αλλαγές σετ αλλαγών"
 
 #. module: base_vat
 #: model:ir.model.fields,field_description:base_vat.field_account_fiscal_position__changeset_ids
@@ -101,22 +101,22 @@ msgstr "Változáskészlet-változások"
 #: model:ir.model.fields,field_description:base_vat.field_res_config_settings__changeset_ids
 #: model:ir.model.fields,field_description:base_vat.field_res_partner__changeset_ids
 msgid "Changesets"
-msgstr "Módosításcsomagok"
+msgstr "Σύνολα αλλαγών"
 
 #. module: base_vat
 #: model:ir.model,name:base_vat.model_res_company
 msgid "Companies"
-msgstr "Vállalatok"
+msgstr "Εταιρίες"
 
 #. module: base_vat
 #: model:ir.model,name:base_vat.model_res_config_settings
 msgid "Config Settings"
-msgstr "Beállítások módosítása"
+msgstr "Ρυθμίσεις διαμόρφωσης"
 
 #. module: base_vat
 #: model:ir.model,name:base_vat.model_res_partner
 msgid "Contact"
-msgstr "Kapcsolattartó"
+msgstr "Επαφή"
 
 #. module: base_vat
 #: model:ir.model.fields,field_description:base_vat.field_account_fiscal_position__count_changesets
@@ -124,7 +124,7 @@ msgstr "Kapcsolattartó"
 #: model:ir.model.fields,field_description:base_vat.field_res_config_settings__count_changesets
 #: model:ir.model.fields,field_description:base_vat.field_res_partner__count_changesets
 msgid "Count Changesets"
-msgstr "Módosításcsomagok számlálása"
+msgstr "Πλήθος συνόλων αλλαγών"
 
 #. module: base_vat
 #: model:ir.model.fields,field_description:base_vat.field_account_fiscal_position__count_pending_changeset_changes
@@ -132,7 +132,7 @@ msgstr "Módosításcsomagok számlálása"
 #: model:ir.model.fields,field_description:base_vat.field_res_config_settings__count_pending_changeset_changes
 #: model:ir.model.fields,field_description:base_vat.field_res_partner__count_pending_changeset_changes
 msgid "Count Pending Changeset Changes"
-msgstr "Számolja a függőben lévő változtatáskészlet-változásokat"
+msgstr "Μετρήστε τις αλλαγές που εκκρεμούν"
 
 #. module: base_vat
 #: model:ir.model.fields,field_description:base_vat.field_account_fiscal_position__count_pending_changesets
@@ -140,7 +140,7 @@ msgstr "Számolja a függőben lévő változtatáskészlet-változásokat"
 #: model:ir.model.fields,field_description:base_vat.field_res_config_settings__count_pending_changesets
 #: model:ir.model.fields,field_description:base_vat.field_res_partner__count_pending_changesets
 msgid "Count Pending Changesets"
-msgstr "Függő módosításkészletek számolása"
+msgstr "Μετρήστε τα σύνολα αλλαγών που εκκρεμούν"
 
 #. module: base_vat
 #. odoo-python
@@ -167,7 +167,7 @@ msgstr ""
 #. module: base_vat
 #: model:ir.model,name:base_vat.model_account_fiscal_position
 msgid "Fiscal Position"
-msgstr "Pénzügyi pozíció"
+msgstr "Φορολογική Θέση"
 
 #. module: base_vat
 #. odoo-python
@@ -203,7 +203,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_vat.field_res_config_settings__smart_search
 #: model:ir.model.fields,field_description:base_vat.field_res_partner__smart_search
 msgid "Smart Search"
-msgstr "Intelligens keresés"
+msgstr "Έξυπνη αναζήτηση"
 
 #. module: base_vat
 #: model:ir.model.fields,field_description:base_vat.field_res_partner__vies_failed_message
@@ -219,8 +219,8 @@ msgid ""
 "The %(vat_label)s number [%(wrong_vat)s] does not seem to be valid. \n"
 "Note: the expected format is %(expected_format)s"
 msgstr ""
-"A(z) %(vat_label)s szám [%(wrong_vat)s] érvénytelennek tűnik. \n"
-"Megjegyzés: a várt formátum %(expected_format)s"
+"Ο αριθμός %(vat_label)s [%(wrong_vat)s] δεν φαίνεται έγκυρος. \n"
+"Σημείωση: η αναμενόμενη μορφή είναι %(expected_format)s"
 
 #. module: base_vat
 #. odoo-python
@@ -230,8 +230,8 @@ msgid ""
 "The %(vat_label)s number [%(wrong_vat)s] for %(record_label)s does not seem to be valid. \n"
 "Note: the expected format is %(expected_format)s"
 msgstr ""
-"A(z) %(vat_label)s szám [%(wrong_vat)s] a(z) %(record_label)s esetében érvénytelennek tűnik. \n"
-"Megjegyzés: a várt formátum %(expected_format)s"
+"Ο αριθμός %(vat_label)s [%(wrong_vat)s] για %(record_label)s δεν φαίνεται έγκυρος. \n"
+"Σημείωση: η αναμενόμενη μορφή είναι %(expected_format)s"
 
 #. module: base_vat
 #. odoo-python
@@ -264,7 +264,7 @@ msgstr ""
 #: model:ir.model.fields,help:base_vat.field_res_config_settings__count_pending_changeset_changes
 #: model:ir.model.fields,help:base_vat.field_res_partner__count_pending_changeset_changes
 msgid "The number of pending changes of this record"
-msgstr "A bejegyzés függőben lévő módosításainak száma"
+msgstr "Ο αριθμός των εκκρεμών αλλαγών αυτής της εγγραφής"
 
 #. module: base_vat
 #: model:ir.model.fields,help:base_vat.field_account_fiscal_position__count_pending_changesets
@@ -272,7 +272,7 @@ msgstr "A bejegyzés függőben lévő módosításainak száma"
 #: model:ir.model.fields,help:base_vat.field_res_config_settings__count_pending_changesets
 #: model:ir.model.fields,help:base_vat.field_res_partner__count_pending_changesets
 msgid "The number of pending changesets of this record"
-msgstr "A rekord folyamatban lévő módosításainak száma"
+msgstr "Ο αριθμός των εκκρεμών συνόλων αλλαγών αυτής της εγγραφής"
 
 #. module: base_vat
 #: model:ir.model.fields,help:base_vat.field_account_fiscal_position__count_changesets
@@ -280,7 +280,7 @@ msgstr "A rekord folyamatban lévő módosításainak száma"
 #: model:ir.model.fields,help:base_vat.field_res_config_settings__count_changesets
 #: model:ir.model.fields,help:base_vat.field_res_partner__count_changesets
 msgid "The overall number of changesets of this record"
-msgstr "Az e rekordhoz tartozó módosítások teljes száma"
+msgstr "Ο συνολικός αριθμός των αλλαγών αυτού του αρχείου"
 
 #. module: base_vat
 #: model:ir.model.fields,field_description:base_vat.field_account_fiscal_position__user_can_see_changeset
@@ -288,25 +288,26 @@ msgstr "Az e rekordhoz tartozó módosítások teljes száma"
 #: model:ir.model.fields,field_description:base_vat.field_res_config_settings__user_can_see_changeset
 #: model:ir.model.fields,field_description:base_vat.field_res_partner__user_can_see_changeset
 msgid "User Can See Changeset"
-msgstr "A felhasználó láthatja a változtatáskészletet"
+msgstr "Ο χρήστης μπορεί να δει το σύνολο αλλαγών"
 
 #. module: base_vat
 #. odoo-python
 #: code:addons/base_vat/models/res_partner.py:0
 #, python-format
 msgid "VAT"
-msgstr "Adószám"
+msgstr "ΦΠΑ"
 
 #. module: base_vat
 #: model:ir.model.fields,field_description:base_vat.field_res_company__vat_check_vies
 #: model:ir.model.fields,field_description:base_vat.field_res_config_settings__vat_check_vies
 msgid "Verify VAT Numbers"
-msgstr "Adószámok ellenőrzése"
+msgstr "Επαληθεύστε τους αριθμούς ΑΦΜ"
 
 #. module: base_vat
 #: model_terms:ir.ui.view,arch_db:base_vat.res_config_settings_view_form
 msgid "Verify VAT numbers using the European VIES service"
-msgstr "Ellenőrizze az adószámokat az európai VIES szolgáltatáson keresztül"
+msgstr ""
+"Επαληθεύστε τους αριθμούς ΑΦΜ που χρησιμοποιούν την Ευρωπαϊκή  VIES υπηρεσία"
 
 #. module: base_vat
 #. odoo-python

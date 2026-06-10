@@ -27,15 +27,15 @@ msgstr ""
 #. odoo-python
 #: code:addons/base_vat/models/res_partner.py:0
 #, python-format
-msgid "1111111111 (NIN) or 22222222222 (VKN)"
-msgstr ""
+msgid "17291716060 (NIN) or 1729171602 (VKN)"
+msgstr "17291716060 (NIN) または 1729171602 (VKN)"
 
 #. module: base_vat
 #. odoo-python
 #: code:addons/base_vat/models/res_partner.py:0
 #, python-format
 msgid "1792060346001 or 1792060346"
-msgstr ""
+msgstr "1792060346001 または 1792060346"
 
 #. module: base_vat
 #. odoo-python
@@ -49,14 +49,14 @@ msgstr ""
 #: code:addons/base_vat/models/res_partner.py:0
 #, python-format
 msgid "310175397400003 [Fifteen digits, first and last digits should be \"3\"]"
-msgstr ""
+msgstr "310175397400003 [15桁、最初と最後の数字は \"3\"にして下さい]"
 
 #. module: base_vat
 #. odoo-python
 #: code:addons/base_vat/models/res_partner.py:0
 #, python-format
 msgid "49-098-576 or 49098576"
-msgstr ""
+msgstr "49-098-576 または 49098576"
 
 #. module: base_vat
 #: model_terms:ir.ui.view,arch_db:base_vat.res_config_settings_view_form
@@ -71,21 +71,21 @@ msgstr ""
 #: code:addons/base_vat/models/res_partner.py:0
 #, python-format
 msgid "AR200-5536168-2 or 20055361682"
-msgstr ""
+msgstr "AR200-5536168-2 または 20055361682"
 
 #. module: base_vat
 #. odoo-python
 #: code:addons/base_vat/models/res_partner.py:0
 #, python-format
 msgid "CHE-123.456.788 TVA or CHE-123.456.788 MWST or CHE-123.456.788 IVA"
-msgstr ""
+msgstr "CHE-123.456.788 TVA または CHE-123.456.788 MWST または CHE-123.456.788 IVA"
 
 #. module: base_vat
 #. odoo-python
 #: code:addons/base_vat/models/res_partner.py:0
 #, python-format
 msgid "CO213123432-1 or CO213.123.432-1"
-msgstr ""
+msgstr "CO213123432-1 または CO213.123.432-1"
 
 #. module: base_vat
 #: model:ir.model.fields,field_description:base_vat.field_account_fiscal_position__changeset_change_ids
@@ -93,7 +93,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_vat.field_res_config_settings__changeset_change_ids
 #: model:ir.model.fields,field_description:base_vat.field_res_partner__changeset_change_ids
 msgid "Changeset Changes"
-msgstr "Változáskészlet-változások"
+msgstr "チェンジセットの変更"
 
 #. module: base_vat
 #: model:ir.model.fields,field_description:base_vat.field_account_fiscal_position__changeset_ids
@@ -101,22 +101,22 @@ msgstr "Változáskészlet-változások"
 #: model:ir.model.fields,field_description:base_vat.field_res_config_settings__changeset_ids
 #: model:ir.model.fields,field_description:base_vat.field_res_partner__changeset_ids
 msgid "Changesets"
-msgstr "Módosításcsomagok"
+msgstr "チェンジセット"
 
 #. module: base_vat
 #: model:ir.model,name:base_vat.model_res_company
 msgid "Companies"
-msgstr "Vállalatok"
+msgstr "会社"
 
 #. module: base_vat
 #: model:ir.model,name:base_vat.model_res_config_settings
 msgid "Config Settings"
-msgstr "Beállítások módosítása"
+msgstr "コンフィグ設定"
 
 #. module: base_vat
 #: model:ir.model,name:base_vat.model_res_partner
 msgid "Contact"
-msgstr "Kapcsolattartó"
+msgstr "連絡先"
 
 #. module: base_vat
 #: model:ir.model.fields,field_description:base_vat.field_account_fiscal_position__count_changesets
@@ -124,7 +124,7 @@ msgstr "Kapcsolattartó"
 #: model:ir.model.fields,field_description:base_vat.field_res_config_settings__count_changesets
 #: model:ir.model.fields,field_description:base_vat.field_res_partner__count_changesets
 msgid "Count Changesets"
-msgstr "Módosításcsomagok számlálása"
+msgstr "チェンジセット数"
 
 #. module: base_vat
 #: model:ir.model.fields,field_description:base_vat.field_account_fiscal_position__count_pending_changeset_changes
@@ -132,7 +132,7 @@ msgstr "Módosításcsomagok számlálása"
 #: model:ir.model.fields,field_description:base_vat.field_res_config_settings__count_pending_changeset_changes
 #: model:ir.model.fields,field_description:base_vat.field_res_partner__count_pending_changeset_changes
 msgid "Count Pending Changeset Changes"
-msgstr "Számolja a függőben lévő változtatáskészlet-változásokat"
+msgstr "保留中のチェンジセットの変更をカウント"
 
 #. module: base_vat
 #: model:ir.model.fields,field_description:base_vat.field_account_fiscal_position__count_pending_changesets
@@ -140,21 +140,21 @@ msgstr "Számolja a függőben lévő változtatáskészlet-változásokat"
 #: model:ir.model.fields,field_description:base_vat.field_res_config_settings__count_pending_changesets
 #: model:ir.model.fields,field_description:base_vat.field_res_partner__count_pending_changesets
 msgid "Count Pending Changesets"
-msgstr "Függő módosításkészletek számolása"
+msgstr "保留中のチェンジセットをカウント"
 
 #. module: base_vat
 #. odoo-python
 #: code:addons/base_vat/models/res_partner.py:0
 #, python-format
 msgid "DE123456788 or 12/345/67890"
-msgstr ""
+msgstr "DE123456788 または 12/345/67890"
 
 #. module: base_vat
 #. odoo-python
 #: code:addons/base_vat/models/res_partner.py:0
 #, python-format
 msgid "DO1-01-85004-3 or 101850043"
-msgstr ""
+msgstr "DO1-01-85004-3 または 101850043"
 
 #. module: base_vat
 #. odoo-python
@@ -162,40 +162,40 @@ msgstr ""
 #, python-format
 msgid ""
 "Example: '219999830019' (format: 12 digits, all numbers, valid check digit)"
-msgstr ""
+msgstr "例: '219999830019' (フォーマット: 112桁、全て数字、有効なチェックデジット)"
 
 #. module: base_vat
 #: model:ir.model,name:base_vat.model_account_fiscal_position
 msgid "Fiscal Position"
-msgstr "Pénzügyi pozíció"
+msgstr "会計ポジション"
 
 #. module: base_vat
 #. odoo-python
 #: code:addons/base_vat/models/res_partner.py:0
 #, python-format
 msgid "GB123456782 or XI123456782"
-msgstr ""
+msgstr "GB123456782 または XI123456782"
 
 #. module: base_vat
 #. odoo-python
 #: code:addons/base_vat/models/res_partner.py:0
 #, python-format
 msgid "HU12345676 or 12345678-1-11 or 8071592153"
-msgstr ""
+msgstr "HU12345676 または 12345678-1-11 or 8071592153"
 
 #. module: base_vat
 #: model_terms:ir.ui.view,arch_db:base_vat.res_config_settings_view_form
 msgid ""
 "If this checkbox is ticked, you will not be able to save a contact if its "
 "VAT number cannot be verified by the European VIES service."
-msgstr ""
+msgstr "このチェックボックスがオンになっている場合、ヨーロッパのVIESサービスでVAT番号を確認できないと、連絡先を保存できません。"
 
 #. module: base_vat
 #. odoo-python
 #: code:addons/base_vat/models/res_partner.py:0
 #, python-format
 msgid "MXGODE561231GR8 or GODE561231GR8"
-msgstr ""
+msgstr "MXGODE561231GR8 または GODE561231GR8"
 
 #. module: base_vat
 #: model:ir.model.fields,field_description:base_vat.field_account_fiscal_position__smart_search
@@ -203,7 +203,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_vat.field_res_config_settings__smart_search
 #: model:ir.model.fields,field_description:base_vat.field_res_partner__smart_search
 msgid "Smart Search"
-msgstr "Intelligens keresés"
+msgstr "スマート検索"
 
 #. module: base_vat
 #: model:ir.model.fields,field_description:base_vat.field_res_partner__vies_failed_message
@@ -219,8 +219,8 @@ msgid ""
 "The %(vat_label)s number [%(wrong_vat)s] does not seem to be valid. \n"
 "Note: the expected format is %(expected_format)s"
 msgstr ""
-"A(z) %(vat_label)s szám [%(wrong_vat)s] érvénytelennek tűnik. \n"
-"Megjegyzés: a várt formátum %(expected_format)s"
+" %(vat_label)s 番号 [%(wrong_vat)s] が有効でないようです。\n"
+"メモ: 予測される形式は %(expected_format)sです。"
 
 #. module: base_vat
 #. odoo-python
@@ -230,8 +230,8 @@ msgid ""
 "The %(vat_label)s number [%(wrong_vat)s] for %(record_label)s does not seem to be valid. \n"
 "Note: the expected format is %(expected_format)s"
 msgstr ""
-"A(z) %(vat_label)s szám [%(wrong_vat)s] a(z) %(record_label)s esetében érvénytelennek tűnik. \n"
-"Megjegyzés: a várt formátum %(expected_format)s"
+"%(vat_label)s 番号 [%(wrong_vat)s]  (%(record_label)s 用)が有効ではないようです。\n"
+"メモ: 予測される形式は %(expected_format)sです。"
 
 #. module: base_vat
 #. odoo-python
@@ -247,7 +247,7 @@ msgstr ""
 msgid ""
 "The country detected for this foreign VAT number does not match any of the "
 "countries composing the country group set on this fiscal position."
-msgstr ""
+msgstr "この外国VAT番号で検出された国は、この会計ポジションで設定された国グループのいずれの国とも一致しません。"
 
 #. module: base_vat
 #. odoo-python
@@ -256,7 +256,7 @@ msgstr ""
 msgid ""
 "The country of the foreign VAT number could not be detected. Please assign a"
 " country to the fiscal position or set a country group"
-msgstr ""
+msgstr "外国VAT番号の国を検出できませんでした。会計ポジションに国を割当てるか、国グループを設定して下さい。"
 
 #. module: base_vat
 #: model:ir.model.fields,help:base_vat.field_account_fiscal_position__count_pending_changeset_changes
@@ -264,7 +264,7 @@ msgstr ""
 #: model:ir.model.fields,help:base_vat.field_res_config_settings__count_pending_changeset_changes
 #: model:ir.model.fields,help:base_vat.field_res_partner__count_pending_changeset_changes
 msgid "The number of pending changes of this record"
-msgstr "A bejegyzés függőben lévő módosításainak száma"
+msgstr "このレコードの保留中の変更数"
 
 #. module: base_vat
 #: model:ir.model.fields,help:base_vat.field_account_fiscal_position__count_pending_changesets
@@ -272,7 +272,7 @@ msgstr "A bejegyzés függőben lévő módosításainak száma"
 #: model:ir.model.fields,help:base_vat.field_res_config_settings__count_pending_changesets
 #: model:ir.model.fields,help:base_vat.field_res_partner__count_pending_changesets
 msgid "The number of pending changesets of this record"
-msgstr "A rekord folyamatban lévő módosításainak száma"
+msgstr "このレコードの保留中のチェンジセットの数"
 
 #. module: base_vat
 #: model:ir.model.fields,help:base_vat.field_account_fiscal_position__count_changesets
@@ -280,7 +280,7 @@ msgstr "A rekord folyamatban lévő módosításainak száma"
 #: model:ir.model.fields,help:base_vat.field_res_config_settings__count_changesets
 #: model:ir.model.fields,help:base_vat.field_res_partner__count_changesets
 msgid "The overall number of changesets of this record"
-msgstr "Az e rekordhoz tartozó módosítások teljes száma"
+msgstr "このレコードの全体のチェンジセット数"
 
 #. module: base_vat
 #: model:ir.model.fields,field_description:base_vat.field_account_fiscal_position__user_can_see_changeset
@@ -288,50 +288,50 @@ msgstr "Az e rekordhoz tartozó módosítások teljes száma"
 #: model:ir.model.fields,field_description:base_vat.field_res_config_settings__user_can_see_changeset
 #: model:ir.model.fields,field_description:base_vat.field_res_partner__user_can_see_changeset
 msgid "User Can See Changeset"
-msgstr "A felhasználó láthatja a változtatáskészletet"
+msgstr "ユーザーは変更セットを見ることができます"
 
 #. module: base_vat
 #. odoo-python
 #: code:addons/base_vat/models/res_partner.py:0
 #, python-format
 msgid "VAT"
-msgstr "Adószám"
+msgstr "VAT（Value Added Tax）"
 
 #. module: base_vat
 #: model:ir.model.fields,field_description:base_vat.field_res_company__vat_check_vies
 #: model:ir.model.fields,field_description:base_vat.field_res_config_settings__vat_check_vies
 msgid "Verify VAT Numbers"
-msgstr "Adószámok ellenőrzése"
+msgstr "VAT番号を確認する"
 
 #. module: base_vat
 #: model_terms:ir.ui.view,arch_db:base_vat.res_config_settings_view_form
 msgid "Verify VAT numbers using the European VIES service"
-msgstr "Ellenőrizze az adószámokat az európai VIES szolgáltatáson keresztül"
+msgstr "ヨーロッパのVIESサービスを使用してVAT番号を確認する"
 
 #. module: base_vat
 #. odoo-python
 #: code:addons/base_vat/models/res_partner.py:0
 #, python-format
 msgid "XXXXXXXXX [9 digits] and it should respect the Luhn algorithm checksum"
-msgstr ""
+msgstr "XXXXXXXXX [9 桁] でLuhnアルゴリズムのチェックサムにならう必要があります。"
 
 #. module: base_vat
 #. odoo-python
 #: code:addons/base_vat/models/res_partner.py:0
 #, python-format
 msgid "either 11 digits for CPF or 14 digits for CNPJ"
-msgstr ""
+msgstr "CPF用に11桁またはCNPJ用に14桁"
 
 #. module: base_vat
 #. odoo-python
 #: code:addons/base_vat/models/account_fiscal_position.py:0
 #, python-format
 msgid "fiscal position [%s]"
-msgstr ""
+msgstr "財政状態 [%s]"
 
 #. module: base_vat
 #. odoo-python
 #: code:addons/base_vat/models/res_partner.py:0
 #, python-format
 msgid "partner [%s]"
-msgstr ""
+msgstr "取引先 [%s]"
