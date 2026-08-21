@@ -17,7 +17,10 @@ class AccountMove(models.Model):
     #     domain="['|', ('company_id', '=', False), ('company_id', '=', company_id)]")
 
     team_id = fields.Many2one(
-        "crm.team", related="commercial_partner_id.user_id.sale_team_id", store=True
+        "crm.team",
+        related="commercial_partner_id.user_id.sale_team_id",
+        store=True,
+        depends=["commercial_partner_id"],
     )
 
     # UTMs - enforcing the fact that we want to 'set null' when relation is unlinked
