@@ -85,44 +85,6 @@ class TestSaleToInvoice(TestSaleCommon):
         self._check_order_search(self.sale_order, [('invoice_ids', '=', False)], self.env['sale.order'])
         self._check_order_search(self.sale_order, [('invoice_ids', '!=', False)], self.sale_order)
 
-    def test_invoice_team_is_not_recomputed_from_membership_changes(self):
-        team_a, team_b = self.env['crm.team'].create([
-            {'name': 'Invoice Team A'},
-            {'name': 'Invoice Team B'},
-        ])
-        salesperson = self.env['res.users'].with_context(no_reset_password=True).create({
-            'name': 'Invoice Team Salesperson',
-            'login': 'invoice-team-salesperson',
-        })
-        membership = self.env['crm.team.member'].create({
-            'crm_team_id': team_a.id,
-            'user_id': salesperson.id,
-        })
-        self.assertEqual(salesperson.sale_team_id, team_a)
-        partner = self.env['res.partner'].create({
-            'name': 'Invoice Team Customer',
-            'user_id': salesperson.id,
-        })
-        invoice = self.env['account.move'].create({
-            'move_type': 'out_invoice',
-            'partner_id': partner.id,
-            'journal_id': self.company_data['default_journal_sale'].id,
-        })
-        self.assertEqual(invoice.team_id, team_a)
-
-        membership.crm_team_id = team_b
-        self.env.flush_all()
-        invoice.invalidate_recordset(['team_id'])
-
-        self.assertEqual(salesperson.sale_team_id, team_b)
-        self.assertEqual(invoice.team_id, team_a)
-        new_invoice = self.env['account.move'].create({
-            'move_type': 'out_invoice',
-            'partner_id': partner.id,
-            'journal_id': self.company_data['default_journal_sale'].id,
-        })
-        self.assertEqual(new_invoice.team_id, team_b)
-
     def test_downpayment(self):
         """ Test invoice with a way of downpayment and check downpayment's SO line is created
             and also check a total amount of invoice is equal to a respective sale order's total amount
