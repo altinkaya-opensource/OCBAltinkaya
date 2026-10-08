@@ -275,6 +275,19 @@ class TestMembership(TestSalesCommon):
         with self.assertRaises(exceptions.UserError), mute_logger('odoo.sql_db'):
             added.write({'crm_team_id': sales_team_1.id})
 
+    def test_members_mono_unchanged(self):
+        """ Saving unchanged members does not rewrite their memberships, but
+        still archives their other memberships in mono mode. """
+        self.new_team.write({'member_ids': [(4, self.user_admin.id)]})
+        self.env['ir.config_parameter'].set_param('sales_team.membership_multi', False)
+        self.env.flush_all()
+
+        self.sales_team_1.write({'member_ids': [(6, 0, self.sales_team_1.member_ids.ids)]})
+        sale_team_field = self.env['res.users']._fields['sale_team_id']
+        self.assertFalse(self.env.is_to_compute(sale_team_field, self.user_sales_leads))
+        self.assertEqual(self.sales_team_1.member_ids, self.user_sales_leads | self.user_admin)
+        self.assertFalse(self.new_team.member_ids)
+
     def test_sales_team_member_search(self):
         """ when a search is triggered on the member_ids field in crm.team
         it is currently returning the archived records also. this test will
