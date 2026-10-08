@@ -3,21 +3,16 @@
 
 from odoo import api, fields, models, _
 from odoo.exceptions import UserError
-from odoo.tools import groupby
 
 
 class AccountMove(models.Model):
     _name = 'account.move'
     _inherit = ['account.move', 'utm.mixin']
 
-    # team_id = fields.Many2one(
-    #     'crm.team', string='Sales Team',
-    #     compute='_compute_team_id', store=True, readonly=False,
-    #     ondelete="set null", tracking=True,
-    #     domain="['|', ('company_id', '=', False), ('company_id', '=', company_id)]")
-
     team_id = fields.Many2one(
-        "crm.team", related="commercial_partner_id.user_id.sale_team_id", store=True
+        'crm.team', string='User Sales Team', compute='_compute_team_id',
+        store=True, readonly=True, copy=False, compute_sudo=True,
+        help='Main user sales team. Used notably for pipeline, or to set sales team in invoicing or subscription.',
     )
 
     # UTMs - enforcing the fact that we want to 'set null' when relation is unlinked
@@ -33,22 +28,11 @@ class AccountMove(models.Model):
             downpayment_lines.unlink()
         return res
 
-    # @api.depends('invoice_user_id')
-    # def _compute_team_id(self):
-    #     applicable_moves = self.filtered(
-    #         lambda move:
-    #             move.is_sale_document(include_receipts=True)
-    #     )
-
-    #     for ((user_id, company_id), moves) in groupby(
-    #         applicable_moves,
-    #         key=lambda m: (m.invoice_user_id.id, m.company_id.id)
-    #     ):
-    #         self.env['account.move'].concat(*moves).team_id = self.env['crm.team'].with_context(
-    #             allowed_company_ids=[company_id]
-    #         )._get_default_team_id(
-    #             user_id=user_id,
-    #         )
+    @api.depends('commercial_partner_id.user_id.sale_team_id')
+    def _compute_team_id(self):
+        """Follow the customer's current team without caching unrelated invoice data."""
+        for move in self.with_context(prefetch_fields=False):
+            move.team_id = move.commercial_partner_id.user_id.sale_team_id
 
     @api.depends('line_ids.sale_line_ids')
     def _compute_origin_so_count(self):
