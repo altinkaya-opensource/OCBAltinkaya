@@ -177,7 +177,12 @@ class CrmTeamMember(models.Model):
                 dict(user_id=membership.user_id.id, crm_team_id=membership.crm_team_id.id)
                 for membership in self
             ])
-        return super(CrmTeamMember, self).write(values)
+        memberships = self
+        if set(values) == {'active'}:
+            # yigit: skip memberships already in that state. Rewriting them marks
+            # sale_team_id of every member, hence team_id of all their invoices.
+            memberships = self.filtered(lambda membership: membership.active != bool(values['active']))
+        return super(CrmTeamMember, memberships).write(values)
 
     @api.model
     def _read_group_crm_team_id(self, teams, domain, order):
