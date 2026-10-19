@@ -5423,6 +5423,11 @@ msgid "Order Once"
 msgstr "Bir Kere Sipariş Ver"
 
 #. module: stock
+#: model:ir.model.fields,field_description:stock.field_stock_picking__user_id
+msgid "Order Responsible"
+msgstr "Sipariş Sorumlusu"
+
+#. module: stock
 #. odoo-python
 #: code:addons/stock/models/stock_picking.py:0
 #, python-format
@@ -6999,7 +7004,6 @@ msgstr "Negatif miktar rezerve etmeye izin verilmez"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_product_product__responsible_id
 #: model:ir.model.fields,field_description:stock.field_product_template__responsible_id
-#: model:ir.model.fields,field_description:stock.field_stock_picking__user_id
 msgid "Responsible"
 msgstr "Sorumlu"
 

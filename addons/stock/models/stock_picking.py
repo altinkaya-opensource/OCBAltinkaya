@@ -391,7 +391,7 @@ class Picking(models.Model):
         'res.company', string='Company', related='picking_type_id.company_id',
         readonly=True, store=True, index=True)
     user_id = fields.Many2one(
-        'res.users', 'Responsible', tracking=True,
+        'res.users', 'Order Responsible', tracking=True,
         domain=lambda self: [('groups_id', 'in', self.env.ref('stock.group_stock_user').id)],
         states={'done': [('readonly', True)], 'cancel': [('readonly', True)]},
         default=lambda self: self.env.user)
