@@ -43,6 +43,16 @@ class TestError(common.HttpCase):
             self.assertIn("Model: Model B (test_rpc.model_b)", e.faultString)
             self.assertIn("Field: Name (name)", e.faultString)
 
+    def test_01_create_unique(self):
+        """ Create: unique constraint names the colliding value """
+        try:
+            with mute_logger("odoo.sql_db", "odoo.http"):
+                self.rpc("res.users", "create", {"name": "Admin bis", "login": "admin"})
+            raise
+        except Exception as e:
+            self.assertIn("You can not have two users with the same login !", e.faultString)
+            self.assertIn("Key (login)=(admin) already exists.", e.faultString)
+
     def test_02_delete(self):
         """ Delete: NOT NULL and ON DELETE RESTRICT constraints """
         b1 = self.rpc("test_rpc.model_b", "create", {"name": "B1"})
