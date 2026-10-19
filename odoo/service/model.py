@@ -126,10 +126,12 @@ def _as_validation_error(env, exc):
         ))
 
     if exc.diag.constraint_name in env.registry._sql_constraints:
-        return ValidationError(_(
-            "The operation cannot be completed: %s",
-            translate_sql_constraint(env.cr, exc.diag.constraint_name, env.context.get('lang', 'en_US'))
-        ))
+        message = translate_sql_constraint(env.cr, exc.diag.constraint_name, env.context.get('lang', 'en_US'))
+        # yiğit: name the colliding value, e.g. "Key (default_code)=(X) already exists."
+        # Only for unique violations: a check violation's detail dumps the whole row.
+        if exc.pgcode == errorcodes.UNIQUE_VIOLATION and exc.diag.message_detail:
+            message = f"{message}\n{exc.diag.message_detail}"
+        return ValidationError(_("The operation cannot be completed: %s", message))
 
     return ValidationError(_("The operation cannot be completed: %s", exc.args[0]))
 
