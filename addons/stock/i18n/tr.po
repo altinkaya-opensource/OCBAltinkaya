@@ -144,7 +144,7 @@ msgstr ""
 "  * Bekliyor: Transfer bazı ürünlerin kullanılabilirliğini bekliyor.\n"
 "(a) Nakliye politikası \"En kısa zamanda\": hiçbir ürün ayrılamaz.\n"
 "(b) Nakliye politikası \"Tüm ürünler hazır olduğunda\": tüm ürünler ayrılamaz.\n"
-"  * Hazır: Aktarım işlenmeye hazırdır.\n"
+"  * Uygun: Aktarım işlenmeye hazırdır.\n"
 "(a) Gönderim politikası \"En kısa sürede\": en az bir ürün rezervdir.\n"
 "(b) Nakliye politikası \"tüm ürünler hazır olduğunda\": tüm ürün rezervedir.\n"
 "  * Tamamlandı: Aktarım işleme koyuldu.\n"
@@ -1855,7 +1855,7 @@ msgstr "Gecikmiş Transfer Sayısı"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking_type__count_picking_ready
 msgid "Count Picking Ready"
-msgstr "Hazır Transfer Sayısı"
+msgstr "Uygun Transfer Sayısı"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking_type__count_picking_waiting
@@ -6641,7 +6641,7 @@ msgstr "Miktarlar hizmet ya da tüketilebilirlik için oluşturulamaz."
 #: model_terms:ir.ui.view,arch_db:stock.view_move_search
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_internal_search
 msgid "Ready"
-msgstr "Hazır"
+msgstr "Uygun"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_move__product_qty
@@ -8027,7 +8027,7 @@ msgstr "Pakette olmayan stok hareketleri"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_move_search
 msgid "Stock moves that are Available (Ready to process)"
-msgstr "Mevcut stok hareketleri (İşlenmeye hazır)"
+msgstr "Uygun stok hareketleri (İşlenmeye hazır)"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_move_search
