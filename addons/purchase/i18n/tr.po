@@ -1502,7 +1502,7 @@ msgstr "Onaylanmış Siparişleri Kilitle"
 #: model:ir.model.fields.selection,name:purchase.selection__purchase_order__state__done
 #, python-format
 msgid "Locked"
-msgstr "Kilitli"
+msgstr "Tamamlandı"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order__message_main_attachment_id
